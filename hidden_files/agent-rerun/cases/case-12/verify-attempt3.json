@@ -1,0 +1,12 @@
+{
+ "attempt": 3,
+ "painted": false,
+ "uiElementsUsed": [
+  "ribbon tab \"Insert\"",
+  "ribbon menu \"My Apps ▾\""
+ ],
+ "menuText": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nCA\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nTable\nPivotTable\nRecommended PivotTables\nTables\nBuild App\nMy Apps ▾\nNo apps yet\nApps\nSlicer\nTimeline\nFilters\nSparkline\nRemove Sparkline\nSparklines\nPictures\nShapes ▾\nIcons\nSmartArt\nScreenshot\nIllustrations\nInsert Chart ▾\nRecommended Charts\nPivotChart\nCharts\nLink ▾\nLinks\nA\nText Box\nHeader & Footer\nA\nWordArt\nText\nπ\nEquation ▾\nΩ\nSymbol\nSymbols\nNew Report\nMy Reports\nReports\nNew Sheet\nDelete Sheet\nSheets\nInsert Row\nDelete Row\nInsert Column\nDelete Column\nRows & Columns\nControls ▾\nForm Controls\n3D Map\nMaps\nA1\ncarol\nA\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\nSales\n+\nProtocol v1\nCalc: automatic\nCell: A1\n✓ Saved\nFormula:\nEnglish (US)\nEnglish (UK)\nEspañol\nFrançais\nDeutsch\n日本語\n中文\nuser:carol\nReady\n✦ Agent\n🎙️ Voice · Pro",
+ "menuHasApp": false,
+ "error": "Error: \"Wave C Sales App\" not listed in My Apps menu",
+ "verdict": "FAIL"
+}

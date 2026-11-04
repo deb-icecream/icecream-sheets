@@ -1,0 +1,143 @@
+{
+  "plan": {
+    "fixture": "/home/hatch/workspace/icecream-sheets/test-data/perf-fixtures/perf-p75.xlsx",
+    "user": "rt-p75z",
+    "tag": "p75fin"
+  },
+  "steps": [
+    {
+      "step": "login",
+      "user": "rt-p75z"
+    },
+    {
+      "step": "load",
+      "wallMs": 8076
+    },
+    {
+      "step": "mod1",
+      "kind": "edit",
+      "sheet": "Constants",
+      "target": "B7",
+      "value": "366",
+      "before": {
+        "Constants!B7": "365"
+      },
+      "after": {
+        "Constants!B7": "366"
+      },
+      "formulaBefore": "365",
+      "formulaAfter": "366",
+      "settled": true
+    },
+    {
+      "step": "mod2",
+      "kind": "edit",
+      "sheet": "Constants",
+      "target": "F7",
+      "value": "EUR",
+      "before": {
+        "Constants!F7": "USD",
+        "Constants!F9": "USD  000s",
+        "Constants!C12": "USD  000s",
+        "Constants!C13": "USD  000s"
+      },
+      "after": {
+        "Constants!F7": "EUR",
+        "Constants!F9": "EUR  000s",
+        "Constants!C12": "EUR  000s",
+        "Constants!C13": "EUR  000s"
+      },
+      "formulaBefore": "USD",
+      "formulaAfter": "EUR",
+      "settled": true
+    },
+    {
+      "step": "mod3",
+      "kind": "type",
+      "sheet": "Constants",
+      "target": "H10",
+      "value": "=B7*2",
+      "before": {
+        "Constants!H10": ""
+      },
+      "after": {
+        "Constants!H10": "732"
+      },
+      "formulaBefore": null,
+      "formulaAfter": "=B7*2",
+      "settled": true
+    },
+    {
+      "step": "mod4",
+      "kind": "clear",
+      "sheet": "Constants",
+      "target": "H7",
+      "value": null,
+      "before": {
+        "Constants!H7": "1"
+      },
+      "after": {
+        "Constants!H7": ""
+      },
+      "formulaBefore": "=ROW()-ROW(Constants!$H$6:Constants!$O$6)",
+      "formulaAfter": null,
+      "settled": true
+    },
+    {
+      "step": "mod5",
+      "kind": "insertRow",
+      "sheet": "Constants",
+      "target": "A12",
+      "value": null,
+      "before": {
+        "Constants!A12": "Debt Opening",
+        "Constants!A13": "PPE Opening",
+        "Constants!B13": "50,000",
+        "Constants!C13": "EUR  000s",
+        "Constants!A14": "",
+        "Constants!C14": ""
+      },
+      "after": {
+        "Constants!A12": "",
+        "Constants!A13": "",
+        "Constants!B13": "",
+        "Constants!C13": "EUR  000s",
+        "Constants!A14": "PPE Opening",
+        "Constants!C14": "EUR  000s"
+      },
+      "formulaBefore": null,
+      "formulaAfter": null,
+      "settled": true
+    },
+    {
+      "step": "save-download",
+      "ms": 3100,
+      "path": "/home/hatch/workspace/icecream-sheets/hidden_files/roundtrip-audit/p75/p75fin-saved.xlsx",
+      "bytes": 493343,
+      "sha256": "322dd27e28d69b10fdbd0b0d3f1f9b94c5994502d81ece4bc2766b19345f9fab",
+      "via": "engine /download metadata + gateway /api/storage/sign + signed fetch (session credentials)",
+      "meta": {
+        "engineUrl": "http://127.0.0.1:18301",
+        "metaStatus": 200,
+        "metaBody": "{\"ok\":true,\"entryId\":\"autosave_sess_592a37db-b6d2-4c98-b516-70922949fa5c\",\"revision\":5,\"bytes\":493343,\"mode\":\"verbatim\",\"serializeMs\":0,\"changedSheets\":[],\"totalMs\":18}",
+        "meta": {
+          "entryId": "autosave_sess_592a37db-b6d2-4c98-b516-70922949fa5c",
+          "revision": 5,
+          "bytes": 493343,
+          "mode": "verbatim"
+        },
+        "signStatus": 200,
+        "fetchStatus": 200,
+        "fetchBytes": 493343
+      }
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (File not found)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "pageerror: Error"
+  ]
+}

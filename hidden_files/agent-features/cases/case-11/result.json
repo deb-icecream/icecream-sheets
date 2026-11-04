@@ -1,0 +1,17 @@
+{
+ "steps": [
+  "installed Sum Reporter",
+  "grant requested",
+  "grant approved",
+  "ran Sum Reporter"
+ ],
+ "dialogText": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidential🔗 file-27fddeba-53d5-4ef6-a73e-33f7223e9875 Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareScript EditorApps ScriptGet add-onsAdd-onsAdd-ons×Add-ons run in an isolated worker and can only touch this document through capabilities you approve. Signed in as owner on local-workbook.CatalogInstalledGrantsSum Reporter (sample) v1.0.0InstallReads a range and reports the sum of its numeric cells.By Icecream Sheets · Permissions: readCell Stamper (sample) v1.0.",
+ "runVisible": true,
+ "pageTextHasSum58": false,
+ "pageTextSnippet": "",
+ "documentIdShown": "local-workbook",
+ "expectedDocumentId": "file-27fddeba-53d5-4ef6-a73e-33f7223e9875",
+ "apiGrid": {},
+ "pass": false,
+ "verdict": "FAIL"
+}

@@ -1,0 +1,1 @@
+{"edits":[{"cellId":"cell-1-4","deepRef":{"col":6,"row":30001,"sheet":"Ledger"},"label":"P95 long: Ledger!E2->12345.67 (running-balance chain ~30000 deep)","newValue":12345.67,"sheet":"Ledger","watchRef":{"col":6,"row":1,"sheet":"Ledger"}}]}

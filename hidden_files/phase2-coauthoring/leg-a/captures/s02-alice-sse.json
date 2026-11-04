@@ -1,0 +1,151 @@
+[
+ {
+  "t": 1792624487562,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792624488066,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-f009972f-74e9-4568-9af0-5548508ff443\"}"
+ },
+ {
+  "t": 1792624488067,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624488076,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792624488571,
+  "kind": "event",
+  "event": "session",
+  "data": "{\"kind\":\"load\",\"sessionId\":\"sess_be2c7e69-7994-43d3-a2f1-52a3964215d3\"}"
+ },
+ {
+  "t": 1792624491920,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624499596,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":2,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624500809,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":1,\"origin\":{\"clientId\":\"web-mviqbyku-2rjn\",\"clientSeq\":1,\"principal\":\"user:alice\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":2,\"col\":0,\"value\":{\"kind\":\"number\",\"value\":111}}]}"
+ },
+ {
+  "t": 1792624500827,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":0,\"saving\":true}"
+ },
+ {
+  "t": 1792624500886,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":3,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624501973,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":3,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":2,\"col\":1,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624502394,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ },
+ {
+  "t": 1792624502817,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":2,\"origin\":{\"clientId\":\"web-mviqc9yj-5rccb\",\"clientSeq\":1,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":2,\"col\":1,\"value\":{\"kind\":\"number\",\"value\":222}}]}"
+ },
+ {
+  "t": 1792624502822,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":2,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792624503513,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":3,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":3,\"col\":1,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624503736,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":2,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":3,\"col\":1,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624504190,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":3,\"origin\":{\"clientId\":\"web-mviqbyku-2rjn\",\"clientSeq\":2,\"principal\":\"user:alice\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":2,\"value\":{\"kind\":\"number\",\"value\":30},\"formula\":\"=A1+B1\"}]}"
+ },
+ {
+  "t": 1792624504210,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":3,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792624504373,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":2,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":3,\"col\":1,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624504817,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":2,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624505195,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":4,\"origin\":{\"clientId\":\"web-mviqc9yj-5rccb\",\"clientSeq\":2,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":{\"kind\":\"number\",\"value\":15}},{\"sheet\":\"Sheet1\",\"row\":1,\"col\":1,\"value\":{\"kind\":\"number\",\"value\":35},\"formula\":\"=A1+B1\"},{\"sheet\":\"Sheet1\",\"row\":0,\"col\":2,\"value\":{\"kind\":\"number\",\"value\":35},\"formula\":\"=A1+B1\"}]}"
+ },
+ {
+  "t": 1792624505208,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":4,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792624505467,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":2,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624506750,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":4,\"storedRevision\":4,\"saving\":false}"
+ },
+ {
+  "t": 1792624507371,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":2,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ }
+]

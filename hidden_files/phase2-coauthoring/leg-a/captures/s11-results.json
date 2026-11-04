@@ -1,0 +1,68 @@
+{
+ "scenario": "11-flush-during-session",
+ "verdict": "PASS",
+ "checks": {
+  "flushCaughtUp": true,
+  "storedFileExists": true,
+  "parseBackExact": true,
+  "noopWritesNothing": true
+ },
+ "statusAtFlush": {
+  "ok": true,
+  "sessionId": "sess_bd2b9ecd-c121-49da-95a8-c26159b8f134",
+  "fileId": "file-96543e79-98a2-4b47-8b77-f263e251ea7f",
+  "fenced": false,
+  "ownershipEpoch": null,
+  "participants": [
+   {
+    "principal": "user:alice",
+    "role": "editor"
+   },
+   {
+    "principal": "user:bob",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 3,
+  "storageRevision": 3,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 1,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792635005561,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "cf9f7f97730cf3e7e60cf70aa1f74924deeef317ef3fc21bbd8b24286dec9c62"
+ },
+ "storedPath": "/tmp/lega2-data/library/wb.9df69e57fb0a409cdc9c02c6.xlsx",
+ "parseBack": {
+  "A1": 10,
+  "B1": 20,
+  "A2": 30,
+  "A3": "flushed"
+ },
+ "server": {
+  "0,0": "10",
+  "0,1": "20",
+  "1,0": "30",
+  "2,0": "flushed"
+ },
+ "noop": {
+  "mtime1": 1792635007149.8442,
+  "mtime2": 1792635007149.8442,
+  "sameSegments": true,
+  "revisions": [
+   3,
+   3
+  ],
+  "autosaveStats": {
+   "flushes": 1,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  }
+ }
+}

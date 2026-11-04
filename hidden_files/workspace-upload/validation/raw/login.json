@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjc3Z1c2VyIiwiYXR0cnMiOnsidGllciI6ImRlZmF1bHQifSwiaWF0IjoxNzkyNjQ5NTM2LCJleHAiOjE3OTI2OTI3MzZ9.CYdPirZ2nnXeg9pt7Gs0b5XHHdeuf94qHfYhuf_m_NA",
+  "userId": "csvuser",
+  "tier": "default",
+  "expiresIn": 43200
+}

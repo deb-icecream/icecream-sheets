@@ -1,0 +1,91 @@
+{
+ "overlayCount": 1,
+ "overlays": [
+  {
+   "title": "Month vs Revenue",
+   "rect": {
+    "x": 44,
+    "y": 583,
+    "w": 768,
+    "h": 360
+   },
+   "inViewport": true,
+   "canvases": [
+    {
+     "w": 750,
+     "h": 313,
+     "rectW": 750,
+     "rectH": 313
+    }
+   ],
+   "hasEditBtn": true,
+   "textHead": "Month vs Revenue\n✎\n✕"
+  }
+ ],
+ "visible": true,
+ "storedCharts": {
+  "rawLength": 549,
+  "parsed": {
+   "version": 2,
+   "charts": [
+    {
+     "version": 2,
+     "id": 1792667558641000,
+     "kind": "column-clustered",
+     "title": "Month vs Revenue",
+     "range": {
+      "sheet": "Sales",
+      "startRow": 0,
+      "startCol": 0,
+      "endRow": 12,
+      "endCol": 2
+     },
+     "xAxisTitle": "",
+     "yAxisTitle": "",
+     "legend": "bottom",
+     "dataLabels": false,
+     "x": 0,
+     "y": 280,
+     "w": 512,
+     "h": 300,
+     "anchorCells": {
+      "fromCol": 0,
+      "fromRow": 14,
+      "toCol": 8,
+      "toRow": 29
+     },
+     "seriesRanges": [
+      {
+       "name": "Revenue",
+       "cat": {
+        "sheet": "Sales",
+        "startRow": 1,
+        "startCol": 0,
+        "endRow": 12,
+        "endCol": 0
+       },
+       "val": {
+        "sheet": "Sales",
+        "startRow": 1,
+        "startCol": 2,
+        "endRow": 12,
+        "endCol": 2
+       }
+      }
+     ],
+     "nativePart": true
+    }
+   ]
+  },
+  "count": 1,
+  "specs": [
+   {
+    "id": 1792667558641000,
+    "kind": "column-clustered",
+    "title": "Month vs Revenue",
+    "sheet": "Sales",
+    "nativePart": true
+   }
+  ]
+ }
+}

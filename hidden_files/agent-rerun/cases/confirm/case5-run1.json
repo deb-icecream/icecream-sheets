@@ -1,0 +1,118 @@
+{
+  "case": "case5",
+  "gw": "http://localhost:8960",
+  "turns": [
+    {
+      "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a percentage. Then tell me which region has the largest share and what that share is.",
+      "ms": 57724,
+      "status": 200,
+      "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a perce",
+          "summary": null
+        },
+        {
+          "kind": "timeout",
+          "tool": null,
+          "ok": null,
+          "text": "planner",
+          "summary": "planner call failed (openai-compatible backend: provider returned non-JSON plan)"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "status200": true,
+    "colDFilled12of12": false,
+    "filled": 0,
+    "northShareValue": null,
+    "northShareApproxCorrect": false,
+    "replyNamesNorthLargest": false,
+    "busyReplySignature": true,
+    "auditKinds": [
+      "user_message",
+      "timeout",
+      "agent_message"
+    ]
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-101b233f-e207-40e3-a7bd-19723cea2bca",
+    "sessionId": "sess_040a47d6-8c9e-47a3-8ea0-fe180cb50e06",
+    "colD": [
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      }
+    ],
+    "releaseStatus": 200
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "run": "run6",
+  "startedAt": "2026-10-22T15:42:26.488Z",
+  "steps": [
+    {
+      "t": "owner-tabs",
+      "count": 16,
+      "atMs": 19430
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "joiner": {
+    "samples": [
+      {
+        "afterSwitchMs": 10005,
+        "nonEmpty": 0,
+        "status": "Saving…",
+        "readsSoFar": 6,
+        "reads200": 3,
+        "readsErr": 3,
+        "dlReads": 0,
+        "dlOk": 0,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 20015,
+        "nonEmpty": 0,
+        "status": "Saving…",
+        "readsSoFar": 6,
+        "reads200": 3,
+        "readsErr": 3,
+        "dlReads": 0,
+        "dlOk": 0,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 30109,
+        "nonEmpty": 0,
+        "status": "Saving…",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 40124,
+        "nonEmpty": 0,
+        "status": "✓ Saved",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 50129,
+        "nonEmpty": 0,
+        "status": "✓ Saved",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 60151,
+        "nonEmpty": 0,
+        "status": "✓ Saved",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 70160,
+        "nonEmpty": 0,
+        "status": "✓ Saved",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 80172,
+        "nonEmpty": 0,
+        "status": "✓ Saved",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 90184,
+        "nonEmpty": 0,
+        "status": "✓ Saved",
+        "readsSoFar": 30,
+        "reads200": 27,
+        "readsErr": 3,
+        "dlReads": 3,
+        "dlOk": 3,
+        "dlBig": 0
+      }
+    ],
+    "netErrors": [
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=local-workbook",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=file-176924a8-9cd3-4278-9e0d-b718d5d9f626",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/engine/session-extras",
+        "status": 401
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      }
+    ],
+    "tabsAtMs": 19284,
+    "tabCount": 16,
+    "initialNonEmpty": 0,
+    "initialStatus": "Saving…",
+    "switched": true,
+    "finalNonEmpty": 0,
+    "probeExample": {
+      "nonEmpty": 221
+    },
+    "probeBackDL": {
+      "nonEmpty": 418
+    },
+    "threshold": 334,
+    "readsTotal": 32
+  },
+  "fileId": "file-176924a8-9cd3-4278-9e0d-b718d5d9f626",
+  "ownerFirstSheetPaint": 0,
+  "ownerImgs": 1,
+  "reads": [
+    {
+      "atMs": 23096,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "sheet": "?",
+      "post": "{\"fileId\":\"file-176924a8-9cd3-4278-9e0d-b718d5d9f626\"}",
+      "size": 547
+    },
+    {
+      "atMs": 23191,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "sheet": "?",
+      "post": "{\"sessionId\":\"sess_bd6ebf03-3fb5-4a54-9225-11feabbe800f\"}",
+      "size": 444
+    },
+    {
+      "atMs": 41379,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 41379,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 41379,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 41485,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "sheet": "?",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"to",
+      "size": 54
+    },
+    {
+      "atMs": 64050,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 64055,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "DropdownSizer",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "size": 14
+    },
+    {
+      "atMs": 64127,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Instructions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "size": 83
+    },
+    {
+      "atMs": 64140,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Images",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "size": 77
+    },
+    {
+      "atMs": 64140,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "size": 14
+    },
+    {
+      "atMs": 66200,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Validation",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "size": 85
+    },
+    {
+      "atMs": 66249,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "size": 89
+    },
+    {
+      "atMs": 66250,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Translations",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "size": 98
+    },
+    {
+      "atMs": 66250,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International URLs",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "size": 89
+    },
+    {
+      "atMs": 66250,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "size": 80
+    },
+    {
+      "atMs": 66251,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Definitions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "size": 87
+    },
+    {
+      "atMs": 66711,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Settings",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "size": 93
+    },
+    {
+      "atMs": 66728,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Valid Values",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "size": 85
+    },
+    {
+      "atMs": 66772,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "AttributePTDMAP",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "size": 87
+    },
+    {
+      "atMs": 66799,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Template",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "size": 86
+    },
+    {
+      "atMs": 66826,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Browse Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "size": 81
+    },
+    {
+      "atMs": 67262,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "size": 87
+    },
+    {
+      "atMs": 67327,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 67392,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 20545
+    },
+    {
+      "atMs": 67392,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 67392,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 67392,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 20545
+    },
+    {
+      "atMs": 67426,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 20545
+    },
+    {
+      "atMs": 67426,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 132558,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "size": 171311
+    },
+    {
+      "atMs": 141508,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    }
+  ],
+  "ownerDropdownListsNonEmpty": 418,
+  "pass": false,
+  "verdict": "FAIL"
+}

@@ -1,0 +1,27 @@
+{
+  "fixture": "perf-p95.xlsx",
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "badResponses": [],
+  "failedRequests": [],
+  "wallMs": 55394,
+  "firstPage": {
+    "fileSelectedAt": 3228.5,
+    "firstValuesAt": 5748.699999999721,
+    "firstPagePaintedAt": 5753.5,
+    "timeToFirstPageMs": 2525,
+    "timeToFirstValuesMs": 2520.1999999997206
+  },
+  "heapMB": 407.9,
+  "sheetTabs": [
+    "Sales",
+    "Inventory",
+    "Ledger"
+  ],
+  "nonEmptyCells": 408,
+  "badResponseCounts": {},
+  "read500": 0,
+  "all502": 0,
+  "consoleErrorCount": 1
+}

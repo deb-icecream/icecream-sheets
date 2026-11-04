@@ -1,0 +1,165 @@
+{
+ "tag": "P50",
+ "steps": {
+  "load": {
+   "status": 200,
+   "ms": 812
+  },
+  "autosaveConvergence": {
+   "ms": 6,
+   "status": {
+    "ok": true,
+    "sessionId": "sess_59308a52-2b4f-4201-8ed6-262a0e7d14f3",
+    "liveRevision": 0,
+    "storageRevision": 0,
+    "extrasDirty": false,
+    "pendingCheckpointOps": 0,
+    "autosaveStats": {
+     "flushes": 0,
+     "noopSkips": 0,
+     "forcedFlushes": 0
+    }
+   }
+  },
+  "forceSaveNoop": {
+   "status": 200,
+   "ms": 2131,
+   "skipped": false,
+   "caughtUp": true,
+   "entryId": "wb_mvi95mlp_bx43fr",
+   "sizeBytes": 162102
+  },
+  "downloadUnedited": {
+   "metaStatus": 200,
+   "mode": "verbatim",
+   "metaMs": 7,
+   "signMs": 4,
+   "fetchMs": 5,
+   "fetchStatus": 200,
+   "bytes": 162102,
+   "metaBytes": 162102,
+   "counts": {
+    "sheets": [
+     "START HERE",
+     "DASHBOARD",
+     "ASSUMPTIONS",
+     "HISTORICAL INPUTS",
+     "REVENUE BUILD",
+     "OPERATING MODEL",
+     "INCOME STATEMENT",
+     "BALANCE SHEET",
+     "CASH FLOW",
+     "WORKING CAPITAL",
+     "CAPEX & DEPRECIATION",
+     "DEBT SCHEDULE",
+     "FINANCIAL RATIOS",
+     "SCENARIO ANALYSIS",
+     "BREAK-EVEN",
+     "CASH RUNWAY",
+     "MONTHLY VIEW (LITE)",
+     "SENSITIVITY",
+     "VALUATION",
+     "CHECKS",
+     "DATA-SUPPORT"
+    ],
+    "value": 1539,
+    "formula": 2403
+   }
+  },
+  "editAndFlush": {
+   "execStatus": 200,
+   "execMs": 91,
+   "flushWaitMs": 4058,
+   "stats": {
+    "flushes": 2,
+    "noopSkips": 1,
+    "forcedFlushes": 1
+   }
+  },
+  "downloadEdited": {
+   "saveSignalMs": 7,
+   "fetchMs": 7,
+   "mode": "verbatim",
+   "serializeMs": 0,
+   "bytes": 164469,
+   "counts": {
+    "sheets": [
+     "START HERE",
+     "DASHBOARD",
+     "ASSUMPTIONS",
+     "HISTORICAL INPUTS",
+     "REVENUE BUILD",
+     "OPERATING MODEL",
+     "INCOME STATEMENT",
+     "BALANCE SHEET",
+     "CASH FLOW",
+     "WORKING CAPITAL",
+     "CAPEX & DEPRECIATION",
+     "DEBT SCHEDULE",
+     "FINANCIAL RATIOS",
+     "SCENARIO ANALYSIS",
+     "BREAK-EVEN",
+     "CASH RUNWAY",
+     "MONTHLY VIEW (LITE)",
+     "SENSITIVITY",
+     "VALUATION",
+     "CHECKS",
+     "DATA-SUPPORT"
+    ],
+    "value": 1539,
+    "formula": 2403
+   },
+   "editCell": {
+    "addr": "C9",
+    "value": 424242
+   }
+  },
+  "forceSaveAfterCommit": {
+   "status": 200,
+   "ms": 8,
+   "skipped": true,
+   "caughtUp": true
+  },
+  "postSaveEditRoundTrip": {
+   "execStatus": 200,
+   "execOk": true,
+   "readValue": {
+    "kind": "number",
+    "value": 777
+   }
+  }
+ },
+ "sourceBytes": 150657,
+ "sourceCounts": {
+  "sheets": [
+   "START HERE",
+   "DASHBOARD",
+   "ASSUMPTIONS",
+   "HISTORICAL INPUTS",
+   "REVENUE BUILD",
+   "OPERATING MODEL",
+   "INCOME STATEMENT",
+   "BALANCE SHEET",
+   "CASH FLOW",
+   "WORKING CAPITAL",
+   "CAPEX & DEPRECIATION",
+   "DEBT SCHEDULE",
+   "FINANCIAL RATIOS",
+   "SCENARIO ANALYSIS",
+   "BREAK-EVEN",
+   "CASH RUNWAY",
+   "MONTHLY VIEW (LITE)",
+   "SENSITIVITY",
+   "VALUATION",
+   "CHECKS",
+   "DATA-SUPPORT"
+  ],
+  "value": 1539,
+  "formula": 2403
+ },
+ "editRef": {
+  "sheet": "ASSUMPTIONS",
+  "row": 8,
+  "col": 2
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "hash": "#file=file-d6336803-9643-402a-9709-034738e0d146",
+ "a1Before": "🔒",
+ "tabs": [
+  "START HERE",
+  "DASHBOARD",
+  "ASSUMPTIONS",
+  "HISTORICAL INPUTS",
+  "REVENUE BUILD",
+  "OPERATING MODEL",
+  "INCOME STATEMENT",
+  "BALANCE SHEET"
+ ],
+ "b1Before": "ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL",
+ "b1After": "ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL",
+ "fatal": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('button:text-is(\"Save .xlsx\")').first()\n"
+}

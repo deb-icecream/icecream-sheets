@@ -1,0 +1,33 @@
+{
+ "startedAt": "2026-10-22T07:39:19.087Z",
+ "cases": {
+  "case1": {
+   "verdict": "FAIL",
+   "error": "Error: locator.fill: Target page, context or browser has been closed"
+  },
+  "case2": {
+   "verdict": "FAIL",
+   "error": "Error: locator.fill: Target page, context or browser has been closed"
+  },
+  "case3a": {
+   "verdict": "FAIL",
+   "error": "Error: locator.fill: Target page, context or browser has been closed"
+  },
+  "case3b": {
+   "verdict": "FAIL",
+   "error": "Error: locator.fill: Target page, context or browser has been closed"
+  },
+  "case4": {
+   "verdict": "FAIL",
+   "error": "Error: locator.fill: Target page, context or browser has been closed"
+  },
+  "case5": {
+   "verdict": "FAIL",
+   "error": "Error: locator.fill: Target page, context or browser has been closed"
+  }
+ },
+ "browserPid": "launched",
+ "fileId": "file-7c93fd25-40a0-4c36-b114-7770cf84332e",
+ "sessionId": "sess_357817d7-b615-455d-a1be-59009c566ef4",
+ "engineUrl": "http://127.0.0.1:8101"
+}

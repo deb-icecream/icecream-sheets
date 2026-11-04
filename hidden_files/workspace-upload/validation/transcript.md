@@ -1,0 +1,56 @@
+# Workspace CSV-upload validation — 2026-10-22T06:12:16.618Z
+gateway http://127.0.0.1:19100, engine http://127.0.0.1:19101, scratch /tmp/ws-upload-val
+fixtures: sales.csv=1081 B, tricky.csv=153 B, real.xlsx=4813 B
+gateway up (unauthenticated /api/files -> 401, as expected)
+PASS  login tier (= "default")
+PASS  sales.csv grant status (= 200)
+PASS  sales.csv grant object ends .csv (= true)
+PASS  sales.csv staging PUT status (= 200)
+PASS  sales.csv complete status (= 201)
+PASS  sales.csv record sourceFormat (= "csv")
+PASS  sales.csv record name (= "sales.csv")
+PASS  sales.csv record sizeBytes (= 1081)
+PASS  sales.csv storageRef object ends .csv (= true)
+PASS  notes.txt grant status (= 400)
+PASS  notes.txt error names .xlsx (= true)
+PASS  notes.txt error names .csv (= true)
+PASS  oversized big.csv grant status (= 413)
+PASS  oversized big.csv code (= "UPLOAD_TOO_LARGE")
+PASS  oversized big.csv limit (= 1285214)
+PASS  list count after csv upload (= 1)
+PASS  recents[0] is sales.csv (= "sales.csv")
+PASS  list record sourceFormat (= "csv")
+open handshake: engineUrl=http://127.0.0.1:19101 sessionId=sess_a8bbcf5f-e9c0-4156-9171-0b25a5c047a4
+PASS  csv load status (= 200)
+PASS  csv load sheets (= ["sales"])
+PASS  csv load sourceFormat echo (= "csv")
+PASS  G1 header (= "revenue")
+PASS  A2 order_id is number 1001 (= 1001)
+PASS  B2 order_date stays string (= "2026-01-01")
+PASS  C2 region string (= "North")
+PASS  G2 revenue number (= 19.98)
+PASS  G25 last revenue (= 90.25)
+PASS  setFormula SUM status (= 200)
+PASS  SUM(G2:G25) == 4027.86 (= 4027.86)
+PASS  library-save status (= 200)
+library-save entry: {"ok":true,"entry":{"id":"file-132c0484-dd1e-4982-a225-7a9e729e05cc","name":"sales.xlsx","owner":"user:csvuser","createdAt":1792649538362,"modifiedAt":1792649538407,"sizeBytes":3298,"backend":"gateway"},"revision":1,"storageRevision":1,"caughtUp":true,"flushedOps":1,"skipped":false,"changedSheets":[
+PASS  record PATCH libraryEntryId status (= 200)
+PASS  download-grant status (= 200)
+PASS  download status (= 200)
+PASS  downloaded bytes are xlsx (PK) (= "PK")
+downloaded.xlsx: 3298 B written for parse-back
+session release -> 200
+PASS  tricky.csv complete status (= 201)
+PASS  tricky.csv record sourceFormat (= "csv")
+PASS  tricky open handshake status (= 200)
+PASS  tricky load sheets (= ["tricky"])
+tricky-dump.json written (engine cell values, 4x4)
+session release -> 200
+PASS  real.xlsx complete status (= 201)
+PASS  real.xlsx record sourceFormat (= "xlsx")
+PASS  real.xlsx object ends .xlsx (= true)
+PASS  real.xlsx open handshake status (= 200)
+PASS  xlsx load sheets (format omitted) (= ["Data"])
+PASS  xlsx regression B1 (=A1+1) (= 42)
+
+RESULT: 44 passed, 0 failed

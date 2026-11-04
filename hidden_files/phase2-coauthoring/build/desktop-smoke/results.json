@@ -1,0 +1,345 @@
+{
+  "fileId": "file-065a3359-9256-4932-ae07-7d1bdc902f5c",
+  "sessionId": "sess_52aa2508-2eb0-49f6-bb0b-236490253489",
+  "steps": {
+    "aliceReopen": {
+      "status": 200,
+      "joined": true,
+      "sessionId": "sess_52aa2508-2eb0-49f6-bb0b-236490253489",
+      "sameSession": true,
+      "revision": 1
+    },
+    "statusBefore": {
+      "revision": 1,
+      "participants": [
+        {
+          "principal": "user:alice",
+          "role": "editor"
+        }
+      ]
+    },
+    "aliceSseHello": [
+      {
+        "event": "hello",
+        "data": {
+          "revision": 1,
+          "storedRevision": 1,
+          "fileId": "file-065a3359-9256-4932-ae07-7d1bdc902f5c"
+        }
+      },
+      {
+        "event": "status",
+        "data": {
+          "revision": 1,
+          "storedRevision": 1,
+          "saving": false
+        }
+      },
+      {
+        "event": "presence",
+        "data": {
+          "participants": []
+        }
+      }
+    ],
+    "boot": {
+      "url": "file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html"
+    },
+    "navigated": {
+      "joinUrl": "file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html?phase2=join#file=<fileId>"
+    },
+    "joined": {
+      "cells": {
+        "A1": "42",
+        "B1": "20",
+        "B2": "62"
+      },
+      "fileIdChip": "🔗 file-065a3359-9256-4932-ae07-7d1bdc902f5c",
+      "chipMatches": true,
+      "statusItems": [
+        "Protocol v1",
+        "Calc: automatic",
+        "Cell: A1",
+        "✓ Saved",
+        "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+        "carol",
+        "Ready"
+      ]
+    },
+    "registry": {
+      "raw": "{\"file-deba918a-181c-4522-a982-13eab35cb3fb\":{\"fileId\":\"file-deba918a-181c-4522-a982-13eab35cb3fb\",\"sessionId\":\"sess_892d9e08-8278-4aea-931c-10a7ffee2196\",\"ownerInstance\":\"engine-1\",\"ownerEndpoint\":\"h"
+    },
+    "alicePresencePost": {
+      "status": 200
+    },
+    "presenceAliceInCarolApp": {
+      "avatars": [
+        {
+          "title": "user:alice",
+          "text": "AL"
+        }
+      ]
+    },
+    "aliceOpB1": {
+      "status": 200,
+      "revision": 2
+    },
+    "sseDeltaApplied": {
+      "B1": "100",
+      "B2": "142"
+    },
+    "presenceCarolInSse": {
+      "events": [
+        {
+          "participants": [
+            {
+              "principal": "user:alice",
+              "color": "#dc2626",
+              "sheet": "Sheet1",
+              "row": 4,
+              "col": 2,
+              "editing": false
+            },
+            {
+              "principal": "user:carol",
+              "color": "#16a34a",
+              "sheet": "Sheet1",
+              "row": 2,
+              "col": 2,
+              "editing": false
+            }
+          ]
+        }
+      ]
+    },
+    "remoteSelectionDom": {
+      "aliceFlagTexts": []
+    },
+    "carolEditLanded": {
+      "readA3": {
+        "kind": "number",
+        "value": 777
+      },
+      "readStatus": 200,
+      "revisionBefore": 2,
+      "revisionAfter": 3,
+      "participants": [
+        {
+          "principal": "user:alice",
+          "role": "editor"
+        },
+        {
+          "principal": "user:carol",
+          "role": "editor"
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "requests": [
+    "http://localhost:8200/api/engine/open",
+    "http://localhost:8200/api/engine/access",
+    "http://127.0.0.1:8201/deltas?access_token=<redacted>",
+    "http://127.0.0.1:8201/deltas/ack",
+    "http://127.0.0.1:8201/deltas/ack"
+  ],
+  "sseEvents": [
+    {
+      "event": "hello",
+      "data": {
+        "revision": 1,
+        "storedRevision": 1,
+        "fileId": "file-065a3359-9256-4932-ae07-7d1bdc902f5c"
+      }
+    },
+    {
+      "event": "status",
+      "data": {
+        "revision": 1,
+        "storedRevision": 1,
+        "saving": false
+      }
+    },
+    {
+      "event": "presence",
+      "data": {
+        "participants": []
+      }
+    },
+    {
+      "event": "presence",
+      "data": {
+        "participants": [
+          {
+            "principal": "user:alice",
+            "color": "#dc2626",
+            "sheet": "Sheet1",
+            "row": 4,
+            "col": 2,
+            "editing": false
+          }
+        ]
+      }
+    },
+    {
+      "event": "delta",
+      "data": {
+        "revision": 2,
+        "origin": {
+          "clientId": "alice-api",
+          "clientSeq": 2,
+          "principal": "user:alice"
+        },
+        "cells": [
+          {
+            "sheet": "Sheet1",
+            "row": 0,
+            "col": 1,
+            "value": {
+              "kind": "number",
+              "value": 100
+            }
+          },
+          {
+            "sheet": "Sheet1",
+            "row": 1,
+            "col": 1,
+            "value": {
+              "kind": "number",
+              "value": 142
+            },
+            "formula": "=A1+B1"
+          }
+        ]
+      }
+    },
+    {
+      "event": "status",
+      "data": {
+        "revision": 2,
+        "storedRevision": 1,
+        "saving": true
+      }
+    },
+    {
+      "event": "presence",
+      "data": {
+        "participants": [
+          {
+            "principal": "user:alice",
+            "color": "#dc2626",
+            "sheet": "Sheet1",
+            "row": 4,
+            "col": 2,
+            "editing": false
+          },
+          {
+            "principal": "user:carol",
+            "color": "#16a34a",
+            "sheet": "Sheet1",
+            "row": 2,
+            "col": 2,
+            "editing": false
+          }
+        ]
+      }
+    },
+    {
+      "event": "message",
+      "data": null
+    },
+    {
+      "event": "status",
+      "data": {
+        "revision": 2,
+        "storedRevision": 2,
+        "saving": false
+      }
+    },
+    {
+      "event": "presence",
+      "data": {
+        "participants": [
+          {
+            "principal": "user:alice",
+            "color": "#dc2626",
+            "sheet": "Sheet1",
+            "row": 4,
+            "col": 2,
+            "editing": false
+          },
+          {
+            "principal": "user:carol",
+            "color": "#16a34a",
+            "sheet": "Sheet1",
+            "row": 2,
+            "col": 0,
+            "editing": false
+          }
+        ]
+      }
+    },
+    {
+      "event": "delta",
+      "data": {
+        "revision": 3,
+        "origin": {
+          "clientId": "web-mviyukwm-9uey5",
+          "clientSeq": 1,
+          "principal": "user:carol"
+        },
+        "cells": [
+          {
+            "sheet": "Sheet1",
+            "row": 2,
+            "col": 0,
+            "value": {
+              "kind": "number",
+              "value": 777
+            }
+          }
+        ]
+      }
+    },
+    {
+      "event": "status",
+      "data": {
+        "revision": 3,
+        "storedRevision": 2,
+        "saving": true
+      }
+    },
+    {
+      "event": "presence",
+      "data": {
+        "participants": [
+          {
+            "principal": "user:alice",
+            "color": "#dc2626",
+            "sheet": "Sheet1",
+            "row": 4,
+            "col": 2,
+            "editing": false
+          },
+          {
+            "principal": "user:carol",
+            "color": "#16a34a",
+            "sheet": "Sheet1",
+            "row": 3,
+            "col": 0,
+            "editing": false
+          }
+        ]
+      }
+    },
+    {
+      "event": "status",
+      "data": {
+        "revision": 3,
+        "storedRevision": 3,
+        "saving": false
+      }
+    }
+  ],
+  "quit": "SIGTERM+SIGKILL"
+}

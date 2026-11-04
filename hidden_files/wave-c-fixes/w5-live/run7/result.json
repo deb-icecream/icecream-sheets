@@ -1,0 +1,370 @@
+{
+  "run": "run7",
+  "startedAt": "2026-10-22T15:45:16.540Z",
+  "steps": [
+    {
+      "t": "owner-tabs",
+      "count": 16,
+      "atMs": 20885
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "joiner": {
+    "samples": [
+      {
+        "afterSwitchMs": 10010,
+        "nonEmpty": 418,
+        "status": "✓ Saved",
+        "readsSoFar": 28,
+        "reads200": 25,
+        "readsErr": 3,
+        "dlReads": 6,
+        "dlOk": 6,
+        "dlBig": 2
+      }
+    ],
+    "netErrors": [
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=local-workbook",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=file-84fbcc26-1f7d-435c-8257-58a7193114eb",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/engine/session-extras",
+        "status": 401
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      }
+    ],
+    "tabsAtMs": 44353,
+    "tabCount": 16,
+    "initialNonEmpty": 0,
+    "initialStatus": "Saving…",
+    "switched": true,
+    "finalNonEmpty": 418,
+    "probeExample": {
+      "nonEmpty": 221
+    },
+    "probeBackDL": {
+      "nonEmpty": 418
+    },
+    "threshold": 334,
+    "readsTotal": 29
+  },
+  "fileId": "file-84fbcc26-1f7d-435c-8257-58a7193114eb",
+  "ownerFirstSheetPaint": 0,
+  "ownerImgs": 1,
+  "reads": [
+    {
+      "atMs": 25334,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "sheet": "?",
+      "post": "{\"fileId\":\"file-84fbcc26-1f7d-435c-8257-58a7193114eb\"}",
+      "size": 547
+    },
+    {
+      "atMs": 25402,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "sheet": "?",
+      "post": "{\"sessionId\":\"sess_f4e6c166-e2ad-4908-88ac-d3896c7a4199\"}",
+      "size": 444
+    },
+    {
+      "atMs": 45878,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "sheet": "?",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"to",
+      "size": 54
+    },
+    {
+      "atMs": 68534,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 68534,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 68534,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 70799,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "size": 14
+    },
+    {
+      "atMs": 70799,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 20545
+    },
+    {
+      "atMs": 70799,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "size": 87
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Settings",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "size": 93
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International URLs",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "size": 89
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "DropdownSizer",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "size": 14
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Images",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "size": 77
+    },
+    {
+      "atMs": 70878,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Instructions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "size": 83
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Translations",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "size": 98
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Validation",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "size": 85
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "size": 89
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "size": 80
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Definitions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "size": 87
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Template",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "size": 86
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Browse Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "size": 81
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Valid Values",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "size": 85
+    },
+    {
+      "atMs": 70883,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "AttributePTDMAP",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "size": 87
+    },
+    {
+      "atMs": 71631,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 71631,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":69}}",
+      "size": 2409
+    },
+    {
+      "atMs": 72009,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 79364,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "size": 171311
+    }
+  ],
+  "ownerDropdownListsNonEmpty": 418,
+  "pass": true,
+  "verdict": "PASS"
+}

@@ -1,0 +1,129 @@
+{
+  "plan": {
+    "fixture": "/home/hatch/workspace/icecream-sheets/test-data/perf-fixtures/perf-p75.xlsx",
+    "user": "rt-p75",
+    "tag": "p75rt"
+  },
+  "steps": [
+    {
+      "step": "login",
+      "user": "rt-p75"
+    },
+    {
+      "step": "load",
+      "wallMs": 10267
+    },
+    {
+      "step": "mod1",
+      "kind": "edit",
+      "sheet": "Constants",
+      "target": "B7",
+      "value": "366",
+      "before": {
+        "Constants!B7": "365"
+      },
+      "after": {
+        "Constants!B7": "366"
+      },
+      "formulaBefore": "365",
+      "formulaAfter": "366",
+      "settled": true
+    },
+    {
+      "step": "mod2",
+      "kind": "edit",
+      "sheet": "Constants",
+      "target": "F7",
+      "value": "EUR",
+      "before": {
+        "Constants!F7": "USD",
+        "Constants!F9": "USD  000s",
+        "Constants!C12": "USD  000s",
+        "Constants!C13": "USD  000s"
+      },
+      "after": {
+        "Constants!F7": "EUR",
+        "Constants!F9": "EUR  000s",
+        "Constants!C12": "EUR  000s",
+        "Constants!C13": "EUR  000s"
+      },
+      "formulaBefore": "USD",
+      "formulaAfter": "EUR",
+      "settled": true
+    },
+    {
+      "step": "mod3",
+      "kind": "type",
+      "sheet": "Constants",
+      "target": "H10",
+      "value": "=B7*2",
+      "before": {
+        "Constants!H10": ""
+      },
+      "after": {
+        "Constants!H10": "732"
+      },
+      "formulaBefore": null,
+      "formulaAfter": "=B7*2",
+      "settled": true
+    },
+    {
+      "step": "mod4",
+      "kind": "clear",
+      "sheet": "Constants",
+      "target": "H7",
+      "value": null,
+      "before": {
+        "Constants!H7": "1"
+      },
+      "after": {
+        "Constants!H7": ""
+      },
+      "formulaBefore": "=ROW()-ROW(Constants!$H$6:Constants!$O$6)",
+      "formulaAfter": null,
+      "settled": true
+    },
+    {
+      "step": "mod5",
+      "kind": "insertRow",
+      "sheet": "Constants",
+      "target": "A12",
+      "value": null,
+      "before": {
+        "Constants!A12": "Debt Opening",
+        "Constants!A13": "PPE Opening",
+        "Constants!B13": "50,000",
+        "Constants!C13": "EUR  000s",
+        "Constants!A14": "",
+        "Constants!C14": ""
+      },
+      "after": {
+        "Constants!A12": "",
+        "Constants!A13": "Debt Opening",
+        "Constants!B13": "50,000",
+        "Constants!C13": "EUR  000s",
+        "Constants!A14": "PPE Opening",
+        "Constants!C14": "EUR  000s"
+      },
+      "formulaBefore": null,
+      "formulaAfter": null,
+      "settled": true
+    },
+    {
+      "step": "save-download",
+      "error": "TimeoutError: page.waitForEvent: Timeout 180000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================",
+      "bodyTail": "es and Queries\nNamed Constants\nNamed Labels\nPivotTable Format Spacers\nList of named literals and constants\nNamed Labels\nUsed to add blanks to pivot tables used for financial statements\nName\nValue\nUOM\nName\nDisplay\nPeroid\nSpacer 1\nSpacer 2\nSpacer 3\nSpacer 4\nSpacer 5\nSpacer 6\nSpacer 7\nDPY\n366\nDays Per Year\nCurrency\nEUR\nTolerance\n0.003\nDeviation Threshold\nDate Format\nYYYY\nPeriods\n10\nYears\nThousands\nEUR 000s\nStart Year\n2012\nYYYY\n732\nForecast Period Start\n6\nYears\nDebt Opening\n50,000\nEUR 000s\nPPE Opening\n50000\nEUR 000s\nFMTs\nCover\nTOC\nConstants\nImports\nInputs\nCalcs\nIncome\nCash Flow\nBalance\nSummaries\nDashboard\nCHKs\n+\nProtocol v1\nCalc: automatic\nCell: A12\n✓ Saved\nFormula:\nEnglish (US)\nEnglish (UK)\nEspañol\nFrançais\nDeutsch\n日本語\n中文\nuser:rt-p75\nnot authenticated (401)\nA12: Debt Opening\n✦ Agent\n🎙️ Voice"
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (File not found)",
+    "console: Access to fetch at 'http://127.0.0.1:18301/load/stream' from origin 'http://127.0.0.1:14373' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' h",
+    "console: Failed to load resource: net::ERR_FAILED",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "pageerror: Error",
+    "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ]
+}

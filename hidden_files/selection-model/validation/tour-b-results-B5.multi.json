@@ -1,0 +1,25 @@
+{
+ "checks": [
+  {
+   "id": "B5.multi.before",
+   "pass": true,
+   "detail": "A2={\"value\":\"Item2\"} D2={\"value\":6,\"formula\":\"=B2*C2\"}"
+  },
+  {
+   "id": "B5.multi.selected",
+   "pass": true,
+   "detail": "headers=[\"2\",\"3\",\"4\"]"
+  },
+  {
+   "id": "B5.multi.after",
+   "pass": true,
+   "detail": "after={\"a2\":{\"value\":null},\"a3\":{\"value\":null},\"a4\":{\"value\":null},\"a5\":{\"value\":\"Item2\"},\"d5\":{\"value\":6,\"formula\":\"=B5*C5\"},\"a6\":{\"value\":\"Item3\"},\"a7\":{\"value\":\"Item4\"}} (3 rows inserted above row 2; Item2 lands at row 5 with shifted formula)"
+  }
+ ],
+ "shots": [
+  "b5-multi-selected.png",
+  "b5-multi-menu.png",
+  "b5-multi-after.png"
+ ],
+ "verdict": "ALL PASS"
+}

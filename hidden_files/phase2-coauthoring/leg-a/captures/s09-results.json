@@ -1,0 +1,34 @@
+{
+ "scenario": "9-owner-kill",
+ "verdict": "PASS",
+ "checks": {
+  "engineDied": true,
+  "engineBackUp": true,
+  "takeoverHappened": true,
+  "postKillEditLandsAndRecalcs": true
+ },
+ "before": {
+  "revision": 1,
+  "range": {
+   "0,0": "7",
+   "0,1": "8",
+   "1,0": "15",
+   "1,1": "41"
+  },
+  "epoch": 1,
+  "sessionId": "sess_d9421fd4-bcfa-4527-bedb-75da89f3cad7"
+ },
+ "killedPid": 10170,
+ "afterRegistry": {
+  "fileId": "file-36d320a3-6f3e-4489-8921-c370d2c4f6c1",
+  "sessionId": "sess_d9421fd4-bcfa-4527-bedb-75da89f3cad7",
+  "ownerInstance": "engine-1",
+  "ownerEndpoint": "http://127.0.0.1:8201",
+  "leaseExpiry": 1792635550899,
+  "ownershipEpoch": 2,
+  "currentRevision": 1,
+  "storedRevision": 0,
+  "updatedAt": 1792635520899,
+  "creatorPrincipal": "user:alice"
+ }
+}

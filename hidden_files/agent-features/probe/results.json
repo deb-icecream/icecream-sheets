@@ -1,0 +1,480 @@
+{
+ "startedAt": "2026-10-21T23:27:48.680Z",
+ "steps": {
+  "step1_tokenMinted": {
+   "ok": true,
+   "lengthBucket": ">20 chars (value not recorded)"
+  },
+  "step1_vertex": {
+   "attempts": [
+    {
+     "model": "google/gemini-2.5-flash-lite",
+     "status": 200,
+     "latencyMs": 1250,
+     "snippet": "pong"
+    }
+   ],
+   "workingModel": "google/gemini-2.5-flash-lite"
+  },
+  "step2_config": {
+   "postStatus": 200,
+   "postLatencyMs": 57,
+   "postDescribe": {
+    "provider": "openai-compatible",
+    "baseUrl": "https://us-central1-aiplatform.googleapis.com/v1/projects/dreamscapes-zero/locations/us-central1/endpoints/openapi",
+    "model": "google/gemini-2.5-flash-lite",
+    "hasKey": true
+   },
+   "getStatus": 200,
+   "getLatencyMs": 16,
+   "getDescribe": {
+    "provider": "openai-compatible",
+    "baseUrl": "https://us-central1-aiplatform.googleapis.com/v1/projects/dreamscapes-zero/locations/us-central1/endpoints/openapi",
+    "model": "google/gemini-2.5-flash-lite",
+    "hasKey": true
+   }
+  },
+  "step3_threadId": "probe-w1-1792625277141",
+  "step3": [
+   {
+    "file": "step3a-write.json",
+    "prompt": "Set A1 to 111, A2 to 222, and A3 to 333 on Sheet1.",
+    "status": 200,
+    "latencyMs": 1982,
+    "message": "Setting cells A1, A2, and A3 on Sheet1.",
+    "audit": [
+     {
+      "seq": 1,
+      "ts": 1792625277725,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "user_message",
+      "text": "Set A1 to 111, A2 to 222, and A3 to 333 on Sheet1."
+     },
+     {
+      "seq": 2,
+      "ts": 1792625279097,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "tool_call",
+      "tool": "write_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "cells": {
+        "A1": "111",
+        "A2": "222",
+        "A3": "333"
+       }
+      },
+      "ok": false,
+      "summary": "write_cells failed: undefined"
+     },
+     {
+      "seq": 3,
+      "ts": 1792625279097,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "agent_message",
+      "text": "Setting cells A1, A2, and A3 on Sheet1."
+     }
+    ]
+   },
+   {
+    "file": "step3b-sum.json",
+    "prompt": "What is the sum of A1:A3 on Sheet1?",
+    "status": 200,
+    "latencyMs": 654,
+    "message": "Reading cells A1:A3 from Sheet1 to calculate their sum.",
+    "audit": [
+     {
+      "seq": 1,
+      "ts": 1792625277725,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "user_message",
+      "text": "Set A1 to 111, A2 to 222, and A3 to 333 on Sheet1."
+     },
+     {
+      "seq": 2,
+      "ts": 1792625279097,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "tool_call",
+      "tool": "write_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "cells": {
+        "A1": "111",
+        "A2": "222",
+        "A3": "333"
+       }
+      },
+      "ok": false,
+      "summary": "write_cells failed: undefined"
+     },
+     {
+      "seq": 3,
+      "ts": 1792625279097,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "agent_message",
+      "text": "Setting cells A1, A2, and A3 on Sheet1."
+     },
+     {
+      "seq": 4,
+      "ts": 1792625279148,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "user_message",
+      "text": "What is the sum of A1:A3 on Sheet1?"
+     },
+     {
+      "seq": 5,
+      "ts": 1792625279773,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "cell_range": "A1:A3"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 6,
+      "ts": 1792625279773,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "agent_message",
+      "text": "Reading cells A1:A3 from Sheet1 to calculate their sum."
+     }
+    ]
+   },
+   {
+    "file": "step3c-largest-double.json",
+    "prompt": "Read Sheet1 A1:A3 and tell me which of the values is the largest, and what you get if you double it.",
+    "status": 200,
+    "latencyMs": 723,
+    "message": "Reading cells A1:A3 from Sheet1 to find the largest value and double it.",
+    "audit": [
+     {
+      "seq": 1,
+      "ts": 1792625277725,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "user_message",
+      "text": "Set A1 to 111, A2 to 222, and A3 to 333 on Sheet1."
+     },
+     {
+      "seq": 2,
+      "ts": 1792625279097,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "tool_call",
+      "tool": "write_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "cells": {
+        "A1": "111",
+        "A2": "222",
+        "A3": "333"
+       }
+      },
+      "ok": false,
+      "summary": "write_cells failed: undefined"
+     },
+     {
+      "seq": 3,
+      "ts": 1792625279097,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "agent_message",
+      "text": "Setting cells A1, A2, and A3 on Sheet1."
+     },
+     {
+      "seq": 4,
+      "ts": 1792625279148,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "user_message",
+      "text": "What is the sum of A1:A3 on Sheet1?"
+     },
+     {
+      "seq": 5,
+      "ts": 1792625279773,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "cell_range": "A1:A3"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 6,
+      "ts": 1792625279773,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "agent_message",
+      "text": "Reading cells A1:A3 from Sheet1 to calculate their sum."
+     },
+     {
+      "seq": 7,
+      "ts": 1792625279790,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "user_message",
+      "text": "Read Sheet1 A1:A3 and tell me which of the values is the largest, and what you get if you double it."
+     },
+     {
+      "seq": 8,
+      "ts": 1792625280497,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "range": "A1:A3"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 9,
+      "ts": 1792625280497,
+      "principal": "user:alice",
+      "threadId": "probe-w1-1792625277141",
+      "kind": "agent_message",
+      "text": "Reading cells A1:A3 from Sheet1 to find the largest value and double it."
+     }
+    ]
+   }
+  ],
+  "step4_toggle": {
+   "invalid": {
+    "postStatus": 200,
+    "postDescribe": {
+     "provider": "openai-compatible",
+     "baseUrl": "https://us-central1-aiplatform.googleapis.com/v1/projects/dreamscapes-zero/locations/us-central1/endpoints/openapi",
+     "model": "google/gemini-2.5-flash-lite",
+     "hasKey": true
+    },
+    "messageStatus": 500,
+    "latencyMs": 72,
+    "response": {
+     "ok": false,
+     "error": "agent error: openai-compatible backend: provider returned 401 ([{\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://devel)"
+    }
+   },
+   "restored": {
+    "postStatus": 200,
+    "postDescribe": {
+     "provider": "openai-compatible",
+     "baseUrl": "https://us-central1-aiplatform.googleapis.com/v1/projects/dreamscapes-zero/locations/us-central1/endpoints/openapi",
+     "model": "google/gemini-2.5-flash-lite",
+     "hasKey": true
+    },
+    "messageStatus": 502,
+    "latencyMs": 30068,
+    "response": {
+     "ok": false,
+     "error": "backend unavailable"
+    }
+   }
+  },
+  "step5_session": {
+   "fileId": "file-960d6f76-2494-4fc7-91dc-965ad347821b",
+   "sessionId": "sess_fc497fdb-c706-490e-88ad-bfc33f51b28e",
+   "engineUrl": "http://127.0.0.1:8101",
+   "openJsonKeys": [
+    "ok",
+    "fileId",
+    "sessionId",
+    "engineUrl",
+    "accessToken",
+    "role",
+    "revision",
+    "joined",
+    "ownershipEpoch"
+   ]
+  },
+  "step5_engineSanity": {
+   "A1": {
+    "status": 401,
+    "json": {
+     "ok": false,
+     "error": "engine access token required"
+    }
+   },
+   "B1": {
+    "status": 401,
+    "json": {
+     "ok": false,
+     "error": "engine access token required"
+    }
+   }
+  },
+  "step5": {
+   "bindingThreadId": "probe-w1-bind-1792625313019",
+   "agentRead": {
+    "status": 200,
+    "latencyMs": 14256,
+    "message": "Reading the requested cells from Sheet1.",
+    "audit": [
+     {
+      "seq": 16,
+      "ts": 1792625313042,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "user_message",
+      "text": "What values are in Sheet1 A1:A3, and what is in B1?"
+     },
+     {
+      "seq": 17,
+      "ts": 1792625327192,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "range": "A1:A3"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 18,
+      "ts": 1792625327233,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "range": "B1"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 19,
+      "ts": 1792625327234,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "agent_message",
+      "text": "Reading the requested cells from Sheet1."
+     }
+    ]
+   },
+   "agentWrite": {
+    "status": 200,
+    "latencyMs": 928,
+    "message": "Setting C1 to 424242 on Sheet1.",
+    "audit": [
+     {
+      "seq": 16,
+      "ts": 1792625313042,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "user_message",
+      "text": "What values are in Sheet1 A1:A3, and what is in B1?"
+     },
+     {
+      "seq": 17,
+      "ts": 1792625327192,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "range": "A1:A3"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 18,
+      "ts": 1792625327233,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "tool_call",
+      "tool": "read_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "range": "B1"
+      },
+      "ok": false,
+      "summary": "read_cells failed: undefined"
+     },
+     {
+      "seq": 19,
+      "ts": 1792625327234,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "agent_message",
+      "text": "Reading the requested cells from Sheet1."
+     },
+     {
+      "seq": 20,
+      "ts": 1792625327352,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "user_message",
+      "text": "Set C1 to 424242 on Sheet1."
+     },
+     {
+      "seq": 21,
+      "ts": 1792625328184,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "tool_call",
+      "tool": "write_cells",
+      "args": {
+       "sheet_name": "Sheet1",
+       "cell": "C1",
+       "value": "424242"
+      },
+      "ok": false,
+      "summary": "write_cells failed: undefined"
+     },
+     {
+      "seq": 22,
+      "ts": 1792625328184,
+      "principal": "user:alice",
+      "threadId": "probe-w1-bind-1792625313019",
+      "kind": "agent_message",
+      "text": "Setting C1 to 424242 on Sheet1."
+     }
+    ]
+   },
+   "engineAfter": {
+    "C1": {
+     "status": 401,
+     "json": {
+      "ok": false,
+      "error": "engine access token required"
+     }
+    },
+    "A1": {
+     "status": 401,
+     "json": {
+      "ok": false,
+      "error": "engine access token required"
+     }
+    }
+   }
+  }
+ },
+ "login": {
+  "ok": true
+ },
+ "finishedAt": "2026-10-21T23:28:48.245Z"
+}

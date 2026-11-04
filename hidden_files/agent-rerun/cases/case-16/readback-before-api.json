@@ -1,0 +1,279 @@
+{
+ "values": [
+  [
+   {
+    "kind": "string",
+    "value": "Product"
+   },
+   {
+    "kind": "string",
+    "value": "Region"
+   },
+   {
+    "kind": "string",
+    "value": "Amount"
+   },
+   {
+    "kind": "string",
+    "value": "Quantity"
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "Apples"
+   },
+   {
+    "kind": "string",
+    "value": "North"
+   },
+   {
+    "kind": "number",
+    "value": 120
+   },
+   {
+    "kind": "number",
+    "value": 10
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "Bananas"
+   },
+   {
+    "kind": "string",
+    "value": "South"
+   },
+   {
+    "kind": "number",
+    "value": 80
+   },
+   {
+    "kind": "number",
+    "value": 5
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "Apples"
+   },
+   {
+    "kind": "string",
+    "value": "South"
+   },
+   {
+    "kind": "number",
+    "value": 150
+   },
+   {
+    "kind": "number",
+    "value": 12
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "Oranges"
+   },
+   {
+    "kind": "string",
+    "value": "North"
+   },
+   {
+    "kind": "number",
+    "value": 200
+   },
+   {
+    "kind": "number",
+    "value": 20
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ]
+ ],
+ "formulas": [
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ ]
+}

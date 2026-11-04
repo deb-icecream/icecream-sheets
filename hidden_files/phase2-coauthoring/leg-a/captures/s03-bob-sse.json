@@ -1,0 +1,144 @@
+[
+ {
+  "t": 1792624535519,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792624535630,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-981e2622-8691-4445-89a1-b1024873bc48\"}"
+ },
+ {
+  "t": 1792624535634,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":true}"
+ },
+ {
+  "t": 1792624535635,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792624536998,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624547988,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792624547996,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"fileId\":\"file-981e2622-8691-4445-89a1-b1024873bc48\"}"
+ },
+ {
+  "t": 1792624548000,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ },
+ {
+  "t": 1792624548001,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624548163,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":2,\"origin\":{\"clientId\":\"web-mviqd3tz-4l19j\",\"clientSeq\":1,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":{\"kind\":\"number\",\"value\":555}}]}"
+ },
+ {
+  "t": 1792624548182,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":2,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792624548182,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624549651,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":2,\"storedRevision\":2,\"saving\":false}"
+ },
+ {
+  "t": 1792624552841,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624553121,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624553664,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":3,\"origin\":{\"clientId\":\"web-mviqd3tz-4l19j\",\"clientSeq\":2,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":{\"kind\":\"number\",\"value\":888}}]}"
+ },
+ {
+  "t": 1792624553680,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":3,\"storedRevision\":2,\"saving\":true}"
+ },
+ {
+  "t": 1792624553736,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":4,\"origin\":{\"clientId\":\"web-mviqd2dr-4vlvo\",\"clientSeq\":2,\"principal\":\"user:alice\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":{\"kind\":\"number\",\"value\":777}}]}"
+ },
+ {
+  "t": 1792624553738,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":4,\"storedRevision\":2,\"saving\":true}"
+ },
+ {
+  "t": 1792624553984,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624554037,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624554267,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624555314,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":4,\"storedRevision\":4,\"saving\":false}"
+ },
+ {
+  "t": 1792624558059,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ }
+]

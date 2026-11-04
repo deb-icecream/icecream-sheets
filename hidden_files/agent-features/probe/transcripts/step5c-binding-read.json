@@ -1,0 +1,46 @@
+{
+ "prompt": "Use the read_cells tool with exactly these args: {\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":2,\"endCol\":1}. Then tell me the values in A1:A3 and what is in B1.",
+ "status": 200,
+ "latencyMs": 1819,
+ "response": {
+  "threadId": "probe-w1-bind3-1792641054385",
+  "message": "The values in A1:A3 are 7001, 7002, and 7003. The value in B1 is GRIDWORKBOOK.",
+  "needsInput": null,
+  "audit": [
+   {
+    "seq": 1,
+    "ts": 1792641054427,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "user_message",
+    "text": "Use the read_cells tool with exactly these args: {\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":2,\"endCol\":1}. Then tell me the values in A1:A3 and what is in B1."
+   },
+   {
+    "seq": 2,
+    "ts": 1792641055539,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "args": {
+     "sheet": "Sheet1",
+     "startRow": 0,
+     "startCol": 0,
+     "endRow": 2,
+     "endCol": 1
+    },
+    "ok": true,
+    "summary": "read_cells ok"
+   },
+   {
+    "seq": 3,
+    "ts": 1792641056198,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "agent_message",
+    "text": "The values in A1:A3 are 7001, 7002, and 7003. The value in B1 is GRIDWORKBOOK."
+   }
+  ],
+  "chart": null
+ }
+}

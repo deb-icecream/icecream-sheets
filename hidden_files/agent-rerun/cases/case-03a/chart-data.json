@@ -1,0 +1,44 @@
+{
+ "chartDivCount": 1,
+ "canvases": [
+  {
+   "present": true,
+   "width": 360,
+   "height": 250
+  }
+ ],
+ "configs": [
+  {
+   "via": "react-state",
+   "type": null,
+   "labels": [
+    "Revenue"
+   ],
+   "datasets": [
+    {
+     "label": "mean",
+     "data": [
+      13283.333333333334
+     ]
+    }
+   ]
+  },
+  {
+   "via": "react-state",
+   "type": "bar",
+   "labels": [
+    "Revenue"
+   ],
+   "datasets": [
+    {
+     "label": "mean",
+     "data": [
+      13283.333333333334
+     ]
+    }
+   ]
+  }
+ ],
+ "errors": [],
+ "fiberSteps": 16301
+}

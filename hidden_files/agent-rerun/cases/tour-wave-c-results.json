@@ -1,0 +1,150 @@
+{
+ "startedAt": "2026-10-22T10:27:54.230Z",
+ "user": "carol",
+ "groundTruth": {
+  "north": 89100,
+  "south": 70300,
+  "total": 159400
+ },
+ "probe": {
+  "status": 200,
+  "ms": 1181,
+  "reply": "I can only perform calculations on data within your spreadsheets or explain how Icecream Sheets works. I cannot perform general calculations like 2+2. Would you like to perform a calculation on your spreadsheet data?",
+  "auditTools": [
+   "user_message",
+   "agent_message"
+  ],
+  "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)"
+ },
+ "setup": {
+  "fileId": "file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2",
+  "sessionId": "sess_87e7e71d-f89c-43de-9809-b560eee67ccc",
+  "painted": false
+ },
+ "case3a": {
+  "verdict": "FAIL",
+  "assertions": [
+   {
+    "name": "Chart.js visual renders INLINE in chat (.agent-msg-chart + canvas)",
+    "pass": true,
+    "observed": "chartDivCount=1 canvases=[{\"present\":true,\"width\":360,\"height\":250}] msgFlags=[{\"canvas\":false,\"chartDiv\":false},{\"canvas\":true,\"chartDiv\":true}]"
+   },
+   {
+    "name": "chart data contains North total 89,100",
+    "pass": false,
+    "observed": "chartNums=[13283.333333333334,13283.333333333334] via=none chartHasNorth=false replyHasNorth=false"
+   },
+   {
+    "name": "chart data contains South total 70,300",
+    "pass": false,
+    "observed": "chartNums=[13283.333333333334,13283.333333333334] via=none chartHasSouth=false replyHasSouth=false"
+   },
+   {
+    "name": "turn did not time out (harness)",
+    "pass": true,
+    "observed": "5254ms retried=false"
+   }
+  ],
+  "chartNums": [
+   13283.333333333334,
+   13283.333333333334
+  ],
+  "numbersVerifiedVia": "none",
+  "replyHead": "Here is a bar chart showing the mean revenue by region. I've analyzed the 'Sales' sheet, specifically the range A1:K101, and the chart displays the average revenue."
+ },
+ "case3b": {
+  "verdict": "FAIL",
+  "assertions": [
+   {
+    "name": "LLM-generated app artifact embeds in chat (.agent-artifact panel)",
+    "pass": true,
+    "observed": "count=1 title=\"Build an app to explore this sales data \u2014 a revenue-by-re\u2026\" srcMeta={\"id\":\"artifact_mvjegmj6_2\",\"name\":\"Build an app to explore this sales data \u2014 a revenue-by-re\u2026\",\"kind\":\"react-app\",\"template\":\"custom\",\"sourceLength\":3483,\"sourceHead\":\"function App() {\\n  const [data, setData] = React.useState([]);\\n  const [selectedRegion, setSelectedRegion] = React.useState('All'"
+   },
+   {
+    "name": "app renders data ROWS with actual fixture values (not headings alone)",
+    "pass": false,
+    "observed": "valuesShown=[] appTextHead="
+   },
+   {
+    "name": "app persists across page reload (Apps tab lists it)",
+    "pass": true,
+    "observed": "persistText=\"New app from this sheet\\nGenerate\\nSortable tables, chart dashboards, data-entry forms. Analysis requests route to data analysis instead.\\nSaved apps (1)\\nBuild an app to explore this sales data \u2014 a reven\" reopened=false"
+   },
+   {
+    "name": "two-way binding (grid->app OR app->grid, with read-back)",
+    "pass": false,
+    "observed": "sheetToApp=false appEdit={\"attempted\":false} c2mid=null"
+   },
+   {
+    "name": "fixture restored afterwards (C2 back to 12000)",
+    "pass": true,
+    "observed": "c2end={\"kind\":\"number\",\"value\":12000}"
+   }
+  ],
+  "artifactTitle": "Build an app to explore this sales data \u2014 a revenue-by-re\u2026",
+  "sheetToApp": false,
+  "appEdit": {
+   "attempted": false
+  },
+  "persists": true
+ },
+ "case4": {
+  "verdict": "FAIL",
+  "assertions": [
+   {
+    "name": "native chart visible in the grid (canvas/SVG outside chat panels)",
+    "pass": true,
+    "observed": "{\"canvasCount\":0,\"canvasSizes\":[],\"svgCount\":40,\"bodySnippet\":\"Skip to grid\\nSkip to ribbon\\n\ud83e\uddca Icecream Sheets\\n\ud83d\udfe2\\npublic\\ninternal\\nconfidential\\nCA\\n\ud83d\udd17 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\\nSign in with Google\\n\ud83d\udfe2\\nOnline\\nIcecream Sheets\\nFile\\nHome\\nInsert\\nDraw\\nPage Layout\\nFormulas\\nData\\nReview\\nView\\nExtensions\\nHelp\\n Share\\nCut\\nCopy\\nPaste \u25be\\nFormat Painter\\nClipboard\\nFo\"}"
+   },
+   {
+    "name": "workbook saved (server storedRevision caught up to revision)",
+    "pass": false,
+    "observed": "{\"ok\":true,\"sessionId\":\"sess_87e7e71d-f89c-43de-9809-b560eee67ccc\",\"fileId\":\"file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\",\"fenced\":false,\"ownershipEpoch\":1,\"participants\":[{\"principal\":\"user:carol\",\"role\":\"editor\"}],\"status\":\"active\",\"revision\":0,\"storageRevision\":0,\"pendingCheckpointOps\":0,\"extrasDirty\":false,\"autosaveStats\":{\"flushes\":1,\"noopSkips\":0,\"forcedFlushes\":0},\"lastActivityAt\":1792665930855,\"idleTimeoutMs\":600000,\"instanceId\":\"engine-1\",\"snapshotChecksum\":\"59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0\"}"
+   },
+   {
+    "name": "chart still visible after reopen in a SECOND browser context",
+    "pass": true,
+    "observed": "{\"canvasCount\":0,\"canvasSizes\":[],\"svgCount\":40,\"bodySnippet\":\"Skip to grid\\nSkip to ribbon\\n\ud83e\uddca Icecream Sheets\\n\ud83d\udfe2\\npublic\\ninternal\\nconfidential\\nCA\\n\ud83d\udd17 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\\nSign in with Google\\n\ud83d\udfe2\\nOnline\\nIcecream Sheets\\nFile\\nHome\\nInsert\\nDraw\\nPage Layout\\nFormulas\\nData\\nReview\\nView\\nExtensions\\nHelp\\n Share\\nCut\\nCopy\\nPaste \u25be\\nFormat Painter\\nClipboard\\nFo\"}"
+   },
+   {
+    "name": "download parse-back: xl/charts/chart1.xml exists + readCharts >= 1 chart",
+    "pass": false,
+    "observed": "parts=[] charts=[] error=none"
+   },
+   {
+    "name": "chart cached values match fixture data (North+South totals OR >=3 raw revenues)",
+    "pass": false,
+    "observed": "cachedNums=[] aggregatedMatch=false rawMatchCount=0"
+   }
+  ],
+  "gridChart": {
+   "canvasCount": 0,
+   "canvasSizes": [],
+   "svgCount": 40,
+   "bodySnippet": "Skip to grid\nSkip to ribbon\n\ud83e\uddca Icecream Sheets\n\ud83d\udfe2\npublic\ninternal\nconfidential\nCA\n\ud83d\udd17 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n\ud83d\udfe2\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nCut\nCopy\nPaste \u25be\nFormat Painter\nClipboard\nFo"
+  },
+  "gridChart2": {
+   "canvasCount": 0,
+   "canvasSizes": [],
+   "svgCount": 40,
+   "bodySnippet": "Skip to grid\nSkip to ribbon\n\ud83e\uddca Icecream Sheets\n\ud83d\udfe2\npublic\ninternal\nconfidential\nCA\n\ud83d\udd17 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n\ud83d\udfe2\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nCut\nCopy\nPaste \u25be\nFormat Painter\nClipboard\nFo"
+  },
+  "cachedNums": []
+ },
+ "case12": {
+  "verdict": "PASS",
+  "basis": "attempt 2 (creation + preview + auto-run, screenshot-verified); attempt 1 invalid (modal dialog); attempt 3 = fresh-profile re-open check found localStorage-only persistence (limitation noted, not a case criterion)",
+  "uiElementsUsed": [
+   "ribbon tab \"Insert\"",
+   "ribbon button \"Build App\" (Insert > Apps group)",
+   "builder range inputs \"First row\" / \"First col\" / \"Last row\" (=13) / \"Last col\" (=3)",
+   "builder footer button \"Next\" (Data source -> Views)",
+   "builder footer button \"Next\" (Views -> Configure)",
+   "builder \"App name\" text input (=\"Wave C Sales App\")",
+   "builder footer button \"Next\" (Configure -> Preview)",
+   "builder footer button \"Create app\"",
+   "(on re-open check) ribbon menu \"My Apps \u25be\""
+  ],
+  "runnerRows": 12
+ }
+}

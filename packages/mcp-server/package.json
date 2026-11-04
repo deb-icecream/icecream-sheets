@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@google-cloud/firestore": "^9.3.1",
+    "@icecream-sheets/engine": "^0.1.0",
+    "@icecream-sheets/gateway": "^0.1.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "hyperformula": "^2.7.0",
+    "zod": "^3.23.0",
+    "@icecream-sheets/service": "^0.1.0"
+  },
+  "description": "MCP server + code sandbox for Icecream Sheets (Phase 3). Drives @icecream-sheets/engine over stdio.",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./server": "./dist/server.js",
+    "./http": "./dist/http.js",
+    "./subscriptions": "./dist/subscriptions.js",
+    "./memory": "./dist/memory.js",
+    "./packs": "./dist/packs/index.js"
+  },
+  "license": "GPL-3.0-only",
+  "main": "./dist/index.js",
+  "name": "@icecream-sheets/mcp-server",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "serve:http": "node dist/bin/http.js",
+    "test": "vitest run"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0"
+}

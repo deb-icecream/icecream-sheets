@@ -1,0 +1,71 @@
+{
+  "events": [
+    {
+      "t": "tabs-rendered",
+      "afterMs": 12843,
+      "tabsSeen": 16,
+      "status": "✓ Saved"
+    },
+    {
+      "t": "dropdownlists+2s",
+      "nonEmpty": 0,
+      "status": "Saving…",
+      "reads": [
+        200,
+        404,
+        404,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "t": "dropdownlists+12s",
+      "nonEmpty": 0,
+      "status": "✓ Saved",
+      "reads": [
+        200,
+        404,
+        404,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "t": "settled",
+      "status": "✓ Saved"
+    },
+    {
+      "t": "canonical-Browse Data",
+      "nonEmpty": 4
+    },
+    {
+      "t": "canonical-Dropdown Lists",
+      "nonEmpty": 418
+    }
+  ]
+}

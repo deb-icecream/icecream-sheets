@@ -1,0 +1,37 @@
+[
+ {
+  "t": 1792624487562,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792624488066,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-f009972f-74e9-4568-9af0-5548508ff443\"}"
+ },
+ {
+  "t": 1792624488067,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624488076,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792624488571,
+  "kind": "event",
+  "event": "session",
+  "data": "{\"kind\":\"load\",\"sessionId\":\"sess_be2c7e69-7994-43d3-a2f1-52a3964215d3\"}"
+ },
+ {
+  "t": 1792624491920,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ }
+]

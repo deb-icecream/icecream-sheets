@@ -1,0 +1,2658 @@
+{
+ "totalFormulas": 6296,
+ "results": [
+  {
+   "file": "beyond-excel-bxl3way.xlsx",
+   "formulas": 766,
+   "skippedNoCache": 5,
+   "skippedVolatile": 16,
+   "mismatches": [
+    {
+     "sheet": "CHKs",
+     "cell": "B7",
+     "formula": "=AND(CHKs!$F$7:CHKs!$F$11)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "genuine",
+     "reason": "downstream of unresolvable Data-Model GETPIVOTDATA (via F8:F10)"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "B8",
+     "formula": "=IF(NOT(Checks_Passed),MATCH(FALSE, CHKs!$F$7:CHKs!$F$11,0),0)",
+     "cached": "0",
+     "ours": "2",
+     "bucket": "genuine",
+     "reason": "downstream of unresolvable Data-Model GETPIVOTDATA (via Checks_Passed)"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "F8",
+     "formula": "=IFERROR(ABS(SUM(Income_Statement_Pivot) - SUM(Income_Statement_Table))<Toleranc",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "genuine",
+     "reason": "downstream of unresolvable Data-Model GETPIVOTDATA (B20 #REF!)"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "B9",
+     "formula": "=IF(Checks_Passed,\"Checks Passed\",\n  INDEX(CHKs!$D$7:CHKs!$D$11,Failed_Row) & \" ",
+     "cached": "\"Checks Passed\"",
+     "ours": "\"Balance Sheet failed. Adjust model so Ea\"",
+     "bucket": "genuine",
+     "reason": "downstream of unresolvable Data-Model GETPIVOTDATA (via Checks_Passed)"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "F9",
+     "formula": "=IFERROR(ABS(SUM(Cash_Flow_Pivot) - SUM(Cash_Flow_Table))<Tolerance,FALSE)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "genuine",
+     "reason": "downstream of unresolvable Data-Model GETPIVOTDATA (B16 #REF!)"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "F10",
+     "formula": "=IFERROR(ABS(SUM(Balance_Sheet_Pivot) - SUM(Balance_Sheet_Table))<Tolerance,FALS",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "genuine",
+     "reason": "downstream of unresolvable Data-Model GETPIVOTDATA (B18 #REF!)"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "B16",
+     "formula": "=GETPIVOTDATA(\"[Measures].[Sum of Closing Cash Balance]\",'Cash Flow'!$A$5,\"[tblC",
+     "cached": "279173.6002754987",
+     "ours": "#REF!",
+     "bucket": "genuine",
+     "reason": "GETPIVOTDATA against the Data Model ([Measures]); no data model available — analogous to CUBE"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "B18",
+     "formula": "=GETPIVOTDATA(\"[Measures].[Sum of Total Liabilities & Shareholders Equity]\",Bala",
+     "cached": "338079.5287768823",
+     "ours": "#REF!",
+     "bucket": "genuine",
+     "reason": "GETPIVOTDATA against the Data Model ([Measures]); no data model available — analogous to CUBE"
+    },
+    {
+     "sheet": "CHKs",
+     "cell": "B20",
+     "formula": "=GETPIVOTDATA(\"[Measures].[Sum of Net Earnings]\",Income!$A$5,\"[tblCal].[Year]\",\"",
+     "cached": "49852.2985892169",
+     "ours": "#REF!",
+     "bucket": "genuine",
+     "reason": "GETPIVOTDATA against the Data Model ([Measures]); no data model available — analogous to CUBE"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-Cubes-CubeFromRange-Input.xlsx",
+   "formulas": 14,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Cube",
+     "cell": "B3",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Measures].[Sum of Price]\")",
+     "cached": "\"Sum of Price\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C3",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Measures].[Sum of Amount]\")",
+     "cached": "\"Sum of Amount\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A4",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].&[Baclava]\")",
+     "cached": "\"Baclava\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B4",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A4,B$3)",
+     "cached": "14",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C4",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A4,C$3)",
+     "cached": "3",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A5",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].&[Cake]\")",
+     "cached": "\"Cake\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B5",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A5,B$3)",
+     "cached": "7",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C5",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A5,C$3)",
+     "cached": "27",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A6",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].&[Pie]\")",
+     "cached": "\"Pie\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B6",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A6,B$3)",
+     "cached": "12",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C6",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A6,C$3)",
+     "cached": "35",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A7",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].[All]\",\"Grand Total\")",
+     "cached": "\"Grand Total\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B7",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A7,B$3)",
+     "cached": "33",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C7",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A7,C$3)",
+     "cached": "65",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-ExternalLinks-WorkbookWithExternalLink.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B2",
+     "formula": "=[1]Sheet1!$A$1",
+     "cached": "\"hello world\"",
+     "ours": "#ERROR",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-Formulas-DataTableFormula-Excel-Input.xlsx",
+   "formulas": 9,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-MergedCellsBorder-inputfile.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-Sources-PivotTable-AllSources-input.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-CellsWithDateTimeDataTypeOrFormatting.xlsx",
+   "formulas": 16,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-CellsWithTimeSpanDataTypeOrFormatting.xlsx",
+   "formulas": 11,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-DrawingSizeInPx.xlsx",
+   "formulas": 8,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "International Settings",
+     "cell": "A21",
+     "formula": "=IF(Versioned_Override_Misc_Data_Table_URL<>\"\",Versioned_Override_Misc_Data_Tabl",
+     "cached": "\"http://g-ecx.images-amazon.com/images/G/\"",
+     "ours": "0",
+     "bucket": "genuine",
+     "reason": "stale cache: Excel-fresh = 0 = ours (name->empty A18; 0<>\"\" is TRUE in Excel); cached URL predates A18:A20 being cleared"
+    },
+    {
+     "sheet": "International Settings",
+     "cell": "A22",
+     "formula": "=IF(Versioned_Override_Data_Validation_Table_URL<>\"\",Versioned_Override_Data_Val",
+     "cached": "\"http://g-ecx.images-amazon.com/images/G/\"",
+     "ours": "0",
+     "bucket": "genuine",
+     "reason": "stale cache: Excel-fresh = 0 = ours (name->empty A19; 0<>\"\" is TRUE in Excel); cached URL predates A18:A20 being cleared"
+    },
+    {
+     "sheet": "International Settings",
+     "cell": "A23",
+     "formula": "=IF(Versioned_Override_Dropdown_Lists_Table_URL<>\"\",Versioned_Override_Dropdown_",
+     "cached": "\"http://g-ecx.images-amazon.com/images/G/\"",
+     "ours": "0",
+     "bucket": "genuine",
+     "reason": "stale cache: Excel-fresh = 0 = ours (name->empty A20; 0<>\"\" is TRUE in Excel); cached URL predates A18:A20 being cleared"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-FileWithDefaultStyleNameNotInEnglish.xlsx",
+   "formulas": 8,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Лист1",
+     "cell": "F1",
+     "formula": "=title",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "F3",
+     "formula": "=_value",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "B4",
+     "formula": "=_name",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "C4",
+     "formula": "=_role",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "D4",
+     "formula": "=_age",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "E4",
+     "formula": "=_address_city",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "F4",
+     "formula": "=_value",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "G4",
+     "formula": "=SUM(_Hours)",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-PivotTableWithMissingReference.xlsx",
+   "formulas": 141,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-TableHeadersWithLineBreaks.xlsx",
+   "formulas": 3,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-TemplateWithTableSourcePivotTables.xlsx",
+   "formulas": 1450,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "BondsOverview",
+     "cell": "L2",
+     "formula": "=_xll.DSSData(BondsOverview!$D$2,\"ytm\",valuation_date)/100",
+     "cached": "#VALUE!",
+     "ours": "#ERROR",
+     "bucket": "genuine",
+     "reason": "XLL add-in function _xll.DSSData (unresolvable without the add-in; Excel cached #VALUE!, ours #ERROR)"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-data-table-multi-table.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-data-table-one-variable.xlsx",
+   "formulas": 3,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-shared-formula-3d-reference.xlsx",
+   "formulas": 18,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-shared-formula-basic.xlsx",
+   "formulas": 18,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-shared-formula-text-results.xlsx",
+   "formulas": 12,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-track-changes-simple-cell-changes.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-bug-fixes.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-ceiling-floor.xlsx",
+   "formulas": 276,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "K1",
+     "formula": "=AND(K3:K81)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "K2",
+     "formula": "=AND(K3:K37)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "K39",
+     "formula": "=AND(K40:K81)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-column-style-autofilter.xlsx",
+   "formulas": 27,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-database.xlsx",
+   "formulas": 5,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet2",
+     "cell": "A11",
+     "formula": "=DCOUNT(database1, 2, A13:C14)",
+     "cached": "4",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "B11",
+     "formula": "=DCOUNT(database1,0,A16:C17)",
+     "cached": "2",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-external-refs.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "A1",
+     "formula": "=[1]Sheet1!A1",
+     "cached": "\"Name\"",
+     "ours": "#ERROR",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "A2",
+     "formula": "=[1]Sheet1!A2",
+     "cached": "\"Andy\"",
+     "ours": "#ERROR",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "A3",
+     "formula": "=[1]Sheet1!A3",
+     "cached": "\"Bruce\"",
+     "ours": "#ERROR",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "A4",
+     "formula": "=[1]Sheet1!A4",
+     "cached": "\"Charlie\"",
+     "ours": "#ERROR",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-formats.xlsx",
+   "formulas": 2,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-functions-excel-2010.xlsx",
+   "formulas": 517,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B2",
+     "formula": "=AND(Sheet2!C39:U47)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "D2",
+     "formula": "=ROUND(B2,12)=ROUND(C2,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "E2",
+     "formula": "=AND(D2:D80)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B6",
+     "formula": "=BINOM.DIST(F6,G2,F5,1)",
+     "cached": "0.014317596684776885",
+     "ours": "0.0143175967",
+     "bucket": "precision",
+     "reason": "rel diff 1.06e-9"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "D6",
+     "formula": "=ROUND(B6,12)=ROUND(C6,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B15",
+     "formula": "=CHISQ.TEST(F2:F10,G2:G10)",
+     "cached": "1.8744045912597986e-8",
+     "ours": "1.87440458709887e-8",
+     "bucket": "precision",
+     "reason": "rel diff 2.22e-9"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B28",
+     "formula": "=F.INV.RT(F5,G4,G7)",
+     "cached": "2.652899259689121",
+     "ours": "2.65289925862999",
+     "bucket": "precision",
+     "reason": "rel diff 3.99e-10"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "D28",
+     "formula": "=ROUND(B28,12)=ROUND(C28,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B29",
+     "formula": "=F.TEST(F2:F10,G2:G10)",
+     "cached": "5.814996997636946e-8",
+     "ours": "5.81499699757613e-8",
+     "bucket": "precision",
+     "reason": "rel diff 1.05e-11"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B33",
+     "formula": "=GAMMALN.PRECISE(F4)",
+     "cached": "0",
+     "ours": "-4.44089209850063e-16",
+     "bucket": "precision",
+     "reason": "rel diff 1.00e+0"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C19",
+     "formula": "=AGGREGATE( C$14,$A19,$C$1:$C$11)",
+     "cached": "43.125",
+     "ours": "49",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.20e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D19",
+     "formula": "=AGGREGATE( D$14,$A19,$C$1:$C$11)",
+     "cached": "8",
+     "ours": "9",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.11e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E19",
+     "formula": "=AGGREGATE( E$14,$A19,$C$1:$C$11)",
+     "cached": "8",
+     "ours": "9",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.11e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F19",
+     "formula": "=AGGREGATE( F$14,$A19,$C$1:$C$11)",
+     "cached": "77",
+     "ours": "96",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.98e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H19",
+     "formula": "=AGGREGATE( H$14,$A19,$C$1:$C$11)",
+     "cached": "4173193054800",
+     "ours": "400626533260800",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.90e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I19",
+     "formula": "=AGGREGATE( I$14,$A19,$C$1:$C$11)",
+     "cached": "23.344852598745252",
+     "ours": "28.0624304008046",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.68e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J19",
+     "formula": "=AGGREGATE( J$14,$A19,$C$1:$C$11)",
+     "cached": "21.837110042311",
+     "ours": "26.4575131106459",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.75e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K19",
+     "formula": "=AGGREGATE( K$14,$A19,$C$1:$C$11)",
+     "cached": "345",
+     "ours": "441",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.18e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L19",
+     "formula": "=AGGREGATE( L$14,$A19,$C$1:$C$11)",
+     "cached": "544.9821428571429",
+     "ours": "787.5",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 3.08e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M19",
+     "formula": "=AGGREGATE( M$14,$A19,$C$1:$C$11)",
+     "cached": "476.859375",
+     "ours": "700",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 3.19e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N19",
+     "formula": "=AGGREGATE( N$14,$A19,$C$1:$C$11)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R19",
+     "formula": "=AGGREGATE( R$14,$A19,$C$1:$C$11,0.4)",
+     "cached": "30.8",
+     "ours": "31.6",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.53e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S19",
+     "formula": "=AGGREGATE( S$14,$A19,$C$1:$C$11,2)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T19",
+     "formula": "=AGGREGATE( T$14,$A19,$C$1:$C$11,0.3)",
+     "cached": "29.4",
+     "ours": "30",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.00e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U19",
+     "formula": "=AGGREGATE( U$14,$A19,$C$1:$C$11,2)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C21",
+     "formula": "=AGGREGATE( C$14,$A21,$C$1:$C$11)",
+     "cached": "43.125",
+     "ours": "49",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.20e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D21",
+     "formula": "=AGGREGATE( D$14,$A21,$C$1:$C$11)",
+     "cached": "8",
+     "ours": "9",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.11e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E21",
+     "formula": "=AGGREGATE( E$14,$A21,$C$1:$C$11)",
+     "cached": "8",
+     "ours": "9",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.11e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F21",
+     "formula": "=AGGREGATE( F$14,$A21,$C$1:$C$11)",
+     "cached": "77",
+     "ours": "96",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.98e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "G21",
+     "formula": "=AGGREGATE( G$14,$A21,$E$1:$E$11)",
+     "cached": "15",
+     "ours": "12",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.00e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H21",
+     "formula": "=AGGREGATE( H$14,$A21,$C$1:$C$11)",
+     "cached": "4173193054800",
+     "ours": "400626533260800",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.90e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I21",
+     "formula": "=AGGREGATE( I$14,$A21,$C$1:$C$11)",
+     "cached": "23.344852598745252",
+     "ours": "28.0624304008046",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.68e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J21",
+     "formula": "=AGGREGATE( J$14,$A21,$C$1:$C$11)",
+     "cached": "21.837110042311",
+     "ours": "26.4575131106459",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.75e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K21",
+     "formula": "=AGGREGATE( K$14,$A21,$C$1:$C$11)",
+     "cached": "345",
+     "ours": "441",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.18e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L21",
+     "formula": "=AGGREGATE( L$14,$A21,$C$1:$C$11)",
+     "cached": "544.9821428571429",
+     "ours": "787.5",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 3.08e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M21",
+     "formula": "=AGGREGATE( M$14,$A21,$C$1:$C$11)",
+     "cached": "476.859375",
+     "ours": "700",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 3.19e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N21",
+     "formula": "=AGGREGATE( N$14,$A21,$C$1:$C$11)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R21",
+     "formula": "=AGGREGATE( R$14,$A21,$C$1:$C$11,0.4)",
+     "cached": "30.8",
+     "ours": "31.6",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.53e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S21",
+     "formula": "=AGGREGATE( S$14,$A21,$C$1:$C$11,2)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T21",
+     "formula": "=AGGREGATE( T$14,$A21,$C$1:$C$11,0.3)",
+     "cached": "29.4",
+     "ours": "30",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.00e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U21",
+     "formula": "=AGGREGATE( U$14,$A21,$C$1:$C$11,2)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C23",
+     "formula": "=AGGREGATE( C$14,$A23,$C$1:$C$11)",
+     "cached": "44.85454545454546",
+     "ours": "49.504132231405",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.39e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D23",
+     "formula": "=AGGREGATE( D$14,$A23,$C$1:$C$11)",
+     "cached": "10",
+     "ours": "11",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.09e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E23",
+     "formula": "=AGGREGATE( E$14,$A23,$C$1:$C$11)",
+     "cached": "10",
+     "ours": "11",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.09e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F23",
+     "formula": "=AGGREGATE( F$14,$A23,$C$1:$C$11)",
+     "cached": "91",
+     "ours": "96",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 5.21e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H23",
+     "formula": "=AGGREGATE( H$14,$A23,$C$1:$C$11)",
+     "cached": "4764268943834400",
+     "ours": "457369818608102000",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.90e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I23",
+     "formula": "=AGGREGATE( I$14,$A23,$C$1:$C$11)",
+     "cached": "27.9127329575057",
+     "ours": "30.6433324589924",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 8.91e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J23",
+     "formula": "=AGGREGATE( J$14,$A23,$C$1:$C$11)",
+     "cached": "26.48034355972978",
+     "ours": "29.2172711094644",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.37e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K23",
+     "formula": "=AGGREGATE( K$14,$A23,$C$1:$C$11)",
+     "cached": "448.54545454545456",
+     "ours": "544.545454545455",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.76e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L23",
+     "formula": "=AGGREGATE( L$14,$A23,$C$1:$C$11)",
+     "cached": "779.1206611570249",
+     "ours": "939.013824192337",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.70e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M23",
+     "formula": "=AGGREGATE( M$14,$A23,$C$1:$C$11)",
+     "cached": "701.2085950413224",
+     "ours": "853.648931083943",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.79e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N23",
+     "formula": "=AGGREGATE( N$14,$A23,$C$1:$C$11)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "P23",
+     "formula": "=AGGREGATE( P$14,$A23,$C$1:$C$11,1)",
+     "cached": "91",
+     "ours": "96",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 5.21e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R23",
+     "formula": "=AGGREGATE( R$14,$A23,$C$1:$C$11,0.4)",
+     "cached": "30.6",
+     "ours": "31",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.29e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S23",
+     "formula": "=AGGREGATE( S$14,$A23,$C$1:$C$11,2)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T23",
+     "formula": "=AGGREGATE( T$14,$A23,$C$1:$C$11,0.3)",
+     "cached": "28.6",
+     "ours": "29.2",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.05e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U23",
+     "formula": "=AGGREGATE( U$14,$A23,$C$1:$C$11,2)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C24",
+     "formula": "=AGGREGATE( C$14,$A24,$E$1:$E$11)",
+     "cached": "43",
+     "ours": "40.75",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 5.23e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D24",
+     "formula": "=AGGREGATE( D$14,$A24,$E$1:$E$11)",
+     "cached": "10",
+     "ours": "8",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.00e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E24",
+     "formula": "=AGGREGATE( E$14,$A24,$E$1:$E$11)",
+     "cached": "10",
+     "ours": "8",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.00e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F24",
+     "formula": "=AGGREGATE( F$14,$A24,$E$1:$E$11)",
+     "cached": "91",
+     "ours": "77",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.54e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H24",
+     "formula": "=AGGREGATE( H$14,$A24,$E$1:$E$11)",
+     "cached": "1911053180836800",
+     "ours": "1615429569600",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.99e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I24",
+     "formula": "=AGGREGATE( I$14,$A24,$E$1:$E$11)",
+     "cached": "29.507061301774304",
+     "ours": "25.6111025031835",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.32e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J24",
+     "formula": "=AGGREGATE( J$14,$A24,$E$1:$E$11)",
+     "cached": "27.992856231545932",
+     "ours": "23.9569927161153",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.44e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K24",
+     "formula": "=AGGREGATE( K$14,$A24,$E$1:$E$11)",
+     "cached": "430",
+     "ours": "326",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.42e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L24",
+     "formula": "=AGGREGATE( L$14,$A24,$E$1:$E$11)",
+     "cached": "870.6666666666666",
+     "ours": "655.928571428572",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.47e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M24",
+     "formula": "=AGGREGATE( M$14,$A24,$E$1:$E$11)",
+     "cached": "783.6",
+     "ours": "573.9375",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.68e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C25",
+     "formula": "=AGGREGATE( C$14,$A25,$C$1:$C$11)",
+     "cached": "44.85454545454546",
+     "ours": "49",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 8.46e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D25",
+     "formula": "=AGGREGATE( D$14,$A25,$C$1:$C$11)",
+     "cached": "10",
+     "ours": "9",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.00e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E25",
+     "formula": "=AGGREGATE( E$14,$A25,$C$1:$C$11)",
+     "cached": "10",
+     "ours": "9",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.00e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F25",
+     "formula": "=AGGREGATE( F$14,$A25,$C$1:$C$11)",
+     "cached": "91",
+     "ours": "96",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 5.21e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "G25",
+     "formula": "=AGGREGATE( G$14,$A25,$E$1:$E$11)",
+     "cached": "13",
+     "ours": "12",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 7.69e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H25",
+     "formula": "=AGGREGATE( H$14,$A25,$C$1:$C$11)",
+     "cached": "4764268943834400",
+     "ours": "400626533260800",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 9.16e-1)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I25",
+     "formula": "=AGGREGATE( I$14,$A25,$C$1:$C$11)",
+     "cached": "27.9127329575057",
+     "ours": "28.0624304008046",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 5.33e-3)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J25",
+     "formula": "=AGGREGATE( J$14,$A25,$C$1:$C$11)",
+     "cached": "26.48034355972978",
+     "ours": "26.4575131106459",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 8.62e-4)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K25",
+     "formula": "=AGGREGATE( K$14,$A25,$C$1:$C$11)",
+     "cached": "448.54545454545456",
+     "ours": "441",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.68e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L25",
+     "formula": "=AGGREGATE( L$14,$A25,$C$1:$C$11)",
+     "cached": "779.1206611570249",
+     "ours": "787.5",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.06e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M25",
+     "formula": "=AGGREGATE( M$14,$A25,$C$1:$C$11)",
+     "cached": "701.2085950413224",
+     "ours": "700",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.72e-3)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N25",
+     "formula": "=AGGREGATE( N$14,$A25,$C$1:$C$11)",
+     "cached": "32.5",
+     "ours": "34",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 4.41e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R25",
+     "formula": "=AGGREGATE( R$14,$A25,$D$1:$D$11,0.4)",
+     "cached": "58",
+     "ours": "60",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 3.33e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S25",
+     "formula": "=AGGREGATE( S$14,$A25,$D$1:$D$11,2)",
+     "cached": "61.5",
+     "ours": "63",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.38e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T25",
+     "formula": "=AGGREGATE( T$14,$A25,$D$1:$D$11,0.3)",
+     "cached": "53.6",
+     "ours": "54.2",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.11e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U25",
+     "formula": "=AGGREGATE( U$14,$A25,$D$1:$D$11,2)",
+     "cached": "61.5",
+     "ours": "63",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 2.38e-2)"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C41",
+     "formula": "=ROUND(C19,12)=ROUND(C30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D41",
+     "formula": "=ROUND(D19,12)=ROUND(D30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E41",
+     "formula": "=ROUND(E19,12)=ROUND(E30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F41",
+     "formula": "=ROUND(F19,12)=ROUND(F30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H41",
+     "formula": "=ROUND(H19,12)=ROUND(H30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I41",
+     "formula": "=ROUND(I19,12)=ROUND(I30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J41",
+     "formula": "=ROUND(J19,12)=ROUND(J30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K41",
+     "formula": "=ROUND(K19,12)=ROUND(K30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L41",
+     "formula": "=ROUND(L19,12)=ROUND(L30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M41",
+     "formula": "=ROUND(M19,12)=ROUND(M30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N41",
+     "formula": "=ROUND(N19,12)=ROUND(N30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R41",
+     "formula": "=ROUND(R19,12)=ROUND(R30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S41",
+     "formula": "=ROUND(S19,12)=ROUND(S30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T41",
+     "formula": "=ROUND(T19,12)=ROUND(T30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U41",
+     "formula": "=ROUND(U19,12)=ROUND(U30,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C43",
+     "formula": "=ROUND(C21,12)=ROUND(C32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D43",
+     "formula": "=ROUND(D21,12)=ROUND(D32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E43",
+     "formula": "=ROUND(E21,12)=ROUND(E32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F43",
+     "formula": "=ROUND(F21,12)=ROUND(F32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "G43",
+     "formula": "=ROUND(G21,12)=ROUND(G32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H43",
+     "formula": "=ROUND(H21,12)=ROUND(H32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I43",
+     "formula": "=ROUND(I21,12)=ROUND(I32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J43",
+     "formula": "=ROUND(J21,12)=ROUND(J32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K43",
+     "formula": "=ROUND(K21,12)=ROUND(K32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L43",
+     "formula": "=ROUND(L21,12)=ROUND(L32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M43",
+     "formula": "=ROUND(M21,12)=ROUND(M32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N43",
+     "formula": "=ROUND(N21,12)=ROUND(N32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R43",
+     "formula": "=ROUND(R21,12)=ROUND(R32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S43",
+     "formula": "=ROUND(S21,12)=ROUND(S32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T43",
+     "formula": "=ROUND(T21,12)=ROUND(T32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U43",
+     "formula": "=ROUND(U21,12)=ROUND(U32,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C45",
+     "formula": "=ROUND(C23,12)=ROUND(C34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D45",
+     "formula": "=ROUND(D23,12)=ROUND(D34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E45",
+     "formula": "=ROUND(E23,12)=ROUND(E34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F45",
+     "formula": "=ROUND(F23,12)=ROUND(F34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H45",
+     "formula": "=ROUND(H23,12)=ROUND(H34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I45",
+     "formula": "=ROUND(I23,12)=ROUND(I34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J45",
+     "formula": "=ROUND(J23,12)=ROUND(J34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K45",
+     "formula": "=ROUND(K23,12)=ROUND(K34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L45",
+     "formula": "=ROUND(L23,12)=ROUND(L34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M45",
+     "formula": "=ROUND(M23,12)=ROUND(M34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N45",
+     "formula": "=ROUND(N23,12)=ROUND(N34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "P45",
+     "formula": "=ROUND(P23,12)=ROUND(P34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R45",
+     "formula": "=ROUND(R23,12)=ROUND(R34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S45",
+     "formula": "=ROUND(S23,12)=ROUND(S34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T45",
+     "formula": "=ROUND(T23,12)=ROUND(T34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U45",
+     "formula": "=ROUND(U23,12)=ROUND(U34,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C46",
+     "formula": "=ROUND(C24,12)=ROUND(C35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D46",
+     "formula": "=ROUND(D24,12)=ROUND(D35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E46",
+     "formula": "=ROUND(E24,12)=ROUND(E35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F46",
+     "formula": "=ROUND(F24,12)=ROUND(F35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H46",
+     "formula": "=ROUND(H24,12)=ROUND(H35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I46",
+     "formula": "=ROUND(I24,12)=ROUND(I35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J46",
+     "formula": "=ROUND(J24,12)=ROUND(J35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K46",
+     "formula": "=ROUND(K24,12)=ROUND(K35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L46",
+     "formula": "=ROUND(L24,12)=ROUND(L35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M46",
+     "formula": "=ROUND(M24,12)=ROUND(M35,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "C47",
+     "formula": "=ROUND(C25,12)=ROUND(C36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "D47",
+     "formula": "=ROUND(D25,12)=ROUND(D36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "E47",
+     "formula": "=ROUND(E25,12)=ROUND(E36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "F47",
+     "formula": "=ROUND(F25,12)=ROUND(F36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "G47",
+     "formula": "=ROUND(G25,12)=ROUND(G36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "H47",
+     "formula": "=ROUND(H25,12)=ROUND(H36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "I47",
+     "formula": "=ROUND(I25,12)=ROUND(I36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "J47",
+     "formula": "=ROUND(J25,12)=ROUND(J36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "K47",
+     "formula": "=ROUND(K25,12)=ROUND(K36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L47",
+     "formula": "=ROUND(L25,12)=ROUND(L36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M47",
+     "formula": "=ROUND(M25,12)=ROUND(M36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "N47",
+     "formula": "=ROUND(N25,12)=ROUND(N36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "R47",
+     "formula": "=ROUND(R25,12)=ROUND(R36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "S47",
+     "formula": "=ROUND(S25,12)=ROUND(S36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "T47",
+     "formula": "=ROUND(T25,12)=ROUND(T36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "U47",
+     "formula": "=ROUND(U25,12)=ROUND(U36,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-matrix-multiplication.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-named-ranges-global.xlsx",
+   "formulas": 8,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet2",
+     "cell": "A6",
+     "formula": "=Sheet2!$B$1",
+     "cached": "#N/A",
+     "ours": "5",
+     "bucket": "genuine",
+     "reason": "name-to-name indirection (Global5->Global6->Sheet2!B1); Excel resolves to 5 = ours; cached #N/A is ClosedXML calc quirk"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivot_table_first_header_row.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_bool_field_filter.xlsx",
+   "formulas": 3,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_duplicated_member_filter.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_error_item_filter.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_tabular_mode.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-ref_string.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 1,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-tdf81939.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-universal-content-strict.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-universal-content.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "compressexcel-saas-3statement.xlsx",
+   "formulas": 2403,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "DASHBOARD",
+     "cell": "B31",
+     "formula": "=\"• Revenue is projected to grow \"&TEXT('INCOME STATEMENT'!I10,\"0.0%\")&\" in \"&'I",
+     "cached": "\"• Revenue is projected to grow 6.9% in F\"",
+     "ours": "\"• Revenue is projected to grow 0.1% in F\"",
+     "bucket": "real-bug",
+     "reason": "wrong string value"
+    },
+    {
+     "sheet": "DASHBOARD",
+     "cell": "B32",
+     "formula": "=\"• EBITDA margin \"&IF('INCOME STATEMENT'!I31>='INCOME STATEMENT'!E31,\"expands t",
+     "cached": "\"• EBITDA margin expands to 16.9% by FY20\"",
+     "ours": "\"• EBITDA margin expands to 0.2% by FY203\"",
+     "bucket": "real-bug",
+     "reason": "wrong string value"
+    },
+    {
+     "sheet": "DASHBOARD",
+     "cell": "B35",
+     "formula": "=IF('BALANCE SHEET'!E31=0,\"• Debt is fully repaid across the forecast.\",IF('BALA",
+     "cached": "\"• Debt declines by 40% over the forecast\"",
+     "ours": "\"• Debt declines by 0% over the forecast \"",
+     "bucket": "real-bug",
+     "reason": "wrong string value"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "dropbox-shortcut-master.xlsx",
+   "formulas": 290,
+   "skippedNoCache": 0,
+   "skippedVolatile": 18,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "excelize-Book1.xlsx",
+   "formulas": 6,
+   "skippedNoCache": 5,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "excelize-CalcChain.xlsx",
+   "formulas": 2,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B1",
+     "formula": "=SUM(C1:D1)",
+     "cached": "1",
+     "ours": "0",
+     "bucket": "genuine",
+     "reason": "stale cached value: =SUM over missing C1:D1; Excel-fresh = 0 = ours; cached 1 is impossible"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-bogus-defined-name.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-fibonacci.xlsx",
+   "formulas": 35,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-formulas.xlsx",
+   "formulas": 2,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-gold.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-test-issue-1364.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-test-issue-877.xlsx",
+   "formulas": 89,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-test-issue-880.xlsx",
+   "formulas": 93,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxpopulate-ranges-out.xlsx",
+   "formulas": 11,
+   "skippedNoCache": 11,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula01.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula02.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula03.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula04.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-autofilter01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-autofilter04.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_area01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_bar01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_bar03.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_column01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_column04.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_crossing01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_data_labels01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_data_labels10.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_doughnut01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_layout01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_layout05.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_line01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_line03.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_pattern01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_pie01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_points01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_radar01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_scatter01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_scatter05.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_stock01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_stock02.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-cond_format01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-cond_format06.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-cond_format11.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-data_validation01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-data_validation03.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-defined_name01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-formula_results01.xlsx",
+   "formulas": 12,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "A7",
+     "formula": "=#NAME?",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "literal =#NAME? formula; raw XML cached value is #NAME? = ours (SheetJS mis-parses xlsxwriter <v>#NAME?</v> as #N/A)"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-hyperlink01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-hyperlink12.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-hyperlink20.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-image01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-image07.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-panes01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-print_area01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-rich_string01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table07.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table12.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table18.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-textbox01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-textbox08.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  }
+ ]
+}

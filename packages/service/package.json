@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@icecream-sheets/csv-adapter": "0.1.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "chart.js": "^4.4.0",
+    "@icecream-sheets/engine": "0.1.0",
+    "@icecream-sheets/xlsx-adapter": "0.1.0"
+  },
+  "description": "Service-layer components for Icecream Sheets: native reports/dashboards, AI Agent, ETL, add-ons, app builder, protection/encryption, and the automation lane (permissioned API, macro recorder, triggers). Reads through the typed computational view / versioned MCP tools; never touches engine or storage directly except via the permissioned automation API.",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@icecream-sheets/mcp-server": "0.1.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./automation-node": "./dist/automation/node.js",
+    "./automation-firestore-node": "./dist/automation/hostFirestore.js",
+    "./save-node": "./dist/save/directSave.js",
+    "./names-node": "./dist/names/node.js",
+    "./firestore-node": "./dist/firestoreMetadata.js",
+    "./connectors": {
+      "types": "./dist/connectors/index.d.ts",
+      "default": "./dist/connectors/index.js"
+    },
+    "./python-env": "./dist/python/index.js"
+  },
+  "license": "GPL-3.0-only",
+  "main": "./dist/index.js",
+  "name": "@icecream-sheets/service",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "gen:function-catalog": "node scripts/gen-function-catalog.mjs",
+    "test": "vitest run"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0",
+  "type": "module"
+}

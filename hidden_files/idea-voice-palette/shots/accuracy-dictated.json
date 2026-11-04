@@ -1,0 +1,98 @@
+{
+ "model": null,
+ "n": 10,
+ "exactTranscript": 10,
+ "resolvedCorrect": 10,
+ "rows": [
+  {
+   "spoken": "some if",
+   "tts": "user-dictation (brief)",
+   "transcript": "some if",
+   "exactTranscript": true,
+   "expected": "SUMIF",
+   "resolved": "SUMIF",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "vee look up",
+   "tts": "user-dictation (brief)",
+   "transcript": "vee look up",
+   "exactTranscript": true,
+   "expected": "VLOOKUP",
+   "resolved": "VLOOKUP",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "ex look up",
+   "tts": "user-dictation (brief)",
+   "transcript": "ex look up",
+   "exactTranscript": true,
+   "expected": "XLOOKUP",
+   "resolved": "XLOOKUP",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "count if",
+   "tts": "user-dictation (brief)",
+   "transcript": "count if",
+   "exactTranscript": true,
+   "expected": "COUNTIF",
+   "resolved": "COUNTIF",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "if error",
+   "tts": "user-dictation (brief)",
+   "transcript": "if error",
+   "exactTranscript": true,
+   "expected": "IFERROR",
+   "resolved": "IFERROR",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "text join",
+   "tts": "user-dictation (brief)",
+   "transcript": "text join",
+   "exactTranscript": true,
+   "expected": "TEXTJOIN",
+   "resolved": "TEXTJOIN",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "some product",
+   "tts": "user-dictation (brief)",
+   "transcript": "some product",
+   "exactTranscript": true,
+   "expected": "SUMPRODUCT",
+   "resolved": "SUMPRODUCT",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "index match",
+   "tts": "user-dictation (brief)",
+   "transcript": "index match",
+   "exactTranscript": true,
+   "expected": "INDEX",
+   "resolved": "INDEX + MATCH",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "some if b2 to b20 greater than 10",
+   "tts": "user-dictation (brief)",
+   "transcript": "some if b2 to b20 greater than 10",
+   "exactTranscript": true,
+   "expected": "SUMIF",
+   "resolved": "SUMIF",
+   "resolvedOk": true
+  },
+  {
+   "spoken": "set c3 to 42",
+   "tts": "user-dictation (brief)",
+   "transcript": "set c3 to 42",
+   "exactTranscript": true,
+   "expected": "WRITE",
+   "resolved": "Write value",
+   "resolvedOk": true
+  }
+ ]
+}

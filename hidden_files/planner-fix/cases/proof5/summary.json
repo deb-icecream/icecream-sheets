@@ -1,0 +1,50 @@
+{
+  "mode": "proof5",
+  "fileId": "file-0ce012cc-9046-415d-9315-54ba4562a04d",
+  "sessionId": "sess_5ac32798-c563-4ca3-a745-9d82f4740fca",
+  "cases": {
+    "case1": {
+      "pass": true,
+      "t1Ms": 4902,
+      "t2Ms": 6117,
+      "reply1": "The region with the highest total revenue is North, with $89,100.",
+      "reply2": "Here are the rows from the Sales sheet where Revenue is greater than 14000:\n\n- Mar, North, 15800\n- May, North, 16900\n- Jun, North, 16700\n- Jun, South, 14200"
+    },
+    "case2": {
+      "pass": false,
+      "t1Ms": 3098,
+      "t2Ms": 3094,
+      "t3Ms": 6100,
+      "reply1": "The total revenue in the Sales sheet is $159,400.",
+      "junSouth": {
+        "value": {
+          "kind": "number",
+          "value": 14200
+        }
+      },
+      "labelCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      },
+      "totalCell": {
+        "value": {
+          "kind": "number",
+          "value": 146700
+        },
+        "formula": "=SUM(C1:C12)"
+      }
+    },
+    "case5": {
+      "pass": false,
+      "t1Ms": 4742,
+      "dVals": [],
+      "shares": [],
+      "present": 0,
+      "maxShare": null,
+      "reply": "The model service is busy right now, so I could not finish that request. Please try again in a moment."
+    }
+  },
+  "allPass": false
+}

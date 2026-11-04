@@ -1,0 +1,15 @@
+{
+ "attempted": true,
+ "downloadStatus": 200,
+ "downloadJson": {
+  "entryId": "autosave_sess_a50f923f-93f7-48ba-86f4-c88d14291511",
+  "mode": "verbatim"
+ },
+ "signStatus": 200,
+ "via": "gateway-signed-url",
+ "bytes": 6906,
+ "allPartsCount": 11,
+ "parts": [],
+ "hasChart1Xml": false,
+ "charts": []
+}

@@ -1,0 +1,490 @@
+{
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-9e523445-7b36-4ddf-90d1-2c26653b8699",
+ "sessionId": "sess_7552d3d1-9171-4c8b-bdaf-e916090a90cd",
+ "painted": true,
+ "viewCheckBeforeSend": {
+  "auditViewPresent": false,
+  "messagesListPresent": true,
+  "msgCount": 1,
+  "firstMsgVisible": true,
+  "firstMsgHead": "Hi — I can read ranges, sum or average them, write values and formulas, recalcul",
+  "auditChipOn": true,
+  "auditChipText": "Chat"
+ },
+ "retried": true,
+ "turns": [
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Analyze & visualize",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "The sheet 'Sales' was not found. Please check the sheet name and try again.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Analyze & visualize",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "The sheet 'Sales' was not found. Please check the sheet name and try again.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [
+     {
+      "kind": "pending-options",
+      "question": "Do you want me to build an app, or analyze the data and show a visual?\nBuild an app\nAnalyze & visualize\nJust answer",
+      "options": [
+       "Build an app",
+       "Analyze & visualize",
+       "Just answer"
+      ],
+      "answer": "Analyze & visualize",
+      "atMs": 2603
+     }
+    ],
+    "textAnswers": []
+   },
+   "timedOut": false,
+   "durationMs": 7649,
+   "prompt": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300."
+  },
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Analyze & visualize",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "The sheet 'Sales' was not found. Please check the sheet name and try again.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:C13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Added a column chart titled 'Month vs Revenue' to the Sales sheet, bound to A1:C13.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:C13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Added a column chart titled 'Month vs Revenue' to the Sales sheet, bound to A1:C13.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [],
+    "textAnswers": [
+     {
+      "kind": "hitl-text",
+      "question": "What is the data range for Month vs Revenue on the Sales sheet?\nSend",
+      "answer": "A1:C13",
+      "atMs": 2669
+     }
+    ]
+   },
+   "timedOut": false,
+   "durationMs": 7688,
+   "prompt": "Add a column chart of Month vs Revenue to the Sales sheet."
+  }
+ ],
+ "chartProbeFirst": {
+  "overlayCount": 1,
+  "overlays": [
+   {
+    "title": "Month vs Revenue",
+    "rect": {
+     "x": 44,
+     "y": 583,
+     "w": 768,
+     "h": 360
+    },
+    "inViewport": true,
+    "canvases": [
+     {
+      "w": 750,
+      "h": 313,
+      "rectW": 750,
+      "rectH": 313
+     }
+    ],
+    "hasEditBtn": true,
+    "textHead": "Month vs Revenue\n✎\n✕"
+   }
+  ],
+  "visible": true,
+  "storedCharts": {
+   "rawLength": 549,
+   "parsed": {
+    "version": 2,
+    "charts": [
+     {
+      "version": 2,
+      "id": 1792667362055000,
+      "kind": "column-clustered",
+      "title": "Month vs Revenue",
+      "range": {
+       "sheet": "Sales",
+       "startRow": 0,
+       "startCol": 0,
+       "endRow": 12,
+       "endCol": 2
+      },
+      "xAxisTitle": "",
+      "yAxisTitle": "",
+      "legend": "bottom",
+      "dataLabels": false,
+      "x": 0,
+      "y": 280,
+      "w": 512,
+      "h": 300,
+      "anchorCells": {
+       "fromCol": 0,
+       "fromRow": 14,
+       "toCol": 8,
+       "toRow": 29
+      },
+      "seriesRanges": [
+       {
+        "name": "Revenue",
+        "cat": {
+         "sheet": "Sales",
+         "startRow": 1,
+         "startCol": 0,
+         "endRow": 12,
+         "endCol": 0
+        },
+        "val": {
+         "sheet": "Sales",
+         "startRow": 1,
+         "startCol": 2,
+         "endRow": 12,
+         "endCol": 2
+        }
+       }
+      ],
+      "nativePart": true
+     }
+    ]
+   },
+   "count": 1,
+   "specs": [
+    {
+     "id": 1792667362055000,
+     "kind": "column-clustered",
+     "title": "Month vs Revenue",
+     "sheet": "Sales",
+     "nativePart": true
+    }
+   ]
+  }
+ },
+ "statusAfterTurns": {
+  "ok": true,
+  "sessionId": "sess_7552d3d1-9171-4c8b-bdaf-e916090a90cd",
+  "fileId": "file-9e523445-7b36-4ddf-90d1-2c26653b8699",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 1,
+  "storageRevision": 1,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 2,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792667367850,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0"
+ },
+ "statusAfterSave": {
+  "ok": true,
+  "sessionId": "sess_7552d3d1-9171-4c8b-bdaf-e916090a90cd",
+  "fileId": "file-9e523445-7b36-4ddf-90d1-2c26653b8699",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 1,
+  "storageRevision": 1,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 2,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792667372351,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0"
+ },
+ "savedOk": true,
+ "chartProbeReopen": {
+  "overlayCount": 1,
+  "overlays": [
+   {
+    "title": "Month vs Revenue",
+    "rect": {
+     "x": 44,
+     "y": 583,
+     "w": 768,
+     "h": 360
+    },
+    "inViewport": true,
+    "canvases": [
+     {
+      "w": 750,
+      "h": 313,
+      "rectW": 750,
+      "rectH": 313
+     }
+    ],
+    "hasEditBtn": true,
+    "textHead": "Month vs Revenue\n✎\n✕"
+   }
+  ],
+  "visible": true,
+  "storedCharts": {
+   "rawLength": 549,
+   "parsed": {
+    "version": 2,
+    "charts": [
+     {
+      "version": 2,
+      "id": 1792667362055000,
+      "kind": "column-clustered",
+      "title": "Month vs Revenue",
+      "range": {
+       "sheet": "Sales",
+       "startRow": 0,
+       "startCol": 0,
+       "endRow": 12,
+       "endCol": 2
+      },
+      "xAxisTitle": "",
+      "yAxisTitle": "",
+      "legend": "bottom",
+      "dataLabels": false,
+      "x": 0,
+      "y": 280,
+      "w": 512,
+      "h": 300,
+      "anchorCells": {
+       "fromCol": 0,
+       "fromRow": 14,
+       "toCol": 8,
+       "toRow": 29
+      },
+      "seriesRanges": [
+       {
+        "name": "Revenue",
+        "cat": {
+         "sheet": "Sales",
+         "startRow": 1,
+         "startCol": 0,
+         "endRow": 12,
+         "endCol": 0
+        },
+        "val": {
+         "sheet": "Sales",
+         "startRow": 1,
+         "startCol": 2,
+         "endRow": 12,
+         "endCol": 2
+        }
+       }
+      ],
+      "nativePart": true
+     }
+    ]
+   },
+   "count": 1,
+   "specs": [
+    {
+     "id": 1792667362055000,
+     "kind": "column-clustered",
+     "title": "Month vs Revenue",
+     "sheet": "Sales",
+     "nativePart": true
+    }
+   ]
+  }
+ },
+ "paintedSecond": true,
+ "parseBack": {
+  "attempted": true,
+  "downloadStatus": 200,
+  "downloadJson": {
+   "entryId": "autosave_sess_7552d3d1-9171-4c8b-bdaf-e916090a90cd",
+   "mode": "verbatim"
+  },
+  "signStatus": 200,
+  "via": "gateway-signed-url",
+  "bytes": 9064,
+  "allPartsCount": 15,
+  "parts": [
+   "xl/charts/chart1.xml",
+   "xl/drawings/drawing1.xml",
+   "xl/drawings/_rels/drawing1.xml.rels"
+  ],
+  "hasChart1Xml": true,
+  "chart1CachedValues": [
+   "Revenue",
+   "Jan",
+   "Jan",
+   "Feb",
+   "Feb",
+   "Mar",
+   "Mar",
+   "Apr",
+   "Apr",
+   "May",
+   "May",
+   "Jun",
+   "Jun",
+   "12000",
+   "9800",
+   "13500",
+   "11200",
+   "15800",
+   "12600",
+   "14200",
+   "10900",
+   "16900",
+   "11600",
+   "16700",
+   "14200"
+  ],
+  "chart1XmlHead": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><c:chartSpace xmlns:c=\"http://schemas.openxmlformats.org/drawingml/2006/chart\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><c:chart><c:title><c:tx><c:rich><a:bodyPr/><a:lstStyle/><a:p><a:pPr><a:defRPr/></a:pPr><a:r><a:rPr lang=\"en-US\"/><a:t>Month vs Revenue</a:t></a:r></a:p></c:rich></c:tx><c:overlay val=\"0\"/></c:title><c:autoTitleDeleted val=\"0\"/><c:plotArea><c:layout/><c:barChart><c:barDir val=\"col\"/><c:grouping val=\"clustered\"/><c:ser><c:idx val=\"0\"/><c:order val=\"0\"/><c:tx><c:strRef><c:f>Sales!$C$1</c:f><c:strCache><c:ptCount val=\"1\"/><c:pt idx=\"0\"><c:v>Revenue</c:v></c:pt></c:strCache></c:strRef></c:tx><c:cat><c:strRef><c:f>Sales!$A$2",
+  "charts": [
+   {
+    "kind": "barChart",
+    "title": "Month vs Revenue",
+    "series": [
+     {
+      "name": "Revenue",
+      "valFormula": "Sales!$C$2:$C$13",
+      "catFormula": "Sales!$A$2:$A$13",
+      "valCache": [
+       12000,
+       9800,
+       13500,
+       11200,
+       15800,
+       12600,
+       14200,
+       10900,
+       16900,
+       11600,
+       16700,
+       14200
+      ],
+      "catCache": [
+       "Jan",
+       "Jan",
+       "Feb",
+       "Feb",
+       "Mar",
+       "Mar",
+       "Apr",
+       "Apr",
+       "May",
+       "May",
+       "Jun",
+       "Jun"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

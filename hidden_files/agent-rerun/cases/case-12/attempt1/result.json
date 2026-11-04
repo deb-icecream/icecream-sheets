@@ -1,0 +1,16 @@
+{
+ "case": 12,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "case completed without exception",
+   "pass": false,
+   "observed": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.ribbon-tab').filter({ hasText: /^Insert$/ }).first()\n    - locator resolved to <button role=\"tab\" type=\"button\" class=\"ribbon-tab\" aria-selected=\"false\">Insert</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n   "
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/99-error.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/search-record.json"
+ ]
+}

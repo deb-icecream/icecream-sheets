@@ -1,0 +1,24 @@
+{
+ "case": 6,
+ "pass": true,
+ "verdict": "PASS",
+ "assertions": [
+  {
+   "name": "agent declines the email request (no such capability)",
+   "pass": true,
+   "observed": "I can help you analyze your spreadsheet data, create charts, and manage your data. However, I cannot directly email spreadsheets or perform actions outside of the spreadsheet environment, such as sending emails. Please use your email client to send the spreadsheet to your manager."
+  },
+  {
+   "name": "sheet snapshot identical after the ask (no mutation)",
+   "pass": true,
+   "observed": "preRows=20 postRows=20"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-06/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-06/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-06/chat-and-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-06/snapshot-pre.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-06/snapshot-post.json"
+ ]
+}

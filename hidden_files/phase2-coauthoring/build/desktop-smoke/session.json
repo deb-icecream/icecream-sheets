@@ -1,0 +1,21 @@
+{
+  "fileId": "file-065a3359-9256-4932-ae07-7d1bdc902f5c",
+  "sessionId": "sess_52aa2508-2eb0-49f6-bb0b-236490253489",
+  "engineUrl": "http://127.0.0.1:8201",
+  "alice": {
+    "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZSIsImF0dHJzIjp7InRpZXIiOiJkZWZhdWx0In0sImlhdCI6MTc5MjYzODc2NywiZXhwIjoxNzkyNjgxOTY3fQ.M7qkrqXb7GPkJJj8EXuD-tzL94ICJp5xIX4RY7HFRMs",
+    "accessToken": "eyJ2IjoxLCJzdWIiOiJ1c2VyOmFsaWNlIiwic2lkIjoic2Vzc181MmFhMjUwOC0yZWIwLTQ5ZjYtYmIwYi0yMzY0OTAyNTM0ODkiLCJmaWQiOiJmaWxlLTA2NWEzMzU5LTkyNTYtNDkzMi1hZTA3LTdkMWJkYzkwMmY1YyIsInJvbGUiOiJlZGl0b3IiLCJ0aWVyIjoic3RhbmRhcmQiLCJpYXQiOjE3OTI2Mzg3NjgsImV4cCI6MTc5MjYzOTM2OH0.J8jxVSueZvFQfuk5Z5-87GTz1ykzNWHzK3ySS2a20BQ"
+  },
+  "carol": {
+    "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYXJvbCIsImF0dHJzIjp7InRpZXIiOiJkZWZhdWx0In0sImlhdCI6MTc5MjYzODc2OCwiZXhwIjoxNzkyNjgxOTY4fQ.AWorN8xwFat9bytGV3pV2SvxaFDwCNIrX6ear9jAXdw"
+  },
+  "setupRevision": 1,
+  "a1": {
+    "kind": "number",
+    "value": 42
+  },
+  "b2": {
+    "kind": "number",
+    "value": 62
+  }
+}

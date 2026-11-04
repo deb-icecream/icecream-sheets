@@ -1,0 +1,525 @@
+{
+  "phases": {
+    "boot": {
+      "hasApp": true,
+      "hasGrid": true,
+      "ribbonTabs": [
+        "File",
+        "Home",
+        "Insert",
+        "Draw",
+        "Page Layout",
+        "Formulas",
+        "Data",
+        "Review",
+        "View",
+        "Extensions",
+        "Help",
+        "Share"
+      ],
+      "banner": false,
+      "fallback": false,
+      "tabs": [
+        "Sheet1"
+      ],
+      "active": "Sheet1",
+      "statusItems": [
+        "Protocol v1",
+        "Calc: automatic",
+        "Cell: A1",
+        "✓ Saved",
+        "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+        "You",
+        "Ready"
+      ],
+      "saveBtns": [],
+      "bodySnippet": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp"
+    },
+    "bootQuit": "SIGTERM-group+SIGKILL",
+    "openP50": {
+      "hasApp": true,
+      "hasGrid": true,
+      "ribbonTabs": [
+        "File",
+        "Home",
+        "Insert",
+        "Draw",
+        "Page Layout",
+        "Formulas",
+        "Data",
+        "Review",
+        "View",
+        "Extensions",
+        "Help",
+        "Share"
+      ],
+      "banner": false,
+      "fallback": false,
+      "tabs": [
+        "START HERE",
+        "DASHBOARD",
+        "ASSUMPTIONS",
+        "HISTORICAL INPUTS",
+        "REVENUE BUILD",
+        "OPERATING MODEL",
+        "INCOME STATEMENT",
+        "BALANCE SHEET",
+        "CASH FLOW",
+        "WORKING CAPITAL",
+        "CAPEX & DEPRECIATION",
+        "DEBT SCHEDULE",
+        "FINANCIAL RATIOS",
+        "SCENARIO ANALYSIS",
+        "BREAK-EVEN",
+        "CASH RUNWAY",
+        "MONTHLY VIEW (LITE)",
+        "SENSITIVITY",
+        "VALUATION",
+        "CHECKS",
+        "DATA-SUPPORT"
+      ],
+      "active": "START HERE",
+      "statusItems": [
+        "Protocol v1",
+        "Calc: automatic",
+        "Cell: A1",
+        "🔒 Protected",
+        "✓ Saved",
+        "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+        "You",
+        "Ready"
+      ],
+      "saveBtns": [],
+      "bodySnippet": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp",
+      "dashboardB1": {
+        "aria": "B1: Northstar Technologies (locked)",
+        "text": "🔒\nNorthstar Technologies"
+      },
+      "startHereB1": {
+        "aria": "B1: ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL (locked)",
+        "text": "🔒\nULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL"
+      },
+      "startHereB2": {
+        "aria": "B2: Integrated 5-Year SaaS Forecasting Model — Built for Subscription / Recurring-Revenue Businesses (locked)",
+        "text": "🔒\nIntegrated 5-Year SaaS Forecasting Model — Built for Subscription / Recurring-Revenue Businesses"
+      }
+    },
+    "mcp": {
+      "health": "{\"ok\":true,\"service\":\"mcp-server\"}",
+      "session": "1a4805b5-d1c4-4dbc-97df-dfd82d026906",
+      "serverInfo": {
+        "name": "icecream-sheets",
+        "version": "0.1.0"
+      },
+      "status": 200,
+      "excerpt": "{\"protocolVersion\":1,\"ok\":true,\"cells\":[[\"ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL\"]]}",
+      "parsed": {
+        "protocolVersion": 1,
+        "ok": true,
+        "cells": [
+          [
+            "ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL"
+          ]
+        ]
+      }
+    },
+    "edit": {
+      "sheet": "MONTHLY VIEW (LITE)",
+      "input": "C9 -> 0.25 via FormulaBar",
+      "before": {
+        "C9": {
+          "aria": "C9: 0.083333333",
+          "text": "0.083333333"
+        },
+        "C10": {
+          "aria": "C10: 0",
+          "text": "0"
+        },
+        "C13": {
+          "aria": "C13: 132942.8834",
+          "text": "132942.8834"
+        },
+        "C14": {
+          "aria": "C14: 53177.15334",
+          "text": "53177.15334"
+        },
+        "C15": {
+          "aria": "C15: 57298.38273",
+          "text": "57298.38273"
+        },
+        "C16": {
+          "aria": "C16: 22467.34729",
+          "text": "22467.34729"
+        }
+      },
+      "selectedAria": "C9",
+      "formulaBarDraft": "0.25",
+      "after": {
+        "C9": {
+          "aria": "C9: 0.25",
+          "text": "0.25"
+        },
+        "C10": {
+          "aria": "C10: 0.1667",
+          "text": "0.1667"
+        },
+        "C13": {
+          "aria": "C13: 398828.6501",
+          "text": "398828.6501"
+        },
+        "C14": {
+          "aria": "C14: 159531.46",
+          "text": "159531.46"
+        },
+        "C15": {
+          "aria": "C15: 57298.38273",
+          "text": "57298.38273"
+        },
+        "C16": {
+          "aria": "C16: 181998.8073",
+          "text": "181998.8073"
+        }
+      },
+      "numeric": {
+        "C9before": 9,
+        "C9after": 9,
+        "C13before": 13,
+        "C13after": 13,
+        "C13ratio": 1,
+        "C14before": 14,
+        "C14after": 14,
+        "C14ratio": 1,
+        "C16expectedFromBefore": -18,
+        "C16after": 16
+      },
+      "statusAfterEdit": [
+        "Protocol v1",
+        "Calc: automatic",
+        "Cell: C9",
+        "✓ Saved",
+        "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+        "You",
+        "Ready"
+      ],
+      "mcpAfter": {
+        "excerpt": "{\"protocolVersion\":1,\"ok\":true,\"cells\":[[0.25],[0.1667],[null],[null],[398828.6500595239],[159531.46002380957],[57298.38272521826],[181998.80731049605]]}",
+        "parsed": {
+          "protocolVersion": 1,
+          "ok": true,
+          "cells": [
+            [
+              0.25
+            ],
+            [
+              0.1667
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              398828.6500595239
+            ],
+            [
+              159531.46002380957
+            ],
+            [
+              57298.38272521826
+            ],
+            [
+              181998.80731049605
+            ]
+          ]
+        }
+      }
+    },
+    "saveDialog": {
+      "attempts": [
+        {
+          "method": "XTest Ctrl+Shift+S accelerator",
+          "dialog": {
+            "id": 4194306,
+            "name": "icecream-sheets-desktop"
+          }
+        }
+      ],
+      "windowsBefore": [
+        "Chromium clipboard",
+        "icecream-sheets-desktop",
+        "Icecream Sheets"
+      ],
+      "finalWindows": [
+        {
+          "name": "Chromium clipboard"
+        },
+        {
+          "name": "icecream-sheets-desktop"
+        },
+        {
+          "name": "Icecream Sheets"
+        },
+        {
+          "name": "icecream-sheets-desktop"
+        }
+      ],
+      "rootShotTaken": true,
+      "savedPath": null,
+      "savedSize": null,
+      "windowsAfterSave": [
+        "Chromium clipboard",
+        "icecream-sheets-desktop",
+        "Icecream Sheets",
+        "icecream-sheets-desktop"
+      ]
+    },
+    "saveGating": {
+      "dropRes": "dropped",
+      "samplesDuringLoad": [
+        {
+          "ms": 1653,
+          "banner": true,
+          "tabs": 21,
+          "status": [
+            "Protocol v1",
+            "Calc: automatic",
+            "Cell: E20",
+            "⏳ Loading…",
+            "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+            "👤 You",
+            "Ready"
+          ],
+          "saveBtns": [
+            {
+              "label": "Loading…",
+              "disabled": true
+            },
+            {
+              "label": "Loading…",
+              "disabled": true
+            },
+            {
+              "label": "Save encrypted",
+              "disabled": false
+            }
+          ],
+          "evalTimeout": false
+        }
+      ],
+      "sampleCount": 2,
+      "evalTimeouts": 0,
+      "firstSample": {
+        "ms": 1653,
+        "banner": true,
+        "tabs": 21,
+        "status": [
+          "Protocol v1",
+          "Calc: automatic",
+          "Cell: E20",
+          "⏳ Loading…",
+          "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+          "👤 You",
+          "Ready"
+        ],
+        "saveBtns": [
+          {
+            "label": "Loading…",
+            "disabled": true
+          },
+          {
+            "label": "Loading…",
+            "disabled": true
+          },
+          {
+            "label": "Save encrypted",
+            "disabled": false
+          }
+        ],
+        "evalTimeout": false
+      },
+      "loadedState": {
+        "hasApp": true,
+        "hasGrid": true,
+        "ribbonTabs": [
+          "File",
+          "Home",
+          "Insert",
+          "Draw",
+          "Page Layout",
+          "Formulas",
+          "Data",
+          "Review",
+          "View",
+          "Extensions",
+          "Help",
+          "Share"
+        ],
+        "banner": false,
+        "fallback": false,
+        "tabs": [
+          "FMTs",
+          "Cover",
+          "TOC",
+          "Constants",
+          "Imports",
+          "Inputs",
+          "Calcs",
+          "Income",
+          "Cash Flow",
+          "Balance",
+          "Summaries",
+          "Dashboard",
+          "CHKs"
+        ],
+        "active": "FMTs",
+        "statusItems": [
+          "Protocol v1",
+          "Calc: automatic",
+          "Cell: A1",
+          "✓ Saved",
+          "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+          "You",
+          "Ready"
+        ],
+        "saveBtns": [
+          {
+            "label": "Save",
+            "disabled": false
+          },
+          {
+            "label": "Save .xlsx",
+            "disabled": false
+          },
+          {
+            "label": "Save encrypted",
+            "disabled": false
+          }
+        ],
+        "bodySnippet": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp"
+      },
+      "stall": {
+        "maxTimerMs": 205,
+        "maxRafMs": 167,
+        "samples": 445,
+        "rafSamples": 155
+      },
+      "psBefore": {
+        "main": {
+          "pid": 13051,
+          "cpuSec": 3
+        },
+        "renderer": {
+          "pid": 13107,
+          "cpuSec": 5
+        }
+      },
+      "psMid": {
+        "main": {
+          "pid": 13051,
+          "cpuSec": 5
+        },
+        "renderer": {
+          "pid": 13107,
+          "cpuSec": 5
+        }
+      },
+      "psAfter": {
+        "main": {
+          "pid": 13051,
+          "cpuSec": 5
+        },
+        "renderer": {
+          "pid": 13107,
+          "cpuSec": 5
+        }
+      },
+      "gatingScreenshotTaken": true,
+      "saveBtnAfterLoad": [
+        {
+          "label": "Save",
+          "disabled": false
+        },
+        {
+          "label": "Save .xlsx",
+          "disabled": false
+        },
+        {
+          "label": "Save encrypted",
+          "disabled": false
+        }
+      ]
+    },
+    "quit": {
+      "how": "XTest Ctrl+Q",
+      "exitCode": 0
+    },
+    "portsAfter": {
+      "p8106free": true,
+      "p9222free": true
+    }
+  },
+  "logs": [
+    "[app-out] [12949:1020/143530.978743:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12949:1020/143530.978856:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examp",
+    "[app-out] [12949:1020/143531.703937:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12949:1020/143531.703992:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No",
+    "[app-out] \nDevTools listening on ws://127.0.0.1:9222/devtools/browser/a384c797-c345-4f56-a31a-862359c11d53\n",
+    "[app-out] [parallel] worker pool enabled (1 workers, node:worker_threads backend)\n",
+    "[app-out] [mcp] direct ingress listening at http://127.0.0.1:8106/mcp (health at /health)\n",
+    "[app-out] [addons] production add-on service ready: Ed25519 install verifier active\n",
+    "[app-out] [12949:1020/143533.078181:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [12949:1020/143533.145035:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [12949:1020/143533.147856:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [12949:1020/143533.148509:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [12949:1020/143533.214417:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [12949:1020/143537.013830:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [12949:1020/143537.013962:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [12949:1020/143537.014434:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12949:1020/143537.014461:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwne",
+    "BOOT: {\"hasApp\":true,\"hasGrid\":true,\"ribbonTabs\":[\"File\",\"Home\",\"Insert\",\"Draw\",\"Page Layout\",\"Formulas\",\"Data\",\"Review\",\"View\",\"Extensions\",\"Help\",\"Share\"],\"banner\":false,\"fallback\":false,\"tabs\":[\"Sheet1\"],\"active\":\"Sheet1\",\"statusItems\":[\"Protocol v1\",\"Calc: automatic\",\"Cell: A1\",\"✓ Saved\",\"Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文\",\"You\",\"Ready\"],\"saveBtns\":[],\"bodySnippet\":\"Skip to grid\\nSkip to ribbon\\n🧊 Icecream Sheets\\n🟢\\npublic\\ninternal\\nconfidential\\nSign in with Google\\n",
+    "[app-out] [13051:1020/143550.340661:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13051:1020/143550.340753:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examp",
+    "[app-out] [13051:1020/143550.989236:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13051:1020/143550.989278:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No",
+    "[app-out] \nDevTools listening on ws://127.0.0.1:9222/devtools/browser/6273c5e9-c6cc-401f-abb6-15f1d201e35b\n",
+    "[app-out] [parallel] worker pool enabled (1 workers, node:worker_threads backend)\n",
+    "[app-out] [mcp] direct ingress listening at http://127.0.0.1:8106/mcp (health at /health)\n",
+    "[app-out] [addons] production add-on service ready: Ed25519 install verifier active\n",
+    "[app-out] [13051:1020/143551.717556:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143551.762851:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143551.765102:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [13051:1020/143551.765199:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143551.797157:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [13107:1020/143551.823273:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:285] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.\n",
+    "sampler: \"installed\"",
+    "[app-out] [parallel] worker pool enabled (1 workers, node:worker_threads backend)\n",
+    "[app-out] Error occurred in handler for 'engine:readCell': Error: Unknown sheet: Sheet1\n    at EngineWorkbook.sheetId (/home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/node_modules/@icecream-sheets/engine/dist/workbook.js:968:19)\n    at EngineWorkbook.addr (/home/hatch",
+    "P50 tabs: 21 active: START HERE",
+    "[app-out] [13051:1020/143554.391607:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143554.391677:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[13051:1020/143554.391996:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address ",
+    "[app-out] [13051:1020/143554.392159:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [13051:1020/143555.565838:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13051:1020/143555.565881:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwne",
+    "[app-out] [13051:1020/143555.565942:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13051:1020/143555.566086:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwne",
+    "START HERE B1: {\"aria\":\"B1: ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL (locked)\",\"text\":\"🔒\\nULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL\"}",
+    "DASHBOARD B1: {\"aria\":\"B1: Northstar Technologies (locked)\",\"text\":\"🔒\\nNorthstar Technologies\"}",
+    "MCP: {\"health\":\"{\\\"ok\\\":true,\\\"service\\\":\\\"mcp-server\\\"}\",\"session\":\"1a4805b5-d1c4-4dbc-97df-dfd82d026906\",\"serverInfo\":{\"name\":\"icecream-sheets\",\"version\":\"0.1.0\"},\"status\":200,\"excerpt\":\"{\\\"protocolVersion\\\":1,\\\"ok\\\":true,\\\"cells\\\":[[\\\"ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL\\\"]]}\",\"parsed\":{\"protocolVersion\":1,\"ok\":true,\"cells\":[[\"ULTIMATE SaaS 3-STATEMENT FINANCIAL MODEL\"]]}}",
+    "[app-out] [13051:1020/143557.786818:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143557.787051:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [13051:1020/143557.787173:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13051:1020/143557.787427:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwne",
+    "EDIT before: {\"C9\":{\"aria\":\"C9: 0.083333333\",\"text\":\"0.083333333\"},\"C10\":{\"aria\":\"C10: 0\",\"text\":\"0\"},\"C13\":{\"aria\":\"C13: 132942.8834\",\"text\":\"132942.8834\"},\"C14\":{\"aria\":\"C14: 53177.15334\",\"text\":\"53177.15334\"},\"C15\":{\"aria\":\"C15: 57298.38273\",\"text\":\"57298.38273\"},\"C16\":{\"aria\":\"C16: 22467.34729\",\"text\":\"22467.34729\"}}",
+    "C9 box: {\"x\":177.5,\"y\":426.5}",
+    "EDIT after: {\"C9\":{\"aria\":\"C9: 0.25\",\"text\":\"0.25\"},\"C10\":{\"aria\":\"C10: 0.1667\",\"text\":\"0.1667\"},\"C13\":{\"aria\":\"C13: 398828.6501\",\"text\":\"398828.6501\"},\"C14\":{\"aria\":\"C14: 159531.46\",\"text\":\"159531.46\"},\"C15\":{\"aria\":\"C15: 57298.38273\",\"text\":\"57298.38273\"},\"C16\":{\"aria\":\"C16: 181998.8073\",\"text\":\"181998.8073\"}}",
+    "[app-out] [13051:1020/143601.189898:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143601.190121:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[13051:1020/143601.190303:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address ",
+    "EDIT mcpAfter: {\"excerpt\":\"{\\\"protocolVersion\\\":1,\\\"ok\\\":true,\\\"cells\\\":[[0.25],[0.1667],[null],[null],[398828.6500595239],[159531.46002380957],[57298.38272521826],[181998.80731049605]]}\",\"parsed\":{\"protocolVersion\":1,\"ok\":true,\"cells\":[[0.25],[0.1667],[null],[null],[398828.6500595239],[159531.46002380957],[57298.38272521826],[181998.80731049605]]}}",
+    "SAVE DIALOG: {\"attempts\":[{\"method\":\"XTest Ctrl+Shift+S accelerator\",\"dialog\":{\"id\":4194306,\"name\":\"icecream-sheets-desktop\"}}],\"windowsBefore\":[\"Chromium clipboard\",\"icecream-sheets-desktop\",\"Icecream Sheets\"],\"finalWindows\":[{\"name\":\"Chromium clipboard\"},{\"name\":\"icecream-sheets-desktop\"},{\"name\":\"Icecream Sheets\"},{\"name\":\"icecream-sheets-desktop\"}],\"rootShotTaken\":true,\"savedPath\":null,\"savedSize\":null,\"windowsAfterSave\":[\"Chromium clipboard\",\"icecream-sheets-desktop\",\"Icecream Sheets\",\"icecream-sheets-desktop\"]}",
+    "DROP: \"dropped\"",
+    "[app-out] [parallel] worker pool enabled (1 workers, node:worker_threads backend)\n",
+    "[app-out] Error occurred in handler for 'engine:readCell': Error: Unknown sheet: MONTHLY VIEW (LITE)\n    at EngineWorkbook.sheetId (/home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/node_modules/@icecream-sheets/engine/dist/workbook.js:968:19)\n    at EngineWorkbook.addr",
+    "[app-out] [13051:1020/143654.814414:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13051:1020/143654.814569:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwne",
+    "[app-out] [13051:1020/143654.814930:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "GATING: {\"dropRes\":\"dropped\",\"samplesDuringLoad\":[{\"ms\":1653,\"banner\":true,\"tabs\":21,\"status\":[\"Protocol v1\",\"Calc: automatic\",\"Cell: E20\",\"⏳ Loading…\",\"Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文\",\"👤 You\",\"Ready\"],\"saveBtns\":[{\"label\":\"Loading…\",\"disabled\":true},{\"label\":\"Loading…\",\"disabled\":true},{\"label\":\"Save encrypted\",\"disabled\":false}],\"evalTimeout\":false}],\"sampleCount\":2,\"evalTimeouts\":0,\"firstSample\":{\"ms\":1653,\"banner\":true,\"tabs\":21,\"status\":[\"Protocol v1\",\"Calc: automatic\",\"Cell: E20\",\"⏳ Loading…\",\"Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文\",\"👤 You\",\"Ready\"],\"saveBtns\":[{\"label\":\"Loading…\",\"disabled\":true},{\"label\":\"Loading…\",\"disabled\":true},{\"label\":\"Save encrypted\",\"disabled\":false}],\"evalTimeout\":false},\"loadedState\":{\"hasApp\":true,\"hasGrid\":true,\"ribbonTabs\":[\"File\",\"Home\",\"Insert\",\"Draw\",\"Page Layout\",\"Formulas\",\"Data\",\"Review\",\"View\",\"Extensions\",\"Help\",\"Share\"],\"banner\":false,\"fallback\":false,\"tabs\":[\"FMTs\",\"Cover\",\"TOC\",\"Constants\",\"Imports\",\"Inputs\",\"Calcs\",\"Income\",\"Cash Flow\",\"Balance\",\"Summaries\",\"Dashboard\",\"CHKs\"],\"active\":\"FMTs\",\"statusItems\":[\"Protocol v1\",\"Calc: automatic\",\"Cell: A1\",\"✓ Saved\",\"Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文\",\"You\",\"Ready\"],\"saveBtns\":[{\"label\":\"Save\",\"disabled\":false},{\"label",
+    "[app-out] [13051:1020/143655.095327:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143655.095661:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[13051:1020/143655.095717:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address ",
+    "[app-out] [13051:1020/143655.616783:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [13051:1020/143655.617038:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[13051:1020/143655.617143:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address ",
+    "SaveBtnAfterLoad: [{\"label\":\"Save\",\"disabled\":false},{\"label\":\"Save .xlsx\",\"disabled\":false},{\"label\":\"Save encrypted\",\"disabled\":false}]",
+    "QUIT: {\"how\":\"XTest Ctrl+Q\",\"exitCode\":0} {\"p8106free\":true,\"p9222free\":true}"
+  ]
+}

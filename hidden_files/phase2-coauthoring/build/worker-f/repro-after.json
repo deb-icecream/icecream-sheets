@@ -1,0 +1,545 @@
+{
+ "summary": {
+  "tag": "after",
+  "web": "http://localhost:4174",
+  "fileId": "file-83bbd04f-283f-4924-9ab9-299c5cf0428b",
+  "sessionId": "sess_32a97f8c-8fee-45c5-a1f5-51f29d7b000b",
+  "joined": true,
+  "edits": [
+   {
+    "row": 2,
+    "value": 777,
+    "commitStyle": "enter",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mvihndzs-dj6",
+      "clientSeq": 1,
+      "baseRev": 1,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 2,
+        "col": 0
+       },
+       "value": 777
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "777"
+   },
+   {
+    "row": 3,
+    "value": 888,
+    "commitStyle": "tab",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mvihndzs-dj6",
+      "clientSeq": 2,
+      "baseRev": 2,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 3,
+        "col": 0
+       },
+       "value": 888
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "888"
+   },
+   {
+    "row": 4,
+    "value": 999,
+    "commitStyle": "click",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mvihndzs-dj6",
+      "clientSeq": 3,
+      "baseRev": 3,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 4,
+        "col": 0
+       },
+       "value": 999
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "999"
+   }
+  ],
+  "accessMintsTotal": 9,
+  "accessMintsBeforeEdits": 9,
+  "engine401Total": 10,
+  "postBaseline": {
+   "total": 19,
+   "accessMints": 0,
+   "s401": 0,
+   "byHash": {
+    "a2ae77ff": {
+     "total": 16,
+     "s401": 0,
+     "s200": 16,
+     "paths": {
+      "/ops": 3,
+      "/deltas/ack": 3,
+      "/presence": 4,
+      "/session-extras": 6
+     }
+    },
+    "8e37e0db": {
+     "total": 3,
+     "s401": 0,
+     "s200": 3,
+     "paths": {
+      "/read": 3
+     }
+    }
+   }
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+   "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+   "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ]
+ },
+ "log": [
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "d2780ae5",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "d2780ae5",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "d2780ae5",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/open",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/catalog",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 502
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/installed",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 502
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/grants",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 502
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "a96defd6",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/deltas",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "bd7971a0",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/snapshot",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "a2ae77ff",
+   "opsBody": {
+    "clientId": "web-mvihndzs-dj6",
+    "clientSeq": 1,
+    "baseRev": 1,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "col": 0
+     },
+     "value": 777
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "a2ae77ff",
+   "opsBody": {
+    "clientId": "web-mvihndzs-dj6",
+    "clientSeq": 2,
+    "baseRev": 2,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "col": 0
+     },
+     "value": 888
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "a2ae77ff",
+   "opsBody": {
+    "clientId": "web-mvihndzs-dj6",
+    "clientSeq": 3,
+    "baseRev": 3,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "col": 0
+     },
+     "value": 999
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "8e37e0db",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "a2ae77ff",
+   "opsBody": null,
+   "status": 200
+  }
+ ]
+}

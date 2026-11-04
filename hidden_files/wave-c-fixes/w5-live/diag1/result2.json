@@ -1,0 +1,233 @@
+{
+  "part": 2,
+  "startedAt": "2026-10-22T14:38:01.118Z",
+  "reads": [
+    {
+      "atMs": 7727,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "post": "{\"fileId\":\"file-424258c8-82b9-4237-b0cd-2d9b32ae3796\"}",
+      "size": 547
+    },
+    {
+      "atMs": 7963,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "post": "{\"sessionId\":\"sess_4118f48d-1828-41e7-a8e1-ff32b0583d88\"}",
+      "size": 444
+    },
+    {
+      "atMs": 60209,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 60219,
+      "status": 404,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 60260,
+      "status": 404,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 61744,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "size": 87
+    },
+    {
+      "atMs": 61835,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 62248,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 65265,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 66129,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 67083,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "size": 14
+    },
+    {
+      "atMs": 67093,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "size": 14
+    },
+    {
+      "atMs": 67093,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "size": 93
+    },
+    {
+      "atMs": 67093,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "size": 89
+    },
+    {
+      "atMs": 67093,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "size": 77
+    },
+    {
+      "atMs": 67100,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "size": 83
+    },
+    {
+      "atMs": 67111,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "size": 85
+    },
+    {
+      "atMs": 67111,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "size": 89
+    },
+    {
+      "atMs": 67111,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "size": 98
+    },
+    {
+      "atMs": 67118,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "size": 80
+    },
+    {
+      "atMs": 67122,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "size": 87
+    },
+    {
+      "atMs": 67124,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "size": 86
+    },
+    {
+      "atMs": 67124,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "size": 81
+    },
+    {
+      "atMs": 67124,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "size": 85
+    },
+    {
+      "atMs": 67124,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "size": 87
+    },
+    {
+      "atMs": 92328,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "size": 171311
+    }
+  ],
+  "samples": [
+    {
+      "atMs": 65911,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 10
+    },
+    {
+      "atMs": 71283,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 25
+    },
+    {
+      "atMs": 76311,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 25
+    },
+    {
+      "atMs": 81392,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 25
+    },
+    {
+      "atMs": 86440,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 25
+    },
+    {
+      "atMs": 91478,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 25
+    }
+  ],
+  "steps": []
+}

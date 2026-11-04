@@ -1,0 +1,1 @@
+{"ok":false,"error":"upload of 1285215 bytes exceeds the Default tier upload limit of 1285214 bytes — Pro uploads are unrestricted","code":"UPLOAD_TOO_LARGE","limit":1285214,"size":1285215,"tier":"default"}

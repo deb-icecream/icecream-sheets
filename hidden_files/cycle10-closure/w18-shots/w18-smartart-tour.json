@@ -1,0 +1,82 @@
+{
+  "fixture": "smartart.xlsx",
+  "tag": "w18-smartart",
+  "sheets": [
+    {
+      "index": 1,
+      "name": "Company Organization Chart",
+      "clicked": true,
+      "screenshot": "w18-smartart-sheet-01-Company_Organization_Chart.png",
+      "cellCount": 748,
+      "nonEmpty": 10,
+      "errs": [],
+      "samples": [
+        "E1=↓  Print Area  ↓",
+        "A2=Business Name",
+        "A3=Company Organizational Chart",
+        "K4=Organizational Chart Templates",
+        "K5=© 2019 by Vertex42.com",
+        "K7=► More Business Templates",
+        "K8=► Project Management Templates",
+        "K11=This chart uses SmartArt. After selecting",
+        "K12=the chart, go to the SmartArt Tools tab to",
+        "K13=make changes to design and format."
+      ],
+      "overlays": 40,
+      "hasChartText": true,
+      "pivotNotice": null
+    },
+    {
+      "index": 2,
+      "name": "©",
+      "clicked": true,
+      "screenshot": "w18-smartart-sheet-02-_.png",
+      "cellCount": 748,
+      "nonEmpty": 10,
+      "errs": [],
+      "samples": [
+        "A1=Company Organizational Chart Template",
+        "B3=By Vertex42.com",
+        "B4=https://www.vertex42.com/ExcelTemplates/organizational-chart",
+        "B6=© 2019 Vertex42 LLC",
+        "B8=This spreadsheet, including all worksheets and associated co",
+        "B10=Do not submit copies or modifications of this template to an",
+        "B12=Please review the following license agreement to learn how y",
+        "B14=License Agreement",
+        "B15=https://www.vertex42.com/licensing/EULA_personaluse.html",
+        "B17=Do not delete this worksheet."
+      ],
+      "overlays": 40,
+      "hasChartText": true,
+      "pivotNotice": null
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "wallMs": 25666,
+  "firstPage": {
+    "fileSelectedAt": 1892.7999999999884,
+    "firstValuesAt": 2035.7999999999884,
+    "firstPagePaintedAt": 2037,
+    "timeToFirstPageMs": 144.20000000001164,
+    "timeToFirstValuesMs": 143
+  },
+  "heapMB": 37.4,
+  "longTasks": {
+    "count": 5,
+    "total": 772,
+    "max": 280
+  },
+  "sheetTabs": [
+    "Company Organization Chart",
+    "©"
+  ],
+  "save": {
+    "ok": true,
+    "ms": 1333,
+    "path": "/home/hatch/workspace/icecream-sheets/hidden_files/cycle10-closure/w18-shots/downloads/w18-smartart-saved.xlsx",
+    "suggested": "workbook.xlsx",
+    "failure": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "driver": "api-adaptation",
+ "prompt": "What was the total of the Amount column in the Sales sheet I had open earlier?",
+ "turn": {
+  "text": "What was the total of the Amount column in the Sales sheet I had open earlier?",
+  "ms": 24538,
+  "status": 200,
+  "reply": "The total of the Amount column in the Sales sheet is 550.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "What was the total of the Amount column in the Sales sheet I had open earlier?"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "ok": true,
+    "text": "read_cells ok"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "analyze_data",
+    "ok": true,
+    "text": "analyze_data ok"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "set_formulas",
+    "ok": true,
+    "text": "set_formulas ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "The total of the Amount column in the Sales sheet is 550."
+   }
+  ]
+ }
+}

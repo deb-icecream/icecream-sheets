@@ -1,0 +1,49 @@
+{
+  "mode": "proof3",
+  "fileId": "file-07e4dcb4-8b05-4b3f-82f6-75aeafc0871f",
+  "sessionId": "sess_9f64798d-00bd-4df1-bf71-1836717ec742",
+  "cases": {
+    "case1": {
+      "pass": true,
+      "t1Ms": 3038,
+      "t2Ms": 3018,
+      "reply1": "The region with the highest total revenue was North, with $89,100.",
+      "reply2": "Here are the rows from the Sales sheet where Revenue is greater than 14000:\n\n- Mar, North, 15800\n- May, North, 16900\n- Jun, North, 16700\n- Jun, South, 14200"
+    },
+    "case2": {
+      "pass": false,
+      "t1Ms": 1510,
+      "t2Ms": 1510,
+      "t3Ms": 3027,
+      "reply1": "The total revenue in the Sales sheet is $159,400.",
+      "junSouth": {
+        "value": {
+          "kind": "number",
+          "value": 14200
+        }
+      },
+      "labelCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      },
+      "totalCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      }
+    },
+    "case5": {
+      "pass": false,
+      "t1Ms": 41066,
+      "dVals": [],
+      "shares": [],
+      "present": 0,
+      "maxShare": null,
+      "reply": "The Sales sheet is too large to process all at once. I can only process up to 100,000 cells at a time. To compute each region's share of total revenue and write it to column D, I would need to read the entire sheet, which is not possible in a single operation. Would you like me to proceed with a smaller chunk of the data, or would you prefer to analyze the data in aggregate by region?"
+    }
+  },
+  "allPass": false
+}

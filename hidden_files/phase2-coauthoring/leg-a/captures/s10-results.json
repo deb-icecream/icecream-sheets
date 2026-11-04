@@ -1,0 +1,13 @@
+{
+ "scenario": "10-registry-fail-closed",
+ "verdict": "PASS",
+ "checks": {
+  "refused": true,
+  "noSessionIssued": true
+ },
+ "openWhileRegistryDown": {
+  "status": 503,
+  "body": "{\"ok\":false,\"error\":\"session registry unavailable\"}"
+ },
+ "restored": true
+}

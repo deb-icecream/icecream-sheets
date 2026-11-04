@@ -1,0 +1,156 @@
+{
+  "case": "case5",
+  "gw": "http://localhost:9150",
+  "turns": [
+    {
+      "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a percentage. Then tell me which region has the largest share and what that share is.",
+      "ms": 16402,
+      "status": 200,
+      "message": "The North region has the largest share of total revenue at approximately 55.90%.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a perce",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The North region has the largest share of total revenue at approximately 55.90%.",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": null
+    }
+  ],
+  "checks": {
+    "status200": true,
+    "colDFilled12of12": true,
+    "filled": 12,
+    "northShareValue": 0.07528230865746549,
+    "northShareApproxCorrect": false,
+    "replyNamesNorthLargest": true,
+    "busyReplySignature": false,
+    "ranOutOfStepsSignature": false,
+    "auditKinds": [
+      "user_message",
+      "tool_call",
+      "agent_message"
+    ]
+  },
+  "evidence": {
+    "config": {
+      "provider": "heuristic",
+      "hasKey": false,
+      "defaultBackend": "vertex",
+      "defaultModel": "google/gemini-3.1-flash-lite"
+    },
+    "fileId": "file-0176e9ff-9244-43bb-ada2-75f6ecb69bc3",
+    "sessionId": "sess_0d43e44e-e4bf-4a6e-917e-196f1aa13d55",
+    "colD": [
+      {
+        "kind": "number",
+        "value": 0.07528230865746549
+      },
+      {
+        "kind": "number",
+        "value": 0.06148055207026349
+      },
+      {
+        "kind": "number",
+        "value": 0.08469259723964868
+      },
+      {
+        "kind": "number",
+        "value": 0.07026348808030113
+      },
+      {
+        "kind": "number",
+        "value": 0.09912170639899624
+      },
+      {
+        "kind": "number",
+        "value": 0.07904642409033877
+      },
+      {
+        "kind": "number",
+        "value": 0.0890840652446675
+      },
+      {
+        "kind": "number",
+        "value": 0.06838143036386449
+      },
+      {
+        "kind": "number",
+        "value": 0.10602258469259725
+      },
+      {
+        "kind": "number",
+        "value": 0.07277289836888332
+      },
+      {
+        "kind": "number",
+        "value": 0.10476787954830614
+      },
+      {
+        "kind": "number",
+        "value": 0.0890840652446675
+      }
+    ],
+    "releaseStatus": 200
+  }
+}

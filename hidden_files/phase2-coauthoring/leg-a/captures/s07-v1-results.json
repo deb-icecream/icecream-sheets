@@ -1,0 +1,10 @@
+{
+ "scenario": "7-disconnect-reconnect",
+ "variants": {
+  "V1": {
+   "fatal": "Error: waitFor timeout: cell 1,1 contains \"3\" (last=null)",
+   "ok": false
+  }
+ },
+ "verdict": "FAIL"
+}

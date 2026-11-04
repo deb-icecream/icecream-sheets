@@ -1,0 +1,88 @@
+{
+  "gw": "http://localhost:8920",
+  "parts": [
+    {
+      "part": "turn1-diagnostic",
+      "ms": 4488,
+      "status": 200,
+      "message": "The total revenue in the Sales sheet is 147400.",
+      "checks": {
+        "status200": true,
+        "computesTotal": false,
+        "noParkedAskToolCall": true,
+        "noTimeout": true,
+        "noUnsuppressedQuestion": true,
+        "underHITLWait": true
+      },
+      "pass": false,
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "question",
+          "tool": null,
+          "ok": null,
+          "text": "Which column in the Sales sheet contains the revenue data?",
+          "summary": "ask suppressed: planner has not used any tool yet this turn"
+        },
+        {
+          "kind": "question",
+          "tool": null,
+          "ok": null,
+          "text": "What is the range of your revenue data in the Sales sheet? Please specify the start and end rows and columns (e.g., A1:C10).",
+          "summary": "ask suppressed: planner has not used any tool yet this turn"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 147400.",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "part": "appgen-park",
+      "parkMs": 615,
+      "ask": {
+        "id": "ask_mvjmco1g_11htc",
+        "kind": "options",
+        "principal": "user:bob",
+        "question": "That sounds like an app request. Apps are built by the app builder lane — a React UI with the spreadsheet as its live backend — not by the analysis pipeline. What should the app do with your data?",
+        "options": [
+          "Describe the app",
+          "Analyze the data instead"
+        ],
+        "createdAt": 1792678262452,
+        "answered": false
+      },
+      "checks": {
+        "parkedWithProductOptions": true,
+        "answeredAndResumed": true
+      },
+      "pass": true,
+      "finalStatus": 200,
+      "finalMessage": "Ask budget for this turn is exhausted — do NOT ask the user another question. Determine sheet names with list_sheets and column identity from the header row / used range by reading the sheet, then compute or answer with what you have."
+    }
+  ],
+  "pass": false
+}

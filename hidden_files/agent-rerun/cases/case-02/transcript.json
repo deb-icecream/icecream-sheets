@@ -1,0 +1,342 @@
+{
+ "turns": [
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Region and Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Yes",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": true,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "What is the total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "What is the total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "clicked": null,
+   "timedOut": false,
+   "durationMs": 244425,
+   "prompt": "What is the total revenue in the Sales sheet?"
+  },
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Region and Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Yes",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": true,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "What is the total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "clicked": null,
+   "timedOut": false,
+   "durationMs": 36114,
+   "prompt": "Set the Revenue for Jun South to 15000 in the Sales sheet."
+  },
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Region and Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Yes",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": true,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "What is the total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "clicked": "Revenue|Which column in the 'Sales' sh",
+   "timedOut": false,
+   "durationMs": 42609,
+   "prompt": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it."
+  }
+ ]
+}

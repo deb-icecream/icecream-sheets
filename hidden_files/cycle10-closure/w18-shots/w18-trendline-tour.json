@@ -1,0 +1,86 @@
+{
+  "fixture": "trendline.xlsx",
+  "tag": "w18-trendline",
+  "sheets": [
+    {
+      "index": 1,
+      "name": "ClickThroughRateSheet",
+      "clicked": true,
+      "screenshot": "w18-trendline-sheet-01-ClickThroughRateSheet.png",
+      "cellCount": 748,
+      "nonEmpty": 36,
+      "errs": [],
+      "samples": [
+        "B2=Clicks",
+        "C2=Impressions",
+        "D2=CTR",
+        "B3=937",
+        "C3=965,560",
+        "D3=0.10%",
+        "B4=120",
+        "C4=361,403",
+        "D4=0.03%",
+        "B5=561",
+        "C5=154,880",
+        "D5=0.36%",
+        "B6=554",
+        "C6=506,691",
+        "D6=0.11%",
+        "B7=451",
+        "C7=201,358",
+        "D7=0.22%",
+        "B8=80",
+        "C8=273,339",
+        "D8=0.03%",
+        "B9=146",
+        "C9=901,638",
+        "D9=0.02%",
+        "B10=853"
+      ],
+      "overlays": 42,
+      "hasChartText": false,
+      "pivotNotice": null
+    },
+    {
+      "index": 2,
+      "name": "Sheet2",
+      "clicked": true,
+      "screenshot": "w18-trendline-sheet-02-Sheet2.png",
+      "cellCount": 748,
+      "nonEmpty": 0,
+      "errs": [],
+      "samples": [],
+      "overlays": 40,
+      "hasChartText": false,
+      "pivotNotice": null
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "wallMs": 25650,
+  "firstPage": {
+    "fileSelectedAt": 1835.2000000000116,
+    "firstValuesAt": 1928.2000000000116,
+    "firstPagePaintedAt": 1928.7000000000116,
+    "timeToFirstPageMs": 93.5,
+    "timeToFirstValuesMs": 93
+  },
+  "heapMB": 35.2,
+  "longTasks": {
+    "count": 5,
+    "total": 886,
+    "max": 407
+  },
+  "sheetTabs": [
+    "ClickThroughRateSheet",
+    "Sheet2"
+  ],
+  "save": {
+    "ok": true,
+    "ms": 1310,
+    "path": "/home/hatch/workspace/icecream-sheets/hidden_files/cycle10-closure/w18-shots/downloads/w18-trendline-saved.xlsx",
+    "suggested": "workbook.xlsx",
+    "failure": null
+  }
+}

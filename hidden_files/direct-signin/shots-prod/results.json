@@ -1,0 +1,30 @@
+{
+  "steps": [
+    {
+      "name": "landing",
+      "dialogPresent": false
+    },
+    {
+      "name": "clicked-once",
+      "labelBefore": "Sign in with Google"
+    },
+    {
+      "name": "after-click-main-page",
+      "msSinceClick": 647,
+      "dialogPresent": false,
+      "heroLabel": "Signing in with Google…",
+      "errorText": null
+    },
+    {
+      "name": "google-popup",
+      "msSinceClick": 13197,
+      "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253Fcontext_uri%253Dhttp%25253A%25252F%25252Flocalhost%25253A8943&dsh=S571604032%3A1792692127405834&client_id=340184893273-lquq3gpe6lh5rr5aisv4o6p73e6c4ptf.apps.googleusercontent.com&o2v=1&redirect_uri=https%3A%2F%2Ficecream-sheets.firebaseapp.com%2F__%2Fauth%2Fhandler&response_type=code&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+profile+email&service=lso&state=AMbdmDlPzKSrzhN6tyurlYceomUDRprG_a9zlqAOTivDpDXbKn8Xii8yL8JS14G4YXSrxLPfeSLfBHX8Xuz5USxRv1R1-VuxNQmW3L7N9xHnHqaA8JdjKuFkZJrO_6QwcZLu33XbMAh-_x437bbfSAXKWhjpAq16Az8AA0HnxZ76dK2o7F874P02ChLmGcD2h6lrybfwr6nV5lxo74WZTQc-xmVnfzbOkye_RZqJpUxByQls-jwWI7P6XsqmxdaF21AFcCc2XLbPPYl5jOf_prgXNJUu0YUZu3awupTVjCdQBHjxvUCFD71dXI73Sve1vYh6ziDTx9XqYg&flowName=GeneralOAuthLite&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Flegacy%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPiQ1z3Txurwk0MjlqPaXgdGuolTwR65cCVDgmsIXCPIIz6hUKfMI7bKiz5VbuKuf1XFjnBgBj9jIe-ogi0Axl8LTjgCGf-NY3ALBKbDWC05WGG2WLSXDpHOLKpnrHZ2uO3QC50Ge38nsJPnCblgYLtNxob9CAjAsdgRsbvp9HbKrpHT9vFpMW3Sjo8L-mZrNdXfaiQz2-wTWxg40mYliu_AzuIutsrbK3KnU9x07qiPpLRkNH6GhFyt9qBH8C2GMnEdJb7c2VNhmjrfoJY1RjpJOgimVtqSd4rXk2g3hdG8ElEhih_mKRX-sN9o_hm9IsciiIWcsh_whXx9HDHygh3d7UVMMuOQUYqeEujT20InvXP3ZevXL2x951f6BFUHLKqExKgN1lWEiN86NRATkj5h2UQrcSd4rWFRREnWEXTy7XI8uif1Hv9clZ7GK-oAhWYV5Qo_k-e7HpX1JZXJtgu6kyd89zVfwmoWLzWNd3LDNEFgXw%26flowName%3DGeneralOAuthFlow%26as%3DS571604032%253A1792692127405834%26client_id%3D340184893273-lquq3gpe6lh5rr5aisv4o6p73e6c4ptf.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Ficecream-sheets.firebaseapp.com&rart=ANgoxccqGRqjcupchUXWZTYWG4-5bw972_fUrACzCIGlqQtq8pIEh8khl9ep9mMtjrJO7gxUovIhabpwLYkqlFVUx4X4J52MuUz39v6kOZN06hzy90NO7Hk",
+      "googleDestinationSeen": true,
+      "screenshot": "prod-03-google-popup.png"
+    }
+  ],
+  "consoleErrors": [
+    "Cross-Origin-Opener-Policy policy would block the window.closed call.",
+    "Cross-Origin-Opener-Policy policy would block the window.closed call."
+  ]
+}

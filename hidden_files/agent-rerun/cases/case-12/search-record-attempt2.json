@@ -1,0 +1,18 @@
+{
+ "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.ribbon-panel button').filter({ hasText: 'My Apps' }).first()\n    - locator resolved to <button type=\"button\" aria-haspopup=\"menu\" aria-expanded=\"false\" title=\"Open a saved app\" class=\"ribbon-btn small with-icon\">…</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - don",
+ "ribbonTabs": [
+  "File",
+  "Home",
+  "Insert",
+  "Draw",
+  "Page Layout",
+  "Formulas",
+  "Data",
+  "Review",
+  "View",
+  "Extensions",
+  "Help",
+  "Share"
+ ],
+ "bodyHead": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nCA\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nTable\nPivotTable\nRecommended PivotTables\nTables\nBuild App\nMy Apps ▾\nApps\nSlicer\nTimeline\nFilters\nSparkline\nRemove Sparkline\nSparklines\nPictures\nShapes ▾\nIcons\nSmartArt\nScreenshot\nIllustrations\nInsert Chart ▾\nRecommended Charts\nPivotChart\nCharts\nLink ▾\nLinks\nA\nText Box\nHeader & Footer\nA\nWordArt\nText\nπ\nEquation ▾\nΩ\nSymbol\nSymbols\nNew Report\nMy Reports\nReports\nNew Sheet\nDelete Sheet\nSheets\nInsert Row\nDelete Row\nInsert Column\nDelete Column\nRows & Columns\nControls ▾\nForm Controls\n3D Map\nMaps\nWave C Sales App\n×\nTable\nDetail\nAdd / Edit\nCards\nMonth\tRegion\tRevenue\nJan\tNorth\t12000\nJan\tSouth\t9800\nFeb\tNorth\t13500\nFeb\tSouth\t11200\nMar\tNorth\t15800\nMar\tSouth\t12600\nApr\tNorth\t14200\nApr\tSouth\t10900\nMay\tNorth\t16900\nMay\tSouth\t11600\nJun\tNorth\t16700\nJun\tSouth\t14200\nAdd row\nEdit row\nDelete row\nA1\ncarol\nA\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\nMonth\nRegion\nRevenue\nJan\nNorth\n12000\nJan\nSouth\n98"
+}

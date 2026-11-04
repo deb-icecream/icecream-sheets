@@ -1,0 +1,65 @@
+{
+  "fileId": "file-4bfcf876-4307-469a-af34-37c0a501659e",
+  "leg1Throttled": {
+    "a1": {
+      "ms": 234,
+      "value": "uuu"
+    },
+    "b2": {
+      "ms": 48,
+      "value": "vvv"
+    },
+    "a1After": "uuu"
+  },
+  "leg2NoLoss": {
+    "refusedCount": 4,
+    "domDuringOutage": {
+      "C1": "empty",
+      "D3": "empty"
+    },
+    "queueDuringOutage": {
+      "queueLen": 2,
+      "queueKinds": [
+        "?",
+        "?"
+      ],
+      "rejectedLen": 0,
+      "clientSeq": 4,
+      "lastAppliedRev": 2
+    },
+    "queueAfterReload": {
+      "queueLen": 2,
+      "queueKinds": [
+        "?",
+        "?"
+      ],
+      "rejectedLen": 0,
+      "clientSeq": 4,
+      "lastAppliedRev": 2
+    },
+    "domAfterReload": {
+      "C1": "empty",
+      "D3": "empty"
+    },
+    "healC1": {
+      "ms": 998,
+      "value": "keepme1"
+    },
+    "healD3": {
+      "ms": 124,
+      "value": "keepme2"
+    },
+    "queueAfterHeal": {
+      "queueLen": 0,
+      "queueKinds": [],
+      "rejectedLen": 0,
+      "clientSeq": 4,
+      "lastAppliedRev": 4
+    }
+  },
+  "secondClient": {
+    "C1": "keepme1",
+    "D3": "keepme2",
+    "A1": "uuu"
+  }
+}

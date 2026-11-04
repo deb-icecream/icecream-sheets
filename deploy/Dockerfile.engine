@@ -1,0 +1,83 @@
+# syntax=docker/dockerfile:1
+# =============================================================================
+# icecream-sheets — ENGINE image (Cloud Run services: engine-standard,
+# engine-xl — SAME image, two services, different CPU/memory/heap; routing
+# by workbook cell count happens at open time per the design doc).
+#
+# Spec: design-docs/deployment-architecture.md — engine is STATEFUL by
+# necessity (dependency graph + built workbook live in process memory),
+# durable via session registry (Firestore) + op journal + snapshots
+# (Cloud Storage). Request timeout = Cloud Run max 3,600 s (service YAML).
+#
+# Build context = repo root:
+#   docker build -f deploy/Dockerfile.engine -t icecream-engine .
+#
+# Bin: packages/gateway/dist/bin/engine.js, started through
+# deploy/engine-entrypoint.sh for the --expose-gc / --max-old-space-size
+# heap discipline the local stack uses (ENGINE_HEAP_MB per tier).
+# PORT: bin reads process.env.PORT (default 8101 local) — Cloud Run's
+# injected PORT is honored. Health: GET /health in engineSvc.
+#
+# ⚠ KNOWN CODE GAPS (W17b, do not fix here):
+#  1. Bin binds 127.0.0.1 hardcoded — Cloud Run requires 0.0.0.0:$PORT.
+#  2. Engine persistence today is local-disk (ICECREAM_DATA_DIR,
+#     packages/gateway/src/filePersistence.ts). On Cloud Run the writable
+#     FS is in-memory tmpfs that COUNTS AGAINST the instance memory limit
+#     and vanishes with the instance; the doc's Cloud Storage / Firestore
+#     backing (session registry, op journal, snapshots) is product work.
+# =============================================================================
+
+# ---------- build stage ----------
+FROM node:20-bookworm-slim AS build
+WORKDIR /app
+COPY package.json package-lock.json tsconfig.base.json ./
+COPY packages/engine/package.json        packages/engine/package.json
+COPY packages/csv-adapter/package.json   packages/csv-adapter/package.json
+COPY packages/ods-adapter/package.json   packages/ods-adapter/package.json
+COPY packages/xlsb-adapter/package.json  packages/xlsb-adapter/package.json
+COPY packages/xlsx-adapter/package.json  packages/xlsx-adapter/package.json
+COPY packages/service/package.json       packages/service/package.json
+COPY packages/mcp-server/package.json    packages/mcp-server/package.json
+COPY packages/gateway/package.json       packages/gateway/package.json
+RUN npm ci --no-audit --no-fund
+COPY packages/engine/       packages/engine/
+COPY packages/csv-adapter/  packages/csv-adapter/
+COPY packages/ods-adapter/  packages/ods-adapter/
+COPY packages/xlsb-adapter/ packages/xlsb-adapter/
+COPY packages/xlsx-adapter/ packages/xlsx-adapter/
+COPY packages/service/      packages/service/
+COPY packages/mcp-server/   packages/mcp-server/
+COPY packages/gateway/     packages/gateway/
+# Fresh-build ordering (2026-10-24 deploy wave): mcp-server imports
+# @icecream-sheets/gateway/remote, whose declarations only exist after the
+# gateway build -- but the gateway build needs mcp-server dist (agentSvc).
+# The remote barrel never imports mcp-server (by design), so compile it +
+# its closure first; the full gateway build later re-emits identical output.
+RUN npm run build --workspace=@icecream-sheets/engine \
+ && npm run build --workspace=@icecream-sheets/csv-adapter \
+ && npm run build --workspace=@icecream-sheets/ods-adapter \
+ && npm run build --workspace=@icecream-sheets/xlsb-adapter \
+ && npm run build --workspace=@icecream-sheets/xlsx-adapter \
+ && npm run build --workspace=@icecream-sheets/service \
+ && npx tsc packages/gateway/src/remote.ts --outDir packages/gateway/dist --rootDir packages/gateway/src --module NodeNext --moduleResolution NodeNext --target ES2022 --declaration --esModuleInterop --skipLibCheck --strict --forceConsistentCasingInFileNames \
+ && npm run build --workspace=@icecream-sheets/mcp-server \
+ && npm run build --workspace=@icecream-sheets/gateway \
+ && npm prune --omit=dev --no-audit --no-fund
+
+# ---------- runtime stage ----------
+FROM node:20-bookworm-slim AS runtime
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+ENV NODE_ENV=production
+WORKDIR /app
+COPY --from=build --chown=node:node /app/package.json /app/package-lock.json ./
+COPY --from=build --chown=node:node /app/node_modules ./node_modules
+COPY --from=build --chown=node:node /app/packages ./packages
+COPY --chown=node:node deploy/engine-entrypoint.sh /app/engine-entrypoint.sh
+RUN chmod 0555 /app/engine-entrypoint.sh
+USER node
+EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=5s --start-period=60s \
+  CMD node -e "fetch('http://127.0.0.1:'+(process.env.PORT||8080)+'/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"
+ENTRYPOINT ["/app/engine-entrypoint.sh"]

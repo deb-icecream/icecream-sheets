@@ -1,0 +1,331 @@
+{
+  "case": "case7a",
+  "gw": "http://localhost:9150",
+  "turns": [
+    {
+      "text": "Open the CSV data source at http://localhost:9155/inventory.csv and materialize it as a new sheet named 'Inventory CSV'.",
+      "ms": 7954,
+      "status": 200,
+      "message": "Opened the CSV as the sheet 'Inventory CSV' with 4 data rows (columns: SKU, Item, Warehouse, Units).",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Open the CSV data source at http://localhost:9155/inventory.csv and materialize it as a new sheet named 'Inventory CSV'.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "open_data_source",
+          "ok": true,
+          "text": null,
+          "summary": "open_data_source ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "Opened the CSV as the sheet 'Inventory CSV' with 4 data rows (columns: SKU, Item, Warehouse, Units).",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": null
+    },
+    {
+      "text": "In the Inventory CSV sheet, what is the total number of Units for the item Widget across all warehouses?",
+      "ms": 3154,
+      "status": 200,
+      "message": "The total number of Units for the item Widget across all warehouses in the Inventory CSV sheet is 55.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Open the CSV data source at http://localhost:9155/inventory.csv and materialize it as a new sheet named 'Inventory CSV'.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "open_data_source",
+          "ok": true,
+          "text": null,
+          "summary": "open_data_source ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "Opened the CSV as the sheet 'Inventory CSV' with 4 data rows (columns: SKU, Item, Warehouse, Units).",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "In the Inventory CSV sheet, what is the total number of Units for the item Widget across all warehouses?",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total number of Units for the item Widget across all warehouses in the Inventory CSV sheet is 55.",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": null
+    }
+  ],
+  "checks": {
+    "openOk": true,
+    "totalWidget55": true,
+    "ranOutOfSteps": false
+  },
+  "evidence": {
+    "readback": {
+      "values": [
+        [
+          {
+            "kind": "string",
+            "value": "SKU"
+          },
+          {
+            "kind": "string",
+            "value": "Item"
+          },
+          {
+            "kind": "string",
+            "value": "Warehouse"
+          },
+          {
+            "kind": "string",
+            "value": "Units"
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ],
+        [
+          {
+            "kind": "string",
+            "value": "A100"
+          },
+          {
+            "kind": "string",
+            "value": "Widget"
+          },
+          {
+            "kind": "string",
+            "value": "North"
+          },
+          {
+            "kind": "number",
+            "value": 34
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ],
+        [
+          {
+            "kind": "string",
+            "value": "A101"
+          },
+          {
+            "kind": "string",
+            "value": "Gadget"
+          },
+          {
+            "kind": "string",
+            "value": "South"
+          },
+          {
+            "kind": "number",
+            "value": 57
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ],
+        [
+          {
+            "kind": "string",
+            "value": "A102"
+          },
+          {
+            "kind": "string",
+            "value": "Widget"
+          },
+          {
+            "kind": "string",
+            "value": "South"
+          },
+          {
+            "kind": "number",
+            "value": 21
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ],
+        [
+          {
+            "kind": "string",
+            "value": "A103"
+          },
+          {
+            "kind": "string",
+            "value": "Sprocket"
+          },
+          {
+            "kind": "string",
+            "value": "North"
+          },
+          {
+            "kind": "number",
+            "value": 48
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ],
+        [
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ],
+        [
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          },
+          {
+            "kind": "null",
+            "value": null
+          }
+        ]
+      ],
+      "formulas": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "releaseStatus": 200
+  }
+}

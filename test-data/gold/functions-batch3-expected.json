@@ -1,0 +1,60 @@
+{
+  "OddBond!A1": {
+    "approx": 113.597717474079,
+    "tol": 0.000001
+  },
+  "OddBond!A2": {
+    "approx": 0.0772455415972989,
+    "tol": 1e-9
+  },
+  "OddBond!A3": {
+    "approx": 99.8782860147213,
+    "tol": 1e-9
+  },
+  "OddBond!A4": {
+    "approx": 0.04519223563,
+    "tol": 1e-9
+  },
+  "OddBond!A5": {
+    "approx": 100.13428645473392,
+    "tol": 1e-9
+  },
+  "OddBond!A6": {
+    "approx": 0.035,
+    "tol": 1e-9
+  },
+  "GroupBy!E1": "Region",
+  "GroupBy!J1": "Sales",
+  "GroupBy!J2": "East",
+  "GroupBy!J3": 250,
+  "GroupBy!J4": "North",
+  "GroupBy!J5": 300,
+  "GroupBy!J6": "West",
+  "GroupBy!J7": 250,
+  "GroupBy!J8": "Total",
+  "GroupBy!J9": 800,
+  "PivotBy!E1": "Year",
+  "PivotBy!J1": 2023,
+  "PivotBy!J2": 2024,
+  "PivotBy!J3": "Total",
+  "PivotBy!J4": "Region",
+  "PivotBy!J5": "Sales",
+  "PivotBy!J6": "Sales",
+  "PivotBy!J7": "Sales",
+  "PivotBy!J8": "East",
+  "PivotBy!J9": 100,
+  "PivotBy!J10": 150,
+  "PivotBy!J11": 250,
+  "PivotBy!J12": "North",
+  "PivotBy!J13": 300,
+  "PivotBy!J14": 100,
+  "PivotBy!J15": 400,
+  "PivotBy!J16": "West",
+  "PivotBy!J17": 200,
+  "PivotBy!J18": 50,
+  "PivotBy!J19": 250,
+  "PivotBy!J20": "Total",
+  "PivotBy!J21": 600,
+  "PivotBy!J22": 300,
+  "PivotBy!J23": 900
+}

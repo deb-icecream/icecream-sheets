@@ -1,0 +1,33 @@
+{
+ "driver": "api-adaptation",
+ "prompt": "When does my weekly report go out?",
+ "turn": {
+  "text": "When does my weekly report go out?",
+  "ms": 2466,
+  "status": 200,
+  "reply": "Your weekly report goes out on Fridays.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "When does my weekly report go out?"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "memory_load",
+    "ok": true,
+    "text": "memory_load ok"
+   },
+   {
+    "kind": "memory",
+    "tool": "memory_load",
+    "ok": true,
+    "text": "memory_load ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "Your weekly report goes out on Fridays."
+   }
+  ]
+ }
+}

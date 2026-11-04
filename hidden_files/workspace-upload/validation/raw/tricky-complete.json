@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "file": {
+    "fileId": "file-1638aa26-e40e-4b06-8352-1bf15015e354",
+    "ownerPrincipal": "user:csvuser",
+    "name": "tricky.csv",
+    "sourceFormat": "csv",
+    "origin": "upload",
+    "sizeBytes": 153,
+    "storageRef": {
+      "bucket": "icecream-uploads",
+      "object": "uploads/e413c48aacfe9847/file-1638aa26-e40e-4b06-8352-1bf15015e354.csv"
+    },
+    "libraryEntryId": null,
+    "hasStoredState": false,
+    "createdAt": 1792649539134,
+    "updatedAt": 1792649539134,
+    "lastOpenedAt": 1792649539134
+  }
+}

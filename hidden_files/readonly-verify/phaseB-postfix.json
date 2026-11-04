@@ -1,0 +1,81 @@
+{
+  "phase": "phaseB",
+  "turns": [],
+  "agentTurns": [
+    {
+      "tag": "bob-agent",
+      "ms": 8863,
+      "status": 200,
+      "message": "The value 'AGENT-PWN' has been successfully written to cell C3 on Sheet1.",
+      "answers": []
+    }
+  ],
+  "checks": {
+    "aliceWriteLands": false,
+    "ownerGrantRecorded": false,
+    "nonCreatorCannotGrant": false,
+    "sameSession": false,
+    "bobClampedToViewer": false,
+    "bobCellWriteBlocked": false,
+    "bobStructuralBlocked": false,
+    "bobExecuteBlocked": false,
+    "bobChartBlocked": false,
+    "agentWriteBlocked": true,
+    "aliceSecondWriteLands": false,
+    "bobSeesEditorWriteLive": false,
+    "bobCanStillRead": false,
+    "parseBackHasEditorOriginal": false,
+    "parseBackHasEditorLive": false,
+    "parseBackCleanOfViewerValues": true,
+    "bobReopenStillViewer": false,
+    "bobOwnFileEditor": false
+  },
+  "evidence": {
+    "openA": {
+      "status": 409
+    },
+    "shareByOwner": {
+      "status": 401,
+      "json": {
+        "ok": false,
+        "error": "engine access denied: malformed"
+      }
+    },
+    "shareByBob": {
+      "status": 401,
+      "json": {
+        "ok": false,
+        "error": "engine access denied: malformed"
+      }
+    },
+    "openB": {
+      "status": 409
+    },
+    "registry": null,
+    "bobOp": {
+      "status": 0,
+      "json": null
+    },
+    "bobStruct": {
+      "status": 0,
+      "json": null
+    },
+    "bobExecute": {
+      "status": 0,
+      "json": "TypeError: Failed to parse URL from undefined/execute"
+    },
+    "bobChart": {
+      "status": 0,
+      "json": "TypeError: Failed to parse URL from undefined/charts"
+    },
+    "c3AfterBobAgent": null,
+    "bobDeltas": {
+      "status": 0,
+      "body": "TypeError: Failed to parse URL from undefined/deltas?since=1"
+    },
+    "download": {
+      "status": 0,
+      "json": null
+    }
+  }
+}

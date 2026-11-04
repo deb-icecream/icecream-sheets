@@ -1,0 +1,98 @@
+{
+  "build": {
+    "appId": "com.icecream.sheets",
+    "fileAssociations": [
+      {
+        "ext": "xlsx",
+        "name": "Excel Workbook",
+        "description": "Icecream Sheets workbook",
+        "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "role": "Editor"
+      },
+      {
+        "ext": "csv",
+        "name": "CSV",
+        "description": "Comma-separated values",
+        "mimeType": "text/csv",
+        "role": "Editor"
+      },
+      {
+        "ext": "tsv",
+        "name": "TSV",
+        "description": "Tab-separated values",
+        "mimeType": "text/tab-separated-values",
+        "role": "Editor"
+      },
+      {
+        "ext": "ods",
+        "name": "OpenDocument Spreadsheet",
+        "description": "Icecream Sheets workbook (OpenDocument)",
+        "mimeType": "application/vnd.oasis.opendocument.spreadsheet",
+        "role": "Editor"
+      }
+    ],
+    "files": [
+      "dist/*.js",
+      {
+        "from": "../web/dist",
+        "to": "web/dist",
+        "filter": [
+          "**/*"
+        ]
+      },
+      "!dist/*-unpacked/**",
+      "!dist/*.exe",
+      "!dist/*.7z",
+      "!dist/*.zip",
+      "!dist/*.blockmap",
+      "!dist/builder-debug.yml"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "build/icon.png",
+      "target": "zip"
+    },
+    "productName": "Icecream Sheets",
+    "win": {
+      "icon": "build/icon.png",
+      "target": "nsis"
+    },
+    "linux": {
+      "icon": "build/icons"
+    },
+    "nsis": {
+      "script": "build/installer.nsi"
+    }
+  },
+  "dependencies": {
+    "@icecream-sheets/csv-adapter": "0.1.0",
+    "@icecream-sheets/engine": "0.1.0",
+    "@icecream-sheets/mcp-server": "0.1.0",
+    "@icecream-sheets/ods-adapter": "0.1.0",
+    "@icecream-sheets/service": "0.1.0",
+    "@icecream-sheets/xlsb-adapter": "0.1.0",
+    "@icecream-sheets/xlsx-adapter": "0.1.0",
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "description": "Electron desktop shell for Icecream Sheets (hosts the engine in main, web UI in renderer)",
+  "devDependencies": {
+    "electron": "44.9.0",
+    "electron-builder": "^26.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "dist/main.js",
+  "name": "icecream-sheets-desktop",
+  "productName": "Icecream Sheets",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
+    "start": "electron .",
+    "test": "vitest run"
+  },
+  "version": "0.1.0"
+}

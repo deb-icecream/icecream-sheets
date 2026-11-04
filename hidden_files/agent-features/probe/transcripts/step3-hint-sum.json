@@ -1,0 +1,9 @@
+{
+ "prompt": "Use the read_cells tool with exactly these args: {\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":2,\"endCol\":0}. Then tell me the sum of the values you read.",
+ "status": 502,
+ "latencyMs": 30063,
+ "response": {
+  "ok": false,
+  "error": "backend unavailable"
+ }
+}

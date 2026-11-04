@@ -1,0 +1,89 @@
+/* Fixed iframe stylesheet SOURCE for generated apps (Phase 1 design system).
+ *
+ * DO NOT import this file into the host bundle: it carries Tailwind
+ * preflight, which must live ONLY inside the generated-app iframe
+ * document. The build script (apps/web/scripts/build-iframe-css.mjs)
+ * compiles it with the Tailwind CLI into artifact-iframe.compiled.css,
+ * which ArtifactHost inlines into the iframe srcDoc via ?raw (the same
+ * pattern as the React UMD inlines).
+ *
+ * Brand tokens are seeded from the host theme (apps/web/src/index.css):
+ * light accent teal #0e7c6b, 6px radii, system font. Dark theme uses the
+ * host's dark palette (accent #2dd4bf on slate). The host maps its
+ * resolved theme ('light' | 'dark') to these theme names when building
+ * the srcDoc (see artifactFrame.ts THEME_MAP). */
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: icecream-light --default, icecream-dark --prefersdark;
+  /* Include ONLY what the generated-app vocabulary uses: the full
+     component set is ~245 KB minified and blows the 100 KB iframe
+     budget. Base items (rootcolor/properties/svg/scrollbar) carry the
+     theme-variable plumbing; the eight components are the vocabulary.
+     select joined in #156: without it a prompt-faithful model had no
+     styled dropdown to use, so every app dropdown rendered native. */
+  include: rootcolor, properties, svg, scrollbar, rootscrollgutter, rootscrolllock, button, card, stat, table, input, badge, alert, select;
+  logs: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "icecream-light";
+  --color-base-100: #ffffff;
+  --color-base-200: #f4f6f8;
+  --color-base-300: #e8edf2;
+  --color-base-content: #1c2530;
+  --color-primary: #0e7c6b;
+  --color-primary-content: #ffffff;
+  --color-secondary: #1c2530;
+  --color-secondary-content: #ffffff;
+  --color-accent: #0e7c6b;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1c2530;
+  --color-neutral-content: #ffffff;
+  --color-info: #2b6cb0;
+  --color-info-content: #ffffff;
+  --color-success: #0e7c6b;
+  --color-success-content: #ffffff;
+  --color-warning: #b45309;
+  --color-warning-content: #ffffff;
+  --color-error: #b3261e;
+  --color-error-content: #ffffff;
+  --radius-selector: 6px;
+  --radius-field: 6px;
+  --radius-box: 6px;
+  --border: 1px;
+}
+
+@plugin "daisyui/theme" {
+  name: "icecream-dark";
+  --color-base-100: #1e293b;
+  --color-base-200: #0f172a;
+  --color-base-300: #334155;
+  --color-base-content: #e2e8f0;
+  --color-primary: #2dd4bf;
+  --color-primary-content: #0f172a;
+  --color-secondary: #e2e8f0;
+  --color-secondary-content: #0f172a;
+  --color-accent: #2dd4bf;
+  --color-accent-content: #0f172a;
+  --color-neutral: #e2e8f0;
+  --color-neutral-content: #0f172a;
+  --color-info: #60a5fa;
+  --color-info-content: #0f172a;
+  --color-success: #2dd4bf;
+  --color-success-content: #0f172a;
+  --color-warning: #f59e0b;
+  --color-warning-content: #0f172a;
+  --color-error: #f87171;
+  --color-error-content: #0f172a;
+  --radius-selector: 6px;
+  --radius-field: 6px;
+  --radius-box: 6px;
+  --border: 1px;
+}
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-brand: #0e7c6b;
+}

@@ -1,0 +1,19 @@
+{
+ "checks": [
+  {
+   "id": "B5.row-above.before",
+   "pass": true,
+   "detail": "before={\"p2\":{\"value\":5},\"p3\":{\"value\":10,\"formula\":\"=P2*2\"}}"
+  },
+  {
+   "id": "B5.row-above.after",
+   "pass": true,
+   "detail": "after={\"p2\":{\"value\":null},\"p3\":{\"value\":5},\"p4\":{\"value\":10,\"formula\":\"=P3*2\"}}"
+  }
+ ],
+ "shots": [
+  "b5-menu-row.png",
+  "b5-row-above-after.png"
+ ],
+ "verdict": "ALL PASS"
+}

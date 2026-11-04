@@ -1,0 +1,133 @@
+{
+  "legs": {
+    "A-d7-after": {
+      "tierGearOverlapPx": 0,
+      "tierHelpOverlapArea": null,
+      "headerH": 92.890625,
+      "actionsBox": {
+        "x": 140.59375,
+        "y": 45.890625,
+        "w": 233.40625,
+        "h": 36,
+        "right": 374,
+        "bottom": 81.890625
+      },
+      "nameBox": {
+        "x": 67,
+        "y": 282.53125,
+        "w": 133,
+        "h": 22.46875,
+        "right": 200,
+        "bottom": 305
+      },
+      "nameCellBox": {
+        "x": 17,
+        "y": 268.265625,
+        "w": 253.703125,
+        "h": 52,
+        "right": 270.703125,
+        "bottom": 320.265625
+      },
+      "createdBox": null,
+      "nameVsCreatedOverlapArea": null,
+      "nameText": "Untitled spreadsheet",
+      "docScrollW": 472
+    },
+    "B-upload": {
+      "grantLine": "200 /api/files/upload-grant",
+      "bad401AfterLogin": [],
+      "fileListed": true,
+      "tokenAfter": "present"
+    },
+    "C-chat": {
+      "dock": {
+        "gridBeforeW": 1440,
+        "gridAfterW": 1100,
+        "chatLeft": 1100,
+        "chatW": 340,
+        "overlapPx": 0
+      },
+      "inputCount": 1,
+      "reply": {
+        "ok": true,
+        "count": 3,
+        "last": "A1:\n(empty)"
+      },
+      "divider": {
+        "w0": 340,
+        "afterKeys": 372,
+        "afterDrag": 536,
+        "stored": "536"
+      },
+      "artifact": {
+        "ok": false,
+        "msgs": [
+          "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data wi",
+          "What is the value in cell A1?",
+          "A1:\n(empty)",
+          "Build an app that shows this sheet as a list of cards",
+          "Something went wrong: gateway 503: {\"ok\":false,\"error\":\"App generation is not configured on this service: no GCP credent"
+        ]
+      },
+      "dark": {
+        "ok": false,
+        "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.ics-file-link').first()\n",
+        "themeAttr": "dark"
+      }
+    },
+    "D-presence": {
+      "fileId": "file-14e9a81f-4202-4aec-a1f8-59feeabed61c",
+      "chipA": "🔗 Untitled spreadsheet",
+      "seen": {
+        "inA": [],
+        "inB": [],
+        "d7inA": {
+          "x": 332,
+          "y": 391,
+          "width": 96,
+          "height": 24
+        },
+        "c5inB": {
+          "x": 236,
+          "y": 343,
+          "width": 96,
+          "height": 24
+        }
+      },
+      "moved": {
+        "flag": null,
+        "e9cell": {
+          "x": 428,
+          "y": 439,
+          "width": 96,
+          "height": 24
+        }
+      }
+    },
+    "E-d4": {
+      "value": null,
+      "allInputs": [
+        {
+          "al": null,
+          "v": ""
+        },
+        {
+          "al": null,
+          "v": ""
+        },
+        {
+          "al": null,
+          "v": "light"
+        },
+        {
+          "al": null,
+          "v": "dark"
+        },
+        {
+          "al": null,
+          "v": "system"
+        }
+      ]
+    }
+  }
+}

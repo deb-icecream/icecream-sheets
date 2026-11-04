@@ -1,0 +1,147 @@
+{
+ "label": "before",
+ "steps": {
+  "login": "ok",
+  "upload": {
+   "fileId": "file-15fa9d48-303f-4658-9aff-75aaaa1422e1",
+   "A1": "10",
+   "B2": "30"
+  },
+  "defineName": "ok",
+  "pageErrors": []
+ },
+ "exports": [
+  {
+   "format": "xlsx",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/before/dl-workbook-xlsx.xlsx",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"xlsx\",\"filename\":\"workbook.xlsx\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\""
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "format": "csv",
+   "scope": "workbook",
+   "downloaded": false,
+   "saved": null,
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://localhost:8410/api/engine/download",
+     "status": 401,
+     "postData": "{\"format\":\"csv\",\"filename\":\"workbook.csv\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Of"
+    }
+   ],
+   "errorSeen": "not authenticated (401)"
+  },
+  {
+   "format": "tsv",
+   "scope": "workbook",
+   "downloaded": false,
+   "saved": null,
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://localhost:8410/api/engine/download",
+     "status": 401,
+     "postData": "{\"format\":\"tsv\",\"filename\":\"workbook.tsv\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Of"
+    }
+   ],
+   "errorSeen": "not authenticated (401)"
+  },
+  {
+   "format": "ods",
+   "scope": "workbook",
+   "downloaded": false,
+   "saved": null,
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://localhost:8410/api/engine/download",
+     "status": 401,
+     "postData": "{\"format\":\"ods\",\"filename\":\"workbook.ods\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Of"
+    }
+   ],
+   "errorSeen": "not authenticated (401)"
+  },
+  {
+   "format": "html",
+   "scope": "workbook",
+   "downloaded": false,
+   "saved": null,
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://localhost:8410/api/engine/download",
+     "status": 401,
+     "postData": "{\"format\":\"html\",\"filename\":\"workbook.html\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\""
+    }
+   ],
+   "errorSeen": "not authenticated (401)"
+  },
+  {
+   "note": "namedRange radioDisabled=false options=[\"MyRange — Workbook · Sheet1!A1:B2\"]"
+  },
+  {
+   "format": "xlsx",
+   "scope": "namedRange",
+   "downloaded": false,
+   "saved": null,
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://localhost:8410/api/engine/download",
+     "status": 401,
+     "postData": "{\"format\":\"xlsx\",\"filename\":\"MyRange.xlsx\",\"scope\":\"namedRange\",\"namedRange\":{\"name\":\"MyRange\",\"ref\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":1,\"endCol\":1}}}"
+    }
+   ],
+   "errorSeen": "not authenticated (401)"
+  },
+  {
+   "note": "namedRange radioDisabled=false options=[\"MyRange — Workbook · Sheet1!A1:B2\"]"
+  },
+  {
+   "format": "csv",
+   "scope": "namedRange",
+   "downloaded": false,
+   "saved": null,
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://localhost:8410/api/engine/download",
+     "status": 401,
+     "postData": "{\"format\":\"csv\",\"filename\":\"MyRange.csv\",\"scope\":\"namedRange\",\"namedRange\":{\"name\":\"MyRange\",\"ref\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":1,\"endCol\":1}}}"
+    }
+   ],
+   "errorSeen": "not authenticated (401)"
+  }
+ ],
+ "api": {
+  "open": {
+   "status": 200,
+   "engineUrl": "http://127.0.0.1:8411",
+   "sessionId": "sess_1c570d99-092b-4f5c-8ecb-2ccbe374ffe3"
+  },
+  "xlsbDirect": {
+   "status": 200,
+   "bytes": 1831,
+   "contentType": "application/vnd.ms-excel.sheet.binary.macroEnabled.12"
+  },
+  "xlsbProxiedGatewayJwt": {
+   "status": 401,
+   "body": "{\"ok\":false,\"error\":\"engine access denied: malformed\"}"
+  },
+  "csvDirectGatewayJwt": {
+   "status": 401,
+   "body": "{\"ok\":false,\"error\":\"engine access denied: malformed\"}"
+  }
+ },
+ "verdicts": {}
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "t": 6596,
+    "ev": "uploaded"
+  },
+  {
+    "t": 8514,
+    "ev": "deep-link-open"
+  },
+  {
+    "t": 9436,
+    "ev": "res",
+    "url": "http://localhost:8810/api/engine/open",
+    "body": "",
+    "status": 204
+  },
+  {
+    "t": 9777,
+    "ev": "console",
+    "type": "error",
+    "text": "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  },
+  {
+    "t": 9634,
+    "ev": "res",
+    "url": "http://localhost:8810/api/engine/open",
+    "body": "{\"fileId\":\"file-080955c9-e17b-4bca-a5a7-610f60ece982\"}",
+    "status": 409
+  },
+  {
+    "t": 10902,
+    "ev": "res",
+    "url": "http://localhost:8810/api/engine/session-extras",
+    "body": "",
+    "status": 204
+  },
+  {
+    "t": 10933,
+    "ev": "console",
+    "type": "error",
+    "text": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  },
+  {
+    "t": 10905,
+    "ev": "res",
+    "url": "http://localhost:8810/api/engine/session-extras",
+    "body": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":",
+    "status": 401
+  },
+  {
+    "t": 71989,
+    "ev": "tabs-rendered",
+    "tabsSeen": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 71994,
+    "ev": "clicked-DropdownLists"
+  },
+  {
+    "t": 74002,
+    "ev": "dl+2s",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 78014,
+    "ev": "dl+6s",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 84029,
+    "ev": "dl+12s",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 104044,
+    "ev": "dl+32s",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 104049,
+    "ev": "clicked-BrowseData"
+  },
+  {
+    "t": 105597,
+    "ev": "bd+1.5s",
+    "nonEmpty": 0
+  },
+  {
+    "t": 110113,
+    "ev": "bd+6s",
+    "nonEmpty": 0
+  },
+  {
+    "t": 110128,
+    "ev": "clicked-DropdownLists-again"
+  },
+  {
+    "t": 111637,
+    "ev": "dl2+1.5s",
+    "nonEmpty": 0
+  },
+  {
+    "t": 116145,
+    "ev": "dl2+6s",
+    "nonEmpty": 0
+  }
+]

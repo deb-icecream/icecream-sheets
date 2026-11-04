@@ -1,0 +1,116 @@
+{
+  "ms": 6709,
+  "status": 200,
+  "response": {
+    "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+    "message": "The total revenue in the Sales sheet is 147400.",
+    "needsInput": null,
+    "audit": [
+      {
+        "seq": 1,
+        "ts": 1792678438045,
+        "principal": "user:alice",
+        "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+        "kind": "user_message",
+        "text": "What is the total revenue in the Sales sheet?"
+      },
+      {
+        "seq": 2,
+        "ts": 1792678439196,
+        "principal": "user:alice",
+        "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+        "kind": "question",
+        "text": "Which column in the Sales sheet contains the revenue data?",
+        "summary": "ask suppressed: planner has not used any tool yet this turn"
+      },
+      {
+        "seq": 3,
+        "ts": 1792678441473,
+        "principal": "user:alice",
+        "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+        "kind": "question",
+        "text": "What is the range of your revenue data in the Sales sheet? Please specify the start and end rows and columns (e.g., A1:C10).",
+        "summary": "ask suppressed: planner has not used any tool yet this turn"
+      },
+      {
+        "seq": 4,
+        "ts": 1792678442846,
+        "principal": "user:alice",
+        "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+        "kind": "tool_call",
+        "tool": "read_cells",
+        "args": {
+          "sheet": "Sales",
+          "startRow": 0,
+          "startCol": 0,
+          "endRow": 100,
+          "endCol": 10
+        },
+        "ok": true,
+        "summary": "read_cells ok"
+      },
+      {
+        "seq": 5,
+        "ts": 1792678443973,
+        "principal": "user:alice",
+        "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+        "kind": "tool_call",
+        "tool": "analyze_data",
+        "args": {
+          "intent": "sum of Revenue",
+          "sheet": "Sales",
+          "startRow": 1,
+          "startCol": 2,
+          "endRow": 12,
+          "endCol": 2
+        },
+        "ok": true,
+        "summary": "analyze_data ok"
+      },
+      {
+        "seq": 6,
+        "ts": 1792678444606,
+        "principal": "user:alice",
+        "threadId": "43256601-95a1-4505-bbfd-31e0986d6de6",
+        "kind": "agent_message",
+        "text": "The total revenue in the Sales sheet is 147400."
+      }
+    ],
+    "chart": {
+      "title": "Column means",
+      "config": {
+        "type": "bar",
+        "data": {
+          "labels": [
+            "12000"
+          ],
+          "datasets": [
+            {
+              "label": "mean",
+              "data": [
+                13400
+              ],
+              "backgroundColor": "#4e79a7",
+              "borderColor": "#4e79a7",
+              "fill": false
+            }
+          ]
+        },
+        "options": {
+          "responsive": true,
+          "maintainAspectRatio": false,
+          "animation": false,
+          "plugins": {
+            "title": {
+              "display": true,
+              "text": "Column means"
+            },
+            "legend": {
+              "display": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

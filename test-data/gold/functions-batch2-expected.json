@@ -1,0 +1,70 @@
+{
+  "DbFuncs!A10": 170,
+  "DbFuncs!A11": 85,
+  "DbFuncs!A12": 2,
+  "DbFuncs!A13": 2,
+  "DbFuncs!A14": 90,
+  "DbFuncs!A15": 80,
+  "DbFuncs!A16": 7.0710678118654755,
+  "DbFuncs!A17": 5,
+  "DbFuncs!A18": 50,
+  "DbFuncs!A19": 25,
+  "DbFuncs!A20": 80,
+  "TextFuncs!A1": 1234.56,
+  "TextFuncs!A2": "a",
+  "TextFuncs!A3": "b,c",
+  "TextFuncs!A4": "a,b",
+  "TextFuncs!A5": "1,a",
+  "TextFuncs!A6": "42",
+  "TextFuncs!A7": true,
+  "TextFuncs!A8": "123",
+  "TextFuncs!A9": "abcXYZ",
+  "StatsFuncs!B1": 20,
+  "StatsFuncs!B2": 20,
+  "StatsFuncs!B3": 35,
+  "StatsFuncs!B4": 35,
+  "StatsFuncs!B5": 35,
+  "StatsFuncs!B6": 36.666666666666664,
+  "StatsFuncs!B7": 6.5,
+  "StatsFuncs!B8": 5,
+  "StatsFuncs!B9": 0.429,
+  "StatsFuncs!B10": 0.5,
+  "StatsFuncs!B11": 90,
+  "StatsFuncs!B12": 0,
+  "StatsFuncs!B13": 300,
+  "StatsFuncs!B14": 37.5,
+  "MathFuncs!A1": {
+    "approx": 0.8427,
+    "tol": 0.01
+  },
+  "MathFuncs!A2": {
+    "approx": 1,
+    "tol": 0.01
+  },
+  "MathFuncs!A3": {
+    "approx": 5,
+    "tol": 0.01
+  },
+  "MathFuncs!A4": {
+    "approx": -2,
+    "tol": 0.01
+  },
+  "MathFuncs!A5": {
+    "approx": 20,
+    "tol": 0.01
+  },
+  "MathFuncs!A6": {
+    "approx": 25,
+    "tol": 0.01
+  },
+  "MathFuncs!A7": {
+    "approx": 0.2461,
+    "tol": 0.01
+  },
+  "FinFuncs!A1": {
+    "approx": 0.0639,
+    "tol": 0.01
+  },
+  "LookupFuncs!C1": "b",
+  "LookupFuncs!C2": "b"
+}

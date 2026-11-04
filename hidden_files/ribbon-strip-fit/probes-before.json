@@ -1,0 +1,550 @@
+{
+  "390": {
+    "strip": {
+      "clientWidth": 390,
+      "scrollWidth": 625,
+      "overflowX": "hidden"
+    },
+    "tabs": [
+      {
+        "text": "File",
+        "left": 4,
+        "right": 35.3,
+        "width": 31.3,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Home",
+        "left": 36.3,
+        "right": 81.7,
+        "width": 45.3,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Insert",
+        "left": 82.7,
+        "right": 124.7,
+        "width": 42,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Draw",
+        "left": 125.7,
+        "right": 165.7,
+        "width": 40,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Page Layout",
+        "left": 166.7,
+        "right": 246.1,
+        "width": 79.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Formulas",
+        "left": 247.1,
+        "right": 309.1,
+        "width": 62,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Data",
+        "left": 310.1,
+        "right": 347.5,
+        "width": 37.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Review",
+        "left": 348.5,
+        "right": 399.8,
+        "width": 51.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      },
+      {
+        "text": "View",
+        "left": 400.8,
+        "right": 438.6,
+        "width": 37.8,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      },
+      {
+        "text": "Extensions",
+        "left": 439.6,
+        "right": 510.3,
+        "width": 70.7,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      },
+      {
+        "text": "Help",
+        "left": 511.3,
+        "right": 548,
+        "width": 36.7,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      },
+      {
+        "text": "Share",
+        "left": 550,
+        "right": 621.4,
+        "width": 71.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      }
+    ],
+    "share": {
+      "right": 621.4,
+      "width": 71.4,
+      "ariaLabel": null,
+      "labelDisplay": "(no span)"
+    },
+    "docScrollWidth": 479,
+    "innerWidth": 390
+  },
+  "480": {
+    "strip": {
+      "clientWidth": 480,
+      "scrollWidth": 625,
+      "overflowX": "hidden"
+    },
+    "tabs": [
+      {
+        "text": "File",
+        "left": 4,
+        "right": 35.3,
+        "width": 31.3,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Home",
+        "left": 36.3,
+        "right": 81.7,
+        "width": 45.3,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Insert",
+        "left": 82.7,
+        "right": 124.7,
+        "width": 42,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Draw",
+        "left": 125.7,
+        "right": 165.7,
+        "width": 40,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Page Layout",
+        "left": 166.7,
+        "right": 246.1,
+        "width": 79.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Formulas",
+        "left": 247.1,
+        "right": 309.1,
+        "width": 62,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Data",
+        "left": 310.1,
+        "right": 347.5,
+        "width": 37.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Review",
+        "left": 348.5,
+        "right": 399.8,
+        "width": 51.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "View",
+        "left": 400.8,
+        "right": 438.6,
+        "width": 37.8,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": true
+      },
+      {
+        "text": "Extensions",
+        "left": 439.6,
+        "right": 510.3,
+        "width": 70.7,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      },
+      {
+        "text": "Help",
+        "left": 511.3,
+        "right": 548,
+        "width": 36.7,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      },
+      {
+        "text": "Share",
+        "left": 550,
+        "right": 621.4,
+        "width": 71.4,
+        "fontSize": "12px",
+        "padL": "5px",
+        "padR": "5px",
+        "visible": false
+      }
+    ],
+    "share": {
+      "right": 621.4,
+      "width": 71.4,
+      "ariaLabel": null,
+      "labelDisplay": "(no span)"
+    },
+    "docScrollWidth": 480,
+    "innerWidth": 480
+  },
+  "820": {
+    "strip": {
+      "clientWidth": 820,
+      "scrollWidth": 820,
+      "overflowX": "hidden"
+    },
+    "tabs": [
+      {
+        "text": "File",
+        "left": 109.6,
+        "right": 144.6,
+        "width": 35,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Home",
+        "left": 145.6,
+        "right": 195.7,
+        "width": 50.1,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Insert",
+        "left": 196.7,
+        "right": 243.2,
+        "width": 46.5,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Draw",
+        "left": 244.2,
+        "right": 288.6,
+        "width": 44.3,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Page Layout",
+        "left": 289.6,
+        "right": 376.6,
+        "width": 87,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Formulas",
+        "left": 377.6,
+        "right": 445.8,
+        "width": 68.2,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Data",
+        "left": 446.8,
+        "right": 488.2,
+        "width": 41.5,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Review",
+        "left": 489.2,
+        "right": 545.9,
+        "width": 56.6,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "View",
+        "left": 546.9,
+        "right": 588.8,
+        "width": 42,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Extensions",
+        "left": 589.8,
+        "right": 667.4,
+        "width": 77.6,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Help",
+        "left": 668.4,
+        "right": 709.2,
+        "width": 40.8,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      },
+      {
+        "text": "Share",
+        "left": 739.7,
+        "right": 816,
+        "width": 76.3,
+        "fontSize": "13px",
+        "padL": "6px",
+        "padR": "6px",
+        "visible": true
+      }
+    ],
+    "share": {
+      "right": 816,
+      "width": 76.3,
+      "ariaLabel": null,
+      "labelDisplay": "(no span)"
+    },
+    "docScrollWidth": 820,
+    "innerWidth": 820
+  },
+  "1440": {
+    "strip": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "overflowX": "hidden"
+    },
+    "tabs": [
+      {
+        "text": "File",
+        "left": 136.5,
+        "right": 191.5,
+        "width": 55,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Home",
+        "left": 193.5,
+        "right": 263.6,
+        "width": 70.1,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Insert",
+        "left": 265.6,
+        "right": 332.1,
+        "width": 66.5,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Draw",
+        "left": 334.1,
+        "right": 398.5,
+        "width": 64.3,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Page Layout",
+        "left": 400.5,
+        "right": 507.5,
+        "width": 107,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Formulas",
+        "left": 509.5,
+        "right": 597.7,
+        "width": 88.2,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Data",
+        "left": 599.7,
+        "right": 661.1,
+        "width": 61.5,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Review",
+        "left": 663.1,
+        "right": 739.8,
+        "width": 76.6,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "View",
+        "left": 741.8,
+        "right": 803.7,
+        "width": 62,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Extensions",
+        "left": 805.7,
+        "right": 903.3,
+        "width": 97.6,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Help",
+        "left": 905.3,
+        "right": 966.1,
+        "width": 60.8,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      },
+      {
+        "text": "Share",
+        "left": 1331.7,
+        "right": 1428,
+        "width": 96.3,
+        "fontSize": "13px",
+        "padL": "16px",
+        "padR": "16px",
+        "visible": true
+      }
+    ],
+    "share": {
+      "right": 1428,
+      "width": 96.3,
+      "ariaLabel": null,
+      "labelDisplay": "(no span)"
+    },
+    "docScrollWidth": 1440,
+    "innerWidth": 1440
+  }
+}

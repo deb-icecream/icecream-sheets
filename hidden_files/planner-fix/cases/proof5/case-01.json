@@ -1,0 +1,130 @@
+{
+  "t1": {
+    "text": "Which region had the highest total revenue in the Sales sheet?",
+    "durationMs": 4902,
+    "httpStatus": 200,
+    "message": "The region with the highest total revenue is North, with $89,100.",
+    "rawText": "{\"threadId\":\"planner-proof5-thread\",\"message\":\"The region with the highest total revenue is North, with $89,100.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792671423605,\"principal\":\"user:alice\",\"threadId\":\"planner-proof5-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792671425704,\"principal\":\"user:alice\",\"threadId\":\"planner-proof5-thread\",\"kind\":\"tool_call\",\"tool\":\"analyze_data\",\"args\":{\"intent\":\"highest total revenue by region\",\"sheet\":\"Sales\"},\"ok\":true,\"summary\":\"analyze_data ok\"},{\"seq\":3,\"ts\":1792671426799,\"principal\":\"user:alice\",\"threadId\":\"planner-proof5-thread\",\"kind\":\"agent_message\",\"text\":\"The region with the highest total revenue is North, with $89,100.\"}],\"chart\":{\"title\":\"Sum of Revenue by Region\",\"config\"",
+    "chartAttached": true,
+    "asksAnswered": [
+      {
+        "askId": "ask_mvjhoqey_19tb6r",
+        "kind": "options",
+        "question": "I can sum, average, count, or read ranges (e.g. \"sum of A1:A10\"), write values (\"set B2 to 5\"), set formulas (\"put =SUM(A1:A3) in B1\"), recalculate, remember notes (\"remember that the budget is 5000\"), and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\", \"top 10 products by sales\"). What would you like to do?",
+        "options": [
+          "Sum a range",
+          "Read a range",
+          "Write a value",
+          "Recalculate"
+        ],
+        "action": null,
+        "answer": "Sum a range",
+        "answerStatus": 200
+      }
+    ],
+    "auditKinds": {
+      "user_message": 1,
+      "tool_call": 1,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [
+      {
+        "tool": "analyze_data",
+        "ok": true,
+        "summary": "analyze_data ok"
+      }
+    ],
+    "audit": [
+      {
+        "seq": 1,
+        "ts": 1792671423605,
+        "principal": "user:alice",
+        "threadId": "planner-proof5-thread",
+        "kind": "user_message",
+        "text": "Which region had the highest total revenue in the Sales sheet?"
+      },
+      {
+        "seq": 2,
+        "ts": 1792671425704,
+        "principal": "user:alice",
+        "threadId": "planner-proof5-thread",
+        "kind": "tool_call",
+        "tool": "analyze_data",
+        "args": {
+          "intent": "highest total revenue by region",
+          "sheet": "Sales"
+        },
+        "ok": true,
+        "summary": "analyze_data ok"
+      },
+      {
+        "seq": 3,
+        "ts": 1792671426799,
+        "principal": "user:alice",
+        "threadId": "planner-proof5-thread",
+        "kind": "agent_message",
+        "text": "The region with the highest total revenue is North, with $89,100."
+      }
+    ]
+  },
+  "t2": {
+    "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+    "durationMs": 6117,
+    "httpStatus": 200,
+    "message": "Here are the rows from the Sales sheet where Revenue is greater than 14000:\n\n- Mar, North, 15800\n- May, North, 16900\n- Jun, North, 16700\n- Jun, South, 14200",
+    "rawText": "{\"threadId\":\"planner-proof5-thread\",\"message\":\"Here are the rows from the Sales sheet where Revenue is greater than 14000:\\n\\n- Mar, North, 15800\\n- May, North, 16900\\n- Jun, North, 16700\\n- Jun, South, 14200\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792671423605,\"principal\":\"user:alice\",\"threadId\":\"planner-proof5-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792671425704,\"principal\":\"user:alice\",\"threadId\":\"planner-proof5-thread\",\"kind\":\"tool_call\",\"tool\":\"analyze_data\",\"args\":{\"intent\":\"highest total revenue by region\",\"sheet\":\"Sales\"},\"ok\":true,\"summary\":\"analyze_data ok\"},{\"seq\":3,\"ts\":1792671426799,\"principal\":\"user:alice\",\"threadId\":\"planner-proof5-thread\",\"kind\":\"agent_message\",\"text\":\"The region with the highe",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "tool_call": 1,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [
+      {
+        "tool": "read_cells",
+        "ok": true,
+        "summary": "read_cells ok"
+      }
+    ],
+    "audit": [
+      {
+        "seq": 4,
+        "ts": 1792671428372,
+        "principal": "user:alice",
+        "threadId": "planner-proof5-thread",
+        "kind": "user_message",
+        "text": "List the rows in the Sales sheet where Revenue is greater than 14000."
+      },
+      {
+        "seq": 5,
+        "ts": 1792671432041,
+        "principal": "user:alice",
+        "threadId": "planner-proof5-thread",
+        "kind": "tool_call",
+        "tool": "read_cells",
+        "args": {
+          "sheet": "Sales",
+          "startRow": 0,
+          "startCol": 0,
+          "endRow": 1000,
+          "endCol": 10
+        },
+        "ok": true,
+        "summary": "read_cells ok"
+      },
+      {
+        "seq": 6,
+        "ts": 1792671433186,
+        "principal": "user:alice",
+        "threadId": "planner-proof5-thread",
+        "kind": "agent_message",
+        "text": "Here are the rows from the Sales sheet where Revenue is greater than 14000:\n\n- Mar, North, 15800\n- May, North, 16900\n- Jun, North, 16700\n- Jun, South, 14200"
+      }
+    ]
+  }
+}

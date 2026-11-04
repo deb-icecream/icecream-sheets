@@ -1,0 +1,33 @@
+{
+  "width": 9092,
+  "steps": {
+    "initial": {
+      "panel": {
+        "clientWidth": 9068,
+        "scrollWidth": 9068,
+        "clientHeight": 85,
+        "offsetHeight": 85,
+        "scrollLeft": 0,
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "hScrollbar": false,
+        "vScrollbar": false,
+        "rectBottom": 180,
+        "rectHeight": 99
+      },
+      "strip": {
+        "clientWidth": 9092,
+        "scrollWidth": 9092,
+        "overflowX": "hidden"
+      },
+      "leftTri": null,
+      "rightTri": null,
+      "moreBtn": false,
+      "panelClasses": "ribbon-panel",
+      "wrapClasses": "ribbon-panel-wrap",
+      "groupCount": 7,
+      "docScrollWidth": 9092,
+      "innerWidth": 9092
+    }
+  }
+}

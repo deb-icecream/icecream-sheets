@@ -1,0 +1,108 @@
+{
+ "counts": {
+  "structured-expansion+downstream-of-edit": 79,
+  "intended+downstream-of-edit": 3,
+  "intended+shift": 1,
+  "downstream-of-edit": 8,
+  "shift": 6,
+  "shift+downstream-of-edit": 2,
+  "structured-expansion": 655
+ },
+ "unexplained": [],
+ "nameDiffs": [
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3Way2.xlsxtblPAUI1|null",
+   "orig": "tblPAA[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3Way2.xlsxtblPFS1|null",
+   "orig": "tblPFS[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblBS1|null",
+   "orig": "tblBS[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblCal1|null",
+   "orig": "tblCal[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblCF1|null",
+   "orig": "tblCF[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblDebt1|null",
+   "orig": "tblDebt[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblDep1|null",
+   "orig": "tblDep[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblIS1|null",
+   "orig": "tblIS[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "_xlcn.WorksheetConnection_BXL3WayAnorexic.xlsxtblWCS1|null",
+   "orig": "tblWCS[]",
+   "saved": "#ERROR!"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Debt_Opening|null",
+   "orig": "Constants!$B$12",
+   "saved": "Constants!$B$13"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "PPE_Opening|null",
+   "orig": "Constants!$B$13",
+   "saved": "Constants!$B$14"
+  }
+ ],
+ "parts": {
+  "changed": [
+   "[Content_Types].xml",
+   "xl/styles.xml",
+   "xl/workbook.xml",
+   "xl/worksheets/sheet1.xml",
+   "xl/worksheets/sheet10.xml",
+   "xl/worksheets/sheet11.xml",
+   "xl/worksheets/sheet12.xml",
+   "xl/worksheets/sheet13.xml",
+   "xl/worksheets/sheet2.xml",
+   "xl/worksheets/sheet3.xml",
+   "xl/worksheets/sheet4.xml",
+   "xl/worksheets/sheet5.xml",
+   "xl/worksheets/sheet6.xml",
+   "xl/worksheets/sheet7.xml",
+   "xl/worksheets/sheet8.xml",
+   "xl/worksheets/sheet9.xml"
+  ],
+  "missing": [
+   "xl/calcChain.xml"
+  ],
+  "added": [
+   "docProps/custom.xml"
+  ]
+ },
+ "closureSize": 161,
+ "tablesFound": 19
+}

@@ -1,0 +1,253 @@
+[
+ {
+  "t": 1792625726858,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792625727669,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-n9Cvm8YV.js",
+  "path": "/assets/index-n9Cvm8YV.js",
+  "status": 200
+ },
+ {
+  "t": 1792625727705,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-DnU1-EYk.css",
+  "path": "/assets/index-DnU1-EYk.css",
+  "status": 200
+ },
+ {
+  "t": 1792625736341,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792625736343,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792625736398,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792625742990,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{\"fileId\":\"file-382b01d9-9308-4e3f-8f72-4e9e53aa4596\"}",
+  "status": 200
+ },
+ {
+  "t": 1792625742997,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792625742997,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792625742997,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792625743720,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "postData": "{\"sessionId\":\"sess_d21e613e-5866-4dd9-b196-44a995be7098\"}",
+  "status": 200
+ },
+ {
+  "t": 1792625744195,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792625744322,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/snapshot",
+  "path": "/snapshot",
+  "status": 200
+ },
+ {
+  "t": 1792625744322,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792625744322,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+  "status": 200
+ },
+ {
+  "t": 1792625744337,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":31,\"endCol\":20}}",
+  "status": 200
+ },
+ {
+  "t": 1792625744338,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792625744489,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792625745934,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792625759891,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792625760963,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792625761228,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "postData": "{\"clientId\":\"web-mvir2yqw-8iqg5\",\"clientSeq\":1,\"baseRev\":0,\"cmd\":{\"cmd\":\"insertRows\",\"sheet\":\"Sheet1\",\"row\":0,\"count\":1}}",
+  "status": 200
+ },
+ {
+  "t": 1792625761392,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":1}",
+  "status": 200
+ },
+ {
+  "t": 1792625761493,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+  "status": 200
+ },
+ {
+  "t": 1792625761493,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":31,\"endCol\":20}}",
+  "status": 200
+ },
+ {
+  "t": 1792625761493,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":1,\"startCol\":0,\"endRow\":1,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792625762830,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792625764262,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792625765314,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792625772866,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":2}",
+  "status": 200
+ },
+ {
+  "t": 1792625774044,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792625774301,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792625775825,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ }
+]

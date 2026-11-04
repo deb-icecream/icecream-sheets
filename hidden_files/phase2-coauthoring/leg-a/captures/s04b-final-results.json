@@ -1,0 +1,49 @@
+{
+ "scenario": "s04b-final-single-user-long-chain",
+ "startedAt": "2026-10-21T22:59:28.039Z",
+ "parts": {
+  "build": {
+   "chainCells": 260,
+   "sessionId": "sess_0662e646-3229-4c8c-a39f-9a9bbdd06604",
+   "fileId": "file-d79cc147-952c-409f-a799-193ae51e0653"
+  },
+  "sseMark": 5,
+  "editorWaitMs": 224,
+  "deltaArrived": true,
+  "analysis": {
+   "deltaCount": 1,
+   "deltaRevisions": [
+    261
+   ],
+   "totalDeltaCells": 261,
+   "farDependentCells": [
+    {
+     "sheet": "Sheet1",
+     "row": 259,
+     "col": 0,
+     "value": {
+      "kind": "number",
+      "value": 359
+     },
+     "formula": "=A259+1"
+    },
+    {
+     "sheet": "Sheet1",
+     "row": 260,
+     "col": 0,
+     "value": {
+      "kind": "number",
+      "value": 360
+     },
+     "formula": "=A260+1"
+    }
+   ],
+   "eventsRequestCount": 0,
+   "maxCellsInAnyDelta": 261,
+   "eventsTotal": 0
+  },
+  "a1DomAfter": "100",
+  "ok": true
+ },
+ "verdict": "PASS"
+}

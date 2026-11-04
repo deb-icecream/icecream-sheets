@@ -1,0 +1,1 @@
+{"_comment":"Copy to the repo root as .firebaserc and replace the placeholder with the real Firebase project id (FIREBASE_PROJECT_ID). The Firebase account is SEPARATE from the GCP account (design doc). deploy.sh passes --project explicitly, so this file is for manual firebase CLI use.","projects":{"default":"REPLACE-WITH-FIREBASE-PROJECT-ID"}}

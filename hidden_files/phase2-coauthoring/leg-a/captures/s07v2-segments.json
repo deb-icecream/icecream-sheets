@@ -1,0 +1,130 @@
+{
+ "offlineEdits": [
+  {
+   "attempted": true,
+   "value": "BOB-KEEP-1",
+   "editorOpened": true,
+   "cellAfter": "4"
+  },
+  {
+   "attempted": true,
+   "value": "BOB-KEEP-2",
+   "editorOpened": true,
+   "cellAfter": "5"
+  }
+ ],
+ "bobBaseRev": 0,
+ "bobStateBeforeClose": {
+  "queue": {
+   "queue": [
+    {
+     "clientSeq": 1,
+     "cmd": {
+      "cmd": "setCell",
+      "ref": {
+       "sheet": "Sheet1",
+       "row": 3,
+       "col": 0
+      },
+      "value": "BOB-KEEP-1"
+     },
+     "baseRev": 0,
+     "enqueuedAt": 1792630750306
+    },
+    {
+     "clientSeq": 2,
+     "cmd": {
+      "cmd": "setCell",
+      "ref": {
+       "sheet": "Sheet1",
+       "row": 4,
+       "col": 0
+      },
+      "value": "BOB-KEEP-2"
+     },
+     "baseRev": 0,
+     "enqueuedAt": 1792630754323
+    }
+   ],
+   "rejected": [],
+   "clientSeq": 2,
+   "lastAppliedRev": 0
+  },
+  "clientId": "web-mviu201u-4wg8l"
+ },
+ "segmentsBefore": [],
+ "firstSave": {
+  "status": 200,
+  "skipped": false,
+  "storageRevision": 1
+ },
+ "segmentsRound1": [
+  "segment.b5c693bccd170145b0703d2e.0000000000-0000000001.json"
+ ],
+ "prunedPastBobBase": true,
+ "pruneWaitMs": 11072,
+ "rounds": 1,
+ "statusAfterAliceWork": {
+  "revision": 1
+ },
+ "afterReopen": {
+  "bobA4": "BOB-KEEP-1",
+  "bobA5": "BOB-KEEP-2",
+  "aliceA4": "BOB-KEEP-1",
+  "serverA4": {
+   "kind": "string",
+   "value": "BOB-KEEP-1"
+  },
+  "serverA5": {
+   "kind": "string",
+   "value": "BOB-KEEP-2"
+  },
+  "bobSseKinds": [
+   {
+    "t": 1792630797509,
+    "kind": "open",
+    "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+   },
+   {
+    "t": 1792630797966,
+    "kind": "event",
+    "event": "hello",
+    "data": "{\"revision\":1,\"storedRevision\":1,\"fileId\":\"file-5c21cb7c-efb8-4232-91fc-db95f936a02b\"}"
+   },
+   {
+    "t": 1792630797989,
+    "kind": "event",
+    "event": "status",
+    "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+   },
+   {
+    "t": 1792630798006,
+    "kind": "event",
+    "event": "presence",
+    "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+   },
+   {
+    "t": 1792630799185,
+    "kind": "event",
+    "event": "delta",
+    "data": "{\"revision\":2,\"origin\":{\"clientId\":\"web-mviu201u-4wg8l\",\"clientSeq\":1,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":3,\"col\":0,\"value\":{\"kind\":\"string\",\"value\":\"BOB-KEEP-1\"}}]}"
+   },
+   {
+    "t": 1792630799201,
+    "kind": "event",
+    "event": "status",
+    "data": "{\"revision\":2,\"storedRevision\":1,\"saving\":true}"
+   }
+  ],
+  "bobQueueAfter": {
+   "queue": {
+    "queue": [],
+    "rejected": [],
+    "clientSeq": 2,
+    "lastAppliedRev": 3
+   },
+   "clientId": "web-mviu201u-4wg8l"
+  }
+ },
+ "ok": true
+}

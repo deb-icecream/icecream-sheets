@@ -1,0 +1,102 @@
+{
+  "Sales": {
+    "range": {
+      "sheet": "Sales",
+      "startRow": 0,
+      "startCol": 0,
+      "endRow": 150002,
+      "endCol": 11
+    },
+    "cells": 1800036,
+    "numbers": 1200003,
+    "strings": 600013,
+    "booleans": 0,
+    "nulls": 20,
+    "formulaCells": 600003,
+    "errors": {},
+    "readMs": 38642,
+    "sampleChecked": 155,
+    "sampleMismatchCount": 0,
+    "sampleMismatches": []
+  },
+  "Inventory": {
+    "range": {
+      "sheet": "Inventory",
+      "startRow": 0,
+      "startCol": 0,
+      "endRow": 150000,
+      "endCol": 9
+    },
+    "cells": 1500010,
+    "numbers": 900000,
+    "strings": 600010,
+    "booleans": 0,
+    "nulls": 0,
+    "formulaCells": 450000,
+    "errors": {},
+    "readMs": 27514,
+    "sampleChecked": 160,
+    "sampleMismatchCount": 0,
+    "sampleMismatches": []
+  },
+  "Ledger": {
+    "range": {
+      "sheet": "Ledger",
+      "startRow": 0,
+      "startCol": 0,
+      "endRow": 150002,
+      "endCol": 7
+    },
+    "cells": 1200024,
+    "numbers": 750002,
+    "strings": 450008,
+    "booleans": 0,
+    "nulls": 14,
+    "formulaCells": 150002,
+    "errors": {},
+    "readMs": 17185,
+    "sampleChecked": 7,
+    "sampleMismatchCount": 0,
+    "sampleMismatches": []
+  },
+  "Sales2023": {
+    "range": {
+      "sheet": "Sales2023",
+      "startRow": 0,
+      "startCol": 0,
+      "endRow": 100002,
+      "endCol": 11
+    },
+    "cells": 1200036,
+    "numbers": 800003,
+    "strings": 400013,
+    "booleans": 0,
+    "nulls": 20,
+    "formulaCells": 400003,
+    "errors": {},
+    "readMs": 19054,
+    "sampleChecked": 155,
+    "sampleMismatchCount": 0,
+    "sampleMismatches": []
+  },
+  "Ledger2023": {
+    "range": {
+      "sheet": "Ledger2023",
+      "startRow": 0,
+      "startCol": 0,
+      "endRow": 100002,
+      "endCol": 7
+    },
+    "cells": 800024,
+    "numbers": 500002,
+    "strings": 300008,
+    "booleans": 0,
+    "nulls": 14,
+    "formulaCells": 100002,
+    "errors": {},
+    "readMs": 19134,
+    "sampleChecked": 7,
+    "sampleMismatchCount": 0,
+    "sampleMismatches": []
+  }
+}

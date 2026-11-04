@@ -1,0 +1,249 @@
+{
+ "startedAt": "2026-10-22T10:08:04.534Z",
+ "probe": {
+  "status": 200,
+  "ms": 759,
+  "reply": "I can only perform calculations on data within your spreadsheets or explain how Icecream Sheets works. I cannot perform general calculations like 2+2. Would you like to perform a calculation on your spreadsheet data?",
+  "auditTools": [
+   "user_message",
+   "agent_message"
+  ],
+  "reminted": true,
+  "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)"
+ },
+ "setup": {
+  "fileId": "file-dc4186de-6d51-45de-8620-fd9104616dd4",
+  "sessionId": "sess_2b8d551e-98b9-4626-8e59-8eca8a643679",
+  "painted": true
+ },
+ "case1": {
+  "verdict": "FAIL",
+  "assertions": [
+   {
+    "name": "highest region is North with 89,100",
+    "pass": false,
+    "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+   },
+   {
+    "name": "rows >14000 include 15,800",
+    "pass": false,
+    "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+   },
+   {
+    "name": "rows >14000 include 16,900",
+    "pass": false,
+    "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+   },
+   {
+    "name": "rows >14000 include 16,700",
+    "pass": false,
+    "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+   },
+   {
+    "name": "rows >14000 include 14,200",
+    "pass": false,
+    "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+   },
+   {
+    "name": "no turn timed out",
+    "pass": true,
+    "observed": "t1=74946ms t2=71949ms"
+   }
+  ]
+ },
+ "case2": {
+  "verdict": "FAIL",
+  "assertions": [
+   {
+    "name": "total revenue answer 159,400",
+    "pass": false,
+    "observed": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue."
+   },
+   {
+    "name": "Jun South cell (row12,col2) == 15000 via API",
+    "pass": false,
+    "observed": "{\"kind\":\"number\",\"value\":14200} cellRead={\"value\":{\"kind\":\"number\",\"value\":14200}}"
+   },
+   {
+    "name": "row13 label is TOTAL",
+    "pass": false,
+    "observed": "{\"kind\":\"null\",\"value\":null}"
+   },
+   {
+    "name": "row13 Revenue holds a SUM formula (API)",
+    "pass": false,
+    "observed": "{\"value\":{\"kind\":\"null\",\"value\":null}}"
+   },
+   {
+    "name": "row13 computed total == 160,200",
+    "pass": false,
+    "observed": "{\"kind\":\"null\",\"value\":null}"
+   }
+  ],
+  "c12_2": {
+   "kind": "number",
+   "value": 14200
+  },
+  "r13": {
+   "label": {
+    "kind": "null",
+    "value": null
+   },
+   "total": {
+    "kind": "null",
+    "value": null
+   }
+  }
+ },
+ "case5": {
+  "verdict": "FAIL",
+  "assertions": [
+   {
+    "name": "column D shares present per region row (>=10 of 12 data rows)",
+    "pass": false,
+    "observed": "present=0/12 [{\"row\":1,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":2,\"region\":\"South\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":3,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":4,\"region\":\"South\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":5,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":6,\"region\":\"South\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":7,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},"
+   },
+   {
+    "name": "largest share in column D is North ~55.6% (55-56)",
+    "pass": false,
+    "observed": "maxPct=null"
+   },
+   {
+    "name": "reply names North with ~55.6% share",
+    "pass": false,
+    "observed": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue."
+   },
+   {
+    "name": "turn did not time out",
+    "pass": true,
+    "observed": "277718ms"
+   }
+  ],
+  "dByRow": [
+   {
+    "row": 1,
+    "region": "North",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 2,
+    "region": "South",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 3,
+    "region": "North",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 4,
+    "region": "South",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 5,
+    "region": "North",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 6,
+    "region": "South",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 7,
+    "region": "North",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 8,
+    "region": "South",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 9,
+    "region": "North",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 10,
+    "region": "South",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 11,
+    "region": "North",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   },
+   {
+    "row": 12,
+    "region": "South",
+    "raw": {
+     "kind": "null",
+     "value": null
+    },
+    "pct": null
+   }
+  ],
+  "maxPct": null
+ },
+ "case6": {
+  "verdict": "PASS",
+  "assertions": [
+   {
+    "name": "agent declines the email request (no such capability)",
+    "pass": true,
+    "observed": "I can help you analyze your spreadsheet data, create charts, and manage your data. However, I cannot directly email spreadsheets or perform actions outside of the spreadsheet environment, such as sending emails. Please use your email client to send the spreadsheet to your manager."
+   },
+   {
+    "name": "sheet snapshot identical after the ask (no mutation)",
+    "pass": true,
+    "observed": "preRows=20 postRows=20"
+   }
+  ]
+ }
+}

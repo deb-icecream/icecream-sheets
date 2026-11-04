@@ -1,0 +1,109 @@
+# PLACEMENT FLEET SIBLING (owner decision 2026-10-23): placement targets
+# are SEPARATE Cloud Run services — one service cannot be addressed
+# per-instance, so the tier is stood up as a small fleet of services
+# and the gateway's ENGINE_INSTANCES map names each by URL. This is
+# fleet member engine-standard-2; identical to its tier sibling except the service
+# name and ENGINE_INSTANCE_ID. Capacity note: fleet size per tier =
+# max number of SIMULTANEOUSLY OPEN files in that tier; a file whose
+# open finds every fleet member busy gets a clear capacity error
+# (gateway 503 'no free engine instance'), never a double-booking.
+# Cloud Run service: engine-standard — STATEFUL engine, standard tier
+# (design doc: 4 vCPU / 16 GiB; XL tier RETIRED by the interim fleet-5 rule (2026-10-24): all files route to the standard pool).
+# Interim fleet-5 rule (2026-10-24): tier routing collapsed — all files route to the standard pool.
+#
+# CONCURRENCY = 80 (CORRECTED 2026-10-22 — was 1, a live-outage bug):
+# engineSvc.ts holds ONE workbook session state per LISTENER (`const state`
+# per createEngineListener), but one session holds SEVERAL concurrent
+# connections at once: the load stream, the always-on delta (SSE) stream,
+# op submissions, save-status polls. At concurrency 1 the session's own
+# streams occupied the instance's only request slot and the platform
+# aborted its edits (299 'no available instance' aborts + 429s on /execute
+# in one hour of real use, 2026-10-22; user's edits never reached the
+# engine). Cross-session ownership is arbitrated by the registry CAS-claim
+# + ownershipEpoch fencing (a fenced instance refuses with 409), NOT by
+# request serialization. 80 = the platform default; one warm instance now
+# absorbs launch traffic instead of scaling out and spraying requests.
+#
+# CPU ALWAYS ALLOCATED (cpu-throttling: "false"): the engine does
+# background work between requests — background recalc, snapshot/journal
+# flush, MT recalc pool — which request-allocated CPU would starve.
+# Ingress: all + unauthenticated at the PLATFORM level by design — access
+# is controlled by the gateway-issued signed URL, which the engine
+# validates itself (design doc, engine access pattern §3; same pattern as
+# MCP's direct ingress). deploy.sh therefore deploys this service with
+# --allow-unauthenticated and binds NO public IAM shortcut around it.
+#
+# Production load path (user ruling 2026-10-21, W22): loads arrive by
+# GCS reference, not as request bodies — the client PUTs the file bytes
+# directly to the uploads bucket (UPLOAD_BUCKET) with a gateway-issued
+# signed URL, and this engine pulls the object via its service account
+# (deploy.sh step 4's storage.objectAdmin already covers the read).
+# Deploy surface only today: load-by-GCS-reference is a code follow-on
+# (deploy/CONFIG.md, load-path section).
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: icecream-sheet-engine-standard-2
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"     # scale-to-zero, doc mandate
+        autoscaling.knative.dev/maxScale: "1"    # cost guardrail; raise with quota (100 instances/project/region default)
+        run.googleapis.com/cpu-throttling: "false"  # CPU always allocated
+        run.googleapis.com/startup-cpu-boost: "true" # cold-start build is CPU-heavy (P95/P99 builds)
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      serviceAccountName: ${ENGINE_SA}
+      timeoutSeconds: 3600        # Cloud Run maximum; doc: worst real ops ~249 s build / ~109 s save
+      containerConcurrency: 80    # one session holds many concurrent connections (see header)
+      containers:
+        - image: ${IMAGE_ENGINE}
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              cpu: "2"              # FIRST-DEPLOY size (user ruling 2026-10-21: free-tier-first; design size 4 vCPU / 16 Gi — scale up later)
+              memory: 4Gi
+          env:
+            - name: HOST
+              value: "0.0.0.0"      # W17b: bin reads HOST (default 127.0.0.1 local); Cloud Run probes require 0.0.0.0:$PORT
+            - name: ENGINE_HEAP_MB
+              value: "3072"         # 75% of 4 GiB (entrypoint --max-old-space-size)
+            - name: ENGINE_TIER
+              value: standard
+            - name: ENGINE_INSTANCE_ID
+              value: "engine-standard-2"   # PLACEMENT (owner 2026-10-23): this service's identity in the gateway's ENGINE_INSTANCES fleet map — MUST equal the map key, or the ownership heartbeat fences this instance's own sessions
+            - name: ICECREAM_DATA_DIR
+              value: /tmp/icecream-data   # tmpfs on Cloud Run: in-memory, ephemeral — see CONFIG.md gap note
+            - name: ICECREAM_MT_CELL_COUNT_THRESHOLD
+              value: "${MT_CELL_COUNT_THRESHOLD}"
+            - name: UPLOAD_BUCKET
+              value: ${BUCKET_UPLOADS}   # W22: production load path — engine pulls the opened object from this bucket via its SA (code follow-on; see header)
+            - name: UPLOAD_STORE
+              value: "prod"          # W22 prod posture: /load/storage-ref reads the opened object from UPLOAD_BUCKET via the GCS client (bin/engine.ts; fails closed without it)
+            - name: TRIGGER_STORE
+              value: "prod"   # triggers program: the engine-hosted trigger supervisor's Firestore write-through store (collection icecream_trigger_metadata; fail-closed when the project/client is missing)
+            - name: SESSION_STORE
+              value: "prod"   # OWNER RULING 2026-10-23: ALWAYS ON for hosted — session registry/journal in Firestore + snapshots in GCS (deploy/sessionStore.ts prodSessionConfig). Hosted posture REQUIRES this store; it is not optional. Fail-closed when half-configured (needs GCP_PROJECT_ID + SESSION_SNAPSHOT_BUCKET).
+            - name: SESSION_LIFECYCLE
+              value: "on"   # BATCH-2 WEDGE FIX: enable the idle sweeper (engineSvc) so an orphaned/stranded session is checkpointed + evicted after IDLE_TIMEOUT_MS (default 600000 = the 10-minute idle rule, design section 9 / engineAccess.sessionLifecycleEnabled). Without this the sweeper never runs in prod and a stranded session wedges its instance forever.
+            - name: SESSION_SNAPSHOT_BUCKET
+              value: ${BUCKET_SNAPSHOTS}   # GCS bucket for session snapshots (FirestoreSessionStores.snapshots)
+            - name: GCP_PROJECT_ID
+              value: ${GCP_PROJECT}       # W22: project for the engine's GCS clients (upload pull; sessionStore prod config reads the same var)
+            - name: ENGINE_ACCESS_MODE
+              value: signed            # F-2 (security pass): engine self-verifies gateway-issued signed tokens on every route; proxy mode (raw x-principal identity) must never be the deployed posture
+            - name: ENGINE_ACCESS_SECRET   # HMAC secret the signed tokens are verified with (deploy/engineAccess.ts); Secret Manager, never plaintext
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_ENGINE_SIGNING}
+                  key: latest
+          startupProbe:
+            httpGet: { path: /health, port: 8080 }
+            failureThreshold: 30
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /health, port: 8080 }

@@ -1,0 +1,81 @@
+[
+ {
+  "t": 1792629780341,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792629780979,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-0c0dd1b8-b3c6-479e-bfd1-228920fab5ec\"}"
+ },
+ {
+  "t": 1792629780989,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792629780989,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792629815774,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792629815797,
+  "kind": "error"
+ },
+ {
+  "t": 1792629825989,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792629826040,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-0c0dd1b8-b3c6-479e-bfd1-228920fab5ec\"}"
+ },
+ {
+  "t": 1792629826054,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792629826054,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792629826529,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":1,\"editing\":false}]}"
+ },
+ {
+  "t": 1792629830020,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792629836112,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":1,\"editing\":false}]}"
+ },
+ {
+  "t": 1792629846190,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":1,\"editing\":false}]}"
+ }
+]

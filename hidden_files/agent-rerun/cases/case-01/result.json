@@ -1,0 +1,43 @@
+{
+ "case": 1,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "highest region is North with 89,100",
+   "pass": false,
+   "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+  },
+  {
+   "name": "rows >14000 include 15,800",
+   "pass": false,
+   "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+  },
+  {
+   "name": "rows >14000 include 16,900",
+   "pass": false,
+   "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+  },
+  {
+   "name": "rows >14000 include 16,700",
+   "pass": false,
+   "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+  },
+  {
+   "name": "rows >14000 include 14,200",
+   "pass": false,
+   "observed": "I ran out of steps for that request. Could you break it into smaller parts?"
+  },
+  {
+   "name": "no turn timed out",
+   "pass": true,
+   "observed": "t1=74946ms t2=71949ms"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-01/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-01/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-01/chat-and-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-01/readback.json"
+ ]
+}

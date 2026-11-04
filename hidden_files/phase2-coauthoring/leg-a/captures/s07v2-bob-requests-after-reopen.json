@@ -1,0 +1,184 @@
+[
+ {
+  "t": 1792630778100,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792630778848,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-bMw5Kr-K.js",
+  "path": "/assets/index-bMw5Kr-K.js",
+  "status": 200
+ },
+ {
+  "t": 1792630778871,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-mX3dgP0t.css",
+  "path": "/assets/index-mX3dgP0t.css",
+  "status": 200
+ },
+ {
+  "t": 1792630791761,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792630791795,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792630791895,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792630796867,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "status": 200
+ },
+ {
+  "t": 1792630796868,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792630796868,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792630796868,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792630797615,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "status": 200
+ },
+ {
+  "t": 1792630797887,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792630797974,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/snapshot",
+  "path": "/snapshot",
+  "status": 200
+ },
+ {
+  "t": 1792630797975,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792630797975,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792630797975,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792630797975,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792630798066,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/revisions?from=0&to=1",
+  "path": "/revisions",
+  "status": 200
+ },
+ {
+  "t": 1792630798356,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792630798761,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "status": 200
+ },
+ {
+  "t": 1792630798761,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "status": 200
+ },
+ {
+  "t": 1792630799209,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "status": 200
+ },
+ {
+  "t": 1792630799568,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "status": 200
+ },
+ {
+  "t": 1792630799634,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "status": 200
+ },
+ {
+  "t": 1792630800926,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "status": 200
+ },
+ {
+  "t": 1792630803274,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "status": 200
+ }
+]

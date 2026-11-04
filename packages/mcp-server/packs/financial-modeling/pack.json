@@ -1,0 +1,28 @@
+{
+  "id": "financial-modeling",
+  "name": "Financial Modeling",
+  "version": "1.0.0",
+  "description": "Build live financial models through MCP tools: trend and growth forecasts written as sheet formulas, NPV/IRR valuation over a cash-flow column, and what-if scenario sweeps that drive the sheet's own formulas.",
+  "tools": [
+    "fin_forecast",
+    "fin_npv_irr",
+    "fin_scenario_sweep"
+  ],
+  "prompts": [
+    {
+      "name": "project-revenue",
+      "title": "Project revenue for the next 6 periods",
+      "text": "In the \"Model\" sheet, use fin_forecast to project the Revenue column 6 periods ahead with the linear method, then read back the forecast rows and summarize the trend (slope per period and the final projected value)."
+    },
+    {
+      "name": "value-this-project",
+      "title": "Value a project from its cash flows",
+      "text": "The \"Project\" sheet has a CashFlow column and an initial investment of 10000. Use fin_npv_irr at a 10% discount rate to compute NPV and IRR, and tell me whether the project clears a 12% hurdle rate."
+    },
+    {
+      "name": "stress-test-price",
+      "title": "Stress-test the price input",
+      "text": "In the \"Pricing\" sheet the unit price is in B2 and profit is computed in B10. Use fin_scenario_sweep to vary B2 over 8, 9, 10, 11, 12 and show me the profit at each price."
+    }
+  ]
+}

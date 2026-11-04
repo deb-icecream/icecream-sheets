@@ -1,0 +1,75 @@
+{
+ "turns": [
+  {
+   "text": "What is the total revenue in the Sales sheet?",
+   "ms": 17702,
+   "status": 500,
+   "threadId": null,
+   "message": "",
+   "needsInput": null,
+   "audit": []
+  },
+  {
+   "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+   "ms": 1587,
+   "status": 200,
+   "threadId": "8939d28d-e0e0-4ff5-9218-a37d2614d23f",
+   "message": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "write_cells",
+     "ok": true,
+     "text": null,
+     "summary": "write_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+     "summary": null
+    }
+   ]
+  },
+  {
+   "text": "Which region had the highest total revenue in the Sales sheet?",
+   "ms": 12315,
+   "status": 200,
+   "threadId": "f2cc5b16-eb75-40f5-a4b0-813170782de8",
+   "message": "The region with the highest total revenue in the Sales sheet was North, with a total of 89,100.",
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The region with the highest total revenue in the Sales sheet was North, with a total of 89,100.",
+     "summary": null
+    }
+   ]
+  }
+ ]
+}

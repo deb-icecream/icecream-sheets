@@ -1,0 +1,18 @@
+{
+ "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.ribbon-tab').filter({ hasText: /^Insert$/ }).first()\n    - locator resolved to <button role=\"tab\" type=\"button\" class=\"ribbon-tab\" aria-selected=\"false\">Insert</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n   ",
+ "ribbonTabs": [
+  "File",
+  "Home",
+  "Insert",
+  "Draw",
+  "Page Layout",
+  "Formulas",
+  "Data",
+  "Review",
+  "View",
+  "Extensions",
+  "Help",
+  "Share"
+ ],
+ "bodyHead": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nCA\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nCut\nCopy\nPaste ▾\nFormat Painter\nClipboard\nFont\nCalibri\nArial\nTimes New Roman\nGeorgia\nVerdana\nCourier New\nTahoma\nTrebuchet MS\nComic Sans MS\nImpact\nHelvetica\nConsolas\nSize\n8\n9\n10\n11\n12\n14\n16\n18\n20\n24\n28\n32\n36\n48\n72\nB\nI\nU\nS\nU=\nA\nA+\nA\nA−\nA\nA ▾\n▦ ▾\nBorders ▾\nFont\n⇤\n⇔\n⇥\n⤒\n↕\n⤓\nWrap\n⇥+\n⇤−\nabc\nOrientation ▾\nMerge & Center ▾\nAlignment\nFormat\nGeneral\nNumber\nCurrency\nAccounting\nDate\nTime\nPercentage\nFraction\nScientific\nSpecial\nText\n%\n$ ▾\n,\n.0→.00\n.0→\n.00→.0\n←.0\nNumber\nConditional Formatting ▾\nA\nCell Styles ▾\nFormat as Table\nStyles\nInsert ▾\nDelete ▾\nFormat ▾\nCells\nAutoSum ▾\nFill ▾\nClear ▾\nSort & Filter ▾\nFind & Select ▾\nUndo\nRedo\nEditing\nDownload\n×\nWhole workbook\nEvery sheet, as a .xlsx file. Cells you can't read are left out.\nNamed range\nNo defined names in this workbook yet (Formulas > Define Name…).\nCancel\nDownload\nA1\ncarol\nA\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\nSales\n+\nProtocol v1\nCalc: automatic\nCell: A1\n✓ Saved\nFormula:\nEnglish (US)\nEnglish (UK)\nEspañol\nFrançais\nDeutsch\n日本語\n中文\nuser:carol\nReady\n✦ Agent\n🎙️ Voice · Pro"
+}

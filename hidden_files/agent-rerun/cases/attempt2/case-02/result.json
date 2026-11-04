@@ -1,0 +1,13 @@
+{
+ "case": 2,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "case completed without exception",
+   "pass": false,
+   "observed": "Error: page.evaluate: Target page, context or browser has been closed"
+  }
+ ],
+ "evidence": []
+}

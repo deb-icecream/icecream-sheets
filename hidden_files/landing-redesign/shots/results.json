@@ -1,0 +1,90 @@
+{
+  "viewports": {
+    "desktop-1440": {
+      "h1": "The spreadsheet that does the work with you.",
+      "scrollHeight": 6706,
+      "clientWidth": 1440,
+      "scrollWidthTop": 1440,
+      "bodyScrollWidth": 1440,
+      "bottom": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "y": 5806
+      },
+      "shots": 10,
+      "pageHeight": 6706
+    },
+    "iphone-390x844": {
+      "h1": "The spreadsheet that does the work with you.",
+      "scrollHeight": 5152,
+      "clientWidth": 390,
+      "scrollWidthTop": 390,
+      "bodyScrollWidth": 390,
+      "bottom": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "y": 4308
+      },
+      "shots": 8,
+      "pageHeight": 5152
+    },
+    "small-375x667": {
+      "h1": "The spreadsheet that does the work with you.",
+      "scrollHeight": 5247,
+      "clientWidth": 375,
+      "scrollWidthTop": 375,
+      "bodyScrollWidth": 375,
+      "bottom": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "bodyScrollWidth": 375,
+        "y": 4580
+      },
+      "shots": 10,
+      "pageHeight": 5247
+    },
+    "ipad-820": {
+      "h1": "The spreadsheet that does the work with you.",
+      "scrollHeight": 5352,
+      "clientWidth": 820,
+      "scrollWidthTop": 820,
+      "bodyScrollWidth": 820,
+      "bottom": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyScrollWidth": 820,
+        "y": 4172
+      },
+      "shots": 6,
+      "pageHeight": 5352
+    }
+  },
+  "reducedMotion": {
+    "revealCount": 14,
+    "allOpacity1": true,
+    "opacities": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "cta": {
+    "dialogAppeared": true,
+    "dialogHasGoogle": true,
+    "googleButtonPresent": true
+  },
+  "consoleErrors": []
+}

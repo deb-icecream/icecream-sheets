@@ -1,0 +1,4751 @@
+{
+  "includeNew": true,
+  "testFilesScanned": [
+    "adapters.test.ts",
+    "aggregate-16-19.test.ts",
+    "aggregate-hidden-rows.test.ts",
+    "bulk-load-memory.test.ts",
+    "calc-chain.test.ts",
+    "collaboration.test.ts",
+    "coverage-financial.test.ts",
+    "coverage-legacy.test.ts",
+    "coverage-math-text-info.test.ts",
+    "coverage-stats.test.ts",
+    "cross-sheet.test.ts",
+    "cube-functions.test.ts",
+    "dbg.test.ts",
+    "defined-names-snapshot.test.ts",
+    "divergent-builtins.test.ts",
+    "engine.test.ts",
+    "extended-functions10.test.ts",
+    "extended-functions11.test.ts",
+    "extended-functions8.test.ts",
+    "extended-functions9.test.ts",
+    "external-refs.test.ts",
+    "false-cycles.test.ts",
+    "financial-functions2.test.ts",
+    "financial-functions3.test.ts",
+    "five-faces.test.ts",
+    "flashfill.test.ts",
+    "function-audit-fixes.test.ts",
+    "function-registry.test.ts",
+    "google-functions.test.ts",
+    "hidden-taint-memo.test.ts",
+    "host-routing.test.ts",
+    "html-export.test.ts",
+    "import-functions.test.ts",
+    "int-mod-override.test.ts",
+    "intersection-op.test.ts",
+    "localization.test.ts",
+    "measure-cache.test.ts",
+    "namedExpressions.test.ts",
+    "names.test.ts",
+    "oplog.test.ts",
+    "parallel-degenerate-plan.test.ts",
+    "parallel-plan-cache.test.ts",
+    "parallel-recalc.test.ts",
+    "protection.test.ts",
+    "read-auth.test.ts",
+    "savePin.test.ts",
+    "sheet-ops.test.ts",
+    "solver.test.ts",
+    "statistical-precision.test.ts",
+    "tracks.test.ts",
+    "whatif.test.ts"
+  ],
+  "summary": {
+    "living/modern": {
+      "total": 451,
+      "covered": 451,
+      "uncovered": [],
+      "goldOnly": 251,
+      "unitOnly": 93,
+      "both": 107
+    },
+    "legacy-compatibility": {
+      "total": 41,
+      "covered": 41,
+      "uncovered": [],
+      "goldOnly": 25,
+      "unitOnly": 9,
+      "both": 7
+    },
+    "add-in/external": {
+      "total": 19,
+      "covered": 19,
+      "uncovered": [],
+      "goldOnly": 0,
+      "unitOnly": 19,
+      "both": 0
+    }
+  },
+  "rows": [
+    {
+      "name": "ABS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ACOS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ACOSH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ACOT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ACOTH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "AGGREGATE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-16-19.test.ts",
+        "aggregate-hidden-rows.test.ts",
+        "engine.test.ts",
+        "false-cycles.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "ARABIC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ASIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ASINH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ATAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ATAN2",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ATANH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BASE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "oplog.test.ts"
+      ]
+    },
+    {
+      "name": "CEILING.MATH",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "CEILING.PRECISE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "COMBIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COMBINA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COSH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COTH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CSC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CSCH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DECIMAL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DEGREES",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "EVEN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "EXP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts",
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "FACT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FACTDOUBLE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FLOOR.MATH",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "FLOOR.PRECISE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "GCD",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "INT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts",
+        "int-mod-override.test.ts"
+      ]
+    },
+    {
+      "name": "ISO.CEILING",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "LCM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "LN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "LOG",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "oplog.test.ts"
+      ]
+    },
+    {
+      "name": "LOG10",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MDETERM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "MINVERSE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "MMULT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MOD",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "int-mod-override.test.ts"
+      ]
+    },
+    {
+      "name": "MROUND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MULTINOMIAL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MUNIT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "ODD",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "PERCENTOF",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "PI",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "POWER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PRODUCT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "QUOTIENT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "RADIANS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "RAND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "tracks.test.ts"
+      ]
+    },
+    {
+      "name": "RANDARRAY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "RANDBETWEEN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ROMAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ROUND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "ROUNDDOWN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "ROUNDUP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "SEC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SECH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SEQUENCE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "calc-chain.test.ts",
+        "engine.test.ts",
+        "external-refs.test.ts"
+      ]
+    },
+    {
+      "name": "SERIESSUM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SIGN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "SINH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SQRT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "SQRTPI",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUBTOTAL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-hidden-rows.test.ts",
+        "false-cycles.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "SUM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "bulk-load-memory.test.ts",
+        "calc-chain.test.ts",
+        "coverage-financial.test.ts",
+        "coverage-math-text-info.test.ts",
+        "coverage-stats.test.ts",
+        "cross-sheet.test.ts",
+        "defined-names-snapshot.test.ts",
+        "engine.test.ts",
+        "external-refs.test.ts",
+        "function-audit-fixes.test.ts",
+        "intersection-op.test.ts",
+        "localization.test.ts",
+        "namedExpressions.test.ts",
+        "names.test.ts",
+        "parallel-plan-cache.test.ts",
+        "parallel-recalc.test.ts",
+        "sheet-ops.test.ts",
+        "tracks.test.ts"
+      ]
+    },
+    {
+      "name": "SUMIF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUMIFS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUMPRODUCT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUMSQ",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUMX2MY2",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUMX2PY2",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUMXMY2",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TANH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TRUNC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DATE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts",
+        "coverage-math-text-info.test.ts",
+        "extended-functions10.test.ts",
+        "financial-functions2.test.ts",
+        "financial-functions3.test.ts"
+      ]
+    },
+    {
+      "name": "DATEDIF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DATEVALUE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DAY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DAYS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "DAYS360",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "EDATE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "EOMONTH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "HOUR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISOWEEKNUM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MINUTE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MONTH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "NETWORKDAYS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NETWORKDAYS.INTL",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "NOW",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts",
+        "tracks.test.ts"
+      ]
+    },
+    {
+      "name": "SECOND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TIME",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "savePin.test.ts"
+      ]
+    },
+    {
+      "name": "TIMEVALUE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TODAY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "tracks.test.ts"
+      ]
+    },
+    {
+      "name": "WEEKDAY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "WEEKNUM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "WORKDAY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "divergent-builtins.test.ts"
+      ]
+    },
+    {
+      "name": "WORKDAY.INTL",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "divergent-builtins.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "YEAR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "YEARFRAC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ADDRESS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "AREAS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "CHOOSE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHOOSECOLS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "CHOOSEROWS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "COLUMN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "COLUMNS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DROP",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "EXPAND",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "FILTER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FORMULATEXT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GETPIVOTDATA",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions9.test.ts"
+      ]
+    },
+    {
+      "name": "HLOOKUP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "HSTACK",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "HYPERLINK",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions9.test.ts"
+      ]
+    },
+    {
+      "name": "IMAGE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions9.test.ts"
+      ]
+    },
+    {
+      "name": "INDEX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts",
+        "coverage-stats.test.ts",
+        "false-cycles.test.ts"
+      ]
+    },
+    {
+      "name": "INDIRECT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "five-faces.test.ts"
+      ]
+    },
+    {
+      "name": "LOOKUP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MATCH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "OFFSET",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ROW",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-hidden-rows.test.ts",
+        "extended-functions9.test.ts"
+      ]
+    },
+    {
+      "name": "ROWS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-hidden-rows.test.ts"
+      ]
+    },
+    {
+      "name": "RTD",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "SORT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "SORTBY",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TAKE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TOCOL",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TOROW",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TRANSPOSE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "UNIQUE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "VLOOKUP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "VSTACK",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "WRAPCOLS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "WRAPROWS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "XLOOKUP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "localization.test.ts"
+      ]
+    },
+    {
+      "name": "XMATCH",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "ARRAYTOTEXT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "ASC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "BAHTTEXT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "CHAR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CLEAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CODE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "intersection-op.test.ts"
+      ]
+    },
+    {
+      "name": "CONCAT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "CONCATENATE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DBCS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "DOLLAR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "EXACT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FIND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "savePin.test.ts"
+      ]
+    },
+    {
+      "name": "FIXED",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "LEFT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "flashfill.test.ts"
+      ]
+    },
+    {
+      "name": "LEN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "LOWER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MID",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "NUMBERVALUE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "PHONETIC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "PROPER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "REGEXEXTRACT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "REGEXREPLACE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "REGEXTEST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "REPLACE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "REPT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "RIGHT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SEARCH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SUBSTITUTE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "T",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "TEXT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts",
+        "extended-functions10.test.ts",
+        "function-audit-fixes.test.ts",
+        "namedExpressions.test.ts"
+      ]
+    },
+    {
+      "name": "TEXTAFTER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TEXTBEFORE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TEXTJOIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TEXTSPLIT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "TRIM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "UNICHAR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "UNICODE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "UPPER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "flashfill.test.ts",
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "VALUE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts",
+        "engine.test.ts",
+        "external-refs.test.ts",
+        "false-cycles.test.ts"
+      ]
+    },
+    {
+      "name": "VALUETOTEXT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "AND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "BYCOL",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "BYROW",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "FALSE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "function-audit-fixes.test.ts",
+        "namedExpressions.test.ts"
+      ]
+    },
+    {
+      "name": "IF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-16-19.test.ts",
+        "aggregate-hidden-rows.test.ts",
+        "calc-chain.test.ts",
+        "coverage-financial.test.ts",
+        "coverage-legacy.test.ts",
+        "coverage-math-text-info.test.ts",
+        "coverage-stats.test.ts",
+        "engine.test.ts",
+        "extended-functions11.test.ts",
+        "extended-functions8.test.ts",
+        "extended-functions9.test.ts",
+        "false-cycles.test.ts",
+        "five-faces.test.ts",
+        "function-registry.test.ts",
+        "google-functions.test.ts",
+        "hidden-taint-memo.test.ts",
+        "import-functions.test.ts",
+        "intersection-op.test.ts",
+        "namedExpressions.test.ts",
+        "parallel-degenerate-plan.test.ts",
+        "parallel-plan-cache.test.ts",
+        "parallel-recalc.test.ts",
+        "read-auth.test.ts",
+        "sheet-ops.test.ts"
+      ]
+    },
+    {
+      "name": "IFERROR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "false-cycles.test.ts"
+      ]
+    },
+    {
+      "name": "IFNA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IFS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISOMITTED",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "LAMBDA",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts",
+        "engine.test.ts",
+        "external-refs.test.ts",
+        "namedExpressions.test.ts",
+        "names.test.ts"
+      ]
+    },
+    {
+      "name": "LET",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "MAKEARRAY",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "MAP",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts",
+        "coverage-legacy.test.ts",
+        "coverage-math-text-info.test.ts",
+        "coverage-stats.test.ts",
+        "defined-names-snapshot.test.ts",
+        "engine.test.ts",
+        "measure-cache.test.ts",
+        "namedExpressions.test.ts",
+        "parallel-plan-cache.test.ts",
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "NOT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "OR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "REDUCE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "SCAN",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "five-faces.test.ts"
+      ]
+    },
+    {
+      "name": "SWITCH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TRUE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "extended-functions8.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "XOR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "AVEDEV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "AVERAGE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-hidden-rows.test.ts",
+        "intersection-op.test.ts",
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "AVERAGEA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "AVERAGEIF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "AVERAGEIFS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BETA.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts",
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "BETA.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "BINOM.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "BINOM.DIST.RANGE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "BINOM.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHISQ.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "CHISQ.DIST.RT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHISQ.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHISQ.INV.RT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHISQ.TEST",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "CONFIDENCE.NORM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CONFIDENCE.T",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "CORREL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COUNT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "COUNTA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COUNTBLANK",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COUNTIF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COUNTIFS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COVARIANCE.P",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "COVARIANCE.S",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "DEVSQ",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "EXPON.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "F.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "F.DIST.RT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "F.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "F.INV.RT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "F.TEST",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "FISHER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FISHERINV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FORECAST.ETS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "FORECAST.ETS.CONFINT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "FORECAST.ETS.SEASONALITY",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "FORECAST.ETS.STAT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "FORECAST.LINEAR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "FREQUENCY",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts",
+        "financial-functions3.test.ts"
+      ]
+    },
+    {
+      "name": "GAMMA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "GAMMA.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GAMMA.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GAMMALN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GAMMALN.PRECISE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "GAUSS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GEOMEAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GROWTH",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "HARMEAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "HYPGEOM.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "INTERCEPT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "KURT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "LARGE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-16-19.test.ts"
+      ]
+    },
+    {
+      "name": "LINEST",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "LOGEST",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "LOGNORM.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "LOGNORM.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MAX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-hidden-rows.test.ts",
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "MAXA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MAXIFS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MEDIAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MINA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MINIFS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MODE.MULT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "MODE.SNGL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "NEGBINOM.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORM.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORM.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORM.S.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORM.S.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PEARSON",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PERCENTILE.EXC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "PERCENTILE.INC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-16-19.test.ts",
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "PERCENTRANK.EXC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "PERCENTRANK.INC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "PERMUT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "PERMUTATIONA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "PHI",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "POISSON.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PROB",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "QUARTILE.EXC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "QUARTILE.INC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-16-19.test.ts",
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "RANK.AVG",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "RANK.EQ",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "RSQ",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SKEW",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SKEW.P",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SLOPE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SMALL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "aggregate-16-19.test.ts"
+      ]
+    },
+    {
+      "name": "STANDARDIZE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "STDEV.P",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "STDEV.S",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "STDEVA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "STDEVPA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "STEYX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "T.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "T.DIST.2T",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "T.DIST.RT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "T.INV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "T.INV.2T",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "T.TEST",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "TREND",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "TRIMMEAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "VAR.P",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "VAR.S",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-stats.test.ts"
+      ]
+    },
+    {
+      "name": "VARA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "VARPA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "WEIBULL.DIST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "Z.TEST",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ACCRINT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "ACCRINTM",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "AMORDEGRC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "AMORLINC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "COUPDAYBS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "COUPDAYS",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "COUPDAYSNC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "COUPNCD",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "COUPNUM",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "COUPPCD",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "CUMIPMT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CUMPRINC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DB",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DDB",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DISC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "DOLLARDE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DOLLARFR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DURATION",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "EFFECT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FVSCHEDULE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "INTRATE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "IPMT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IRR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "ISPMT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MDURATION",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "MIRR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NOMINAL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NPER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NPV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PDURATION",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PMT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PPMT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PRICE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "PRICEDISC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "PRICEMAT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "PV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "RATE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "RECEIVED",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "RRI",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SLN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SYD",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TBILLEQ",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TBILLPRICE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TBILLYIELD",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "VDB",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "XIRR",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "XNPV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "YIELD",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "YIELDDISC",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-financial.test.ts"
+      ]
+    },
+    {
+      "name": "YIELDMAT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "financial-functions2.test.ts"
+      ]
+    },
+    {
+      "name": "CELL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions9.test.ts",
+        "false-cycles.test.ts",
+        "parallel-plan-cache.test.ts"
+      ]
+    },
+    {
+      "name": "ERROR.TYPE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "INFO",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "ISBLANK",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISERR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISERROR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "five-faces.test.ts",
+        "hidden-taint-memo.test.ts",
+        "names.test.ts",
+        "parallel-recalc.test.ts",
+        "read-auth.test.ts",
+        "sheet-ops.test.ts"
+      ]
+    },
+    {
+      "name": "ISEVEN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISFORMULA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISLOGICAL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISNA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISNONTEXT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISNUMBER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISODD",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISREF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ISTEXT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "N",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "NA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "SHEET",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "hidden-taint-memo.test.ts",
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "SHEETS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TYPE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BESSELI",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BESSELJ",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BESSELK",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BESSELY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BIN2DEC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BIN2HEX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BIN2OCT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BITAND",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BITLSHIFT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BITOR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BITRSHIFT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "BITXOR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COMPLEX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CONVERT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DEC2BIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DEC2HEX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DEC2OCT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DELTA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ERF",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ERF.PRECISE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "ERFC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ERFC.PRECISE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "GESTEP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "HEX2BIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "HEX2DEC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "HEX2OCT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMABS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMAGINARY",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMARGUMENT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMCONJUGATE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMCOS",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMCOSH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMCOT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMCSC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMCSCH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMDIV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMEXP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMLN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMLOG10",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMLOG2",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMPOWER",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMPRODUCT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMREAL",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSEC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSECH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSINH",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSQRT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSUB",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMSUM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "IMTAN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "OCT2BIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "OCT2DEC",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "OCT2HEX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DAVERAGE",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DCOUNT",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "DCOUNTA",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "DGET",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "DMAX",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DMIN",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DPRODUCT",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-math-text-info.test.ts"
+      ]
+    },
+    {
+      "name": "DSTDEV",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "DSTDEVP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "DSUM",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "DVAR",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "DVARP",
+      "layer": "living/modern",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "CUBEKPIMEMBER",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "CUBEMEMBER",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "CUBEMEMBERPROPERTY",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "CUBERANKEDMEMBER",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "CUBESET",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "CUBESETCOUNT",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "CUBEVALUE",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "cube-functions.test.ts"
+      ]
+    },
+    {
+      "name": "ENCODEURL",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions10.test.ts"
+      ]
+    },
+    {
+      "name": "FILTERXML",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions10.test.ts"
+      ]
+    },
+    {
+      "name": "WEBSERVICE",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "BETADIST",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "BETAINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "BINOMDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CEILING",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "divergent-builtins.test.ts"
+      ]
+    },
+    {
+      "name": "CHIDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHIINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CHITEST",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "CONFIDENCE",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "COVAR",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CRITBINOM",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "EXPONDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "FINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "statistical-precision.test.ts"
+      ]
+    },
+    {
+      "name": "FLOOR",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "divergent-builtins.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "FORECAST",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "FTEST",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "GAMMADIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "GAMMAINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "HYPGEOMDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "LOGINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "LOGNORMDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "MODE",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "bulk-load-memory.test.ts",
+        "coverage-math-text-info.test.ts",
+        "engine.test.ts",
+        "function-audit-fixes.test.ts"
+      ]
+    },
+    {
+      "name": "NEGBINOMDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORMDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORMINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORMSDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "NORMSINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "PERCENTILE",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "PERCENTRANK",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "POISSON",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "QUARTILE",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "RANK",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "engine.test.ts"
+      ]
+    },
+    {
+      "name": "STDEV",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "STDEVP",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TDIST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TINV",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "TTEST",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "VAR",
+      "layer": "legacy-compatibility",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "coverage-legacy.test.ts"
+      ]
+    },
+    {
+      "name": "VARP",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "WEIBULL",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "ZTEST",
+      "layer": "legacy-compatibility",
+      "gold": true,
+      "unit": false,
+      "covered": true,
+      "unitFiles": []
+    },
+    {
+      "name": "CALL",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "EUROCONVERT",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions10.test.ts"
+      ]
+    },
+    {
+      "name": "REGISTER.ID",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "LENB",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "TRIMRANGE",
+      "layer": "living/modern",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions8.test.ts"
+      ]
+    },
+    {
+      "name": "TRANSLATE",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions10.test.ts"
+      ]
+    },
+    {
+      "name": "DETECTLANGUAGE",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions10.test.ts"
+      ]
+    },
+    {
+      "name": "COPILOT",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "PY",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts",
+        "parallel-recalc.test.ts"
+      ]
+    },
+    {
+      "name": "STOCKHISTORY",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions11.test.ts"
+      ]
+    },
+    {
+      "name": "FIELDVALUE",
+      "layer": "add-in/external",
+      "gold": false,
+      "unit": true,
+      "covered": true,
+      "unitFiles": [
+        "extended-functions10.test.ts"
+      ]
+    }
+  ]
+}

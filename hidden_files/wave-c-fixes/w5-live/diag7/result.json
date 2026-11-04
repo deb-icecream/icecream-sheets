@@ -1,0 +1,458 @@
+{
+  "run": "diag7",
+  "startedAt": "2026-10-22T15:54:06.886Z",
+  "steps": [
+    {
+      "t": "owner-tabs",
+      "count": 16,
+      "atMs": 22680
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "joiner": {
+    "samples": [
+      {
+        "afterSwitchMs": 10016,
+        "nonEmpty": 418,
+        "status": "✓ Saved",
+        "readsSoFar": 31,
+        "reads200": 26,
+        "readsErr": 5,
+        "dlReads": 6,
+        "dlOk": 6,
+        "dlBig": 2
+      }
+    ],
+    "netErrors": [
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=local-workbook",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=file-2f627905-75e8-4263-acef-a842985bc787",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/engine/session-extras",
+        "status": 401
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      }
+    ],
+    "tabsAtMs": 50991,
+    "tabCount": 16,
+    "initialNonEmpty": 0,
+    "initialStatus": "Saving…",
+    "switched": true,
+    "finalNonEmpty": 418,
+    "probeExample": {
+      "nonEmpty": 221
+    },
+    "probeBackDL": {
+      "nonEmpty": 418
+    },
+    "threshold": 334,
+    "readsTotal": 32
+  },
+  "fileId": "file-2f627905-75e8-4263-acef-a842985bc787",
+  "ownerFirstSheetPaint": 0,
+  "ownerImgs": 1,
+  "reads": [
+    {
+      "atMs": 30466,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "sheet": "?",
+      "post": "{\"fileId\":\"file-2f627905-75e8-4263-acef-a842985bc787\"}",
+      "size": 548
+    },
+    {
+      "atMs": 30653,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "sheet": "?",
+      "post": "{\"sessionId\":\"sess_23be5650-ac11-4e4e-ba8f-0dd2c624ae2f\"}",
+      "size": 446
+    },
+    {
+      "atMs": 55144,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "sheet": "?",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"to",
+      "size": 54
+    },
+    {
+      "atMs": 55532,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 79682,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 79730,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 81976,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 81976,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 82043,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "size": 14
+    },
+    {
+      "atMs": 82067,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 20545
+    },
+    {
+      "atMs": 82067,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 82068,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "size": 87
+    },
+    {
+      "atMs": 82068,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 82068,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 82282,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 83131,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 83463,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 84753,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International URLs",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "size": 89
+    },
+    {
+      "atMs": 84753,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Settings",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "size": 93
+    },
+    {
+      "atMs": 84753,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "DropdownSizer",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "size": 14
+    },
+    {
+      "atMs": 84753,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Instructions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "size": 83
+    },
+    {
+      "atMs": 84757,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Images",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "size": 77
+    },
+    {
+      "atMs": 84759,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Translations",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "size": 98
+    },
+    {
+      "atMs": 84759,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Validation",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "size": 85
+    },
+    {
+      "atMs": 84761,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "size": 89
+    },
+    {
+      "atMs": 84761,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "size": 80
+    },
+    {
+      "atMs": 84761,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Definitions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "size": 87
+    },
+    {
+      "atMs": 84762,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Template",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "size": 86
+    },
+    {
+      "atMs": 84762,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Browse Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "size": 81
+    },
+    {
+      "atMs": 84762,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Valid Values",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "size": 85
+    },
+    {
+      "atMs": 84762,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "AttributePTDMAP",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "size": 87
+    },
+    {
+      "atMs": 90261,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "size": 171311
+    }
+  ],
+  "w5log": [
+    "[W5] 1035 gridMemo Sheet1 v 0 rows 4 nonNull 0",
+    "[W5] 1401 gridMemo Sheet1 v 0 rows 30 nonNull 0",
+    "[W5] 1684 markSessionBound alreadyBound false",
+    "[W5] 1686 emit recalcComplete listeners 1",
+    "[W5] 1716 gridMemo Sheet1 v 1 rows 30 nonNull 0",
+    "[W5] 26635 emit recalcComplete listeners 1",
+    "[W5] 26688 gridMemo Sheet1 v 2 rows 30 nonNull 0",
+    "[W5] 27135 liftTimerFire",
+    "[W5] 27135 emit recalcComplete listeners 1",
+    "[W5] 27169 gridMemo Sheet1 v 3 rows 30 nonNull 0",
+    "[W5] 50825 gridMemo icons v 3 rows 30 nonNull 0",
+    "[W5] 50938 emit recalcComplete listeners 1",
+    "[W5] 50981 gridMemo icons v 4 rows 30 nonNull 0",
+    "[W5] 51135 gridMemo Dropdown Lists v 4 rows 30 nonNull 0",
+    "[W5] 51488 liftTimerFire",
+    "[W5] 51488 emit recalcComplete listeners 1",
+    "[W5] 51500 gridMemo Dropdown Lists v 5 rows 30 nonNull 0",
+    "[W5] 53162 emit recalcComplete listeners 1",
+    "[W5] 53162 emit recalcComplete listeners 1",
+    "[W5] 53175 gridMemo Dropdown Lists v 7 rows 30 nonNull 0",
+    "[W5] 53223 liftDisarmNotify",
+    "[W5] 53225 emit recalcComplete listeners 1",
+    "[W5] 53232 seedBulk icons 0..29x0..19 seeded 600 cache 600",
+    "[W5] 53234 emit recalcComplete listeners 1",
+    "[W5] 53237 gridMemo Dropdown Lists v 9 rows 30 nonNull 0",
+    "[W5] 53269 seedBulk icons 0..0x0..0 seeded 1 cache 600",
+    "[W5] 53271 emit recalcComplete listeners 1",
+    "[W5] 53271 seedBulk Dropdown Lists 0..0x0..0 seeded 1 cache 601",
+    "[W5] 53272 emit recalcComplete listeners 1",
+    "[W5] 53272 seedBulk Dropdown Lists 0..29x0..19 seeded 600 cache 1200",
+    "[W5] 53273 emit recalcComplete listeners 1",
+    "[W5] 53339 gridMemo Dropdown Lists v 12 rows 30 nonNull 438",
+    "[W5] 53387 seedBulk Dropdown Lists 0..29x0..19 seeded 600 cache 1200",
+    "[W5] 53387 emit recalcComplete listeners 1",
+    "[W5] 53496 gridMemo Dropdown Lists v 13 rows 30 nonNull 438",
+    "[W5] 53986 seedBulk Dropdown Lists 0..868x0..69 seeded 60830 cache 61430",
+    "[W5] 53987 emit recalcComplete listeners 1",
+    "[W5] 54266 gridMemo Dropdown Lists v 14 rows 30 nonNull 438",
+    "[W5] 54553 seedBulk Dropdown Lists 0..868x0..69 seeded 60830 cache 61430",
+    "[W5] 54553 emit recalcComplete listeners 1",
+    "[W5] 54668 gridMemo Dropdown Lists v 15 rows 30 nonNull 438",
+    "[W5] 61408 gridMemo Example v 15 rows 30 nonNull 0",
+    "[W5] 61478 seedBulk Example 0..29x0..146 seeded 4410 cache 65840",
+    "[W5] 61479 emit recalcComplete listeners 1",
+    "[W5] 61488 gridMemo Example v 16 rows 30 nonNull 221",
+    "[W5] 70062 gridMemo Dropdown Lists v 16 rows 30 nonNull 438"
+  ],
+  "ownerDropdownListsNonEmpty": 418,
+  "pass": true,
+  "verdict": "PASS"
+}

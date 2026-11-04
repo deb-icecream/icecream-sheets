@@ -1,0 +1,366 @@
+{
+  "t1": {
+    "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a percentage. Then tell me which region has the largest share and what that share is.",
+    "durationMs": 6109,
+    "httpStatus": 200,
+    "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+    "rawText": "{\"threadId\":\"planner-proof6-thread\",\"message\":\"The model service is busy right now, so I could not finish that request. Please try again in a moment.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792671710595,\"principal\":\"user:alice\",\"threadId\":\"planner-proof6-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792671712798,\"principal\":\"user:alice\",\"threadId\":\"planner-proof6-thread\",\"kind\":\"tool_call\",\"tool\":\"analyze_data\",\"args\":{\"intent\":\"highest total revenue by region\",\"sheet\":\"Sales\"},\"ok\":true,\"summary\":\"analyze_data ok\"},{\"seq\":3,\"ts\":1792671713608,\"principal\":\"user:alice\",\"threadId\":\"planner-proof6-thread\",\"kind\":\"agent_message\",\"text\":\"The region with the highest total revenue is North, with $89,100.\"},{\"seq\":4,\"ts\":17",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "timeout": 1,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [
+      "planner call failed (openai-compatible backend: provider returned non-JSON plan)"
+    ],
+    "tools": [],
+    "audit": [
+      {
+        "seq": 21,
+        "ts": 1792671728849,
+        "principal": "user:alice",
+        "threadId": "planner-proof6-thread",
+        "kind": "user_message",
+        "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a percentage. Then tell me which region has the largest share and what that share is."
+      },
+      {
+        "seq": 22,
+        "ts": 1792671733771,
+        "principal": "user:alice",
+        "threadId": "planner-proof6-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed (openai-compatible backend: provider returned non-JSON plan)"
+      },
+      {
+        "seq": 23,
+        "ts": 1792671733771,
+        "principal": "user:alice",
+        "threadId": "planner-proof6-thread",
+        "kind": "agent_message",
+        "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment."
+      }
+    ]
+  },
+  "rangeD": {
+    "values": [
+      [
+        {
+          "kind": "string",
+          "value": "Month"
+        },
+        {
+          "kind": "string",
+          "value": "Region"
+        },
+        {
+          "kind": "string",
+          "value": "Revenue"
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Jan"
+        },
+        {
+          "kind": "string",
+          "value": "North"
+        },
+        {
+          "kind": "number",
+          "value": 12000
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Jan"
+        },
+        {
+          "kind": "string",
+          "value": "South"
+        },
+        {
+          "kind": "number",
+          "value": 9800
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Feb"
+        },
+        {
+          "kind": "string",
+          "value": "North"
+        },
+        {
+          "kind": "number",
+          "value": 15000
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Feb"
+        },
+        {
+          "kind": "string",
+          "value": "South"
+        },
+        {
+          "kind": "number",
+          "value": 11200
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Mar"
+        },
+        {
+          "kind": "string",
+          "value": "North"
+        },
+        {
+          "kind": "number",
+          "value": 15800
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Mar"
+        },
+        {
+          "kind": "string",
+          "value": "South"
+        },
+        {
+          "kind": "number",
+          "value": 12600
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Apr"
+        },
+        {
+          "kind": "string",
+          "value": "North"
+        },
+        {
+          "kind": "number",
+          "value": 14200
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Apr"
+        },
+        {
+          "kind": "string",
+          "value": "South"
+        },
+        {
+          "kind": "number",
+          "value": 10900
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "May"
+        },
+        {
+          "kind": "string",
+          "value": "North"
+        },
+        {
+          "kind": "number",
+          "value": 16900
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "May"
+        },
+        {
+          "kind": "string",
+          "value": "South"
+        },
+        {
+          "kind": "number",
+          "value": 11600
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Jun"
+        },
+        {
+          "kind": "string",
+          "value": "North"
+        },
+        {
+          "kind": "number",
+          "value": 16700
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ],
+      [
+        {
+          "kind": "string",
+          "value": "Jun"
+        },
+        {
+          "kind": "string",
+          "value": "South"
+        },
+        {
+          "kind": "number",
+          "value": 14200
+        },
+        {
+          "kind": "null",
+          "value": null
+        }
+      ]
+    ],
+    "formulas": [
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ]
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "mode": "proof2",
+  "fileId": "file-266521f2-3b32-4edb-8a96-74613d45d87b",
+  "sessionId": "sess_1459f8cb-f34d-4a89-aeb2-dde8fdf39849",
+  "cases": {
+    "case1": {
+      "pass": false,
+      "t1Ms": 4602,
+      "t2Ms": 1511,
+      "reply1": "I need to know which columns contain 'Region' and 'Revenue' to find the region with the highest total revenue. Please specify the column names or their letter (e.g., 'Column C for Region, Column F for Revenue').",
+      "reply2": "I need to know which columns contain 'Region' and 'Revenue' to filter the rows. Please specify the column names or their letter (e.g., 'Column C for Region, Column F for Revenue')."
+    },
+    "case2": {
+      "pass": false,
+      "t1Ms": 3048,
+      "t2Ms": 6042,
+      "t3Ms": 3023,
+      "reply1": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+      "junSouth": {
+        "value": {
+          "kind": "number",
+          "value": 14200
+        }
+      },
+      "labelCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      },
+      "totalCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      }
+    },
+    "case5": {
+      "pass": false,
+      "t1Ms": 3022,
+      "dVals": [],
+      "shares": [],
+      "present": 0,
+      "maxShare": null,
+      "reply": "I need to know the column numbers for 'Region' and 'Revenue' to compute each region's share of total revenue and identify the region with the largest share. Please specify the column names or their letter (e.g., 'Column C for Region, Column F for Revenue')."
+    }
+  },
+  "allPass": false
+}

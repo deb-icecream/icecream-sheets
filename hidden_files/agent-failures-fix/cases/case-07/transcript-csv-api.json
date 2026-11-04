@@ -1,0 +1,178 @@
+{
+ "driver": "api-adaptation",
+ "openPrompt": "Open the CSV data source at http://localhost:8899/inventory.csv and materialize it as a new sheet named 'Inventory CSV'.",
+ "openTurn": {
+  "text": "Open the CSV data source at http://localhost:8899/inventory.csv and materialize it as a new sheet named 'Inventory CSV'.",
+  "ms": 4434,
+  "status": 200,
+  "reply": "Opened the CSV as the sheet 'Inventory CSV' with 4 data rows (columns: SKU, Item, Warehouse, Units).",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "Open the CSV data source at http://localhost:8899/inventory.csv and materialize it as a new sheet named 'Inventory CSV'."
+   },
+   {
+    "kind": "tool_call",
+    "tool": "open_data_source",
+    "ok": true,
+    "text": "open_data_source ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "Opened the CSV as the sheet 'Inventory CSV' with 4 data rows (columns: SKU, Item, Warehouse, Units)."
+   }
+  ]
+ },
+ "csvSheetApiRead": {
+  "values": [
+   [
+    {
+     "kind": "string",
+     "value": "SKU"
+    },
+    {
+     "kind": "string",
+     "value": "Item"
+    },
+    {
+     "kind": "string",
+     "value": "Warehouse"
+    },
+    {
+     "kind": "string",
+     "value": "Units"
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A100"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "number",
+     "value": 34
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A101"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "number",
+     "value": 57
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A102"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "number",
+     "value": 21
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A103"
+    },
+    {
+     "kind": "string",
+     "value": "Sprocket"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "number",
+     "value": 48
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ]
+  ],
+  "formulas": [
+   [
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ "materializedViaAgent": true
+}

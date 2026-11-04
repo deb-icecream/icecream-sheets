@@ -1,0 +1,191 @@
+{
+  "polls": [
+    {
+      "tMs": 4051,
+      "banner": false,
+      "firstPage": null,
+      "heapMB": 229.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1✓ SavedFormula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 153,
+      "availMB": 4749,
+      "crashed": false
+    },
+    {
+      "tMs": 7056,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": null,
+        "firstPagePaintedAt": null,
+        "timeToFirstPageMs": null,
+        "timeToFirstValuesMs": null
+      },
+      "heapMB": 393.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 0%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 616,
+      "availMB": 4058,
+      "crashed": false
+    },
+    {
+      "tMs": 10099,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 400.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 2%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1273,
+      "availMB": 3396,
+      "crashed": false
+    },
+    {
+      "tMs": 13275,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 378.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 10%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1406,
+      "availMB": 3205,
+      "crashed": false
+    },
+    {
+      "tMs": 16296,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 554.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 18%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1549,
+      "availMB": 2964,
+      "crashed": false
+    },
+    {
+      "tMs": 19381,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 856.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 26%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1709,
+      "availMB": 2482,
+      "crashed": false
+    },
+    {
+      "tMs": 22791,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 478.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 31%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1481,
+      "availMB": 2692,
+      "crashed": false
+    },
+    {
+      "tMs": 36049,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 556.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 39%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1525,
+      "availMB": 2639,
+      "crashed": false
+    },
+    {
+      "tMs": 46817,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 577.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 40%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1820,
+      "availMB": 2384,
+      "crashed": false
+    },
+    {
+      "tMs": 54458,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 595.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 40%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1603,
+      "availMB": 2490,
+      "crashed": false
+    },
+    {
+      "tMs": 62809,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 6127.800000000745,
+        "firstValuesAt": 11038,
+        "firstPagePaintedAt": 11041.600000000559,
+        "timeToFirstPageMs": 4913.799999999814,
+        "timeToFirstValuesMs": 4910.199999999255
+      },
+      "heapMB": 345.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 41%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1603,
+      "availMB": 2638,
+      "crashed": false
+    }
+  ],
+  "sheets": [],
+  "errors": [
+    "poll evaluate failed (tab dead?): Error: page.evaluate: Target page, context or browser has been closed",
+    "loaded screenshot failed: Error: page.screenshot: Target page, context or browser has been closed"
+  ],
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMmUtdGVzdGVyIiwiYXR0cnMiOnt9LCJpYXQiOjE3OTI1NTc1NjUsImV4cCI6MTc5MjYwMDc2NX0.KbvYR4UtOEMs-GvS7rKpveTLRKyT2YiGAbVzSgg3w1g",
+  "wallMs": 71644,
+  "firstPage": {
+    "fileSelectedAt": 6127.800000000745,
+    "firstValuesAt": 11038,
+    "firstPagePaintedAt": 11041.600000000559,
+    "timeToFirstPageMs": 4913.799999999814,
+    "timeToFirstValuesMs": 4910.199999999255
+  },
+  "heapAtLoadMB": 345.8,
+  "sheetTabs": [],
+  "finalEngineHealth": 0
+}

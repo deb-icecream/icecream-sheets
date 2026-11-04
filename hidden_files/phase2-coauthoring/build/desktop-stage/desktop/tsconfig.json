@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // tsconfig.base sets module/moduleResolution to NodeNext; Electron's main
+    // and preload run as CommonJS, so override both here (NodeNext resolution
+    // requires a NodeNext module setting and would reject commonjs).
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"]
+  },
+  "include": ["src"]
+}

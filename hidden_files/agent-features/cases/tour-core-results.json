@@ -1,0 +1,23 @@
+{
+ "setup": {
+  "fileId": "file-25e64d7d-475d-4307-821c-f48bdef2d9e3",
+  "sessionId": "sess_f2913a88-e9ad-4614-baf2-0ac07a6b3418",
+  "painted": false
+ },
+ "case1": {
+  "verdict": "FAIL",
+  "error": "Error: page.evaluate: Target page, context or browser has been closed"
+ },
+ "case2": {
+  "verdict": "FAIL",
+  "error": "Error: page.evaluate: Target page, context or browser has been closed"
+ },
+ "case5": {
+  "verdict": "FAIL",
+  "error": "Error: page.evaluate: Target page, context or browser has been closed"
+ },
+ "case6": {
+  "verdict": "FAIL",
+  "error": "Error: page.evaluate: Target page, context or browser has been closed"
+ }
+}

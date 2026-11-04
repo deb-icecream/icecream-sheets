@@ -1,0 +1,96 @@
+{
+ "scenario": "5-presence",
+ "steps": {
+  "bobSeesAlice": {
+   "avatars": [
+    {
+     "title": "user:alice",
+     "text": "AL"
+    }
+   ]
+  },
+  "aliceSeesBob": {
+   "avatars": [
+    {
+     "title": "user:alice",
+     "text": "AL"
+    },
+    {
+     "title": "user:bob",
+     "text": "BO"
+    }
+   ]
+  },
+  "flagsSummary": {
+   "bobSeesAliceAvatar": true,
+   "aliceSeesBobAvatar": true,
+   "bobFlagHeuristic": true,
+   "aliceFlagHeuristic": true
+  },
+  "forceSave": {
+   "status": 200,
+   "json": {
+    "ok": true,
+    "entry": {
+     "id": "wb_mviqgl68_4uves3",
+     "name": "lega-s05.xlsx",
+     "owner": "user:alice",
+     "createdAt": 1792624697662,
+     "modifiedAt": 1792624697662,
+     "sizeBytes": 6647,
+     "backend": "gateway"
+    },
+    "revision": 0,
+    "storageRevision": 0,
+    "caughtUp": true,
+    "flushedOps": 0,
+    "skipped": true,
+    "changedSheets": []
+   }
+  },
+  "absence": {
+   "grep": {
+    "segmentsScanned": 11,
+    "presenceHits": [],
+    "files": [
+     "journal.138560f2a722bc2b6a70e53a.json",
+     "journal.5e2f621e0bd43740f063607a.json",
+     "journal.982a007fad4e11a003e5a8a7.json",
+     "journal.ab6462ae4c2e31557e20edb7.json",
+     "journal.bcad318b91fef97e04f7617b.json",
+     "journal.f7276904b82285b29891aa95.json",
+     "segment.6d14f05ad6d542924af7e13b.0000000000-0000000003.json",
+     "segment.8159f79d5bd1c5d7a30a46eb.0000000000-0000000003.json",
+     "segment.8f30bd2faa42bac670fe0a1e.0000000001-0000000002.json",
+     "segment.8f30bd2faa42bac670fe0a1e.0000000002-0000000004.json",
+     "segment.a169b0c218c61f16400f5336.0000000002-0000000003.json"
+    ],
+    "registryPresenceHits": 0
+   },
+   "saved": {
+    "attempted": true,
+    "download": {
+     "status": 200,
+     "entryId": "autosave_sess_7379341d-dabe-43fb-97b0-b0a700a64316",
+     "mode": "verbatim"
+    },
+    "sign": {
+     "status": 200
+    },
+    "bytes": 6647,
+    "presenceHits": 0
+   }
+  }
+ },
+ "verdict": "PASS",
+ "fileId": "file-9caafc2f-4da9-4717-b57a-103d2323fb30",
+ "sessionId": "sess_7379341d-dabe-43fb-97b0-b0a700a64316",
+ "detail": {
+  "presenceVisible": true,
+  "flagsHeuristic": {
+   "bobFlag": true,
+   "aliceFlag": true
+  },
+  "absent": true
+ }
+}

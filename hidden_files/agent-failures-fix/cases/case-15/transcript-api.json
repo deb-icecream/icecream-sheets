@@ -1,0 +1,27 @@
+{
+ "driver": "api-adaptation",
+ "prompt": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?",
+ "turn": {
+  "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?",
+  "ms": 6770,
+  "status": 200,
+  "reply": "The temperature recorded for Seattle on 2026-10-21 was 16°C.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "ok": true,
+    "text": "read_cells ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "The temperature recorded for Seattle on 2026-10-21 was 16°C."
+   }
+  ]
+ }
+}

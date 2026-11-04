@@ -1,0 +1,61 @@
+{
+ "prompt": "Use the write_cells tool with exactly these args: {\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":111},{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"value\":222},{\"sheet\":\"Sheet1\",\"row\":2,\"col\":0,\"value\":333}]}",
+ "status": 200,
+ "latencyMs": 1442,
+ "response": {
+  "threadId": "probe-w1-hint-1792625514829",
+  "message": "Writing cells to Sheet1.",
+  "needsInput": null,
+  "audit": [
+   {
+    "seq": 38,
+    "ts": 1792625514869,
+    "principal": "user:alice",
+    "threadId": "probe-w1-hint-1792625514829",
+    "kind": "user_message",
+    "text": "Use the write_cells tool with exactly these args: {\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":111},{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"value\":222},{\"sheet\":\"Sheet1\",\"row\":2,\"col\":0,\"value\":333}]}"
+   },
+   {
+    "seq": 39,
+    "ts": 1792625516238,
+    "principal": "user:alice",
+    "threadId": "probe-w1-hint-1792625514829",
+    "kind": "tool_call",
+    "tool": "write_cells",
+    "args": {
+     "cells": [
+      {
+       "sheet": "Sheet1",
+       "row": 0,
+       "col": 0,
+       "value": 111
+      },
+      {
+       "sheet": "Sheet1",
+       "row": 1,
+       "col": 0,
+       "value": 222
+      },
+      {
+       "sheet": "Sheet1",
+       "row": 2,
+       "col": 0,
+       "value": 333
+      }
+     ]
+    },
+    "ok": true,
+    "summary": "write_cells ok"
+   },
+   {
+    "seq": 40,
+    "ts": 1792625516238,
+    "principal": "user:alice",
+    "threadId": "probe-w1-hint-1792625514829",
+    "kind": "agent_message",
+    "text": "Writing cells to Sheet1."
+   }
+  ],
+  "chart": null
+ }
+}

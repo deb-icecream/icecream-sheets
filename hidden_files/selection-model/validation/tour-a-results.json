@@ -1,0 +1,171 @@
+{
+ "checks": [
+  {
+   "id": "A1.cell",
+   "pass": true,
+   "detail": "selected=[\"cell-4-3\"]"
+  },
+  {
+   "id": "A1.range-drag",
+   "pass": false,
+   "detail": "inSelection=[\"cell-1-2\",\"cell-1-3\",\"cell-2-1\",\"cell-2-2\",\"cell-2-3\",\"cell-3-1\",\"cell-3-2\",\"cell-3-3\"]"
+  },
+  {
+   "id": "A1.range-shiftclick",
+   "pass": false,
+   "detail": "inSelection=[\"cell-1-2\",\"cell-1-3\",\"cell-1-4\",\"cell-2-1\",\"cell-2-2\",\"cell-2-3\",\"cell-2-4\",\"cell-3-1\",\"cell-3-2\",\"cell-3-3\",\"cell-3-4\",\"cell-4-1\",\"cell-4-2\",\"cell-4-3\",\"cell-4-4\"]"
+  },
+  {
+   "id": "A1.row",
+   "pass": true,
+   "detail": "activeRowHeaders=[\"3\"] rowCells=21"
+  },
+  {
+   "id": "A1.column",
+   "pass": true,
+   "detail": "activeColHeaders=[\"C\"] colCells=33"
+  },
+  {
+   "id": "A1.select-all",
+   "pass": false,
+   "detail": "corner=\"corner active\" inSelection=747/748"
+  },
+  {
+   "id": "A1.multi-row-drag",
+   "pass": true,
+   "detail": "headers=[\"2\",\"3\",\"4\"] rows=[\"1\",\"2\",\"3\"]"
+  },
+  {
+   "id": "A1.multi-row-ctrlclick",
+   "pass": true,
+   "detail": "headers=[\"2\",\"5\",\"7\"] rows=[\"1\",\"4\",\"6\"] (gap rows must be absent)"
+  },
+  {
+   "id": "A1.multi-col-drag",
+   "pass": true,
+   "detail": "headers=[\"B\",\"C\",\"D\"] cols=[\"1\",\"2\",\"3\"]"
+  },
+  {
+   "id": "A1.multi-col-ctrlclick",
+   "pass": true,
+   "detail": "headers=[\"B\",\"E\"] cols=[\"1\",\"4\"] (gap cols must be absent)"
+  },
+  {
+   "id": "A2.baseline-unlocked",
+   "pass": true,
+   "detail": "markers=[]"
+  },
+  {
+   "id": "A2.a-cell",
+   "pass": true,
+   "detail": "markers=[\"cell-0-0\"]"
+  },
+  {
+   "id": "A2.b-range",
+   "pass": true,
+   "detail": "markers=[\"cell-0-0\",\"cell-0-1\",\"cell-1-0\"] (B2=cell-1-1 unlocked must be absent)"
+  },
+  {
+   "id": "A2.c-row",
+   "pass": true,
+   "detail": "markers=21 expected=21 allInRow2=true"
+  },
+  {
+   "id": "A2.d-column",
+   "pass": true,
+   "detail": "markers=33 expected=33 allInColC=true"
+  },
+  {
+   "id": "A2.e-select-all",
+   "pass": true,
+   "detail": "markers=745 expected=745 rendered=748"
+  },
+  {
+   "id": "A3.copy-range-clipboard",
+   "pass": false,
+   "detail": "clipboard=\"\\n2\\n6\\nnote2\\n5\\nItem3\\n4\\n2\""
+  },
+  {
+   "id": "A3.copy-range-paste",
+   "pass": false,
+   "detail": "pasted=[\"\",\"\",\"\",\"\"]"
+  },
+  {
+   "id": "A3.copy-row-clipboard",
+   "pass": false,
+   "detail": "row tsv first cells=[\"\\n2\\n6\\nnote2\\n5\\nItem3\\n4\\n2\"] P2col=undefined totalCells=1"
+  },
+  {
+   "id": "A3.copy-row-paste",
+   "pass": false,
+   "detail": "pasted=[\"\",\"\",\"\"]"
+  },
+  {
+   "id": "A3.copy-col-clipboard",
+   "pass": false,
+   "detail": "col lines[0,1,5,12]=[\"\",\"2\",\"Item3\",null] lines=8"
+  },
+  {
+   "id": "A3.copy-col-paste",
+   "pass": false,
+   "detail": "pasted=[\"\",\"\",\"\"]"
+  },
+  {
+   "id": "A3.copy-all-clipboard",
+   "pass": false,
+   "detail": "lines=8"
+  },
+  {
+   "id": "A3.delete-cell",
+   "pass": true,
+   "detail": "B13 after=\"\" formulaBar before=\"=Z6+1\" after=\"\""
+  },
+  {
+   "id": "A3.delete-range",
+   "pass": true,
+   "detail": "D2=\"\" D3=\"\" D13=\"136\" (want 136)"
+  },
+  {
+   "id": "A3.delete-row",
+   "pass": true,
+   "detail": "A4=\"\" D4=\"\" D13=\"126\" (want 126)"
+  },
+  {
+   "id": "A3.delete-col",
+   "pass": true,
+   "detail": "C2=\"\" C6=\"\" D6=\"0\" D13=\"0\" (want 0)"
+  },
+  {
+   "id": "A3.delete-all",
+   "pass": true,
+   "detail": "A1=\"\" anyCellTextLeft=false Z6dom=\"(not rendered)\""
+  }
+ ],
+ "shots": [
+  "a1-shape-cell.png",
+  "a1-shape-range-drag.png",
+  "a1-shape-range-shiftclick.png",
+  "a1-shape-row.png",
+  "a1-shape-column.png",
+  "a1-shape-select-all.png",
+  "a1-shape-multi-row.png",
+  "a1-shape-multi-row-noncontig.png",
+  "a1-shape-multi-col.png",
+  "a1-shape-multi-col-noncontig.png",
+  "a2-badge-baseline-unlocked.png",
+  "a2-badge-a-cell.png",
+  "a2-badge-b-range.png",
+  "a2-badge-c-row.png",
+  "a2-badge-d-column.png",
+  "a2-badge-e-select-all.png",
+  "a3-copy-range-paste.png",
+  "a3-copy-row-paste.png",
+  "a3-copy-col-paste.png",
+  "a3-delete-cell.png",
+  "a3-delete-range.png",
+  "a3-delete-row.png",
+  "a3-delete-col.png",
+  "a3-delete-all.png"
+ ],
+ "verdict": "FAILURES PRESENT"
+}

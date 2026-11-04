@@ -1,0 +1,707 @@
+{
+ "summary": {
+  "tag": "before",
+  "web": "http://localhost:4174",
+  "fileId": "file-67e45286-0fb3-45da-83b6-ea73da7821dd",
+  "sessionId": "sess_12744272-40a9-4f0d-9d96-c8c61074621e",
+  "joined": true,
+  "edits": [
+   {
+    "row": 2,
+    "value": 777,
+    "commitStyle": "enter",
+    "opsCount": 2,
+    "ops": [
+     {
+      "clientId": "web-mvih4ztz-4sqfc",
+      "clientSeq": 1,
+      "baseRev": 1,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 2,
+        "col": 0
+       },
+       "value": 777
+      },
+      "status": 200
+     },
+     {
+      "clientId": "web-mvih4ztz-4sqfc",
+      "clientSeq": 2,
+      "baseRev": 1,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 2,
+        "col": 0
+       },
+       "value": 777
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "777"
+   },
+   {
+    "row": 3,
+    "value": 888,
+    "commitStyle": "tab",
+    "opsCount": 2,
+    "ops": [
+     {
+      "clientId": "web-mvih4ztz-4sqfc",
+      "clientSeq": 3,
+      "baseRev": 3,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 3,
+        "col": 0
+       },
+       "value": 888
+      },
+      "status": 200
+     },
+     {
+      "clientId": "web-mvih4ztz-4sqfc",
+      "clientSeq": 4,
+      "baseRev": 3,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 3,
+        "col": 0
+       },
+       "value": 888
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "888"
+   },
+   {
+    "row": 4,
+    "value": 999,
+    "commitStyle": "click",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mvih4ztz-4sqfc",
+      "clientSeq": 5,
+      "baseRev": 5,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 4,
+        "col": 0
+       },
+       "value": 999
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "999"
+   }
+  ],
+  "accessMintsTotal": 9,
+  "accessMintsBeforeEdits": 9,
+  "engine401Total": 26,
+  "postBaseline": {
+   "total": 33,
+   "accessMints": 0,
+   "s401": 13,
+   "byHash": {
+    "98238457": {
+     "total": 15,
+     "s401": 0,
+     "s200": 15,
+     "paths": {
+      "/presence": 5,
+      "/ops": 5,
+      "/deltas/ack": 5
+     }
+    },
+    "850390a8": {
+     "total": 13,
+     "s401": 13,
+     "s200": 0,
+     "paths": {
+      "/api/engine/session-save-status": 7,
+      "/api/engine/session-extras": 6
+     }
+    },
+    "ca9687ac": {
+     "total": 5,
+     "s401": 0,
+     "s200": 5,
+     "paths": {
+      "/read": 5
+     }
+    }
+   }
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+   "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+   "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+   "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ]
+ },
+ "log": [
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/open",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/catalog",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 502
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/installed",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 502
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/grants",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 502
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "b7646993",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "016a2f0f",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/deltas",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "016a2f0f",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "016a2f0f",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/snapshot",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "98238457",
+   "opsBody": {
+    "clientId": "web-mvih4ztz-4sqfc",
+    "clientSeq": 1,
+    "baseRev": 1,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "col": 0
+     },
+     "value": 777
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "98238457",
+   "opsBody": {
+    "clientId": "web-mvih4ztz-4sqfc",
+    "clientSeq": 2,
+    "baseRev": 1,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "col": 0
+     },
+     "value": 777
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "98238457",
+   "opsBody": {
+    "clientId": "web-mvih4ztz-4sqfc",
+    "clientSeq": 3,
+    "baseRev": 3,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "col": 0
+     },
+     "value": 888
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "98238457",
+   "opsBody": {
+    "clientId": "web-mvih4ztz-4sqfc",
+    "clientSeq": 4,
+    "baseRev": 3,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "col": 0
+     },
+     "value": 888
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "98238457",
+   "opsBody": {
+    "clientId": "web-mvih4ztz-4sqfc",
+    "clientSeq": 5,
+    "baseRev": 5,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "col": 0
+     },
+     "value": 999
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "ca9687ac",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/engine/session-save-status",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "98238457",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/session-extras",
+   "auth": "850390a8",
+   "opsBody": null,
+   "status": 401
+  }
+ ]
+}

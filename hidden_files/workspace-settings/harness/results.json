@@ -1,0 +1,175 @@
+{
+  "results": [
+    {
+      "step": "dev-login both users",
+      "ok": true,
+      "detail": "ada-mvjmavby"
+    },
+    {
+      "step": "ada uploads a real xlsx (catalog + stored object)",
+      "ok": true,
+      "detail": "file-84e5b321-5b3a-4942-bc8b-d6374df467c0"
+    },
+    {
+      "step": "ada catalog lists the upload",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "step": "stored object exists on disk pre-delete",
+      "ok": true,
+      "detail": "uploads,uploads/0afcba19f7a42f73,uploads/54a7360952e39caa,uploads/5754ac847e823ad7,uploads/5c22ab3b500bc926,uploads/7c58bcfb2b7bbd6d,uploads/9e8debf23376923b,uploads/a97abd87f7e40354,uploads/aa49867de1f639a7,uploads/b10727e142e2ff84,uploads/d16734f0735ec817,uploads/f3f644493e6f9050,uploads/0afcba19f7a42f73/file-e3abf647-c3b2-450e-b6bf-daf09aa54243.xlsx,uploads/54a7360952e39caa/file-1dac0c7c-2070-4900-bad8-3a3fdf41812b.xlsx,uploads/5754ac847e823ad7/file-73a5dfbb-81b5-416a-9e11-e7c5bfea41a5.xlsx,uploads/5c22ab3b500bc926/file-ef1ec39e-2c16-4b2a-8d92-5e317a4f9bc2.xlsx,uploads/7c58bcfb2b7bbd6d/file-60e8a594-646e-4be6-8e6e-d3a63244e60c.xlsx,uploads/9e8debf23376923b/file-d910d8b7-6399-4368-9828-fcf1f5584168.xlsx,uploads/a97abd87f7e40354/file-240bbb1a-9a5f-47a0-948c-c802ada3a281.xlsx,uploads/aa49867de1f639a7/file-c9e4cd3f-6486-4af7-9c0c-2197724d3dc7.xlsx,uploads/b10727e142e2ff84/file-793a8e70-d970-49b1-beb1-79553f28d4bd.xlsx,uploads/d16734f0735ec817/file-84e5b321-5b3a-4942-bc8b-d6374df467c0.xlsx,uploads/f3f644493e6f9050/file-ae32e238-859a-429c-bb5b-116c63d4d4a9.xlsx"
+    },
+    {
+      "step": "settings button present in Workspace",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "settings panel opens in Workspace",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "email input is read-only in the DOM",
+      "ok": true,
+      "detail": "{\"readOnly\":true,\"tag\":\"INPUT\"}"
+    },
+    {
+      "step": "office app-settings section present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "display name persisted server-side",
+      "ok": true,
+      "detail": "{\"displayName\":\"Ada Countess\",\"email\":null,\"googleName\":null}"
+    },
+    {
+      "step": "dark theme applies to Workspace immediately",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "opened sheet keeps data-theme=dark",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "grid CELL background is dark",
+      "ok": true,
+      "detail": "{\"cell\":\"rgb(30, 41, 59)\",\"text\":\"rgb(226, 232, 240)\",\"wrap\":\"rgb(30, 41, 59)\"}"
+    },
+    {
+      "step": "grid CELL text is light (AA on dark)",
+      "ok": true,
+      "detail": "{\"cell\":\"rgb(30, 41, 59)\",\"text\":\"rgb(226, 232, 240)\",\"wrap\":\"rgb(30, 41, 59)\"}"
+    },
+    {
+      "step": "no workspace-settings surface inside the grid",
+      "ok": true,
+      "detail": "office=0"
+    },
+    {
+      "step": "FRESH context + light OS still lands on saved dark theme",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "system choice persisted server-side",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "system theme resolves light under light OS",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "system theme tracks a LIVE OS flip (no reload)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "system theme resolves dark under dark OS",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "light choice persisted server-side",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "bob sees ada's SETTINGS name in presence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "light theme: grid cells are light in the shared sheet",
+      "ok": true,
+      "detail": "bg=rgb(255, 255, 255)"
+    },
+    {
+      "step": "presence avatar initials derive from the name",
+      "ok": true,
+      "detail": "initials=AC"
+    },
+    {
+      "step": "ada sees bob (principal fallback, bob has no settings name)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "delete opens ONE in-app confirmation dialog",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "cancel deletes nothing (settings still 200)",
+      "ok": true,
+      "detail": "status=200"
+    },
+    {
+      "step": "after confirm the client lands on the logged-out landing page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "settings record gone (API 404)",
+      "ok": true,
+      "detail": "status=404"
+    },
+    {
+      "step": "catalog file gone (API 404)",
+      "ok": true,
+      "detail": "status=404"
+    },
+    {
+      "step": "file list empty after delete",
+      "ok": true,
+      "detail": "count=0"
+    },
+    {
+      "step": "stored bytes gone from disk",
+      "ok": true,
+      "detail": "uploads,uploads/0afcba19f7a42f73,uploads/54a7360952e39caa,uploads/5754ac847e823ad7,uploads/5c22ab3b500bc926,uploads/7c58bcfb2b7bbd6d,uploads/9e8debf23376923b,uploads/a97abd87f7e40354,uploads/aa49867de1f639a7,uploads/b10727e142e2ff84,uploads/d16734f0735ec817,uploads/f3f644493e6f9050,uploads/0afcba19f7a42f73/file-e3abf647-c3b2-450e-b6bf-daf09aa54243.xlsx,uploads/54a7360952e39caa/file-1dac0c7c-2070-4900-bad8-3a3fdf41812b.xlsx,uploads/5754ac847e823ad7/file-73a5dfbb-81b5-416a-9e11-e7c5bfea41a5.xlsx,uploads/5c22ab3b500bc926/file-ef1ec39e-2c16-4b2a-8d92-5e317a4f9bc2.xlsx,uploads/7c58bcfb2b7bbd6d/file-60e8a594-646e-4be6-8e6e-d3a63244e60c.xlsx,uploads/9e8debf23376923b/file-d910d8b7-6399-4368-9828-fcf1f5584168.xlsx,uploads/a97abd87f7e40354/file-240bbb1a-9a5f-47a0-948c-c802ada3a281.xlsx,uploads/aa49867de1f639a7/file-c9e4cd3f-6486-4af7-9c0c-2197724d3dc7.xlsx,uploads/b10727e142e2ff84/file-793a8e70-d970-49b1-beb1-79553f28d4bd.xlsx,uploads/f3f644493e6f9050/file-ae32e238-859a-429c-bb5b-116c63d4d4a9.xlsx"
+    },
+    {
+      "step": "other user untouched by the delete",
+      "ok": true,
+      "detail": "bob status=200"
+    },
+    {
+      "step": "ZERO native dialogs across the whole tour",
+      "ok": true,
+      "detail": "count=0"
+    },
+    {
+      "step": "re-login is a fresh empty account (default system theme)",
+      "ok": true,
+      "detail": "emptyState=false"
+    }
+  ],
+  "nativeDialogs": 0
+}

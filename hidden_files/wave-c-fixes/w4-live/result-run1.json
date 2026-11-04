@@ -1,0 +1,323 @@
+{
+ "user": "w4carol",
+ "assertions": [
+  {
+   "name": "A: app created via UI and runner auto-opened with data",
+   "pass": true,
+   "observed": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidentialW4🔗 file-a166ef37-989c-4410-bb48-206851b46a0d Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareTablePivotTableRecommended PivotTablesTablesBuild AppMy Apps ▾AppsSlicerTimelineFiltersSparklineRemove SparklineSparklinesPicturesShapes ▾IconsSmartArtScreenshotIl"
+  },
+  {
+   "name": "API: server store holds the UI-built app for user+file",
+   "pass": true,
+   "observed": "{\"ok\":true,\"apps\":[{\"appId\":\"app_mvjklmao_3\",\"fileId\":\"file-a166ef37-989c-4410-bb48-206851b46a0d\",\"spec\":{\"id\":\"app_mvjklmao_3\",\"version\":1,\"name\":\"W4 Sales App\",\"dataSource\":{\"kind\":\"range\",\"binding\":{\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":12,\"endCol\":2,\"headerRow\":true},\"columns\":[{\"name\":\"Month\",\"type\":\"text\"},{\"name\":\"Region\",\"type\":\"text\"},{\"name\":\"Revenue\",\"type\":\"numeric\"}]},\"vi"
+  },
+  {
+   "name": "API: no leakage to another file id",
+   "pass": true,
+   "observed": "{\"ok\":true,\"apps\":[]}"
+  },
+  {
+   "name": "API: another user sees none of the apps for the same file",
+   "pass": true,
+   "observed": "{\"ok\":true,\"apps\":[]}"
+  },
+  {
+   "name": "B (fresh profile): My Apps lists the server-persisted app",
+   "pass": false,
+   "observed": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidentialW4🔗 file-a166ef37-989c-4410-bb48-206851b46a0d Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareTablePivotTableRecommended PivotTablesTablesBuild AppMy Apps ▾No apps yetAppsSlicerTimelineFiltersSparklineRemove SparklineSparklinesPicturesShapes ▾IconsSmartArtScreenshotIllustrationsInsert Chart ▾Recommended ChartsPivotChartChartsLink ▾LinksAText BoxHeader & F"
+  },
+  {
+   "name": "B: app opens and runner renders the fixture rows",
+   "pass": false,
+   "observed": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidentialW4🔗 file-a166ef37-989c-4410-bb48-206851b46a0d Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareTablePivotTableRecommended PivotTablesTablesBuild AppMy Apps ▾No apps yetAppsSlicerTimelineFiltersSparklineRemove SparklineSparklinesPicturesShapes ▾IconsSmartArtScreenshotIllustrationsInsert Chart ▾Recommended ChartsPivotChartChartsLink ▾LinksAText BoxHeader & F"
+  },
+  {
+   "name": "Migration: legacy localStorage app uploaded on open (deduped, stamped)",
+   "pass": false,
+   "observed": "[\"W4 Sales App\"]"
+  },
+  {
+   "name": "B2 (fresh profile): both the built and the migrated app are listed",
+   "pass": false,
+   "observed": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidentialW4🔗 file-a166ef37-989c-4410-bb48-206851b46a0d Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareTablePivotTableRecommended PivotTablesTablesBuild AppMy Apps ▾No apps yetAppsSlicerTimelineFiltersSparklineRemove SparklineSparklinesPicturesShapes ▾IconsSmartArtScreenshotIllustrationsInsert Chart ▾Recommended ChartsPivotChartChartsLink ▾LinksAText BoxHeader & F"
+  }
+ ],
+ "fileId": "file-a166ef37-989c-4410-bb48-206851b46a0d",
+ "sessionId": "sess_56b51173-d940-440e-9487-2dca5853b84d",
+ "profileALocalStorage": "{\"version\":1,\"apps\":[{\"id\":\"app_mvjklmao_3\",\"version\":1,\"name\":\"W4 Sales App\",\"dataSource\":{\"kind\":\"range\",\"binding\":{\"headerRow\":true,\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":12,\"endCol\":2},\"columns\":[{\"name\":\"Month\",\"type\":\"text\"},{\"name\":\"Region\",\"type\":\"text\"},{\"name\":\"Revenue\",\"type\":\"numeric\"}]},\"views\":[{\"id\":\"view_table\",\"kind\":\"table\",\"title\":\"Table\",\"columns\":[\"Month\",\"Region\",\"Revenue\"]},{\"id\":\"view_detail\",\"kind\":\"detail\",\"title\":\"Detail\",\"columns\":[\"Month\",\"Region\",\"Revenue\"]},{\"id\":\"view_form\",\"kind\":\"form\",\"title\":\"Add / Edit\",\"columns\":[\"Month\",\"Region\",\"Revenue\"],\"formMode\":\"both\"},{\"id\":\"view_cards\",\"kind\":\"cards\",\"title\":\"Cards\",\"columns\":[\"Month\",\"Region\",\"Revenue\"],\"titleColumn\":\"Month\",\"subtitleColumn\":\"Region\"}],\"actions\":[{\"id\":\"action_add\",\"kind\":\"addRow\",\"label\":\"Add row\",\"requiresConfirm\":false},{\"id\":\"action_edit\",\"kind\":\"editRow\",\"label\":\"Edit row\",\"requiresConfirm\":false},{\"id\":\"action_delete\",\"kind\":\"deleteRow\",\"label\":\"Delete row\",\"requiresConfirm\":true},{\"id\":\"action_goto_view_detail\",\"kind\":\"navigate\",\"label\":\"Go to Detail\",\"targetViewId\":\"view_detail\",\"requiresConfirm\":false},{\"id\":\"action_goto_view_form\",\"kind\":\"navigate\",\"label\":\"Go to Add / Edit\",\"targetViewId\":\"view_form\",\"requiresConfirm\":false},{\"id\":\"action_goto_view_cards\",\"kind\":\"navigate\",\"label\":\"Go to Cards\",\"targetViewId\":\"view_cards\",\"requiresConfirm\":false}],\"navigation\":{\"initialViewId\":\"view_table\",\"viewOrder\":[\"view_table\",\"view_detail\",\"view_form\",\"view_cards\"]},\"fileId\":\"file-a166ef37-989c-4410-bb48-206851b46a0d\"}]}",
+ "apiAfterCreate": {
+  "ok": true,
+  "apps": [
+   {
+    "appId": "app_mvjklmao_3",
+    "fileId": "file-a166ef37-989c-4410-bb48-206851b46a0d",
+    "spec": {
+     "id": "app_mvjklmao_3",
+     "version": 1,
+     "name": "W4 Sales App",
+     "dataSource": {
+      "kind": "range",
+      "binding": {
+       "sheet": "Sales",
+       "startRow": 0,
+       "startCol": 0,
+       "endRow": 12,
+       "endCol": 2,
+       "headerRow": true
+      },
+      "columns": [
+       {
+        "name": "Month",
+        "type": "text"
+       },
+       {
+        "name": "Region",
+        "type": "text"
+       },
+       {
+        "name": "Revenue",
+        "type": "numeric"
+       }
+      ]
+     },
+     "views": [
+      {
+       "id": "view_table",
+       "kind": "table",
+       "title": "Table",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ]
+      },
+      {
+       "id": "view_detail",
+       "kind": "detail",
+       "title": "Detail",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ]
+      },
+      {
+       "id": "view_form",
+       "kind": "form",
+       "title": "Add / Edit",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ],
+       "formMode": "both"
+      },
+      {
+       "id": "view_cards",
+       "kind": "cards",
+       "title": "Cards",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ],
+       "titleColumn": "Month",
+       "subtitleColumn": "Region"
+      }
+     ],
+     "actions": [
+      {
+       "id": "action_add",
+       "kind": "addRow",
+       "label": "Add row",
+       "requiresConfirm": false
+      },
+      {
+       "id": "action_edit",
+       "kind": "editRow",
+       "label": "Edit row",
+       "requiresConfirm": false
+      },
+      {
+       "id": "action_delete",
+       "kind": "deleteRow",
+       "label": "Delete row",
+       "requiresConfirm": true
+      },
+      {
+       "id": "action_goto_view_detail",
+       "kind": "navigate",
+       "label": "Go to Detail",
+       "requiresConfirm": false,
+       "targetViewId": "view_detail"
+      },
+      {
+       "id": "action_goto_view_form",
+       "kind": "navigate",
+       "label": "Go to Add / Edit",
+       "requiresConfirm": false,
+       "targetViewId": "view_form"
+      },
+      {
+       "id": "action_goto_view_cards",
+       "kind": "navigate",
+       "label": "Go to Cards",
+       "requiresConfirm": false,
+       "targetViewId": "view_cards"
+      }
+     ],
+     "navigation": {
+      "initialViewId": "view_table",
+      "viewOrder": [
+       "view_table",
+       "view_detail",
+       "view_form",
+       "view_cards"
+      ]
+     },
+     "fileId": "file-a166ef37-989c-4410-bb48-206851b46a0d"
+    },
+    "createdAt": 1792675320986,
+    "updatedAt": 1792675320986
+   }
+  ]
+ },
+ "apiAfterMigration": {
+  "ok": true,
+  "apps": [
+   {
+    "appId": "app_mvjklmao_3",
+    "fileId": "file-a166ef37-989c-4410-bb48-206851b46a0d",
+    "spec": {
+     "id": "app_mvjklmao_3",
+     "version": 1,
+     "name": "W4 Sales App",
+     "dataSource": {
+      "kind": "range",
+      "binding": {
+       "sheet": "Sales",
+       "startRow": 0,
+       "startCol": 0,
+       "endRow": 12,
+       "endCol": 2,
+       "headerRow": true
+      },
+      "columns": [
+       {
+        "name": "Month",
+        "type": "text"
+       },
+       {
+        "name": "Region",
+        "type": "text"
+       },
+       {
+        "name": "Revenue",
+        "type": "numeric"
+       }
+      ]
+     },
+     "views": [
+      {
+       "id": "view_table",
+       "kind": "table",
+       "title": "Table",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ]
+      },
+      {
+       "id": "view_detail",
+       "kind": "detail",
+       "title": "Detail",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ]
+      },
+      {
+       "id": "view_form",
+       "kind": "form",
+       "title": "Add / Edit",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ],
+       "formMode": "both"
+      },
+      {
+       "id": "view_cards",
+       "kind": "cards",
+       "title": "Cards",
+       "columns": [
+        "Month",
+        "Region",
+        "Revenue"
+       ],
+       "titleColumn": "Month",
+       "subtitleColumn": "Region"
+      }
+     ],
+     "actions": [
+      {
+       "id": "action_add",
+       "kind": "addRow",
+       "label": "Add row",
+       "requiresConfirm": false
+      },
+      {
+       "id": "action_edit",
+       "kind": "editRow",
+       "label": "Edit row",
+       "requiresConfirm": false
+      },
+      {
+       "id": "action_delete",
+       "kind": "deleteRow",
+       "label": "Delete row",
+       "requiresConfirm": true
+      },
+      {
+       "id": "action_goto_view_detail",
+       "kind": "navigate",
+       "label": "Go to Detail",
+       "requiresConfirm": false,
+       "targetViewId": "view_detail"
+      },
+      {
+       "id": "action_goto_view_form",
+       "kind": "navigate",
+       "label": "Go to Add / Edit",
+       "requiresConfirm": false,
+       "targetViewId": "view_form"
+      },
+      {
+       "id": "action_goto_view_cards",
+       "kind": "navigate",
+       "label": "Go to Cards",
+       "requiresConfirm": false,
+       "targetViewId": "view_cards"
+      }
+     ],
+     "navigation": {
+      "initialViewId": "view_table",
+      "viewOrder": [
+       "view_table",
+       "view_detail",
+       "view_form",
+       "view_cards"
+      ]
+     },
+     "fileId": "file-a166ef37-989c-4410-bb48-206851b46a0d"
+    },
+    "createdAt": 1792675320986,
+    "updatedAt": 1792675320986
+   }
+  ]
+ },
+ "pass": false
+}

@@ -1,0 +1,136 @@
+{
+ "steps": [
+  {
+   "name": "config-alice",
+   "status": 200
+  },
+  {
+   "name": "config-bob",
+   "status": 200
+  },
+  {
+   "name": "alice-setup",
+   "fileId": "file-3cc45da2-d7c1-4dd3-b95d-f3cab687a1c7",
+   "sessionId": "sess_e1b8edbf-a489-4939-9726-915ee94c9677",
+   "joined": null
+  },
+  {
+   "name": "registry-after-create",
+   "record": {
+    "fileId": "file-3cc45da2-d7c1-4dd3-b95d-f3cab687a1c7",
+    "sessionId": "sess_e1b8edbf-a489-4939-9726-915ee94c9677",
+    "ownerInstance": "engine-1",
+    "ownerEndpoint": "http://127.0.0.1:8101",
+    "leaseExpiry": 1792661140654,
+    "ownershipEpoch": 1,
+    "currentRevision": 0,
+    "storedRevision": 0,
+    "updatedAt": 1792661110655,
+    "creatorPrincipal": "user:alice"
+   }
+  },
+  {
+   "name": "bob-join-viewer",
+   "status": 200,
+   "joined": true,
+   "role": "viewer"
+  },
+  {
+   "name": "registry-after-viewer-join",
+   "record": {
+    "fileId": "file-3cc45da2-d7c1-4dd3-b95d-f3cab687a1c7",
+    "sessionId": "sess_e1b8edbf-a489-4939-9726-915ee94c9677",
+    "ownerInstance": "engine-1",
+    "ownerEndpoint": "http://127.0.0.1:8101",
+    "leaseExpiry": 1792661140654,
+    "ownershipEpoch": 1,
+    "currentRevision": 0,
+    "storedRevision": 0,
+    "updatedAt": 1792661110655,
+    "creatorPrincipal": "user:alice",
+    "participants": {
+     "user:bob": "viewer"
+    }
+   }
+  },
+  {
+   "name": "bob-agent-write-as-viewer",
+   "status": 200,
+   "audit": [
+    {},
+    {
+     "tool": "write_cells",
+     "ok": false
+    },
+    {}
+   ],
+   "message": "I cannot set C1 to 999999 because you only have viewer access to Sheet1. Please request edit access from the owner of the sheet."
+  },
+  {
+   "name": "engine-readback-C1-after-viewer-write",
+   "value": {
+    "kind": "null",
+    "value": null
+   }
+  },
+  {
+   "name": "bob-agent-read-as-viewer",
+   "status": 200,
+   "message": "The sum of A1:A3 is 21006."
+  },
+  {
+   "name": "bob-join-editor",
+   "status": 200,
+   "joined": true,
+   "role": "editor"
+  },
+  {
+   "name": "registry-after-editor-join",
+   "record": {
+    "fileId": "file-3cc45da2-d7c1-4dd3-b95d-f3cab687a1c7",
+    "sessionId": "sess_e1b8edbf-a489-4939-9726-915ee94c9677",
+    "ownerInstance": "engine-1",
+    "ownerEndpoint": "http://127.0.0.1:8101",
+    "leaseExpiry": 1792661142849,
+    "ownershipEpoch": 1,
+    "currentRevision": 0,
+    "storedRevision": 0,
+    "updatedAt": 1792661112849,
+    "creatorPrincipal": "user:alice",
+    "participants": {
+     "user:bob": "editor"
+    }
+   }
+  },
+  {
+   "name": "bob-agent-write-as-editor",
+   "status": 200,
+   "audit": [
+    {},
+    {
+     "tool": "write_cells",
+     "ok": true
+    },
+    {}
+   ],
+   "message": "Set C1 to 999999."
+  },
+  {
+   "name": "engine-readback-C1-after-editor-write",
+   "value": {
+    "kind": "number",
+    "value": 999999
+   }
+  }
+ ],
+ "verdicts": {
+  "participantRecordedAsViewer": true,
+  "participantUpdatedToEditor": true,
+  "viewerWriteRefused": true,
+  "viewerWriteDidNotLand": true,
+  "viewerReadWorked": true,
+  "editorWriteOk": true,
+  "editorWriteLanded": true
+ },
+ "pass": true
+}

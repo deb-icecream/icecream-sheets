@@ -1,0 +1,258 @@
+{
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-dd7a9836-ed8b-4673-a6ce-164dc47ab9d8",
+ "sessionId": "sess_a50f923f-93f7-48ba-86f4-c88d14291511",
+ "painted": false,
+ "viewCheckBeforeSend": {
+  "auditViewPresent": false,
+  "messagesListPresent": true,
+  "msgCount": 1,
+  "firstMsgVisible": true,
+  "firstMsgHead": "Hi — I can read ranges, sum or average them, write values and formulas, recalcul",
+  "auditChipOn": true,
+  "auditChipText": "Chat"
+ },
+ "retried": true,
+ "turns": [
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Build an app",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Built \"Create a column chart of revenue by region in the Sales s…\" — it's open in the panel beside the chat. Edits in the app write back to the sheet live through MCP.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Build an app",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Built \"Create a column chart of revenue by region in the Sales s…\" — it's open in the panel beside the chat. Edits in the app write back to the sheet live through MCP.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [
+     {
+      "kind": "pending-options",
+      "question": "Do you want me to build an app, or analyze the data and show a visual?\nBuild an app\nAnalyze & visualize\nJust answer",
+      "options": [
+       "Build an app",
+       "Analyze & visualize",
+       "Just answer"
+      ],
+      "answer": "Build an app",
+      "atMs": 2597
+     }
+    ],
+    "textAnswers": []
+   },
+   "timedOut": false,
+   "durationMs": 10193,
+   "prompt": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300."
+  },
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Build an app",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Built \"Create a column chart of revenue by region in the Sales s…\" — it's open in the panel beside the chat. Edits in the app write back to the sheet live through MCP.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create \"Sales\" sheet",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Sheet \"Sales\" has been created.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create \"Sales\" sheet",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "Sheet \"Sales\" has been created.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [
+     {
+      "kind": "pending-options",
+      "question": "Sheet \"Sales\" not found. Would you like to create it, or select another sheet?\nCreate \"Sales\" sheet\nSelect another sheet",
+      "options": [
+       "Create \"Sales\" sheet",
+       "Select another sheet"
+      ],
+      "answer": "Create \"Sales\" sheet",
+      "atMs": 5091
+     }
+    ],
+    "textAnswers": []
+   },
+   "timedOut": false,
+   "durationMs": 10138,
+   "prompt": "Add a column chart of Month vs Revenue to the Sales sheet."
+  }
+ ],
+ "chartProbeFirst": {
+  "overlayCount": 0,
+  "overlays": [],
+  "visible": false,
+  "storedCharts": {
+   "rawLength": 0,
+   "parsed": null
+  }
+ },
+ "statusAfterTurns": {
+  "ok": true,
+  "sessionId": "sess_a50f923f-93f7-48ba-86f4-c88d14291511",
+  "fileId": "file-dd7a9836-ed8b-4673-a6ce-164dc47ab9d8",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 2,
+  "storageRevision": 2,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 2,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792667037043,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "243f17bc85e6b8ecf3ff60b05e516cc5643129b7ead5d48233df10fb32939994"
+ },
+ "statusAfterSave": {
+  "ok": true,
+  "sessionId": "sess_a50f923f-93f7-48ba-86f4-c88d14291511",
+  "fileId": "file-dd7a9836-ed8b-4673-a6ce-164dc47ab9d8",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 2,
+  "storageRevision": 2,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 2,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792667040072,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "243f17bc85e6b8ecf3ff60b05e516cc5643129b7ead5d48233df10fb32939994"
+ },
+ "savedOk": true,
+ "chartProbeReopen": {
+  "overlayCount": 0,
+  "overlays": [],
+  "visible": false,
+  "storedCharts": {
+   "rawLength": 0,
+   "parsed": null
+  }
+ },
+ "paintedSecond": false,
+ "parseBack": {
+  "attempted": true,
+  "downloadStatus": 200,
+  "downloadJson": {
+   "entryId": "autosave_sess_a50f923f-93f7-48ba-86f4-c88d14291511",
+   "mode": "verbatim"
+  },
+  "signStatus": 200,
+  "via": "gateway-signed-url",
+  "bytes": 6906,
+  "allPartsCount": 11,
+  "parts": [],
+  "hasChart1Xml": false,
+  "charts": []
+ }
+}

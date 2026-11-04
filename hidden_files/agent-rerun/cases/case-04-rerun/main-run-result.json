@@ -1,0 +1,94 @@
+{
+ "case": 4,
+ "rerun": true,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "chat stayed in NORMAL view: .agent-msg visible before send, Audit view never opened",
+   "pass": true,
+   "observed": "{\"auditViewPresent\":false,\"messagesListPresent\":true,\"msgCount\":1,\"firstMsgVisible\":true,\"firstMsgHead\":\"Hi — I can read ranges, sum or average them, write values and formulas, recalcul\",\"auditChipOn\":true,\"auditChipText\":\"Chat\"}"
+  },
+  {
+   "name": "HITL asks answered live (log complete; zero asks left unanswered at turn end)",
+   "pass": true,
+   "observed": "hitlLog=[{\"kind\":\"pending-options\",\"question\":\"Do you want me to build an app, or analyze the data and show a visual?\\nBuild an app\\nAnalyze & visualize\\nJust answer\",\"options\":[\"Build an app\",\"Analyze & visualize\",\"Just answer\"],\"answer\":\"Build an app\",\"atMs\":2597},{\"kind\":\"pending-options\",\"question\":\"Sheet \\\"Sales\\\" not found. Would you like to create it, or select another sheet?\\nCreate \\\"Sales\\\" sheet\\nSelect another sheet\",\"options\":[\"Create \\\"Sales\\\" sheet\",\"Select another sheet\"],\"answer\":\"Create \\\"Sales\\\" sheet\",\"atMs\":5091}] timedOut turns: false,false"
+  },
+  {
+   "name": "native chart visible in the grid (ChartOverlay root + canvas inside it)",
+   "pass": false,
+   "observed": "{\"overlayCount\":0,\"overlays\":[],\"visible\":false,\"storedCharts\":{\"rawLength\":0,\"parsed\":null}}"
+  },
+  {
+   "name": "engine session revision increased after the chat turn (chart op landed)",
+   "pass": true,
+   "observed": "baseline revision=0 -> after turns revision=2 storageRevision=2"
+  },
+  {
+   "name": "workbook saved (storageRevision caught up to revision, revision > baseline)",
+   "pass": true,
+   "observed": "{\"ok\":true,\"sessionId\":\"sess_a50f923f-93f7-48ba-86f4-c88d14291511\",\"fileId\":\"file-dd7a9836-ed8b-4673-a6ce-164dc47ab9d8\",\"fenced\":false,\"ownershipEpoch\":1,\"participants\":[{\"principal\":\"user:carol\",\"role\":\"editor\"}],\"status\":\"active\",\"revision\":2,\"storageRevision\":2,\"pendingCheckpointOps\":0,\"extrasDirty\":false,\"autosaveStats\":{\"flushes\":2,\"noopSkips\":0,\"forcedFlushes\":0},\"lastActivityAt\":1792667040072,\"idleTimeoutMs\":600000,\"instanceId\":\"engine-1\",\"snapshotChecksum\":\"243f17bc85e6b8ecf3ff60b05e516cc5643129b7ead5d48233df10fb32939994\"}"
+  },
+  {
+   "name": "chart still visible after reopen in a SECOND browser context",
+   "pass": false,
+   "observed": "{\"overlayCount\":0,\"overlays\":[],\"visible\":false,\"storedCharts\":{\"rawLength\":0,\"parsed\":null}}"
+  },
+  {
+   "name": "download parse-back: xl/charts/chart1.xml exists + readCharts >= 1 chart",
+   "pass": false,
+   "observed": "parts=[] charts=[] error=none"
+  },
+  {
+   "name": "chart cached values match fixture data (North+South totals OR >=3 raw revenues)",
+   "pass": false,
+   "observed": "cachedNums=[] aggregatedMatch=false rawMatchCount=0"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/result.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/chart-in-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/chart-overlay-closeup.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/reopened-second-context.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/downloaded.xlsx",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/parse-back.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/chart1.xml",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/session-status.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/session-status-baseline.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/chart-probe-after-turn1.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/chart-probe-reopen.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/view-check.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/probe.json"
+ ],
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-dd7a9836-ed8b-4673-a6ce-164dc47ab9d8",
+ "sessionId": "sess_a50f923f-93f7-48ba-86f4-c88d14291511",
+ "retried": true,
+ "hitlLog": [
+  {
+   "kind": "pending-options",
+   "question": "Do you want me to build an app, or analyze the data and show a visual?\nBuild an app\nAnalyze & visualize\nJust answer",
+   "options": [
+    "Build an app",
+    "Analyze & visualize",
+    "Just answer"
+   ],
+   "answer": "Build an app",
+   "atMs": 2597
+  },
+  {
+   "kind": "pending-options",
+   "question": "Sheet \"Sales\" not found. Would you like to create it, or select another sheet?\nCreate \"Sales\" sheet\nSelect another sheet",
+   "options": [
+    "Create \"Sales\" sheet",
+    "Select another sheet"
+   ],
+   "answer": "Create \"Sales\" sheet",
+   "atMs": 5091
+  }
+ ],
+ "replyHead": "Built \"Create a column chart of revenue by region in the Sales s…\" — it's open in the panel beside the chat. Edits in the app write back to the sheet live through MCP.\n---RETRY---\nSheet \"Sales\" has been created.",
+ "cachedNums": []
+}

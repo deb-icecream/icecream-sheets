@@ -1,0 +1,72 @@
+{
+  "fixture": "geocode.xlsx",
+  "tag": "w20-geocode",
+  "sheets": [
+    {
+      "index": 1,
+      "name": "Cities",
+      "clicked": true,
+      "screenshot": "w20-geocode-sheet-01-Cities.png",
+      "cellCount": 748,
+      "nonEmpty": 136,
+      "errs": [],
+      "samples": [
+        "A1=name",
+        "B1=country",
+        "C1=subcountry",
+        "D1=geonameid",
+        "A2=les Escaldes",
+        "B2=Andorra",
+        "C2=Escaldes-Engordany",
+        "D2=3040051",
+        "A3=Andorra la Vella",
+        "B3=Andorra",
+        "C3=Andorra la Vella",
+        "D3=3041563",
+        "A4=Warīsān",
+        "B4=United Arab Emirates",
+        "C4=Dubai",
+        "D4=290503",
+        "A5=Umm Suqaym",
+        "B5=United Arab Emirates",
+        "C5=Dubai",
+        "D5=290581",
+        "A6=Umm Al Quwain City",
+        "B6=United Arab Emirates",
+        "C6=Umm Al Quwain",
+        "D6=290594",
+        "A7=Ţarīf Kalbā"
+      ],
+      "overlays": 40,
+      "hasChartText": false,
+      "pivotNotice": null
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "wallMs": 4683,
+  "firstPage": {
+    "fileSelectedAt": 2440,
+    "firstValuesAt": 3652.600000000093,
+    "firstPagePaintedAt": 3656.100000000093,
+    "timeToFirstPageMs": 1216.1000000000931,
+    "timeToFirstValuesMs": 1212.6000000000931
+  },
+  "heapMB": 111.6,
+  "longTasks": {
+    "count": 18,
+    "total": 2349,
+    "max": 424
+  },
+  "sheetTabs": [
+    "Cities"
+  ],
+  "save": {
+    "ok": true,
+    "ms": 2988,
+    "path": "/home/hatch/workspace/icecream-sheets/hidden_files/cycle10-closure/w20-shots/downloads/w20-geocode-saved.xlsx",
+    "suggested": "workbook.xlsx",
+    "failure": null
+  }
+}

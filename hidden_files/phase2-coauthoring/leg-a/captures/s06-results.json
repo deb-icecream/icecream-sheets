@@ -1,0 +1,65 @@
+{
+ "scenario": "6-structural-rebase",
+ "steps": {
+  "bobOfflineEdit": {
+   "attempted": true,
+   "editorOpened": true,
+   "cellAfter": "r5",
+   "queueState": {
+    "queue": {
+     "queue": [
+      {
+       "clientSeq": 1,
+       "cmd": {
+        "cmd": "setCell",
+        "ref": {
+         "sheet": "Sheet1",
+         "row": 4,
+         "col": 0
+        },
+        "value": "BOBVAL"
+       },
+       "baseRev": 0,
+       "enqueuedAt": 1792625756481
+      }
+     ],
+     "rejected": [],
+     "clientSeq": 1,
+     "lastAppliedRev": 0
+    },
+    "clientId": "web-mvir31e4-7n9wf"
+   }
+  },
+  "menuItems": [
+   "Insert ▾",
+   "Insert Rows"
+  ],
+  "aliceInsert": {
+   "menuClicked": "Insert Rows",
+   "aliceA5After": "r4",
+   "aliceA6After": "r5"
+  },
+  "serverA6AfterInsert": {
+   "kind": "string",
+   "value": "r5"
+  },
+  "afterReconnect": {
+   "aliceA6": "BOBVAL",
+   "bobA6": "BOBVAL",
+   "aliceA5": "r4",
+   "bobA5": "r4",
+   "serverA6": {
+    "kind": "string",
+    "value": "BOBVAL"
+   },
+   "serverA5": {
+    "kind": "string",
+    "value": "r4"
+   }
+  }
+ },
+ "verdict": "PASS",
+ "fileId": "file-382b01d9-9308-4e3f-8f72-4e9e53aa4596",
+ "sessionId": "sess_d21e613e-5866-4dd9-b196-44a995be7098",
+ "variant": "offline-queue variant"
+}

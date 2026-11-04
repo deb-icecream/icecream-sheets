@@ -1,0 +1,33 @@
+{
+ "driver": "api-adaptation",
+ "prompt": "Please remember that my weekly report goes out on Fridays.",
+ "turn": {
+  "text": "Please remember that my weekly report goes out on Fridays.",
+  "ms": 1234,
+  "status": 200,
+  "reply": "I will remember that your weekly report goes out on Fridays.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "Please remember that my weekly report goes out on Fridays."
+   },
+   {
+    "kind": "tool_call",
+    "tool": "memory_save",
+    "ok": true,
+    "text": "memory_save ok"
+   },
+   {
+    "kind": "memory",
+    "tool": "memory_save",
+    "ok": true,
+    "text": "memory_save ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "I will remember that your weekly report goes out on Fridays."
+   }
+  ]
+ }
+}

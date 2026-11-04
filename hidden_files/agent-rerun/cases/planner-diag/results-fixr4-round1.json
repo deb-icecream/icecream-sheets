@@ -1,0 +1,286 @@
+{
+ "turns": [
+  {
+   "text": "What is the total revenue in the Sales sheet?",
+   "ms": 6097,
+   "status": 200,
+   "threadId": "f32c074a-d1cb-4df9-a86d-41ec51990f83",
+   "message": "The total revenue in the Sales sheet is 169400.",
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "What is the total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The total revenue in the Sales sheet is 169400.",
+     "summary": null
+    }
+   ]
+  },
+  {
+   "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+   "ms": 1703,
+   "status": 200,
+   "threadId": "f32c074a-d1cb-4df9-a86d-41ec51990f83",
+   "message": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "What is the total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The total revenue in the Sales sheet is 169400.",
+     "summary": null
+    },
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "write_cells",
+     "ok": true,
+     "text": null,
+     "summary": "write_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+     "summary": null
+    }
+   ]
+  },
+  {
+   "text": "Which region had the highest total revenue in the Sales sheet?",
+   "ms": 20232,
+   "status": 200,
+   "threadId": "f32c074a-d1cb-4df9-a86d-41ec51990f83",
+   "message": "I ran out of steps for that request. Could you break it into smaller parts?",
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "What is the total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The total revenue in the Sales sheet is 169400.",
+     "summary": null
+    },
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "write_cells",
+     "ok": true,
+     "text": null,
+     "summary": "write_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+     "summary": null
+    },
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": null,
+     "summary": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "summary": null
+    }
+   ]
+  }
+ ]
+}

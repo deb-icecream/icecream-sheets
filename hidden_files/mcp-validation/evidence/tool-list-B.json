@@ -1,0 +1,158 @@
+[
+  {
+    "name": "read_cells",
+    "description": "Read a rectangular range of computed cell values. Reads go through authorize(): cells the principal cannot read come back as #PERM! errors, never leaked values."
+  },
+  {
+    "name": "create_chart",
+    "description": "Create a NATIVE chart in the sheet, bound to sheet data: the chart is inserted into the workbook itself, is visible in the grid, persists, and saves with the file. \"range\" is an A1 string (e.g. \"A1:C10\") that INCLUDES the header row; the first column holds category labels and each remaining numeric column becomes a series. \"kind\" is one of column|bar|line|area|pie|doughnut (fail-closed: any other kind is rejected). \"anchor\" is an optional A1 cell for the chart's top-left placement; default is below the data range. This is NOT analyze_data (which only shows an ephemeral chart in chat)."
+  },
+  {
+    "name": "write_cells",
+    "description": "Write literal values to cells. A string value starting with \"=\" is treated as a formula by the engine. Writes go through authorize(): locked cells and read-only principals are rejected per cell."
+  },
+  {
+    "name": "set_formulas",
+    "description": "Set formulas on cells. Formulas may omit the leading \"=\" (it is added automatically)."
+  },
+  {
+    "name": "recalculate",
+    "description": "Force a full recalculation of the workbook."
+  },
+  {
+    "name": "get_results",
+    "description": "Read the full used-range values of a sheet. Goes through authorize(): cells the principal cannot read come back as #PERM! errors."
+  },
+  {
+    "name": "create_pivot",
+    "description": "Build a PivotTable over a rectangular range (first row is the header). Stores a versioned pivot spec in the service metadata and returns a summary."
+  },
+  {
+    "name": "refresh_pivot",
+    "description": "Recompute a stored PivotTable against the current source range values."
+  },
+  {
+    "name": "get_pivot_data",
+    "description": "Return the full rendered matrix of a stored PivotTable."
+  },
+  {
+    "name": "subscribe",
+    "description": "Subscribe to engine events. Events are buffered per subscription; drain them with poll_events."
+  },
+  {
+    "name": "unsubscribe",
+    "description": "Remove an event subscription. Buffered events are discarded."
+  },
+  {
+    "name": "list_subscriptions",
+    "description": "List active event subscriptions."
+  },
+  {
+    "name": "poll_events",
+    "description": "Drain buffered events for a subscription (oldest first). The MCP stdio transport is request/response, so clients poll; this is what the AI Agent proactivity loop uses."
+  },
+  {
+    "name": "memory_load",
+    "description": "Load a value from the agent long-term memory (per-user service metadata)."
+  },
+  {
+    "name": "memory_save",
+    "description": "Save a value to the agent long-term memory (per-user service metadata). Overwrites any existing value."
+  },
+  {
+    "name": "memory_update",
+    "description": "Patch a value in the agent long-term memory. When both stored and new values are objects, shallow-merge; otherwise replace."
+  },
+  {
+    "name": "agent.ask_question",
+    "description": "Human-in-the-loop: ask the user a free-text question. The tool call PAUSES the agent until the user answers via agent.answer_pending (or the wait times out — it never hangs forever). There is no path around MCP."
+  },
+  {
+    "name": "agent.offer_options",
+    "description": "Human-in-the-loop: ask the user to choose one of the offered options. The tool call PAUSES the agent until the user answers via agent.answer_pending (or the wait times out). There is no path around MCP."
+  },
+  {
+    "name": "agent.request_approval",
+    "description": "Human-in-the-loop: request the user's approval before a broad or destructive action (ai-agent.md §7). The tool call PAUSES the agent until the user approves or denies via agent.answer_pending (or the wait times out). Ambiguous answers are treated as denied with the text kept as a note — the agent must never guess. There is no path around MCP."
+  },
+  {
+    "name": "agent.answer_pending",
+    "description": "Deliver the human's answer to a pending ask, unblocking the paused agent.* tool call. Principal-scoped (ai-agent.md §3): only the principal the ask was created for can answer it — anyone else gets an authorization error."
+  },
+  {
+    "name": "agent.list_pending",
+    "description": "List the caller's pending human-in-the-loop asks (ai-agent.md §12) — what the paused agent is waiting for. Principal-scoped: only the caller's own asks are returned."
+  },
+  {
+    "name": "appbuilder_create_spec",
+    "description": "Create a no-code app spec (versioned, serializable) in the service metadata store. The spec is validated; invalid specs are rejected with the validation errors. Requires the app manage right."
+  },
+  {
+    "name": "appbuilder_update_spec",
+    "description": "Replace a stored app spec (full replacement after validation; older versions are migrated). The spec id must match. Requires the app manage right."
+  },
+  {
+    "name": "appbuilder_get_spec",
+    "description": "Fetch a stored app spec by id."
+  },
+  {
+    "name": "appbuilder_list_specs",
+    "description": "List stored app specs (id, name, version, views, actions)."
+  },
+  {
+    "name": "appbuilder_delete_spec",
+    "description": "Delete a stored app spec by id. Requires the app manage right."
+  },
+  {
+    "name": "report_create_spec",
+    "description": "Create a native report spec (versioned, serializable) in the service metadata store. The spec is migrated forward and validated; invalid specs are rejected with the validation errors. Requires the report manage right."
+  },
+  {
+    "name": "report_update_spec",
+    "description": "Replace a stored report spec (full replacement after migration + validation; older versions migrate forward). The spec id must match. Requires the report manage right."
+  },
+  {
+    "name": "report_get_spec",
+    "description": "Fetch a stored report spec by id. Requires the report read right."
+  },
+  {
+    "name": "report_list_specs",
+    "description": "List stored report specs (id, name, version, bindings, visuals, refresh mode). Requires the report read right."
+  },
+  {
+    "name": "report_delete_spec",
+    "description": "Delete a stored report spec by id. Requires the report manage right."
+  },
+  {
+    "name": "analyze_data",
+    "description": "Run the data-analysis pipeline on a sheet range: extracts the data schema, classifies the analytical intent (\"analyze the data and show me a diagram\", \"pivot this\", \"forecast next quarter\", ...), generates a versioned Python script, executes it deterministically in the sandbox, and returns the analysis summary plus a Chart.js spec. The script is persisted as a versioned, re-runnable analysis artifact. Reads go through authorize(): denied cells are excluded, never leaked."
+  },
+  {
+    "name": "rerun_analysis",
+    "description": "Deterministically re-execute a stored analysis artifact: re-reads the same range, re-runs the exact persisted Python script in the sandbox, and reports whether the input data changed since the original run. The stored artifact is immutable (auditability); the fresh result is returned, not persisted over it."
+  },
+  {
+    "name": "list_analyses",
+    "description": "List stored analysis artifacts (newest first): id, intent, intent kind, range, script version, creation time. The full Python source is NOT returned here; fetch it via rerun_analysis semantics or the artifact store."
+  },
+  {
+    "name": "execute_code",
+    "description": "Run code in the Icecream Sheets sandbox. JavaScript: the script completion value is the result and `args` holds the inputs. Python: `args` is a dict and the program must assign `result`."
+  },
+  {
+    "name": "list_data_sources",
+    "description": "List the registered connector kinds and the data sources currently bound to this workbook's sheets. Connected data lives in the engine, so read_cells sees it like any other sheet."
+  },
+  {
+    "name": "open_data_source",
+    "description": "Fetch a data source through a connector and materialize it as a new sheet in the typed computational view. The connector spec is stored as a source binding for later refresh_data_source calls. Secrets are never accepted here: authenticate with a vault credentialRef, not a secret value."
+  },
+  {
+    "name": "refresh_data_source",
+    "description": "Re-fetch the connector behind a bound sheet and atomically swap its data region (writes then stale-tail clears, in one pass). Cells outside the previously materialized region are never touched."
+  },
+  {
+    "name": "rtd_publish",
+    "description": "Publish a real-time data value to an RTD topic. Cells using RTD(progId, server, topic, ...) update on the next recalculation, which this tool triggers automatically."
+  }
+]

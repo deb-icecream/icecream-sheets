@@ -1,0 +1,1267 @@
+/* Icecream Sheets — product layer (landing page + workspace).
+   Every selector is prefixed .ics- and scoped under the .ics-landing or
+   .ics-workspace root: no global element selectors, no resets. The
+   palette and type echo apps/web/src/index.css (same accent teal, panel
+   whites, hairline greys, 6px radius, system font stack) so the product
+   pages read as part of the same app. */
+
+.ics-landing,
+.ics-workspace {
+  --ics-bg: #f4f6f8;
+  --ics-panel: #ffffff;
+  --ics-line: #d8dee5;
+  --ics-line-soft: #e8edf2;
+  --ics-text: #1c2530;
+  --ics-muted: #64707d;
+  --ics-accent: #0e7c6b;
+  --ics-accent-dark: #0a5f52;
+  --ics-accent-soft: #e3f2ee;
+  --ics-error: #b3261e;
+  --ics-radius: 6px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ics-text);
+  background: var(--ics-bg);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+/* -- Shared bits ------------------------------------------------------ */
+
+.ics-btn {
+  font: inherit;
+  font-weight: 600;
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: var(--ics-radius);
+  border: 1px solid var(--ics-line);
+  background: var(--ics-panel);
+  color: var(--ics-text);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ics-btn:hover {
+  background: var(--ics-line-soft);
+}
+
+.ics-btn-primary {
+  background: var(--ics-accent);
+  border-color: var(--ics-accent);
+  color: #fff;
+}
+
+.ics-btn-primary:hover {
+  background: var(--ics-accent-dark);
+}
+
+.ics-btn-small {
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ics-btn-danger {
+  color: var(--ics-error);
+  border-color: var(--ics-line);
+}
+
+.ics-btn-danger:hover {
+  background: #fbeae9;
+}
+
+.ics-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.ics-alert {
+  border: 1px solid var(--ics-error);
+  background: #fbeae9;
+  color: var(--ics-error);
+  border-radius: var(--ics-radius);
+  padding: 10px 14px;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.ics-input {
+  font: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--ics-line);
+  border-radius: var(--ics-radius);
+  background: var(--ics-panel);
+  color: var(--ics-text);
+}
+
+.ics-input:focus {
+  outline: 2px solid var(--ics-accent);
+  outline-offset: -1px;
+  border-color: var(--ics-accent);
+}
+
+.ics-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -- Landing page -------------------------------------------------------
+   Apple launch-page grammar (2026-10-22 redesign): one claim per
+   screen, huge type, real product screenshots, sections that reveal
+   as they scroll. Selectors are ics-lp- prefixed and landing-only.
+   Motion is progressive enhancement: the component adds .ics-lp-in as
+   elements enter the viewport, and prefers-reduced-motion removes the
+   animation layer entirely (content fully visible). */
+
+.ics-landing {
+  min-height: 100%;
+  background: var(--ics-bg);
+}
+
+.ics-lp-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.ics-wordmark {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ics-text);
+}
+
+/* Brand -> home (#31): the wordmark is a link in every header; it keeps
+   the wordmark's own colors and never shows link underline. */
+.ics-wordmark-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ics-wordmark-link:hover .ics-wordmark,
+.ics-wordmark-link:focus-visible .ics-wordmark {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.ics-wordmark-accent {
+  color: var(--ics-accent);
+}
+
+/* Nav: sticky, translucent, blurred — launch-page chrome. */
+.ics-lp-nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--ics-panel);
+  background: color-mix(in srgb, var(--ics-panel) 84%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--ics-line-soft);
+}
+
+/* Landing buttons: pill-shaped, >=44px targets. */
+.ics-lp-btn {
+  font: inherit;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 1px solid var(--ics-line);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* The Google button keeps its white face in both themes, like the
+   sign-in buttons elsewhere in the app. */
+.ics-lp-btn-google {
+  background: #ffffff;
+  border-color: #dadce0;
+  color: #1f1f1f;
+}
+
+.ics-lp-btn-google:hover {
+  background: #f4f6f8;
+}
+
+/* Direct sign-in failure/cancellation, reported in place on the page. */
+.ics-lp-signin-error {
+  color: #b3261e;
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 14px auto 0;
+  max-width: 34rem;
+}
+
+.ics-lp-btn-primary {
+  background: var(--ics-accent);
+  border-color: var(--ics-accent);
+  color: #ffffff;
+}
+
+.ics-lp-btn-primary:hover {
+  background: var(--ics-accent-dark);
+}
+
+.ics-lp-nav-btn {
+  min-height: 44px;
+  padding: 9px 20px;
+  font-size: 14px;
+}
+
+.ics-lp-btn:focus-visible,
+.ics-lp-link:focus-visible {
+  outline: 2px solid var(--ics-accent);
+  outline-offset: 3px;
+}
+
+.ics-lp-link {
+  color: var(--ics-accent-dark);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ics-lp-link:hover {
+  text-decoration: underline;
+}
+
+/* Scroll reveal. */
+.ics-lp-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ics-lp-reveal.ics-lp-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ics-lp-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Hero. */
+.ics-lp-hero {
+  background: var(--ics-panel);
+  text-align: center;
+  padding: clamp(64px, 11vw, 128px) 0 clamp(56px, 8vw, 96px);
+  overflow: hidden;
+}
+
+.ics-lp-hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ics-accent);
+  margin: 0 0 18px;
+}
+
+.ics-lp-hero-title {
+  font-size: clamp(2.7rem, 7.5vw, 5.3rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  margin: 0 auto 20px;
+  max-width: 900px;
+}
+
+.ics-lp-hero-sub {
+  font-size: clamp(1.05rem, 2.3vw, 1.35rem);
+  line-height: 1.55;
+  color: var(--ics-muted);
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+
+.ics-lp-hero-btn {
+  font-size: 16px;
+}
+
+.ics-lp-hero-shot-wrap {
+  margin-top: clamp(40px, 6vw, 72px);
+}
+
+.ics-lp-shot {
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  border: 1px solid var(--ics-line);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(28, 37, 48, 0.18);
+}
+
+/* Story sections. */
+.ics-lp-section {
+  padding: clamp(72px, 11vw, 136px) 0;
+}
+
+.ics-lp-alt {
+  background: var(--ics-panel);
+}
+
+.ics-lp-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ics-accent);
+  margin: 0 0 14px;
+}
+
+.ics-lp-title {
+  font-size: clamp(2rem, 5.2vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 18px;
+  max-width: 760px;
+}
+
+.ics-lp-text {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.65;
+  color: var(--ics-text);
+  margin: 0;
+  max-width: 600px;
+}
+
+.ics-lp-lede {
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+/* Agent: copy left, the exchange card right — sticky on wide screens. */
+.ics-lp-split {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.ics-lp-card-wrap {
+  position: sticky;
+  top: 96px;
+}
+
+.ics-lp-chat {
+  margin: 0;
+  background: var(--ics-panel);
+  border: 1px solid var(--ics-line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(28, 37, 48, 0.12);
+}
+
+.ics-lp-chat-row + .ics-lp-chat-row {
+  border-top: 1px solid var(--ics-line-soft);
+  margin-top: 18px;
+  padding-top: 18px;
+}
+
+.ics-lp-chat-who {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ics-muted);
+  margin-bottom: 6px;
+}
+
+.ics-lp-chat-agent {
+  color: var(--ics-accent);
+}
+
+.ics-lp-chat-text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.ics-lp-chat-answer {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.ics-lp-chat-caption {
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--ics-muted);
+}
+
+/* Live-data facts. */
+.ics-lp-facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ics-lp-fact {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-top: 1px solid var(--ics-line);
+}
+
+.ics-lp-fact:last-child {
+  border-bottom: 1px solid var(--ics-line);
+}
+
+.ics-lp-fact-term {
+  flex: 0 0 190px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.ics-lp-fact-line {
+  color: var(--ics-muted);
+  font-size: 16px;
+}
+
+/* Excel numbers. */
+.ics-lp-stats {
+  display: flex;
+  gap: clamp(32px, 6vw, 96px);
+  flex-wrap: wrap;
+  margin: 8px 0 44px;
+}
+
+.ics-lp-stat-num {
+  font-size: clamp(4.2rem, 11vw, 8.5rem);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px;
+}
+
+.ics-lp-stat-cap {
+  color: var(--ics-muted);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* Credibility strip: parity as a compact floor, not a headline. */
+.ics-lp-strip-title {
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 26px;
+}
+
+.ics-lp-strip {
+  display: flex;
+  gap: clamp(24px, 4vw, 56px);
+  flex-wrap: wrap;
+}
+
+.ics-lp-strip-item {
+  flex: 1 1 240px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ics-muted);
+  margin: 0;
+  border-top: 2px solid var(--ics-line);
+  padding-top: 14px;
+}
+
+.ics-lp-strip-item strong {
+  color: var(--ics-text);
+  font-weight: 700;
+}
+
+/* Plans. */
+.ics-lp-tiers {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.ics-lp-tier {
+  flex: 1 1 0;
+  background: var(--ics-panel);
+  border: 1px solid var(--ics-line);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.ics-lp-tier-pro {
+  border-color: var(--ics-accent);
+  box-shadow: 0 12px 32px rgba(14, 124, 107, 0.14);
+}
+
+.ics-lp-tier-name {
+  font-size: 24px;
+  margin: 0 0 4px;
+}
+
+.ics-lp-tier-tag {
+  color: var(--ics-muted);
+  margin: 0 0 18px;
+}
+
+.ics-lp-tier-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ics-lp-tier-list li {
+  margin-bottom: 9px;
+}
+
+/* Final call to action + footer. */
+.ics-lp-final {
+  background: var(--ics-panel);
+  text-align: center;
+  padding: clamp(72px, 11vw, 120px) 0;
+}
+
+.ics-lp-final-title {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  margin: 0 0 30px;
+}
+
+.ics-lp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 26px 24px;
+  color: var(--ics-muted);
+  font-size: 14px;
+  border-top: 1px solid var(--ics-line-soft);
+}
+
+@media (max-width: 860px) {
+  .ics-lp-split {
+    grid-template-columns: 1fr;
+  }
+
+  .ics-lp-card-wrap {
+    position: static;
+  }
+}
+
+/* -- Workspace ---------------------------------------------------------
+   OneDrive / SharePoint grammar (2026-10-22 redesign): a flat header
+   bar (brand left; gear + identity right), a command bar under it
+   (+ New / Upload), and the files as a full-width LIST — hairline
+   rows, hover wash, one actions menu per row. No cards. */
+
+.ics-workspace {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header bar. */
+.ics-ws-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 28px;
+  background: var(--ics-panel);
+  border-bottom: 1px solid var(--ics-line);
+}
+
+.ics-ws-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.ics-ws-header .ics-wordmark {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.ics-tier-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ics-accent-dark);
+  background: var(--ics-accent-soft);
+  border: 1px solid var(--ics-accent);
+  border-radius: 999px;
+  padding: 2px 9px;
+  white-space: nowrap;
+}
+
+.ics-meter {
+  color: var(--ics-muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.ics-ws-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ics-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ics-muted);
+  cursor: pointer;
+}
+
+.ics-icon-btn:hover {
+  background: var(--ics-line-soft);
+  color: var(--ics-text);
+}
+
+.ics-icon-btn:focus-visible {
+  outline: 2px solid var(--ics-accent);
+  outline-offset: 1px;
+}
+
+.ics-gear-btn[aria-current='page'] {
+  background: var(--ics-accent-soft);
+  color: var(--ics-accent-dark);
+}
+
+.ics-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ics-accent);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+/* Command bar. */
+.ics-ws-commandbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 28px;
+  background: var(--ics-panel);
+  border-bottom: 1px solid var(--ics-line-soft);
+}
+
+.ics-cmd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  font-size: 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.ics-cmd-plus {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Main column. */
+.ics-ws-main {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 26px 28px 56px;
+  box-sizing: border-box;
+}
+
+.ics-ws-page-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+}
+
+.ics-section-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 30px 0 12px;
+}
+
+/* File list. */
+.ics-table-wrap {
+  overflow-x: auto;
+  background: var(--ics-panel);
+  border: 1px solid var(--ics-line);
+  border-radius: 10px;
+}
+
+.ics-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14.5px;
+}
+
+.ics-table th,
+.ics-table td {
+  text-align: left;
+  padding: 0 16px;
+  height: 52px;
+  border-bottom: 1px solid var(--ics-line-soft);
+  vertical-align: middle;
+}
+
+.ics-table th {
+  height: 40px;
+  color: var(--ics-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--ics-panel);
+  border-bottom: 1px solid var(--ics-line);
+}
+
+.ics-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ics-file-row {
+  transition: background 0.12s ease;
+}
+
+.ics-file-row:hover {
+  background: var(--ics-accent-soft);
+}
+
+.ics-file-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 260px;
+}
+
+.ics-file-icon {
+  flex: none;
+}
+
+.ics-file-link {
+  color: var(--ics-text);
+  font-weight: 500;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.ics-file-link:hover {
+  color: var(--ics-accent-dark);
+  text-decoration: underline;
+}
+
+.ics-file-link:focus-visible {
+  outline: 2px solid var(--ics-accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.ics-origin-tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ics-muted);
+  white-space: nowrap;
+}
+
+.ics-source-format-tag {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #8a6d1f;
+  background: #faf1d7;
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
+:root[data-theme='dark'] .ics-source-format-tag {
+  color: #e8cf8a;
+  background: #3d3418;
+}
+
+.ics-file-meta {
+  color: var(--ics-muted);
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+
+.ics-file-menu-cell {
+  width: 52px;
+  text-align: right;
+}
+
+.ics-row-menu-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.ics-row-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 80;
+  min-width: 176px;
+  background: var(--ics-panel);
+  border: 1px solid var(--ics-line);
+  border-radius: 8px;
+  box-shadow: 0 10px 32px rgba(28, 37, 48, 0.18);
+  padding: 5px;
+}
+
+.ics-row-menu button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: var(--ics-text);
+  cursor: pointer;
+}
+
+.ics-row-menu button:hover,
+.ics-row-menu button:focus-visible {
+  background: var(--ics-line-soft);
+  outline: none;
+}
+
+.ics-row-menu .ics-menu-danger {
+  color: var(--ics-error);
+}
+
+.ics-rename-form {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex: 1;
+}
+
+.ics-rename-form .ics-input {
+  flex: 1;
+  min-width: 140px;
+  padding: 6px 10px;
+}
+
+.ics-list-footer {
+  color: var(--ics-muted);
+  font-size: 13px;
+  margin: 12px 4px 0;
+}
+
+/* Apps: subordinate to the file list. */
+.ics-apps {
+  margin-top: 8px;
+}
+
+.ics-apps-title {
+  color: var(--ics-muted);
+  font-size: 15px;
+}
+
+/* Empty state. */
+.ics-empty {
+  text-align: center;
+  background: var(--ics-panel);
+  border: 1px dashed var(--ics-line);
+  border-radius: 12px;
+  padding: 56px 24px;
+  color: var(--ics-muted);
+}
+
+.ics-empty-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.ics-empty-icon .ics-file-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.ics-empty-title {
+  color: var(--ics-text);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.ics-empty-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.ics-loading {
+  color: var(--ics-muted);
+  padding: 32px 0;
+  text-align: center;
+}
+
+/* -- Narrow screens: stack everything --------------------------------- */
+
+@media (max-width: 720px) {
+  .ics-lp-nav {
+    padding: 10px 16px;
+    gap: 10px;
+  }
+
+  /* Keep the wordmark and the sign-in label on one line at phone widths. */
+  .ics-lp-nav .ics-wordmark {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .ics-lp-nav-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .ics-lp-wrap {
+    padding: 0 20px;
+  }
+
+  .ics-lp-fact {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ics-lp-fact-term {
+    flex: none;
+  }
+
+  .ics-lp-tiers {
+    flex-direction: column;
+  }
+
+  .ics-lp-footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ics-ws-header {
+    padding: 10px 16px;
+    /* D7: at phone widths the brand (wordmark + tier pill) and the
+       action cluster (help, gear, account) cannot share one row —
+       they overlapped (icons over the tier pill). Let the header
+       wrap: brand on the first row, actions on their own row. */
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .ics-ws-header-actions {
+    flex: none;
+    margin-left: auto;
+  }
+
+  .ics-ws-header .ics-meter {
+    display: none;
+  }
+
+  .ics-ws-commandbar {
+    padding: 10px 16px;
+  }
+
+  .ics-ws-main {
+    padding: 20px 16px 44px;
+  }
+
+  .ics-file-name-cell {
+    /* D7: the 260px/180px floor plus the nowrap 'Created' meta and
+       the row-menu cell exceed a phone viewport, so the name wrapped
+       into and clipped against the Created label. Let the name cell
+       absorb the squeeze and ellipsize the name instead. */
+    min-width: 0;
+  }
+
+  .ics-file-link {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: normal;
+  }
+
+  .ics-origin-tag,
+  .ics-source-format-tag {
+    flex: none;
+  }
+
+  /* D7 row (2): auto table layout sizes columns to content, so the
+     row still overflowed the viewport (table 507px at 390px wide).
+     Fixed layout: the meta/menu columns take fixed widths and the
+     name column absorbs the rest (ellipsizing via .ics-file-link). */
+  .ics-table {
+    table-layout: fixed;
+  }
+
+  .ics-table :is(th, td):nth-child(2) {
+    width: 118px;
+  }
+
+  .ics-table :is(th, td):nth-child(3) {
+    width: 56px;
+  }
+
+  .ics-table :is(th, td):nth-child(4) {
+    width: 52px;
+  }
+
+  .ics-file-meta {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* The origin tag ('Created') duplicates the Modified column; at
+     phone widths it starves the file name (the link ellipsized to a
+     single letter). Hide it here only. */
+  .ics-origin-tag {
+    display: none;
+  }
+}
+
+/* Disabled inputs (e.g. the settings email): visibly greyed, muted
+   text — the field LOOKS the way the read-only rule works. */
+.ics-input-disabled,
+.ics-input:disabled {
+  background: var(--ics-bg);
+  color: var(--ics-muted);
+  border-color: var(--ics-line-soft);
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* -- Settings PAGE (workspace-redesign brief) ---------------------------
+   A dedicated page in the Workspace shell: back affordance, page
+   title, one stacked column of setting cards. */
+
+:root[data-theme='dark'] .ics-landing,
+:root[data-theme='dark'] .ics-workspace {
+  --ics-bg: #11161c;
+  --ics-panel: #1b232d;
+  --ics-line: #3a4656;
+  --ics-line-soft: #2b3644;
+  --ics-text: #e8eef4;
+  --ics-muted: #9fb0c1;
+  --ics-accent: #0e7c6b;
+  --ics-accent-dark: #0a5f52;
+  --ics-accent-soft: #173f37;
+  --ics-error: #ff9d94;
+}
+
+:root[data-theme='dark'] .ics-alert {
+  background: #3d1f1c;
+}
+
+:root[data-theme='dark'] .ics-btn-danger:hover {
+  background: #3d1f1c;
+}
+
+.ics-settings-page {
+  max-width: 760px;
+}
+
+.ics-settings-page-head {
+  margin-bottom: 20px;
+}
+
+.ics-back-btn {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ics-accent-dark);
+  background: none;
+  border: none;
+  padding: 6px 8px;
+  margin-left: -8px;
+  border-radius: var(--ics-radius);
+  cursor: pointer;
+}
+
+.ics-back-btn:hover {
+  background: var(--ics-line-soft);
+}
+
+.ics-back-btn:focus-visible {
+  outline: 2px solid var(--ics-accent);
+  outline-offset: 1px;
+}
+
+.ics-settings-page-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 10px 0 0;
+}
+
+.ics-settings-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#ics-settings-email {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ics-settings-card {
+  border: 1px solid var(--ics-line-soft);
+  border-radius: var(--ics-radius);
+  padding: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.ics-settings-card-title {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 6px;
+}
+
+.ics-settings-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.ics-settings-name-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ics-settings-name-row .ics-input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.ics-settings-note {
+  color: var(--ics-muted);
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.ics-settings-danger {
+  border-top: 1px solid var(--ics-line-soft);
+  padding-top: 14px;
+}
+
+.ics-settings-danger-title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: var(--ics-error);
+}
+
+.ics-theme-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ics-theme-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ics-theme-option input {
+  margin-top: 4px;
+  accent-color: var(--ics-accent);
+}
+
+/* In-app confirmation dialog (never a native confirm/alert). */
+.ics-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 18, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  padding: 16px;
+}
+
+.ics-dialog {
+  background: var(--ics-panel);
+  color: var(--ics-text);
+  border: 1px solid var(--ics-line);
+  border-radius: var(--ics-radius);
+  max-width: 520px;
+  width: 100%;
+  padding: 20px 22px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.ics-dialog-title {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.ics-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}

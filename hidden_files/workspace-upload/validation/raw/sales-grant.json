@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "fileId": "file-132c0484-dd1e-4982-a225-7a9e729e05cc",
+  "object": "uploads/e413c48aacfe9847/file-132c0484-dd1e-4982-a225-7a9e729e05cc.csv",
+  "upload": {
+    "url": "http://127.0.0.1:19100/uploads/stage/uploads%2Fe413c48aacfe9847%2Ffile-132c0484-dd1e-4982-a225-7a9e729e05cc.csv?ut=eyJ2IjoxLCJvcCI6InB1dCIsIm9iamVjdCI6InVwbG9hZHMvZTQxM2M0OGFhY2ZlOTg0Ny9maWxlLTEzMmMwNDg0LWRkMWUtNDk4Mi1hMjI1LTdhOWU3MjllMDVjYy5jc3YiLCJwcmluY2lwYWwiOiJ1c2VyOmNzdnVzZXIiLCJtYXhCeXRlcyI6MTA4MSwiZXhwIjoxNzkyNjUwMTM2fQ.e_F9lKRd7ZRvPMyzaQuHXq0vIo9KvSNcF3aDBB5W_24",
+    "expiresAt": 1792650136000,
+    "method": "PUT"
+  }
+}

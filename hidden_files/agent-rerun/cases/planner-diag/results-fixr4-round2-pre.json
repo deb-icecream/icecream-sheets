@@ -1,0 +1,53 @@
+{
+ "turns": [
+  {
+   "text": "What is the total revenue in the Sales sheet?",
+   "ms": 24237,
+   "status": 500,
+   "threadId": null,
+   "message": "",
+   "needsInput": null,
+   "audit": []
+  },
+  {
+   "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+   "ms": 1619,
+   "status": 200,
+   "threadId": "da9b23d1-1af8-47d7-a185-cf711f59df73",
+   "message": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "write_cells",
+     "ok": true,
+     "text": null,
+     "summary": "write_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "Revenue for Jun South has been updated to 15000 in the Sales sheet.",
+     "summary": null
+    }
+   ]
+  },
+  {
+   "text": "Which region had the highest total revenue in the Sales sheet?",
+   "ms": 1107,
+   "status": 500,
+   "threadId": null,
+   "message": "",
+   "needsInput": null,
+   "audit": []
+  }
+ ]
+}

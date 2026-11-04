@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "unsupported file type: only .xlsx and .csv files can be uploaded"
+}

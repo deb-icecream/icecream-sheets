@@ -1,0 +1,44 @@
+{
+ "case": "3b",
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "LLM-generated app artifact embeds in chat (.agent-artifact panel)",
+   "pass": true,
+   "observed": "count=1 title=\"Build an app to explore this sales data — a revenue-by-re…\" srcMeta={\"id\":\"artifact_mvjegmj6_2\",\"name\":\"Build an app to explore this sales data — a revenue-by-re…\",\"kind\":\"react-app\",\"template\":\"custom\",\"sourceLength\":3483,\"sourceHead\":\"function App() {\\n  const [data, setData] = React.useState([]);\\n  const [selectedRegion, setSelectedRegion] = React.useState('All'"
+  },
+  {
+   "name": "app renders data ROWS with actual fixture values (not headings alone)",
+   "pass": false,
+   "observed": "valuesShown=[] appTextHead="
+  },
+  {
+   "name": "app persists across page reload (Apps tab lists it)",
+   "pass": true,
+   "observed": "persistText=\"New app from this sheet\\nGenerate\\nSortable tables, chart dashboards, data-entry forms. Analysis requests route to data analysis instead.\\nSaved apps (1)\\nBuild an app to explore this sales data — a reven\" reopened=false"
+  },
+  {
+   "name": "two-way binding (grid->app OR app->grid, with read-back)",
+   "pass": false,
+   "observed": "sheetToApp=false appEdit={\"attempted\":false} c2mid=null"
+  },
+  {
+   "name": "fixture restored afterwards (C2 back to 12000)",
+   "pass": true,
+   "observed": "c2end={\"kind\":\"number\",\"value\":12000}"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/app-generated.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/app-after-sheet-edit.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/app-after-app-edit.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/apps-after-reload.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/app-reopened-after-reload.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/artifact-source-head.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/app-initial.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03b/readback.json"
+ ]
+}

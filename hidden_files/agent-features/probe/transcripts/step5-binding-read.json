@@ -1,0 +1,57 @@
+{
+ "prompt": "What values are in Sheet1 A1:A3, and what is in B1?",
+ "status": 200,
+ "latencyMs": 14256,
+ "response": {
+  "threadId": "probe-w1-bind-1792625313019",
+  "message": "Reading the requested cells from Sheet1.",
+  "needsInput": null,
+  "audit": [
+   {
+    "seq": 16,
+    "ts": 1792625313042,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind-1792625313019",
+    "kind": "user_message",
+    "text": "What values are in Sheet1 A1:A3, and what is in B1?"
+   },
+   {
+    "seq": 17,
+    "ts": 1792625327192,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind-1792625313019",
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "args": {
+     "sheet_name": "Sheet1",
+     "range": "A1:A3"
+    },
+    "ok": false,
+    "summary": "read_cells failed: undefined"
+   },
+   {
+    "seq": 18,
+    "ts": 1792625327233,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind-1792625313019",
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "args": {
+     "sheet_name": "Sheet1",
+     "range": "B1"
+    },
+    "ok": false,
+    "summary": "read_cells failed: undefined"
+   },
+   {
+    "seq": 19,
+    "ts": 1792625327234,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind-1792625313019",
+    "kind": "agent_message",
+    "text": "Reading the requested cells from Sheet1."
+   }
+  ],
+  "chart": null
+ }
+}

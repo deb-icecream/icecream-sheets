@@ -1,0 +1,445 @@
+/**
+ * Design system for the agent chat + shared dialogs (#40,
+ * design-docs/agent-chat-ux-design-system.md §1).
+ *
+ * Tokens ONLY from the app's theme variables (index.css :root /
+ * [data-theme='dark']) — both themes work by construction. Spacing is
+ * one scale (4/8/12/16/24/32); radii harmonize on the #25 composer
+ * radius (26px container → inner elements step down from it); two
+ * elevations max (panel, dialog). Chat components consume the
+ * component classes here (ds-*) — no one-off inline button/bubble
+ * styles (§1.3).
+ */
+
+:root {
+  /* Semantic roles mapped onto the theme variables. */
+  --ds-surface: var(--panel);
+  --ds-surface-soft: var(--bg-soft);
+  --ds-raised: var(--panel);
+  --ds-line: var(--line);
+  --ds-line-soft: var(--line-soft);
+  --ds-text: var(--text);
+  --ds-text-dim: var(--muted);
+  --ds-accent: var(--accent);
+  --ds-accent-soft: var(--accent-soft);
+  --ds-danger: var(--error);
+  --ds-success: var(--accent);
+
+  /* Spacing scale (§1.1). */
+  --ds-s1: 4px;
+  --ds-s2: 8px;
+  --ds-s3: 12px;
+  --ds-s4: 16px;
+  --ds-s5: 24px;
+  --ds-s6: 32px;
+
+  /* Radii, anchored on the #25 composer (26px). */
+  --ds-r-composer: 26px;
+  --ds-r-card: 16px;
+  --ds-r-bubble: 18px;
+  --ds-r-btn: 999px;
+  --ds-r-dialog: 16px;
+
+  /* Elevations: panel (flat, bordered) and dialog (shadowed). */
+  --ds-shadow-dialog: 0 12px 40px rgba(15, 23, 42, 0.28), 0 2px 8px rgba(15, 23, 42, 0.18);
+
+  /* Type scale for chat/dialog text (§1.1): deliberate UI stack, set
+     for reading (1.5 line height), mono for code. */
+  --ds-font: var(--font);
+  --ds-mono: var(--mono);
+  --ds-fs-title: 15px;
+  --ds-fs-body: 13.5px;
+  --ds-fs-small: 12.5px;
+  --ds-fs-caption: 11.5px;
+  --ds-lh: 1.5;
+}
+
+/* ---------- Buttons (§1.2) ---------- */
+.ds-btn {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-small);
+  font-weight: 600;
+  line-height: 1;
+  border-radius: var(--ds-r-btn);
+  border: 1px solid transparent;
+  padding: 0 var(--ds-s4);
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-s2);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+.ds-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.ds-btn:focus-visible,
+.ds-icon-btn:focus-visible {
+  outline: 2px solid var(--ds-accent);
+  outline-offset: 1px;
+}
+.ds-btn-primary {
+  background: var(--ds-accent);
+  color: #fff;
+}
+.ds-btn-primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+.ds-btn-secondary {
+  background: var(--ds-surface);
+  border-color: var(--ds-line);
+  color: var(--ds-text);
+}
+.ds-btn-secondary:hover:not(:disabled) {
+  background: var(--ds-surface-soft);
+}
+.ds-btn-ghost {
+  background: transparent;
+  color: var(--ds-text-dim);
+}
+.ds-btn-ghost:hover:not(:disabled) {
+  background: var(--ds-accent-soft);
+  color: var(--ds-text);
+}
+.ds-btn-ghost.ds-btn-on {
+  background: var(--ds-accent-soft);
+  color: var(--ds-accent);
+}
+.ds-btn-danger {
+  background: transparent;
+  border-color: var(--ds-danger);
+  color: var(--ds-danger);
+}
+.ds-btn-danger:hover:not(:disabled) {
+  background: var(--ds-danger);
+  color: #fff;
+}
+.ds-btn-s {
+  height: 28px;
+  padding: 0 var(--ds-s3);
+  font-size: var(--ds-fs-caption);
+}
+
+/* Icon button: M = 36px hit area (§1.2 / #33). */
+.ds-icon-btn {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ds-text-dim);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  transition: background 120ms ease, color 120ms ease;
+}
+.ds-icon-btn:hover:not(:disabled) {
+  background: var(--ds-accent-soft);
+  color: var(--ds-text);
+}
+.ds-icon-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.ds-icon-btn.ds-icon-btn-on {
+  background: var(--ds-accent-soft);
+  color: var(--ds-accent);
+}
+
+/* ---------- Message bubbles (§1.2) ---------- */
+.ds-msg {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-body);
+  line-height: var(--ds-lh);
+  color: var(--ds-text);
+  border-radius: var(--ds-r-bubble);
+  padding: var(--ds-s3) var(--ds-s4);
+  max-width: 92%;
+  overflow-wrap: anywhere;
+}
+.ds-msg-user {
+  align-self: flex-end;
+  background: var(--ds-accent-soft);
+  border-bottom-right-radius: var(--ds-s1);
+}
+.ds-msg-agent {
+  align-self: flex-start;
+  background: var(--ds-surface-soft);
+  border: 1px solid var(--ds-line-soft);
+  border-bottom-left-radius: var(--ds-s1);
+}
+.ds-msg-notice {
+  align-self: center;
+  background: var(--notice-bg);
+  border: 1px solid var(--notice-line);
+  font-size: var(--ds-fs-small);
+}
+.ds-msg-error {
+  align-self: flex-start;
+  background: var(--ds-surface-soft);
+  border: 1px solid var(--ds-danger);
+  font-size: var(--ds-fs-small);
+}
+
+/* Hover-revealed message actions (§3.6). */
+.ds-msg-actions {
+  display: flex;
+  gap: var(--ds-s1);
+  margin-top: var(--ds-s1);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.ds-msg-wrap:hover .ds-msg-actions,
+.ds-msg-wrap:focus-within .ds-msg-actions {
+  opacity: 1;
+}
+.ds-msg-action {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-caption);
+  color: var(--ds-text-dim);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px var(--ds-s2);
+  border-radius: var(--ds-r-btn);
+}
+.ds-msg-action:hover {
+  background: var(--ds-accent-soft);
+  color: var(--ds-text);
+}
+
+/* ---------- Thought region (§3.2) ---------- */
+.ds-thoughts {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-small);
+  line-height: var(--ds-lh);
+  color: var(--ds-text-dim);
+  border-left: 2px solid var(--ds-line);
+  padding: var(--ds-s1) 0 var(--ds-s1) var(--ds-s3);
+  margin-bottom: var(--ds-s2);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ds-thoughts-summary {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-caption);
+  color: var(--ds-text-dim);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-s1);
+}
+.ds-thoughts-summary:hover {
+  color: var(--ds-text);
+}
+.ds-thought-tool-ok {
+  color: var(--ds-success);
+}
+.ds-thought-tool-fail {
+  color: var(--ds-danger);
+}
+
+/* ---------- Thinking indicator (§3.1): staggered wave ---------- */
+.ds-thinking {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: var(--ds-s2) 0;
+}
+.ds-thinking-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ds-text-dim);
+  animation: ds-wave 1.2s ease-in-out infinite;
+}
+.ds-thinking-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.ds-thinking-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes ds-wave {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0) scale(0.85);
+    opacity: 0.45;
+  }
+  30% {
+    transform: translateY(-4px) scale(1.1);
+    opacity: 1;
+  }
+}
+/* Streaming caret (§3.5). */
+.ds-caret {
+  display: inline-block;
+  width: 7px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--ds-accent);
+  animation: ds-caret-blink 1s steps(1) infinite;
+}
+@keyframes ds-caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ds-thinking-dot {
+    animation: ds-fade 1.6s ease-in-out infinite;
+    transform: none;
+  }
+  .ds-caret {
+    animation: none;
+    opacity: 0.6;
+  }
+}
+@keyframes ds-fade {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* ---------- Card (§1.2) ---------- */
+.ds-card {
+  font-family: var(--ds-font);
+  background: var(--ds-surface);
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-card);
+  overflow: hidden;
+}
+.ds-card-header {
+  font-size: var(--ds-fs-small);
+  font-weight: 600;
+  padding: var(--ds-s3) var(--ds-s4);
+  border-bottom: 1px solid var(--ds-line-soft);
+}
+.ds-card-body {
+  padding: var(--ds-s3) var(--ds-s4);
+  font-size: var(--ds-fs-body);
+  line-height: var(--ds-lh);
+}
+
+/* ---------- Markdown answer (§3.3) ---------- */
+.ds-md {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-body);
+  line-height: var(--ds-lh);
+  color: var(--ds-text);
+}
+.ds-md > *:first-child {
+  margin-top: 0;
+}
+.ds-md > *:last-child {
+  margin-bottom: 0;
+}
+.ds-md p {
+  margin: 0 0 var(--ds-s2);
+}
+.ds-md h1,
+.ds-md h2,
+.ds-md h3 {
+  font-size: var(--ds-fs-title);
+  margin: var(--ds-s3) 0 var(--ds-s2);
+}
+.ds-md ul,
+.ds-md ol {
+  margin: 0 0 var(--ds-s2);
+  padding-left: var(--ds-s5);
+}
+.ds-md code {
+  font-family: var(--ds-mono);
+  font-size: 0.92em;
+  background: var(--ds-accent-soft);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+.ds-md pre {
+  font-family: var(--ds-mono);
+  font-size: var(--ds-fs-small);
+  background: var(--ds-surface);
+  border: 1px solid var(--ds-line-soft);
+  border-radius: var(--ds-s2);
+  padding: var(--ds-s3);
+  overflow-x: auto;
+  margin: 0 0 var(--ds-s2);
+}
+.ds-md pre code {
+  background: transparent;
+  padding: 0;
+}
+.ds-md table {
+  border-collapse: collapse;
+  margin: 0 0 var(--ds-s2);
+  font-size: var(--ds-fs-small);
+}
+.ds-md th,
+.ds-md td {
+  border: 1px solid var(--ds-line);
+  padding: var(--ds-s1) var(--ds-s2);
+  text-align: left;
+}
+.ds-md th {
+  background: var(--ds-surface);
+  font-weight: 600;
+}
+.ds-md blockquote {
+  margin: 0 0 var(--ds-s2);
+  padding-left: var(--ds-s3);
+  border-left: 2px solid var(--ds-line);
+  color: var(--ds-text-dim);
+}
+.ds-md a {
+  color: var(--ds-accent);
+}
+
+/* ---------- Shared Dialog (§1.2 / §5) ----------
+ * The app's ONE dialog primitive is A11yDialog (84 consumers); its
+ * chrome (.dialog / .dialog-titlebar / .dialog-close in index.css) is
+ * styled from these tokens — same title treatment, same 36px close
+ * button, same radii and spacing as the chat surface. */
+
+/* Back-to-latest (§3.5). */
+.ds-back-to-latest {
+  position: sticky;
+  bottom: var(--ds-s3);
+  align-self: center;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.18);
+}
+
+/* Stopped-turn caption + dictation state line (chat surface). */
+.ds-msg-stopped {
+  font-size: var(--ds-fs-caption);
+  color: var(--ds-text-dim);
+  margin-top: var(--ds-s2);
+}
+.ds-listening {
+  font-family: var(--ds-font);
+  font-size: var(--ds-fs-caption);
+  color: var(--ds-text-dim);
+  padding: 0 var(--ds-s2) var(--ds-s1);
+}
+.ds-mic-recording {
+  color: var(--ds-danger) !important;
+  background: var(--ds-accent-soft);
+  animation: ds-fade 1.6s ease-in-out infinite;
+}

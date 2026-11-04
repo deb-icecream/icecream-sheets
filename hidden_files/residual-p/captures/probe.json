@@ -1,0 +1,71 @@
+{
+ "tabs": [
+  "File",
+  "Home",
+  "Insert",
+  "Draw",
+  "Page Layout",
+  "Formulas",
+  "Data",
+  "Review",
+  "View",
+  "Extensions",
+  "Help"
+ ],
+ "btns": [
+  "File",
+  "Home",
+  "Insert",
+  "Draw",
+  "Page Layout",
+  "Formulas",
+  "Data",
+  "Review",
+  "View",
+  "Extensions",
+  "Help",
+  "Share",
+  "fxInsert Function",
+  "AutoSum ▾",
+  "fx…Recently Used ▾",
+  "fx…Financial",
+  "fx…Logical",
+  "fx…Text",
+  "fx…Date & Time",
+  "fx…Lookup & Reference",
+  "fx…Math & Trig",
+  "fx…More ▾",
+  "Name Manager",
+  "Define Name",
+  "Named Functions",
+  "fxUse in Formula ▾",
+  "Create from Selection",
+  "Apply Names",
+  "Trace Precedents",
+  "Trace Dependents",
+  "Remove Arrows",
+  "fxShow Formulas",
+  "Error Checking",
+  "fxEvaluate Formula",
+  "Watch Window",
+  "Recalculate",
+  "Calculate Sheet",
+  "Automatic ▾"
+ ],
+ "dn": [
+  {
+   "text": "Define Name",
+   "visible": true,
+   "rect": {
+    "x": 1265.078125,
+    "y": 89,
+    "width": 116.03125,
+    "height": 30,
+    "top": 89,
+    "right": 1381.109375,
+    "bottom": 119,
+    "left": 1265.078125
+   }
+  }
+ ]
+}

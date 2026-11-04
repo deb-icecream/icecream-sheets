@@ -1,0 +1,137 @@
+# Cloud Run service: gateway — the API gateway (STATELESS per design doc).
+# Deployed by deploy/deploy.sh via `gcloud run services replace` after
+# envsubst of ${...} placeholders. The flags in deploy.sh mirror this file;
+# this file is the canonical spec.
+# Posture: public ingress — the gateway IS the auth point (JWT validation +
+# rate limiting on every request; stateless services are exempt from the
+# signed-URL pattern). Backends are reached via their Cloud Run URLs with
+# the gateway's own service account (run.invoker IAM, see deploy.sh).
+# Service-family wiring (W17b §4, user's five-service inventory): the five
+# per-surface routes (/api/vault, /api/meta, /api/etl, /api/agent,
+# /api/addons) ALL point at the ONE combined `service` Cloud Run service
+# (${SERVICE_URL}) — its prefix dispatcher accepts the /api/<name>/...
+# form directly. SERVICE_COMBINED=on (W19) is REQUIRED with this wiring:
+# it makes the gateway preserve the full /api/<name> path when proxying
+# service-family routes (without it the gateway strips the prefix and
+# the combined dispatcher 404s the bare path). ENGINE_URL_STANDARD / ENGINE_URL_XL feed the signed-URL
+# issuance tier selection (W17b engineAccess.ts); ENGINE_URL remains the
+# proxy-mode engine route (the standard tier).
+# Upload issuance (user ruling 2026-10-21, W22): UPLOAD_BUCKET /
+# UPLOAD_SIGNED_URL_TTL_SECONDS are the production load path's config —
+# the gateway issues short-lived, user+object-scoped signed PUT URLs
+# into this bucket after the same auth + rate-limit checks as
+# engine-access issuance; the client uploads bytes directly to GCS and
+# the engine pulls them (see the engine YAMLs' UPLOAD_BUCKET). Deploy
+# surface only today: the issuance endpoint is a code follow-on
+# (deploy/CONFIG.md, load-path section).
+#
+# Outbound: DIRECT (no VPC egress). History: Direct VPC Egress
+# (service-internal target state, prepared 2026-10-24, Leg 3) routed
+# the gateway's outbound through the project's VPC (network "default",
+# subnet "default" in us-central1) so Google's frontend would recognize
+# it as in-project for the AI service's ingress-internal flip. That
+# design was SUPERSEDED by owner decision 2026-10-25 ~01:41 PDT (see
+# design-docs/mcp-and-service-engine-routing.md §6): the egress broke
+# gateway outbound to Google APIs (no Cloud NAT, no Private Google
+# Access on the subnet -> sign-in down), while the gateway needs no
+# non-Google outbound. The AI service is now reached via IAM
+# (run.invoker, gateway SA only) + the signed binding, with no VPC
+# route. Do NOT re-add egress annotations without re-solving gateway
+# outbound to Google APIs first. The shared default subnet is left
+# intact; its deletion is NOT part of this switch.
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: icecream-sheet-gateway
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        # Scale-to-zero (design doc cost posture: min-instances 0 EVERYWHERE)
+        autoscaling.knative.dev/minScale: "0"
+        autoscaling.knative.dev/maxScale: "10"
+        run.googleapis.com/cpu-throttling: "true"
+        run.googleapis.com/startup-cpu-boost: "true"
+        run.googleapis.com/execution-environment: gen2
+        # No VPC egress annotations — outbound is direct (see header).
+    spec:
+      serviceAccountName: ${GATEWAY_SA}
+      timeoutSeconds: 3600        # 600 s-class proxy/load traffic; max allowed
+      containerConcurrency: 80    # stateless proxy: high concurrency is safe
+      containers:
+        - image: ${IMAGE_GATEWAY}
+          ports:
+            - containerPort: 8080   # Cloud Run injects PORT=8080; bin honors it
+          resources:
+            limits:
+              cpu: "1"              # small: validation + proxying only
+              memory: 512Mi
+          env:
+            - name: HOST
+              value: "0.0.0.0"      # W17b: bin reads HOST (default 127.0.0.1 local); Cloud Run probes require 0.0.0.0:$PORT
+            - name: ENGINE_URL
+              value: ${ENGINE_STANDARD_URL}
+            - name: ENGINE_URL_STANDARD
+              value: ${ENGINE_STANDARD_URL}
+            - name: ENGINE_URL_XL
+              value: ${ENGINE_STANDARD_URL}   # INTERIM FLEET-5 RULE (2026-10-24): XL tier retired — the legacy single-URL XL fallback points at the standard pool; placement uses ENGINE_INSTANCES only
+            - name: ENGINE_INSTANCE_ID
+              value: "engine-standard-1"   # PLACEMENT: the gateway's instance id — MUST be a key of ENGINE_INSTANCES (identity + single-URL fallback); claims no longer prefer it (interim fleet-5 rule: rotation order)
+            - name: ENGINE_INSTANCES
+              value: '${ENGINE_INSTANCES}'   # PLACEMENT (interim fleet-5 rule, 2026-10-24): the engine FLEET as a JSON map instanceId -> service URL — exactly FIVE standard Cloud Run services (icecream-sheet-engine-standard + -standard-2/-3/-4/-5; deploy.sh builds this from the deployed services' URLs). The claim path tries fleet members in rotation order until one accepts; the winner is recorded in the registry (ownerInstance/ownerEndpoint). A sixth concurrent open evicts the globally LRU file instead of 503ing for capacity.
+            - name: MAX_OPEN_FILES_PER_USER
+              value: "4"   # §9A PER-USER OPEN CAP (owner 2026-10-23): max DISTINCT files one user may hold open at once; opening one more silently evicts the user from their least recently used open file (detach-only, checkpoint confirmed first; the cap never refuses an open). Absent/invalid → default 4 in code.
+            - name: ENGINE_ACCESS_MODE
+              value: signed           # F-2 (security pass): gateway ISSUES signed engine-access URLs/tokens (deploy/engineAccess.ts); without this pair /api/engine/open + /access 501 fail-closed and the feature is dead
+            - name: ENGINE_ACCESS_SECRET   # same HMAC secret the engines verify with; Secret Manager, never plaintext
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_ENGINE_SIGNING}
+                  key: latest
+            - name: VAULT_URL
+              value: ${SERVICE_URL}
+            - name: META_URL
+              value: ${SERVICE_URL}
+            - name: ETL_URL
+              value: ${SERVICE_URL}
+            - name: AGENT_URL
+              value: ${SERVICE_URL}
+            - name: ADDONS_URL
+              value: ${SERVICE_URL}
+            - name: CONNECTOR_URL
+              value: ${SERVICE_URL}   # deploy follow-up leg 1 residual: was unset -> bin fell back to 127.0.0.1:8108 inside the gateway container, so /api/connectors could never reach the combined service
+            - name: AUTOMATION_URL
+              value: ${SERVICE_URL}   # same gap as CONNECTOR_URL: non-owner-routed /api/automation needs the combined service upstream (owner-routed traffic to live engines is unaffected)
+            - name: SERVICE_COMBINED
+              value: "on"           # W19: all five *_URL upstreams are the ONE combined runner — preserve the full /api/<name> path for service-family routes (default off = per-bin strip, local topology)
+            - name: UPLOAD_BUCKET
+              value: ${BUCKET_UPLOADS}   # W22: production load path — gateway issues signed PUT URLs into this GCS bucket (code follow-on; see header)
+            - name: UPLOAD_SIGNED_URL_TTL_SECONDS
+              value: "${UPLOAD_SIGNED_URL_TTL_SECONDS}"   # W22: signed upload URL lifetime (deploy.sh default 900 s), user + target-object scoped
+            - name: UPLOAD_STORE
+              value: "prod"          # W22 prod posture: GCS-backed upload store (bin injects the Storage client; fails closed without it)
+            - name: GATEWAY_PUBLIC_URL
+              value: "https://icecream-sheet-gateway-7uydfzbt2a-uc.a.run.app"   # this service's public URL — staging/download URLs are built on it (must match the deployed gateway URL)
+            - name: FIREBASE_PROJECT_ID
+              value: ${FIREBASE_PROJECT_ID}
+            - name: SHARE_STORE
+              value: "prod"             # app shares persist in Firestore (deploy/shareStore.ts prod adapter; bin/gateway.ts builds it at startup, fail closed)
+            - name: USER_STORE
+              value: "prod"             # per-user tier store + file catalog (+ settings) persist in Firestore (deploy/userStore.ts prod adapters; bin/gateway.ts builds them at startup, fail closed)
+            - name: FILE_REGISTRY_STORE
+              value: "prod"             # OWNER RULING 2026-10-23: ALWAYS ON for hosted — the file registry / session-ownership store persists in Firestore (deploy/fileRegistry.ts; F-5 transactional claim + epoch fencing). Hosted posture REQUIRES this store; it is not optional. Fail-closed without a Firestore client.
+            - name: GCP_PROJECT_ID
+              value: ${GCP_PROJECT}     # Firestore project for the prod share store (SHARE_STORE=prod) and the prod user store (USER_STORE=prod)
+            - name: AUTH_SECRET            # Secret Manager, never plaintext
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_AUTH}
+                  key: latest
+          startupProbe:
+            httpGet: { path: /health, port: 8080 }
+            failureThreshold: 30
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /health, port: 8080 }

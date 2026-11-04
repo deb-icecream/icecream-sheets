@@ -1,0 +1,145 @@
+{
+  "results": [
+    {
+      "step": "seeded catalog has 4 files",
+      "ok": true,
+      "detail": "count=4"
+    },
+    {
+      "step": "API order is recents-first (Q3 sales first)",
+      "ok": true,
+      "detail": "Q3 Regional Sales.xlsx | Vendor Price List.csv | Wedding Budget 2026.xlsx | Inventory - October.xlsx"
+    },
+    {
+      "step": "empty state: designed block with heading",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "empty state points at New and Upload",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "list rows in recents-first order",
+      "ok": true,
+      "detail": "Q3 Regional Sales.xlsx | Vendor Price List.csv | Wedding Budget 2026.xlsx | Inventory - October.xlsx"
+    },
+    {
+      "step": "header bar carries the brand",
+      "ok": true,
+      "detail": "Icecream Sheets / DEFAULT / 4 of 10 files / MC / Sign in with Google"
+    },
+    {
+      "step": "header shows the Default tier badge",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "header shows the file-count meter",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "header avatar shows the SAVED settings-name initials (Maya Chen)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "command bar has + New and Upload",
+      "ok": true,
+      "detail": "+ / New / Upload"
+    },
+    {
+      "step": "CSV row carries the Imported from CSV marker",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "xlsx row has no CSV marker",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "Modified column shows a relative time",
+      "ok": true,
+      "detail": "Q3 Regional Sales.xlsx / Uploaded / 2 hours ago\t2.5 KB\t"
+    },
+    {
+      "step": "every row has a file-type icon",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "no card grid remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "row menu offers Download / Rename / Delete",
+      "ok": true,
+      "detail": "Download | Rename | Delete"
+    },
+    {
+      "step": "rename persisted through the API",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "settings is a PAGE: the file list is replaced",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "command bar hides on the settings page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "settings page email is read-only AND disabled in the DOM",
+      "ok": true,
+      "detail": "{\"readOnly\":true,\"disabled\":true,\"value\":\"\"}"
+    },
+    {
+      "step": "Back returns to the file list",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "+ New creates and opens a new spreadsheet (grid on screen)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "the new sheet is open at its deep link",
+      "ok": true,
+      "detail": "http://127.0.0.1:6300/?file=file-a91c83d1-5259-4fcc-a70b-91fde35afe53"
+    },
+    {
+      "step": "the new file is the first (most recent) row",
+      "ok": true,
+      "detail": "Untitled spreadsheet | Q3 Regional Sales.xlsx | Vendor Price List.csv | Wedding Budget 2026 (final).xlsx | Inventory - October.xlsx"
+    },
+    {
+      "step": "header Upload stored the file (API-verified)",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "step": "row-menu Delete removed the file (API-verified)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": "file delete used the existing confirm flow exactly once",
+      "ok": true,
+      "detail": "dialogs=1"
+    },
+    {
+      "step": "iPad: settings page email still read-only + disabled",
+      "ok": true,
+      "detail": "{\"readOnly\":true,\"disabled\":true}"
+    }
+  ],
+  "nativeDialogs": 1
+}

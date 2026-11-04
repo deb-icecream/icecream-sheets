@@ -1,0 +1,61 @@
+[
+ {
+  "t": 1792624576738,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792624577457,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-16f32592-e206-4b45-a630-f8aba17218da\"}"
+ },
+ {
+  "t": 1792624577458,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624577459,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792624580959,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624587702,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":1,\"origin\":{\"clientId\":\"web-mviqdz5d-7nyez\",\"clientSeq\":1,\"principal\":\"user:alice\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"value\":{\"kind\":\"number\",\"value\":11}},{\"sheet\":\"Sheet1\",\"row\":1,\"col\":1,\"value\":{\"kind\":\"number\",\"value\":31},\"formula\":\"=A1+B1\"}]}"
+ },
+ {
+  "t": 1792624587740,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":0,\"saving\":true}"
+ },
+ {
+  "t": 1792624587970,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624587970,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624588953,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ }
+]

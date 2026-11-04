@@ -1,0 +1,66 @@
+{
+  "startedAt": "2026-10-22T14:53:40.551Z",
+  "reads": [
+    {
+      "atMs": 9643,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "sheet": "?",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"to",
+      "size": 54
+    },
+    {
+      "atMs": 20279,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "sheet": "?",
+      "post": "{\"fileId\":\"file-31de7b05-511c-4f87-81c2-57f4bbc2fa64\"}",
+      "size": 540
+    },
+    {
+      "atMs": 20559,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "sheet": "?",
+      "post": "{\"sessionId\":\"sess_09b58774-2fc9-40ff-accb-a8a425964bb4\"}",
+      "size": 438
+    },
+    {
+      "atMs": 118662,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "sheet": "?",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"to",
+      "size": 54
+    },
+    {
+      "atMs": 118829,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 118898,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 119019,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    }
+  ],
+  "samples": [],
+  "steps": [],
+  "fileId": "file-31de7b05-511c-4f87-81c2-57f4bbc2fa64",
+  "joinerNavAtMs": 17237,
+  "error": "joiner tabs=0"
+}

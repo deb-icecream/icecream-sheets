@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://office.deb0.com", "https://icecream-sheets.web.app"],
+    "method": ["PUT", "GET"],
+    "responseHeader": ["Content-Type"],
+    "maxAgeSeconds": 3600
+  }
+]

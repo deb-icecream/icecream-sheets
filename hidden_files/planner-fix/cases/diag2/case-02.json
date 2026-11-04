@@ -1,0 +1,95 @@
+{
+  "t1": {
+    "text": "What is the total revenue in the Sales sheet?",
+    "durationMs": 1506,
+    "httpStatus": 500,
+    "message": null,
+    "rawText": "{\"ok\":false,\"error\":\"agent error: openai-compatible backend: provider returned 429 ([{\\n  \\\"error\\\": {\\n    \\\"code\\\": 429,\\n    \\\"message\\\": \\\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\\\",\\n  )\"}",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [],
+    "audit": [
+      {
+        "seq": 22,
+        "ts": 1792668597030,
+        "principal": "user:alice",
+        "threadId": "planner-diag2-thread",
+        "kind": "user_message",
+        "text": "What is the total revenue in the Sales sheet?"
+      }
+    ]
+  },
+  "t2": {
+    "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+    "durationMs": 1510,
+    "httpStatus": 500,
+    "message": null,
+    "rawText": "{\"ok\":false,\"error\":\"agent error: openai-compatible backend: provider returned 429 ([{\\n  \\\"error\\\": {\\n    \\\"code\\\": 429,\\n    \\\"message\\\": \\\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\\\",\\n  )\"}",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [],
+    "audit": [
+      {
+        "seq": 23,
+        "ts": 1792668598559,
+        "principal": "user:alice",
+        "threadId": "planner-diag2-thread",
+        "kind": "user_message",
+        "text": "Set the Revenue for Jun South to 15000 in the Sales sheet."
+      }
+    ]
+  },
+  "t3": {
+    "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it.",
+    "durationMs": 1509,
+    "httpStatus": 500,
+    "message": null,
+    "rawText": "{\"ok\":false,\"error\":\"agent error: openai-compatible backend: provider returned 429 ([{\\n  \\\"error\\\": {\\n    \\\"code\\\": 429,\\n    \\\"message\\\": \\\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\\\",\\n  )\"}",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [],
+    "audit": [
+      {
+        "seq": 24,
+        "ts": 1792668600127,
+        "principal": "user:alice",
+        "threadId": "planner-diag2-thread",
+        "kind": "user_message",
+        "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it."
+      }
+    ]
+  },
+  "junSouth": {
+    "value": {
+      "kind": "number",
+      "value": 14200
+    }
+  },
+  "labelCell": {
+    "value": {
+      "kind": "null",
+      "value": null
+    }
+  },
+  "totalCell": {
+    "value": {
+      "kind": "null",
+      "value": null
+    }
+  }
+}

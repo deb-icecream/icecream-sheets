@@ -1,0 +1,105 @@
+[
+ {
+  "t": 1792620810877,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792620810966,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-D66ixzvX.js",
+  "path": "/assets/index-D66ixzvX.js",
+  "status": 200
+ },
+ {
+  "t": 1792620810974,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-DnU1-EYk.css",
+  "path": "/assets/index-DnU1-EYk.css",
+  "status": 200
+ },
+ {
+  "t": 1792620812935,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792620812935,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792620813037,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792620813770,
+  "method": "POST",
+  "url": "http://localhost:8100/auth/login",
+  "path": "/auth/login",
+  "postData": "{\"userId\":\"alice\"}",
+  "status": 200
+ },
+ {
+  "t": 1792620814448,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792620814448,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792620814448,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792620815481,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles",
+  "status": 409
+ },
+ {
+  "t": 1792620817770,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{}",
+  "status": 501
+ },
+ {
+  "t": 1792620817819,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "postData": "{}",
+  "status": 501
+ },
+ {
+  "t": 1792620818671,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles",
+  "status": 409
+ }
+]

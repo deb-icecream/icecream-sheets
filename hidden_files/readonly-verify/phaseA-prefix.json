@@ -1,0 +1,54 @@
+{
+  "phase": "phaseA",
+  "turns": [],
+  "agentTurns": [
+    {
+      "tag": "bob-prefix",
+      "ms": 9148,
+      "status": 200,
+      "message": "The value 'AGENT-PWN' has been successfully written to cell C3 on Sheet1.",
+      "answers": []
+    }
+  ],
+  "checks": {
+    "aliceWriteLands": true,
+    "sameSession": true,
+    "HOLE_writeLanded": true,
+    "HOLE_agentWriteLanded": true
+  },
+  "evidence": {
+    "openA": {
+      "status": 200,
+      "role": "editor",
+      "joined": false,
+      "sessionId": "sess_87c2ffec-4513-4283-9656-392a7578ca17",
+      "fileId": "file-4b5981ff-8848-40aa-96d2-7abb606cc38e"
+    },
+    "openB": {
+      "status": 200,
+      "role": "editor",
+      "joined": true,
+      "sessionId": "sess_87c2ffec-4513-4283-9656-392a7578ca17"
+    },
+    "bobOp": {
+      "status": 200,
+      "json": {
+        "ok": true,
+        "revision": 2,
+        "ack": {
+          "revision": 2,
+          "changedCellCount": 1,
+          "checksum": "055039f136f56026"
+        }
+      }
+    },
+    "bobValueReadBackByAlice": "VIEWER-HACK",
+    "registry": {
+      "creatorPrincipal": "user:alice",
+      "participants": {
+        "user:bob": "editor"
+      }
+    },
+    "c3AfterBobAgent": "AGENT-PWN"
+  }
+}

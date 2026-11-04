@@ -1,0 +1,40 @@
+{
+ "scenario": "8-first-open-race",
+ "verdict": "PASS",
+ "checks": {
+  "bothOk": true,
+  "sameSession": true,
+  "sameFile": true,
+  "oneRegistryRecord": true,
+  "registryMatchesSession": true,
+  "epochOne": true,
+  "browserJoined": true
+ },
+ "opens": {
+  "a": {
+   "status": 200,
+   "sessionId": "sess_8ce8bf37-f13b-4c4a-ae53-4abf78c6c2b9",
+   "epoch": 1,
+   "fileId": "file-2c6bd72d-6310-4568-a8e7-b6a87dc02c26"
+  },
+  "b": {
+   "status": 200,
+   "sessionId": "sess_8ce8bf37-f13b-4c4a-ae53-4abf78c6c2b9",
+   "epoch": 1,
+   "fileId": "file-2c6bd72d-6310-4568-a8e7-b6a87dc02c26"
+  }
+ },
+ "registryRecordsForFile": 1,
+ "registryRecord": {
+  "fileId": "file-2c6bd72d-6310-4568-a8e7-b6a87dc02c26",
+  "sessionId": "sess_8ce8bf37-f13b-4c4a-ae53-4abf78c6c2b9",
+  "ownerInstance": "engine-1",
+  "ownerEndpoint": "http://127.0.0.1:8201",
+  "leaseExpiry": 1792634984652,
+  "ownershipEpoch": 1,
+  "currentRevision": 0,
+  "storedRevision": 0,
+  "updatedAt": 1792634954653,
+  "creatorPrincipal": "user:alice"
+ }
+}

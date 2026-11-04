@@ -1,0 +1,210 @@
+{
+  "phases": {
+    "boot": {
+      "url": "file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html",
+      "title": "Icecream Sheets",
+      "hasApp": false,
+      "hasGrid": false,
+      "ribbonTabs": [],
+      "banner": false,
+      "fallback": false,
+      "tabs": [],
+      "active": null,
+      "statusItems": [],
+      "saveBtns": [],
+      "bodySnippet": ""
+    },
+    "bootQuit": "SIGTERM-group+SIGKILL",
+    "openP50": {
+      "url": "file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html",
+      "title": "Icecream Sheets",
+      "hasApp": false,
+      "hasGrid": false,
+      "ribbonTabs": [],
+      "banner": false,
+      "fallback": false,
+      "tabs": [],
+      "active": null,
+      "statusItems": [],
+      "saveBtns": [],
+      "bodySnippet": "",
+      "dashboard": {
+        "clicked": true,
+        "B1": null,
+        "active": null
+      },
+      "startHereB1": null,
+      "startHereB2": null
+    },
+    "mcp": {
+      "health": "{\"ok\":true,\"service\":\"mcp-server\"}",
+      "session": "a06f7673-22c2-4cf6-8f83-34b7ecc3ef50",
+      "serverInfo": {
+        "name": "icecream-sheets",
+        "version": "0.1.0"
+      },
+      "status": 200,
+      "excerpt": "{\"protocolVersion\":1,\"ok\":false,\"error\":\"Unknown sheet: START HERE\"}",
+      "parsed": {
+        "protocolVersion": 1,
+        "ok": false,
+        "error": "Unknown sheet: START HERE"
+      }
+    },
+    "edit": {
+      "sheet": "MONTHLY VIEW (LITE)",
+      "input": "C9",
+      "before": {
+        "C9": null,
+        "C10": null,
+        "C13": null,
+        "C14": null,
+        "C15": null,
+        "C16": null
+      },
+      "error": "TimeoutError: locator.dblclick: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#cell-8-2')\n"
+    },
+    "saveGating": {
+      "samplesDuringLoad": [],
+      "sampleCount": 245,
+      "firstSample": {
+        "ms": 51,
+        "banner": false,
+        "tabs": 0,
+        "status": [],
+        "saveBtns": []
+      },
+      "loadedState": {
+        "url": "file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html",
+        "title": "Icecream Sheets",
+        "hasApp": false,
+        "hasGrid": false,
+        "ribbonTabs": [],
+        "banner": false,
+        "fallback": false,
+        "tabs": [],
+        "active": null,
+        "statusItems": [],
+        "saveBtns": [],
+        "bodySnippet": ""
+      },
+      "stall": {
+        "maxTimerMs": 70,
+        "maxRafMs": 33,
+        "samples": 6135,
+        "rafSamples": 1846
+      },
+      "psBefore": {
+        "main": {
+          "pid": 8990,
+          "cpuSec": 1
+        },
+        "renderer": {
+          "pid": 9047,
+          "cpuSec": 5
+        },
+        "gpu": {
+          "pid": 9016,
+          "cpuSec": 1
+        }
+      },
+      "psMid": null,
+      "psAfter": {
+        "main": {
+          "pid": 8990,
+          "cpuSec": 2
+        },
+        "renderer": {
+          "pid": 9047,
+          "cpuSec": 8
+        },
+        "gpu": {
+          "pid": 9016,
+          "cpuSec": 2
+        }
+      },
+      "gatingScreenshotTaken": false,
+      "saveBtnAfterLoad": []
+    },
+    "saveDialog": {
+      "attempts": [
+        {
+          "method": "XTest Ctrl+Shift+S accelerator",
+          "dialog": null
+        },
+        {
+          "method": "XTest menu File>Save As click (62,148)",
+          "dialog": null
+        }
+      ],
+      "windowsBefore": [],
+      "menuRootShot": true,
+      "finalWindows": [],
+      "rootShotTaken": true
+    },
+    "quit": {
+      "how": "SIGTERM-group+SIGKILL",
+      "exitCode": null
+    },
+    "portsAfter": {
+      "p8106free": true,
+      "p9222free": true
+    }
+  },
+  "logs": [
+    "[app-out] [8834:1020/123859.310412:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[8834:1020/123859.310511:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8834:1020/123901.875337:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[8834:1020/123901.875383:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n",
+    "[app-out] \nDevTools listening on ws://127.0.0.1:9222/devtools/browser/0c4a4a52-0e42-41c4-84a7-7ff6fae93a25\n",
+    "[app-out] [parallel] worker pool enabled (1 workers, node:worker_threads backend)\n",
+    "[app-out] [mcp] direct ingress listening at http://127.0.0.1:8106/mcp (health at /health)\n",
+    "[app-out] [addons] production add-on service ready: Ed25519 install verifier active\n",
+    "[app-out] [8834:1020/123902.863635:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8834:1020/123902.922544:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8834:1020/123902.928052:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [8834:1020/123902.928830:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8834:1020/123902.993913:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "boot: .app wait timed out",
+    "[app-out] [8834:1020/124005.753796:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8834:1020/124005.754155:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[8834:1020/124005.754289:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[8834:1020/124005.754380:ERROR:dbus/object",
+    "BOOT state: {\"url\":\"file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html\",\"title\":\"Icecream Sheets\",\"hasApp\":false,\"hasGrid\":false,\"ribbonTabs\":[],\"banner\":false,\"fallback\":false,\"tabs\":[],\"active\":null,\"statusItems\":[],\"saveBtns\":[],\"bodySnippet\":\"\"}",
+    "boot instance quit via SIGTERM-group+SIGKILL",
+    "[app-out] [8990:1020/124018.975605:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[8990:1020/124018.975688:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124019.465667:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[8990:1020/124019.465705:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n",
+    "[app-out] \nDevTools listening on ws://127.0.0.1:9222/devtools/browser/1c743b71-d5a3-4415-bcb4-80df30ad25cd\n",
+    "[app-out] [parallel] worker pool enabled (1 workers, node:worker_threads backend)\n",
+    "[app-out] [mcp] direct ingress listening at http://127.0.0.1:8106/mcp (health at /health)\n",
+    "[app-out] [addons] production add-on service ready: Ed25519 install verifier active\n",
+    "[app-out] [8990:1020/124020.061155:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124020.112596:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124020.114483:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [8990:1020/124020.114681:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124020.136651:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [9047:1020/124020.159879:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:285] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.\n",
+    "sampler: installed",
+    "P50 loaded: {\"url\":\"file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html\",\"title\":\"Icecream Sheets\",\"hasApp\":false,\"hasGrid\":false,\"ribbonTabs\":[],\"banner\":false,\"fallback\":false,\"tabs\":[],\"active\":null,\"statusItems\":[],\"saveBtns\":[],\"bodySnippet\":\"\"}",
+    "[app-out] [8990:1020/124320.675543:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124320.675900:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [8990:1020/124320.676131:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124320.676278:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [8990:1020/124321.554131:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124321.554176:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[8990:1020/124321.554288:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[8990:1020/124321.554309:ERROR:dbus/object",
+    "DASHBOARD B1: null",
+    "START HERE B1: null",
+    "MCP: {\"health\":\"{\\\"ok\\\":true,\\\"service\\\":\\\"mcp-server\\\"}\",\"session\":\"a06f7673-22c2-4cf6-8f83-34b7ecc3ef50\",\"serverInfo\":{\"name\":\"icecream-sheets\",\"version\":\"0.1.0\"},\"status\":200,\"excerpt\":\"{\\\"protocolVersion\\\":1,\\\"ok\\\":false,\\\"error\\\":\\\"Unknown sheet: START HERE\\\"}\",\"parsed\":{\"protocolVersion\":1,\"ok\":false,\"error\":\"Unknown sheet: START HERE\"}}",
+    "[app-out] [8990:1020/124323.461917:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[8990:1020/124323.461956:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[8990:1020/124323.461988:ERROR:dbus/bus.cc",
+    "[app-out] [8990:1020/124323.462126:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "EDIT before: {\"C9\":null,\"C10\":null,\"C13\":null,\"C14\":null,\"C15\":null,\"C16\":null}",
+    "EDIT failed TimeoutError: locator.dblclick: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#cell-8-2')\n",
+    "GATING: {\"samplesDuringLoad\":[],\"sampleCount\":245,\"firstSample\":{\"ms\":51,\"banner\":false,\"tabs\":0,\"status\":[],\"saveBtns\":[]},\"loadedState\":{\"url\":\"file:///home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/resources/app.asar/web/dist/index.html\",\"title\":\"Icecream Sheets\",\"hasApp\":false,\"hasGrid\":false,\"ribbonTabs\":[],\"banner\":false,\"fallback\":false,\"tabs\":[],\"active\":null,\"statusItems\":[],\"saveBtns\":[],\"bodySnippet\":\"\"},\"stall\":{\"maxTimerMs\":70,\"maxRafMs\":33,\"samples\":6135,\"rafSamples\":1846},\"psBefore\":{\"main\":{\"pid\":8990,\"cpuSec\":1},\"renderer\":{\"pid\":9047,\"cpuSec\":5},\"gpu\":{\"pid\":9016,\"cpuSec\":1}},\"psMid\":null,\"psAfter\":{\"main\":{\"pid\":8990,\"cpuSec\":2},\"renderer\":{\"pid\":9047,\"cpuSec\":8},\"gpu\":{\"pid\":9016,\"cpuSec\":2}},\"gatingScreenshotTaken\":false}",
+    "[app-out] [8990:1020/124625.174637:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[8990:1020/124625.174690:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [8990:1020/124625.174810:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[8990:1020/124625.174864:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n",
+    "[app-out] [8990:1020/124625.643110:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n",
+    "[app-out] [8990:1020/124625.643186:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[8990:1020/124625.643224:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[8990:1020/124625.643239:ERROR:dbus/object",
+    "SaveBtnAfterLoad: []",
+    "rootShot failed Command failed: ffmpeg -y -f x11grab -video_size 1680x1050 -i :99.0 -frames:v 1 /home/hatch/workspace/icecream-sheets/hidden_files/cycle10-completion-shots/desktop-linux-save-menu.png\nffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.3.0-6ubuntu2~24.04.1)\n  configuration: --prefix=/usr --extra-version= --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-libplacebo --enable-frei0r --enable-sdl2 --enable-librav1e --enable-librsvg --disable-libplacebo --enable-shared\n  libavutil      60. 26.102 / 60. 26.102\n  libavcodec     62. 28.102 / 62. 28.102\n  libavformat    62. 12.102 / 62. 12.102\n  libavdevice    62.  3.102 / 62.  3.102\n  libavfilter    11. 14.102 / 11. 14.102\n  libswscale      9.  5.102 /  9.  5.102\n  libswresample   6.  3.102 /  6.  3.102\nAuthorization required, but no authorization protocol specified\n\n[in#0 @ 0x60c36dfe6f80] Cannot open display :99.0, error 1.\n[in#0 @ 0x60c36dfe6c80] Error opening input: Input/output error\nError opening input file :99.0.\nError opening input files: Input/output error\n",
+    "rootShot failed Command failed: ffmpeg -y -f x11grab -video_size 1680x1050 -i :99.0 -frames:v 1 /home/hatch/workspace/icecream-sheets/hidden_files/cycle10-completion-shots/desktop-linux-save-menu.png\nffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.3.0-6ubuntu2~24.04.1)\n  configuration: --prefix=/usr --extra-version= --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-libplacebo --enable-frei0r --enable-sdl2 --enable-librav1e --enable-librsvg --disable-libplacebo --enable-shared\n  libavutil      60. 26.102 / 60. 26.102\n  libavcodec     62. 28.102 / 62. 28.102\n  libavformat    62. 12.102 / 62. 12.102\n  libavdevice    62.  3.102 / 62.  3.102\n  libavfilter    11. 14.102 / 11. 14.102\n  libswscale      9.  5.102 /  9.  5.102\n  libswresample   6.  3.102 /  6.  3.102\nAuthorization required, but no authorization protocol specified\n\n[in#0 @ 0x5ffa5fe2ef80] Cannot open display :99.0, error 1.\n[in#0 @ 0x5ffa5fe2ec80] Error opening input: Input/output error\nError opening input file :99.0.\nError opening input files: Input/output error\n",
+    "rootShot failed Command failed: ffmpeg -y -f x11grab -video_size 1680x1050 -i :99.0 -frames:v 1 /home/hatch/workspace/icecream-sheets/hidden_files/cycle10-completion-shots/desktop-linux-save-dialog.png\nffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with gcc 13 (Ubuntu 13.3.0-6ubuntu2~24.04.1)\n  configuration: --prefix=/usr --extra-version= --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-pocketsphinx --disable-libcaca --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-ladspa --enable-libbluray --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libjxl --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-libplacebo --enable-frei0r --enable-sdl2 --enable-librav1e --enable-librsvg --disable-libplacebo --enable-shared\n  libavutil      60. 26.102 / 60. 26.102\n  libavcodec     62. 28.102 / 62. 28.102\n  libavformat    62. 12.102 / 62. 12.102\n  libavdevice    62.  3.102 / 62.  3.102\n  libavfilter    11. 14.102 / 11. 14.102\n  libswscale      9.  5.102 /  9.  5.102\n  libswresample   6.  3.102 /  6.  3.102\nAuthorization required, but no authorization protocol specified\n\n[in#0 @ 0x5e3e3ab28f80] Cannot open display :99.0, error 1.\n[in#0 @ 0x5e3e3ab28c80] Error opening input: Input/output error\nError opening input file :99.0.\nError opening input files: Input/output error\n",
+    "SAVE DIALOG: {\"attempts\":[{\"method\":\"XTest Ctrl+Shift+S accelerator\",\"dialog\":null},{\"method\":\"XTest menu File>Save As click (62,148)\",\"dialog\":null}],\"windowsBefore\":[],\"menuRootShot\":true,\"finalWindows\":[],\"rootShotTaken\":true}",
+    "QUIT: {\"how\":\"SIGTERM-group+SIGKILL\",\"exitCode\":null} {\"p8106free\":true,\"p9222free\":true}"
+  ]
+}

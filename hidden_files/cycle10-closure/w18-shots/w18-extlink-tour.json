@@ -1,0 +1,48 @@
+{
+  "fixture": "external-link-closedxml.xlsx",
+  "tag": "w18-extlink",
+  "sheets": [
+    {
+      "index": 1,
+      "name": "Sheet1",
+      "clicked": true,
+      "screenshot": "w18-extlink-sheet-01-Sheet1.png",
+      "cellCount": 748,
+      "nonEmpty": 1,
+      "errs": [],
+      "samples": [
+        "B2=hello world"
+      ],
+      "overlays": 40,
+      "hasChartText": false,
+      "pivotNotice": null
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "wallMs": 25689,
+  "firstPage": {
+    "fileSelectedAt": 1750.7000000000116,
+    "firstValuesAt": 1829.7000000000116,
+    "firstPagePaintedAt": 1830.2000000000116,
+    "timeToFirstPageMs": 79.5,
+    "timeToFirstValuesMs": 79
+  },
+  "heapMB": 38.5,
+  "longTasks": {
+    "count": 4,
+    "total": 672,
+    "max": 280
+  },
+  "sheetTabs": [
+    "Sheet1"
+  ],
+  "save": {
+    "ok": true,
+    "ms": 1389,
+    "path": "/home/hatch/workspace/icecream-sheets/hidden_files/cycle10-closure/w18-shots/downloads/w18-extlink-saved.xlsx",
+    "suggested": "workbook.xlsx",
+    "failure": null
+  }
+}

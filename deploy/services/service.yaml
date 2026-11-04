@@ -1,0 +1,124 @@
+# Cloud Run service: service — the service package as ONE stateless service
+# (user's service inventory clarification, 2026-10-20: FIVE Cloud Run
+# services total — gateway, 5× engine-standard, mcp, service; XL retired 2026-10-24).
+#
+# This replaces the five per-bin definitions (service-{vault,meta,etl,
+# agent,addons}.yaml, W17a) with a single definition targeting the COMBINED
+# runner built by W17b: packages/gateway/src/bin/service.ts +
+# src/services/servicePackage.ts mount vault, meta, etl, agent and addons
+# in ONE process on ONE port behind a prefix dispatcher accepting
+# /api/<name>/... and /<name>/... . The service image's entrypoint selects
+# it with SERVICE_BIN=service (deploy/service-entrypoint.sh; the per-bin
+# values vault|meta|etl|agent|addons remain selectable for local debugging
+# only — no deployed definition uses them).
+#
+# LIFETIME MODEL: stateless (design doc) — per-request invocation,
+# use-and-throw, NOTHING persists between requests in the process; any
+# durable state lives in the metadata store / persistence adapters behind
+# the surfaces, never in this process. Hence minScale 0 (scale-to-zero),
+# request-allocated CPU, and no session affinity.
+#
+# SIZING: W17a's service-family medium tier — 2 vCPU / 4 GiB, the size
+# W17a assigned to the family's heavy surfaces (etl, agent); the combined
+# process must accommodate its heaviest surface, so the small surfaces'
+# 1 vCPU / 1 GiB sizing no longer applies. Concurrency 20 (W17a's agent
+# value: above etl's 10, below the light surfaces' 80 — one instance
+# should not run unbounded heavy pipelines). maxScale 10, as every W17a
+# family definition had.
+#
+# Ingress posture: IAM (owner decision 2026-10-25 ~01:41 PDT, SUPERSEDES
+# the leg-3 VPC design recorded in the history note below). The service
+# is called ONLY by the gateway (browser → gateway → service, always).
+# It is NOT open to the public: Cloud Run requires authentication, and
+# roles/run.invoker is granted ONLY to the gateway's service account
+# (see deploy.sh §7b; verified live before this flip — the policy held
+# exactly that one binding). The gateway presents a Google ID token for
+# the service URL on every proxied call (gateway/src/serviceIdToken.ts,
+# cached 1h). The app-layer signed binding (#108) remains the second
+# gate: the service verifies the gateway-attached binding on every
+# agent call.
+# INVARIANT: the invoker grant must stay gateway-SA-only. Any future
+# broadening (allUsers, additional accounts) is a security event, not
+# a routine change.
+#
+# History (superseded, kept for the record): leg-3 aimed at ingress
+# internal + gateway Direct VPC Egress. The egress routed ALL gateway
+# outbound through subnet default, which has no Cloud NAT and no
+# Private Google Access, breaking gateway outbound to Google APIs
+# (sign-in down: POST /auth/firebase 401 "fetch failed"). The gateway
+# needs no non-Google outbound, so the VPC design was dropped in favor
+# of this IAM posture. Do NOT re-flip to internal without re-solving
+# gateway outbound to Google APIs first. The shared default subnet is
+# left intact; its deletion is NOT part of this switch.
+#
+# The egress values are the project's real network/subnet, verified
+# live by the parent 2026-10-24 (gcloud compute networks list →
+# "default"; networks subnets list → "default" in us-central1 on
+# network default) after the owner granted roles/compute.networkViewer
+# to the deployer service account — the permission that had blocked
+# discovery (compute.networks.list / compute.subnetworks.list were
+# denied before the grant). Full subnet path for reference:
+# projects/dreamscapes-zero/regions/us-central1/subnetworks/default.
+# Creating a NEW subnet would need roles/compute.networkAdmin; it is
+# NOT needed — the default subnet in us-central1 already exists.
+# (Earlier task wording said placeholders; the real values are used
+# here because the block lifted before this edit — see REPORT.md.)
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: icecream-sheet-service
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"     # scale-to-zero, doc mandate
+        autoscaling.knative.dev/maxScale: "10"    # W17a family guardrail
+        run.googleapis.com/cpu-throttling: "true" # stateless: request-allocated CPU is right
+        run.googleapis.com/startup-cpu-boost: "true"
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      serviceAccountName: ${SERVICE_SA}
+      timeoutSeconds: 3600        # ETL/agent long operations flow through here; platform max
+      containerConcurrency: 20    # W17a agent-tier value (see header)
+      containers:
+        - image: ${IMAGE_SERVICE}
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              cpu: "1"              # FIRST-DEPLOY size (user ruling 2026-10-21: free-tier-first; design size 2 vCPU / 4 Gi — W17a service-family medium, etl/agent tier)
+              memory: 2Gi
+          env:
+            - name: HOST
+              value: "0.0.0.0"      # W17b: bins read HOST (default 127.0.0.1 local); Cloud Run probes require 0.0.0.0:$PORT
+            - name: SERVICE_BIN
+              value: service        # the combined runner (dist/bin/service.js) — see header
+            - name: ENGINE_SERVICE_URL   # addons surface: /run resolves document bindings against the engine (servicePackage.ts)
+              value: ${ENGINE_STANDARD_URL}
+            - name: GCP_PROJECT_ID       # agent surface: Vertex AI production backend project
+              value: ${GCP_PROJECT}
+            - name: TRIGGER_STORE        # automation surface: trigger specs + grant records in Firestore (collection icecream_trigger_metadata, write-through; fail-closed — no local fallback)
+              value: "prod"
+            - name: ENGINE_ACCESS_SECRET # automation surface, scheduler tick: the tick self-opens closed files on an engine by minting creator engine-access tokens (same Secret Manager secret the engines verify with). TRIGGER_TICK_AUDIENCE / TRIGGER_TICK_SA_EMAIL are set later by deploy/create-trigger-scheduler.sh (they depend on this service's own URL, known only after deploy)
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_ENGINE_SIGNING}
+                  key: latest
+            - name: VAULT_MASTER_KEY     # vault surface: Secret Manager (design doc: vault keys in Secret Manager)
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_VAULT_KEY}
+                  key: latest
+            - name: ICECREAM_ADDON_TRUSTED_KEYS   # addons surface: signature trust keys, Secret Manager
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_ADDON_KEYS}
+                  key: latest
+          startupProbe:
+            httpGet: { path: /health, port: 8080 }
+            failureThreshold: 30
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /health, port: 8080 }

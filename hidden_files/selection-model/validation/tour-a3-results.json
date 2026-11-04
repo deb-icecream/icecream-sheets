@@ -1,0 +1,46 @@
+{
+ "checks": [
+  {
+   "id": "A3.copy-range",
+   "pass": true,
+   "detail": "tsv=\"3\\t2\\n4\\t2\""
+  },
+  {
+   "id": "A3.paste-range",
+   "pass": true,
+   "detail": "pasted=[\"3\",\"2\",\"4\",\"2\"]"
+  },
+  {
+   "id": "A3.copy-row",
+   "pass": true,
+   "detail": "cells=27 A=\"Item2\" D=\"=B2*C2\" P=\"5\""
+  },
+  {
+   "id": "A3.paste-row",
+   "pass": true,
+   "detail": "pasted=[\"Item2\",\"6\",\"5\"]"
+  },
+  {
+   "id": "A3.copy-col",
+   "pass": false,
+   "detail": "lines=20 [0,1,5,11,12]=[\"Qty\",\"3\",\"7\",\"\",\"=Z6+1\"]"
+  },
+  {
+   "id": "A3.paste-col",
+   "pass": true,
+   "detail": "pasted=[\"Qty\",\"3\",\"7\",\"778\"]"
+  },
+  {
+   "id": "A3.copy-all",
+   "pass": false,
+   "detail": "lines=20 B13=\"=Z6+1\" AA6=\"=B6*10\""
+  }
+ ],
+ "shots": [
+  "a3-copy-range-paste.png",
+  "a3-copy-row-paste.png",
+  "a3-copy-col-paste.png",
+  "a3-copy-all.png"
+ ],
+ "verdict": "FAILURES PRESENT"
+}

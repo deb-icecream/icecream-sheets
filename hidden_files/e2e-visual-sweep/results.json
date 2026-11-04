@@ -1,0 +1,67 @@
+{
+ "checks": [],
+ "consoleErrors": [
+  {
+   "step": "boot",
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+   "step": "boot",
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+   "step": "boot",
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  },
+  {
+   "step": "boot",
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+  },
+  {
+   "step": "boot",
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+  },
+  {
+   "step": "boot",
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+  }
+ ],
+ "network": [
+  {
+   "step": "boot",
+   "path": "/api/settings",
+   "status": 404
+  },
+  {
+   "step": "boot",
+   "path": "/api/settings",
+   "status": 404
+  },
+  {
+   "step": "boot",
+   "path": "/api/engine/session-extras",
+   "status": 401
+  },
+  {
+   "step": "boot",
+   "path": "/api/addons/catalog",
+   "status": 502
+  },
+  {
+   "step": "boot",
+   "path": "/api/addons/installed",
+   "status": 502
+  },
+  {
+   "step": "boot",
+   "path": "/api/addons/grants",
+   "status": 502
+  }
+ ]
+}

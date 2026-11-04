@@ -1,0 +1,60 @@
+# Cloud Run service: mcp — the MCP server (packages/mcp-server, http bin).
+# Posture (standing ruling): MCP is NEVER behind the gateway. Own direct
+# ingress, self-authenticates per the MCP spec (Bearer token verified with
+# MCP_AUTH_SECRET), own higher rate-limit tier. Platform level is therefore
+# ingress: all + --allow-unauthenticated (deploy.sh), with ALL auth
+# enforced in-process — the same pattern as the engine's signed URLs.
+# Stateless per request from Cloud Run's point of view (sessions are the
+# client's), so request-allocated CPU and default concurrency are right.
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: icecream-sheet-mcp
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "0"     # scale-to-zero, doc mandate
+        autoscaling.knative.dev/maxScale: "20"
+        run.googleapis.com/cpu-throttling: "true"
+        run.googleapis.com/startup-cpu-boost: "true"
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      serviceAccountName: ${MCP_SA}
+      timeoutSeconds: 3600        # long MCP sessions/streams; platform max
+      containerConcurrency: 80
+      containers:
+        - image: ${IMAGE_MCP}
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              cpu: "1"              # FIRST-DEPLOY size (user ruling 2026-10-21: free-tier-first; design size 2 vCPU / 4 Gi — MCP drives the engine + Python sandbox)
+              memory: 2Gi
+          env:
+            - name: HOST
+              value: "0.0.0.0"      # W17b: bin passes HOST to startMcpHttp (default 127.0.0.1 local); Cloud Run probes require 0.0.0.0:$PORT
+            - name: MCP_AUTH_SECRET        # Secret Manager, never plaintext
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_MCP_AUTH}
+                  key: latest
+            - name: MCP_STORE
+              value: "prod"             # durable metadata store (user ruling 2026-10-21: proceed with durable)
+            - name: GCP_PROJECT_ID
+              value: "dreamscapes-zero" # Firestore project for the MCP metadata store
+            - name: FILE_REGISTRY_STORE
+              value: "prod"             # MCP resolves file -> owner engine from the same registry (remoteFileBinding.ts); fail-closed without it
+            - name: ENGINE_ACCESS_SECRET  # Secret Manager, never plaintext; same HMAC secret the engines verify with
+              valueFrom:
+                secretKeyRef:
+                  name: ${SECRET_ENGINE_SIGNING}
+                  key: latest
+          startupProbe:
+            httpGet: { path: /health, port: 8080 }
+            failureThreshold: 30
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /health, port: 8080 }

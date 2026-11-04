@@ -1,0 +1,55 @@
+{
+ "g1": {
+  "msgs": [],
+  "newMsgs": [],
+  "seen": {
+   "clicked": [],
+   "textAnswers": [],
+   "disambClicked": null
+  },
+  "timedOut": true,
+  "durationMs": 422504,
+  "prompt": "Build an app to explore this sales data — a revenue-by-region viewer."
+ },
+ "artifactTitle": "Build an app to explore this sales data — a revenue-by-re…",
+ "srcInfo": {
+  "keys": [
+   "icecream.names.icecream-sheets.secure.v1/__service__/icecream-sheets.access.v1",
+   "icecream.clientId",
+   "icecream-sheets.artifacts.v1",
+   "icecream.names.icecream-sheets.keys.v1",
+   "icecream-sheets.keys.v1",
+   "icecream-sheets.oplog.tabs.v1",
+   "icecream-sheets.gateway-token",
+   "icecream.names.id.workbook",
+   "icecream.collab.file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2"
+  ],
+  "found": {
+   "key": "icecream-sheets.artifacts.v1",
+   "rawLength": 4204,
+   "head": "{\"version\":1,\"artifacts\":[{\"id\":\"artifact_mvjegmj6_2\",\"version\":1,\"kind\":\"react-app\",\"name\":\"Build an app to explore this sales data — a revenue-by-re…\",\"prompt\":\"Build an app to explore this sales data — a revenue-by-region viewer.\",\"template\":\"custom\",\"source\":\"function App() {\\n  const [data, set",
+   "specMeta": {
+    "id": "artifact_mvjegmj6_2",
+    "name": "Build an app to explore this sales data — a revenue-by-re…",
+    "kind": "react-app",
+    "template": "custom",
+    "sourceLength": 3483,
+    "sourceHead": "function App() {\n  const [data, setData] = React.useState([]);\n  const [selectedRegion, setSelectedRegion] = React.useState('All');\n\n  React.useEffect(() => {\n    const fetchData = async () => {\n      const result = await mcp.call('read_cells', {\n        sheet: BINDING.sheet,\n        startRow: BINDING.startRow,\n        startCol: BINDING.startCol,\n        endRow: BINDING.endRow,\n        endCol: BINDING.endCol,\n      });\n      setData(result.cells);\n    };\n    fetchData();\n\n    const subscription = mcp.subscribe(['cell_changed'], BINDING.sheet, () => {\n      fetchData();\n    });\n\n    return () => {\n      subscription.unsubscribe();\n    };\n  }, []);\n\n  const regions = ['All', ...new Set(data.map(row => row[1]))];\n\n  const filteredData = selectedRegion === 'All' ?\n    data :\n    data.filter(row => row[1] === selectedRegion);\n\n  const revenueByMonth = filteredData.reduce((acc, row) => {\n    const month = row[0];\n    const revenue = parseFloat(row[2]);\n    acc[month] = (acc[month] || 0) + revenue;\n    return acc;\n  }, {});\n\n  const chartData = Object.entries(revenueByMonth).map(([month, revenue]) => ({\n    month,\n    revenue\n  }));\n\n  const maxRevenue = Math.max(0, ...Object.values(reven"
+   }
+  }
+ },
+ "appTexts0": [],
+ "sheetToApp": false,
+ "c2mid": null,
+ "appEdit": {
+  "attempted": false
+ },
+ "c2end": {
+  "kind": "number",
+  "value": 12000
+ },
+ "persists": true,
+ "persistText": "New app from this sheet\nGenerate\nSortable tables, chart dashboards, data-entry forms. Analysis requests route to data analysis instead.\nSaved apps (1)\nBuild an app to explore this sales data — a revenue-by-re…\ncustom · bound to Sales · 10/22/2026\nReopen\nPreview\nDuplicate\nShare\n✕",
+ "reopened": false,
+ "repainted": false
+}

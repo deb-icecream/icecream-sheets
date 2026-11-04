@@ -1,0 +1,19 @@
+{
+ "checks": [
+  {
+   "id": "B5.col-left.before",
+   "pass": true,
+   "detail": "before={\"r1\":{\"value\":7},\"s1\":{\"value\":21,\"formula\":\"=R1*3\"}}"
+  },
+  {
+   "id": "B5.col-left.after",
+   "pass": true,
+   "detail": "after={\"r1\":{\"value\":null},\"s1\":{\"value\":7},\"t1\":{\"value\":21,\"formula\":\"=S1*3\"}}"
+  }
+ ],
+ "shots": [
+  "b5-menu-col.png",
+  "b5-col-left-after.png"
+ ],
+ "verdict": "ALL PASS"
+}

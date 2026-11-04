@@ -1,0 +1,109 @@
+{
+ "driver": "api-adaptation",
+ "prompt": "Who is Einstein?",
+ "turn": {
+  "text": "Who is Einstein?",
+  "ms": 612,
+  "status": 200,
+  "reply": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculate, remember notes (\"remember that the budget is 5000\"), analyze data with charts and pivots, build apps from your data, run ETL recipes and automations, work with data sources, and generate reports. What would you like to do with your spreadsheet?",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "question",
+    "text": "ask suppressed: planner has not used any tool yet this turn"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "memory_load",
+    "ok": true,
+    "text": "memory_load ok"
+   },
+   {
+    "kind": "memory",
+    "tool": "memory_load",
+    "ok": true,
+    "text": "memory_load ok"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "memory_load",
+    "ok": true,
+    "text": "memory_load ok"
+   },
+   {
+    "kind": "memory",
+    "tool": "memory_load",
+    "ok": true,
+    "text": "memory_load ok"
+   },
+   {
+    "kind": "question",
+    "text": "agent asked user"
+   },
+   {
+    "kind": "agent_message",
+    "text": "I need to find the temperature for Seattle on 2026-10-21. Which sheet contains this information?\n\nWhich sheet contains the temperature data for Seattle?"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "agent.offer_options",
+    "ok": true,
+    "text": "human-in-the-loop agent.offer_options: paused waiting for the user"
+   },
+   {
+    "kind": "user_message",
+    "text": "Sheet1"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "ok": false,
+    "text": "read_cells failed: remote engine POST /read failed: HTTP 404 {\"ok\":false,\"error\":\"Unknown sheet: Sheet1\"}"
+   },
+   {
+    "kind": "agent_message",
+    "text": "I couldn't find a sheet named 'Sheet1'. Please check the name and try again."
+   },
+   {
+    "kind": "guardrail",
+    "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+   },
+   {
+    "kind": "agent_message",
+    "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+   },
+   {
+    "kind": "guardrail",
+    "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+   },
+   {
+    "kind": "agent_message",
+    "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+   }
+  ]
+ }
+}

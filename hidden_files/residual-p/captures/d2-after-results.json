@@ -1,0 +1,78 @@
+{
+ "label": "d2-after",
+ "control": {
+  "downloaded": true,
+  "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/d2-after/dl-control.xlsx",
+  "requests": [
+   {
+    "at": 1792653842327,
+    "phase": "request",
+    "method": "POST",
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653842379,
+    "phase": "response",
+    "status": 200,
+    "url": "http://127.0.0.1:8411/download"
+   }
+  ],
+  "errorSeen": null,
+  "at": 1792653844099
+ },
+ "test": {
+  "downloaded": true,
+  "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/d2-after/dl-test.xlsx",
+  "requests": [
+   {
+    "at": 1792653916599,
+    "phase": "request",
+    "method": "POST",
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653916679,
+    "phase": "response",
+    "status": 401,
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653916758,
+    "phase": "request",
+    "method": "POST",
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653916980,
+    "phase": "response",
+    "status": 200,
+    "url": "http://127.0.0.1:8411/download"
+   }
+  ],
+  "errorSeen": null,
+  "at": 1792653919073
+ },
+ "deltasToken": {
+  "at": 1792653841407,
+  "claims": null
+ },
+ "timeline": [
+  {
+   "event": "loaded",
+   "at": 1792653841791,
+   "sinceDropMs": 560
+  },
+  {
+   "event": "control-done",
+   "at": 1792653844100
+  },
+  {
+   "event": "test-click",
+   "at": 1792653894158,
+   "tokenExp": null,
+   "tokenExpDate": null,
+   "nowDate": "2026-10-22T07:24:54.158Z"
+  }
+ ],
+ "pageErrors": []
+}

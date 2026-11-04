@@ -1,0 +1,175 @@
+{
+ "startedAt": "2026-10-22T03:50:53.811Z",
+ "pending": {
+  "status": 200,
+  "latencyMs": 204,
+  "body": {
+   "asks": []
+  }
+ },
+ "join": {
+  "status": 200,
+  "body": {
+   "ok": true,
+   "fileId": "file-960d6f76-2494-4fc7-91dc-965ad347821b",
+   "sessionId": "sess_fc497fdb-c706-490e-88ad-bfc33f51b28e",
+   "engineUrl": "http://127.0.0.1:8101",
+   "accessToken": "<redacted>",
+   "role": "editor",
+   "revision": 0,
+   "joined": false,
+   "ownershipEpoch": 2
+  }
+ },
+ "engineSanity": {
+  "A1": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "number",
+     "value": 7001
+    }
+   }
+  },
+  "B1": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "string",
+     "value": "GRIDWORKBOOK"
+    }
+   }
+  },
+  "A2": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "number",
+     "value": 7002
+    }
+   }
+  },
+  "A3": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "number",
+     "value": 7003
+    }
+   }
+  },
+  "C1": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "null",
+     "value": null
+    }
+   }
+  }
+ },
+ "agentRead": {
+  "status": 200,
+  "latencyMs": 1819,
+  "message": "The values in A1:A3 are 7001, 7002, and 7003. The value in B1 is GRIDWORKBOOK.",
+  "audit": [
+   {
+    "seq": 1,
+    "ts": 1792641054427,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "user_message",
+    "text": "Use the read_cells tool with exactly these args: {\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":2,\"endCol\":1}. Then tell me the values in A1:A3 and what is in B1."
+   },
+   {
+    "seq": 2,
+    "ts": 1792641055539,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "args": {
+     "sheet": "Sheet1",
+     "startRow": 0,
+     "startCol": 0,
+     "endRow": 2,
+     "endCol": 1
+    },
+    "ok": true,
+    "summary": "read_cells ok"
+   },
+   {
+    "seq": 3,
+    "ts": 1792641056198,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "agent_message",
+    "text": "The values in A1:A3 are 7001, 7002, and 7003. The value in B1 is GRIDWORKBOOK."
+   }
+  ]
+ },
+ "agentWrite": {
+  "status": 200,
+  "latencyMs": 1246,
+  "message": "I have written the value 424242 to cell C1 on Sheet1.",
+  "auditTail": [
+   {
+    "seq": 4,
+    "ts": 1792641056212,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "user_message",
+    "text": "Use the write_cells tool with exactly these args: {\"cells\":[{\"sheet\":\"Sheet1\",\"row\":0,\"col\":2,\"value\":424242}]}"
+   },
+   {
+    "seq": 5,
+    "ts": 1792641056943,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "tool_call",
+    "tool": "write_cells",
+    "args": {
+     "cells": [
+      {
+       "sheet": "Sheet1",
+       "row": 0,
+       "col": 2,
+       "value": 424242
+      }
+     ]
+    },
+    "ok": true,
+    "summary": "write_cells ok"
+   },
+   {
+    "seq": 6,
+    "ts": 1792641057439,
+    "principal": "user:alice",
+    "threadId": "probe-w1-bind3-1792641054385",
+    "kind": "agent_message",
+    "text": "I have written the value 424242 to cell C1 on Sheet1."
+   }
+  ]
+ },
+ "engineAfter": {
+  "C1": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "number",
+     "value": 424242
+    }
+   }
+  },
+  "A1": {
+   "status": 200,
+   "json": {
+    "value": {
+     "kind": "number",
+     "value": 7001
+    }
+   }
+  }
+ },
+ "finishedAt": "2026-10-22T03:50:57.467Z"
+}

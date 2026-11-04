@@ -1,0 +1,41 @@
+{
+ "steps": [
+  {
+   "name": "default-login",
+   "ok": true,
+   "detail": "login tier=default"
+  },
+  {
+   "name": "default-gate",
+   "ok": true,
+   "detail": "fab=\"🎙️ Voice · Pro\" gate=\"\""
+  },
+  {
+   "name": "pro-login",
+   "ok": true,
+   "detail": "login tier=pro"
+  },
+  {
+   "name": "pro-ungated",
+   "ok": true,
+   "detail": "palette input present for Pro user"
+  },
+  {
+   "name": "live-transcript",
+   "ok": true,
+   "detail": "live=\"some product b two to b twenty\" input=\"some product b two to b twenty\" match=SUMPRODUCT (heard wrong, as dictated by the fake recognizer)"
+  },
+  {
+   "name": "correction-wins",
+   "ok": true,
+   "detail": "input=\"some if b two to b twenty greater than ten\" match=SUMIF formula==SUMIF(B2:B20, \">10\") live-panel=\"some product b two to b twenty\""
+  },
+  {
+   "name": "stop-and-boundary",
+   "ok": true,
+   "detail": "after-stop input unchanged=true; boundary=\"Execution is unavailable in hosted sessions (v1): voice comm…\"; runDisabled=true; transcribeCalls=9"
+  }
+ ],
+ "errors": [],
+ "ok": true
+}

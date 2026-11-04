@@ -1,0 +1,78 @@
+{
+ "label": "d2-before",
+ "control": {
+  "downloaded": true,
+  "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/d2-before/dl-control.xlsx",
+  "requests": [
+   {
+    "at": 1792653441571,
+    "phase": "request",
+    "method": "POST",
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653441626,
+    "phase": "response",
+    "status": 200,
+    "url": "http://127.0.0.1:8411/download"
+   }
+  ],
+  "errorSeen": null,
+  "at": 1792653443329
+ },
+ "test": {
+  "downloaded": false,
+  "saved": null,
+  "requests": [
+   {
+    "at": 1792653493810,
+    "phase": "request",
+    "method": "POST",
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653493827,
+    "phase": "response",
+    "status": 401,
+    "url": "http://127.0.0.1:8411/download"
+   },
+   {
+    "at": 1792653493827,
+    "phase": "request",
+    "method": "POST",
+    "url": "http://localhost:8410/api/engine/download"
+   },
+   {
+    "at": 1792653493845,
+    "phase": "response",
+    "status": 401,
+    "url": "http://localhost:8410/api/engine/download"
+   }
+  ],
+  "errorSeen": "not authenticated (401)",
+  "at": 1792653524964
+ },
+ "deltasToken": {
+  "at": 1792653440158,
+  "claims": null
+ },
+ "timeline": [
+  {
+   "event": "loaded",
+   "at": 1792653441070,
+   "sinceDropMs": 1098
+  },
+  {
+   "event": "control-done",
+   "at": 1792653443329
+  },
+  {
+   "event": "test-click",
+   "at": 1792653493330,
+   "tokenExp": null,
+   "tokenExpDate": null,
+   "nowDate": "2026-10-22T07:18:13.330Z"
+  }
+ ],
+ "pageErrors": []
+}

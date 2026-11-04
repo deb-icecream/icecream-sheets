@@ -1,0 +1,250 @@
+{
+  "sheets": [
+    {
+      "idx": 12,
+      "tab": "Template",
+      "shot": "12-Template.png",
+      "active": null,
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 13,
+      "tab": "Browse Data",
+      "shot": "13-Browse-Data.png",
+      "active": null,
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 14,
+      "tab": "Valid Values",
+      "shot": "14-Valid-Values.png",
+      "active": null,
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 15,
+      "tab": "Dropdown Lists",
+      "shot": "15-Dropdown-Lists.png",
+      "active": null,
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 16,
+      "tab": "AttributePTDMAP",
+      "shot": "16-AttributePTDMAP.png",
+      "active": null,
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    }
+  ],
+  "probes": {
+    "imagesSheet": {
+      "img": 0,
+      "canvas": 0,
+      "svg": 40,
+      "picClass": 0,
+      "imageClass": 0,
+      "drawingClass": 0,
+      "overlayClass": 1,
+      "bgImages": 0
+    }
+  },
+  "meta": {
+    "fileId": "file-5c9d76d1-7fbd-4c91-b16b-499bdbf3bedc",
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+      "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    ],
+    "pageErrors": [],
+    "badResponses": [
+      {
+        "status": 502,
+        "url": "http://localhost:8810/api/engine/session-extras"
+      },
+      {
+        "status": 502,
+        "url": "http://localhost:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://localhost:8810/api/engine/session-extras"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      },
+      {
+        "status": 502,
+        "url": "http://127.0.0.1:8810/api/engine/open"
+      }
+    ],
+    "mediaRequests": []
+  }
+}

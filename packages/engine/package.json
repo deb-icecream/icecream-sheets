@@ -1,0 +1,23 @@
+{
+  "description": "Headless calculation engine core for Icecream Sheets (HyperFormula-based). No UI or persistence imports.",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "license": "GPL-3.0-only",
+  "main": "./dist/index.js",
+  "name": "@icecream-sheets/engine",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "gen:function-list": "node scripts/gen-function-list.mjs",
+    "test": "vitest run"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "hyperformula": "^2.7.0"
+  }
+}

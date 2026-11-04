@@ -1,0 +1,354 @@
+[
+ {
+  "t": 1792624531075,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792624531266,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-tTjOlDml.js",
+  "path": "/assets/index-tTjOlDml.js",
+  "status": 200
+ },
+ {
+  "t": 1792624531274,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-DnU1-EYk.css",
+  "path": "/assets/index-DnU1-EYk.css",
+  "status": 200
+ },
+ {
+  "t": 1792624534817,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792624534819,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792624534840,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792624535400,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{\"fileId\":\"file-981e2622-8691-4445-89a1-b1024873bc48\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624535400,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792624535401,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792624535402,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792624535529,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "postData": "{\"sessionId\":\"sess_d36ccfc9-0152-4f37-b52b-824e3862aa58\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624535623,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792624535711,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/snapshot",
+  "path": "/snapshot",
+  "status": 200
+ },
+ {
+  "t": 1792624535711,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624535711,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624535713,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":31,\"endCol\":20}}",
+  "status": 200
+ },
+ {
+  "t": 1792624535713,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624535713,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624535851,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624536811,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects"
+ },
+ {
+  "t": 1792624537848,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects"
+ },
+ {
+  "t": 1792624540885,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "postData": "{\"clientId\":\"web-mviqd3tz-4l19j\",\"clientSeq\":1,\"baseRev\":0,\"cmd\":{\"cmd\":\"setCell\",\"ref\":{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0},\"value\":555}}"
+ },
+ {
+  "t": 1792624540964,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792624541866,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects"
+ },
+ {
+  "t": 1792624541950,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{\"fileId\":\"file-981e2622-8691-4445-89a1-b1024873bc48\"}"
+ },
+ {
+  "t": 1792624543964,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{\"fileId\":\"file-981e2622-8691-4445-89a1-b1024873bc48\"}"
+ },
+ {
+  "t": 1792624546862,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 401
+ },
+ {
+  "t": 1792624547982,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{\"fileId\":\"file-981e2622-8691-4445-89a1-b1024873bc48\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624548004,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792624548010,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/revisions?from=0&to=1",
+  "path": "/revisions",
+  "status": 200
+ },
+ {
+  "t": 1792624548054,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":1}",
+  "status": 200
+ },
+ {
+  "t": 1792624548055,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792624548055,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "postData": "{\"clientId\":\"web-mviqd3tz-4l19j\",\"clientSeq\":1,\"baseRev\":1,\"cmd\":{\"cmd\":\"setCell\",\"ref\":{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0},\"value\":555}}",
+  "status": 200
+ },
+ {
+  "t": 1792624548217,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":2}",
+  "status": 200
+ },
+ {
+  "t": 1792624548218,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624549176,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624550562,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624552861,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792624553595,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "postData": "{\"clientId\":\"web-mviqd3tz-4l19j\",\"clientSeq\":2,\"baseRev\":2,\"cmd\":{\"cmd\":\"setCell\",\"ref\":{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0},\"value\":888}}",
+  "status": 200
+ },
+ {
+  "t": 1792624553702,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":3}",
+  "status": 200
+ },
+ {
+  "t": 1792624553702,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624553779,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":4}",
+  "status": 200
+ },
+ {
+  "t": 1792624553909,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792624555127,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624556310,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624558057,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792624558908,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ }
+]

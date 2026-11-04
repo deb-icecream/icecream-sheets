@@ -1,0 +1,690 @@
+{
+ "fileId": "file-7c93fd25-40a0-4c36-b114-7770cf84332e",
+ "sessionId": "sess_357817d7-b615-455d-a1be-59009c566ef4",
+ "range": {
+  "values": [
+   [
+    {
+     "kind": "string",
+     "value": "Month"
+    },
+    {
+     "kind": "string",
+     "value": "Region"
+    },
+    {
+     "kind": "string",
+     "value": "Revenue"
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "Jan"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "number",
+     "value": 12000
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "Feb"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "number",
+     "value": 9800
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ]
+  ],
+  "formulas": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ }
+}

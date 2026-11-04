@@ -1,0 +1,235 @@
+[
+ {
+  "t": 1792624593729,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792624593967,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-tTjOlDml.js",
+  "path": "/assets/index-tTjOlDml.js",
+  "status": 200
+ },
+ {
+  "t": 1792624593967,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-DnU1-EYk.css",
+  "path": "/assets/index-DnU1-EYk.css",
+  "status": 200
+ },
+ {
+  "t": 1792624596903,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792624596903,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792624596918,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792624597379,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "postData": "{\"fileId\":\"file-16e44b8b-2e08-4321-981d-9217a33467af\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624597382,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792624597382,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792624597382,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792624597557,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "postData": "{\"sessionId\":\"sess_a4421da4-0356-4021-9597-c04d490d4ef0\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624597682,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792624597709,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/snapshot",
+  "path": "/snapshot",
+  "status": 200
+ },
+ {
+  "t": 1792624597710,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624597710,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+  "status": 200
+ },
+ {
+  "t": 1792624597710,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":31,\"endCol\":20}}",
+  "status": 200
+ },
+ {
+  "t": 1792624597710,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624597753,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624597909,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624597911,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":260,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624598076,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624598076,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":260,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624598148,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":32,\"startCol\":0,\"endRow\":260,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624599178,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624601964,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops",
+  "postData": "{\"clientId\":\"web-mviqefo9-67bwn\",\"clientSeq\":1,\"baseRev\":260,\"cmd\":{\"cmd\":\"setCell\",\"ref\":{\"sheet\":\"Sheet1\",\"row\":0,\"col\":0},\"value\":100}}",
+  "status": 200
+ },
+ {
+  "t": 1792624602235,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/deltas/ack",
+  "path": "/deltas/ack",
+  "postData": "{\"revision\":261}",
+  "status": 200
+ },
+ {
+  "t": 1792624602235,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "postData": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "t": 1792624602398,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ },
+ {
+  "t": 1792624603303,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624604594,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "postData": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Office\",\"colors\":{\"name\":\"Office\",\"colors\":[\"#000000\",\"#ffffff\",\"#1f3864\",\"#d9d9d9\",\"#2e75b6\",\"#ed7d31\",\"#a5a5a5\",\"#ffc000\",\"#5b9bd5\",\"#70ad47\",\"#0563c1\",\"#954f72\"]},\"fonts\":{\"name\":\"Office\",\"heading\":\"Calibri Light\",\"body\":\"Calibri\"},\"effects",
+  "status": 200
+ },
+ {
+  "t": 1792624607716,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence",
+  "postData": "{\"sheet\":\"Sheet1\",\"row\":1,\"col\":0}",
+  "status": 200
+ }
+]

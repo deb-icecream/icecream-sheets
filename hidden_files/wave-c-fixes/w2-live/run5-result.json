@@ -1,0 +1,34 @@
+{
+ "startedAt": "2026-10-22T13:58:49.472Z",
+ "user": "w2val",
+ "web": "http://localhost:4274",
+ "assertions": [
+  {
+   "name": "A1 artifact panel opens from Apps tab",
+   "pass": true,
+   "observed": "panelCount=1"
+  },
+  {
+   "name": "A2 app renders fixture data ROWS",
+   "pass": true,
+   "observed": "valuesShown=11/11 northSouth=true head=\"Revenue by Region Viewer\\nRegions: All Region North South\\nMonth | Region | Revenue\\nJan | North | 12000\\nJan | South | 9800\\nFeb | North | 13500\\nFeb | South | 11200\""
+  },
+  {
+   "name": "B1 sheet edit C2 12000->12777 reflects in app",
+   "pass": true,
+   "observed": "sheetToApp=true"
+  },
+  {
+   "name": "B2 fixture restored (engine C2 = 12000)",
+   "pass": true,
+   "observed": "c2end={\"value\":{\"kind\":\"number\",\"value\":12000}}"
+  }
+ ],
+ "setup": {
+  "fileId": "file-49e3c3c5-718a-4935-b032-e795327c4446",
+  "sessionId": "sess_ae5fa66d-193d-4a44-b533-d1b633f17abb"
+ },
+ "painted": true,
+ "verdict": "PASS",
+ "finishedAt": "2026-10-22T13:59:13.165Z"
+}

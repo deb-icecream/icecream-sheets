@@ -1,0 +1,153 @@
+{
+  "mode": "after",
+  "runs": [
+    {
+      "width": 820,
+      "tabs": {
+        "Home": {
+          "panel": {
+            "clientWidth": 812,
+            "scrollWidth": 812,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 175,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 820,
+            "scrollWidth": 820,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": true,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 2,
+          "docScrollWidth": 820,
+          "innerWidth": 820
+        },
+        "Insert": {
+          "panel": {
+            "clientWidth": 812,
+            "scrollWidth": 812,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 175,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 820,
+            "scrollWidth": 820,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": true,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 5,
+          "docScrollWidth": 820,
+          "innerWidth": 820
+        },
+        "Formulas": {
+          "panel": {
+            "clientWidth": 812,
+            "scrollWidth": 812,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 175,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 820,
+            "scrollWidth": 820,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": true,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 2,
+          "docScrollWidth": 820,
+          "innerWidth": 820
+        },
+        "Data": {
+          "panel": {
+            "clientWidth": 812,
+            "scrollWidth": 812,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 175,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 820,
+            "scrollWidth": 820,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": true,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 3,
+          "docScrollWidth": 820,
+          "innerWidth": 820
+        }
+      },
+      "menuClip": {
+        "popupRect": {
+          "top": 119,
+          "bottom": 233,
+          "height": 114
+        },
+        "panelRect": {
+          "top": 79,
+          "bottom": 175,
+          "height": 96
+        },
+        "popupExtendsBelowPanel": true,
+        "popupFullyVisible": true
+      },
+      "moreMenu": {
+        "rect": {
+          "top": 115,
+          "bottom": 451,
+          "height": 336,
+          "width": 759.890625
+        },
+        "groupLabels": [
+          "Alignment",
+          "Number",
+          "Styles",
+          "Cells",
+          "Editing"
+        ],
+        "buttons": 29,
+        "visible": true
+      }
+    }
+  ]
+}

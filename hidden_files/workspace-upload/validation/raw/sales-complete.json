@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "file": {
+    "fileId": "file-132c0484-dd1e-4982-a225-7a9e729e05cc",
+    "ownerPrincipal": "user:csvuser",
+    "name": "sales.csv",
+    "sourceFormat": "csv",
+    "origin": "upload",
+    "sizeBytes": 1081,
+    "storageRef": {
+      "bucket": "icecream-uploads",
+      "object": "uploads/e413c48aacfe9847/file-132c0484-dd1e-4982-a225-7a9e729e05cc.csv"
+    },
+    "libraryEntryId": null,
+    "hasStoredState": false,
+    "createdAt": 1792649536874,
+    "updatedAt": 1792649536874,
+    "lastOpenedAt": 1792649536874
+  }
+}

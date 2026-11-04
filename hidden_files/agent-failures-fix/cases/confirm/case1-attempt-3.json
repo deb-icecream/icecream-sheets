@@ -1,0 +1,276 @@
+{
+  "case": "case1",
+  "gw": "http://localhost:9000",
+  "turns": [
+    {
+      "text": "What is the total revenue in the Sales sheet?",
+      "ms": 23856,
+      "status": 200,
+      "message": "The total revenue in the Sales sheet is 159400.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "text": "Which region had the highest total revenue in the Sales sheet?",
+      "ms": 5060,
+      "status": 200,
+      "message": "North had the highest total revenue in the Sales sheet with 89100.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Which region had the highest total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "North had the highest total revenue in the Sales sheet with 89100.",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+      "ms": 17340,
+      "status": 200,
+      "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Which region had the highest total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "North had the highest total revenue in the Sales sheet with 89100.",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "timeout",
+          "tool": null,
+          "ok": null,
+          "text": "planner",
+          "summary": "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more de"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "t1Status200": true,
+    "t1ComputesTotal": true,
+    "t1NoTimeout": true,
+    "t1NoUnsuppressedQuestion": true,
+    "t2North89100": true,
+    "t3ListsAllFour": false
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-705bfa37-6267-4ec8-bd86-87b0bbe8da87",
+    "sessionId": "sess_a46544da-4f4c-4a29-aff4-897aafb57b4d",
+    "releaseStatus": 401
+  }
+}

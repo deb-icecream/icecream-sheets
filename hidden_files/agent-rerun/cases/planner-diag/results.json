@@ -1,0 +1,155 @@
+{
+ "turns": [
+  {
+   "text": "What is the total revenue in the Sales sheet?",
+   "ms": 241871,
+   "status": 200,
+   "threadId": "50ae5550-bc23-48f7-ac09-dc37b54bc58c",
+   "message": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+   "error": null,
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "What is the total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "question",
+     "tool": null,
+     "ok": null,
+     "text": "Which column in the Sales sheet contains the revenue data?",
+     "summary": "agent asked user"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I need to know which column contains the revenue data. Could you please specify?\n\nWhich column in the Sales sheet contains the revenue data?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "agent.offer_options",
+     "ok": true,
+     "text": null,
+     "summary": "human-in-the-loop agent.offer_options: paused waiting for the user"
+    },
+    {
+     "kind": "timeout",
+     "tool": null,
+     "ok": null,
+     "text": "agent.offer_options",
+     "summary": "HITL wait ended: agent.offer_options: timed out after 240000ms waiting for an answer"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "summary": null
+    }
+   ]
+  },
+  {
+   "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+   "ms": 3506,
+   "status": 200,
+   "threadId": "50ae5550-bc23-48f7-ac09-dc37b54bc58c",
+   "message": "The Revenue for Jun South has been updated to 15000.",
+   "error": null,
+   "needsInput": null,
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "What is the total revenue in the Sales sheet?",
+     "summary": null
+    },
+    {
+     "kind": "question",
+     "tool": null,
+     "ok": null,
+     "text": "Which column in the Sales sheet contains the revenue data?",
+     "summary": "agent asked user"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I need to know which column contains the revenue data. Could you please specify?\n\nWhich column in the Sales sheet contains the revenue data?",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "agent.offer_options",
+     "ok": true,
+     "text": null,
+     "summary": "human-in-the-loop agent.offer_options: paused waiting for the user"
+    },
+    {
+     "kind": "timeout",
+     "tool": null,
+     "ok": null,
+     "text": "agent.offer_options",
+     "summary": "HITL wait ended: agent.offer_options: timed out after 240000ms waiting for an answer"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue.",
+     "summary": null
+    },
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+     "summary": null
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": null,
+     "summary": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "write_cells",
+     "ok": true,
+     "text": null,
+     "summary": "write_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The Revenue for Jun South has been updated to 15000.",
+     "summary": null
+    }
+   ]
+  },
+  {
+   "text": "Which region had the highest total revenue in the Sales sheet?",
+   "ms": 320506,
+   "status": 502,
+   "threadId": "50ae5550-bc23-48f7-ac09-dc37b54bc58c",
+   "message": "",
+   "error": "backend unavailable",
+   "needsInput": null,
+   "audit": []
+  }
+ ]
+}

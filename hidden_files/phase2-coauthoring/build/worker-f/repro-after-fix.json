@@ -1,0 +1,401 @@
+{
+ "summary": {
+  "tag": "after-fix",
+  "web": "http://localhost:4173",
+  "fileId": "file-00c9bf0e-5bc5-4ee3-93e9-2369c5df2827",
+  "sessionId": "sess_1474c8e0-f9d2-450c-b49b-afe6a2eccf8a",
+  "joined": true,
+  "edits": [
+   {
+    "row": 2,
+    "value": 777,
+    "commitStyle": "enter",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mviqfcqp-8it7r",
+      "clientSeq": 1,
+      "baseRev": 1,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 2,
+        "col": 0
+       },
+       "value": 777
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "777"
+   },
+   {
+    "row": 3,
+    "value": 888,
+    "commitStyle": "tab",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mviqfcqp-8it7r",
+      "clientSeq": 2,
+      "baseRev": 2,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 3,
+        "col": 0
+       },
+       "value": 888
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "888"
+   },
+   {
+    "row": 4,
+    "value": 999,
+    "commitStyle": "click",
+    "opsCount": 1,
+    "ops": [
+     {
+      "clientId": "web-mviqfcqp-8it7r",
+      "clientSeq": 3,
+      "baseRev": 3,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet1",
+        "row": 4,
+        "col": 0
+       },
+       "value": 999
+      },
+      "status": 200
+     }
+    ],
+    "cellNow": "999"
+   }
+  ],
+  "accessMintsTotal": 1,
+  "accessMintsBeforeEdits": 1,
+  "engine401Total": 0,
+  "postBaseline": {
+   "total": 22,
+   "accessMints": 0,
+   "s401": 0,
+   "byHash": {
+    "16115640": {
+     "total": 3,
+     "s401": 0,
+     "s200": 3,
+     "paths": {
+      "/read": 3
+     }
+    },
+    "4c070700": {
+     "total": 19,
+     "s401": 0,
+     "s200": 19,
+     "paths": {
+      "/presence": 7,
+      "/ops": 3,
+      "/deltas/ack": 3,
+      "/session-extras": 6
+     }
+    }
+   }
+  },
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "log": [
+  {
+   "method": "POST",
+   "path": "/api/engine/open",
+   "auth": "616e21e4",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/catalog",
+   "auth": "616e21e4",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/installed",
+   "auth": "616e21e4",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/api/addons/grants",
+   "auth": "616e21e4",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/api/engine/access",
+   "auth": "616e21e4",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/deltas",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/snapshot",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "path": "/sheets",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "4c070700",
+   "opsBody": {
+    "clientId": "web-mviqfcqp-8it7r",
+    "clientSeq": 1,
+    "baseRev": 1,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "col": 0
+     },
+     "value": 777
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "4c070700",
+   "opsBody": {
+    "clientId": "web-mviqfcqp-8it7r",
+    "clientSeq": 2,
+    "baseRev": 2,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "col": 0
+     },
+     "value": 888
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/ops",
+   "auth": "4c070700",
+   "opsBody": {
+    "clientId": "web-mviqfcqp-8it7r",
+    "clientSeq": 3,
+    "baseRev": 3,
+    "cmd": {
+     "cmd": "setCell",
+     "ref": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "col": 0
+     },
+     "value": 999
+    }
+   },
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/deltas/ack",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/read",
+   "auth": "16115640",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/presence",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "path": "/session-extras",
+   "auth": "4c070700",
+   "opsBody": null,
+   "status": 200
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+  "d4": {
+    "value": "ada@example.com",
+    "disabled": true,
+    "readOnly": true,
+    "err": null
+  },
+  "darkThemeAttr": "dark",
+  "darkStyles": {
+    "theme": "dark",
+    "msgAgent": {
+      "bg": "rgb(39, 53, 73)",
+      "color": "rgb(226, 232, 240)"
+    },
+    "msgUser": {
+      "bg": "rgb(37, 99, 235)",
+      "color": "rgb(255, 255, 255)"
+    },
+    "input": {
+      "bg": "rgb(30, 41, 59)",
+      "color": "rgb(226, 232, 240)"
+    },
+    "panel": {
+      "bg": "rgb(15, 23, 42)",
+      "color": "rgb(226, 232, 240)"
+    },
+    "chip": {
+      "bg": "rgb(19, 78, 74)",
+      "color": "rgb(226, 232, 240)"
+    }
+  },
+  "d7row": {
+    "scrollW": 390,
+    "tableW": 356,
+    "cells": [
+      {
+        "cls": "ics-file-name-cell",
+        "w": 130,
+        "text": "Untitled spreadsheetCreated"
+      },
+      {
+        "cls": "ics-file-meta",
+        "w": 118,
+        "text": "16 minutes ago"
+      },
+      {
+        "cls": "ics-file-meta",
+        "w": 56,
+        "text": "0 B"
+      },
+      {
+        "cls": "ics-file-menu-cell",
+        "w": 52,
+        "text": ""
+      }
+    ],
+    "widest": null
+  }
+}

@@ -1,0 +1,77 @@
+{
+ "prompt": "What is the sum of A1:A3 on Sheet1?",
+ "status": 200,
+ "latencyMs": 654,
+ "response": {
+  "threadId": "probe-w1-1792625277141",
+  "message": "Reading cells A1:A3 from Sheet1 to calculate their sum.",
+  "needsInput": null,
+  "audit": [
+   {
+    "seq": 1,
+    "ts": 1792625277725,
+    "principal": "user:alice",
+    "threadId": "probe-w1-1792625277141",
+    "kind": "user_message",
+    "text": "Set A1 to 111, A2 to 222, and A3 to 333 on Sheet1."
+   },
+   {
+    "seq": 2,
+    "ts": 1792625279097,
+    "principal": "user:alice",
+    "threadId": "probe-w1-1792625277141",
+    "kind": "tool_call",
+    "tool": "write_cells",
+    "args": {
+     "sheet_name": "Sheet1",
+     "cells": {
+      "A1": "111",
+      "A2": "222",
+      "A3": "333"
+     }
+    },
+    "ok": false,
+    "summary": "write_cells failed: undefined"
+   },
+   {
+    "seq": 3,
+    "ts": 1792625279097,
+    "principal": "user:alice",
+    "threadId": "probe-w1-1792625277141",
+    "kind": "agent_message",
+    "text": "Setting cells A1, A2, and A3 on Sheet1."
+   },
+   {
+    "seq": 4,
+    "ts": 1792625279148,
+    "principal": "user:alice",
+    "threadId": "probe-w1-1792625277141",
+    "kind": "user_message",
+    "text": "What is the sum of A1:A3 on Sheet1?"
+   },
+   {
+    "seq": 5,
+    "ts": 1792625279773,
+    "principal": "user:alice",
+    "threadId": "probe-w1-1792625277141",
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "args": {
+     "sheet_name": "Sheet1",
+     "cell_range": "A1:A3"
+    },
+    "ok": false,
+    "summary": "read_cells failed: undefined"
+   },
+   {
+    "seq": 6,
+    "ts": 1792625279773,
+    "principal": "user:alice",
+    "threadId": "probe-w1-1792625277141",
+    "kind": "agent_message",
+    "text": "Reading cells A1:A3 from Sheet1 to calculate their sum."
+   }
+  ],
+  "chart": null
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "postStatus": 200,
+ "postDescribe": {
+  "provider": "openai-compatible",
+  "baseUrl": "https://us-central1-aiplatform.googleapis.com/v1/projects/dreamscapes-zero/locations/us-central1/endpoints/openapi",
+  "model": "google/gemini-2.5-flash-lite",
+  "hasKey": true
+ },
+ "messageStatus": 500,
+ "latencyMs": 72,
+ "response": {
+  "ok": false,
+  "error": "agent error: openai-compatible backend: provider returned 401 ([{\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://devel)"
+ }
+}

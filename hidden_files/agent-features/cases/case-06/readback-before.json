@@ -1,0 +1,686 @@
+{
+ "values": [
+  [
+   {
+    "kind": "string",
+    "value": "Month"
+   },
+   {
+    "kind": "string",
+    "value": "Region"
+   },
+   {
+    "kind": "string",
+    "value": "Revenue"
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "Jan"
+   },
+   {
+    "kind": "string",
+    "value": "North"
+   },
+   {
+    "kind": "number",
+    "value": 12000
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "Feb"
+   },
+   {
+    "kind": "string",
+    "value": "South"
+   },
+   {
+    "kind": "number",
+    "value": 9800
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ]
+ ],
+ "formulas": [
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ ]
+}

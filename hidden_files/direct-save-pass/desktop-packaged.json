@@ -1,0 +1,59 @@
+{
+ "phases": {
+  "p75open": {
+   "ms": 3607,
+   "tabs": [
+    "FMTs",
+    "Cover",
+    "TOC",
+    "Constants",
+    "Imports",
+    "Inputs",
+    "Calcs",
+    "Income",
+    "Cash Flow",
+    "Balance",
+    "Summaries",
+    "Dashboard",
+    "CHKs"
+   ]
+  },
+  "p75save": {
+   "saveMs": 774,
+   "statusItems": [
+    "Protocol v1",
+    "Calc: automatic",
+    "Cell: D8",
+    "✓ Saved",
+    "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+    "You",
+    "Ready"
+   ],
+   "shaBefore": "bff7882a34c6",
+   "shaAfter": "177b089c2d4d",
+   "bytes": 486943
+  },
+  "lockBadge": {
+   "markersWithUnlockedSelected": 0,
+   "badgeCells": [
+    "cell-0-0"
+   ],
+   "markerCount": 1
+  },
+  "forcedFailure": {
+   "shaUnchanged": true,
+   "statusItems": [
+    "Protocol v1",
+    "Calc: automatic",
+    "Cell: C10",
+    "🔒 Protected",
+    "● Unsaved changes",
+    "Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文",
+    "You",
+    "Error invoking remote method 'engine:saveXlsxDirect': Error: injected save fault (midwrite)"
+   ],
+   "errorSurfaced": true,
+   "snippet": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp"
+  }
+ }
+}

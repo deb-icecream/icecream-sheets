@@ -1,0 +1,67 @@
+[
+ {
+  "t": 1792624682920,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792624683391,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-9caafc2f-4da9-4717-b57a-103d2323fb30\"}"
+ },
+ {
+  "t": 1792624683392,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624683394,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792624686932,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624689744,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":4,\"col\":4,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624693400,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":4,\"col\":4,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624693909,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":4,\"col\":4,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":2,\"col\":2,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624696496,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":4,\"col\":4,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":2,\"col\":2,\"editing\":false}]}"
+ },
+ {
+  "t": 1792624697670,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792624699713,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ }
+]

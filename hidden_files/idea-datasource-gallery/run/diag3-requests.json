@@ -1,0 +1,232 @@
+[
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index-bMw5Kr-K.js",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index-mX3dgP0t.css",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "post": "{\"fileId\":\"file-916aa41a-cf94-4326-8d0a-6a2997f31772\"}",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "post": "{\"sessionId\":\"sess_f636113f-da87-4f2d-85ca-f95fdd9555aa\"}",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8101/snapshot",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":43,\"endCol\":20}}",
+  "status": 500,
+  "body": "{\"ok\":false,\"error\":\"engine error: Unknown sheet: Sheet1\"}"
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 500,
+  "body": "{\"ok\":false,\"error\":\"engine error: Unknown sheet: Sheet1\"}"
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "post": "",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"usedrange\",\"sheet\":\"Starter\"}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Starter\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Starter\",\"startRow\":0,\"startCol\":0,\"endRow\":43,\"endCol\":20}}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "post": "{\"sheet\":\"Starter\",\"row\":0,\"col\":0}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Starter\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitle",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"usedrange\",\"sheet\":\"CSV from URL\"}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"CSV from URL\",\"startRow\":0,\"startCol\":0,\"endRow\":43,\"endCol\":20}}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "post": "{\"sheet\":\"CSV from URL\",\"row\":0,\"col\":0}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.CSV from URL\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.print",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "post": "{\"sheet\":\"CSV from URL\",\"row\":0,\"col\":0}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.CSV from URL\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.print",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.CSV from URL\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.print",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.CSV from URL\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.print",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "post": "{\"sheet\":\"Starter\",\"row\":0,\"col\":0}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Starter\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitle",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "post": "{\"sheet\":\"Starter\",\"row\":0,\"col\":0}",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Starter\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitle",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Starter\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitle",
+  "status": 200
+ }
+]

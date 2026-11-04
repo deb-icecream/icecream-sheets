@@ -1,0 +1,145 @@
+{
+  "plan": {
+    "fixture": "/home/hatch/workspace/icecream-sheets/test-data/real-world/closedxml-TryToLoad-DrawingSizeInPx.xlsx",
+    "user": "rt-drawz2",
+    "tag": "drawfin"
+  },
+  "steps": [
+    {
+      "step": "login",
+      "user": "rt-drawz2"
+    },
+    {
+      "step": "load",
+      "wallMs": 17148
+    },
+    {
+      "step": "mod1",
+      "kind": "edit",
+      "sheet": "International Settings",
+      "target": "A9",
+      "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+      "before": {
+        "IS!A9": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/",
+        "IS!A10": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/",
+        "IS!A12": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/beta/",
+        "IS!A13": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/beta/",
+        "IS!A21": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntMiscData.txt",
+        "IS!A22": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntDataValidation.txt",
+        "IS!A23": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntDropdownLists.txt"
+      },
+      "after": {
+        "IS!A9": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+        "IS!A10": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+        "IS!A12": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/beta/",
+        "IS!A13": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/beta/",
+        "IS!A21": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt",
+        "IS!A22": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDataValidation.txt",
+        "IS!A23": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDropdownLists.txt"
+      },
+      "formulaBefore": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/",
+      "formulaAfter": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+      "settled": true
+    },
+    {
+      "step": "mod2",
+      "kind": "edit",
+      "sheet": "International Settings",
+      "target": "A36",
+      "value": "2.544",
+      "before": {
+        "IS!A36": "2.543"
+      },
+      "after": {
+        "IS!A36": "2.544"
+      },
+      "formulaBefore": "2.543",
+      "formulaAfter": "2.544",
+      "settled": true
+    },
+    {
+      "step": "mod3",
+      "kind": "type",
+      "sheet": "International Settings",
+      "target": "C9",
+      "value": "=A9&\"gamma/\"",
+      "before": {
+        "IS!C9": ""
+      },
+      "after": {
+        "IS!C9": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/gamma/"
+      },
+      "formulaBefore": null,
+      "formulaAfter": "=A9&\"gamma/\"",
+      "settled": true
+    },
+    {
+      "step": "mod4",
+      "kind": "clear",
+      "sheet": "International Settings",
+      "target": "A13",
+      "value": null,
+      "before": {
+        "IS!A13": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/beta/"
+      },
+      "after": {
+        "IS!A13": ""
+      },
+      "formulaBefore": "=A10&\"beta/\"",
+      "formulaAfter": null,
+      "settled": true
+    },
+    {
+      "step": "mod5",
+      "kind": "insertRow",
+      "sheet": "International Settings",
+      "target": "A21",
+      "value": null,
+      "before": {
+        "IS!A21": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt",
+        "IS!A22": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDataValidation.txt",
+        "IS!A23": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDropdownLists.txt",
+        "IS!A24": "Use Seller Central",
+        "IS!B22": "URL for Data Validation Table (do not delete formula)"
+      },
+      "after": {
+        "IS!A21": "",
+        "IS!A22": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt",
+        "IS!A23": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDataValidation.txt",
+        "IS!A24": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDropdownLists.txt",
+        "IS!B22": "URL for Misc Data Table (do not delete formula)"
+      },
+      "formulaBefore": null,
+      "formulaAfter": null,
+      "settled": true
+    },
+    {
+      "step": "save-download",
+      "ms": 3070,
+      "path": "/home/hatch/workspace/icecream-sheets/hidden_files/roundtrip-audit/draw/drawfin-saved.xlsx",
+      "bytes": 1015672,
+      "sha256": "94a1c9361a2a133c8471222d84ea71c7edb024a7979c210d62ffecb00cd3c56c",
+      "via": "engine /download metadata + gateway /api/storage/sign + signed fetch (session credentials)",
+      "meta": {
+        "engineUrl": "http://127.0.0.1:18301",
+        "metaStatus": 200,
+        "metaBody": "{\"ok\":true,\"entryId\":\"autosave_sess_0259eeb8-00a9-4993-8690-7e21e28d01a1\",\"revision\":5,\"bytes\":1015672,\"mode\":\"verbatim\",\"serializeMs\":0,\"changedSheets\":[],\"totalMs\":12}",
+        "meta": {
+          "entryId": "autosave_sess_0259eeb8-00a9-4993-8690-7e21e28d01a1",
+          "revision": 5,
+          "bytes": 1015672,
+          "mode": "verbatim"
+        },
+        "signStatus": 200,
+        "fetchStatus": 200,
+        "fetchBytes": 1015672
+      }
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (File not found)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "pageerror: Error"
+  ]
+}

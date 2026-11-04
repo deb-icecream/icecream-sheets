@@ -1,0 +1,1 @@
+{"version":2,"userId":"user:promptbox","threads":[{"version":2,"threadId":"web-1792715962216","userId":"user:promptbox","title":"web-1792715962216","messages":[{"role":"user","text":"What is the value in cell A1?","ts":1792715967064},{"role":"agent","text":"A1:\n42","ts":1792715967164}],"createdAt":1792715967064,"updatedAt":1792715967164}]}

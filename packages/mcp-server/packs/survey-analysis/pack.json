@@ -1,0 +1,24 @@
+{
+  "id": "survey-analysis",
+  "name": "Survey Analysis",
+  "version": "1.0.0",
+  "description": "Analyze survey responses through MCP tools: code free-text answers into a codebook-backed column, build frequency tables and cross-tabulations, and chart the results as a native sheet chart.",
+  "tools": [
+    "survey_code_responses",
+    "survey_frequencies",
+    "survey_crosstab",
+    "survey_chart_results"
+  ],
+  "prompts": [
+    {
+      "name": "code-open-text",
+      "title": "Code the open-text answers",
+      "text": "On the \"Responses\" sheet, use survey_code_responses on the \"How did you hear about us?\" column to canonicalize the messy answers into a code column, and show me the codebook with counts."
+    },
+    {
+      "name": "satisfaction-by-plan",
+      "title": "Satisfaction by plan, tabulated and charted",
+      "text": "On the \"Responses\" sheet, cross-tabulate \"Plan\" by \"Satisfaction\" with survey_crosstab, build the satisfaction frequency table with survey_frequencies, and chart it with survey_chart_results."
+    }
+  ]
+}

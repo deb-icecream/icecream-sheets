@@ -1,0 +1,118 @@
+{
+  "case": "case5",
+  "gw": "http://localhost:8970",
+  "turns": [
+    {
+      "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a percentage. Then tell me which region has the largest share and what that share is.",
+      "ms": 52701,
+      "status": 200,
+      "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a perce",
+          "summary": null
+        },
+        {
+          "kind": "timeout",
+          "tool": null,
+          "ok": null,
+          "text": "planner",
+          "summary": "planner call failed (openai-compatible backend: provider returned non-JSON plan (completion prefix: \"{\\\"message\\\": \\\"Calculating each region's share of total revenue and writing it to column D of the Sales sheet. Then I will identify the region with the larges"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "status200": true,
+    "colDFilled12of12": false,
+    "filled": 0,
+    "northShareValue": null,
+    "northShareApproxCorrect": false,
+    "replyNamesNorthLargest": false,
+    "busyReplySignature": true,
+    "auditKinds": [
+      "user_message",
+      "timeout",
+      "agent_message"
+    ]
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-49906188-967d-4449-bea7-85e8ce749a7f",
+    "sessionId": "sess_7e617882-7ec4-4558-bd77-8f22d16bd16b",
+    "colD": [
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      }
+    ],
+    "releaseStatus": 200
+  }
+}

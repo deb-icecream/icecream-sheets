@@ -1,0 +1,121 @@
+{
+ "tag": "P95",
+ "steps": {
+  "load": {
+   "status": 200,
+   "ms": 63543
+  },
+  "autosaveConvergence": {
+   "ms": 52,
+   "status": {
+    "ok": true,
+    "sessionId": "sess_3c9abb2c-68a3-42d8-a248-e3f714e4ac6a",
+    "liveRevision": 0,
+    "storageRevision": 0,
+    "extrasDirty": false,
+    "pendingCheckpointOps": 0,
+    "autosaveStats": {
+     "flushes": 0,
+     "noopSkips": 0,
+     "forcedFlushes": 0
+    }
+   }
+  },
+  "forceSaveNoop": {
+   "status": 200,
+   "ms": 56582,
+   "skipped": false,
+   "caughtUp": true,
+   "entryId": "wb_mviak3yf_7rluaj",
+   "sizeBytes": 13012355
+  },
+  "downloadUnedited": {
+   "metaStatus": 200,
+   "mode": "verbatim",
+   "metaMs": 459,
+   "signMs": 49,
+   "fetchMs": 908,
+   "fetchStatus": 200,
+   "bytes": 13012355,
+   "metaBytes": 13012355,
+   "counts": {
+    "sheets": [
+     "Sales",
+     "Inventory",
+     "Ledger"
+    ],
+    "value": 1320031,
+    "formula": 0
+   }
+  },
+  "editAndFlush": {
+   "execStatus": 200,
+   "execMs": 16,
+   "flushWaitMs": 18067
+  },
+  "downloadEdited": {
+   "saveSignalMs": 26176,
+   "fetchMs": 710,
+   "mode": "verbatim",
+   "serializeMs": 0,
+   "bytes": 15134565,
+   "counts": {
+    "sheets": [
+     "Sales",
+     "Inventory",
+     "Ledger"
+    ],
+    "value": 1320031,
+    "formula": 240003
+   },
+   "editCell": {
+    "addr": "A2",
+    "value": 424242
+   }
+  },
+  "forceSaveAfterCommit": {
+   "status": 200,
+   "ms": 19,
+   "skipped": true,
+   "caughtUp": true
+  },
+  "postSaveEditRoundTrip": {
+   "execStatus": 200,
+   "execOk": true,
+   "readValue": {
+    "kind": "number",
+    "value": 777
+   }
+  },
+  "tornState": {
+   "gBefore": {
+    "kind": "number",
+    "value": -48708.51
+   },
+   "saveStatus": 200,
+   "editStatus": 200,
+   "savedG2": null,
+   "liveG2After": {
+    "kind": "number",
+    "value": -1000
+   },
+   "liveRevision": 3,
+   "storageRevision": 3
+  }
+ },
+ "sourceBytes": 12691810,
+ "sourceCounts": {
+  "sheets": [
+   "Sales",
+   "Inventory",
+   "Ledger"
+  ],
+  "value": 1320031,
+  "formula": 0
+ },
+ "editRef": {
+  "sheet": "Sales",
+  "row": 1,
+  "col": 0
+ }
+}

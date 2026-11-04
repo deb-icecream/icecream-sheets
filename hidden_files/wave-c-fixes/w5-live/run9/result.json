@@ -1,0 +1,387 @@
+{
+  "run": "run9",
+  "startedAt": "2026-10-22T16:10:03.035Z",
+  "steps": [
+    {
+      "t": "owner-tabs",
+      "count": 16,
+      "atMs": 17296
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "t": "joiner-console",
+      "msg": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "joiner": {
+    "samples": [
+      {
+        "afterSwitchMs": 10036,
+        "nonEmpty": 0,
+        "status": "Saving…",
+        "readsSoFar": 6,
+        "reads200": 3,
+        "readsErr": 3,
+        "dlReads": 0,
+        "dlOk": 0,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 20128,
+        "nonEmpty": 0,
+        "status": "Saving…",
+        "readsSoFar": 6,
+        "reads200": 3,
+        "readsErr": 3,
+        "dlReads": 0,
+        "dlOk": 0,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 30145,
+        "nonEmpty": 0,
+        "status": "Saving…",
+        "readsSoFar": 6,
+        "reads200": 3,
+        "readsErr": 3,
+        "dlReads": 0,
+        "dlOk": 0,
+        "dlBig": 0
+      },
+      {
+        "afterSwitchMs": 40179,
+        "nonEmpty": 418,
+        "status": "✓ Saved",
+        "readsSoFar": 26,
+        "reads200": 23,
+        "readsErr": 3,
+        "dlReads": 5,
+        "dlOk": 5,
+        "dlBig": 1
+      }
+    ],
+    "netErrors": [
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=local-workbook",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/catalog",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/addons/installed",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/settings",
+        "status": 404
+      },
+      {
+        "url": "http://localhost:18910/api/addons/grants?documentId=file-8a01310c-c74b-450e-951e-805b8644bf54",
+        "status": 502
+      },
+      {
+        "url": "http://localhost:18910/api/engine/session-extras",
+        "status": 401
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:18911/read",
+        "status": 404
+      }
+    ],
+    "tabsAtMs": 24615,
+    "tabCount": 16,
+    "initialNonEmpty": 0,
+    "initialStatus": "Saving…",
+    "switched": true,
+    "finalNonEmpty": 418,
+    "probeExample": {
+      "nonEmpty": 221
+    },
+    "probeBackDL": {
+      "nonEmpty": 418
+    },
+    "threshold": 334,
+    "readsTotal": 27
+  },
+  "fileId": "file-8a01310c-c74b-450e-951e-805b8644bf54",
+  "ownerFirstSheetPaint": 0,
+  "ownerImgs": 1,
+  "reads": [
+    {
+      "atMs": 23616,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "sheet": "?",
+      "post": "{\"fileId\":\"file-8a01310c-c74b-450e-951e-805b8644bf54\"}",
+      "size": 547
+    },
+    {
+      "atMs": 23694,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "sheet": "?",
+      "post": "{\"sessionId\":\"sess_13eb1c1c-a30e-4b3d-bd29-4e3f2a18a153\"}",
+      "size": 444
+    },
+    {
+      "atMs": 46622,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 46622,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 46622,
+      "status": 404,
+      "url": "EN/read",
+      "sheet": "Sheet1",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 46751,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "sheet": "?",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"to",
+      "size": 54
+    },
+    {
+      "atMs": 79152,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 79156,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Settings",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "size": 93
+    },
+    {
+      "atMs": 79219,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "icons",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "size": 14
+    },
+    {
+      "atMs": 79236,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "DropdownSizer",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "size": 14
+    },
+    {
+      "atMs": 79236,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Instructions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "size": 83
+    },
+    {
+      "atMs": 79236,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Images",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "size": 77
+    },
+    {
+      "atMs": 79236,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Translations",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "size": 98
+    },
+    {
+      "atMs": 79236,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International URLs",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "size": 89
+    },
+    {
+      "atMs": 79236,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Validation",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "size": 85
+    },
+    {
+      "atMs": 80617,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Browse Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "size": 81
+    },
+    {
+      "atMs": 80661,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "International Data",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "size": 89
+    },
+    {
+      "atMs": 80682,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "size": 80
+    },
+    {
+      "atMs": 80696,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Data Definitions",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "size": 87
+    },
+    {
+      "atMs": 80711,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Template",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "size": 86
+    },
+    {
+      "atMs": 81120,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Valid Values",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "size": 85
+    },
+    {
+      "atMs": 81419,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "AttributePTDMAP",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "size": 87
+    },
+    {
+      "atMs": 81548,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 81905,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 81905,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "size": 87
+    },
+    {
+      "atMs": 83282,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Dropdown Lists",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 87669,
+      "status": 200,
+      "url": "EN/read",
+      "sheet": "Example",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "size": 171311
+    }
+  ],
+  "ownerDropdownListsNonEmpty": 418,
+  "pass": true,
+  "verdict": "PASS"
+}

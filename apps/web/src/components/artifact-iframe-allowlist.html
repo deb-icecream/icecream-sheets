@@ -1,0 +1,12 @@
+<!-- Allow-list for the generated-app iframe stylesheet (Phase 1 design system).
+  Every class in the llm.ts prompt vocabulary plus every class the template
+  generator and canned app emit must appear here, so the Tailwind CLI build
+  includes them in artifact-iframe.compiled.css even when no template uses
+  a given class. This file is never rendered; it exists only for the
+  content scanner. The prompt-vocabulary test fails if a class named in the
+  prompt is missing from the compiled CSS. -->
+<div class="flex flex-col items-center justify-between gap-2 gap-3 gap-4 w-full max-w-60 overflow-x-auto"></div>
+<div class="p-2 p-3 p-4 mb-1 mb-2 mb-3 mb-2.5 mt-2"></div>
+<div class="text-xs text-sm text-base text-lg text-xl font-bold font-semibold text-left text-center text-base-content opacity-70 opacity-60"></div>
+<div class="card card-body card-title stats stat stat-title stat-value table table-zebra btn btn-primary btn-ghost btn-sm input badge badge-primary badge-ghost alert alert-error alert-info"></div>
+<div class="rounded rounded-box border border-base-300 bg-base-100 bg-base-200 shadow-sm"></div>

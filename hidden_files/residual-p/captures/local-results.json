@@ -1,0 +1,51 @@
+{
+ "label": "local",
+ "steps": {
+  "boot": "ok (no login gate — local mode)",
+  "open": {
+   "A1": "10",
+   "B2": "30"
+  },
+  "defineName": "ok",
+  "pageErrors": []
+ },
+ "exports": [
+  {
+   "format": "xlsx",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/local/dl-workbook-xlsx.xlsx"
+  },
+  {
+   "format": "csv",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/local/dl-workbook-csv.csv"
+  },
+  {
+   "format": "ods",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/local/dl-workbook-ods.ods"
+  },
+  {
+   "note": "namedRange radioDisabled=false"
+  },
+  {
+   "format": "xlsx",
+   "scope": "namedRange",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/local/dl-namedRange-xlsx.xlsx"
+  },
+  {
+   "note": "namedRange radioDisabled=false"
+  },
+  {
+   "format": "csv",
+   "scope": "namedRange",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/local/dl-namedRange-csv.csv"
+  }
+ ],
+ "verdicts": {}
+}

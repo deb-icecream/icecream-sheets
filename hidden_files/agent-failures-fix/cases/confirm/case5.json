@@ -1,0 +1,175 @@
+{
+  "case": "case5",
+  "gw": "http://localhost:9000",
+  "turns": [
+    {
+      "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a percentage. Then tell me which region has the largest share and what that share is.",
+      "ms": 32088,
+      "status": 200,
+      "message": "OK — I didn't make any changes.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        },
+        {
+          "kind": "approval",
+          "question": "",
+          "options": null,
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Compute each region's share of total revenue. For every data row in the Sales sheet, write in column D that row's region's share of the total revenue as a perce",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "question",
+          "tool": null,
+          "ok": null,
+          "text": "This will modify 12 cell(s). Proceed?",
+          "summary": "confirmation requested"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "Calculating regional revenue totals and preparing to write share percentages to column D. This will modify 12 cell(s). Proceed?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "agent.request_approval",
+          "ok": true,
+          "text": null,
+          "summary": "human-in-the-loop agent.request_approval: paused waiting for the user"
+        },
+        {
+          "kind": "confirmation",
+          "tool": null,
+          "ok": null,
+          "text": "Revenue",
+          "summary": "user declined the write"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "OK — I didn't make any changes.",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "status200": true,
+    "colDFilled12of12": false,
+    "filled": 0,
+    "northShareValue": null,
+    "northShareApproxCorrect": false,
+    "replyNamesNorthLargest": false,
+    "busyReplySignature": false,
+    "auditKinds": [
+      "user_message",
+      "tool_call",
+      "question",
+      "agent_message",
+      "confirmation"
+    ]
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-5715f073-8861-4910-9648-5587c0ff24a1",
+    "sessionId": "sess_893b3124-b728-47e8-a98b-4c32845505ec",
+    "colD": [
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      },
+      {
+        "kind": "null",
+        "value": null
+      }
+    ],
+    "releaseStatus": 200
+  }
+}

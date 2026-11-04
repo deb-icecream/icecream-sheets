@@ -1,0 +1,102 @@
+[
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index-bMw5Kr-K.js",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index-mX3dgP0t.css",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/auth/login",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "status": 401
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "status": 401
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "status": 401
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8199/sales.csv",
+  "status": 200
+ },
+ {
+  "m": "GET",
+  "url": "http://127.0.0.1:8199/sales.csv",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/execute",
+  "status": 401
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "status": 200
+ },
+ {
+  "m": "POST",
+  "url": "http://127.0.0.1:8101/execute",
+  "status": 401
+ },
+ {
+  "m": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "status": 401
+ }
+]

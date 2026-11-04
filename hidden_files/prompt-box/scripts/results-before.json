@@ -1,0 +1,20 @@
+{
+  "phase": "before",
+  "row": {
+    "left": 1101,
+    "right": 1440,
+    "top": 854,
+    "bottom": 900,
+    "width": 339,
+    "height": 46
+  },
+  "input": {
+    "left": 1111,
+    "right": 1366.859375,
+    "top": 863,
+    "bottom": 892,
+    "width": 255.859375,
+    "height": 29
+  },
+  "inputTag": "INPUT"
+}

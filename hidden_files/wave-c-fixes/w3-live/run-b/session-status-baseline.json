@@ -1,0 +1,27 @@
+{
+ "ok": true,
+ "sessionId": "sess_3bd0953c-17d5-48e6-8df4-271ef18dc46c",
+ "fileId": "file-35e49c39-4c1d-4fe1-a3e2-d9fcb7299a38",
+ "fenced": false,
+ "ownershipEpoch": null,
+ "participants": [
+  {
+   "principal": "user:carol",
+   "role": "editor"
+  }
+ ],
+ "status": "active",
+ "revision": 0,
+ "storageRevision": 0,
+ "pendingCheckpointOps": 0,
+ "extrasDirty": false,
+ "autosaveStats": {
+  "flushes": 0,
+  "noopSkips": 0,
+  "forcedFlushes": 0
+ },
+ "lastActivityAt": 1792674744752,
+ "idleTimeoutMs": 600000,
+ "instanceId": "engine-1",
+ "snapshotChecksum": null
+}

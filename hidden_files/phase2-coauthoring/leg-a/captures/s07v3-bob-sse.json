@@ -1,0 +1,84 @@
+[
+ {
+  "t": 1792634929443,
+  "kind": "open",
+  "url": "http://127.0.0.1:8201/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792634929575,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-81aca6e9-17e9-40ed-a939-aacaf99f99e8\"}"
+ },
+ {
+  "t": 1792634929576,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":true}"
+ },
+ {
+  "t": 1792634929576,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792634930222,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet2\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792634930793,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792634943154,
+  "kind": "open",
+  "url": "http://127.0.0.1:8201/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792634943162,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"fileId\":\"file-81aca6e9-17e9-40ed-a939-aacaf99f99e8\"}"
+ },
+ {
+  "t": 1792634943165,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ },
+ {
+  "t": 1792634943165,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet2\",\"row\":0,\"col\":0,\"editing\":false},{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792634943391,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet2\",\"row\":2,\"col\":0,\"editing\":false},{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792634945935,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ },
+ {
+  "t": 1792634947811,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet2\",\"row\":2,\"col\":0,\"editing\":false},{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":0,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792634950166,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ }
+]

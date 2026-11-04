@@ -1,0 +1,188 @@
+{
+ "thread1": "c20-s1-mvj6z5ib",
+ "thread2": "c20-s2-mvj6z5ib",
+ "s1Reply": "I will remember that your weekly sales report goes out on Fridays.",
+ "s1Audit": [
+  {
+   "seq": 73,
+   "ts": 1792652437683,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "user_message",
+   "text": "Please remember this about me: my weekly sales report goes out on Fridays."
+  },
+  {
+   "seq": 74,
+   "ts": 1792652439174,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "tool_call",
+   "tool": "memory_save",
+   "args": {
+    "key": "weekly_sales_report_day",
+    "value": "Friday",
+    "userId": "user:bob"
+   },
+   "ok": true,
+   "summary": "memory_save ok"
+  },
+  {
+   "seq": 75,
+   "ts": 1792652439174,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "memory",
+   "tool": "memory_save",
+   "ok": true,
+   "summary": "memory_save ok"
+  },
+  {
+   "seq": 76,
+   "ts": 1792652439174,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "tool_call",
+   "tool": "memory_load",
+   "args": {
+    "key": "user_memory_index",
+    "userId": "user:bob"
+   },
+   "ok": true,
+   "summary": "memory_load ok"
+  },
+  {
+   "seq": 77,
+   "ts": 1792652439174,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "memory",
+   "tool": "memory_load",
+   "ok": true,
+   "summary": "memory_load ok"
+  },
+  {
+   "seq": 78,
+   "ts": 1792652439177,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "tool_call",
+   "tool": "memory_save",
+   "args": {
+    "key": "user_memory_index",
+    "value": [
+     {
+      "key": "weekly_sales_report_day",
+      "summary": "Weekly sales report goes out on Fridays."
+     }
+    ],
+    "userId": "user:bob"
+   },
+   "ok": true,
+   "summary": "memory_save ok"
+  },
+  {
+   "seq": 79,
+   "ts": 1792652439177,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "memory",
+   "tool": "memory_save",
+   "ok": true,
+   "summary": "memory_save ok"
+  },
+  {
+   "seq": 80,
+   "ts": 1792652439730,
+   "principal": "user:bob",
+   "threadId": "c20-s1-mvj6z5ib",
+   "kind": "agent_message",
+   "text": "I will remember that your weekly sales report goes out on Fridays."
+  }
+ ],
+ "s2Reply": "Your weekly sales report usually goes out on Friday.",
+ "s2Audit": [
+  {
+   "seq": 81,
+   "ts": 1792652439789,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "user_message",
+   "text": "When does my weekly sales report go out?"
+  },
+  {
+   "seq": 82,
+   "ts": 1792652440666,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "question",
+   "text": "What day is your weekly sales report usually sent out?",
+   "summary": "agent asked user"
+  },
+  {
+   "seq": 83,
+   "ts": 1792652440666,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "agent_message",
+   "text": "I need to check your saved preferences to answer this. What day is your weekly sales report usually sent out?\n\nWhat day is your weekly sales report usually sent out?"
+  },
+  {
+   "seq": 84,
+   "ts": 1792652440666,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "tool_call",
+   "tool": "agent.ask_question",
+   "args": {
+    "principal": "user:bob",
+    "question": "What day is your weekly sales report usually sent out?"
+   },
+   "ok": true,
+   "summary": "human-in-the-loop agent.ask_question: paused waiting for the user"
+  },
+  {
+   "seq": 85,
+   "ts": 1792652442839,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "user_message",
+   "text": "I told you this in an earlier conversation — check your saved memory and answer from it."
+  },
+  {
+   "seq": 86,
+   "ts": 1792652443623,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "tool_call",
+   "tool": "memory_load",
+   "args": {
+    "key": "weekly_sales_report_day",
+    "userId": "user:bob"
+   },
+   "ok": true,
+   "summary": "memory_load ok"
+  },
+  {
+   "seq": 87,
+   "ts": 1792652443623,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "memory",
+   "tool": "memory_load",
+   "ok": true,
+   "summary": "memory_load ok"
+  },
+  {
+   "seq": 88,
+   "ts": 1792652444249,
+   "principal": "user:bob",
+   "threadId": "c20-s2-mvj6z5ib",
+   "kind": "agent_message",
+   "text": "Your weekly sales report usually goes out on Friday."
+  }
+ ],
+ "memorySaveInSession1": true,
+ "memoryLoadInSession2": true,
+ "replyNamesFriday": true,
+ "verdict": "PASS"
+}

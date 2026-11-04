@@ -1,0 +1,55 @@
+[
+ {
+  "t": 1792630797509,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792630797966,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"fileId\":\"file-5c21cb7c-efb8-4232-91fc-db95f936a02b\"}"
+ },
+ {
+  "t": 1792630797989,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ },
+ {
+  "t": 1792630798006,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792630799185,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":2,\"origin\":{\"clientId\":\"web-mviu201u-4wg8l\",\"clientSeq\":1,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":3,\"col\":0,\"value\":{\"kind\":\"string\",\"value\":\"BOB-KEEP-1\"}}]}"
+ },
+ {
+  "t": 1792630799201,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":2,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792630799596,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":3,\"origin\":{\"clientId\":\"web-mviu201u-4wg8l\",\"clientSeq\":2,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":4,\"col\":0,\"value\":{\"kind\":\"string\",\"value\":\"BOB-KEEP-2\"}}]}"
+ },
+ {
+  "t": 1792630799620,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":3,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792630801945,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":3,\"storedRevision\":3,\"saving\":false}"
+ }
+]

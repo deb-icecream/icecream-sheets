@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "file": {
+    "fileId": "file-405a462f-a8ec-4474-9afa-a36f6220e4a1",
+    "ownerPrincipal": "user:csvuser",
+    "name": "real.xlsx",
+    "sourceFormat": "xlsx",
+    "origin": "upload",
+    "sizeBytes": 4813,
+    "storageRef": {
+      "bucket": "icecream-uploads",
+      "object": "uploads/e413c48aacfe9847/file-405a462f-a8ec-4474-9afa-a36f6220e4a1.xlsx"
+    },
+    "libraryEntryId": null,
+    "hasStoredState": false,
+    "createdAt": 1792649540324,
+    "updatedAt": 1792649540324,
+    "lastOpenedAt": 1792649540324
+  }
+}

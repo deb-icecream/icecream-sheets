@@ -1,0 +1,206 @@
+{
+  "case": "case1",
+  "gw": "http://localhost:9000",
+  "turns": [
+    {
+      "text": "What is the total revenue in the Sales sheet?",
+      "ms": 11947,
+      "status": 200,
+      "message": "The total revenue in the Sales sheet is 159400.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "text": "Which region had the highest total revenue in the Sales sheet?",
+      "ms": 50417,
+      "status": 200,
+      "message": "The sheet 'Sheet1' (which appears to be the only sheet available and likely what you referred to as 'Sales sheet') is currently empty. I cannot determine the region with the highest total revenue without data. Has the data been cleared, or is it in another sheet?",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Which region had the highest total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": false,
+          "text": null,
+          "summary": "analyze_data failed: sheet \"Sheet1\" is empty"
+        },
+        {
+          "kind": "question",
+          "tool": null,
+          "ok": null,
+          "text": "Which sheet should I use for the sales data?",
+          "summary": "ask suppressed: which-sheet ask on a single-sheet workbook"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The sheet 'Sheet1' (which appears to be the only sheet available and likely what you referred to as 'Sales sheet') is currently empty. I cannot determine the re",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+      "ms": 2500,
+      "status": 200,
+      "message": "The sheet 'Sheet1' (which appears to be what you referred to as 'Sales sheet') is currently empty. I cannot list rows with revenue greater than 14000 without data. Has the data been cleared, or is it in another sheet?",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Which region had the highest total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": false,
+          "text": null,
+          "summary": "analyze_data failed: sheet \"Sheet1\" is empty"
+        },
+        {
+          "kind": "question",
+          "tool": null,
+          "ok": null,
+          "text": "Which sheet should I use for the sales data?",
+          "summary": "ask suppressed: which-sheet ask on a single-sheet workbook"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The sheet 'Sheet1' (which appears to be the only sheet available and likely what you referred to as 'Sales sheet') is currently empty. I cannot determine the re",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+          "summary": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The sheet 'Sheet1' (which appears to be what you referred to as 'Sales sheet') is currently empty. I cannot list rows with revenue greater than 14000 without da",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "t1Status200": true,
+    "t1ComputesTotal": true,
+    "t1NoTimeout": true,
+    "t1NoUnsuppressedQuestion": true,
+    "t2North89100": false,
+    "t3ListsAllFour": false
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-40aa6c94-a421-4fac-963f-f833a9f1644d",
+    "sessionId": "sess_1cab0b68-29a7-4ab6-a7d2-e5f1f6f1fca0",
+    "releaseStatus": 401
+  }
+}

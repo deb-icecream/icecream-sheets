@@ -1,0 +1,1190 @@
+/* Icecream Sheets web UI — plain CSS, no frameworks. */
+
+:root {
+  --bg: #f4f6f8;
+  --panel: #ffffff;
+  --line: #d8dee5;
+  --line-soft: #e8edf2;
+  --text: #1c2530;
+  --muted: #64707d;
+  --accent: #0e7c6b;
+  --accent-soft: #e3f2ee;
+  --header-bg: #eef1f5;
+  --error: #b3261e;
+  /* Chat/agent surfaces (D3): soft bubble fill + notice colors. Before
+     these tokens existed, --bg-soft was consumed but never defined, so
+     agent bubbles always fell back to the light value below — pale
+     bubbles with pale text in the dark theme. */
+  --bg-soft: #f3f4f6;
+  --notice-bg: #fef3c7;
+  --notice-line: #fcd34d;
+  --radius: 6px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Dark theme: the theme engine (product/userSettings.ts) sets
+   <html data-theme> to the RESOLVED theme. THE one authoritative dark
+   palette is the :root[data-theme='dark'] block near the end of this
+   file (D3: a second block that used to sit here defined the same ten
+   tokens with different values and was fully shadowed by it — removed;
+   do not re-add one). */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* D5 docked layout: the body row holds the main column and the agent
+   panel side by side; opening the panel shrinks the grid. */
+.app-body-row {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  align-items: stretch;
+}
+.app-main-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* -- Formula bar ------------------------------------------------------ */
+.formula-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.formula-address {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  min-width: 44px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 5px 6px;
+  background: var(--bg);
+}
+
+/* The name box is an <input> since sweep F-8: give it the span's old
+   footprint (an input's intrinsic width is far wider) and full-strength
+   text color while editing. */
+input.formula-address {
+  width: 72px;
+  box-sizing: border-box;
+}
+input.formula-address:focus {
+  color: var(--text);
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+.formula-input {
+  flex: 1;
+  font: inherit;
+  font-family: var(--mono);
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  /* Theme (workspace-settings): without an explicit surface the
+     input keeps the UA white in dark mode. --panel is the light
+     theme's input surface too, so this is a no-op there. */
+  background: var(--panel);
+  color: var(--text);
+}
+
+.formula-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+  border-color: var(--accent);
+}
+
+/* -- Grid ------------------------------------------------------------- */
+/* Zoom wrapper owned by App (ribbon View tab drives the `zoom` style). */
+.grid-zoom {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Gridlines toggle: hide data-cell borders, keep headers bordered. */
+.no-gridlines .grid-wrap div.cell {
+  border-color: transparent;
+}
+
+.grid-wrap {
+  flex: 1;
+  overflow: auto;
+  background: var(--panel);
+  outline: none;
+}
+
+.grid {
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 13px;
+}
+
+.grid th,
+.grid td {
+  border: 1px solid var(--line-soft);
+  padding: 0;
+  min-width: 96px;
+  width: 96px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.corner {
+  background: var(--header-bg);
+  min-width: 44px;
+  width: 44px;
+}
+
+.col-header,
+.row-header {
+  background: var(--header-bg);
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  user-select: none;
+  position: sticky;
+}
+
+.col-header {
+  top: 0;
+  z-index: 2;
+}
+
+.row-header {
+  left: 0;
+  z-index: 1;
+  min-width: 44px;
+  width: 44px;
+}
+
+.col-header.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cell {
+  cursor: cell;
+  background: var(--panel);
+}
+
+.cell.selected {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  background: var(--accent-soft);
+}
+
+/* Non-anchor cells of a range/row/column/select-all selection: a lighter
+   tint than the anchor's .cell.selected. */
+.cell.in-selection {
+  background: color-mix(in srgb, var(--accent-soft) 55%, var(--panel));
+}
+
+.row-header.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.corner.active {
+  background: var(--accent-soft);
+}
+
+.cell-text {
+  display: block;
+  padding: 2px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--mono);
+}
+
+.cell-editor {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 2px solid var(--accent);
+  font: inherit;
+  font-family: var(--mono);
+  padding: 2px 8px;
+}
+
+/* -- Sheet tabs ------------------------------------------------------- */
+.sheet-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  overflow-x: auto;
+}
+
+.sheet-tab {
+  font: inherit;
+  padding: 5px 14px;
+  border: 1px solid transparent;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sheet-tab:hover {
+  background: var(--line-soft);
+}
+
+.sheet-tab.active {
+  background: var(--panel);
+  border-color: var(--line);
+  border-bottom-color: var(--panel);
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: -7px;
+  padding-bottom: 11px;
+}
+
+.sheet-tab.add {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.sheet-name-input {
+  font: inherit;
+  padding: 5px 10px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  width: 140px;
+}
+
+/* -- App header ---------------------------------------------------------
+   Issue #24 (strip-fit follow-through): at phone widths the header's
+   controls are wider than the viewport (measured: the sync-status button
+   ended at 479px in a 390px viewport) and, the header being an unclipped
+   flex row, pushed the whole document sideways. Wrap the header to a
+   second row instead — every control stays visible and clickable and the
+   document never scrolls sideways. (flex-wrap is not set by the header's
+   inline styles, so this rule applies cleanly.) */
+@media (max-width: 600px) {
+  .app-header {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+}
+
+/* -- Status bar ------------------------------------------------------- */
+.status-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 5px 12px;
+  background: var(--header-bg);
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+}
+
+.status-item {
+  white-space: nowrap;
+}
+
+/* Idle-rule disconnected segment (StatusBar): visually distinct, with
+   the Reconnect affordance inline. */
+.status-item.session-disconnected {
+  color: #b3261e;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.session-reconnect {
+  font: inherit;
+  padding: 1px 8px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.status-ok {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.status-error {
+  color: var(--error);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+/* Dialogs (find/replace, conditional formatting, validation, filter) */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.dialog {
+  /* Design system (#40): token surface, radius and elevation. */
+  background: var(--panel);
+  color: var(--text);
+  font-family: var(--ds-font, var(--font));
+  border: 1px solid var(--line-soft);
+  border-radius: var(--ds-r-dialog, 16px);
+  padding: 16px;
+  min-width: 340px;
+  max-width: 440px;
+  box-shadow: var(--ds-shadow-dialog, 0 12px 40px rgba(15, 23, 42, 0.28));
+}
+.dialog-title {
+  font-weight: 600;
+  font-size: var(--ds-fs-title, 15px);
+  margin-bottom: 12px;
+}
+.dialog-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.dialog-row > span { min-width: 70px; color: var(--muted); }
+.dialog-row input[type="text"], .dialog-row input:not([type]), .dialog-row select {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  font-size: 13px;
+}
+.dialog-hint { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+/* Dialog form field (sweep F-6): the base rule was MISSING — only
+   .appbuilder-form had one — so every other dialog's <label> rendered
+   inline: label text and input shared a line and wrapped mid-phrase
+   ("Confirm" stranded at a line end, "password" on the next). The
+   field is a block: label on its own line, control full-width below. */
+.dialog-field { display: block; margin-bottom: 10px; font-size: 13px; }
+.dialog-field > span { display: block; margin-bottom: 4px; }
+.dialog-field input:not([type='checkbox']):not([type='radio']),
+.dialog-field select,
+.dialog-field textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px 8px;
+  border: 1px solid var(--line-soft, #ccc);
+  border-radius: 4px;
+  font-size: 13px;
+  box-sizing: border-box;
+  background: var(--bg);
+  color: var(--text);
+}
+/* Production sign-in gate (GatewayLogin, no dev login): a plain page,
+   not a dialog — one "Sign in with Google" button, clicked once. */
+.signin-screen {
+  max-width: 420px;
+  margin: 12vh auto 0;
+  padding: 24px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+.signin-screen-title { font-size: 22px; margin: 0 0 8px; }
+.signin-screen-actions { justify-content: center; }
+.signin-screen .dialog-error { color: #b3261e; font-size: 13px; margin-top: 12px; }
+.dialog-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+.dialog-actions button {
+  padding: 6px 12px;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  background: var(--bg, #fff);
+  cursor: pointer;
+  font-size: 13px;
+}
+.dialog-actions button:disabled { opacity: 0.5; cursor: default; }
+.dialog-actions button:hover:not(:disabled) { background: var(--hover, #f0f0f0); }
+
+/* Context menu */
+.ctx-menu {
+  position: fixed;
+  z-index: 120;
+  background: var(--bg, #fff);
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 4px;
+  min-width: 200px;
+  outline: none;
+}
+.ctx-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 6px 12px;
+  border: none;
+  background: none;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.ctx-item:hover:not(:disabled) { background: var(--hover, #f0f0f0); }
+.ctx-item:disabled { opacity: 0.5; cursor: default; }
+
+/* Filter value list */
+.filter-list {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 8px;
+}
+.filter-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 3px 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.filter-item:hover { background: var(--hover, #f0f0f0); }
+
+/* Validation dropdown indicator */
+.cell-validation {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+/* Frozen pane dividers */
+.freeze-divider-row { border-bottom: 2px solid var(--accent, #217346) !important; }
+.freeze-divider-col { border-right: 2px solid var(--accent, #217346) !important; }
+
+/* Focus Cell: extra-prominent selection highlight. */
+.cell.selected.focus-cell {
+  box-shadow: inset 0 0 0 2px #217346, 0 0 8px rgba(33, 115, 70, 0.5);
+}
+
+/* Context menu submenus and separators. */
+.ctx-separator { height: 1px; background: var(--line-soft, #e5e5e5); margin: 4px 8px; }
+.ctx-submenu { position: relative; }
+.ctx-submenu-label { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.ctx-submenu-arrow { margin-left: 16px; opacity: 0.6; }
+.ctx-submenu-popup {
+  position: absolute; left: 100%; top: 0; min-width: 180px;
+  background: #fff; border: 1px solid var(--line, #d4d4d4); border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 4px; z-index: 70;
+}
+
+/* Format Cells dialog tabs. */
+.dialog-tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line-soft, #e5e5e5); margin-bottom: 12px; }
+.dialog-tab { padding: 6px 12px; border: none; background: none; cursor: pointer; font-size: 13px; color: #555; border-bottom: 2px solid transparent; }
+.dialog-tab.active { color: #217346; border-bottom-color: #217346; font-weight: 600; }
+.dialog-tabpanel { min-height: 180px; }
+.dialog-btnrow { display: flex; gap: 4px; }
+.dialog-swatches { display: flex; flex-wrap: wrap; gap: 4px; max-width: 280px; }
+.dialog-swatch { width: 24px; height: 24px; border: 1px solid #999; border-radius: 3px; cursor: pointer; padding: 0; }
+.dialog-swatch.active { outline: 2px solid #217346; outline-offset: 1px; }
+.dialog-hint { font-size: 12px; color: #6e6e6e; margin: 8px 0 0; }
+
+/* Screen-reader-only content (track 23 accessibility). */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visible focus indicator for keyboard navigation. */
+.grid-wrap:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+/* Skip links: visually hidden until focused (design-docs/accessibility.md §2.4). */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  padding: 8px 16px;
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0 0 6px 0;
+  text-decoration: none;
+}
+.skip-link:focus-visible {
+  left: 0;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+/* Script editor dialog (ScriptEditor.tsx) — large app-like dialog on A11yDialog. */
+.scripteditor-dialog {
+  max-width: min(1100px, 96vw);
+  height: min(760px, 92vh);
+  max-height: 92vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.scripteditor-dialog .dialog-titlebar {
+  padding: 10px 16px;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--line-soft, #e5e5e5);
+  flex: 0 0 auto;
+}
+.scripteditor-dialog .dialog-title .scripteditor-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  margin-left: 12px;
+}
+
+/* Dialog titlebar (A11yDialog). */
+.dialog-titlebar {  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.dialog-close {
+  /* Design-system icon button (#40/#33): 36px hit area, token colors. */
+  border: none;
+  background: none;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+.dialog-close:hover {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+.dialog-close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Reduced motion (design-docs/accessibility.md §2.6). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* AI Agent chat panel (track 29). D5: DOCKED as a layout column in
+   .app-body-row (width set inline from the persisted panel width) —
+   the grid shrinks to make room; it never floats over cells. */
+.agent-chat {
+  position: relative;
+  flex: 0 0 auto;
+  order: 2;
+  background: var(--bg, #fff);
+  color: var(--text);
+  border-left: 1px solid var(--line, #d4d4d4);
+  display: flex;
+  flex-direction: column;
+}
+/* The divider: drag handle on the panel's left edge, keyboard-operable
+   (role="separator" in AgentChat.tsx; arrows resize). #34: the grip is
+   ALWAYS visible (a centered pill) so the divider reads as draggable
+   without hovering first; hover/focus/drag brighten it to the accent. */
+.agent-resize-handle {
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
+  width: 9px;
+  cursor: ew-resize;
+  touch-action: none;
+  z-index: 5;
+}
+.agent-resize-handle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background: var(--muted);
+  opacity: 0.45;
+  transition: opacity 0.15s ease, background 0.15s ease;
+}
+.agent-resize-handle:hover,
+.agent-resize-handle:focus-visible {
+  background: var(--accent-soft);
+  box-shadow: inset 2px 0 0 var(--accent);
+  outline: none;
+}
+.agent-resize-handle:hover::after,
+.agent-resize-handle:focus-visible::after,
+body.agent-resizing .agent-resize-handle::after {
+  background: var(--accent);
+  opacity: 1;
+}
+body.agent-resizing .agent-resize-handle {
+  background: var(--accent-soft);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+body.agent-resizing {
+  cursor: ew-resize;
+  user-select: none;
+}
+body.agent-resizing iframe {
+  pointer-events: none;
+}
+.agent-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line-soft, #e5e5e5);
+}
+.agent-chat-title {
+  font-weight: 600;
+  margin-right: auto;
+}
+.agent-chip {
+  font-size: 12px;
+  padding: 3px 8px;
+  border: 1px solid var(--line, #d4d4d4);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+.agent-chip-on {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+.agent-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.agent-msg {
+  max-width: 92%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.agent-msg-user {
+  align-self: flex-end;
+  background: #2563eb;
+  color: #fff;
+}
+.agent-msg-agent {
+  align-self: flex-start;
+  background: var(--bg-soft);
+}
+.agent-msg-notice {
+  align-self: center;
+  background: var(--notice-bg);
+  border: 1px solid var(--notice-line);
+  font-size: 12px;
+}
+.agent-typing {
+  opacity: 0.6;
+}
+.agent-pending {
+  align-self: flex-start;
+  background: var(--panel);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+.agent-pending-options {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.agent-pending-options button {
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+.agent-pending-options input {
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--line, #d4d4d4);
+  background: var(--panel);
+  color: var(--text);
+}
+/* Generated-app artifact panel: DOCKED as its own layout column beside
+ * the chat (D5 — .app-body-row flex order 1, between the main column
+ * and the chat), expands to a fullscreen overlay on demand. The
+ * app-artifact lane mounts the generated React app inside
+ * .agent-artifact-body. */
+.agent-artifact {
+  position: relative;
+  flex: 0 1 560px;
+  order: 1;
+  min-width: 0;
+  background: var(--bg, #fff);
+  color: var(--text);
+  border-left: 1px solid var(--line, #d4d4d4);
+  display: flex;
+  flex-direction: column;
+}
+.agent-artifact-expanded {
+  position: fixed;
+  inset: 12px;
+  width: auto;
+  z-index: 120;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+.agent-artifact-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line, #d4d4d4);
+}
+.agent-artifact-title {
+  font-weight: 600;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.agent-artifact-body {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+}
+.agent-artifact-placeholder {
+  background: var(--bg-soft);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.agent-audit {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.agent-audit-empty {
+  color: var(--muted);
+  padding: 8px;
+}
+.agent-audit-row {
+  display: flex;
+  gap: 6px;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--line-soft, #eee);
+}
+.agent-audit-seq {
+  color: var(--muted);
+  min-width: 34px;
+}
+.agent-audit-kind {
+  font-weight: 600;
+  min-width: 92px;
+}
+.agent-input-row {
+  padding: 10px;
+  border-top: 1px solid var(--line-soft, #e5e5e5);
+}
+/* Gemini-style composer (issue #25): one rounded container with a
+   borderless auto-growing textarea inside; action buttons sit inside
+   the container along its bottom row. Min height fits ~2 lines;
+   beyond the max height the textarea scrolls internally. */
+.agent-composer {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 1px solid var(--line, #d4d4d4);
+  border-radius: 26px;
+  padding: 10px 10px 8px 16px;
+}
+.agent-composer:focus-within {
+  border-color: var(--accent);
+}
+.agent-composer textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 46px;
+  max-height: 168px;
+  overflow-y: auto;
+  padding: 2px 8px 2px 0;
+  width: 100%;
+}
+.agent-composer textarea::placeholder {
+  color: var(--muted);
+}
+.agent-composer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 6px;
+}
+.agent-composer-actions button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.agent-composer-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* AI Agent floating entry button. */
+.agent-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 90;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 1px solid #93c5fd;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+}
+.agent-fab:hover {
+  background: #1d4ed8;
+}
+.voice-fab {
+  position: fixed;
+  /* #35: when the agent panel is docked open, AgentChat publishes its
+     rendered footprint as --agent-dock-width and the bubble anchors to
+     the bottom-right of the SPREADSHEET area (immediately left of the
+     panel), tracking divider drags; panel closed -> var unset -> the
+     normal viewport corner. */
+  right: calc(16px + var(--agent-dock-width, 0px));
+  bottom: 64px;
+  z-index: 90;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 1px solid #99f6e4;
+  background: #0f766e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.35);
+}
+.voice-fab:hover {
+  background: #115e59;
+}
+
+/* No-code app builder */
+.appbuilder-dialog { min-width: 560px; max-width: 860px; width: min(860px, 94vw); max-height: 90vh; display: flex; flex-direction: column; }
+.appbuilder-dialog .dialog-title { display: flex; justify-content: space-between; align-items: center; }
+/* .dialog-close is defined once, on the design system (above). */
+.dialog-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.dialog-backdrop .dialog-backdrop { z-index: 110; }
+.appbuilder-steps { display: flex; gap: 4px; list-style: none; padding: 0; margin: 0 0 12px; font-size: 12px; }
+.appbuilder-steps li { flex: 1; text-align: center; padding: 6px 4px; border-bottom: 2px solid var(--line-soft, #e0e0e0); color: var(--muted, #666); }
+.appbuilder-steps li.active { border-bottom-color: #217346; color: inherit; font-weight: 600; }
+.appbuilder-steps li.done { border-bottom-color: #217346; }
+.appbuilder-step { overflow-y: auto; min-height: 200px; }
+.appbuilder-step h4 { margin: 12px 0 6px; font-size: 13px; }
+.appbuilder-range-row { display: flex; gap: 8px; }
+.appbuilder-range-row .dialog-field { flex: 1; }
+.appbuilder-check { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; margin: 6px 0; cursor: pointer; }
+.appbuilder-colpreview ul { list-style: none; padding: 0; margin: 4px 0; font-size: 13px; }
+.appbuilder-colpreview li { padding: 2px 0; }
+.appbuilder-coltype { font-style: normal; font-size: 11px; color: var(--muted, #666); background: var(--hover, #f0f0f0); border-radius: 3px; padding: 1px 6px; margin-left: 6px; }
+.appbuilder-preview { min-height: 320px; }
+.appbuilder-footer .appbuilder-spacer { flex: 1; }
+.appbuilder { display: flex; flex-direction: column; min-height: 0; }
+.appbuilder-nav { display: flex; gap: 4px; margin-bottom: 10px; border-bottom: 1px solid var(--line-soft, #e0e0e0); padding-bottom: 8px; flex-wrap: wrap; }
+.appbuilder-nav button { border: 1px solid transparent; background: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.appbuilder-nav button.active { background: #217346; color: #fff; }
+.appbuilder-nav button:hover:not(.active) { background: var(--hover, #f0f0f0); }
+.appbuilder-view { overflow-y: auto; min-height: 220px; max-height: 52vh; }
+.appbuilder-actionbar { display: flex; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line-soft, #e0e0e0); flex-wrap: wrap; }
+.appbuilder-actionbar button { padding: 6px 12px; border: 1px solid var(--line-soft, #ccc); border-radius: 4px; background: var(--bg, #fff); cursor: pointer; font-size: 13px; }
+.appbuilder-actionbar button.primary { background: #217346; color: #fff; border-color: #217346; }
+.appbuilder-actionbar button.danger { background: #c00000; color: #fff; border-color: #c00000; }
+.appbuilder-actionbar button:disabled { opacity: 0.45; cursor: default; }
+.appbuilder-tablewrap { overflow: auto; }
+.appbuilder-table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.appbuilder-table th, .appbuilder-table td { border: 1px solid var(--line-soft, #e0e0e0); padding: 6px 10px; text-align: left; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.appbuilder-table th { background: var(--hover, #f5f5f5); font-weight: 600; }
+.appbuilder-table tbody tr { cursor: pointer; }
+.appbuilder-table tbody tr:hover { background: var(--hover, #f5f5f5); }
+.appbuilder-table tbody tr.selected { background: #dcefe3; }
+.appbuilder-denied { display: inline-block; min-width: 24px; }
+.appbuilder-link { color: #1a5fb4; text-decoration: underline; cursor: pointer; }
+.appbuilder-thumb { max-height: 40px; max-width: 80px; display: block; margin-top: 4px; }
+.appbuilder-detail { font-size: 13px; }
+.appbuilder-pager { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+.appbuilder-pager button { padding: 4px 12px; border: 1px solid var(--line-soft, #ccc); border-radius: 4px; background: var(--bg, #fff); cursor: pointer; }
+.appbuilder-pager select { padding: 4px 8px; border: 1px solid var(--line-soft, #ccc); border-radius: 4px; }
+.appbuilder-fields { display: grid; grid-template-columns: 160px 1fr; gap: 6px 12px; margin: 0; }
+.appbuilder-field { display: contents; }
+.appbuilder-field dt { color: var(--muted, #666); }
+.appbuilder-field dd { margin: 0; word-break: break-word; }
+.appbuilder-form { max-width: 480px; }
+.appbuilder-form h4 { margin: 0 0 8px; }
+.appbuilder-form .dialog-field { display: block; margin-bottom: 10px; }
+.appbuilder-form .dialog-field > span { display: block; font-size: 12px; color: var(--muted, #666); margin-bottom: 4px; }
+.appbuilder-form input[type="text"], .appbuilder-form input[type="number"], .appbuilder-form input[type="date"] { width: 100%; padding: 6px 8px; border: 1px solid var(--line-soft, #ccc); border-radius: 4px; font-size: 13px; box-sizing: border-box; }
+.appbuilder-field-error { display: block; color: #c00000; font-size: 12px; margin-top: 4px; }
+.appbuilder-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.appbuilder-card { border: 1px solid var(--line-soft, #e0e0e0); border-radius: 8px; padding: 12px; background: var(--bg, #fff); cursor: pointer; text-align: left; font-size: 13px; }
+.appbuilder-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.appbuilder-card-img { width: 100%; height: 120px; object-fit: cover; border-radius: 4px; margin-bottom: 8px; }
+.appbuilder-card-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+.appbuilder-card-sub { color: var(--muted, #666); font-size: 12px; margin-bottom: 8px; }
+.appbuilder-card-field { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; padding: 2px 0; }
+.appbuilder-card-field span:first-child { color: var(--muted, #666); }
+
+/* -- Dark theme (per-user setting, platform-shell.md §4) --------------
+   THE authoritative dark palette — the only :root[data-theme='dark']
+   token block in this file (D3). Palette held to WCAG 2.2 AA contrast
+   for text on --bg/--panel/--bg-soft. */
+:root[data-theme='dark'] {
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --line: #334155;
+  --line-soft: #24334a;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #2dd4bf;
+  --accent-soft: #134e4a;
+  --header-bg: #1a2436;
+  --error: #f87171;
+  --bg-soft: #273549;
+  --notice-bg: #4a3a10;
+  --notice-line: #a16207;
+}
+
+/* -- Autocomplete dropdown (deterministic-inference.md §5) ------------ */
+.cell-editor-wrap { position: relative; display: block; width: 100%; height: 100%; }
+.formula-input-wrap { position: relative; display: block; flex: 1; }
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  max-width: 420px;
+  max-height: 240px;
+  overflow-y: auto;
+  background: var(--panel, #fff);
+  border: 1px solid var(--line, #ccc);
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 1000;
+  font-size: 13px;
+}
+.autocomplete-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.autocomplete-item.active { background: var(--accent-soft, #e8f0fe); }
+.autocomplete-label { font-family: var(--mono, monospace); overflow: hidden; text-overflow: ellipsis; }
+.autocomplete-hint { color: var(--muted, #666); font-size: 12px; }
+
+/* -- Inference proposal panel (deterministic-inference.md §3) -------- */
+.inference-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 420px;
+  max-width: 90vw;
+  height: 100vh;
+  background: var(--panel, #fff);
+  border-left: 1px solid var(--line, #ccc);
+  box-shadow: -4px 0 16px rgba(0,0,0,0.12);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: auto;
+}
+.inference-panel-head { display: flex; justify-content: space-between; align-items: center; }
+.inference-panel-head h2 { margin: 0; font-size: 18px; }
+.inference-panel-note { color: var(--muted, #666); font-size: 12px; }
+.inference-empty { color: var(--muted, #666); font-style: italic; }
+.inference-list { display: flex; flex-direction: column; gap: 12px; }
+.inference-card {
+  border: 1px solid var(--line, #ddd);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--bg, #fff);
+}
+.inference-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.inference-card-title { font-weight: 600; font-size: 14px; }
+.inference-card-meta { color: var(--muted, #666); font-size: 11px; margin-top: 2px; }
+.inference-card-close { background: none; border: none; cursor: pointer; font-size: 14px; }
+.inference-card-desc { font-size: 13px; margin: 8px 0; }
+.inference-preview { width: 100%; border-collapse: collapse; font-size: 12px; margin: 8px 0; }
+.inference-preview th, .inference-preview td { border: 1px solid var(--line-soft, #eee); padding: 4px 6px; text-align: left; }
+.inference-preview th { background: var(--header-bg, #f5f5f5); font-weight: 600; }
+.inference-before { color: var(--muted, #666); text-decoration: line-through; max-width: 140px; overflow: hidden; text-overflow: ellipsis; }
+.inference-after { font-family: var(--mono, monospace); color: #1a7f37; max-width: 140px; overflow: hidden; text-overflow: ellipsis; }
+.inference-cell-ref { font-family: var(--mono, monospace); }
+.inference-deselected { opacity: 0.45; }
+.inference-link { background: none; border: none; color: var(--accent, #1a73e8); cursor: pointer; font-size: 12px; padding: 0; }
+.inference-actions { display: flex; gap: 8px; margin-top: 8px; }
+.inference-accept { background: #1a73e8; color: #fff; border: none; border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+.inference-accept:disabled { opacity: 0.5; cursor: not-allowed; }
+.inference-reject { background: none; border: 1px solid var(--line, #ccc); border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+.inference-modify-btn { background: none; border: 1px solid var(--line, #ccc); border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+.inference-modify { display: flex; gap: 8px; margin-top: 8px; }
+.inference-modify-input { flex: 1; font-family: var(--mono, monospace); padding: 6px; border: 1px solid var(--line, #ccc); border-radius: 4px; }
+
+.dialog-panel {
+  background: var(--panel, #fff);
+  color: var(--text, #1c2530);
+  border: 1px solid var(--line-soft, #e8edf2);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.dialog-panel input, .dialog-panel select { color: var(--text, #1c2530); }
+
+/* Issue #17: blocking join-failure state (failed ?file= join). Covers
+   the whole app so the phantom grid behind it can never be typed into;
+   colors come from the theme tokens like every other surface. */
+.join-failure-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+.join-failure-card {
+  max-width: 420px;
+  margin: 16px;
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+}
+.join-failure-card h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+.join-failure-card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.join-failure-actions {
+  display: flex;
+  gap: 8px;
+}
+.join-failure-actions button {
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  cursor: pointer;
+}
+.join-failure-actions button:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}

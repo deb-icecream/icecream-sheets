@@ -1,0 +1,364 @@
+{
+ "inventory": {
+  "values": [
+   [
+    {
+     "kind": "string",
+     "value": "SKU"
+    },
+    {
+     "kind": "string",
+     "value": "Item"
+    },
+    {
+     "kind": "string",
+     "value": "Warehouse"
+    },
+    {
+     "kind": "string",
+     "value": "Units"
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A100"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "number",
+     "value": 34
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A101"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "number",
+     "value": 57
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A102"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "number",
+     "value": 21
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "string",
+     "value": "A103"
+    },
+    {
+     "kind": "string",
+     "value": "Sprocket"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "number",
+     "value": 48
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ]
+  ],
+  "formulas": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ "salesSqlHead": {
+  "values": [
+   [
+    {
+     "kind": "string",
+     "value": "order_id"
+    },
+    {
+     "kind": "string",
+     "value": "order_date"
+    },
+    {
+     "kind": "string",
+     "value": "region"
+    },
+    {
+     "kind": "string",
+     "value": "product"
+    },
+    {
+     "kind": "string",
+     "value": "units"
+    },
+    {
+     "kind": "string",
+     "value": "unit_price"
+    },
+    {
+     "kind": "string",
+     "value": "revenue"
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1001
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-01"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 2
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 19.98
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1002
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-02"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 9
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 179.91
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1003
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-03"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 16
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 472
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ]
+  ],
+  "formulas": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ }
+}

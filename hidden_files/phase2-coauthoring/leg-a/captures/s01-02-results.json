@@ -1,0 +1,119 @@
+{
+ "scenario": "1-join + 2-convergence",
+ "steps": {
+  "aliceUpload": {
+   "fileId": "file-f009972f-74e9-4568-9af0-5548508ff443",
+   "hash": "#file=file-f009972f-74e9-4568-9af0-5548508ff443",
+   "A1": "10",
+   "B2formulaResult": "30",
+   "errors": []
+  },
+  "aliceOpenApi": {
+   "status": 200,
+   "sessionId": "sess_be2c7e69-7994-43d3-a2f1-52a3964215d3",
+   "joined": true,
+   "engineUrl": "http://127.0.0.1:8101",
+   "revision": 0,
+   "epoch": 1
+  },
+  "registry": {
+   "fileId": "file-f009972f-74e9-4568-9af0-5548508ff443",
+   "sessionId": "sess_be2c7e69-7994-43d3-a2f1-52a3964215d3",
+   "ownerInstance": "engine-1",
+   "ownerEndpoint": "http://127.0.0.1:8101",
+   "leaseExpiry": 1792624519705,
+   "ownershipEpoch": 1,
+   "currentRevision": 0,
+   "storedRevision": 0,
+   "updatedAt": 1792624489705,
+   "creatorPrincipal": "user:alice"
+  },
+  "bobOpenApi": {
+   "status": 200,
+   "sessionId": "sess_be2c7e69-7994-43d3-a2f1-52a3964215d3",
+   "joined": true,
+   "engineUrl": "http://127.0.0.1:8101",
+   "revision": 0
+  },
+  "statusPerToken": {
+   "alice": {
+    "status": 200,
+    "revision": 0,
+    "participants": [
+     {
+      "principal": "user:alice",
+      "role": "editor"
+     },
+     {
+      "principal": "user:bob",
+      "role": "editor"
+     }
+    ]
+   },
+   "bob": {
+    "status": 200,
+    "revision": 0,
+    "participants": [
+     {
+      "principal": "user:alice",
+      "role": "editor"
+     },
+     {
+      "principal": "user:bob",
+      "role": "editor"
+     }
+    ]
+   }
+  },
+  "bobSees": {
+   "A1": "10",
+   "B1": "20",
+   "B2": "30"
+  },
+  "convergence": {
+   "domAlice": {
+    "0,0": "15",
+    "0,1": "20",
+    "0,2": "35",
+    "1,1": "35",
+    "2,0": "111",
+    "2,1": "222"
+   },
+   "domBob": {
+    "0,0": "15",
+    "0,1": "20",
+    "0,2": "35",
+    "1,1": "35",
+    "2,0": "111",
+    "2,1": "222"
+   },
+   "srvAlice": {
+    "0,0": "15",
+    "0,1": "20",
+    "0,2": "35",
+    "1,1": "35",
+    "2,0": "111",
+    "2,1": "222"
+   },
+   "srvBob": {
+    "0,0": "15",
+    "0,1": "20",
+    "0,2": "35",
+    "1,1": "35",
+    "2,0": "111",
+    "2,1": "222"
+   }
+  },
+  "convergenceEqual": {
+   "domAliceVsDomBob": true,
+   "domAliceVsServerAlice": true,
+   "domAliceVsServerBob": true
+  }
+ },
+ "verdicts": {
+  "join": "PASS",
+  "convergence": "PASS"
+ },
+ "fileId": "file-f009972f-74e9-4568-9af0-5548508ff443",
+ "sessionId": "sess_be2c7e69-7994-43d3-a2f1-52a3964215d3"
+}

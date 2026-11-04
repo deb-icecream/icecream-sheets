@@ -1,0 +1,256 @@
+{
+  "t1": {
+    "text": "What is the total revenue in the Sales sheet?",
+    "durationMs": 3080,
+    "httpStatus": 200,
+    "message": "The total revenue in the Sales sheet is $159,400.",
+    "rawText": "{\"threadId\":\"planner-proof4-thread\",\"message\":\"The total revenue in the Sales sheet is $159,400.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792670301927,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792670303473,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"tool_call\",\"tool\":\"analyze_data\",\"args\":{\"intent\":\"total revenue by region\",\"sheet\":\"Sales\"},\"ok\":true,\"summary\":\"analyze_data ok\"},{\"seq\":3,\"ts\":1792670304158,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"agent_message\",\"text\":\"The region with the highest total revenue was North, with $89,100.\"},{\"seq\":4,\"ts\":1792670305190,\"principal\":\"user:alice\",\"threadId\":\"planner-pro",
+    "chartAttached": true,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "tool_call": 1,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [
+      {
+        "tool": "analyze_data",
+        "ok": true,
+        "summary": "analyze_data ok"
+      }
+    ],
+    "audit": [
+      {
+        "seq": 7,
+        "ts": 1792670308347,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "user_message",
+        "text": "What is the total revenue in the Sales sheet?"
+      },
+      {
+        "seq": 8,
+        "ts": 1792670309318,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "tool_call",
+        "tool": "analyze_data",
+        "args": {
+          "intent": "total revenue",
+          "sheet": "Sales"
+        },
+        "ok": true,
+        "summary": "analyze_data ok"
+      },
+      {
+        "seq": 9,
+        "ts": 1792670309882,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "agent_message",
+        "text": "The total revenue in the Sales sheet is $159,400."
+      }
+    ]
+  },
+  "t2": {
+    "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+    "durationMs": 24346,
+    "httpStatus": 200,
+    "message": "The revenue for Jun South has been updated to 15000.",
+    "rawText": "{\"threadId\":\"planner-proof4-thread\",\"message\":\"The revenue for Jun South has been updated to 15000.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792670301927,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792670303473,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"tool_call\",\"tool\":\"analyze_data\",\"args\":{\"intent\":\"total revenue by region\",\"sheet\":\"Sales\"},\"ok\":true,\"summary\":\"analyze_data ok\"},{\"seq\":3,\"ts\":1792670304158,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"agent_message\",\"text\":\"The region with the highest total revenue was North, with $89,100.\"},{\"seq\":4,\"ts\":1792670305190,\"principal\":\"user:alice\",\"threadId\":\"planner-",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "tool_call": 1,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [],
+    "tools": [
+      {
+        "tool": "write_cells",
+        "ok": true,
+        "summary": "write_cells ok"
+      }
+    ],
+    "audit": [
+      {
+        "seq": 10,
+        "ts": 1792670311731,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "user_message",
+        "text": "Set the Revenue for Jun South to 15000 in the Sales sheet."
+      },
+      {
+        "seq": 11,
+        "ts": 1792670323314,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "tool_call",
+        "tool": "write_cells",
+        "args": {
+          "cells": [
+            {
+              "sheet": "Sales",
+              "row": 3,
+              "col": 2,
+              "value": 15000
+            }
+          ]
+        },
+        "ok": true,
+        "summary": "write_cells ok"
+      },
+      {
+        "seq": 12,
+        "ts": 1792670334959,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "agent_message",
+        "text": "The revenue for Jun South has been updated to 15000."
+      }
+    ]
+  },
+  "t3": {
+    "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it.",
+    "durationMs": 16144,
+    "httpStatus": 200,
+    "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+    "rawText": "{\"threadId\":\"planner-proof4-thread\",\"message\":\"The model service is busy right now, so I could not finish that request. Please try again in a moment.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792670301927,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792670303473,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"tool_call\",\"tool\":\"analyze_data\",\"args\":{\"intent\":\"total revenue by region\",\"sheet\":\"Sales\"},\"ok\":true,\"summary\":\"analyze_data ok\"},{\"seq\":3,\"ts\":1792670304158,\"principal\":\"user:alice\",\"threadId\":\"planner-proof4-thread\",\"kind\":\"agent_message\",\"text\":\"The region with the highest total revenue was North, with $89,100.\"},{\"seq\":4,\"ts\":179267030",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "tool_call": 3,
+      "timeout": 1,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [
+      "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+    ],
+    "tools": [
+      {
+        "tool": "read_cells",
+        "ok": true,
+        "summary": "read_cells ok"
+      },
+      {
+        "tool": "write_cells",
+        "ok": false,
+        "summary": "write_cells failed: write target Sales!R100000C0 is far outside the sheet's used range (rows 0..12, cols 0..2); writing there would strand the value away from t"
+      },
+      {
+        "tool": "set_formulas",
+        "ok": false,
+        "summary": "set_formulas failed: write target Sales!R100000C2 is far outside the sheet's used range (rows 0..12, cols 0..2); writing there would strand the value away from "
+      }
+    ],
+    "audit": [
+      {
+        "seq": 13,
+        "ts": 1792670336166,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "user_message",
+        "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it."
+      },
+      {
+        "seq": 14,
+        "ts": 1792670338995,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "tool_call",
+        "tool": "read_cells",
+        "args": {
+          "sheet": "Sales",
+          "startRow": 0,
+          "startCol": 0,
+          "endRow": 100000,
+          "endCol": 100000
+        },
+        "ok": true,
+        "summary": "read_cells ok"
+      },
+      {
+        "seq": 15,
+        "ts": 1792670338999,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "tool_call",
+        "tool": "write_cells",
+        "args": {
+          "cells": [
+            {
+              "sheet": "Sales",
+              "row": 100000,
+              "col": 0,
+              "value": "TOTAL"
+            }
+          ]
+        },
+        "ok": false,
+        "summary": "write_cells failed: write target Sales!R100000C0 is far outside the sheet's used range (rows 0..12, cols 0..2); writing there would strand the value away from the data. To append directly below the data, write at row 13; otherwise locate the exact target cell with read_cells first."
+      },
+      {
+        "seq": 16,
+        "ts": 1792670339003,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "tool_call",
+        "tool": "set_formulas",
+        "args": {
+          "formulas": [
+            {
+              "sheet": "Sales",
+              "row": 100000,
+              "col": 2,
+              "formula": "=SUM(C1:C99999)"
+            }
+          ]
+        },
+        "ok": false,
+        "summary": "set_formulas failed: write target Sales!R100000C2 is far outside the sheet's used range (rows 0..12, cols 0..2); writing there would strand the value away from the data. To append directly below the data, write at row 13; otherwise locate the exact target cell with read_cells first."
+      },
+      {
+        "seq": 17,
+        "ts": 1792670351833,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+      },
+      {
+        "seq": 18,
+        "ts": 1792670351834,
+        "principal": "user:alice",
+        "threadId": "planner-proof4-thread",
+        "kind": "agent_message",
+        "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment."
+      }
+    ]
+  },
+  "junSouth": {
+    "value": {
+      "kind": "number",
+      "value": 14200
+    }
+  },
+  "labelCell": {
+    "value": {
+      "kind": "null",
+      "value": null
+    }
+  },
+  "totalCell": {
+    "value": {
+      "kind": "null",
+      "value": null
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+ "case": 4,
+ "rerun": true,
+ "pass": true,
+ "verdict": "PASS",
+ "assertions": [
+  {
+   "name": "chat stayed in NORMAL view: .agent-msg visible before send, Audit view never opened",
+   "pass": true,
+   "observed": "{\"auditViewPresent\":false,\"messagesListPresent\":true,\"msgCount\":1,\"firstMsgVisible\":true,\"firstMsgHead\":\"Hi — I can read ranges, sum or average them, write values and formulas, recalcul\",\"auditChipOn\":true,\"auditChipText\":\"Chat\"}"
+  },
+  {
+   "name": "HITL asks answered live (log complete; zero asks left unanswered at turn end)",
+   "pass": true,
+   "observed": "hitlLog=[{\"kind\":\"pending-options\",\"question\":\"Do you want me to build an app, or analyze the data and show a visual?\\nBuild an app\\nAnalyze & visualize\\nJust answer\",\"options\":[\"Build an app\",\"Analyze & visualize\",\"Just answer\"],\"answer\":\"Just answer\",\"atMs\":2596},{\"kind\":\"hitl-text\",\"question\":\"What is the data range for Month vs Revenue on the Sales sheet?\\nSend\",\"answer\":\"A1:C13\",\"atMs\":2651}] timedOut turns: false,false"
+  },
+  {
+   "name": "native chart visible in the grid (ChartOverlay root + canvas inside it)",
+   "pass": true,
+   "observed": "{\"overlayCount\":1,\"overlays\":[{\"title\":\"Month vs Revenue\",\"rect\":{\"x\":44,\"y\":583,\"w\":768,\"h\":360},\"inViewport\":true,\"canvases\":[{\"w\":750,\"h\":313,\"rectW\":750,\"rectH\":313}],\"hasEditBtn\":true,\"textHead\":\"Month vs Revenue\\n✎\\n✕\"}],\"visible\":true,\"storedCharts\":{\"rawLength\":549,\"parsed\":{\"version\":2,\"charts\":[{\"version\":2,\"id\":1792667558641000,\"kind\":\"column-clustered\",\"title\":\"Month vs Revenue\",\"range\":{\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":12,\"endCol\":2},\"xAxisTitle\":\"\",\"yAxisTitle\":\"\",\"legend\":\"bottom\",\"dataLabels\":false,\"x\":0,\"y\":280,\"w\":512,\"h\":300,\"anchorCells\":{\"fromCol\":0,\"fromRow\":14,\"toCol\":8,\"toRow\":29},\"seriesRanges\":[{\"name\":\"Revenue\",\"cat\":{\"sheet\":\"Sales\",\"startRow\":1,"
+  },
+  {
+   "name": "engine session revision increased after the chat turn (chart op landed)",
+   "pass": true,
+   "observed": "baseline revision=0 -> after turns revision=1 storageRevision=1"
+  },
+  {
+   "name": "workbook saved (storageRevision caught up to revision, revision > baseline)",
+   "pass": true,
+   "observed": "{\"ok\":true,\"sessionId\":\"sess_99b468e4-cf54-46c5-b106-a3ad058803aa\",\"fileId\":\"file-e1f593d0-37a9-412a-9c6b-abd16fdb6dc7\",\"fenced\":false,\"ownershipEpoch\":1,\"participants\":[{\"principal\":\"user:carol\",\"role\":\"editor\"}],\"status\":\"active\",\"revision\":1,\"storageRevision\":1,\"pendingCheckpointOps\":0,\"extrasDirty\":false,\"autosaveStats\":{\"flushes\":2,\"noopSkips\":0,\"forcedFlushes\":0},\"lastActivityAt\":1792667568987,\"idleTimeoutMs\":600000,\"instanceId\":\"engine-1\",\"snapshotChecksum\":\"59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0\"}"
+  },
+  {
+   "name": "chart still visible after reopen in a SECOND browser context",
+   "pass": true,
+   "observed": "{\"overlayCount\":1,\"overlays\":[{\"title\":\"Month vs Revenue\",\"rect\":{\"x\":44,\"y\":583,\"w\":768,\"h\":360},\"inViewport\":true,\"canvases\":[{\"w\":750,\"h\":313,\"rectW\":750,\"rectH\":313}],\"hasEditBtn\":true,\"textHead\":\"Month vs Revenue\\n✎\\n✕\"}],\"visible\":true,\"storedCharts\":{\"rawLength\":549,\"parsed\":{\"version\":2,\"charts\":[{\"version\":2,\"id\":1792667558641000,\"kind\":\"column-clustered\",\"title\":\"Month vs Revenue\",\"range\":{\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":12,\"endCol\":2},\"xAxisTitle\":\"\",\"yAxisTitle\":\"\",\"legend\":\"bottom\",\"dataLabels\":false,\"x\":0,\"y\":280,\"w\":512,\"h\":300,\"anchorCells\":{\"fromCol\":0,\"fromRow\":14,\"toCol\":8,\"toRow\":29},\"seriesRanges\":[{\"name\":\"Revenue\",\"cat\":{\"sheet\":\"Sales\",\"startRow\":1,"
+  },
+  {
+   "name": "download parse-back: xl/charts/chart1.xml exists + readCharts >= 1 chart",
+   "pass": true,
+   "observed": "parts=[\"xl/charts/chart1.xml\",\"xl/drawings/drawing1.xml\",\"xl/drawings/_rels/drawing1.xml.rels\"] charts=[{\"kind\":\"barChart\",\"title\":\"Month vs Revenue\",\"series\":[{\"name\":\"Revenue\",\"valFormula\":\"Sales!$C$2:$C$13\",\"catFormula\":\"Sales!$A$2:$A$13\",\"valCache\":[12000,9800,13500,11200,15800,12600,14200,10900,16900,11600,16700,14200],\"catCache\":[\"Jan\",\"Jan\",\"Feb\",\"Feb\",\"Mar\",\"Mar\",\"Apr\",\"Apr\",\"May\",\"May\",\"Jun\",\"Jun\"]}]}] error=none"
+  },
+  {
+   "name": "chart cached values match fixture data (North+South totals OR >=3 raw revenues)",
+   "pass": true,
+   "observed": "cachedNums=[12000,9800,13500,11200,15800,12600,14200,10900,16900,11600,16700,14200,12000,9800,13500,11200,15800,12600,14200,10900,16900,11600,16700,14200] aggregatedMatch=false rawMatchCount=12"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/result.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/chart-in-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/chart-overlay-closeup.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/reopened-second-context.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/downloaded.xlsx",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/parse-back.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/chart1.xml",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/session-status.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/session-status-baseline.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/chart-probe-after-turn1.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/chart-probe-reopen.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/view-check.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04-rerun/branch-answer/probe.json"
+ ],
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-e1f593d0-37a9-412a-9c6b-abd16fdb6dc7",
+ "sessionId": "sess_99b468e4-cf54-46c5-b106-a3ad058803aa",
+ "retried": true,
+ "hitlLog": [
+  {
+   "kind": "pending-options",
+   "question": "Do you want me to build an app, or analyze the data and show a visual?\nBuild an app\nAnalyze & visualize\nJust answer",
+   "options": [
+    "Build an app",
+    "Analyze & visualize",
+    "Just answer"
+   ],
+   "answer": "Just answer",
+   "atMs": 2596
+  },
+  {
+   "kind": "hitl-text",
+   "question": "What is the data range for Month vs Revenue on the Sales sheet?\nSend",
+   "answer": "A1:C13",
+   "atMs": 2651
+  }
+ ],
+ "replyHead": "The sheet 'Sales' was not found. Please check the sheet name and try again.\n---RETRY---\nAdded a column chart titled 'Month vs Revenue' to the Sales sheet, bound to A1:C13.",
+ "cachedNums": [
+  12000,
+  9800,
+  13500,
+  11200,
+  15800,
+  12600,
+  14200,
+  10900,
+  16900,
+  11600,
+  16700,
+  14200,
+  12000,
+  9800,
+  13500,
+  11200,
+  15800,
+  12600,
+  14200,
+  10900,
+  16900,
+  11600,
+  16700,
+  14200
+ ]
+}

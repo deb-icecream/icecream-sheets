@@ -1,0 +1,49 @@
+{
+  "mode": "proof",
+  "fileId": "file-b55d3951-edb5-464e-b9ca-074bdc11d8b1",
+  "sessionId": "sess_3035453a-dabc-4b91-8ae9-223d4fe7ba69",
+  "cases": {
+    "case1": {
+      "pass": false,
+      "t1Ms": 7656,
+      "t2Ms": 1505,
+      "reply1": null,
+      "reply2": null
+    },
+    "case2": {
+      "pass": false,
+      "t1Ms": 1508,
+      "t2Ms": 1507,
+      "t3Ms": 1513,
+      "reply1": null,
+      "junSouth": {
+        "value": {
+          "kind": "number",
+          "value": 14200
+        }
+      },
+      "labelCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      },
+      "totalCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      }
+    },
+    "case5": {
+      "pass": false,
+      "t1Ms": 1510,
+      "dVals": [],
+      "shares": [],
+      "present": 0,
+      "maxShare": null,
+      "reply": null
+    }
+  },
+  "allPass": false
+}

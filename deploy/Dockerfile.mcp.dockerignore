@@ -1,0 +1,17 @@
+# Build context is the repo root; keep it to what the images actually COPY.
+# (Per-Dockerfile ignore file — BuildKit honors <Dockerfile>.dockerignore.)
+**/node_modules
+**/dist
+apps
+samples
+test-data
+hidden_files
+design-docs
+catalog
+inventory
+backlog
+specs
+.git
+*.md
+!deploy/engine-entrypoint.sh
+!deploy/service-entrypoint.sh

@@ -1,0 +1,23 @@
+[
+ {
+  "t": 1792610514316,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792610514423,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-BETWf_d4.js",
+  "path": "/assets/index-BETWf_d4.js",
+  "status": 200
+ },
+ {
+  "t": 1792610514432,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-DnU1-EYk.css",
+  "path": "/assets/index-DnU1-EYk.css",
+  "status": 200
+ }
+]

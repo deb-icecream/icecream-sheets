@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@google-cloud/storage": "^8.4.0",
+    "@icecream-sheets/csv-adapter": "0.1.0",
+    "@icecream-sheets/engine": "0.1.0",
+    "@icecream-sheets/mcp-server": "0.1.0",
+    "@icecream-sheets/ods-adapter": "0.1.0",
+    "@icecream-sheets/service": "0.1.0",
+    "@icecream-sheets/xlsb-adapter": "0.1.0",
+    "@icecream-sheets/xlsx-adapter": "0.1.0"
+  },
+  "description": "API gateway + local backend services for Icecream Sheets (JWT auth, rate limiting, reverse proxy; engine/vault/meta/etl/agent/addons services).",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./remote": "./dist/remote.js"
+  },
+  "license": "GPL-3.0-only",
+  "main": "./dist/index.js",
+  "name": "@icecream-sheets/gateway",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start:agent": "node dist/bin/agent.js",
+    "start:engine": "node --expose-gc --max-old-space-size=6144 dist/bin/engine.js",
+    "start:etl": "node dist/bin/etl.js",
+    "start:gateway": "node dist/bin/gateway.js",
+    "start:meta": "node dist/bin/meta.js",
+    "start:vault": "node dist/bin/vault.js",
+    "test": "vitest run",
+    "start:addons": "node dist/bin/addons.js",
+    "start:connectors": "node dist/bin/connectors.js",
+    "set-tier": "node dist/bin/set-tier.js"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0"
+}

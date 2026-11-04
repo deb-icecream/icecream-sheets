@@ -1,0 +1,225 @@
+[
+ {
+  "t": 1792624476248,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792624476478,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-tTjOlDml.js",
+  "path": "/assets/index-tTjOlDml.js",
+  "status": 200
+ },
+ {
+  "t": 1792624476483,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-DnU1-EYk.css",
+  "path": "/assets/index-DnU1-EYk.css",
+  "status": 200
+ },
+ {
+  "t": 1792624481309,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792624481309,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792624481341,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792624482809,
+  "method": "POST",
+  "url": "http://localhost:8100/auth/login",
+  "path": "/auth/login",
+  "status": 200
+ },
+ {
+  "t": 1792624484409,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792624484409,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792624484411,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792624485553,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras",
+  "status": 401
+ },
+ {
+  "t": 1792624487377,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "status": 200
+ },
+ {
+  "t": 1792624487641,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/load/stream",
+  "path": "/load/stream"
+ },
+ {
+  "t": 1792624487824,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "status": 200
+ },
+ {
+  "t": 1792624487825,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792624487836,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/load",
+  "path": "/load",
+  "status": 200
+ },
+ {
+  "t": 1792624487905,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624487905,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624487905,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624487905,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624488231,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624488442,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624488442,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624488639,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624488666,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792624488666,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624488666,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624488962,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624488975,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624489000,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792624490092,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras",
+  "status": 200
+ },
+ {
+  "t": 1792624490103,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ }
+]

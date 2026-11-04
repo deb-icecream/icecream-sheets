@@ -1,0 +1,100 @@
+{
+ "case": 4,
+ "rerun": true,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "W3: explicit native-chart prompt was NOT sent to intent disambiguation",
+   "pass": true,
+   "observed": "disambShown=false hitlLog=[{\"kind\":\"pending-options\",\"question\":\"Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\\nA1:C13\\nA1:D13\\nOther\",\"options\":[\"A1:C13\",\"A1:D13\",\"Other\"],\"answer\":\"A1:C13\",\"atMs\":5229},{\"kind\":\"pending-options\",\"question\":\"Could you please specify the correct range that includes both the month and revenue columns, ens"
+  },
+  {
+   "name": "chat stayed in NORMAL view: .agent-msg visible before send, Audit view never opened",
+   "pass": true,
+   "observed": "{\"auditViewPresent\":false,\"messagesListPresent\":true,\"msgCount\":1,\"firstMsgVisible\":true,\"firstMsgHead\":\"Hi — I can read ranges, sum or average them, write values and formulas, recalcul\",\"auditChipOn\":true,\"auditChipText\":\"Chat\"}"
+  },
+  {
+   "name": "HITL asks answered live (log complete; zero asks left unanswered at turn end)",
+   "pass": true,
+   "observed": "hitlLog=[{\"kind\":\"pending-options\",\"question\":\"Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\\nA1:C13\\nA1:D13\\nOther\",\"options\":[\"A1:C13\",\"A1:D13\",\"Other\"],\"answer\":\"A1:C13\",\"atMs\":5229},{\"kind\":\"pending-options\",\"question\":\"Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\\nA1:B13\\nA1:C13\\nOther\",\"options\":[\"A1:B13\",\"A1:C13\",\"Other\"],\"answer\":\"A1:B13\",\"atMs\":5410}] timedOut turns: false,false"
+  },
+  {
+   "name": "native chart visible in the grid (ChartOverlay root + canvas inside it)",
+   "pass": false,
+   "observed": "{\"overlayCount\":0,\"overlays\":[],\"visible\":false,\"storedCharts\":{\"rawLength\":0,\"parsed\":null}}"
+  },
+  {
+   "name": "engine session revision increased after the chat turn (chart op landed)",
+   "pass": false,
+   "observed": "baseline revision=0 -> after turns revision=0 storageRevision=0"
+  },
+  {
+   "name": "workbook saved (storageRevision caught up to revision, revision > baseline)",
+   "pass": false,
+   "observed": "{\"ok\":true,\"sessionId\":\"sess_ef6e6b0d-ed00-4f9f-a7aa-f542f2d8e06f\",\"fileId\":\"file-aeb73cd7-e346-40cd-8823-bb564b8d71b5\",\"fenced\":false,\"ownershipEpoch\":1,\"participants\":[{\"principal\":\"user:carol\",\"role\":\"editor\"}],\"status\":\"active\",\"revision\":0,\"storageRevision\":0,\"pendingCheckpointOps\":0,\"extrasDirty\":false,\"autosaveStats\":{\"flushes\":1,\"noopSkips\":0,\"forcedFlushes\":0},\"lastActivityAt\":1792676338993,\"idleTimeoutMs\":600000,\"instanceId\":\"engine-1\",\"snapshotChecksum\":\"59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0\"}"
+  },
+  {
+   "name": "chart still visible after reopen in a SECOND browser context",
+   "pass": false,
+   "observed": "{\"overlayCount\":0,\"overlays\":[],\"visible\":false,\"storedCharts\":{\"rawLength\":0,\"parsed\":null}}"
+  },
+  {
+   "name": "download parse-back: xl/charts/chart1.xml exists + readCharts >= 1 chart",
+   "pass": false,
+   "observed": "parts=[] charts=[] error=none"
+  },
+  {
+   "name": "chart cached values match fixture data (North+South totals OR >=3 raw revenues)",
+   "pass": false,
+   "observed": "cachedNums=[] aggregatedMatch=false rawMatchCount=0"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/result.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/chart-in-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/chart-overlay-closeup.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/reopened-second-context.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/downloaded.xlsx",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/parse-back.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/chart1.xml",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/session-status.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/session-status-baseline.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/chart-probe-after-turn1.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/chart-probe-reopen.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/view-check.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/wave-c-fixes/w3-live/run-b4/probe.json"
+ ],
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-aeb73cd7-e346-40cd-8823-bb564b8d71b5",
+ "sessionId": "sess_ef6e6b0d-ed00-4f9f-a7aa-f542f2d8e06f",
+ "retried": true,
+ "hitlLog": [
+  {
+   "kind": "pending-options",
+   "question": "Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\nA1:C13\nA1:D13\nOther",
+   "options": [
+    "A1:C13",
+    "A1:D13",
+    "Other"
+   ],
+   "answer": "A1:C13",
+   "atMs": 5229
+  },
+  {
+   "kind": "pending-options",
+   "question": "Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\nA1:B13\nA1:C13\nOther",
+   "options": [
+    "A1:B13",
+    "A1:C13",
+    "Other"
+   ],
+   "answer": "A1:B13",
+   "atMs": 5410
+  }
+ ],
+ "replyHead": "It looks like the range A1:C13 on the Sales sheet doesn't contain numeric data for the revenue. Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\n---RETRY---\nI'm sorry, but I'm still having trouble creating the chart. The range A1:B13 on the Sales sheet does not appear to contain numeric data for revenue. Could you please provide the correct range that includes both the month and revenue columns, ensuring the rev",
+ "cachedNums": []
+}

@@ -1,0 +1,40 @@
+{
+ "case": 2,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "total revenue answer 159,400",
+   "pass": false,
+   "observed": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue."
+  },
+  {
+   "name": "Jun South cell (row12,col2) == 15000 via API",
+   "pass": false,
+   "observed": "{\"kind\":\"number\",\"value\":14200} cellRead={\"value\":{\"kind\":\"number\",\"value\":14200}}"
+  },
+  {
+   "name": "row13 label is TOTAL",
+   "pass": false,
+   "observed": "{\"kind\":\"null\",\"value\":null}"
+  },
+  {
+   "name": "row13 Revenue holds a SUM formula (API)",
+   "pass": false,
+   "observed": "{\"value\":{\"kind\":\"null\",\"value\":null}}"
+  },
+  {
+   "name": "row13 computed total == 160,200",
+   "pass": false,
+   "observed": "{\"kind\":\"null\",\"value\":null}"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-02/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-02/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-02/chat-and-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-02/readback.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-02/readback-jun-south.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-02/readback-total-cell.json"
+ ]
+}

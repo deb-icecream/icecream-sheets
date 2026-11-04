@@ -1,0 +1,11 @@
+{
+ "attempts": [
+  {
+   "model": "google/gemini-2.5-flash-lite",
+   "status": 200,
+   "latencyMs": 1250,
+   "snippet": "pong"
+  }
+ ],
+ "workingModel": "google/gemini-2.5-flash-lite"
+}

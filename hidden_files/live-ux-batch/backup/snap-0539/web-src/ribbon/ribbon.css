@@ -1,0 +1,640 @@
+/* Ribbon — Excel-style tabbed command bar. Plain CSS, no frameworks. */
+
+.ribbon {
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  user-select: none;
+}
+
+/* -- Tab strip -------------------------------------------------------- */
+.ribbon-tabstrip {
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  padding: 6px 12px 0;
+  /* Issue #24: the tab strip never scrolls either — tabs compress instead
+     (see the max-width rules at the bottom of this file). */
+  overflow: hidden;
+}
+
+.ribbon-brand {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+  margin-right: 12px;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.ribbon-tab {
+  font: inherit;
+  padding: 7px 16px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ribbon-tab:hover {
+  background: var(--line-soft);
+  color: var(--text);
+}
+
+.ribbon-tab.active {
+  background: var(--panel);
+  border-color: var(--line);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: inset 0 2px 0 var(--accent);
+}
+
+/* -- Panel with groups ------------------------------------------------ */
+/* Issue #24: the ribbon NEVER shows a scrollbar. Layout is a flex row:
+   [◀ triangle] [panel] [▶ triangle]. The panel clips its content; the inner
+   content row is the only scrollable element and it can only be scrolled
+   programmatically by the triangle buttons (overflow: hidden still allows
+   scrollBy/scrollLeft, and no scrollbar is ever painted). */
+.ribbon-panel-wrap {
+  display: flex;
+  align-items: stretch;
+}
+
+.ribbon-panel {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  padding: 8px 12px 6px;
+  min-height: 96px;
+  overflow: hidden;
+}
+
+.ribbon-panel-content {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.ribbon-panel-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Triangle scroll buttons, pinned at the ends of the panel row. They are
+   only mounted when content still overflows after compression + collapse. */
+.ribbon-scroll-btn {
+  flex: 0 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 11px;
+  color: var(--muted);
+  background: var(--panel);
+  border: none;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  cursor: pointer;
+  padding: 0;
+}
+
+.ribbon-scroll-btn:hover:not(:disabled) {
+  background: var(--line-soft);
+  color: var(--text);
+}
+
+.ribbon-scroll-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Collapsed groups live in the "More" dropdown, stacked as sections with
+   their full controls and labels (fit-compression rules below deliberately
+   do NOT reach into the popup — they are scoped to direct panel groups). */
+.ribbon-overflow-root {
+  align-self: flex-start;
+  margin-left: 6px;
+}
+
+/* The base .ribbon-menu-popup rule appears later in this file, so these
+   overrides use a two-class selector to win on specificity. The popup is
+   portaled to <body> (see RibbonMenu / RibbonCollapsedMenu) and positioned
+   with inline top/right styles; left MUST be auto here — the base rule's
+   left:0 plus the inline right would otherwise stretch the fixed box
+   across the whole viewport instead of shrink-to-fit. */
+.ribbon-menu-popup.ribbon-overflow-popup {
+  left: auto;
+  min-width: 280px;
+  max-height: 70vh;
+}
+
+/* Portaled popups (issue #24): fixed to the viewport so no clipping
+   ancestor — above all the ribbon panel — can slice them. Below the
+   modal-dialog layer (z-index 100). */
+.ribbon-menu-popup.ribbon-popup-fixed {
+  position: fixed;
+  z-index: 90;
+}
+
+.ribbon-overflow-section .ribbon-group {
+  padding: 4px 6px;
+}
+
+.ribbon-overflow-section .ribbon-group-buttons {
+  flex-wrap: wrap;
+}
+
+.ribbon-overflow-section + .ribbon-overflow-section {
+  border-top: 1px solid var(--line);
+}
+
+/* -- Fit compression (issue #24) ---------------------------------------
+   RibbonPanel adds .ribbon-fit-1/2/3 to .ribbon-panel as width shrinks:
+   1 = tighten spacing, 2 = compact (large buttons go small-style, selects
+   narrow), 3 = icon-only for icon-bearing small buttons. Rules are scoped
+   through `.ribbon-panel-content > .ribbon-group` so the collapsed-group
+   popup keeps full-size labeled controls. */
+.ribbon-panel.ribbon-fit-1 {
+  padding: 8px 8px 6px;
+}
+.ribbon-panel.ribbon-fit-1 > .ribbon-panel-content > .ribbon-group {
+  padding: 0 8px;
+}
+.ribbon-panel.ribbon-fit-1 > .ribbon-panel-content > .ribbon-group > .ribbon-group-buttons {
+  gap: 2px;
+}
+.ribbon-panel.ribbon-fit-1 .ribbon-btn.small {
+  padding: 4px 7px;
+}
+.ribbon-panel.ribbon-fit-1 .ribbon-btn.large {
+  padding: 6px 10px;
+  min-width: 60px;
+}
+
+.ribbon-panel.ribbon-fit-2 {
+  padding: 8px 6px 6px;
+}
+.ribbon-panel.ribbon-fit-2 > .ribbon-panel-content > .ribbon-group {
+  padding: 0 6px;
+}
+.ribbon-panel.ribbon-fit-2 > .ribbon-panel-content > .ribbon-group > .ribbon-group-buttons {
+  gap: 2px;
+}
+.ribbon-panel.ribbon-fit-2 .ribbon-btn.small {
+  padding: 4px 6px;
+}
+.ribbon-panel.ribbon-fit-2 > .ribbon-panel-content > .ribbon-group .ribbon-btn.large {
+  flex-direction: row;
+  gap: 6px;
+  min-width: 0;
+  padding: 5px 8px;
+  font-size: 12px;
+  align-self: center;
+}
+.ribbon-panel.ribbon-fit-2 > .ribbon-panel-content > .ribbon-group .ribbon-btn.with-icon.large .ribbon-btn-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.ribbon-panel.ribbon-fit-2 > .ribbon-panel-content > .ribbon-group .ribbon-select select {
+  max-width: 110px;
+}
+.ribbon-panel.ribbon-fit-2 .ribbon-readout {
+  min-width: 34px;
+}
+
+.ribbon-panel.ribbon-fit-3 {
+  padding: 8px 4px 6px;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group {
+  padding: 0 5px;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group > .ribbon-group-buttons {
+  gap: 1px;
+}
+.ribbon-panel.ribbon-fit-3 .ribbon-btn.small {
+  padding: 4px 5px;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group .ribbon-btn.with-icon.small .ribbon-btn-label {
+  display: none;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group .ribbon-btn.large {
+  flex-direction: row;
+  gap: 5px;
+  min-width: 0;
+  padding: 4px 6px;
+  font-size: 11px;
+  align-self: center;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group .ribbon-btn.with-icon.large .ribbon-btn-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group .ribbon-select select {
+  max-width: 92px;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group .ribbon-select-caption {
+  display: none;
+}
+.ribbon-panel.ribbon-fit-3 .ribbon-readout {
+  min-width: 30px;
+  font-size: 11px;
+}
+.ribbon-panel.ribbon-fit-3 > .ribbon-panel-content > .ribbon-group > .ribbon-group-label {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.ribbon-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.ribbon-group + .ribbon-group {
+  border-left: 1px solid var(--line);
+}
+
+.ribbon-group:first-child {
+  padding-left: 0;
+}
+
+.ribbon-group-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1;
+}
+
+.ribbon-group-label {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* -- Buttons ---------------------------------------------------------- */
+.ribbon-btn {
+  font: inherit;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ribbon-btn.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.ribbon-btn.large {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 72px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ribbon-btn:hover:not(:disabled) {
+  background: var(--line-soft);
+  border-color: var(--line);
+}
+
+.ribbon-btn.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ribbon-btn:disabled {
+  color: var(--muted);
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ribbon-readout {
+  align-self: center;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  min-width: 44px;
+  text-align: center;
+}
+
+/* -- Dropdown selects (font, size, number format) ------------------------- */
+.ribbon-select {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.ribbon-select-caption {
+  font-size: 10px;
+  line-height: 1;
+}
+
+.ribbon-select select {
+  font: inherit;
+  font-size: 12px;
+  color: var(--text);
+  background: var(--bg, #fff);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 4px 6px;
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.ribbon-select select:hover {
+  border-color: var(--accent);
+}
+
+/* -- Popup menus (colors, borders, styles) -------------------------------- */
+.ribbon-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.ribbon-menu-popup {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 50;
+  min-width: 160px;
+  max-height: 320px;
+  overflow-y: auto;
+  background: var(--bg, #fff);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  padding: 4px;
+}
+
+.ribbon-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 12px;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ribbon-menu-item:hover {
+  background: var(--line-soft);
+}
+
+.ribbon-swatches {
+  display: grid;
+  grid-template-columns: repeat(8, 24px);
+  gap: 4px;
+  padding: 6px;
+}
+
+.ribbon-swatch {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ribbon-swatch:hover {
+  outline: 2px solid var(--accent);
+}
+
+/* -- Insert Function dialog ----------------------------------------------- */
+.fn-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fn-dialog {
+  background: var(--bg, #fff);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+  width: 520px;
+  max-width: 92vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fn-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+}
+
+.fn-dialog-body {
+  padding: 12px 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fn-dialog-body input[type='search'] {
+  font: inherit;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.fn-dialog select {
+  font: inherit;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.fn-list {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.fn-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 12px;
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fn-item:hover,
+.fn-item.selected {
+  background: var(--accent-soft);
+}
+
+.fn-item .fn-cat {
+  color: var(--muted);
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+.fn-dialog-footer {
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Submenu (hover-opened, nested inside a menu popup). */
+.ribbon-submenu { position: relative; }
+.ribbon-submenu-label { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.ribbon-submenu-arrow { margin-left: 12px; opacity: 0.7; }
+.ribbon-submenu-popup {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid var(--line, #d4d4d4);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 4px;
+  z-index: 60;
+}
+.ribbon-menu-item.disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* -- Button icons (Excel style: icon on top for large, left for small) --- */
+.ribbon-btn.with-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.ribbon-btn.with-icon.small {
+  gap: 6px;
+}
+.ribbon-btn.with-icon.large {
+  flex-direction: column;
+  gap: 4px;
+}
+.ribbon-btn-icon {
+  display: inline-flex;
+  line-height: 0;
+  flex: none;
+}
+.ribbon-btn-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.ribbon-btn.with-icon.large .ribbon-btn-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* -- Tab strip compression (issue #24) ----------------------------------
+   The strip never scrolls: as the viewport narrows the tabs tighten so all
+   eleven tabs plus Share stay on screen (File and Share are never hidden). */
+@media (max-width: 1150px) {
+  .ribbon-tab {
+    padding: 7px 10px;
+  }
+  .ribbon-brand {
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 950px) {
+  .ribbon-tabstrip {
+    padding: 6px 4px 0;
+    gap: 1px;
+  }
+  .ribbon-tab {
+    padding: 6px 6px;
+    font-size: 13px;
+  }
+  .ribbon-brand {
+    font-size: 13px;
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Very narrow windows: the brand text yields (it is not a control); tabs
+     tighten once more. The strip still never scrolls and File stays put. */
+  .ribbon-brand {
+    display: none;
+  }
+  .ribbon-tab {
+    padding: 6px 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Issue #24 (reopened): phone widths. The strip spends its width on
+     labels, not air — gaps go to zero, strip side padding to 2px, tab
+     padding to 2px, font to 11px. Share keeps its icon and its accessible
+     name (aria-label) and drops only its painted text. */
+  .ribbon-tabstrip {
+    padding: 6px 2px 0;
+    gap: 0;
+  }
+  .ribbon-tab {
+    padding: 6px 2px;
+    font-size: 11px;
+  }
+  .ribbon-share-label {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  /* Narrowest tier: tracking tightens a touch and the two longest labels
+     paint in short form (Ribbon.tsx sets data-short; the DOM text and the
+     accessible name stay the full label). The button's own glyphs are
+     zero-sized so only the ::after text takes width — letter-spacing must
+     be zeroed on the button itself, or the invisible full label would
+     still spend tracking width. */
+  .ribbon-tab {
+    letter-spacing: -0.3px;
+  }
+  .ribbon-tab[data-short] {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  .ribbon-tab[data-short]::after {
+    content: attr(data-short);
+    font-size: 11px;
+    letter-spacing: -0.3px;
+  }
+}

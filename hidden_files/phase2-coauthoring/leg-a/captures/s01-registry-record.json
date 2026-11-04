@@ -1,0 +1,12 @@
+{
+ "fileId": "file-f009972f-74e9-4568-9af0-5548508ff443",
+ "sessionId": "sess_be2c7e69-7994-43d3-a2f1-52a3964215d3",
+ "ownerInstance": "engine-1",
+ "ownerEndpoint": "http://127.0.0.1:8101",
+ "leaseExpiry": 1792624519705,
+ "ownershipEpoch": 1,
+ "currentRevision": 0,
+ "storedRevision": 0,
+ "updatedAt": 1792624489705,
+ "creatorPrincipal": "user:alice"
+}

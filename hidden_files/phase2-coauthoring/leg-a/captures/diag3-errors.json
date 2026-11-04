@@ -1,0 +1,8 @@
+[
+ "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+ "error: Failed to load resource: the server responded with a status of 409 (Conflict)",
+ "error: Failed to load resource: the server responded with a status of 501 (Not Implemented)",
+ "warning: [collab] gateway open handshake failed; continuing with load: Error: gateway 501: {\"ok\":false,\"error\":\"signed engine access is not enabled on this gateway (ENGINE_ACCESS_MODE is not signed)\"}\n    at lBe.call (http://loca",
+ "error: Failed to load resource: the server responded with a status of 501 (Not Implemented)",
+ "error: Failed to load resource: the server responded with a status of 409 (Conflict)"
+]

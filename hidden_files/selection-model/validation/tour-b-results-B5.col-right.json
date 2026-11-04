@@ -1,0 +1,18 @@
+{
+ "checks": [
+  {
+   "id": "B5.col-right.before",
+   "pass": true,
+   "detail": "before={\"r5\":{\"value\":50},\"s5\":{\"value\":42,\"formula\":\"=T5+2\"},\"t5\":{\"value\":40}}"
+  },
+  {
+   "id": "B5.col-right.after",
+   "pass": true,
+   "detail": "after={\"r5\":{\"value\":50},\"s5\":{\"value\":null},\"t5\":{\"value\":42,\"formula\":\"=U5+2\"},\"u5\":{\"value\":40}}"
+  }
+ ],
+ "shots": [
+  "b5-col-right-after.png"
+ ],
+ "verdict": "ALL PASS"
+}

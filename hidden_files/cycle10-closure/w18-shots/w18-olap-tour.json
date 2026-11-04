@@ -1,0 +1,89 @@
+{
+  "fixture": "olap-cube-closedxml.xlsx",
+  "tag": "w18-olap",
+  "sheets": [
+    {
+      "index": 1,
+      "name": "Data",
+      "clicked": true,
+      "screenshot": "w18-olap-sheet-01-Data.png",
+      "cellCount": 748,
+      "nonEmpty": 12,
+      "errs": [],
+      "samples": [
+        "A1=Pastry",
+        "B1=Price",
+        "C1=Amount",
+        "A2=Cake",
+        "B2=7",
+        "C2=27",
+        "A3=Baclava",
+        "B3=14",
+        "C3=3",
+        "A4=Pie",
+        "B4=12",
+        "C4=35"
+      ],
+      "overlays": 40,
+      "hasChartText": false,
+      "pivotNotice": null
+    },
+    {
+      "index": 2,
+      "name": "Cube",
+      "clicked": true,
+      "screenshot": "w18-olap-sheet-02-Cube.png",
+      "cellCount": 748,
+      "nonEmpty": 15,
+      "errs": [],
+      "samples": [
+        "A3=Row Labels",
+        "B3=[Measures].[Sum of Price]",
+        "C3=[Measures].[Sum of Amount]",
+        "A4=[Range].[Baclava]",
+        "B4=14",
+        "C4=3",
+        "A5=[Range].[Cake]",
+        "B5=7",
+        "C5=27",
+        "A6=[Range].[Pie]",
+        "B6=12",
+        "C6=35",
+        "A7=[Range].[All]",
+        "B7=33",
+        "C7=65"
+      ],
+      "overlays": 40,
+      "hasChartText": false,
+      "pivotNotice": null
+    }
+  ],
+  "errors": [
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "wallMs": 25996,
+  "firstPage": {
+    "fileSelectedAt": 3140.5999999999767,
+    "firstValuesAt": 3292.6999999999534,
+    "firstPagePaintedAt": 3293.2999999999884,
+    "timeToFirstPageMs": 152.70000000001164,
+    "timeToFirstValuesMs": 152.09999999997672
+  },
+  "heapMB": 30.8,
+  "longTasks": {
+    "count": 10,
+    "total": 1871,
+    "max": 572
+  },
+  "sheetTabs": [
+    "Data",
+    "Cube"
+  ],
+  "save": {
+    "ok": true,
+    "ms": 1419,
+    "path": "/home/hatch/workspace/icecream-sheets/hidden_files/cycle10-closure/w18-shots/downloads/w18-olap-saved.xlsx",
+    "suggested": "workbook.xlsx",
+    "failure": null
+  }
+}

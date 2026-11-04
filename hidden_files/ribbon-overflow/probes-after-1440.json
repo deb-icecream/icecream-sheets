@@ -1,0 +1,151 @@
+{
+  "mode": "after",
+  "runs": [
+    {
+      "width": 1440,
+      "tabs": {
+        "Home": {
+          "panel": {
+            "clientWidth": 1432,
+            "scrollWidth": 1432,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 177,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": true,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 4,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        },
+        "Insert": {
+          "panel": {
+            "clientWidth": 1432,
+            "scrollWidth": 1432,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 177,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": true,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 11,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        },
+        "Formulas": {
+          "panel": {
+            "clientWidth": 1432,
+            "scrollWidth": 1432,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 177,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": false,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 4,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        },
+        "Data": {
+          "panel": {
+            "clientWidth": 1432,
+            "scrollWidth": 1432,
+            "clientHeight": 82,
+            "offsetHeight": 82,
+            "scrollLeft": 0,
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 177,
+            "rectHeight": 96
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "hidden"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "moreBtn": false,
+          "panelClasses": "ribbon-panel ribbon-fit-3",
+          "wrapClasses": "ribbon-panel-wrap",
+          "groupCount": 6,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      },
+      "menuClip": {
+        "popupRect": {
+          "top": 121,
+          "bottom": 235,
+          "height": 114
+        },
+        "panelRect": {
+          "top": 81,
+          "bottom": 177,
+          "height": 96
+        },
+        "popupExtendsBelowPanel": true,
+        "popupFullyVisible": true
+      },
+      "moreMenu": {
+        "rect": {
+          "top": 117,
+          "bottom": 297,
+          "height": 180,
+          "width": 1368.890625
+        },
+        "groupLabels": [
+          "Styles",
+          "Cells",
+          "Editing"
+        ],
+        "buttons": 13,
+        "visible": true
+      }
+    }
+  ]
+}

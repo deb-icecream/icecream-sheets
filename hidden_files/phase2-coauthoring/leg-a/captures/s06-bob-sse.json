@@ -1,0 +1,90 @@
+[
+ {
+  "t": 1792625746185,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792625746514,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"fileId\":\"file-382b01d9-9308-4e3f-8f72-4e9e53aa4596\"}"
+ },
+ {
+  "t": 1792625746514,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":true}"
+ },
+ {
+  "t": 1792625746514,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[]}"
+ },
+ {
+  "t": 1792625748584,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792625750117,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":0,\"storedRevision\":0,\"saving\":false}"
+ },
+ {
+  "t": 1792625771930,
+  "kind": "open",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>"
+ },
+ {
+  "t": 1792625772091,
+  "kind": "event",
+  "event": "hello",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"fileId\":\"file-382b01d9-9308-4e3f-8f72-4e9e53aa4596\"}"
+ },
+ {
+  "t": 1792625772111,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":1,\"storedRevision\":1,\"saving\":false}"
+ },
+ {
+  "t": 1792625772111,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792625772617,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":5,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792625772696,
+  "kind": "event",
+  "event": "delta",
+  "data": "{\"revision\":2,\"origin\":{\"clientId\":\"web-mvir31e4-7n9wf\",\"clientSeq\":1,\"principal\":\"user:bob\"},\"cells\":[{\"sheet\":\"Sheet1\",\"row\":5,\"col\":0,\"value\":{\"kind\":\"string\",\"value\":\"BOBVAL\"}}]}"
+ },
+ {
+  "t": 1792625772723,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":2,\"storedRevision\":1,\"saving\":true}"
+ },
+ {
+  "t": 1792625774339,
+  "kind": "event",
+  "event": "presence",
+  "data": "{\"participants\":[{\"principal\":\"user:alice\",\"color\":\"#dc2626\",\"sheet\":\"Sheet1\",\"row\":1,\"col\":0,\"editing\":false},{\"principal\":\"user:bob\",\"color\":\"#7c3aed\",\"sheet\":\"Sheet1\",\"row\":5,\"col\":0,\"editing\":false}]}"
+ },
+ {
+  "t": 1792625774735,
+  "kind": "event",
+  "event": "status",
+  "data": "{\"revision\":2,\"storedRevision\":2,\"saving\":false}"
+ }
+]

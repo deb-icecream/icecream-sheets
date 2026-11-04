@@ -1,0 +1,186 @@
+{
+  "ok": true,
+  "sheets": [
+    "tricky"
+  ],
+  "file": {
+    "sheets": [
+      {
+        "name": "tricky",
+        "formats": {
+          "codes": [],
+          "columns": {}
+        }
+      }
+    ],
+    "metadata": {
+      "csv.delimiter": ","
+    }
+  },
+  "columnCounts": {
+    "tricky": [
+      4,
+      4,
+      4,
+      3
+    ]
+  },
+  "mirror": {
+    "sheets": [
+      {
+        "name": "tricky",
+        "cells": [
+          {
+            "row": 0,
+            "col": 0,
+            "input": "name",
+            "value": {
+              "kind": "string",
+              "value": "name"
+            }
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "input": "note",
+            "value": {
+              "kind": "string",
+              "value": "note"
+            }
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "input": "amount",
+            "value": {
+              "kind": "string",
+              "value": "amount"
+            }
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "input": "flag",
+            "value": {
+              "kind": "string",
+              "value": "flag"
+            }
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "input": "Doe, John",
+            "value": {
+              "kind": "string",
+              "value": "Doe, John"
+            }
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "input": "said \"hello\" loudly",
+            "value": {
+              "kind": "string",
+              "value": "said \"hello\" loudly"
+            }
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "input": 1234.5,
+            "value": {
+              "kind": "number",
+              "value": 1234.5
+            }
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "input": true,
+            "value": {
+              "kind": "boolean",
+              "value": true
+            }
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "input": "Multi\r\nline name",
+            "value": {
+              "kind": "string",
+              "value": "Multi\r\nline name"
+            }
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "input": "plain",
+            "value": {
+              "kind": "string",
+              "value": "plain"
+            }
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "input": -7,
+            "value": {
+              "kind": "number",
+              "value": -7
+            }
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "input": false,
+            "value": {
+              "kind": "boolean",
+              "value": false
+            }
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "input": " spaced ",
+            "value": {
+              "kind": "string",
+              "value": " spaced "
+            }
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "input": "trailing comma next",
+            "value": {
+              "kind": "string",
+              "value": "trailing comma next"
+            }
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "input": 0.001,
+            "value": {
+              "kind": "number",
+              "value": 0.001
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "timings": {
+    "parseMs": 0,
+    "sheetParseMs": 0,
+    "totalMs": 259,
+    "path": "csv",
+    "buildMs": 258,
+    "mirrorMs": 0
+  },
+  "sessionId": "sess_116480fb-224f-44c1-9feb-53611e40d09e",
+  "sourceFormat": "csv",
+  "storageRef": {
+    "bucket": "icecream-uploads",
+    "object": "uploads/e413c48aacfe9847/file-1638aa26-e40e-4b06-8352-1bf15015e354.csv"
+  }
+}

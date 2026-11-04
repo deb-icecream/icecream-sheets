@@ -1,0 +1,206 @@
+{
+  "case": "case1",
+  "gw": "http://localhost:9000",
+  "turns": [
+    {
+      "text": "What is the total revenue in the Sales sheet?",
+      "ms": 7966,
+      "status": 200,
+      "message": "The total revenue in the Sales sheet is 159400.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "text": "Which region had the highest total revenue in the Sales sheet?",
+      "ms": 4350,
+      "status": 200,
+      "message": "The North region had the highest total revenue with 89100.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Which region had the highest total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The North region had the highest total revenue with 89100.",
+          "summary": null
+        }
+      ]
+    },
+    {
+      "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+      "ms": 6759,
+      "status": 200,
+      "message": "The rows in the Sales sheet where Revenue is greater than 14000 are:\n- Month: Mar, Region: North, Revenue: 15800\n- Month: May, Region: North, Revenue: 16900\n- Month: Jun, Region: North, Revenue: 16700",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "What is the total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue in the Sales sheet is 159400.",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Which region had the highest total revenue in the Sales sheet?",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The North region had the highest total revenue with 89100.",
+          "summary": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The rows in the Sales sheet where Revenue is greater than 14000 are:\n- Month: Mar, Region: North, Revenue: 15800\n- Month: May, Region: North, Revenue: 16900\n- M",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "t1Status200": true,
+    "t1ComputesTotal": true,
+    "t1NoTimeout": true,
+    "t1NoUnsuppressedQuestion": true,
+    "t2North89100": true,
+    "t3ListsAllFour": false
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-0d995869-3874-430b-86b9-3883bbe8b09c",
+    "sessionId": "sess_54370a83-2632-42a6-ba3e-289f005ceb5e",
+    "releaseStatus": 200
+  }
+}

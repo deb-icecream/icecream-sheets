@@ -1,0 +1,8 @@
+{
+  "startedAt": "2026-10-22T14:33:21.104Z",
+  "reads": [],
+  "samples": [],
+  "steps": [],
+  "fileId": "file-424258c8-82b9-4237-b0cd-2d9b32ae3796",
+  "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"about:blank\", waiting until \"load\"\n"
+}

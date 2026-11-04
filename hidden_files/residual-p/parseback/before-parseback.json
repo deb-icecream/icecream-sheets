@@ -1,0 +1,69 @@
+{
+ "label": "before",
+ "files": {
+  "workbook-xlsx": {
+   "values": {
+    "Sheet1": {
+     "A1": 10,
+     "B1": 20,
+     "C1": 999,
+     "A2": 30,
+     "B2": 30,
+     "A3": 111
+    },
+    "Sheet2": {
+     "A1": 7,
+     "B1": 8,
+     "B2": 15
+    }
+   },
+   "formulas": {
+    "Sheet1": {
+     "B2": "=A1+B1"
+    },
+    "Sheet2": {
+     "B2": "=A1+B1"
+    }
+   },
+   "verdict": "PASS",
+   "bytes": 7170
+  },
+  "xlsb": {
+   "values": {
+    "Sheet1": {
+     "A1": 10,
+     "B1": 20,
+     "C1": 999,
+     "A2": 30,
+     "B2": 30,
+     "A3": 111
+    },
+    "Sheet2": {
+     "A1": 7,
+     "B1": 8,
+     "B2": 15
+    }
+   },
+   "formulas": {
+    "Sheet1": {
+     "B2": "=A1+B1"
+    },
+    "Sheet2": {
+     "B2": "=A1+B1"
+    }
+   },
+   "verdict": "PASS",
+   "bytes": 1831
+  }
+ },
+ "verdicts": {
+  "workbookXlsx": "PASS",
+  "ods": "NOT RUN (no download)",
+  "csv": "NOT RUN (no download)",
+  "tsv": "NOT RUN (no download)",
+  "html": "NOT RUN (no download)",
+  "namedRangeXlsx": "NOT RUN (no download)",
+  "namedRangeCsv": "NOT RUN (no download)",
+  "xlsb": "PASS"
+ }
+}

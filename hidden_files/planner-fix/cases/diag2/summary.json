@@ -1,0 +1,49 @@
+{
+  "mode": "diag2",
+  "fileId": "file-6f7d0643-7914-42e5-af0a-0a2207338589",
+  "sessionId": "sess_e2e142d8-1315-4e7a-a99c-7333ddc464eb",
+  "cases": {
+    "case1": {
+      "pass": false,
+      "t1Ms": 10592,
+      "t2Ms": 3013,
+      "reply1": "I ran out of steps for that request. Could you break it into smaller parts?",
+      "reply2": null
+    },
+    "case2": {
+      "pass": false,
+      "t1Ms": 1506,
+      "t2Ms": 1510,
+      "t3Ms": 1509,
+      "reply1": null,
+      "junSouth": {
+        "value": {
+          "kind": "number",
+          "value": 14200
+        }
+      },
+      "labelCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      },
+      "totalCell": {
+        "value": {
+          "kind": "null",
+          "value": null
+        }
+      }
+    },
+    "case5": {
+      "pass": false,
+      "t1Ms": 1506,
+      "dVals": [],
+      "shares": [],
+      "present": 0,
+      "maxShare": null,
+      "reply": null
+    }
+  },
+  "allPass": false
+}

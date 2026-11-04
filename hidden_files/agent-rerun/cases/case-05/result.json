@@ -1,0 +1,33 @@
+{
+ "case": 5,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "column D shares present per region row (>=10 of 12 data rows)",
+   "pass": false,
+   "observed": "present=0/12 [{\"row\":1,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":2,\"region\":\"South\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":3,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":4,\"region\":\"South\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":5,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":6,\"region\":\"South\",\"raw\":{\"kind\":\"null\",\"value\":null},\"pct\":null},{\"row\":7,\"region\":\"North\",\"raw\":{\"kind\":\"null\",\"value\":null},"
+  },
+  {
+   "name": "largest share in column D is North ~55.6% (55-56)",
+   "pass": false,
+   "observed": "maxPct=null"
+  },
+  {
+   "name": "reply names North with ~55.6% share",
+   "pass": false,
+   "observed": "I didn't get an answer in time, so I stopped here. Ask me again when you're ready and we can continue."
+  },
+  {
+   "name": "turn did not time out",
+   "pass": true,
+   "observed": "277718ms"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-05/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-05/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-05/chat-and-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-05/readback.json"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "case07": {
+  "csvMaterialized": true,
+  "csvReply": "The total number of Units for the item Widget across all warehouses is 55."
+ },
+ "case15": {
+  "reply": "The temperature recorded for Seattle on 2026-10-21 was 16°C.",
+  "ms": 6770
+ },
+ "case14": {
+  "reply": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculate, remember notes (\"remember that the budget is 5000\"), analyze data with charts and pivots, build apps from your data, run ETL recipes and automations, work with data sources, and generate reports. What would you like to do with your spreadsheet?",
+  "unchanged": true
+ },
+ "case16": {
+  "reply": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculate, remember notes (\"remember that the budget is 5000\"), analyze data with charts and pivots, build apps from your data, run ETL recipes and automations, work with data sources, and generate reports. What would you like to do with your spreadsheet?",
+  "unchanged": true
+ },
+ "case17": {
+  "pivotReply": "To create a PivotTable, click any cell inside your data range. Then, go to the Insert tab, find the Tables group, and click the \"PivotTable\" button. You can also use \"Recommended PivotTables\" for suggestions. In the PivotTable panel, drag and drop your fields into the four areas: grouping fields go to Rows and Columns, numeric fields you want summarized go to Values (they sum by default), and fields for filtering the results go to Filters.",
+  "xlookupReply": "XLOOKUP is a powerful function in Icecream Sheets (and Excel) that allows you to search for a value in one range (the lookup array) and return a corresponding value from another range (the return array). It's a more flexible and modern replacement for older lookup functions like VLOOKUP and HLOOKUP. Key features include searching in any direction (left or right, up or down), approximate matching, and handling cases where a lookup value is not found."
+ },
+ "case18": {
+  "reply": "The total of the Amount column in the Sales sheet is 550.",
+  "rerun": true
+ }
+}

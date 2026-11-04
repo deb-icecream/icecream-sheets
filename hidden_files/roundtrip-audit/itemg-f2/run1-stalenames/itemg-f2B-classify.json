@@ -1,0 +1,57 @@
+{
+ "counts": {
+  "intended+downstream-of-edit": 2,
+  "downstream-of-edit": 4,
+  "intended+shift": 1,
+  "shift": 32,
+  "shift+structured-expansion+downstream-of-edit": 3,
+  "shift+shift": 1,
+  "intended+shift+downstream-of-edit": 1
+ },
+ "unexplained": [
+  {
+   "sheet": "International Settings",
+   "addr": "A21",
+   "kind": "formula+type+value",
+   "orig": {
+    "f": "IF(Versioned_Override_Misc_Data_Table_URL<>\"\",Versioned_Override_Misc_Data_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Misc_Data_Table_Production_Folder,IF(Is_Beta,Misc_Data_Table_Beta_Folder,Misc_Data_Table_Production_Folder))&Misc_Data_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntMiscData.txt",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": null,
+    "t": "z"
+   }
+  }
+ ],
+ "nameDiffs": [],
+ "parts": {
+  "changed": [
+   "[Content_Types].xml",
+   "xl/styles.xml",
+   "xl/worksheets/sheet1.xml",
+   "xl/worksheets/sheet10.xml",
+   "xl/worksheets/sheet11.xml",
+   "xl/worksheets/sheet12.xml",
+   "xl/worksheets/sheet13.xml",
+   "xl/worksheets/sheet14.xml",
+   "xl/worksheets/sheet15.xml",
+   "xl/worksheets/sheet16.xml",
+   "xl/worksheets/sheet2.xml",
+   "xl/worksheets/sheet3.xml",
+   "xl/worksheets/sheet4.xml",
+   "xl/worksheets/sheet5.xml",
+   "xl/worksheets/sheet6.xml",
+   "xl/worksheets/sheet7.xml",
+   "xl/worksheets/sheet8.xml",
+   "xl/worksheets/sheet9.xml"
+  ],
+  "missing": [],
+  "added": [
+   "docProps/custom.xml"
+  ]
+ },
+ "closureSize": 10,
+ "tablesFound": 0
+}

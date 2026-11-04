@@ -1,0 +1,177 @@
+{
+  "case": "case7sql",
+  "gw": "http://localhost:9150",
+  "turns": [
+    {
+      "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+      "ms": 9098,
+      "status": 200,
+      "message": "The total revenue across all rows in the 'Sales SQL' sheet is 4027.86.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue across all rows in the 'Sales SQL' sheet is 4027.86.",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": null
+    },
+    {
+      "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+      "ms": 6226,
+      "status": 200,
+      "message": "The total revenue per region is: East: 1947.00, North: 539.46, South: 1199.40, and West: 342.00. The region with the highest total revenue is East, with a total of 1947.00.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue across all rows in the 'Sales SQL' sheet is 4027.86.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue per region is: East: 1947.00, North: 539.46, South: 1199.40, and West: 342.00. The region with the highest total revenue is East, with a total",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": null
+    }
+  ],
+  "checks": {
+    "total402786": true,
+    "totalRanOut": false,
+    "analysisRanOut": false,
+    "analysisNamesRegionTotal": true
+  },
+  "evidence": {
+    "connector": {
+      "store": 200,
+      "query": 200,
+      "rows": 24
+    },
+    "analysisReply": "The total revenue per region is: East: 1947.00, North: 539.46, South: 1199.40, and West: 342.00. The region with the highest total revenue is East, with a total of 1947.00.",
+    "releaseStatus": 200
+  }
+}

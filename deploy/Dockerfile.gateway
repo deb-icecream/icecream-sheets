@@ -1,0 +1,89 @@
+# syntax=docker/dockerfile:1
+# =============================================================================
+# icecream-sheets — GATEWAY image (Cloud Run service: gateway)
+#
+# Spec: design-docs/deployment-architecture.md — "Gateway, engine service,
+# service package, MCP → Cloud Run services", gateway is STATELESS
+# (per-request validation, use-and-throw, ordinary gateway-proxied path).
+#
+# Build context = repo root:
+#   docker build -f deploy/Dockerfile.gateway -t icecream-gateway .
+#
+# The gateway bin lives in packages/gateway (dist/bin/gateway.js). Only the
+# gateway package chain is built/copied; see deploy/README.md for the full
+# image ↔ bin mapping.
+#
+# Node version: repo package.json engines = ">=20" → pinned Node 20 LTS.
+# PORT: packages/gateway/src/bin/gateway.ts reads process.env.PORT
+# (default 8100 local). Cloud Run injects PORT (8080) — honored as-is.
+# Health: GET /health is implemented by the gateway listener itself
+# (packages/gateway/src/gateway.ts) — Cloud Run probes are set in
+# deploy/services/gateway.yaml.
+#
+# ⚠ KNOWN CODE GAP (W17b, do not fix here): the bin binds 127.0.0.1
+# hardcoded (server.listen(port, '127.0.0.1')). Cloud Run's container
+# contract requires listening on 0.0.0.0:$PORT. This image is correct; the
+# bind host must become env-configurable (HOST, default local 127.0.0.1 /
+# 0.0.0.0 in the container) before the first real deploy can pass its
+# startup probe. See hidden_files/cycle10-closure/w17a-deploy-infra-results.md
+# =============================================================================
+
+# ---------- build stage ----------
+FROM node:20-bookworm-slim AS build
+WORKDIR /app
+# Workspace manifests first (layer caching + npm workspace resolution).
+COPY package.json package-lock.json tsconfig.base.json ./
+COPY packages/engine/package.json        packages/engine/package.json
+COPY packages/csv-adapter/package.json   packages/csv-adapter/package.json
+COPY packages/ods-adapter/package.json   packages/ods-adapter/package.json
+COPY packages/xlsb-adapter/package.json  packages/xlsb-adapter/package.json
+COPY packages/xlsx-adapter/package.json  packages/xlsx-adapter/package.json
+COPY packages/service/package.json       packages/service/package.json
+COPY packages/mcp-server/package.json    packages/mcp-server/package.json
+COPY packages/gateway/package.json       packages/gateway/package.json
+RUN npm ci --no-audit --no-fund
+# Sources for the gateway dependency chain only.
+COPY packages/engine/       packages/engine/
+COPY packages/csv-adapter/  packages/csv-adapter/
+COPY packages/ods-adapter/  packages/ods-adapter/
+COPY packages/xlsb-adapter/ packages/xlsb-adapter/
+COPY packages/xlsx-adapter/ packages/xlsx-adapter/
+COPY packages/service/      packages/service/
+COPY packages/mcp-server/   packages/mcp-server/
+COPY packages/gateway/     packages/gateway/
+# tsc in dependency order (workspace packages consume each other's dist/*.d.ts).
+# Fresh-build ordering (2026-10-24 deploy wave): mcp-server imports
+# @icecream-sheets/gateway/remote, whose declarations only exist after the
+# gateway build -- but the gateway build needs mcp-server dist (agentSvc).
+# The remote barrel never imports mcp-server (by design), so compile it +
+# its closure first; the full gateway build later re-emits identical output.
+RUN npm run build --workspace=@icecream-sheets/engine \
+ && npm run build --workspace=@icecream-sheets/csv-adapter \
+ && npm run build --workspace=@icecream-sheets/ods-adapter \
+ && npm run build --workspace=@icecream-sheets/xlsb-adapter \
+ && npm run build --workspace=@icecream-sheets/xlsx-adapter \
+ && npm run build --workspace=@icecream-sheets/service \
+ && npx tsc packages/gateway/src/remote.ts --outDir packages/gateway/dist --rootDir packages/gateway/src --module NodeNext --moduleResolution NodeNext --target ES2022 --declaration --esModuleInterop --skipLibCheck --strict --forceConsistentCasingInFileNames \
+ && npm run build --workspace=@icecream-sheets/mcp-server \
+ && npm run build --workspace=@icecream-sheets/gateway \
+ && npm prune --omit=dev --no-audit --no-fund
+
+# ---------- runtime stage ----------
+FROM node:20-bookworm-slim AS runtime
+# ca-certificates: the gateway verifies Firebase ID tokens against Google's
+# public certs over HTTPS (packages/gateway/src/firebaseToken.ts).
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+ENV NODE_ENV=production
+WORKDIR /app
+COPY --from=build --chown=node:node /app/package.json /app/package-lock.json ./
+COPY --from=build --chown=node:node /app/node_modules ./node_modules
+COPY --from=build --chown=node:node /app/packages ./packages
+USER node
+EXPOSE 8080
+# Local/manual use only — Cloud Run ignores Docker HEALTHCHECK and uses the
+# probes declared in deploy/services/gateway.yaml instead.
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s \
+  CMD node -e "fetch('http://127.0.0.1:'+(process.env.PORT||8080)+'/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"
+CMD ["node", "packages/gateway/dist/bin/gateway.js"]

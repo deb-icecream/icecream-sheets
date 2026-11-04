@@ -1,0 +1,7 @@
+{
+ "session": {
+  "fileId": "file-737e5a51-f13e-4fd1-928f-004d178dc714",
+  "sessionId": "sess_ad49cca5-6bae-484f-9980-3a92ba97e8cf"
+ },
+ "phaseAFatal": "Error: waitFor timeout: cell 0,0 contains \"Product\" (last=null)"
+}

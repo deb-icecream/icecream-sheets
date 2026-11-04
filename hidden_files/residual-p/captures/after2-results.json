@@ -1,0 +1,147 @@
+{
+ "label": "after2",
+ "steps": {
+  "login": "ok",
+  "upload": {
+   "fileId": "file-dd6b1018-d742-4df6-9c4d-c0910928433f",
+   "A1": "10",
+   "B2": "30"
+  },
+  "defineName": "ok",
+  "pageErrors": []
+ },
+ "exports": [
+  {
+   "format": "xlsx",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-workbook-xlsx.xlsx",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"xlsx\",\"filename\":\"workbook.xlsx\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\""
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "format": "csv",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-workbook-csv.csv",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"csv\",\"filename\":\"workbook.csv\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Of"
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "format": "tsv",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-workbook-tsv.tsv",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"tsv\",\"filename\":\"workbook.tsv\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Of"
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "format": "ods",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-workbook-ods.ods",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"ods\",\"filename\":\"workbook.ods\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\"Of"
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "format": "html",
+   "scope": "workbook",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-workbook-html.html",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"html\",\"filename\":\"workbook.html\",\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\":false,\"fitToWidth\":0,\"fitToHeight\":0},\"icecream.printtitles.Sheet1\":{\"rows\":\"\",\"cols\":\"\"},\"icecream.theme\":{\"name\":\""
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "note": "namedRange radioDisabled=false options=[\"MyRange — Workbook · Sheet1!A1:B2\"]"
+  },
+  {
+   "format": "xlsx",
+   "scope": "namedRange",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-namedRange-xlsx.xlsx",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"xlsx\",\"filename\":\"MyRange.xlsx\",\"scope\":\"namedRange\",\"namedRange\":{\"name\":\"MyRange\",\"ref\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":1,\"endCol\":1}}}"
+    }
+   ],
+   "errorSeen": null
+  },
+  {
+   "note": "namedRange radioDisabled=false options=[\"MyRange — Workbook · Sheet1!A1:B2\"]"
+  },
+  {
+   "format": "csv",
+   "scope": "namedRange",
+   "downloaded": true,
+   "saved": "/home/hatch/workspace/icecream-sheets/hidden_files/residual-p/captures/after2/dl-namedRange-csv.csv",
+   "requests": [
+    {
+     "method": "POST",
+     "url": "http://127.0.0.1:8411/download",
+     "status": 200,
+     "postData": "{\"format\":\"csv\",\"filename\":\"MyRange.csv\",\"scope\":\"namedRange\",\"namedRange\":{\"name\":\"MyRange\",\"ref\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":1,\"endCol\":1}}}"
+    }
+   ],
+   "errorSeen": null
+  }
+ ],
+ "api": {
+  "open": {
+   "status": 200,
+   "engineUrl": "http://127.0.0.1:8411",
+   "sessionId": "sess_36accca7-893e-4213-8cff-a7e85faabdd1"
+  },
+  "xlsbDirect": {
+   "status": 200,
+   "bytes": 1831,
+   "contentType": "application/vnd.ms-excel.sheet.binary.macroEnabled.12"
+  },
+  "xlsbProxiedGatewayJwt": {
+   "status": 401,
+   "body": "{\"ok\":false,\"error\":\"engine access denied: malformed\"}"
+  },
+  "csvDirectGatewayJwt": {
+   "status": 401,
+   "body": "{\"ok\":false,\"error\":\"engine access denied: malformed\"}"
+  }
+ },
+ "verdicts": {}
+}

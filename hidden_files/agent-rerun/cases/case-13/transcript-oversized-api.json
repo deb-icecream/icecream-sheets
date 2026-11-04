@@ -1,0 +1,22 @@
+{
+ "driver": "api-adaptation",
+ "promptLen": 2306,
+ "promptHead": "Please analyze the sales data in this workbook in extreme detail. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in th",
+ "turn": {
+  "text": "Please analyze the sales data in this workbook in extreme detail. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. Consider every product, every region, every amount and every quantity, cross-check the totals, and describe any pattern you find in the numbers, however small. ",
+  "ms": 604,
+  "status": 200,
+  "reply": "That message is too long for the agent — the limit is 2,000 characters (yours was 2,306). Normal chat prompts are a few hundred characters; if you have longer content, put it in a file or a data source and ask me to read it from there. Please shorten it and try again.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "guardrail",
+    "text": "guardrail rejection: input too long (2306 chars > limit 2000)"
+   },
+   {
+    "kind": "agent_message",
+    "text": "That message is too long for the agent — the limit is 2,000 characters (yours was 2,306). Normal chat prompts are a few hundred characters; if you have longer content, put it in a file or a data sourc"
+   }
+  ]
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "driver": "api-adaptation (product connector routes + ops materialization)",
+ "queryTurn": {
+  "prompt": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+  "turn": {
+   "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+   "ms": 8088,
+   "status": 200,
+   "reply": "The total of the revenue column in the 'Sales SQL' sheet is 4027.86.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The total of the revenue column in the 'Sales SQL' sheet is 4027.86."
+    }
+   ]
+  }
+ },
+ "analysisTurn": {
+  "prompt": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+  "turn": {
+   "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+   "ms": 23924,
+   "status": 200,
+   "reply": "I ran out of steps for that request. Could you break it into smaller parts?",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The total of the revenue column in the 'Sales SQL' sheet is 4027.86."
+    },
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much."
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?"
+    }
+   ]
+  }
+ }
+}

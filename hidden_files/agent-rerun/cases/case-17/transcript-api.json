@@ -1,0 +1,256 @@
+{
+ "driver": "api-adaptation",
+ "groundTruth": "NOT CAPTURED (browser Insert-tab screenshot unavailable on the isolated stack; see verdict caveat)",
+ "pivot": {
+  "prompt": "how do I create a pivot table?",
+  "turn": {
+   "text": "how do I create a pivot table?",
+   "ms": 2498,
+   "status": 200,
+   "reply": "You can create a pivot table using the 'analyze_data' tool. For example, to create a pivot table showing the sum of 'Amount' by 'Product' from the range 'Sales!A1:D5', you would use the intent 'Sum of Amount by Product over Sales!A1:D5'. Would you like me to create a pivot table for you?",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "memory",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "memory",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "question",
+     "text": "agent asked user"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I need to find the temperature for Seattle on 2026-10-21. Which sheet contains this information?\n\nWhich sheet contains the temperature data for Seattle?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "agent.offer_options",
+     "ok": true,
+     "text": "human-in-the-loop agent.offer_options: paused waiting for the user"
+    },
+    {
+     "kind": "user_message",
+     "text": "Sheet1"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": false,
+     "text": "read_cells failed: remote engine POST /read failed: HTTP 404 {\"ok\":false,\"error\":\"Unknown sheet: Sheet1\"}"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I couldn't find a sheet named 'Sheet1'. Please check the name and try again."
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "user_message",
+     "text": "how do I create a pivot table?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "You can create a pivot table using the 'analyze_data' tool. For example, to create a pivot table showing the sum of 'Amount' by 'Product' from the range 'Sales!A1:D5', you would use the intent 'Sum of"
+    }
+   ]
+  }
+ },
+ "xlookup": {
+  "prompt": "what does XLOOKUP do?",
+  "turn": {
+   "text": "what does XLOOKUP do?",
+   "ms": 1228,
+   "status": 200,
+   "reply": "The XLOOKUP function in Icecream Sheets searches a range or an array for a specified item and returns the item in a corresponding range or array. It's a more flexible and powerful alternative to functions like VLOOKUP and HLOOKUP. Would you like to know more about its arguments or see an example?",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "question",
+     "text": "ask suppressed: planner has not used any tool yet this turn"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "memory",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "memory",
+     "tool": "memory_load",
+     "ok": true,
+     "text": "memory_load ok"
+    },
+    {
+     "kind": "question",
+     "text": "agent asked user"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I need to find the temperature for Seattle on 2026-10-21. Which sheet contains this information?\n\nWhich sheet contains the temperature data for Seattle?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "agent.offer_options",
+     "ok": true,
+     "text": "human-in-the-loop agent.offer_options: paused waiting for the user"
+    },
+    {
+     "kind": "user_message",
+     "text": "Sheet1"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": false,
+     "text": "read_cells failed: remote engine POST /read failed: HTTP 404 {\"ok\":false,\"error\":\"Unknown sheet: Sheet1\"}"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I couldn't find a sheet named 'Sheet1'. Please check the name and try again."
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "user_message",
+     "text": "how do I create a pivot table?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "You can create a pivot table using the 'analyze_data' tool. For example, to create a pivot table showing the sum of 'Amount' by 'Product' from the range 'Sales!A1:D5', you would use the intent 'Sum of"
+    },
+    {
+     "kind": "user_message",
+     "text": "what does XLOOKUP do?"
+    },
+    {
+     "kind": "agent_message",
+     "text": "The XLOOKUP function in Icecream Sheets searches a range or an array for a specified item and returns the item in a corresponding range or array. It's a more flexible and powerful alternative to funct"
+    }
+   ]
+  }
+ }
+}

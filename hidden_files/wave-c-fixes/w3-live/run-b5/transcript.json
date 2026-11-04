@@ -1,0 +1,259 @@
+{
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-9dbc5475-5751-450f-90c0-24bb35bc3e0d",
+ "sessionId": "sess_d3534137-7125-4c40-82ce-d558d2993755",
+ "painted": true,
+ "viewCheckBeforeSend": {
+  "auditViewPresent": false,
+  "messagesListPresent": true,
+  "msgCount": 1,
+  "firstMsgVisible": true,
+  "firstMsgHead": "Hi — I can read ranges, sum or average them, write values and formulas, recalcul",
+  "auditChipOn": true,
+  "auditChipText": "Chat"
+ },
+ "retried": true,
+ "turns": [
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:C13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "It looks like the range A1:C13 on the Sales sheet doesn't contain numeric data for the revenue. Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:C13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "It looks like the range A1:C13 on the Sales sheet doesn't contain numeric data for the revenue. Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [
+     {
+      "kind": "pending-options",
+      "question": "Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\nA1:C13\nA1:D13\nOther",
+      "options": [
+       "A1:C13",
+       "A1:D13",
+       "Other"
+      ],
+      "answer": "A1:C13",
+      "atMs": 5154
+     }
+    ],
+    "textAnswers": []
+   },
+   "timedOut": false,
+   "durationMs": 10202,
+   "prompt": "Add a column chart of Month vs Revenue to the Sales sheet."
+  },
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:C13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "It looks like the range A1:C13 on the Sales sheet doesn't contain numeric data for the revenue. Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:B13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "I'm sorry, but I'm still having trouble creating the chart. The range A1:B13 on the Sales sheet does not appear to contain numeric data for revenue. Could you please provide the correct range that includes both the month and revenue columns, ensuring the revenue column contains numbers?",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Add a column chart of Month vs Revenue to the Sales sheet.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:B13",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "I'm sorry, but I'm still having trouble creating the chart. The range A1:B13 on the Sales sheet does not appear to contain numeric data for revenue. Could you please provide the correct range that includes both the month and revenue columns, ensuring the revenue column contains numbers?",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [
+     {
+      "kind": "pending-options",
+      "question": "Could you please specify the correct range that includes both the month and revenue columns, ensuring the revenue column has numbers?\nA1:B13\nA1:C13\nOther",
+      "options": [
+       "A1:B13",
+       "A1:C13",
+       "Other"
+      ],
+      "answer": "A1:B13",
+      "atMs": 2710
+     }
+    ],
+    "textAnswers": []
+   },
+   "timedOut": false,
+   "durationMs": 7783,
+   "prompt": "Add a column chart of Month vs Revenue to the Sales sheet."
+  }
+ ],
+ "chartProbeFirst": {
+  "overlayCount": 0,
+  "overlays": [],
+  "visible": false,
+  "storedCharts": {
+   "rawLength": 0,
+   "parsed": null
+  }
+ },
+ "statusAfterTurns": {
+  "ok": true,
+  "sessionId": "sess_d3534137-7125-4c40-82ce-d558d2993755",
+  "fileId": "file-9dbc5475-5751-450f-90c0-24bb35bc3e0d",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 0,
+  "storageRevision": 0,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 1,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792676843336,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0"
+ },
+ "statusAfterSave": {
+  "ok": true,
+  "sessionId": "sess_d3534137-7125-4c40-82ce-d558d2993755",
+  "fileId": "file-9dbc5475-5751-450f-90c0-24bb35bc3e0d",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 0,
+  "storageRevision": 0,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 1,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792676846334,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0"
+ },
+ "savedOk": false,
+ "chartProbeReopen": {
+  "overlayCount": 0,
+  "overlays": [],
+  "visible": false,
+  "storedCharts": {
+   "rawLength": 0,
+   "parsed": null
+  }
+ },
+ "paintedSecond": true,
+ "parseBack": {
+  "attempted": true,
+  "downloadStatus": 200,
+  "downloadJson": {
+   "entryId": "autosave_sess_d3534137-7125-4c40-82ce-d558d2993755",
+   "mode": "verbatim"
+  },
+  "signStatus": 200,
+  "via": "gateway-signed-url",
+  "bytes": 6893,
+  "allPartsCount": 11,
+  "parts": [],
+  "hasChart1Xml": false,
+  "charts": []
+ }
+}

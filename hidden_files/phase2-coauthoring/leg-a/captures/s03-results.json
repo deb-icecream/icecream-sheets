@@ -1,0 +1,65 @@
+{
+ "scenario": "3-same-cell-lww",
+ "steps": {
+  "bobOfflineBodyHasDisconnected": false,
+  "bobOfflineEdit": {
+   "attempted": true,
+   "editorOpened": true,
+   "cellAfter": "1",
+   "queueState": {
+    "queue": {
+     "queue": [
+      {
+       "clientSeq": 1,
+       "cmd": {
+        "cmd": "setCell",
+        "ref": {
+         "sheet": "Sheet1",
+         "row": 0,
+         "col": 0
+        },
+        "value": 555
+       },
+       "baseRev": 0,
+       "enqueuedAt": 1792624540828
+      }
+     ],
+     "rejected": [],
+     "clientSeq": 1,
+     "lastAppliedRev": 0
+    },
+    "clientId": "web-mviqd3tz-4l19j"
+   }
+  },
+  "afterAliceOnlineEdit": {
+   "aliceCell": "111",
+   "server": {
+    "kind": "number",
+    "value": 111
+   },
+   "bobCellOffline": "1"
+  },
+  "partA": {
+   "aliceFinal": "555",
+   "bobFinal": "555",
+   "server": {
+    "kind": "number",
+    "value": 555
+   }
+  },
+  "partB": {
+   "alice": "777",
+   "bob": "777",
+   "server": {
+    "kind": "number",
+    "value": 777
+   },
+   "sameWinner": true
+  }
+ },
+ "verdict": "PASS",
+ "fileId": "file-981e2622-8691-4445-89a1-b1024873bc48",
+ "sessionId": "sess_d36ccfc9-0152-4f37-b52b-824e3862aa58",
+ "partA": "PASS",
+ "partB": "PASS"
+}

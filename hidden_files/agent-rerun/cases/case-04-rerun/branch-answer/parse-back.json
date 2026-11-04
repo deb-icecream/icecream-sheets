@@ -1,0 +1,87 @@
+{
+ "attempted": true,
+ "downloadStatus": 200,
+ "downloadJson": {
+  "entryId": "autosave_sess_99b468e4-cf54-46c5-b106-a3ad058803aa",
+  "mode": "verbatim"
+ },
+ "signStatus": 200,
+ "via": "gateway-signed-url",
+ "bytes": 9064,
+ "allPartsCount": 15,
+ "parts": [
+  "xl/charts/chart1.xml",
+  "xl/drawings/drawing1.xml",
+  "xl/drawings/_rels/drawing1.xml.rels"
+ ],
+ "hasChart1Xml": true,
+ "chart1CachedValues": [
+  "Revenue",
+  "Jan",
+  "Jan",
+  "Feb",
+  "Feb",
+  "Mar",
+  "Mar",
+  "Apr",
+  "Apr",
+  "May",
+  "May",
+  "Jun",
+  "Jun",
+  "12000",
+  "9800",
+  "13500",
+  "11200",
+  "15800",
+  "12600",
+  "14200",
+  "10900",
+  "16900",
+  "11600",
+  "16700",
+  "14200"
+ ],
+ "chart1XmlHead": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><c:chartSpace xmlns:c=\"http://schemas.openxmlformats.org/drawingml/2006/chart\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><c:chart><c:title><c:tx><c:rich><a:bodyPr/><a:lstStyle/><a:p><a:pPr><a:defRPr/></a:pPr><a:r><a:rPr lang=\"en-US\"/><a:t>Month vs Revenue</a:t></a:r></a:p></c:rich></c:tx><c:overlay val=\"0\"/></c:title><c:autoTitleDeleted val=\"0\"/><c:plotArea><c:layout/><c:barChart><c:barDir val=\"col\"/><c:grouping val=\"clustered\"/><c:ser><c:idx val=\"0\"/><c:order val=\"0\"/><c:tx><c:strRef><c:f>Sales!$C$1</c:f><c:strCache><c:ptCount val=\"1\"/><c:pt idx=\"0\"><c:v>Revenue</c:v></c:pt></c:strCache></c:strRef></c:tx><c:cat><c:strRef><c:f>Sales!$A$2",
+ "charts": [
+  {
+   "kind": "barChart",
+   "title": "Month vs Revenue",
+   "series": [
+    {
+     "name": "Revenue",
+     "valFormula": "Sales!$C$2:$C$13",
+     "catFormula": "Sales!$A$2:$A$13",
+     "valCache": [
+      12000,
+      9800,
+      13500,
+      11200,
+      15800,
+      12600,
+      14200,
+      10900,
+      16900,
+      11600,
+      16700,
+      14200
+     ],
+     "catCache": [
+      "Jan",
+      "Jan",
+      "Feb",
+      "Feb",
+      "Mar",
+      "Mar",
+      "Apr",
+      "Apr",
+      "May",
+      "May",
+      "Jun",
+      "Jun"
+     ]
+    }
+   ]
+  }
+ ]
+}

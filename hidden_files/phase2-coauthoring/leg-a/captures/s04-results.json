@@ -1,0 +1,123 @@
+{
+ "scenario": "4-deltas-only",
+ "parts": {
+  "A": {
+   "bob": {
+    "label": "bob-after-edit",
+    "deltaCount": 1,
+    "deltas": [
+     {
+      "revision": 1,
+      "origin": {
+       "clientId": "web-mviqdz5d-7nyez",
+       "clientSeq": 1,
+       "principal": "user:alice"
+      },
+      "cells": [
+       {
+        "sheet": "Sheet1",
+        "row": 0,
+        "col": 0,
+        "value": {
+         "kind": "number",
+         "value": 11
+        }
+       },
+       {
+        "sheet": "Sheet1",
+        "row": 1,
+        "col": 1,
+        "value": {
+         "kind": "number",
+         "value": 31
+        },
+        "formula": "=A1+B1"
+       }
+      ]
+     }
+    ],
+    "eventsRequestCount": 0,
+    "maxCellsInAnyDelta": 2
+   },
+   "alice": {
+    "label": "alice-after-edit",
+    "deltaCount": 1,
+    "deltas": [
+     {
+      "revision": 1,
+      "origin": {
+       "clientId": "web-mviqdz5d-7nyez",
+       "clientSeq": 1,
+       "principal": "user:alice"
+      },
+      "cells": [
+       {
+        "sheet": "Sheet1",
+        "row": 0,
+        "col": 0,
+        "value": {
+         "kind": "number",
+         "value": 11
+        }
+       },
+       {
+        "sheet": "Sheet1",
+        "row": 1,
+        "col": 1,
+        "value": {
+         "kind": "number",
+         "value": 31
+        },
+        "formula": "=A1+B1"
+       }
+      ]
+     }
+    ],
+    "eventsRequestCount": 0,
+    "maxCellsInAnyDelta": 2
+   },
+   "bobEventsTotal": 0,
+   "aliceEventsTotal": 0,
+   "ok": true
+  },
+  "B": {
+   "chainCells": 260,
+   "revisionAfterBuild": 260,
+   "analysis": {
+    "label": "solo-after-head-edit",
+    "deltaCount": 1,
+    "eventsRequestCount": 0,
+    "maxCellsInAnyDelta": 261,
+    "deltaRevisions": [
+     261
+    ],
+    "totalDeltaCells": 261,
+    "farDependentCells": [
+     {
+      "sheet": "Sheet1",
+      "row": 259,
+      "col": 0,
+      "value": {
+       "kind": "number",
+       "value": 359
+      },
+      "formula": "=A259+1"
+     },
+     {
+      "sheet": "Sheet1",
+      "row": 260,
+      "col": 0,
+      "value": {
+       "kind": "number",
+       "value": 360
+      },
+      "formula": "=A260+1"
+     }
+    ],
+    "eventsTotal": 0
+   },
+   "ok": true
+  }
+ },
+ "verdict": "PASS"
+}

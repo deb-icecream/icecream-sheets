@@ -1,0 +1,16 @@
+{
+  "fixture": "/home/hatch/workspace/icecream-sheets/hidden_files/phase2-coauthoring/build/desktop-smoke/fixture-local.xlsx",
+  "state": {
+    "banner": false,
+    "tabs": [
+      "Sheet1",
+      "+"
+    ],
+    "A1": "10",
+    "B1": "20",
+    "B2": "30",
+    "token": null,
+    "chip": null
+  },
+  "quit": "killed"
+}

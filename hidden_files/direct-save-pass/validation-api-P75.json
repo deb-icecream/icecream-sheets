@@ -1,0 +1,141 @@
+{
+ "tag": "P75",
+ "steps": {
+  "load": {
+   "status": 200,
+   "ms": 1129
+  },
+  "autosaveConvergence": {
+   "ms": 6,
+   "status": {
+    "ok": true,
+    "sessionId": "sess_cb234717-040e-4957-a506-4c7da7e748ce",
+    "liveRevision": 0,
+    "storageRevision": 0,
+    "extrasDirty": false,
+    "pendingCheckpointOps": 0,
+    "autosaveStats": {
+     "flushes": 0,
+     "noopSkips": 0,
+     "forcedFlushes": 0
+    }
+   }
+  },
+  "forceSaveNoop": {
+   "status": 200,
+   "ms": 1236,
+   "skipped": false,
+   "caughtUp": true,
+   "entryId": "wb_mvi96ae8_b07i73",
+   "sizeBytes": 486997
+  },
+  "downloadUnedited": {
+   "metaStatus": 200,
+   "mode": "verbatim",
+   "metaMs": 33,
+   "signMs": 10,
+   "fetchMs": 16,
+   "fetchStatus": 200,
+   "bytes": 486997,
+   "metaBytes": 486997,
+   "counts": {
+    "sheets": [
+     "FMTs",
+     "Cover",
+     "TOC",
+     "Constants",
+     "Imports",
+     "Inputs",
+     "Calcs",
+     "Income",
+     "Cash Flow",
+     "Balance",
+     "Summaries",
+     "Dashboard",
+     "CHKs"
+    ],
+    "value": 2202,
+    "formula": 761
+   }
+  },
+  "editAndFlush": {
+   "execStatus": 200,
+   "execMs": 14,
+   "flushWaitMs": 3053,
+   "stats": {
+    "flushes": 2,
+    "noopSkips": 1,
+    "forcedFlushes": 1
+   }
+  },
+  "downloadEdited": {
+   "saveSignalMs": 6,
+   "fetchMs": 8,
+   "mode": "verbatim",
+   "serializeMs": 0,
+   "bytes": 485265,
+   "counts": {
+    "sheets": [
+     "FMTs",
+     "Cover",
+     "TOC",
+     "Constants",
+     "Imports",
+     "Inputs",
+     "Calcs",
+     "Income",
+     "Cash Flow",
+     "Balance",
+     "Summaries",
+     "Dashboard",
+     "CHKs"
+    ],
+    "value": 2202,
+    "formula": 761
+   },
+   "editCell": {
+    "addr": "D7",
+    "value": 424242
+   }
+  },
+  "forceSaveAfterCommit": {
+   "status": 200,
+   "ms": 13,
+   "skipped": true,
+   "caughtUp": true
+  },
+  "postSaveEditRoundTrip": {
+   "execStatus": 200,
+   "execOk": true,
+   "readValue": {
+    "kind": "number",
+    "value": 777
+   }
+  }
+ },
+ "sourceBytes": 1285214,
+ "sourceCounts": {
+  "sheets": [
+   "FMTs",
+   "Cover",
+   "TOC",
+   "Constants",
+   "Imports",
+   "Inputs",
+   "Calcs",
+   "Income",
+   "Cash Flow",
+   "Balance",
+   "Summaries",
+   "Dashboard",
+   "CHKs"
+  ],
+  "value": 2202,
+  "formula": 761
+ },
+ "editRef": {
+  "sheet": "FMTs",
+  "row": 6,
+  "col": 3
+ }
+}

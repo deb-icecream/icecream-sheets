@@ -1,0 +1,37 @@
+{
+ "hash": "#file=file-4173b912-0a01-4298-953b-a0ea87edfa09",
+ "tabs": [
+  "START HERE",
+  "DASHBOARD",
+  "ASSUMPTIONS",
+  "HISTORICAL INPUTS",
+  "REVENUE BUILD",
+  "OPERATING MODEL",
+  "INCOME STATEMENT",
+  "BALANCE SHEET",
+  "CASH FLOW",
+  "WORKING CAPITAL",
+  "CAPEX & DEPRECIATION",
+  "DEBT SCHEDULE",
+  "FINANCIAL RATIOS",
+  "SCENARIO ANALYSIS",
+  "BREAK-EVEN",
+  "CASH RUNWAY",
+  "MONTHLY VIEW (LITE)",
+  "SENSITIVITY",
+  "VALUATION",
+  "CHECKS",
+  "DATA-SUPPORT"
+ ],
+ "edit": {
+  "sheet": "HISTORICAL INPUTS",
+  "cell": "H10",
+  "value": "REGRESSION-EDIT"
+ },
+ "statusHints": [
+  "✓ Saved"
+ ],
+ "saveTraffic": [],
+ "errorsTail": [],
+ "verdict": "DONE"
+}

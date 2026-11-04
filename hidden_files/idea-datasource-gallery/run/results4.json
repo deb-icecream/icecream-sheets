@@ -1,0 +1,66 @@
+{
+ "b": {
+  "starter": "ok",
+  "restGrid": "ok",
+  "sqlGrid": "ok",
+  "localStorageKeys": [
+   "icecream.names.icecream-sheets.secure.v1/__service__/icecream-sheets.access.v1",
+   "icecream.clientId",
+   "icecream.names.icecream-sheets.keys.v1",
+   "icecream-sheets.keys.v1",
+   "icecream-sheets.charts.v1",
+   "icecream-sheets.data-sources.v1",
+   "icecream-sheets.oplog.tabs.v1",
+   "icecream-sheets.gateway-token",
+   "icecream.names.id.workbook",
+   "icecream.collab.file-d553aba8-4350-4704-8a82-dee17095cc57"
+  ],
+  "bindings": {
+   "version": 1,
+   "bindings": [
+    {
+     "id": "REST API",
+     "sheetName": "REST API",
+     "spec": {
+      "version": 1,
+      "kind": "rest-api",
+      "label": "REST API",
+      "params": {
+       "url": "http://127.0.0.1:8199/api/sales",
+       "path": "records"
+      },
+      "credentialRef": "user:dsgallery:ds:rest:api-token"
+     },
+     "lastRefresh": "2026-10-22T01:42:55.164Z",
+     "rowCount": 25,
+     "colCount": 7
+    },
+    {
+     "id": "SQL database",
+     "sheetName": "SQL database",
+     "spec": {
+      "version": 1,
+      "kind": "sql",
+      "label": "SQL database",
+      "params": {
+       "driver": "sqlite",
+       "connection": "sales-fixture",
+       "query": "SELECT * FROM \"sales\""
+      },
+      "credentialRef": "user:dsgallery:ds:sql:sales-fixture"
+     },
+     "lastRefresh": "2026-10-22T01:43:59.851Z",
+     "rowCount": 25,
+     "colCount": 7
+    }
+   ]
+  },
+  "regression": {
+   "hash": "#file=file-bd8644ea-28fc-46bc-9343-119d0eff9dfa",
+   "tabs": [
+    "+"
+   ]
+  },
+  "fatal": "TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator('.cell-editor') to be visible\n"
+ }
+}

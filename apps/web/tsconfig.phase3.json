@@ -1,0 +1,1 @@
+{"compilerOptions":{"paths":{"@icecream-sheets/engine":["../../packages/engine/src/index.ts"],"@icecream-sheets/engine/*":["../../packages/engine/src/*"]},"rootDir":"../../"},"extends":"./tsconfig.json"}

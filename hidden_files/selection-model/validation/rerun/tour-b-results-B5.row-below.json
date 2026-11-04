@@ -1,0 +1,18 @@
+{
+ "checks": [
+  {
+   "id": "B5.row-below.before",
+   "pass": true,
+   "detail": "before={\"p11\":{\"value\":201,\"formula\":\"=P12+1\"},\"p12\":{\"value\":200}}"
+  },
+  {
+   "id": "B5.row-below.after",
+   "pass": true,
+   "detail": "after={\"p11\":{\"value\":null},\"p12\":{\"value\":201,\"formula\":\"=P13+1\"},\"p13\":{\"value\":200}}"
+  }
+ ],
+ "shots": [
+  "b5-row-below-after.png"
+ ],
+ "verdict": "ALL PASS"
+}

@@ -1,0 +1,89 @@
+{
+ "steps": {
+  "login": "GatewayLogin UI as user \"dsgallery\"",
+  "starterUpload": {
+   "hash": "#file=file-e2f48b6e-43ee-4078-b7cb-1379272c67e9",
+   "A1": "1",
+   "tabs": [
+    "Starter",
+    "+"
+   ]
+  },
+  "csvSchema": {
+   "hasRowCount24": true,
+   "typesSnippet": "Schema preview — 24 rowsColumnTypeorder_idnumberorder_datedateregiontextproducttextunitsnumberunit_pricenumberrevenuenumberPreview — first 8 rowsorder_idorder_dateregionproductunitsunit_pricerevenue10012026-01-01NorthWidget29.9919.9810022026-01-02SouthGadget919.99179.9110032026-01-03EastGizmo1629.547210042026-01-04WestDoohickey54.7523.7510052026-01-05NorthWidget129.99119.8810062026-01-06SouthGadge"
+  },
+  "csvGrid": {
+   "A1": "order_id",
+   "G2": "19.98",
+   "A25": "1024"
+  },
+  "csvFormula": {
+   "cell": "G26",
+   "formula": "=SUM(G2:G25)",
+   "actual": "4027.86",
+   "expected": 4027.86
+  },
+  "csvChart": {
+   "chartDomNodes": 1
+  },
+  "csvPivot": {
+   "hasNorth": true,
+   "snippet": "PivotTableRecommended PivotTablesTablesBuild AppMy Apps ▾AppsSlicerTimelineFiltersSparklineRemove SparklineSparklinesPicturesShapes ▾IconsSmartArtScreenshotIllustrationsInsert Chart ▾Recommended ChartsPivotChartChartsLink ▾LinksAText BoxHeader & FooterAWordArtTextπEquation ▾ΩSymbolSymbolsNew ReportM"
+  },
+  "restSchema": {
+   "hasRowCount24": true
+  },
+  "restFormula": {
+   "cell": "G26",
+   "actual": "4027.86",
+   "expected": 4027.86
+  },
+  "restBindings": {
+   "icecream-sheets.data-sources.v1": "{\"version\":1,\"bindings\":[{\"id\":\"CSV from URL\",\"sheetName\":\"CSV from URL\",\"spec\":{\"version\":1,\"kind\":\"csv-url\",\"label\":\"CSV from URL\",\"params\":{\"url\":\"http://127.0.0.1:8199/sales.csv\",\"hasHeader\":\"true\"}},\"lastRefresh\":\"2026-10-22T01:21:02.107Z\",\"rowCount\":25,\"colCount\":7},{\"id\":\"REST API\",\"sheetName\":\"REST API\",\"spec\":{\"version\":1,\"kind\":\"rest-api\",\"label\":\"REST API\",\"params\":{\"url\":\"http://127.0.0.1:8199/api/sales\",\"path\":\"records\"},\"credentialRef\":\"user:dsgallery:ds:rest:api-token\"},\"lastRefresh\":\"2026-10-22T01:22:28.443Z\",\"rowCount\":25,\"colCount\":7}]}"
+  },
+  "sqlSchema": {
+   "declaredTypes": "Schema preview — 24 rowsColumnTypeorder_idINTEGERorder_dateTEXTregionTEXTproductTEXTunitsINTEGERunit_priceREALrevenueREALPreview — first 8 rowsorder_idorder_dateregionproductunitsunit_pricerevenue10012026-01-01NorthWidget29.9919.9810022026-01-02SouthGadget919.99179.9110032026-01-03EastGizmo1629.547210042026-01-04WestDoohickey54.7523.7510052026-01-05NorthWidget129.99119.8810062026-01-06SouthGadget1919.99379.8110072026-01-07EastGizmo829.523610082026-01-08WestDoohickey154.7571.25CancelTest connecti"
+  },
+  "sqlFormula": {
+   "cell": "G26",
+   "actual": "4027.86",
+   "expected": 4027.86
+  },
+  "sqlChart": {
+   "chartDomNodes": 1
+  },
+  "refresh": {
+   "buttonEnabled": true,
+   "afterA1": "order_id",
+   "afterG2": "19.98"
+  }
+ },
+ "verdicts": {
+  "csv": "PASS",
+  "rest": "PASS",
+  "sql": "PASS",
+  "refresh": "PASS"
+ },
+ "notes": [],
+ "errors": [
+  "console: Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+  "console: Access to fetch at 'http://127.0.0.1:8101/load/stream' from origin 'http://localhost:4173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource",
+  "console: Failed to load resource: net::ERR_FAILED",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+  "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+ ],
+ "fatal": "Error: page.evaluate: Target crashed "
+}

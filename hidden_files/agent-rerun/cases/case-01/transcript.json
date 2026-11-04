@@ -1,0 +1,164 @@
+{
+ "turns": [
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Region and Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Yes",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": true,
+     "buttons": []
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Region and Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Yes",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": true,
+     "buttons": []
+    }
+   ],
+   "clicked": "Yes|Would you like me to find the ",
+   "timedOut": false,
+   "durationMs": 74946,
+   "prompt": "Which region had the highest total revenue in the Sales sheet?"
+  },
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Which region had the highest total revenue in the Sales sheet?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Region and Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Yes",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": true,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "List the rows in the Sales sheet where Revenue is greater than 14000.",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "user",
+     "text": "Revenue",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    },
+    {
+     "role": "agent",
+     "text": "I ran out of steps for that request. Could you break it into smaller parts?",
+     "hasTable": false,
+     "hasCanvas": false,
+     "buttons": []
+    }
+   ],
+   "clicked": "Revenue|Which column in the 'Sales' sh",
+   "timedOut": false,
+   "durationMs": 71949,
+   "prompt": "List the rows in the Sales sheet where Revenue is greater than 14000."
+  }
+ ]
+}

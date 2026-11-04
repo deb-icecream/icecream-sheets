@@ -1,0 +1,110 @@
+{
+  "fixture": "test-data/perf-fixtures/perf-p99.xlsx",
+  "url": "http://localhost:8100/api/engine/load/stream",
+  "wallMs": 113967,
+  "lines": 174,
+  "rowChunks": 166,
+  "firstRows": {
+    "type": "rows",
+    "sheet": "Sales",
+    "startRow": 0,
+    "elapsedMs": 2996,
+    "atMs": 3843,
+    "cellsDone": 1536
+  },
+  "meta": {
+    "type": "meta",
+    "elapsedMs": 2404,
+    "atMs": 3528,
+    "totalCells": 6500130
+  },
+  "dataDone": {
+    "type": "data-done",
+    "elapsedMs": 28769,
+    "atMs": 29606,
+    "totalCells": 6500062,
+    "timings": {
+      "unzipMs": 2336,
+      "sharedInputsMs": 0,
+      "metaMs": 60,
+      "sheetParseMs": 24884,
+      "firstSheetReadyMs": 10034,
+      "assembleMs": 1478,
+      "totalMs": 28768,
+      "path": "parallel",
+      "workers": 1
+    }
+  },
+  "built": {
+    "type": "built",
+    "elapsedMs": 113124,
+    "atMs": 113964,
+    "timings": {
+      "unzipMs": 2336,
+      "sharedInputsMs": 0,
+      "metaMs": 60,
+      "sheetParseMs": 24884,
+      "firstSheetReadyMs": 10034,
+      "assembleMs": 1478,
+      "totalMs": 113123,
+      "path": "parallel",
+      "workers": 1,
+      "buildMs": 76657,
+      "mirrorMs": 0,
+      "streamMetaMs": 2404,
+      "streamSheet1RowsMs": 2995
+    }
+  },
+  "lastEvents": [
+    {
+      "type": "rows",
+      "sheet": "Ledger2023",
+      "startRow": 98432,
+      "elapsedMs": 26729,
+      "atMs": 27570,
+      "cellsDone": 6500062
+    },
+    {
+      "type": "sheet-complete",
+      "elapsedMs": 27280,
+      "atMs": 28117
+    },
+    {
+      "type": "data-done",
+      "elapsedMs": 28769,
+      "atMs": 29606,
+      "totalCells": 6500062,
+      "timings": {
+        "unzipMs": 2336,
+        "sharedInputsMs": 0,
+        "metaMs": 60,
+        "sheetParseMs": 24884,
+        "firstSheetReadyMs": 10034,
+        "assembleMs": 1478,
+        "totalMs": 28768,
+        "path": "parallel",
+        "workers": 1
+      }
+    },
+    {
+      "type": "built",
+      "elapsedMs": 113124,
+      "atMs": 113964,
+      "timings": {
+        "unzipMs": 2336,
+        "sharedInputsMs": 0,
+        "metaMs": 60,
+        "sheetParseMs": 24884,
+        "firstSheetReadyMs": 10034,
+        "assembleMs": 1478,
+        "totalMs": 113123,
+        "path": "parallel",
+        "workers": 1,
+        "buildMs": 76657,
+        "mirrorMs": 0,
+        "streamMetaMs": 2404,
+        "streamSheet1RowsMs": 2995
+      }
+    }
+  ]
+}

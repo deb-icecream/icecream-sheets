@@ -1,0 +1,243 @@
+[
+ {
+  "t": 1792630721633,
+  "method": "GET",
+  "url": "http://localhost:4173/",
+  "path": "/",
+  "status": 200
+ },
+ {
+  "t": 1792630721933,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-bMw5Kr-K.js",
+  "path": "/assets/index-bMw5Kr-K.js",
+  "status": 200
+ },
+ {
+  "t": 1792630721934,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index-mX3dgP0t.css",
+  "path": "/assets/index-mX3dgP0t.css",
+  "status": 200
+ },
+ {
+  "t": 1792630730892,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-D4FioLsJ.js",
+  "path": "/assets/index.esm-D4FioLsJ.js",
+  "status": 200
+ },
+ {
+  "t": 1792630730892,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-CYjbdNaw.js",
+  "path": "/assets/index.esm-CYjbdNaw.js",
+  "status": 200
+ },
+ {
+  "t": 1792630731041,
+  "method": "GET",
+  "url": "http://localhost:4173/assets/index.esm-b2E5eAsE.js",
+  "path": "/assets/index.esm-b2E5eAsE.js",
+  "status": 200
+ },
+ {
+  "t": 1792630737179,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open",
+  "status": 200
+ },
+ {
+  "t": 1792630737179,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/catalog",
+  "path": "/api/addons/catalog",
+  "status": 200
+ },
+ {
+  "t": 1792630737180,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/installed",
+  "path": "/api/addons/installed",
+  "status": 200
+ },
+ {
+  "t": 1792630737180,
+  "method": "GET",
+  "url": "http://localhost:8100/api/addons/grants?documentId=local-workbook",
+  "path": "/api/addons/grants",
+  "status": 200
+ },
+ {
+  "t": 1792630738793,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras",
+  "status": 401
+ },
+ {
+  "t": 1792630739006,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/access",
+  "path": "/api/engine/access",
+  "status": 200
+ },
+ {
+  "t": 1792630739613,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/deltas?access_token=<redacted>",
+  "path": "/deltas",
+  "status": 200
+ },
+ {
+  "t": 1792630739829,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/snapshot",
+  "path": "/snapshot",
+  "status": 200
+ },
+ {
+  "t": 1792630739829,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792630739829,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792630739829,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792630739829,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/read",
+  "path": "/read",
+  "status": 200
+ },
+ {
+  "t": 1792630740210,
+  "method": "GET",
+  "url": "http://127.0.0.1:8101/sheets",
+  "path": "/sheets",
+  "status": 200
+ },
+ {
+  "t": 1792630743069,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras"
+ },
+ {
+  "t": 1792630747862,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence"
+ },
+ {
+  "t": 1792630749503,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/session-extras",
+  "path": "/session-extras"
+ },
+ {
+  "t": 1792630749911,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/presence",
+  "path": "/presence"
+ },
+ {
+  "t": 1792630750414,
+  "method": "POST",
+  "url": "http://127.0.0.1:8101/ops",
+  "path": "/ops"
+ },
+ {
+  "t": 1792630750961,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630751116,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630751839,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras"
+ },
+ {
+  "t": 1792630751877,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open"
+ },
+ {
+  "t": 1792630752934,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630753491,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630754085,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/open",
+  "path": "/api/engine/open"
+ },
+ {
+  "t": 1792630754591,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630754591,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630755294,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630755323,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ },
+ {
+  "t": 1792630756136,
+  "method": "POST",
+  "url": "http://localhost:8100/api/engine/session-extras",
+  "path": "/api/engine/session-extras"
+ },
+ {
+  "t": 1792630757798,
+  "method": "GET",
+  "url": "http://localhost:8100/api/engine/session-save-status",
+  "path": "/api/engine/session-save-status"
+ }
+]

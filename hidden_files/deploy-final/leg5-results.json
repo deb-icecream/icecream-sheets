@@ -1,0 +1,12 @@
+{
+  "webapp": {
+    "origin": "https://icecream-sheets.web.app",
+    "steps": [],
+    "verdict": "HARNESS ERROR: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://icecream-sheets.web.app/\nCall log:\n  - navigating to \"https://icecream-sheets.web.app/\", waiting until \"domcontentloaded\"\n"
+  },
+  "custom": {
+    "origin": "https://office.deb0.com",
+    "steps": [],
+    "verdict": "HARNESS ERROR: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://office.deb0.com/\nCall log:\n  - navigating to \"https://office.deb0.com/\", waiting until \"domcontentloaded\"\n"
+  }
+}

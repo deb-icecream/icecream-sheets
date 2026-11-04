@@ -1,0 +1,430 @@
+{
+  "case": "case7sql",
+  "gw": "http://localhost:9150",
+  "turns": [
+    {
+      "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+      "ms": 8731,
+      "status": 200,
+      "message": "The total revenue across all rows in the 'Sales SQL' sheet is 4027.86.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue across all rows in the 'Sales SQL' sheet is 4027.86.",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": null
+    },
+    {
+      "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+      "ms": 12823,
+      "status": 200,
+      "message": "I got stuck on step 2 of 2 (\"Identify the region with the highest revenue\") after 3 attempts. verification failed — the step produced no tool activity.\nCompleted so far: \"Calculate total revenue per region\".\nNote: 8 cell(s) were written along the way — those changes are in the sheet.\nWhat would unblock it: the check in the step detail above says what the sheet should hold — correct the sheet, or tell me the right target, then say \"continue\". Send a message with that — or just \"continue\" — and I will resume from step 2; the completed steps will not be repeated.",
+      "answers": [],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The total revenue across all rows in the 'Sales SQL' sheet is 4027.86.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Workflow started: 2 steps planned.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "started",
+            "status": "running",
+            "detail": "2 steps planned"
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 1/2 started: Calculate total revenue per region.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_started",
+            "stepIndex": 0,
+            "stepTitle": "Calculate total revenue per region",
+            "attempt": 1
+          }
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "set_formulas",
+          "ok": true,
+          "text": null,
+          "summary": "set_formulas ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "read_cells",
+          "ok": true,
+          "text": null,
+          "summary": "read_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "write_cells",
+          "ok": true,
+          "text": null,
+          "summary": "write_cells ok",
+          "workflow": null
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "I have calculated the total revenue per region in the 'Sales SQL' sheet: North: 539.46, South: 1199.4, East: 1947, and West: 342.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 1/2: verifying \"Calculate total revenue per region\" against the sheet.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_verifying",
+            "stepIndex": 0,
+            "stepTitle": "Calculate total revenue per region",
+            "attempt": 1
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 1/2 done: Calculate total revenue per region.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_done",
+            "stepIndex": 0,
+            "stepTitle": "Calculate total revenue per region",
+            "attempt": 1,
+            "detail": "checks passed: sheet \"Sales SQL\" exists"
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2 started: Identify the region with the highest revenue.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_started",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 1
+          }
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The region with the highest total revenue is East, with a total of 1947.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2: verifying \"Identify the region with the highest revenue\" against the sheet.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_verifying",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 1
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2 did not finish — verification failed — the step produced no tool activity.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_retrying",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 1,
+            "detail": "verification failed — the step produced no tool activity"
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2 started (attempt 2): Identify the region with the highest revenue.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_started",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 2
+          }
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The region with the highest total revenue is East, with a total of 1947.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2: verifying \"Identify the region with the highest revenue\" against the sheet.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_verifying",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 2
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2 did not finish — verification failed — the step produced no tool activity.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_retrying",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 2,
+            "detail": "verification failed — the step produced no tool activity"
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2: re-planned the remaining steps (verification failed — the step produced no tool activity).",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_replanned",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "detail": "verification failed — the step produced no tool activity"
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2 started (attempt 3): Identify the region with the highest revenue.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_started",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 3
+          }
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "The region with the highest total revenue is East, with a total of 1947.",
+          "summary": null,
+          "workflow": null
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Step 2/2: verifying \"Identify the region with the highest revenue\" against the sheet.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "step_verifying",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "attempt": 3
+          }
+        },
+        {
+          "kind": "workflow",
+          "tool": null,
+          "ok": null,
+          "text": null,
+          "summary": "Workflow stuck at step 2/2: verification failed — the step produced no tool activity.",
+          "workflow": {
+            "workflowId": "wf-mvkmap38-0-6tntbd",
+            "event": "stuck",
+            "stepIndex": 1,
+            "stepTitle": "Identify the region with the highest revenue",
+            "status": "stuck",
+            "detail": "verification failed — the step produced no tool activity"
+          }
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "I got stuck on step 2 of 2 (\"Identify the region with the highest revenue\") after 3 attempts. verification failed — the step produced no tool activity.\nComplete",
+          "summary": null,
+          "workflow": null
+        }
+      ],
+      "workflow": {
+        "id": "wf-mvkmap38-0-6tntbd",
+        "status": "stuck",
+        "stepsPlanned": 2,
+        "stepsCompleted": 1,
+        "stepsRetried": 2
+      }
+    }
+  ],
+  "checks": {
+    "total402786": true,
+    "totalRanOut": false,
+    "analysisRanOut": false,
+    "analysisNamesRegionTotal": false
+  },
+  "evidence": {
+    "connector": {
+      "store": 200,
+      "query": 200,
+      "rows": 24
+    },
+    "analysisReply": "I got stuck on step 2 of 2 (\"Identify the region with the highest revenue\") after 3 attempts. verification failed — the step produced no tool activity.\nCompleted so far: \"Calculate total revenue per region\".\nNote: 8 cell(s) were written along the way — those changes are in the sheet.\nWhat would unblock it: the check in the step detail above says what the sheet should hold — correct the sheet, or t",
+    "releaseStatus": 200
+  }
+}

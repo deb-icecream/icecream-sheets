@@ -1,0 +1,1080 @@
+{
+  "runs": [
+    {
+      "tag": "plain",
+      "steps": [
+        {
+          "edit": "A1=uuu",
+          "commitAt": 1792703545657,
+          "paintMs": 311,
+          "domValue": "uuu"
+        },
+        {
+          "edit": "B2=vvv",
+          "paintMs": 48,
+          "domValue": "vvv"
+        }
+      ],
+      "a1AfterSettle": "uuu",
+      "a1AfterSecond": "uuu",
+      "b2AfterSecond": "vvv",
+      "net": [
+        {
+          "t": 996,
+          "dt": 367,
+          "url": "http://localhost:9010/api/settings",
+          "status": 404
+        },
+        {
+          "t": 995,
+          "dt": 367,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 976,
+          "dt": 387,
+          "url": "http://localhost:9010/api/engine/open",
+          "status": 200
+        },
+        {
+          "t": 989,
+          "dt": 428,
+          "url": "http://localhost:9010/api/addons/catalog",
+          "status": 200
+        },
+        {
+          "t": 991,
+          "dt": 434,
+          "url": "http://localhost:9010/api/addons/installed",
+          "status": 200
+        },
+        {
+          "t": 991,
+          "dt": 440,
+          "url": "http://localhost:9010/api/addons/grants?documentId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 1436,
+          "dt": 102,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 1493,
+          "dt": 241,
+          "url": "http://localhost:9010/api/files/file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 1584,
+          "dt": 170,
+          "url": "http://localhost:9010/api/engine/access",
+          "status": 200
+        },
+        {
+          "t": 1754,
+          "dt": 141,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 1922,
+          "dt": 146,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2015,
+          "dt": 128,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 1896,
+          "dt": 247,
+          "url": "http://127.0.0.1:9011/read",
+          "status": 200
+        },
+        {
+          "t": 1896,
+          "dt": 248,
+          "url": "http://127.0.0.1:9011/read",
+          "status": 200
+        },
+        {
+          "t": 1896,
+          "dt": 248,
+          "url": "http://127.0.0.1:9011/read",
+          "status": 200
+        },
+        {
+          "t": 1895,
+          "dt": 261,
+          "url": "http://127.0.0.1:9011/sheets",
+          "status": 200
+        },
+        {
+          "t": 2144,
+          "dt": 98,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 1897,
+          "dt": 346,
+          "url": "http://127.0.0.1:9011/snapshot",
+          "status": 200
+        },
+        {
+          "t": 1896,
+          "dt": 346,
+          "url": "http://127.0.0.1:9011/sheets",
+          "status": 200
+        },
+        {
+          "t": 2137,
+          "dt": 106,
+          "url": "http://127.0.0.1:9011/sheets",
+          "status": 200
+        },
+        {
+          "t": 2014,
+          "dt": 229,
+          "url": "http://127.0.0.1:9011/sheets",
+          "status": 200
+        },
+        {
+          "t": 2240,
+          "dt": 49,
+          "url": "http://127.0.0.1:9011/sheets",
+          "status": 200
+        },
+        {
+          "t": 2243,
+          "dt": 63,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2256,
+          "dt": 111,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2289,
+          "dt": 82,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2371,
+          "dt": 62,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2466,
+          "dt": 55,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2523,
+          "dt": 27,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2551,
+          "dt": 39,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2606,
+          "dt": 46,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2652,
+          "dt": 48,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2702,
+          "dt": 31,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2736,
+          "dt": 44,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2781,
+          "dt": 18,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2799,
+          "dt": 26,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2825,
+          "dt": 17,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2839,
+          "dt": 21,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2860,
+          "dt": 23,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2883,
+          "dt": 16,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2899,
+          "dt": 20,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2912,
+          "dt": 33,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2948,
+          "dt": 26,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 2974,
+          "dt": 28,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3002,
+          "dt": 32,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3034,
+          "dt": 16,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3046,
+          "dt": 21,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3068,
+          "dt": 39,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3107,
+          "dt": 43,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3151,
+          "dt": 24,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3176,
+          "dt": 23,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3200,
+          "dt": 10,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3211,
+          "dt": 13,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3224,
+          "dt": 23,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3248,
+          "dt": 13,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3261,
+          "dt": 6,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3296,
+          "dt": 62,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3377,
+          "dt": 32,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3451,
+          "dt": 38,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3502,
+          "dt": 57,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3562,
+          "dt": 60,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3626,
+          "dt": 76,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3696,
+          "dt": 32,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3786,
+          "dt": 30,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3818,
+          "dt": 28,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 3857,
+          "dt": 13,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-83a543db-4be6-4db7-9868-8bd2f11694cd",
+          "status": 200
+        },
+        {
+          "t": 4295,
+          "dt": 133,
+          "url": "http://127.0.0.1:9011/ops",
+          "status": 200
+        },
+        {
+          "t": 4436,
+          "dt": 208,
+          "url": "http://127.0.0.1:9011/deltas/ack",
+          "status": 200
+        },
+        {
+          "t": 4452,
+          "dt": 201,
+          "url": "http://127.0.0.1:9011/read",
+          "status": 200
+        },
+        {
+          "t": 4653,
+          "dt": 42,
+          "url": "http://127.0.0.1:9011/presence",
+          "status": 200
+        },
+        {
+          "t": 5532,
+          "dt": 35,
+          "url": "http://127.0.0.1:9011/session-extras",
+          "status": 200
+        },
+        {
+          "t": 5935,
+          "dt": 40,
+          "url": "http://127.0.0.1:9011/ops",
+          "status": 200
+        },
+        {
+          "t": 5975,
+          "dt": 24,
+          "url": "http://127.0.0.1:9011/deltas/ack",
+          "status": 200
+        },
+        {
+          "t": 5978,
+          "dt": 41,
+          "url": "http://127.0.0.1:9011/read",
+          "status": 200
+        },
+        {
+          "t": 6185,
+          "dt": 6,
+          "url": "http://127.0.0.1:9011/presence",
+          "status": 200
+        }
+      ],
+      "sse": [
+        {
+          "t": 1493,
+          "kind": "open",
+          "url": "http://127.0.0.1:9011/deltas?access_token=eyJ2IjoxLCJzdWIiOiJ1c2VyOnRvdXItdXNlciIsInNpZCI6InNlc3NfMWM3ODc5NjUtMDdhNy00M2EzLTlkZjQtYmMzNjhmM2I1ODY1IiwiZmlkIjoiZmlsZS04M2E1NDNkYi00YmU2LTRkYjctOTg2OC04YmQyZjExNjk0Y2QiLCJyb2xlIjoiZWRpdG9yIiwidGllciI6InN0YW5kYXJkIiwiaWF0IjoxNzkyNzAzNTQyLCJleHAiOjE3OTI3MDQxNDJ9.hwaCqgOAtwgGhZ6I_iBFJSWcZaQfM7i6AeurCU1J98s"
+        }
+      ]
+    },
+    {
+      "tag": "throttled",
+      "steps": [
+        {
+          "edit": "A1=uuu",
+          "commitAt": 1792703578484,
+          "paintMs": -1,
+          "domValue": "empty"
+        },
+        {
+          "edit": "B2=vvv",
+          "paintMs": -1,
+          "domValue": "empty"
+        }
+      ],
+      "a1AfterSettle": "empty",
+      "a1AfterSecond": "empty",
+      "b2AfterSecond": "empty",
+      "net": [
+        {
+          "t": 8262,
+          "dt": 448,
+          "url": "http://localhost:9010/api/settings",
+          "status": 404
+        },
+        {
+          "t": 8261,
+          "dt": 449,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 8254,
+          "dt": 481,
+          "url": "http://localhost:9010/api/engine/open",
+          "status": 409
+        },
+        {
+          "t": 8736,
+          "dt": 333,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 9005,
+          "dt": 372,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 9280,
+          "dt": 403,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 9487,
+          "dt": 516,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 9811,
+          "dt": 514,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 8259,
+          "dt": 2074,
+          "url": "http://localhost:9010/api/addons/catalog",
+          "status": 200
+        },
+        {
+          "t": 8259,
+          "dt": 2147,
+          "url": "http://localhost:9010/api/addons/installed",
+          "status": 200
+        },
+        {
+          "t": 8260,
+          "dt": 2146,
+          "url": "http://localhost:9010/api/addons/grants?documentId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 10087,
+          "dt": 568,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 10407,
+          "dt": 615,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 10505,
+          "dt": 810,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 10869,
+          "dt": 1018,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 11031,
+          "dt": 962,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 11724,
+          "dt": 335,
+          "url": "http://localhost:9010/api/engine/access",
+          "status": 200
+        },
+        {
+          "t": 11792,
+          "dt": 317,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11143,
+          "dt": 1141,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12063,
+          "dt": 330,
+          "url": "http://127.0.0.1:9011/execute",
+          "status": 401
+        },
+        {
+          "t": 11895,
+          "dt": 548,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11423,
+          "dt": 1174,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12393,
+          "dt": 330,
+          "url": "http://localhost:9010/api/engine/access",
+          "status": 200
+        },
+        {
+          "t": 11943,
+          "dt": 822,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11613,
+          "dt": 1300,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12729,
+          "dt": 321,
+          "url": "http://127.0.0.1:9011/execute",
+          "status": 401
+        },
+        {
+          "t": 11994,
+          "dt": 1126,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11711,
+          "dt": 1518,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12019,
+          "dt": 1383,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11789,
+          "dt": 1754,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12346,
+          "dt": 1379,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11892,
+          "dt": 1965,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12633,
+          "dt": 1414,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11943,
+          "dt": 2230,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 12979,
+          "dt": 1388,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 11994,
+          "dt": 2500,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 13166,
+          "dt": 1525,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 12018,
+          "dt": 2796,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 13327,
+          "dt": 1683,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 12342,
+          "dt": 2787,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 13635,
+          "dt": 1689,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 12630,
+          "dt": 2817,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 13962,
+          "dt": 1778,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 12974,
+          "dt": 2832,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 14296,
+          "dt": 1768,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 13161,
+          "dt": 2964,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 14551,
+          "dt": 1831,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 13320,
+          "dt": 3119,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 14881,
+          "dt": 1833,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 13635,
+          "dt": 3133,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 15177,
+          "dt": 1873,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 13951,
+          "dt": 3116,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 15480,
+          "dt": 1905,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 14292,
+          "dt": 3149,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 15907,
+          "dt": 1919,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 14547,
+          "dt": 3282,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 16219,
+          "dt": 1892,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 14873,
+          "dt": 3239,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 16530,
+          "dt": 1895,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 15176,
+          "dt": 3410,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 16813,
+          "dt": 2125,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 15479,
+          "dt": 3502,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 17156,
+          "dt": 1891,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 15906,
+          "dt": 3227,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 18888,
+          "dt": 323,
+          "url": "http://127.0.0.1:9011/execute",
+          "status": 401
+        },
+        {
+          "t": 17270,
+          "dt": 2054,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 16211,
+          "dt": 3206,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19211,
+          "dt": 350,
+          "url": "http://localhost:9010/api/engine/access",
+          "status": 200
+        },
+        {
+          "t": 17402,
+          "dt": 2277,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 16521,
+          "dt": 3219,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19580,
+          "dt": 356,
+          "url": "http://127.0.0.1:9011/execute",
+          "status": 401
+        },
+        {
+          "t": 17594,
+          "dt": 2449,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 16812,
+          "dt": 3289,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 17685,
+          "dt": 2657,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 17152,
+          "dt": 3299,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 17993,
+          "dt": 2667,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 17263,
+          "dt": 3481,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 18147,
+          "dt": 2848,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 17385,
+          "dt": 3686,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 18382,
+          "dt": 2941,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 17581,
+          "dt": 3806,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 18729,
+          "dt": 2918,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 17674,
+          "dt": 4027,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 18814,
+          "dt": 3153,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 17989,
+          "dt": 4033,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 18888,
+          "dt": 3391,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 18145,
+          "dt": 4181,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19016,
+          "dt": 3585,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 18368,
+          "dt": 4276,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19087,
+          "dt": 3827,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 18718,
+          "dt": 4236,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19143,
+          "dt": 4090,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 18803,
+          "dt": 4478,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19174,
+          "dt": 4388,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 18882,
+          "dt": 4705,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        },
+        {
+          "t": 19570,
+          "dt": 4296,
+          "url": "http://localhost:9010/api/engine/session-save-status",
+          "status": 401
+        },
+        {
+          "t": 19010,
+          "dt": 4913,
+          "url": "http://localhost:9010/api/built-apps?fileId=file-138dd58a-39f8-4bf7-895c-f6b5cab87aef",
+          "status": 200
+        }
+      ],
+      "sse": []
+    }
+  ]
+}

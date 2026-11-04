@@ -1,0 +1,1943 @@
+{
+  "polls": [
+    {
+      "tMs": 5509,
+      "banner": false,
+      "firstPage": null,
+      "heapMB": 229.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1✓ SavedFormula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 153,
+      "availMB": 4601,
+      "crashed": false
+    },
+    {
+      "tMs": 8517,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": null,
+        "firstPagePaintedAt": null,
+        "timeToFirstPageMs": null,
+        "timeToFirstValuesMs": null
+      },
+      "heapMB": 392.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 0%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 475,
+      "availMB": 3885,
+      "crashed": false
+    },
+    {
+      "tMs": 11602,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": null,
+        "firstPagePaintedAt": null,
+        "timeToFirstPageMs": null,
+        "timeToFirstValuesMs": null
+      },
+      "heapMB": 417.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 0%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1067,
+      "availMB": 3375,
+      "crashed": false
+    },
+    {
+      "tMs": 14897,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 439.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 4%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1291,
+      "availMB": 3098,
+      "crashed": false
+    },
+    {
+      "tMs": 18527,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 422.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 10%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1411,
+      "availMB": 2907,
+      "crashed": false
+    },
+    {
+      "tMs": 21818,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 539.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 17%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1574,
+      "availMB": 2816,
+      "crashed": false
+    },
+    {
+      "tMs": 25227,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 749.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 23%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1427,
+      "availMB": 2582,
+      "crashed": false
+    },
+    {
+      "tMs": 28375,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 894.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 30%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1454,
+      "availMB": 2475,
+      "crashed": false
+    },
+    {
+      "tMs": 31629,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 477.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 36%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文YouReady",
+      "engineRssMB": 1510,
+      "availMB": 2458,
+      "crashed": false
+    },
+    {
+      "tMs": 42981,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 524.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 39%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1520,
+      "availMB": 2534,
+      "crashed": false
+    },
+    {
+      "tMs": 55083,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 520.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 40%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1761,
+      "availMB": 2268,
+      "crashed": false
+    },
+    {
+      "tMs": 65109,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 537.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 40%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2389,
+      "crashed": false
+    },
+    {
+      "tMs": 77167,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 557.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 41%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2410,
+      "crashed": false
+    },
+    {
+      "tMs": 89458,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 344.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 42%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2362,
+      "crashed": false
+    },
+    {
+      "tMs": 101970,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 362.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 42%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2416,
+      "crashed": false
+    },
+    {
+      "tMs": 115684,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 367.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 43%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2295,
+      "crashed": false
+    },
+    {
+      "tMs": 130827,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 355.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 43%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2358,
+      "crashed": false
+    },
+    {
+      "tMs": 146231,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 375.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 44%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1633,
+      "availMB": 2359,
+      "crashed": false
+    },
+    {
+      "tMs": 163936,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 367.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 45%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 769,
+      "availMB": 2964,
+      "crashed": false
+    },
+    {
+      "tMs": 177062,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 387.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 45%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 769,
+      "availMB": 3069,
+      "crashed": false
+    },
+    {
+      "tMs": 191549,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 337.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 46%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 769,
+      "availMB": 3022,
+      "crashed": false
+    },
+    {
+      "tMs": 206452,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 347.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 47%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 769,
+      "availMB": 3005,
+      "crashed": false
+    },
+    {
+      "tMs": 221720,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 363.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 47%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 769,
+      "availMB": 2893,
+      "crashed": false
+    },
+    {
+      "tMs": 245118,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 356.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 48%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 1552,
+      "availMB": 2026,
+      "crashed": false
+    },
+    {
+      "tMs": 269934,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 372.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 49%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2354,
+      "availMB": 1106,
+      "crashed": false
+    },
+    {
+      "tMs": 298940,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 358.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 49%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2502,
+      "availMB": 881,
+      "crashed": false
+    },
+    {
+      "tMs": 328766,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 279.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 50%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3021,
+      "availMB": 350,
+      "crashed": false
+    },
+    {
+      "tMs": 338162,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 291.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 50%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3196,
+      "availMB": 391,
+      "crashed": false
+    },
+    {
+      "tMs": 346456,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 213.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 51%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3269,
+      "availMB": 534,
+      "crashed": false
+    },
+    {
+      "tMs": 352359,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 225.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 52%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3365,
+      "availMB": 510,
+      "crashed": false
+    },
+    {
+      "tMs": 358291,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 225.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 53%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3628,
+      "availMB": 285,
+      "crashed": false
+    },
+    {
+      "tMs": 367577,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 225.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 53%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3691,
+      "availMB": 477,
+      "crashed": false
+    },
+    {
+      "tMs": 373027,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 242.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 54%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3691,
+      "availMB": 664,
+      "crashed": false
+    },
+    {
+      "tMs": 378866,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 255,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 54%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3690,
+      "availMB": 647,
+      "crashed": false
+    },
+    {
+      "tMs": 385979,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 245.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 55%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3686,
+      "availMB": 595,
+      "crashed": false
+    },
+    {
+      "tMs": 392939,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 261.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 55%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3686,
+      "availMB": 599,
+      "crashed": false
+    },
+    {
+      "tMs": 400765,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 277,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 56%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3686,
+      "availMB": 597,
+      "crashed": false
+    },
+    {
+      "tMs": 409584,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 212.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 56%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3684,
+      "availMB": 556,
+      "crashed": false
+    },
+    {
+      "tMs": 418742,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 221.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 56%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3684,
+      "availMB": 573,
+      "crashed": false
+    },
+    {
+      "tMs": 428946,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 235,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 57%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3680,
+      "availMB": 917,
+      "crashed": false
+    },
+    {
+      "tMs": 439437,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 252,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 57%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3680,
+      "availMB": 983,
+      "crashed": false
+    },
+    {
+      "tMs": 450950,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 235.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 58%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3680,
+      "availMB": 943,
+      "crashed": false
+    },
+    {
+      "tMs": 462875,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 252.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 59%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 3680,
+      "availMB": 980,
+      "crashed": false
+    },
+    {
+      "tMs": 478103,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 267.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 59%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2725,
+      "availMB": 1896,
+      "crashed": false
+    },
+    {
+      "tMs": 491902,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 254.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 59%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2725,
+      "availMB": 1821,
+      "crashed": false
+    },
+    {
+      "tMs": 506077,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 268.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 60%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2725,
+      "availMB": 1797,
+      "crashed": false
+    },
+    {
+      "tMs": 521129,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 284.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 60%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1730,
+      "crashed": false
+    },
+    {
+      "tMs": 537442,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 217.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 61%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1692,
+      "crashed": false
+    },
+    {
+      "tMs": 553870,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 233.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 62%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1633,
+      "crashed": false
+    },
+    {
+      "tMs": 571025,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 243.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 62%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1512,
+      "crashed": false
+    },
+    {
+      "tMs": 588795,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 227.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 62%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1528,
+      "crashed": false
+    },
+    {
+      "tMs": 597628,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 223.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 63%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1577,
+      "crashed": false
+    },
+    {
+      "tMs": 602146,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 226.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 64%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1582,
+      "crashed": false
+    },
+    {
+      "tMs": 608900,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 226.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 66%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1528,
+      "crashed": false
+    },
+    {
+      "tMs": 613360,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 238.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 66%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1513,
+      "crashed": false
+    },
+    {
+      "tMs": 618578,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 243.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 66%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1488,
+      "crashed": false
+    },
+    {
+      "tMs": 624330,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 257.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 67%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1482,
+      "crashed": false
+    },
+    {
+      "tMs": 631067,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 219.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 67%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1416,
+      "crashed": false
+    },
+    {
+      "tMs": 638209,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 235.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 68%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1409,
+      "crashed": false
+    },
+    {
+      "tMs": 646311,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 228.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 69%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1426,
+      "crashed": false
+    },
+    {
+      "tMs": 651413,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 239.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 69%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1362,
+      "crashed": false
+    },
+    {
+      "tMs": 662193,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 263.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 69%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1355,
+      "crashed": false
+    },
+    {
+      "tMs": 673764,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 258.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 70%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1290,
+      "crashed": false
+    },
+    {
+      "tMs": 685946,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 276.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 71%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1263,
+      "crashed": false
+    },
+    {
+      "tMs": 699156,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 273,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 72%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 1222,
+      "crashed": false
+    },
+    {
+      "tMs": 713490,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 222.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 72%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 1140,
+      "crashed": false
+    },
+    {
+      "tMs": 728868,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 234,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 73%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 1143,
+      "crashed": false
+    },
+    {
+      "tMs": 744743,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 256.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 74%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 1120,
+      "crashed": false
+    },
+    {
+      "tMs": 761494,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 247.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 75%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 1074,
+      "crashed": false
+    },
+    {
+      "tMs": 779415,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 268.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 75%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 1003,
+      "crashed": false
+    },
+    {
+      "tMs": 798230,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 259.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 76%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 971,
+      "crashed": false
+    },
+    {
+      "tMs": 817972,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 279.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 77%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 936,
+      "crashed": false
+    },
+    {
+      "tMs": 838915,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 268.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 78%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 871,
+      "crashed": false
+    },
+    {
+      "tMs": 842266,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 234.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 79%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 897,
+      "crashed": false
+    },
+    {
+      "tMs": 845918,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 260.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 81%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 893,
+      "crashed": false
+    },
+    {
+      "tMs": 849278,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 278.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 81%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 859,
+      "crashed": false
+    },
+    {
+      "tMs": 853370,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 297,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 81%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 850,
+      "crashed": false
+    },
+    {
+      "tMs": 858482,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 295.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 82%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 863,
+      "crashed": false
+    },
+    {
+      "tMs": 864563,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 293.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 84%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 838,
+      "crashed": false
+    },
+    {
+      "tMs": 871843,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 238.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 84%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 849,
+      "crashed": false
+    },
+    {
+      "tMs": 879687,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 246.1,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 85%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 834,
+      "crashed": false
+    },
+    {
+      "tMs": 888549,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 243.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 85%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 823,
+      "crashed": false
+    },
+    {
+      "tMs": 898210,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 266.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 87%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 797,
+      "crashed": false
+    },
+    {
+      "tMs": 908756,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 264.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 87%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 776,
+      "crashed": false
+    },
+    {
+      "tMs": 913040,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 273.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 87%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 786,
+      "crashed": false
+    },
+    {
+      "tMs": 923856,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 270.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 88%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 783,
+      "crashed": false
+    },
+    {
+      "tMs": 934835,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 282.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 88%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 747,
+      "crashed": false
+    },
+    {
+      "tMs": 946916,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 230.4,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 89%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 752,
+      "crashed": false
+    },
+    {
+      "tMs": 959524,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 244.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 90%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 736,
+      "crashed": false
+    },
+    {
+      "tMs": 973090,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 256.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 90%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2730,
+      "availMB": 696,
+      "crashed": false
+    },
+    {
+      "tMs": 986989,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 261.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 90%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 695,
+      "crashed": false
+    },
+    {
+      "tMs": 1001586,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 245.5,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 91%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 649,
+      "crashed": false
+    },
+    {
+      "tMs": 1016986,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 260,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 91%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 621,
+      "crashed": false
+    },
+    {
+      "tMs": 1033084,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 276.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 92%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2728,
+      "availMB": 575,
+      "crashed": false
+    },
+    {
+      "tMs": 1049967,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 224,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 92%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2728,
+      "availMB": 552,
+      "crashed": false
+    },
+    {
+      "tMs": 1067313,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 224.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 93%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2728,
+      "availMB": 623,
+      "crashed": false
+    },
+    {
+      "tMs": 1084250,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 234,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 93%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2728,
+      "availMB": 567,
+      "crashed": false
+    },
+    {
+      "tMs": 1087991,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 233.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 95%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 550,
+      "crashed": false
+    },
+    {
+      "tMs": 1094231,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 251.8,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 96%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 542,
+      "crashed": false
+    },
+    {
+      "tMs": 1098349,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 253.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 97%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 541,
+      "crashed": false
+    },
+    {
+      "tMs": 1103300,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 226.7,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 97%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 537,
+      "crashed": false
+    },
+    {
+      "tMs": 1108884,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 240.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 98%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 504,
+      "crashed": false
+    },
+    {
+      "tMs": 1115202,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 239.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 98%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 493,
+      "crashed": false
+    },
+    {
+      "tMs": 1122134,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 243.3,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 99%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2729,
+      "availMB": 490,
+      "crashed": false
+    },
+    {
+      "tMs": 1129692,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 258,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 99%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2726,
+      "availMB": 483,
+      "crashed": false
+    },
+    {
+      "tMs": 1138142,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 272.2,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 99%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2726,
+      "availMB": 444,
+      "crashed": false
+    },
+    {
+      "tMs": 1141463,
+      "banner": true,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 278.9,
+      "statusText": "Protocol v1Calc: automaticCell: A1⏳ Loading… 99%Formula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2726,
+      "availMB": 433,
+      "crashed": false
+    },
+    {
+      "tMs": 1147330,
+      "banner": false,
+      "firstPage": {
+        "fileSelectedAt": 8333.5,
+        "firstValuesAt": 14827.800000000047,
+        "firstPagePaintedAt": 14833.40000000014,
+        "timeToFirstPageMs": 6499.90000000014,
+        "timeToFirstValuesMs": 6494.300000000047
+      },
+      "heapMB": 420.6,
+      "statusText": "Protocol v1Calc: automaticCell: A1✓ SavedFormula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文👤 YouReady",
+      "engineRssMB": 2725,
+      "availMB": 512,
+      "crashed": false
+    },
+    {
+      "tMs": 1152927,
+      "tour": "Sales",
+      "heapMB": 470.9,
+      "engineRssMB": 2941,
+      "availMB": 532
+    },
+    {
+      "tMs": 1158061,
+      "tour": "Inventory",
+      "heapMB": 489.2,
+      "engineRssMB": 2961,
+      "availMB": 507
+    },
+    {
+      "tMs": 1166020,
+      "tour": "Ledger",
+      "heapMB": 539.9,
+      "engineRssMB": 2981,
+      "availMB": 502
+    },
+    {
+      "tMs": 1188917,
+      "tour": "Sales2023",
+      "heapMB": 241.1,
+      "engineRssMB": 3066,
+      "availMB": 548
+    },
+    {
+      "tMs": 1200748,
+      "tour": "Ledger2023",
+      "heapMB": 263.3,
+      "engineRssMB": 3107,
+      "availMB": 570
+    }
+  ],
+  "sheets": [
+    {
+      "index": 1,
+      "name": "Sales",
+      "screenshot": "w16-p99-sheet-01-Sales.png",
+      "cellCount": 748,
+      "nonEmpty": 408,
+      "numeric": 231,
+      "errs": [],
+      "errCount": 0,
+      "samples": [
+        "A1=OrderID",
+        "B1=Date",
+        "C1=Customer",
+        "D1=Region",
+        "E1=Product",
+        "F1=Qty",
+        "G1=UnitPrice",
+        "H1=Discount",
+        "I1=LineTotal",
+        "J1=Tax",
+        "K1=GrandTotal",
+        "L1=Notes",
+        "A2=100002",
+        "B2=2023-08-02",
+        "C2=Patricia Smith",
+        "D2=Central",
+        "E2=Gadget Y",
+        "F2=115",
+        "G2=701.99",
+        "H2=3.07%"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Inventory",
+      "screenshot": "w16-p99-sheet-02-Inventory.png",
+      "cellCount": 748,
+      "nonEmpty": 340,
+      "numeric": 198,
+      "errs": [],
+      "errCount": 0,
+      "samples": [
+        "A1=SKU",
+        "B1=Product",
+        "C1=Warehouse",
+        "D1=OnHand",
+        "E1=ReorderPt",
+        "F1=UnitCost",
+        "G1=StockValue",
+        "H1=Status",
+        "I1=LastCount",
+        "J1=Variance",
+        "A2=SKU-000002",
+        "B2=Thingamajig",
+        "C2=WH-10",
+        "D2=8553",
+        "E2=178",
+        "F2=472.08",
+        "G2=4037700.24",
+        "H2=OK",
+        "I2=374",
+        "J2=8179"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Ledger",
+      "screenshot": "w16-p99-sheet-03-Ledger.png",
+      "cellCount": 748,
+      "nonEmpty": 272,
+      "numeric": 132,
+      "errs": [],
+      "errCount": 0,
+      "samples": [
+        "A1=TxnID",
+        "B1=Date",
+        "C1=Account",
+        "D1=Dept",
+        "E1=Debit",
+        "F1=Credit",
+        "G1=Balance",
+        "H1=Memo",
+        "A2=TXN-0000002",
+        "B2=2022-12-12",
+        "C2=1038",
+        "D2=D09",
+        "E2=0.00",
+        "F2=18,189.33",
+        "G2=-18189.33",
+        "H2=Entry 2 ref 1213",
+        "A3=TXN-0000003",
+        "B3=2022-08-15",
+        "C3=1006",
+        "D3=D06"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Sales2023",
+      "screenshot": "w16-p99-sheet-04-Sales2023.png",
+      "cellCount": 748,
+      "nonEmpty": 408,
+      "numeric": 231,
+      "errs": [],
+      "errCount": 0,
+      "samples": [
+        "A1=OrderID",
+        "B1=Date",
+        "C1=Customer",
+        "D1=Region",
+        "E1=Product",
+        "F1=Qty",
+        "G1=UnitPrice",
+        "H1=Discount",
+        "I1=LineTotal",
+        "J1=Tax",
+        "K1=GrandTotal",
+        "L1=Notes",
+        "A2=100002",
+        "B2=2020-08-29",
+        "C2=William Thomas",
+        "D2=Midwest",
+        "E2=Gadget Y",
+        "F2=414",
+        "G2=4,411.07",
+        "H2=16.48%"
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Ledger2023",
+      "screenshot": "w16-p99-sheet-05-Ledger2023.png",
+      "cellCount": 748,
+      "nonEmpty": 272,
+      "numeric": 132,
+      "errs": [],
+      "errCount": 0,
+      "samples": [
+        "A1=TxnID",
+        "B1=Date",
+        "C1=Account",
+        "D1=Dept",
+        "E1=Debit",
+        "F1=Credit",
+        "G1=Balance",
+        "H1=Memo",
+        "A2=TXN-0000002",
+        "B2=2023-03-11",
+        "C2=1003",
+        "D2=D07",
+        "E2=96,331.78",
+        "F2=0.00",
+        "G2=96331.78",
+        "H2=Entry 2 ref 3921",
+        "A3=TXN-0000003",
+        "B3=2023-08-17",
+        "C3=1034",
+        "D3=D15"
+      ]
+    }
+  ],
+  "errors": [],
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMmUtdGVzdGVyIiwiYXR0cnMiOnt9LCJpYXQiOjE3OTI1NTkyNjMsImV4cCI6MTc5MjYwMjQ2M30.BJ-RY7OIl0JM7r273LhkqsNyO7Wq2GshyrsoJzUEodY",
+  "loaded": true,
+  "wallMs": 1147331,
+  "firstPage": {
+    "fileSelectedAt": 8333.5,
+    "firstValuesAt": 14827.800000000047,
+    "firstPagePaintedAt": 14833.40000000014,
+    "timeToFirstPageMs": 6499.90000000014,
+    "timeToFirstValuesMs": 6494.300000000047
+  },
+  "heapAtLoadMB": 420.6,
+  "sheetTabs": [
+    "Sales",
+    "Inventory",
+    "Ledger",
+    "Sales2023",
+    "Ledger2023"
+  ],
+  "finalEngineHealth": 200
+}

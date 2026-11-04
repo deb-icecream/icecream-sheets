@@ -1,0 +1,413 @@
+[
+  {
+    "t": 2807,
+    "ev": "signed-in"
+  },
+  {
+    "t": 2936,
+    "ev": "uploaded"
+  },
+  {
+    "t": 3281,
+    "ev": "deep-link-open"
+  },
+  {
+    "t": 3664,
+    "ev": "req",
+    "url": "http://localhost:8810/api/engine/open",
+    "body": "{\"fileId\":\"file-e5490fa9-d1b5-4c4a-a2d1-a062c4bc1c26\"}"
+  },
+  {
+    "t": 3757,
+    "ev": "res",
+    "url": "http://localhost:8810/api/engine/open",
+    "status": 200
+  },
+  {
+    "t": 3795,
+    "ev": "req",
+    "url": "http://localhost:8810/api/engine/access",
+    "body": "{\"sessionId\":\"sess_55a72817-60ad-4edc-8820-78b657b1405a\"}"
+  },
+  {
+    "t": 3798,
+    "ev": "req",
+    "url": "8811/deltas?access_token=eyJ2IjoxLCJzdWIiOiJ1c2VyOmYyZml4Iiwic2lkIjoic2Vzc181NWE3MjgxNy02MGFkLTRlZGMtODgyMC03OGI2NTdiMTQwNWEiLCJmaWQiOiJmaWxlLWU1NDkwZmE5LWQxYjUtNGM0YS1hMmQxLWEwNjJjNGJjMWMyNiIsInJvbGUiOiJlZGl0b3IiLCJ0aWVyIjoic3RhbmRhcmQiLCJpYXQiOjE3OTI2Njg2ODQsImV4cCI6MTc5MjY2OTI4NH0.1Etvyt16fE2RMJBEuPUdtjt_OMUeGd0SfEh3zsxEsCA",
+    "body": ""
+  },
+  {
+    "t": 3812,
+    "ev": "res",
+    "url": "http://localhost:8810/api/engine/access",
+    "status": 200
+  },
+  {
+    "t": 3836,
+    "ev": "res",
+    "url": "8811/deltas?access_token=eyJ2IjoxLCJzdWIiOiJ1c2VyOmYyZml4Iiwic2lkIjoic2Vzc181NWE3MjgxNy02MGFkLTRlZGMtODgyMC03OGI2NTdiMTQwNWEiLCJmaWQiOiJmaWxlLWU1NDkwZmE5LWQxYjUtNGM0YS1hMmQxLWEwNjJjNGJjMWMyNiIsInJvbGUiOiJlZGl0b3IiLCJ0aWVyIjoic3RhbmRhcmQiLCJpYXQiOjE3OTI2Njg2ODQsImV4cCI6MTc5MjY2OTI4NH0.1Etvyt16fE2RMJBEuPUdtjt_OMUeGd0SfEh3zsxEsCA",
+    "status": 200
+  },
+  {
+    "t": 3845,
+    "ev": "req",
+    "url": "8811/load/storage-ref",
+    "body": "{\"bucket\":\"icecream-uploads\",\"object\":\"uploads/3590c32243118d60/file-e5490fa9-d1b5-4c4a-a2d1-a062c4bc1c26.xlsx\",\"format\":\"xlsx\",\"name\":\"closedxml-TryToLoad-DrawingSizeInPx.xlsx\",\"sessionId\":\"sess_55a72817-60ad-4edc-8820-78b657b1405a\"}"
+  },
+  {
+    "t": 3845,
+    "ev": "req",
+    "url": "8811/sheets",
+    "body": ""
+  },
+  {
+    "t": 3846,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}"
+  },
+  {
+    "t": 3848,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+  },
+  {
+    "t": 3848,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}"
+  },
+  {
+    "t": 3951,
+    "ev": "req",
+    "url": "8811/sheets",
+    "body": ""
+  },
+  {
+    "t": 4750,
+    "ev": "req",
+    "url": "8811/session-extras",
+    "body": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitToPage\""
+  },
+  {
+    "t": 22786,
+    "ev": "res",
+    "url": "8811/load/storage-ref",
+    "status": 200
+  },
+  {
+    "t": 22798,
+    "ev": "req",
+    "url": "8811/sheets",
+    "body": ""
+  },
+  {
+    "t": 22799,
+    "ev": "req",
+    "url": "8811/sheets",
+    "body": ""
+  },
+  {
+    "t": 22799,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}"
+  },
+  {
+    "t": 22799,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+  },
+  {
+    "t": 22815,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}"
+  },
+  {
+    "t": 22820,
+    "ev": "req",
+    "url": "8811/snapshot",
+    "body": ""
+  },
+  {
+    "t": 22820,
+    "ev": "res",
+    "url": "8811/sheets",
+    "status": 200
+  },
+  {
+    "t": 22941,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}"
+  },
+  {
+    "t": 22946,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+  },
+  {
+    "t": 23026,
+    "ev": "res",
+    "url": "8811/read",
+    "status": 404
+  },
+  {
+    "t": 23038,
+    "ev": "res",
+    "url": "8811/read",
+    "status": 200
+  },
+  {
+    "t": 23039,
+    "ev": "res",
+    "url": "8811/sheets",
+    "status": 200
+  },
+  {
+    "t": 23040,
+    "ev": "res",
+    "url": "8811/read",
+    "status": 200
+  },
+  {
+    "t": 23067,
+    "ev": "res",
+    "url": "8811/read",
+    "status": 404
+  },
+  {
+    "t": 23070,
+    "ev": "res",
+    "url": "8811/read",
+    "status": 404
+  },
+  {
+    "t": 23070,
+    "ev": "res",
+    "url": "8811/read",
+    "status": 404
+  },
+  {
+    "t": 23074,
+    "ev": "res",
+    "url": "8811/session-extras",
+    "status": 200
+  },
+  {
+    "t": 23080,
+    "ev": "res",
+    "url": "8811/sheets",
+    "status": 200
+  },
+  {
+    "t": 23137,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}"
+  },
+  {
+    "t": 23144,
+    "ev": "tabs-rendered",
+    "tabsSeen": 16,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 23260,
+    "ev": "clicked-DropdownLists"
+  },
+  {
+    "t": 23519,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Dropdown Lists\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 23843,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Dropdown Lists\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 24232,
+    "ev": "req",
+    "url": "8811/session-extras",
+    "body": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Dropdown Lists\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fi"
+  },
+  {
+    "t": 25299,
+    "ev": "at+2s",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 34335,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Dropdown Lists\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 50675,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Dropdown Lists\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 54226,
+    "ev": "at+12s",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  },
+  {
+    "t": 59633,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Dropdown Lists\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 62128,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}"
+  },
+  {
+    "t": 62128,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Browse Data\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+  },
+  {
+    "t": 62410,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Browse Data\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 68782,
+    "ev": "req",
+    "url": "8811/session-extras",
+    "body": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Browse Data\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fitTo"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}"
+  },
+  {
+    "t": 68807,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}"
+  },
+  {
+    "t": 68808,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}"
+  },
+  {
+    "t": 68808,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}"
+  },
+  {
+    "t": 68808,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}"
+  },
+  {
+    "t": 68808,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}"
+  },
+  {
+    "t": 68808,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}"
+  },
+  {
+    "t": 68881,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Browse Data\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 68882,
+    "ev": "browse-data",
+    "nonEmpty": 0
+  },
+  {
+    "t": 69121,
+    "ev": "req",
+    "url": "8811/read",
+    "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+  },
+  {
+    "t": 69365,
+    "ev": "req",
+    "url": "8811/presence",
+    "body": "{\"sheet\":\"Dropdown Lists\",\"row\":0,\"col\":0}"
+  },
+  {
+    "t": 70459,
+    "ev": "req",
+    "url": "8811/session-extras",
+    "body": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Dropdown Lists\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0.75,\"left\":0.7},\"scale\":100,\"printArea\":null,\"header\":\"\",\"footer\":\"\",\"fi"
+  },
+  {
+    "t": 70920,
+    "ev": "dropdownlists-reentry",
+    "nonEmpty": 0,
+    "status": "✓ Saved"
+  }
+]

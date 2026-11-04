@@ -1,0 +1,58 @@
+{
+ "case15": {
+  "reply": "I couldn't find a sheet named 'Sheet1'. Please check the name and try again.",
+  "ms": 9444
+ },
+ "case14": {
+  "reply": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculate, remember notes (\"remember that the budget is 5000\"), analyze data with charts and pivots, build apps from your data, run ETL recipes and automations, work with data sources, and generate reports. What would you like to do with your spreadsheet?",
+  "unchanged": true
+ },
+ "case16": {
+  "reply": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculate, remember notes (\"remember that the budget is 5000\"), analyze data with charts and pivots, build apps from your data, run ETL recipes and automations, work with data sources, and generate reports. What would you like to do with your spreadsheet?",
+  "unchanged": true
+ },
+ "case17": {
+  "pivotReply": "You can create a pivot table using the 'analyze_data' tool. For example, to create a pivot table showing the sum of 'Amount' by 'Product' from the range 'Sales!A1:D5', you would use the intent 'Sum of Amount by Product over Sales!A1:D5'. Would you like me to create a pivot table for you?",
+  "xlookupReply": "The XLOOKUP function in Icecream Sheets searches a range or an array for a specified item and returns the item in a corresponding range or array. It's a more flexible and powerful alternative to functions like VLOOKUP and HLOOKUP. Would you like to know more about its arguments or see an example?"
+ },
+ "case13": {
+  "bigLen": 2306,
+  "bigReply": "That message is too long for the agent — the limit is 2,000 characters (yours was 2,306). Normal chat prompts are a few hundred characters; if you have longer content, put it in a file or a data source and ask me to read it from there. Please shorten it and try again.",
+  "unchangedAfterBig": true,
+  "legitLen": 1197,
+  "legitReply": "Here is the summary of your Sales sheet:\n1. Total Amount: 550\n2. Total Quantity: 47\n3. Total Amount for North region: 320, Total Amount for South region: 230\n4. The product 'Apples' appears in more than one row with a combined Amount of 270.\n5. The individual row with the largest Amount is Oranges, with an Amount of 200."
+ },
+ "case19": {
+  "turn1Reply": "The total of the Amount column (C2:C5) in the Sales sheet is 550.",
+  "turn2Reply": "I have added 10% to the previous total and written the result into cell F1 of the Sales sheet.",
+  "f1": {
+   "kind": "number",
+   "value": 605
+  }
+ },
+ "case18": {
+  "reply": "The total of the Amount column in the Sales sheet is 550.",
+  "rerun": true
+ },
+ "case20": {
+  "saveReply": "I will remember that your weekly report goes out on Fridays.",
+  "saveAuditKinds": [
+   "user_message:",
+   "tool_call:memory_save",
+   "memory:memory_save",
+   "agent_message:"
+  ],
+  "recallReply": "Your weekly report goes out on Fridays.",
+  "recallAuditKinds": [
+   "user_message:",
+   "tool_call:memory_load",
+   "memory:memory_load",
+   "agent_message:"
+  ],
+  "recallAnswers": []
+ },
+ "case07": {
+  "csvMaterialized": false,
+  "csvReply": "I cannot fulfill this request because the 'Inventory CSV' sheet is empty. Please ensure the sheet is populated with data and try again."
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "scenario": "7-disconnect-reconnect",
+ "variants": {
+  "V3": {
+   "bobOfflineEdit": {
+    "attempted": true,
+    "value": "DOOMED-EDIT",
+    "editorOpened": true,
+    "cellAfter": ""
+   },
+   "queue": {
+    "queue": {
+     "queue": [
+      {
+       "clientSeq": 1,
+       "cmd": {
+        "cmd": "setCell",
+        "ref": {
+         "sheet": "Sheet2",
+         "row": 1,
+         "col": 0
+        },
+        "value": "DOOMED-EDIT"
+       },
+       "baseRev": 0,
+       "enqueuedAt": 1792634936020
+      }
+     ],
+     "rejected": [],
+     "clientSeq": 1,
+     "lastAppliedRev": 0
+    },
+    "clientId": "web-mviwjvr7-2axcq"
+   },
+   "deleteSheet": {
+    "delClicked": "ctx-fired",
+    "menuItems": [
+     "Paste ▾",
+     "A",
+     "A ▾",
+     "▦ ▾",
+     "Borders ▾",
+     "abc",
+     "Orientation ▾",
+     "Merge & Center ▾",
+     "$ ▾",
+     "Conditional Formatting ▾",
+     "A",
+     "Cell Styles ▾",
+     "Insert ▾",
+     "Delete ▾",
+     "Format ▾",
+     "AutoSum ▾",
+     "Fill ▾",
+     "Clear ▾",
+     "Sort & Filter ▾",
+     "Find & Select ▾",
+     "Insert Sheet…",
+     "Delete",
+     "Rename…",
+     "Tab Color",
+     "▸",
+     "Hide",
+     "Unhide…",
+     "Move or Copy…"
+    ],
+    "clickedDelete": true,
+    "aliceTabsAfter": [
+     "Sheet1",
+     "+"
+    ]
+   },
+   "afterReconnect": {
+    "bannerVisible": true,
+    "bannerSnippet": " (US)English (UK)EspañolFrançaisDeutsch日本語中文bobuser:bobuser:aliceobsolete1 edit rejected by the server — input retained:obsolete: {\"cmd\":\"setCell\",\"ref\":{\"sheet\":\"Sheet2\",\"row\":1,\"col\":0},\"value\":\"DOOMED-EDIT\"}✕A3: empty✦ Agent🎙️ Voice · Pro",
+    "retainedRejected": [
+     {
+      "clientSeq": 1,
+      "cmd": {
+       "cmd": "setCell",
+       "ref": {
+        "sheet": "Sheet2",
+        "row": 1,
+        "col": 0
+       },
+       "value": "DOOMED-EDIT"
+      },
+      "baseRev": 0,
+      "enqueuedAt": 1792634936020,
+      "reason": "obsolete",
+      "rejectedAt": 1792634943458
+     }
+    ],
+    "queueLength": 0
+   },
+   "ok": true
+  }
+ },
+ "verdict": "FAIL"
+}

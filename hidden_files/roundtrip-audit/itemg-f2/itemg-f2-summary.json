@@ -1,0 +1,88 @@
+{
+  "fixture": "closedxml-TryToLoad-DrawingSizeInPx.xlsx",
+  "origEmptyStringCells": 85,
+  "bulkAfterLoad": 85,
+  "pathA": {
+    "savedEmptyStringCells": 85,
+    "reopen": {
+      "label": "snapshot",
+      "sheets": 16,
+      "emptyCells": 85,
+      "A9": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/"
+      },
+      "A10": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/"
+      },
+      "C9": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/gamma/"
+      },
+      "A13": {
+        "kind": "null",
+        "value": null
+      },
+      "A22shifted": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt"
+      },
+      "A36": {
+        "kind": "string",
+        "value": "Flat.File.Wirelessdownloads.xls"
+      }
+    }
+  },
+  "pathB": {
+    "mode": "verbatim",
+    "changedSheets": [
+      "icons",
+      "International URLs",
+      "International Settings",
+      "DropdownSizer",
+      "Instructions",
+      "Images",
+      "International Translations",
+      "Data Validation",
+      "International Data",
+      "Example",
+      "Data Definitions",
+      "Template",
+      "Browse Data",
+      "Valid Values",
+      "Dropdown Lists",
+      "AttributePTDMAP"
+    ],
+    "savedEmptyStringCells": 85,
+    "reopen": {
+      "label": "streaming",
+      "sheets": 16,
+      "emptyCells": 85,
+      "A9": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/"
+      },
+      "A10": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/"
+      },
+      "C9": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/gamma/"
+      },
+      "A13": {
+        "kind": "null",
+        "value": null
+      },
+      "A22shifted": {
+        "kind": "string",
+        "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt"
+      },
+      "A36": {
+        "kind": "string",
+        "value": "Flat.File.Wirelessdownloads.xls"
+      }
+    }
+  }
+}

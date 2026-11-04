@@ -1,0 +1,81 @@
+{
+  "phases": [
+    {
+      "t": "tabs-rendered",
+      "afterMs": 18641,
+      "tabsSeen": 16,
+      "status": "✓ Saved",
+      "names": [
+        "icons",
+        "International URLs",
+        "International Settings",
+        "DropdownSizer",
+        "Instructions",
+        "Images",
+        "International Translations",
+        "Data Validation",
+        "International Data",
+        "Example",
+        "Data Definitions",
+        "Template",
+        "Browse Data",
+        "Valid Values",
+        "Dropdown Lists",
+        "AttributePTDMAP"
+      ]
+    },
+    {
+      "t": "A+2s",
+      "sheet": "Dropdown Lists",
+      "nonEmpty": 0,
+      "status": "✓ Saved",
+      "reads": [
+        "404 {\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+        "404 {\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+      ]
+    },
+    {
+      "t": "A+12s",
+      "sheet": "Dropdown Lists",
+      "nonEmpty": 0,
+      "status": "✓ Saved",
+      "reads": [
+        "404 {\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+        "404 {\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}"
+      ]
+    },
+    {
+      "t": "A+30s",
+      "sheet": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": [
+        "404 {\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+        "404 {\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+        "200 {\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+        "200 {\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+        "200 {\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+        "200 {\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}"
+      ]
+    }
+  ],
+  "verdict": "STILL-BLANK"
+}

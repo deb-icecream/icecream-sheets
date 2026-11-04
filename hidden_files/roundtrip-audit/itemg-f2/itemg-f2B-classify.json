@@ -1,0 +1,155 @@
+{
+ "counts": {
+  "intended+downstream-of-edit": 2,
+  "downstream-of-edit": 4,
+  "intended+shift": 1,
+  "shift": 32,
+  "shift+structured-expansion+downstream-of-edit": 3,
+  "shift+shift": 1,
+  "intended+shift+downstream-of-edit": 1
+ },
+ "unexplained": [
+  {
+   "sheet": "International Settings",
+   "addr": "A21",
+   "kind": "formula+type+value",
+   "orig": {
+    "f": "IF(Versioned_Override_Misc_Data_Table_URL<>\"\",Versioned_Override_Misc_Data_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Misc_Data_Table_Production_Folder,IF(Is_Beta,Misc_Data_Table_Beta_Folder,Misc_Data_Table_Production_Folder))&Misc_Data_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntMiscData.txt",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": null,
+    "t": "z"
+   }
+  }
+ ],
+ "nameDiffs": [
+  {
+   "kind": "ref-changed",
+   "name": "Auto_Update|null",
+   "orig": "'International Settings'!$A$28",
+   "saved": "'International Settings'!$A$29"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Devo_Upload_URL|null",
+   "orig": "'International Settings'!$A$26",
+   "saved": "'International Settings'!$A$27"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Full_Data_Validation_Table_URL|null",
+   "orig": "'International Settings'!$A$22",
+   "saved": "'International Settings'!$A$23"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Full_Dropdown_Lists_Table_URL|null",
+   "orig": "'International Settings'!$A$23",
+   "saved": "'International Settings'!$A$24"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Full_Misc_Data_Table_URL|null",
+   "orig": "'International Settings'!$A$21",
+   "saved": "'International Settings'!$A$22"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Internal_Template_Name|null",
+   "orig": "'International Settings'!$A$35",
+   "saved": "'International Settings'!$A$36"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Is_Devo|null",
+   "orig": "'International Settings'!$A$25",
+   "saved": "'International Settings'!$A$26"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Last_Update|null",
+   "orig": "'International Settings'!$A$27",
+   "saved": "'International Settings'!$A$28"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Macros_Version|null",
+   "orig": "'International Settings'!$A$36",
+   "saved": "'International Settings'!$A$37"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Status_Check_URL_Type|null",
+   "orig": "'International Settings'!$A$24",
+   "saved": "'International Settings'!$A$25"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Toolbar_Button_Caption_Credentials|null",
+   "orig": "'International Settings'!$A$32",
+   "saved": "'International Settings'!$A$33"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Toolbar_Button_Caption_Import|null",
+   "orig": "'International Settings'!$A$33",
+   "saved": "'International Settings'!$A$34"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Toolbar_Button_Caption_Update|null",
+   "orig": "'International Settings'!$A$34",
+   "saved": "'International Settings'!$A$35"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Toolbar_Button_Caption_Upload|null",
+   "orig": "'International Settings'!$A$31",
+   "saved": "'International Settings'!$A$32"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Toolbar_Button_Caption_Validate|null",
+   "orig": "'International Settings'!$A$30",
+   "saved": "'International Settings'!$A$31"
+  },
+  {
+   "kind": "ref-changed",
+   "name": "Update_Interval_Days|null",
+   "orig": "'International Settings'!$A$29",
+   "saved": "'International Settings'!$A$30"
+  }
+ ],
+ "parts": {
+  "changed": [
+   "[Content_Types].xml",
+   "xl/styles.xml",
+   "xl/workbook.xml",
+   "xl/worksheets/sheet1.xml",
+   "xl/worksheets/sheet10.xml",
+   "xl/worksheets/sheet11.xml",
+   "xl/worksheets/sheet12.xml",
+   "xl/worksheets/sheet13.xml",
+   "xl/worksheets/sheet14.xml",
+   "xl/worksheets/sheet15.xml",
+   "xl/worksheets/sheet16.xml",
+   "xl/worksheets/sheet2.xml",
+   "xl/worksheets/sheet3.xml",
+   "xl/worksheets/sheet4.xml",
+   "xl/worksheets/sheet5.xml",
+   "xl/worksheets/sheet6.xml",
+   "xl/worksheets/sheet7.xml",
+   "xl/worksheets/sheet8.xml",
+   "xl/worksheets/sheet9.xml"
+  ],
+  "missing": [],
+  "added": [
+   "docProps/custom.xml"
+  ]
+ },
+ "closureSize": 10,
+ "tablesFound": 0
+}

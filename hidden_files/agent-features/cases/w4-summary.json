@@ -1,0 +1,140 @@
+{
+ "fileId": "file-27fddeba-53d5-4ef6-a73e-33f7223e9875",
+ "sessionId": "sess_bdb8ee1e-7cf9-4094-9fba-f80dfea91764",
+ "errors": [
+  "console: Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "console: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+ ],
+ "results": {
+  "case10": {
+   "steps": [
+    "KPI1 added",
+    "KPI2 added"
+   ],
+   "builderText": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidential🔗 file-27fddeba-53d5-4ef6-a73e-33f7223e9875 Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareTablePivotTableRecommended PivotTablesTablesBuild AppMy Apps ▾AppsSlicerTimelineFiltersSparklineRemove SparklineSparklinesPicturesShapes ▾IconsSmartArtScreenshotIllu",
+   "kpiCards": [
+    "Total Units | 58",
+    "Avg Price | 7"
+   ],
+   "viewerHas58": true,
+   "viewerHas7": true,
+   "pass": true,
+   "verdict": "PASS"
+  },
+  "case11": {
+   "steps": [
+    "installed Sum Reporter",
+    "grant requested",
+    "grant approved",
+    "ran Sum Reporter"
+   ],
+   "dialogText": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidential🔗 file-27fddeba-53d5-4ef6-a73e-33f7223e9875 Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareScript EditorApps ScriptGet add-onsAdd-onsAdd-ons×Add-ons run in an isolated worker and can only touch this document through capabilities you approve. Signed in as owner on local-workbook.CatalogInstalledGrantsSum Reporter (sample) v1.0.0InstallReads a range and reports the sum of its numeric cells.By Icecream Sheets · Permissions: readCell Stamper (sample) v1.0.",
+   "runVisible": true,
+   "pageTextHasSum58": false,
+   "pageTextSnippet": "",
+   "documentIdShown": "local-workbook",
+   "expectedDocumentId": "file-27fddeba-53d5-4ef6-a73e-33f7223e9875",
+   "apiGrid": {},
+   "pass": false,
+   "verdict": "FAIL"
+  },
+  "case08": {
+   "steps": [
+    "filter Region eq North set",
+    "sort Units:desc set"
+   ],
+   "previewMentions": "Applied steps▸Filter Region eq North↑↓×UnitsProductRegionPrice10WidgetNorth515GadgetNorth108WidgetNorth103 rows × 4 columns▾Sort by Units desc↑↓×Sort keys (one column:asc|desc per line):Units:descUnitsProductRegionPrice8WidgetNorth1015GadgetNorth1010WidgetNorth53 rows × 4 columnsKeep columnsDrop columnsRename columnsChange typeFilter rowsSort rowsSplit columnMerge columnsPivotUnpivotMerge (join) tablesAppend tablesGroup byFill downRemove duplicatesCustom code (sandboxed) Add stepLoad — Load: Pipeline 1 → Sheet1Sheet:  Table name:  Retention: Every run materializes a full copy and swaps it in atomically — readers never see a partially written table, and a failed run never replaces the last good load.Run now & loadRun history (0)CloseA12: empty✦ Agent🎙️ Voice · Pro\n  \n\n",
+   "runMsgLoaded": true,
+   "runSnippet": "Loaded 3 rows into \"Pipeline 1\"",
+   "domGrid": {
+    "0,0": "Units",
+    "0,1": "Product",
+    "0,2": "Region",
+    "0,3": "Price",
+    "1,0": "10",
+    "1,1": "Widget",
+    "1,2": "North",
+    "1,3": "5",
+    "2,0": "20",
+    "2,1": "Gadget",
+    "2,2": "South",
+    "2,3": "5",
+    "3,0": "5",
+    "3,1": "Widget",
+    "3,2": "South",
+    "3,3": "5",
+    "4,0": "15",
+    "4,1": "Gadget",
+    "4,2": "North",
+    "4,3": "10",
+    "5,0": "8",
+    "5,1": "Widget",
+    "5,2": "North",
+    "5,3": "10",
+    "11,0": "Units",
+    "11,1": "Product",
+    "11,2": "Region",
+    "11,3": "Price",
+    "12,0": "8",
+    "12,1": "Widget",
+    "12,2": "North",
+    "12,3": "10",
+    "13,0": "15",
+    "13,1": "Gadget",
+    "13,2": "North",
+    "13,3": "10",
+    "14,0": "10",
+    "14,1": "Widget",
+    "14,2": "North",
+    "14,3": "5"
+   },
+   "apiGrid": {},
+   "apiStatus": 401,
+   "expected": {
+    "11,0": "Units",
+    "11,1": "Product",
+    "11,2": "Region",
+    "11,3": "Price",
+    "12,0": "15",
+    "12,1": "Gadget",
+    "12,2": "North",
+    "12,3": "10",
+    "13,0": "10",
+    "13,1": "Widget",
+    "13,2": "North",
+    "13,3": "5",
+    "14,0": "8",
+    "14,1": "Widget",
+    "14,2": "North",
+    "14,3": "10"
+   },
+   "domMatch": false,
+   "apiMatch": false,
+   "pass": false,
+   "verdict": "FAIL"
+  },
+  "case09": {
+   "steps": [
+    "grant confirmed, script ran"
+   ],
+   "grantDialogSeen": true,
+   "consoleSnippet": "ConsoleRunning \"Script 1\" as automation:script:script-mvj0f424-jwq2s4 …A12carolABCDEFGHIJKLMNOPQRSTU1234567891011121314151617181920212223242526272829303132Hello from Apps ScriptProductRegionPrice10WidgetNorth520GadgetSouth55WidgetSouth515GadgetNorth108WidgetNorth10UnitsProductRegionPrice8WidgetNorth1015GadgetNorth1010WidgetNorth5Sheet1+Protocol v1Calc: automaticCell: A12✓ SavedFormula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文user:carolReadyLoaded 3 rows into \"Pipeline 1\" from ETL pipel",
+   "domF8": "",
+   "apiGrid": {},
+   "apiF8": null,
+   "scriptEffectPass": false,
+   "triggerSearch": {
+    "hasTriggerWord": false
+   },
+   "scriptEditorText": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidentialCA🔗 file-27fddeba-53d5-4ef6-a73e-33f7223e9875 Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareScript EditorApps ScriptGet add-onsAdd-onsApps ScriptAutomation lane — scripts run through the permissioned automation API×+ TS+ JSScript 1TypeScript · ✗ failedRenameDeleteEditorTranslate VBA / Apps ScriptScript 1Permissions not grantedSaveReset▶ Run1234567891011// Icecream Sheets automation script (TypeScript).​// Declare the permissions your script needs; the user grants them once.​export const PERMISSIONS = [​  { action: 'cell.write', target: 'Sheet1!0,0:9,9', reason: 'Fill the report block' },​];​​export function main(api) {​  api.setCell({ sheet: 'Sheet1', row: 0, col: 0 }, 'Hello from Apps Script');​  api.notify('Script finished');​}​​.tok-kw{color:#0000ff}.tok-str{color:#a31515}.tok-com{color:#008000}.tok-num{color:#098658}// Icecream Sheets automation script (TypeScript).\n// Declare the permissions your script needs; the user grants them once.\nexport const PERMISSIONS = [\n  { action: 'cell.write', target: 'Sheet1!0,0:9,9', reason: 'Fill the report block' },\n];\n\nexport function main(api) {\n  api.setCell({ sheet: 'Sheet1', row: 0, col: 0 }, 'Hello from Apps Script');\n  api.notify('Script finished');\n}\nDeclared permissions (from PERMISSIONS in the source — granted once by you)cell.write on Sheet1!0,0:9,9 — Fill the report blockConsoleRun ",
+   "macroListText": "\n    Skip to gridSkip to ribbon🧊 Icecream Sheets🟢publicinternalconfidentialCA🔗 file-27fddeba-53d5-4ef6-a73e-33f7223e9875 Sign in with Google🟢OnlineIcecream SheetsFileHomeInsertDrawPage LayoutFormulasDataReviewViewExtensionsHelp ShareNormalPage Break PreviewPage LayoutWorkbook ViewsRulerGridlinesfxFormula BarA B C12HeadingsShow%Zoom…100%100%Zoom to Selection100%ZoomFreeze Panes ▾SplitFocus Cell ▾Full ScreenWindowView MacrosRecord MacroRelative RefsMacrosMacros× Use Relative ReferencesNo saved macros yet. Record one to get started.CloseA12carolABCDEFGHIJKLMNOPQRSTU1234567891011121314151617181920212223242526272829303132Hello from Apps ScriptProductRegionPrice10WidgetNorth520GadgetSouth55WidgetSouth515GadgetNorth108WidgetNorth10UnitsProductRegionPrice8WidgetNorth1015GadgetNorth1010WidgetNorth5Sheet1+Protocol v1Calc: automaticCell: A12✓ SavedFormula:English (US)English (UK)EspañolFrançaisDeutsch日本語中文user:carolReadyLoaded 3 rows into \"Pipeline 1\" from ETL pipeline✦ Agent🎙️ Voice · Pro\n  \n\n",
+   "triggerUiFound": false,
+   "verdict": "FAIL"
+  },
+  "case12": {
+   "steps": [],
+   "error": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('text=Build app') to be visible\n",
+   "verdict": "FAIL"
+  }
+ }
+}

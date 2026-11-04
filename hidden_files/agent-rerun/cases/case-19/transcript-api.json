@@ -1,0 +1,129 @@
+{
+ "driver": "api-adaptation",
+ "turn1": {
+  "prompt": "What is the total of the Amount column (cells C2:C5) in the Sales sheet?",
+  "turn": {
+   "text": "What is the total of the Amount column (cells C2:C5) in the Sales sheet?",
+   "ms": 1829,
+   "status": 200,
+   "reply": "The total of the Amount column (C2:C5) in the Sales sheet is 550.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "guardrail",
+     "text": "guardrail rejection: input too long (2306 chars > limit 2000)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "That message is too long for the agent — the limit is 2,000 characters (yours was 2,306). Normal chat prompts are a few hundred characters; if you have longer content, put it in a file or a data sourc"
+    },
+    {
+     "kind": "user_message",
+     "text": "I need a careful, detailed summary of the Sales sheet in this workbook, and I want to be very specific about what I am asking for so there is no ambiguity. The Sales sheet has a header row with Produc"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "Here is the summary of your Sales sheet:\n1. Total Amount: 550\n2. Total Quantity: 47\n3. Total Amount for North region: 320, Total Amount for South region: 230\n4. The product 'Apples' appears in more th"
+    },
+    {
+     "kind": "user_message",
+     "text": "What is the total of the Amount column (cells C2:C5) in the Sales sheet?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "The total of the Amount column (C2:C5) in the Sales sheet is 550."
+    }
+   ]
+  }
+ },
+ "turn2": {
+  "prompt": "Now add 10% to the total you computed before and write the result into cell F1 of the Sales sheet.",
+  "turn": {
+   "text": "Now add 10% to the total you computed before and write the result into cell F1 of the Sales sheet.",
+   "ms": 3187,
+   "status": 200,
+   "reply": "I have added 10% to the previous total and written the result into cell F1 of the Sales sheet.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "guardrail",
+     "text": "guardrail rejection: input too long (2306 chars > limit 2000)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "That message is too long for the agent — the limit is 2,000 characters (yours was 2,306). Normal chat prompts are a few hundred characters; if you have longer content, put it in a file or a data sourc"
+    },
+    {
+     "kind": "user_message",
+     "text": "I need a careful, detailed summary of the Sales sheet in this workbook, and I want to be very specific about what I am asking for so there is no ambiguity. The Sales sheet has a header row with Produc"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": "read_cells ok"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": true,
+     "text": "analyze_data ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "Here is the summary of your Sales sheet:\n1. Total Amount: 550\n2. Total Quantity: 47\n3. Total Amount for North region: 320, Total Amount for South region: 230\n4. The product 'Apples' appears in more th"
+    },
+    {
+     "kind": "user_message",
+     "text": "What is the total of the Amount column (cells C2:C5) in the Sales sheet?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "The total of the Amount column (C2:C5) in the Sales sheet is 550."
+    },
+    {
+     "kind": "user_message",
+     "text": "Now add 10% to the total you computed before and write the result into cell F1 of the Sales sheet."
+    },
+    {
+     "kind": "tool_call",
+     "tool": "write_cells",
+     "ok": true,
+     "text": "write_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I have added 10% to the previous total and written the result into cell F1 of the Sales sheet."
+    }
+   ]
+  }
+ },
+ "f1": {
+  "kind": "number",
+  "value": 605
+ }
+}

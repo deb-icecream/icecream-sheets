@@ -1,0 +1,26 @@
+{
+  "id": "data-cleaning",
+  "name": "Data Cleaning",
+  "version": "1.0.0",
+  "description": "Clean messy sheet data through MCP tools: remove duplicate rows, normalize text, coerce column types, fill or drop missing values, and split or merge columns.",
+  "tools": [
+    "clean_dedupe_rows",
+    "clean_normalize_text",
+    "clean_coerce_types",
+    "clean_fill_missing",
+    "clean_split_column",
+    "clean_merge_columns"
+  ],
+  "prompts": [
+    {
+      "name": "dedupe-and-tidy-orders",
+      "title": "Dedupe and tidy an orders sheet",
+      "text": "Clean the \"Orders\" sheet: first remove duplicate rows with clean_dedupe_rows, then trim and title-case the text columns with clean_normalize_text, and report how many duplicates were removed and how many cells changed."
+    },
+    {
+      "name": "make-columns-numeric",
+      "title": "Make pasted columns numeric",
+      "text": "The \"Import\" sheet was pasted from a web page, so amounts like $1,234.56 are stored as text. Use clean_coerce_types to convert the amount and quantity columns to numbers, fill any missing amounts with the column median via clean_fill_missing, then verify the total with a SUM formula."
+    }
+  ]
+}

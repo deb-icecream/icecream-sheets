@@ -1,0 +1,28 @@
+{
+  "sheets": 16,
+  "bulkEmptyCells": 85,
+  "A9": {
+    "kind": "string",
+    "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/"
+  },
+  "A10": {
+    "kind": "string",
+    "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/"
+  },
+  "C9": {
+    "kind": "string",
+    "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/gamma/"
+  },
+  "A13": {
+    "kind": "null",
+    "value": null
+  },
+  "A22": {
+    "kind": "string",
+    "value": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt"
+  },
+  "A37": {
+    "kind": "number",
+    "value": 2.544
+  }
+}

@@ -1,0 +1,44 @@
+{
+ "case": 4,
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "native chart visible in the grid (canvas/SVG outside chat panels)",
+   "pass": true,
+   "observed": "{\"canvasCount\":0,\"canvasSizes\":[],\"svgCount\":40,\"bodySnippet\":\"Skip to grid\\nSkip to ribbon\\n🧊 Icecream Sheets\\n🟢\\npublic\\ninternal\\nconfidential\\nCA\\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\\nSign in with Google\\n🟢\\nOnline\\nIcecream Sheets\\nFile\\nHome\\nInsert\\nDraw\\nPage Layout\\nFormulas\\nData\\nReview\\nView\\nExtensions\\nHelp\\n Share\\nCut\\nCopy\\nPaste ▾\\nFormat Painter\\nClipboard\\nFo\"}"
+  },
+  {
+   "name": "workbook saved (server storedRevision caught up to revision)",
+   "pass": false,
+   "observed": "{\"ok\":true,\"sessionId\":\"sess_87e7e71d-f89c-43de-9809-b560eee67ccc\",\"fileId\":\"file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\",\"fenced\":false,\"ownershipEpoch\":1,\"participants\":[{\"principal\":\"user:carol\",\"role\":\"editor\"}],\"status\":\"active\",\"revision\":0,\"storageRevision\":0,\"pendingCheckpointOps\":0,\"extrasDirty\":false,\"autosaveStats\":{\"flushes\":1,\"noopSkips\":0,\"forcedFlushes\":0},\"lastActivityAt\":1792665930855,\"idleTimeoutMs\":600000,\"instanceId\":\"engine-1\",\"snapshotChecksum\":\"59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0\"}"
+  },
+  {
+   "name": "chart still visible after reopen in a SECOND browser context",
+   "pass": true,
+   "observed": "{\"canvasCount\":0,\"canvasSizes\":[],\"svgCount\":40,\"bodySnippet\":\"Skip to grid\\nSkip to ribbon\\n🧊 Icecream Sheets\\n🟢\\npublic\\ninternal\\nconfidential\\nCA\\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\\nSign in with Google\\n🟢\\nOnline\\nIcecream Sheets\\nFile\\nHome\\nInsert\\nDraw\\nPage Layout\\nFormulas\\nData\\nReview\\nView\\nExtensions\\nHelp\\n Share\\nCut\\nCopy\\nPaste ▾\\nFormat Painter\\nClipboard\\nFo\"}"
+  },
+  {
+   "name": "download parse-back: xl/charts/chart1.xml exists + readCharts >= 1 chart",
+   "pass": false,
+   "observed": "parts=[] charts=[] error=none"
+  },
+  {
+   "name": "chart cached values match fixture data (North+South totals OR >=3 raw revenues)",
+   "pass": false,
+   "observed": "cachedNums=[] aggregatedMatch=false rawMatchCount=0"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/chart-in-grid.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/reopened-second-context.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/downloaded.xlsx",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/parse-back.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/chart1.xml",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/session-status.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/grid-chart-first.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-04/grid-chart-reopen.json"
+ ]
+}

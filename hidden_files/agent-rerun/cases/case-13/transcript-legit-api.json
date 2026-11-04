@@ -1,0 +1,42 @@
+{
+ "driver": "api-adaptation",
+ "promptLen": 1197,
+ "prompt": "I need a careful, detailed summary of the Sales sheet in this workbook, and I want to be very specific about what I am asking for so there is no ambiguity. The Sales sheet has a header row with Product in column A, Region in column B, Amount in column C and Quantity in column D, and there are four data rows underneath it covering Apples, Bananas and Oranges sold in the North and South regions. Please read the actual values from the sheet rather than guessing, and then tell me: first, the total Amount across all four rows; second, the total Quantity across all four rows; third, the total Amount for the North region alone and the total Amount for the South region alone, shown separately; fourth, which single product appears in more than one row and what its combined Amount is across those rows; and fifth, which individual row has the largest Amount and what that amount is. Please present the answers as a short numbered list that matches the five questions above in the same order, and include the exact numbers from the sheet so I can verify them against the grid myself. If any part of the request cannot be answered from the sheet, say so explicitly instead of estimating. Thank you.",
+ "turn": {
+  "text": "I need a careful, detailed summary of the Sales sheet in this workbook, and I want to be very specific about what I am asking for so there is no ambiguity. The Sales sheet has a header row with Product in column A, Region in column B, Amount in column C and Quantity in column D, and there are four data rows underneath it covering Apples, Bananas and Oranges sold in the North and South regions. Please read the actual values from the sheet rather than guessing, and then tell me: first, the total Amount across all four rows; second, the total Quantity across all four rows; third, the total Amount for the North region alone and the total Amount for the South region alone, shown separately; fourth, which single product appears in more than one row and what its combined Amount is across those rows; and fifth, which individual row has the largest Amount and what that amount is. Please present the answers as a short numbered list that matches the five questions above in the same order, and include the exact numbers from the sheet so I can verify them against the grid myself. If any part of the request cannot be answered from the sheet, say so explicitly instead of estimating. Thank you.",
+  "ms": 3988,
+  "status": 200,
+  "reply": "Here is the summary of your Sales sheet:\n\n1. Total Amount: 550\n2. Total Quantity: 47\n3. Total Amount for North region: 320, Total Amount for South region: 230\n4. The product 'Apples' appears in two rows with a combined Amount of 270.\n5. The row with the largest Amount is the Oranges row with an Amount of 200.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "guardrail",
+    "text": "guardrail rejection: input too long (2306 chars > limit 2000)"
+   },
+   {
+    "kind": "agent_message",
+    "text": "That message is too long for the agent — the limit is 2,000 characters (yours was 2,306). Normal chat prompts are a few hundred characters; if you have longer content, put it in a file or a data sourc"
+   },
+   {
+    "kind": "user_message",
+    "text": "I need a careful, detailed summary of the Sales sheet in this workbook, and I want to be very specific about what I am asking for so there is no ambiguity. The Sales sheet has a header row with Produc"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "ok": true,
+    "text": "read_cells ok"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "analyze_data",
+    "ok": true,
+    "text": "analyze_data ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "Here is the summary of your Sales sheet:\n\n1. Total Amount: 550\n2. Total Quantity: 47\n3. Total Amount for North region: 320, Total Amount for South region: 230\n4. The product 'Apples' appears in two ro"
+   }
+  ]
+ }
+}

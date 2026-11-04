@@ -1,0 +1,40 @@
+{
+ "prompt": "In the Inventory CSV sheet, what is the total number of Units for the item Widget across all warehouses?",
+ "turn": {
+  "text": "In the Inventory CSV sheet, what is the total number of Units for the item Widget across all warehouses?",
+  "ms": 5547,
+  "status": 200,
+  "reply": "The total number of Units for the item Widget across all warehouses is 55.",
+  "answers": [],
+  "audit": [
+   {
+    "kind": "user_message",
+    "text": "Open the CSV data source at http://localhost:8899/inventory.csv and materialize it as a new sheet named 'Inventory CSV'."
+   },
+   {
+    "kind": "tool_call",
+    "tool": "open_data_source",
+    "ok": true,
+    "text": "open_data_source ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "Opened the CSV as the sheet 'Inventory CSV' with 4 data rows (columns: SKU, Item, Warehouse, Units)."
+   },
+   {
+    "kind": "user_message",
+    "text": "In the Inventory CSV sheet, what is the total number of Units for the item Widget across all warehouses?"
+   },
+   {
+    "kind": "tool_call",
+    "tool": "read_cells",
+    "ok": true,
+    "text": "read_cells ok"
+   },
+   {
+    "kind": "agent_message",
+    "text": "The total number of Units for the item Widget across all warehouses is 55."
+   }
+  ]
+ }
+}

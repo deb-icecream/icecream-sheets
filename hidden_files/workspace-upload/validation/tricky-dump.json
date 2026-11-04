@@ -1,0 +1,26 @@
+[
+  [
+    "name",
+    "note",
+    "amount",
+    "flag"
+  ],
+  [
+    "Doe, John",
+    "said \"hello\" loudly",
+    1234.5,
+    true
+  ],
+  [
+    "Multi\r\nline name",
+    "plain",
+    -7,
+    false
+  ],
+  [
+    " spaced ",
+    "trailing comma next",
+    0.001,
+    null
+  ]
+]

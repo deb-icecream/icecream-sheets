@@ -1,0 +1,35 @@
+{
+ "case": "3a",
+ "pass": false,
+ "verdict": "FAIL",
+ "assertions": [
+  {
+   "name": "Chart.js visual renders INLINE in chat (.agent-msg-chart + canvas)",
+   "pass": true,
+   "observed": "chartDivCount=1 canvases=[{\"present\":true,\"width\":360,\"height\":250}] msgFlags=[{\"canvas\":false,\"chartDiv\":false},{\"canvas\":true,\"chartDiv\":true}]"
+  },
+  {
+   "name": "chart data contains North total 89,100",
+   "pass": false,
+   "observed": "chartNums=[13283.333333333334,13283.333333333334] via=none chartHasNorth=false replyHasNorth=false"
+  },
+  {
+   "name": "chart data contains South total 70,300",
+   "pass": false,
+   "observed": "chartNums=[13283.333333333334,13283.333333333334] via=none chartHasSouth=false replyHasSouth=false"
+  },
+  {
+   "name": "turn did not time out (harness)",
+   "pass": true,
+   "observed": "5254ms retried=false"
+  }
+ ],
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03a/transcript.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03a/transcript.txt",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03a/chat-chart-inline.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03a/chart-data.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03a/readback.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-03a/audit-case3a.txt"
+ ]
+}

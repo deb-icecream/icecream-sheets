@@ -1,0 +1,157 @@
+{
+  "width": 480,
+  "steps": {
+    "initial": {
+      "panel": {
+        "clientWidth": 416,
+        "scrollWidth": 460,
+        "clientHeight": 82,
+        "offsetHeight": 82,
+        "scrollLeft": 0,
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "hScrollbar": false,
+        "vScrollbar": false,
+        "rectBottom": 203,
+        "rectHeight": 96
+      },
+      "strip": {
+        "clientWidth": 480,
+        "scrollWidth": 628,
+        "overflowX": "hidden"
+      },
+      "leftTri": {
+        "visible": true,
+        "disabled": true,
+        "x": 0,
+        "width": 28
+      },
+      "rightTri": {
+        "visible": true,
+        "disabled": false,
+        "x": 452,
+        "width": 28
+      },
+      "moreBtn": true,
+      "panelClasses": "ribbon-panel ribbon-fit-3",
+      "wrapClasses": "ribbon-panel-wrap",
+      "groupCount": 1,
+      "docScrollWidth": 480,
+      "innerWidth": 480
+    },
+    "afterRight": {
+      "panel": {
+        "clientWidth": 416,
+        "scrollWidth": 460,
+        "clientHeight": 82,
+        "offsetHeight": 82,
+        "scrollLeft": 44,
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "hScrollbar": false,
+        "vScrollbar": false,
+        "rectBottom": 203,
+        "rectHeight": 96
+      },
+      "strip": {
+        "clientWidth": 480,
+        "scrollWidth": 628,
+        "overflowX": "hidden"
+      },
+      "leftTri": {
+        "visible": true,
+        "disabled": false,
+        "x": 0,
+        "width": 28
+      },
+      "rightTri": {
+        "visible": true,
+        "disabled": true,
+        "x": 452,
+        "width": 28
+      },
+      "moreBtn": true,
+      "panelClasses": "ribbon-panel ribbon-fit-3",
+      "wrapClasses": "ribbon-panel-wrap",
+      "groupCount": 1,
+      "docScrollWidth": 480,
+      "innerWidth": 480
+    },
+    "atEnd": {
+      "panel": {
+        "clientWidth": 416,
+        "scrollWidth": 460,
+        "clientHeight": 82,
+        "offsetHeight": 82,
+        "scrollLeft": 44,
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "hScrollbar": false,
+        "vScrollbar": false,
+        "rectBottom": 203,
+        "rectHeight": 96
+      },
+      "strip": {
+        "clientWidth": 480,
+        "scrollWidth": 628,
+        "overflowX": "hidden"
+      },
+      "leftTri": {
+        "visible": true,
+        "disabled": false,
+        "x": 0,
+        "width": 28
+      },
+      "rightTri": {
+        "visible": true,
+        "disabled": true,
+        "x": 452,
+        "width": 28
+      },
+      "moreBtn": true,
+      "panelClasses": "ribbon-panel ribbon-fit-3",
+      "wrapClasses": "ribbon-panel-wrap",
+      "groupCount": 1,
+      "docScrollWidth": 480,
+      "innerWidth": 480
+    },
+    "afterLeft": {
+      "panel": {
+        "clientWidth": 416,
+        "scrollWidth": 460,
+        "clientHeight": 82,
+        "offsetHeight": 82,
+        "scrollLeft": 0,
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "hScrollbar": false,
+        "vScrollbar": false,
+        "rectBottom": 203,
+        "rectHeight": 96
+      },
+      "strip": {
+        "clientWidth": 480,
+        "scrollWidth": 628,
+        "overflowX": "hidden"
+      },
+      "leftTri": {
+        "visible": true,
+        "disabled": true,
+        "x": 0,
+        "width": 28
+      },
+      "rightTri": {
+        "visible": true,
+        "disabled": false,
+        "x": 452,
+        "width": 28
+      },
+      "moreBtn": true,
+      "panelClasses": "ribbon-panel ribbon-fit-3",
+      "wrapClasses": "ribbon-panel-wrap",
+      "groupCount": 1,
+      "docScrollWidth": 480,
+      "innerWidth": 480
+    }
+  }
+}

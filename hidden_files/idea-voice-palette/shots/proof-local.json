@@ -1,0 +1,56 @@
+{
+ "web": "http://localhost:8902",
+ "steps": [
+  {
+   "name": "boot",
+   "ok": true,
+   "detail": "grid up; dataset={\"icecreamGateway\":\"\",\"icecreamEngineAccess\":\"proxy\"}"
+  },
+  {
+   "name": "seed",
+   "ok": true,
+   "detail": "B2=5 B3=15 B4=25"
+  },
+  {
+   "name": "match",
+   "ok": true,
+   "detail": "match=SUMIF formula==SUMIF(B2:B20, \">10\")"
+  },
+  {
+   "name": "confirm-run",
+   "ok": true,
+   "detail": "result=\"✓ Done — Insert formula in Sheet1!D2.\" (D2 before run: \"\")"
+  },
+  {
+   "name": "sheet-changed",
+   "ok": true,
+   "detail": "D2=40 (15+25; 5 is not > 10)"
+  },
+  {
+   "name": "write-command",
+   "ok": true,
+   "detail": "preview=\"Set Sheet1!C3 to 42\" C3=42"
+  }
+ ],
+ "errors": [
+  "console: Failed to load resource: the server responded with a status of 404 (File not found)"
+ ],
+ "buildInfo": {
+  "icecreamGateway": "",
+  "icecreamEngineAccess": "proxy"
+ },
+ "transcript": [
+  {
+   "utterance": "some if b two to b twenty greater than ten",
+   "match": "SUMIF",
+   "formula": "=SUMIF(B2:B20, \">10\")",
+   "result": "✓ Done — Insert formula in Sheet1!D2."
+  },
+  {
+   "utterance": "set c3 to 42",
+   "preview": "Set Sheet1!C3 to 42",
+   "cellAfter": "42"
+  }
+ ],
+ "ok": true
+}

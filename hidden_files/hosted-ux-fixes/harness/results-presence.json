@@ -1,0 +1,72 @@
+{
+  "fileId": "file-d8-tour-1",
+  "chipA": "🔗 Shared file",
+  "seen": {
+    "inA": [
+      {
+        "principal": "user:bob",
+        "label": "Bob B",
+        "box": {
+          "x": 332,
+          "y": 391,
+          "w": 96,
+          "h": 24
+        }
+      }
+    ],
+    "inB": [
+      {
+        "principal": "user:alice",
+        "label": "Alice A",
+        "box": {
+          "x": 236,
+          "y": 343,
+          "w": 96,
+          "h": 24
+        }
+      }
+    ]
+  },
+  "d7inA": {
+    "x": 332,
+    "y": 391,
+    "width": 96,
+    "height": 24
+  },
+  "c5inB": {
+    "x": 236,
+    "y": 343,
+    "width": 96,
+    "height": 24
+  },
+  "avatarsA": [
+    {
+      "title": "Bob B",
+      "text": "BB"
+    }
+  ],
+  "avatarsB": [
+    {
+      "title": "Alice A",
+      "text": "AA"
+    }
+  ],
+  "moved": {
+    "flag": {
+      "principal": "user:bob",
+      "label": "Bob B",
+      "box": {
+        "x": 428,
+        "y": 439,
+        "w": 96,
+        "h": 24
+      }
+    },
+    "e9cell": {
+      "x": 428,
+      "y": 439,
+      "width": 96,
+      "height": 24
+    }
+  }
+}

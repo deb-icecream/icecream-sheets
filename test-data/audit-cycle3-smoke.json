@@ -1,0 +1,59 @@
+{
+ "totalFormulas": 517,
+ "results": [
+  {
+   "file": "closedxml-xlsx-functions-excel-2010.xlsx",
+   "formulas": 517,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B2",
+     "formula": "=AND(Sheet2!C39:U47)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "D2",
+     "formula": "=ROUND(B2,12)=ROUND(C2,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "E2",
+     "formula": "=AND(D2:D80)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B33",
+     "formula": "=GAMMALN.PRECISE(F4)",
+     "cached": "0",
+     "ours": "-4.440892098500626e-16",
+     "bucket": "precision",
+     "reason": "rel diff 1.00e+0"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "L44",
+     "formula": "=ROUND(L22,12)=ROUND(L33,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    }
+   ],
+   "loadError": null
+  }
+ ]
+}

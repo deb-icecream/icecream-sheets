@@ -1,0 +1,19 @@
+[
+ "console: Failed to load resource: the server responded with a status of 404 (Not Found)",
+ "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+ "console: Access to fetch at 'http://127.0.0.1:8101/load/stream' from origin 'http://localhost:4173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource",
+ "console: Failed to load resource: net::ERR_FAILED",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+ "console: Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+]

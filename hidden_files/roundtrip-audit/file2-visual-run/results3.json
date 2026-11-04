@@ -1,0 +1,116 @@
+{
+  "sheets": [
+    {
+      "idx": 12,
+      "tab": "Template",
+      "shot": "12-Template.png",
+      "active": "Template",
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 13,
+      "tab": "Browse Data",
+      "shot": "13-Browse-Data.png",
+      "active": "Browse Data",
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 14,
+      "tab": "Valid Values",
+      "shot": "14-Valid-Values.png",
+      "active": "Valid Values",
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 15,
+      "tab": "Dropdown Lists",
+      "shot": "15-Dropdown-Lists.png",
+      "active": "Dropdown Lists",
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    },
+    {
+      "idx": 16,
+      "tab": "AttributePTDMAP",
+      "shot": "16-AttributePTDMAP.png",
+      "active": "AttributePTDMAP",
+      "renderedCells": 600,
+      "nonEmptyCells": 0,
+      "sample": [],
+      "errVals": [],
+      "loadingBanner": false,
+      "errorBanner": false
+    }
+  ],
+  "probes": {
+    "iconsDom": {
+      "img": 0,
+      "canvas": 0,
+      "svg": 40,
+      "anyClass": 1
+    },
+    "imagesDom": {
+      "img": 0,
+      "canvas": 0,
+      "svg": 40,
+      "picClass": 0,
+      "imageClass": 0,
+      "drawingClass": 0,
+      "overlayClass": 1,
+      "bgImages": 0
+    }
+  },
+  "meta": {
+    "fileId": "file-ac93f376-8478-48a5-ac08-1429bde9615d",
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "pageErrors": [],
+    "badResponses": [
+      {
+        "status": 401,
+        "url": "http://localhost:8810/api/engine/session-extras"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:8811/read"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:8811/read"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:8811/read"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:8811/read"
+      }
+    ],
+    "mediaRequests": []
+  }
+}

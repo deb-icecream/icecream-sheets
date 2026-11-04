@@ -1,0 +1,67 @@
+{
+ "at": "2026-10-21T23:36:22.713Z",
+ "endpoint": "https://us-central1-aiplatform.googleapis.com/v1/projects/dreamscapes-zero/locations/us-central1/endpoints/openapi/chat/completions",
+ "attempts": [
+  {
+   "model": "google/gemini-2.5-flash-lite",
+   "status": 200,
+   "statusText": "OK",
+   "latencyMs": 2296,
+   "headers": {
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Wed, 21 Oct 2026 23:36:25 GMT",
+    "server": "scaffolding on HTTPServer2",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin, Referer",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "0"
+   },
+   "bodySnippet": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"content\":\"pong\",\"role\":\"assistant\"}}],\"created\":1792625785,\"id\":\"eUzZaoLmEcyLvt8PiNurwQ8\",\"model\":\"google/gemini-2.5-flash-lite\",\"object\":\"chat.completion\",\"system_fingerprint\":\"\",\"usage\":{\"completion_tokens\":1,\"extra_properties\":{\"google\":{\"traffic_type\":\"ON_DEMAND\"}},\"prompt_tokens\":5,\"total_tokens\":6}}",
+   "parsedContent": "pong"
+  },
+  {
+   "model": "gemini-2.5-flash-lite",
+   "status": 400,
+   "statusText": "Bad Request",
+   "latencyMs": 429,
+   "headers": {
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 21 Oct 2026 23:36:26 GMT",
+    "server": "scaffolding on HTTPServer2",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin, Referer",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "0"
+   },
+   "bodySnippet": "[{\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Malformed publisher model (`model`: 'gemini-2.5-flash-lite') for the 'openapi' request endpoint ID; expected '\\u003cpublisher\\u003e/\\u003cmodel\\u003e'.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n]",
+   "parsedContent": null
+  },
+  {
+   "model": "google/gemini-2.5-flash-lite",
+   "status": 200,
+   "statusText": "OK",
+   "latencyMs": 555,
+   "headers": {
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Wed, 21 Oct 2026 23:36:26 GMT",
+    "server": "scaffolding on HTTPServer2",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin, Referer",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "0"
+   },
+   "bodySnippet": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"content\":\"pong\",\"role\":\"assistant\"}}],\"created\":1792625786,\"id\":\"ekzZat2dJYuLvt8PlaPC4Q4\",\"model\":\"google/gemini-2.5-flash-lite\",\"object\":\"chat.completion\",\"system_fingerprint\":\"\",\"usage\":{\"completion_tokens\":1,\"extra_properties\":{\"google\":{\"traffic_type\":\"ON_DEMAND\"}},\"prompt_tokens\":5,\"total_tokens\":6}}",
+   "parsedContent": "pong",
+   "label": "repeat"
+  }
+ ]
+}

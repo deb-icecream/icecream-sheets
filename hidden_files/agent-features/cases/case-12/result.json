@@ -1,0 +1,5 @@
+{
+ "steps": [],
+ "error": "TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('text=Build app') to be visible\n",
+ "verdict": "FAIL"
+}

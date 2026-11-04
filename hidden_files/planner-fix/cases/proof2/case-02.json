@@ -1,0 +1,264 @@
+{
+  "t1": {
+    "text": "What is the total revenue in the Sales sheet?",
+    "durationMs": 3048,
+    "httpStatus": 200,
+    "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+    "rawText": "{\"threadId\":\"planner-proof2-thread\",\"message\":\"The model service is busy right now, so I could not finish that request. Please try again in a moment.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792669533394,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792669534784,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"tool_call\",\"tool\":\"read_cells\",\"args\":{\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":100000,\"endCol\":100000},\"ok\":false,\"summary\":\"read_cells failed: range too large: 10000200001 cells (max 100000)\"},{\"seq\":3,\"ts\":1792669535611,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"question\",\"text\":\"Could you please specify",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "timeout": 2,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [
+      "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once",
+      "planner call failed after retry (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+    ],
+    "tools": [],
+    "audit": [
+      {
+        "seq": 10,
+        "ts": 1792669539508,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "user_message",
+        "text": "What is the total revenue in the Sales sheet?"
+      },
+      {
+        "seq": 11,
+        "ts": 1792669539791,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once"
+      },
+      {
+        "seq": 12,
+        "ts": 1792669541550,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed after retry (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+      },
+      {
+        "seq": 13,
+        "ts": 1792669541551,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "agent_message",
+        "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment."
+      }
+    ]
+  },
+  "t2": {
+    "text": "Set the Revenue for Jun South to 15000 in the Sales sheet.",
+    "durationMs": 6042,
+    "httpStatus": 200,
+    "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+    "rawText": "{\"threadId\":\"planner-proof2-thread\",\"message\":\"The model service is busy right now, so I could not finish that request. Please try again in a moment.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792669533394,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792669534784,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"tool_call\",\"tool\":\"read_cells\",\"args\":{\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":100000,\"endCol\":100000},\"ok\":false,\"summary\":\"read_cells failed: range too large: 10000200001 cells (max 100000)\"},{\"seq\":3,\"ts\":1792669535611,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"question\",\"text\":\"Could you please specify",
+    "chartAttached": false,
+    "asksAnswered": [
+      {
+        "askId": "ask_mvjh5tpp_2iwki",
+        "kind": "options",
+        "question": "Which columns contain 'Region' and 'Revenue' in the 'Sales' sheet?",
+        "options": [
+          "Region column",
+          "Revenue column"
+        ],
+        "action": null,
+        "answer": "Region column",
+        "answerStatus": 200
+      }
+    ],
+    "auditKinds": {
+      "user_message": 2,
+      "timeout": 3,
+      "question": 1,
+      "agent_message": 2,
+      "tool_call": 1
+    },
+    "questions": [
+      "Which columns contain 'Region' and 'Revenue' in the 'Sales' sheet?"
+    ],
+    "timeouts": [
+      "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once",
+      "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once",
+      "planner call failed after retry (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+    ],
+    "tools": [
+      {
+        "tool": "agent.offer_options",
+        "ok": true,
+        "summary": "human-in-the-loop agent.offer_options: paused waiting for the user"
+      }
+    ],
+    "audit": [
+      {
+        "seq": 14,
+        "ts": 1792669542567,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "user_message",
+        "text": "Set the Revenue for Jun South to 15000 in the Sales sheet."
+      },
+      {
+        "seq": 15,
+        "ts": 1792669542830,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once"
+      },
+      {
+        "seq": 16,
+        "ts": 1792669545132,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "question",
+        "text": "Which columns contain 'Region' and 'Revenue' in the 'Sales' sheet?",
+        "summary": "agent asked user"
+      },
+      {
+        "seq": 17,
+        "ts": 1792669545132,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "agent_message",
+        "text": "I need to know the column numbers for 'Region' and 'Revenue' to set the value for 'Jun South'.\n\nWhich columns contain 'Region' and 'Revenue' in the 'Sales' sheet?"
+      },
+      {
+        "seq": 18,
+        "ts": 1792669545132,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "tool_call",
+        "tool": "agent.offer_options",
+        "args": {
+          "principal": "user:alice",
+          "question": "Which columns contain 'Region' and 'Revenue' in the 'Sales' sheet?",
+          "options": [
+            "Region column",
+            "Revenue column"
+          ]
+        },
+        "ok": true,
+        "summary": "human-in-the-loop agent.offer_options: paused waiting for the user"
+      },
+      {
+        "seq": 19,
+        "ts": 1792669545596,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "user_message",
+        "text": "Region column"
+      },
+      {
+        "seq": 20,
+        "ts": 1792669545813,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once"
+      },
+      {
+        "seq": 21,
+        "ts": 1792669547590,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed after retry (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+      },
+      {
+        "seq": 22,
+        "ts": 1792669547590,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "agent_message",
+        "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment."
+      }
+    ]
+  },
+  "t3": {
+    "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it.",
+    "durationMs": 3023,
+    "httpStatus": 200,
+    "message": "The model service is busy right now, so I could not finish that request. Please try again in a moment.",
+    "rawText": "{\"threadId\":\"planner-proof2-thread\",\"message\":\"The model service is busy right now, so I could not finish that request. Please try again in a moment.\",\"needsInput\":null,\"audit\":[{\"seq\":1,\"ts\":1792669533394,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"user_message\",\"text\":\"Which region had the highest total revenue in the Sales sheet?\"},{\"seq\":2,\"ts\":1792669534784,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"tool_call\",\"tool\":\"read_cells\",\"args\":{\"sheet\":\"Sales\",\"startRow\":0,\"startCol\":0,\"endRow\":100000,\"endCol\":100000},\"ok\":false,\"summary\":\"read_cells failed: range too large: 10000200001 cells (max 100000)\"},{\"seq\":3,\"ts\":1792669535611,\"principal\":\"user:alice\",\"threadId\":\"planner-proof2-thread\",\"kind\":\"question\",\"text\":\"Could you please specify",
+    "chartAttached": false,
+    "asksAnswered": [],
+    "auditKinds": {
+      "user_message": 1,
+      "timeout": 2,
+      "agent_message": 1
+    },
+    "questions": [],
+    "timeouts": [
+      "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once",
+      "planner call failed after retry (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+    ],
+    "tools": [],
+    "audit": [
+      {
+        "seq": 23,
+        "ts": 1792669548644,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "user_message",
+        "text": "Add a TOTAL row directly below the data in the Sales sheet, with a formula in the Revenue column that sums all the Revenue values above it."
+      },
+      {
+        "seq": 24,
+        "ts": 1792669548910,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  )); retrying once"
+      },
+      {
+        "seq": 25,
+        "ts": 1792669550727,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "timeout",
+        "text": "planner",
+        "summary": "planner call failed after retry (openai-compatible backend: provider returned 429 ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\n  ))"
+      },
+      {
+        "seq": 26,
+        "ts": 1792669550727,
+        "principal": "user:alice",
+        "threadId": "planner-proof2-thread",
+        "kind": "agent_message",
+        "text": "The model service is busy right now, so I could not finish that request. Please try again in a moment."
+      }
+    ]
+  },
+  "junSouth": {
+    "value": {
+      "kind": "number",
+      "value": 14200
+    }
+  },
+  "labelCell": {
+    "value": {
+      "kind": "null",
+      "value": null
+    }
+  },
+  "totalCell": {
+    "value": {
+      "kind": "null",
+      "value": null
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+ "stamp": {
+  "gateway": "http://localhost:8100",
+  "engineAccess": "signed"
+ },
+ "banners": [
+  "[icecream] build: gateway=http://localhost:8100 engineAccess=signed"
+ ],
+ "signed": true,
+ "gatewayOk": true
+}

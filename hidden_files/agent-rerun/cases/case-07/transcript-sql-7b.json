@@ -1,0 +1,75 @@
+{
+ "driver": "api-adaptation (product connector routes + ops materialization)",
+ "queryTurn": {
+  "prompt": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+  "turn": {
+   "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?",
+   "ms": 1829,
+   "status": 200,
+   "reply": "The 'Sales SQL' sheet is empty, so I cannot calculate the total revenue. Please add data to the sheet.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": false,
+     "text": "analyze_data failed: sheet \"Sales SQL\" is empty"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The 'Sales SQL' sheet is empty, so I cannot calculate the total revenue. Please add data to the sheet."
+    }
+   ]
+  }
+ },
+ "analysisTurn": {
+  "prompt": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+  "turn": {
+   "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much.",
+   "ms": 604,
+   "status": 200,
+   "reply": "I cannot compute the total revenue per region because the 'Sales SQL' sheet is empty. Please add data to the sheet.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "In the Sales SQL sheet, what is the total of the revenue column across all rows?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "analyze_data",
+     "ok": false,
+     "text": "analyze_data failed: sheet \"Sales SQL\" is empty"
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "The 'Sales SQL' sheet is empty, so I cannot calculate the total revenue. Please add data to the sheet."
+    },
+    {
+     "kind": "user_message",
+     "tool": null,
+     "ok": null,
+     "text": "Analyze the Sales SQL sheet: compute the total revenue per region and tell me which region has the highest total and how much."
+    },
+    {
+     "kind": "agent_message",
+     "tool": null,
+     "ok": null,
+     "text": "I cannot compute the total revenue per region because the 'Sales SQL' sheet is empty. Please add data to the sheet."
+    }
+   ]
+  }
+ }
+}

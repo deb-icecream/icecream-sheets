@@ -1,0 +1,279 @@
+{
+ "values": [
+  [
+   {
+    "kind": "string",
+    "value": "Date"
+   },
+   {
+    "kind": "string",
+    "value": "City"
+   },
+   {
+    "kind": "string",
+    "value": "TempC"
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "2026-10-20"
+   },
+   {
+    "kind": "string",
+    "value": "Seattle"
+   },
+   {
+    "kind": "number",
+    "value": 14
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "2026-10-21"
+   },
+   {
+    "kind": "string",
+    "value": "Seattle"
+   },
+   {
+    "kind": "number",
+    "value": 16
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "string",
+    "value": "2026-10-21"
+   },
+   {
+    "kind": "string",
+    "value": "Portland"
+   },
+   {
+    "kind": "number",
+    "value": 18
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ],
+  [
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   },
+   {
+    "kind": "null",
+    "value": null
+   }
+  ]
+ ],
+ "formulas": [
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ ]
+}

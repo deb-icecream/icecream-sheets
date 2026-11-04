@@ -1,0 +1,26 @@
+{
+  "desktop-1440": {
+    "info": {
+      "src": "/product/pivotchart.png",
+      "alt": "A PivotChart in Icecream Sheets: a live chart drawn from a pivot table in the same sheet."
+    },
+    "loaded": {
+      "currentSrc": "http://127.0.0.1:8974/product/pivotchart.png",
+      "complete": true,
+      "naturalWidth": 1080
+    },
+    "errors": []
+  },
+  "iphone-390": {
+    "info": {
+      "src": "/product/pivotchart.png",
+      "alt": "A PivotChart in Icecream Sheets: a live chart drawn from a pivot table in the same sheet."
+    },
+    "loaded": {
+      "currentSrc": "http://127.0.0.1:8974/product/pivotchart-960.png",
+      "complete": true,
+      "naturalWidth": 389
+    },
+    "errors": []
+  }
+}

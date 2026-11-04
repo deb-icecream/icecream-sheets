@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "fileId": "file-1638aa26-e40e-4b06-8352-1bf15015e354",
+  "sessionId": "sess_116480fb-224f-44c1-9feb-53611e40d09e",
+  "engineUrl": "http://127.0.0.1:19101",
+  "accessToken": "eyJ2IjoxLCJzdWIiOiJ1c2VyOmNzdnVzZXIiLCJzaWQiOiJzZXNzXzExNjQ4MGZiLTIyNGYtNDRjMS05ZmViLTUzNjExZTQwZDA5ZSIsImZpZCI6ImZpbGUtMTYzOGFhMjYtZTQwZS00YjA2LTgzNTItMWJmMTUwMTVlMzU0Iiwicm9sZSI6ImVkaXRvciIsInRpZXIiOiJzdGFuZGFyZCIsImlhdCI6MTc5MjY0OTUzOSwiZXhwIjoxNzkyNjUwMTM5fQ.D2TAvZ2BbA_UdUo4IYEpq8QfUn6jdthqR0DreEgbL0Q",
+  "role": "editor",
+  "revision": 0,
+  "joined": false,
+  "ownershipEpoch": 1
+}

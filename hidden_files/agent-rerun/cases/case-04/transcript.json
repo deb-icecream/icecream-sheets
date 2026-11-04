@@ -1,0 +1,43 @@
+{
+ "n1": {
+  "msgs": [],
+  "newMsgs": [],
+  "seen": {
+   "clicked": [],
+   "textAnswers": [],
+   "disambClicked": null
+  },
+  "timedOut": true,
+  "durationMs": 301663,
+  "prompt": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300."
+ },
+ "audit": [],
+ "gridChart": {
+  "canvasCount": 0,
+  "canvasSizes": [],
+  "svgCount": 40,
+  "bodySnippet": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nCA\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nCut\nCopy\nPaste ▾\nFormat Painter\nClipboard\nFo"
+ },
+ "gridChart2": {
+  "canvasCount": 0,
+  "canvasSizes": [],
+  "svgCount": 40,
+  "bodySnippet": "Skip to grid\nSkip to ribbon\n🧊 Icecream Sheets\n🟢\npublic\ninternal\nconfidential\nCA\n🔗 file-9d9ced6e-94b3-41ea-a3b4-d8bcf40fb2b2\nSign in with Google\n🟢\nOnline\nIcecream Sheets\nFile\nHome\nInsert\nDraw\nPage Layout\nFormulas\nData\nReview\nView\nExtensions\nHelp\n Share\nCut\nCopy\nPaste ▾\nFormat Painter\nClipboard\nFo"
+ },
+ "parseBack": {
+  "attempted": true,
+  "downloadStatus": 200,
+  "downloadJson": {
+   "entryId": "autosave_sess_87e7e71d-f89c-43de-9809-b560eee67ccc",
+   "mode": "verbatim"
+  },
+  "signStatus": 200,
+  "via": "gateway-signed-url",
+  "bytes": 6893,
+  "parts": [],
+  "hasChart1Xml": false,
+  "charts": []
+ },
+ "savedOk": false,
+ "retried": false
+}

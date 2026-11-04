@@ -1,0 +1,307 @@
+{
+ "store": {
+  "status": 200,
+  "json": {
+   "ok": true,
+   "ref": "user:bob:ds:sql:w3b-sales"
+  }
+ },
+ "tables": {
+  "status": 200,
+  "json": {
+   "ok": true,
+   "tables": [
+    {
+     "name": "products",
+     "type": "table"
+    },
+    {
+     "name": "sales",
+     "type": "table"
+    }
+   ]
+  }
+ },
+ "schema": {
+  "status": 200,
+  "json": {
+   "ok": true,
+   "table": "sales",
+   "columns": [
+    {
+     "name": "order_id",
+     "type": "INTEGER",
+     "notnull": false,
+     "pk": true
+    },
+    {
+     "name": "order_date",
+     "type": "TEXT",
+     "notnull": true,
+     "pk": false
+    },
+    {
+     "name": "region",
+     "type": "TEXT",
+     "notnull": true,
+     "pk": false
+    },
+    {
+     "name": "product",
+     "type": "TEXT",
+     "notnull": true,
+     "pk": false
+    },
+    {
+     "name": "units",
+     "type": "INTEGER",
+     "notnull": true,
+     "pk": false
+    },
+    {
+     "name": "unit_price",
+     "type": "REAL",
+     "notnull": true,
+     "pk": false
+    },
+    {
+     "name": "revenue",
+     "type": "REAL",
+     "notnull": true,
+     "pk": false
+    }
+   ],
+   "rowCount": 24
+  }
+ },
+ "query": {
+  "status": 200,
+  "columns": [
+   "order_id",
+   "order_date",
+   "region",
+   "product",
+   "units",
+   "unit_price",
+   "revenue"
+  ],
+  "rows": [
+   {
+    "order_id": 1001,
+    "order_date": "2026-01-01",
+    "region": "North",
+    "product": "Widget",
+    "units": 2,
+    "unit_price": 9.99,
+    "revenue": 19.98
+   },
+   {
+    "order_id": 1002,
+    "order_date": "2026-01-02",
+    "region": "South",
+    "product": "Gadget",
+    "units": 9,
+    "unit_price": 19.99,
+    "revenue": 179.91
+   },
+   {
+    "order_id": 1003,
+    "order_date": "2026-01-03",
+    "region": "East",
+    "product": "Gizmo",
+    "units": 16,
+    "unit_price": 29.5,
+    "revenue": 472
+   },
+   {
+    "order_id": 1004,
+    "order_date": "2026-01-04",
+    "region": "West",
+    "product": "Doohickey",
+    "units": 5,
+    "unit_price": 4.75,
+    "revenue": 23.75
+   },
+   {
+    "order_id": 1005,
+    "order_date": "2026-01-05",
+    "region": "North",
+    "product": "Widget",
+    "units": 12,
+    "unit_price": 9.99,
+    "revenue": 119.88
+   },
+   {
+    "order_id": 1006,
+    "order_date": "2026-01-06",
+    "region": "South",
+    "product": "Gadget",
+    "units": 19,
+    "unit_price": 19.99,
+    "revenue": 379.81
+   },
+   {
+    "order_id": 1007,
+    "order_date": "2026-01-07",
+    "region": "East",
+    "product": "Gizmo",
+    "units": 8,
+    "unit_price": 29.5,
+    "revenue": 236
+   },
+   {
+    "order_id": 1008,
+    "order_date": "2026-01-08",
+    "region": "West",
+    "product": "Doohickey",
+    "units": 15,
+    "unit_price": 4.75,
+    "revenue": 71.25
+   },
+   {
+    "order_id": 1009,
+    "order_date": "2026-02-09",
+    "region": "North",
+    "product": "Widget",
+    "units": 4,
+    "unit_price": 9.99,
+    "revenue": 39.96
+   },
+   {
+    "order_id": 1010,
+    "order_date": "2026-02-10",
+    "region": "South",
+    "product": "Gadget",
+    "units": 11,
+    "unit_price": 19.99,
+    "revenue": 219.89
+   },
+   {
+    "order_id": 1011,
+    "order_date": "2026-02-11",
+    "region": "East",
+    "product": "Gizmo",
+    "units": 18,
+    "unit_price": 29.5,
+    "revenue": 531
+   },
+   {
+    "order_id": 1012,
+    "order_date": "2026-02-12",
+    "region": "West",
+    "product": "Doohickey",
+    "units": 7,
+    "unit_price": 4.75,
+    "revenue": 33.25
+   },
+   {
+    "order_id": 1013,
+    "order_date": "2026-02-13",
+    "region": "North",
+    "product": "Widget",
+    "units": 14,
+    "unit_price": 9.99,
+    "revenue": 139.86
+   },
+   {
+    "order_id": 1014,
+    "order_date": "2026-02-14",
+    "region": "South",
+    "product": "Gadget",
+    "units": 3,
+    "unit_price": 19.99,
+    "revenue": 59.97
+   },
+   {
+    "order_id": 1015,
+    "order_date": "2026-02-15",
+    "region": "East",
+    "product": "Gizmo",
+    "units": 10,
+    "unit_price": 29.5,
+    "revenue": 295
+   },
+   {
+    "order_id": 1016,
+    "order_date": "2026-02-16",
+    "region": "West",
+    "product": "Doohickey",
+    "units": 17,
+    "unit_price": 4.75,
+    "revenue": 80.75
+   },
+   {
+    "order_id": 1017,
+    "order_date": "2026-03-17",
+    "region": "North",
+    "product": "Widget",
+    "units": 6,
+    "unit_price": 9.99,
+    "revenue": 59.94
+   },
+   {
+    "order_id": 1018,
+    "order_date": "2026-03-18",
+    "region": "South",
+    "product": "Gadget",
+    "units": 13,
+    "unit_price": 19.99,
+    "revenue": 259.87
+   },
+   {
+    "order_id": 1019,
+    "order_date": "2026-03-19",
+    "region": "East",
+    "product": "Gizmo",
+    "units": 2,
+    "unit_price": 29.5,
+    "revenue": 59
+   },
+   {
+    "order_id": 1020,
+    "order_date": "2026-03-20",
+    "region": "West",
+    "product": "Doohickey",
+    "units": 9,
+    "unit_price": 4.75,
+    "revenue": 42.75
+   },
+   {
+    "order_id": 1021,
+    "order_date": "2026-03-21",
+    "region": "North",
+    "product": "Widget",
+    "units": 16,
+    "unit_price": 9.99,
+    "revenue": 159.84
+   },
+   {
+    "order_id": 1022,
+    "order_date": "2026-03-22",
+    "region": "South",
+    "product": "Gadget",
+    "units": 5,
+    "unit_price": 19.99,
+    "revenue": 99.95
+   },
+   {
+    "order_id": 1023,
+    "order_date": "2026-03-23",
+    "region": "East",
+    "product": "Gizmo",
+    "units": 12,
+    "unit_price": 29.5,
+    "revenue": 354
+   },
+   {
+    "order_id": 1024,
+    "order_date": "2026-03-24",
+    "region": "West",
+    "product": "Doohickey",
+    "units": 19,
+    "unit_price": 4.75,
+    "revenue": 90.25
+   }
+  ]
+ }
+}

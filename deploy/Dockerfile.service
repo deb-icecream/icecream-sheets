@@ -1,0 +1,91 @@
+# syntax=docker/dockerfile:1
+# =============================================================================
+# icecream-sheets — SERVICE-PACKAGE image (Cloud Run service: `service` —
+# ONE of the five deployed services in the user's inventory).
+#
+# Mapping decision (documented in deploy/README.md): the service package
+# deploys as ONE Cloud Run service running the COMBINED runner built by
+# W17b (packages/gateway/src/bin/service.ts + services/servicePackage.ts):
+# vault, meta, etl, agent and addons mounted in one process on one port
+# behind /api/<name> prefixes. The entrypoint selects it with
+# SERVICE_BIN=service (deploy/service-entrypoint.sh, which fails closed
+# on an unknown value); the deployed definition is
+# deploy/services/service.yaml. The per-bin values
+# (vault|meta|etl|agent|addons → src/bin/{vault,meta,etl,agent,addons}.ts)
+# remain selectable through the same SERVICE_BIN mechanism for LOCAL
+# DEBUGGING only — no deployed definition uses them.
+#
+# Build context = repo root:
+#   docker build -f deploy/Dockerfile.service -t icecream-service .
+#
+# PORT/HOST: the combined bin reads process.env.PORT (default 8108 local)
+# and HOST (default 127.0.0.1 local; service.yaml sets HOST=0.0.0.0 —
+# Cloud Run's startup probes require 0.0.0.0:$PORT; W17b). Health:
+# GET /health is implemented by the combined runner itself (names the
+# service-package + its five surfaces) and by every surface listener.
+# python3: the service package's Python sandbox (ETL transforms, agent and
+# automation code — packages/service/src/python) shells out to `python3`
+# and lazily provisions a venv under $XDG_CACHE_HOME / ~/.cache. On Cloud
+# Run that cache is in-memory tmpfs (counts against the memory limit,
+# lost with the instance) — consistent with the service's stateless
+# lifetime model (nothing persists between requests); first-use
+# provisioning cost is expected; see deploy/CONFIG.md.
+# =============================================================================
+
+# ---------- build stage ----------
+FROM node:24-bookworm-slim AS build
+WORKDIR /app
+COPY package.json package-lock.json tsconfig.base.json ./
+COPY packages/engine/package.json        packages/engine/package.json
+COPY packages/csv-adapter/package.json   packages/csv-adapter/package.json
+COPY packages/ods-adapter/package.json   packages/ods-adapter/package.json
+COPY packages/xlsb-adapter/package.json  packages/xlsb-adapter/package.json
+COPY packages/xlsx-adapter/package.json  packages/xlsx-adapter/package.json
+COPY packages/service/package.json       packages/service/package.json
+COPY packages/mcp-server/package.json    packages/mcp-server/package.json
+COPY packages/gateway/package.json       packages/gateway/package.json
+RUN npm ci --no-audit --no-fund
+COPY packages/engine/       packages/engine/
+COPY packages/csv-adapter/  packages/csv-adapter/
+COPY packages/ods-adapter/  packages/ods-adapter/
+COPY packages/xlsb-adapter/ packages/xlsb-adapter/
+COPY packages/xlsx-adapter/ packages/xlsx-adapter/
+COPY packages/service/      packages/service/
+COPY packages/mcp-server/   packages/mcp-server/
+COPY packages/gateway/     packages/gateway/
+# Fresh-build ordering (2026-10-24 deploy wave): mcp-server imports
+# @icecream-sheets/gateway/remote, whose declarations only exist after the
+# gateway build -- but the gateway build needs mcp-server dist (agentSvc).
+# The remote barrel never imports mcp-server (by design), so compile it +
+# its closure first; the full gateway build later re-emits identical output.
+RUN npm run build --workspace=@icecream-sheets/engine \
+ && npm run build --workspace=@icecream-sheets/csv-adapter \
+ && npm run build --workspace=@icecream-sheets/ods-adapter \
+ && npm run build --workspace=@icecream-sheets/xlsb-adapter \
+ && npm run build --workspace=@icecream-sheets/xlsx-adapter \
+ && npm run build --workspace=@icecream-sheets/service \
+ && npx tsc packages/gateway/src/remote.ts --outDir packages/gateway/dist --rootDir packages/gateway/src --module NodeNext --moduleResolution NodeNext --target ES2022 --declaration --esModuleInterop --skipLibCheck --strict --forceConsistentCasingInFileNames \
+ && npm run build --workspace=@icecream-sheets/mcp-server \
+ && npm run build --workspace=@icecream-sheets/gateway \
+ && npm prune --omit=dev --no-audit --no-fund
+
+# ---------- runtime stage ----------
+FROM node:24-bookworm-slim AS runtime
+# python3 (+venv) for the service package's sandboxed Python; ca-certificates
+# for outbound HTTPS from connectors/agent backends.
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates python3 python3-venv \
+ && rm -rf /var/lib/apt/lists/*
+ENV NODE_ENV=production
+WORKDIR /app
+COPY --from=build --chown=node:node /app/package.json /app/package-lock.json ./
+COPY --from=build --chown=node:node /app/node_modules ./node_modules
+COPY --from=build --chown=node:node /app/packages ./packages
+COPY --chown=node:node deploy/service-entrypoint.sh /app/service-entrypoint.sh
+RUN chmod 0555 /app/service-entrypoint.sh \
+ && mkdir -p /home/node/.cache && chown node:node /home/node/.cache
+USER node
+EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s \
+  CMD node -e "fetch('http://127.0.0.1:'+(process.env.PORT||8080)+'/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"
+ENTRYPOINT ["/app/service-entrypoint.sh"]

@@ -1,0 +1,112 @@
+{
+ "driver": "api-adaptation",
+ "groundTruth": "NOT CAPTURED (browser Insert-tab screenshot unavailable on the isolated stack; see verdict caveat)",
+ "pivot": {
+  "prompt": "how do I create a pivot table?",
+  "turn": {
+   "text": "how do I create a pivot table?",
+   "ms": 2428,
+   "status": 200,
+   "reply": "To create a PivotTable, click any cell inside your data range. Then, go to the Insert tab, find the Tables group, and click the \"PivotTable\" button. You can also use \"Recommended PivotTables\" for suggestions. In the PivotTable panel, drag and drop your fields into the four areas: grouping fields go to Rows and Columns, numeric fields you want summarized go to Values (they sum by default), and fields for filtering the results go to Filters.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "The temperature recorded for Seattle on 2026-10-21 was 16°C."
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "user_message",
+     "text": "how do I create a pivot table?"
+    },
+    {
+     "kind": "agent_message",
+     "text": "To create a PivotTable, click any cell inside your data range. Then, go to the Insert tab, find the Tables group, and click the \"PivotTable\" button. You can also use \"Recommended PivotTables\" for sugg"
+    }
+   ]
+  }
+ },
+ "xlookup": {
+  "prompt": "what does XLOOKUP do?",
+  "turn": {
+   "text": "what does XLOOKUP do?",
+   "ms": 2425,
+   "status": 200,
+   "reply": "XLOOKUP is a powerful function in Icecream Sheets (and Excel) that allows you to search for a value in one range (the lookup array) and return a corresponding value from another range (the return array). It's a more flexible and modern replacement for older lookup functions like VLOOKUP and HLOOKUP. Key features include searching in any direction (left or right, up or down), approximate matching, and handling cases where a lookup value is not found.",
+   "answers": [],
+   "audit": [
+    {
+     "kind": "user_message",
+     "text": "Thinking about the numbers we keep in this workbook for how warm it was — what temperature did we record for Seattle on 2026-10-21?"
+    },
+    {
+     "kind": "tool_call",
+     "tool": "read_cells",
+     "ok": true,
+     "text": "read_cells ok"
+    },
+    {
+     "kind": "agent_message",
+     "text": "The temperature recorded for Seattle on 2026-10-21 was 16°C."
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "guardrail",
+     "text": "guardrail scope decline: prompt classified off-topic (no spreadsheet/data/product anchor)"
+    },
+    {
+     "kind": "agent_message",
+     "text": "I can only help with spreadsheet, data, and Icecream Sheets questions, so I can't answer that one. I can read and write cells and ranges (e.g. \"sum of A1:A10\", \"set B2 to 5\"), set formulas, recalculat"
+    },
+    {
+     "kind": "user_message",
+     "text": "how do I create a pivot table?"
+    },
+    {
+     "kind": "agent_message",
+     "text": "To create a PivotTable, click any cell inside your data range. Then, go to the Insert tab, find the Tables group, and click the \"PivotTable\" button. You can also use \"Recommended PivotTables\" for sugg"
+    },
+    {
+     "kind": "user_message",
+     "text": "what does XLOOKUP do?"
+    },
+    {
+     "kind": "agent_message",
+     "text": "XLOOKUP is a powerful function in Icecream Sheets (and Excel) that allows you to search for a value in one range (the lookup array) and return a corresponding value from another range (the return arra"
+    }
+   ]
+  }
+ }
+}

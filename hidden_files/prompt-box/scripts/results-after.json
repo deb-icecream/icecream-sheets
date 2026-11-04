@@ -1,0 +1,141 @@
+{
+  "phase": "after",
+  "a_empty_light": {
+    "composerHeight": 99,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 46,
+    "taScrollHeight": 46,
+    "taValue": "",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  },
+  "a_empty_dark": {
+    "composerHeight": 99,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 46,
+    "taScrollHeight": 46,
+    "taValue": "",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  },
+  "a_dark_colors": {
+    "composerBg": "rgb(30, 41, 59)",
+    "composerBorder": "rgb(51, 65, 85)",
+    "panelBg": "rgb(15, 23, 42)"
+  },
+  "b_four_lines": {
+    "composerHeight": 141,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 88,
+    "taScrollHeight": 88,
+    "taValue": "First line of a longer request\nsecond line with more detail\nthird line asking for a chart\nfourth line with the summary",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  },
+  "c_long": {
+    "composerHeight": 221,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 168,
+    "taScrollHeight": 1684,
+    "taValue": "Line 1: analyze the sales data and explain the trend in detail\nLine 2: analyze the sales data and explain the trend in detail\nLine 3: analyze the sales data and explain the trend in detail\nLine 4: analyze the sales data and explain the trend in detail\nLine 5: analyze the sales data and explain the trend in detail\nLine 6: analyze the sales data and explain the trend in detail\nLine 7: analyze the sales data and explain the trend in detail\nLine 8: analyze the sales data and explain the trend in detail\nLine 9: analyze the sales data and explain the trend in detail\nLine 10: analyze the sales data and explain the trend in detail\nLine 11: analyze the sales data and explain the trend in detail\nLine 12: analyze the sales data and explain the trend in detail\nLine 13: analyze the sales data and explain the trend in detail\nLine 14: analyze the sales data and explain the trend in detail\nLine 15: analyze the sales data and explain the trend in detail\nLine 16: analyze the sales data and explain the trend in detail\nLine 17: analyze the sales data and explain the trend in detail\nLine 18: analyze the sales data and explain the trend in detail\nLine 19: analyze the sales data and explain the trend in detail\nLine 20: analyze the sales data and explain the trend in detail\nLine 21: analyze the sales data and explain the trend in detail\nLine 22: analyze the sales data and explain the trend in detail\nLine 23: analyze the sales data and explain the trend in detail\nLine 24: analyze the sales data and explain the trend in detail\nLine 25: analyze the sales data and explain the trend in detail\nLine 26: analyze the sales data and explain the trend in detail\nLine 27: analyze the sales data and explain the trend in detail\nLine 28: analyze the sales data and explain the trend in detail\nLine 29: analyze the sales data and explain the trend in detail\nLine 30: analyze the sales data and explain the trend in detail\nLine 31: analyze the sales data and explain the trend in detail\nLine 32: analyze the sales data and explain the trend in detail\nLine 33: analyze the sales data and explain the trend in detail\nLine 34: analyze the sales data and explain the trend in detail\nLine 35: analyze the sales data and explain the trend in detail\nLine 36: analyze the sales data and explain the trend in detail\nLine 37: analyze the sales data and explain the trend in detail\nLine 38: analyze the sales data and explain the trend in detail\nLine 39: analyze the sales data and explain the trend in detail\nLine 40: analyze the sales data and explain the trend in detail",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  },
+  "d_typed": {
+    "composerHeight": 99,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 46,
+    "taScrollHeight": 46,
+    "taValue": "What is the value in cell A1?",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  },
+  "d_after_send": {
+    "composerHeight": 99,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 46,
+    "taScrollHeight": 46,
+    "taValue": "",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  },
+  "d_reply": [
+    {
+      "cls": "agent-msg agent-msg-agent",
+      "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Eve"
+    },
+    {
+      "cls": "agent-msg agent-msg-user",
+      "text": "What is the value in cell A1?"
+    },
+    {
+      "cls": "agent-msg agent-msg-agent",
+      "text": "A1:\n42"
+    }
+  ],
+  "d_final": {
+    "composerHeight": 99,
+    "composerWidth": 319,
+    "radius": "26px",
+    "taClientHeight": 46,
+    "taScrollHeight": 46,
+    "taValue": "",
+    "chatScrollW": 339,
+    "chatClientW": 339,
+    "composerScrollW": 317,
+    "composerClientW": 317,
+    "sendInside": {
+      "insideX": true,
+      "insideY": true,
+      "rightGap": 11
+    }
+  }
+}

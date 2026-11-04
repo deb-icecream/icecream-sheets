@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "entry": {
+    "id": "file-132c0484-dd1e-4982-a225-7a9e729e05cc",
+    "name": "sales.xlsx",
+    "owner": "user:csvuser",
+    "createdAt": 1792649538362,
+    "modifiedAt": 1792649538407,
+    "sizeBytes": 3298,
+    "backend": "gateway"
+  },
+  "revision": 1,
+  "storageRevision": 1,
+  "caughtUp": true,
+  "flushedOps": 1,
+  "skipped": false,
+  "changedSheets": [
+    "sales"
+  ]
+}

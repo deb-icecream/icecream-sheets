@@ -1,0 +1,136 @@
+{
+  "mode": "before",
+  "runs": [
+    {
+      "width": 1440,
+      "tabs": {
+        "Home": {
+          "panel": {
+            "clientWidth": 1440,
+            "scrollWidth": 3888,
+            "clientHeight": 99,
+            "offsetHeight": 99,
+            "scrollLeft": 0,
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 180,
+            "rectHeight": 99
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "visible"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "collapsedMenus": 0,
+          "panelClasses": "ribbon-panel",
+          "wrapClasses": null,
+          "groupCount": 7,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        },
+        "Insert": {
+          "panel": {
+            "clientWidth": 1440,
+            "scrollWidth": 3883,
+            "clientHeight": 99,
+            "offsetHeight": 99,
+            "scrollLeft": 0,
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 180,
+            "rectHeight": 99
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "visible"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "collapsedMenus": 0,
+          "panelClasses": "ribbon-panel",
+          "wrapClasses": null,
+          "groupCount": 14,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        },
+        "Formulas": {
+          "panel": {
+            "clientWidth": 1440,
+            "scrollWidth": 3335,
+            "clientHeight": 99,
+            "offsetHeight": 99,
+            "scrollLeft": 0,
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 180,
+            "rectHeight": 99
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "visible"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "collapsedMenus": 0,
+          "panelClasses": "ribbon-panel",
+          "wrapClasses": null,
+          "groupCount": 4,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        },
+        "Data": {
+          "panel": {
+            "clientWidth": 1440,
+            "scrollWidth": 4792,
+            "clientHeight": 99,
+            "offsetHeight": 99,
+            "scrollLeft": 0,
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "hScrollbar": false,
+            "vScrollbar": false,
+            "rectBottom": 180,
+            "rectHeight": 99
+          },
+          "strip": {
+            "clientWidth": 1440,
+            "scrollWidth": 1440,
+            "overflowX": "visible"
+          },
+          "leftTri": null,
+          "rightTri": null,
+          "collapsedMenus": 0,
+          "panelClasses": "ribbon-panel",
+          "wrapClasses": null,
+          "groupCount": 6,
+          "docScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      },
+      "menuClip": {
+        "popupRect": {
+          "top": 123,
+          "bottom": 237,
+          "height": 114
+        },
+        "panelRect": {
+          "top": 81,
+          "bottom": 180,
+          "height": 99
+        },
+        "popupExtendsBelowPanel": true,
+        "popupFullyVisible": true
+      }
+    }
+  ]
+}

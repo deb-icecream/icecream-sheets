@@ -1,0 +1,757 @@
+{
+ "cellDiffs": [
+  {
+   "sheet": "International Settings",
+   "addr": "A9",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A10",
+   "kind": "value",
+   "orig": {
+    "f": "$A$9",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/",
+    "t": "s"
+   },
+   "saved": {
+    "f": "$A$9",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A11",
+   "kind": "value",
+   "orig": {
+    "f": "$A$9",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/",
+    "t": "s"
+   },
+   "saved": {
+    "f": "$A$9",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A12",
+   "kind": "value",
+   "orig": {
+    "f": "A9&\"beta/\"",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/beta/",
+    "t": "s"
+   },
+   "saved": {
+    "f": "A9&\"beta/\"",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/beta/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A13",
+   "kind": "removed",
+   "orig": {
+    "f": "A10&\"beta/\"",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/beta/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A14",
+   "kind": "value",
+   "orig": {
+    "f": "A11&\"beta/\"",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/beta/",
+    "t": "s"
+   },
+   "saved": {
+    "f": "A11&\"beta/\"",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/beta/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A21",
+   "kind": "formula+type+value",
+   "orig": {
+    "f": "IF(Versioned_Override_Misc_Data_Table_URL<>\"\",Versioned_Override_Misc_Data_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Misc_Data_Table_Production_Folder,IF(Is_Beta,Misc_Data_Table_Beta_Folder,Misc_Data_Table_Production_Folder))&Misc_Data_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntMiscData.txt",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": null,
+    "t": "z"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B21",
+   "kind": "removed",
+   "orig": {
+    "f": null,
+    "v": "URL for Misc Data Table (do not delete formula)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A22",
+   "kind": "formula+value",
+   "orig": {
+    "f": "IF(Versioned_Override_Data_Validation_Table_URL<>\"\",Versioned_Override_Data_Validation_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Data_Validation_Table_Production_Folder,IF(Is_Beta,Data_Validation_Table_Beta_Folder,Data_Validation_Table_Production_Folder))&Data_Validation_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntDataValidation.txt",
+    "t": "s"
+   },
+   "saved": {
+    "f": "IF(Versioned_Override_Misc_Data_Table_URL<>\"\",Versioned_Override_Misc_Data_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Misc_Data_Table_Production_Folder,IF(Is_Beta,Misc_Data_Table_Beta_Folder,Misc_Data_Table_Production_Folder))&Misc_Data_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntMiscData.txt",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B22",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "URL for Data Validation Table (do not delete formula)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "URL for Misc Data Table (do not delete formula)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A23",
+   "kind": "formula+value",
+   "orig": {
+    "f": "IF(Versioned_Override_Dropdown_Lists_Table_URL<>\"\",Versioned_Override_Dropdown_Lists_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Dropdown_Lists_Production_Folder,IF(Is_Beta,Dropdown_Lists_Beta_Folder,Dropdown_Lists_Production_Folder))&Dropdown_Lists_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/ff/IntDropdownLists.txt",
+    "t": "s"
+   },
+   "saved": {
+    "f": "IF(Versioned_Override_Data_Validation_Table_URL<>\"\",Versioned_Override_Data_Validation_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Data_Validation_Table_Production_Folder,IF(Is_Beta,Data_Validation_Table_Beta_Folder,Data_Validation_Table_Production_Folder))&Data_Validation_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDataValidation.txt",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B23",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "URL for Dropdown Lists Table (do not delete formula)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "URL for Data Validation Table (do not delete formula)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A24",
+   "kind": "formula+value",
+   "orig": {
+    "f": null,
+    "v": "Use Seller Central",
+    "t": "s"
+   },
+   "saved": {
+    "f": "IF(Versioned_Override_Dropdown_Lists_Table_URL<>\"\",Versioned_Override_Dropdown_Lists_Table_URL,IF(ISERROR(IF(Is_Beta,TRUE)),Dropdown_Lists_Production_Folder,IF(Is_Beta,Dropdown_Lists_Beta_Folder,Dropdown_Lists_Production_Folder))&Dropdown_Lists_Table_Filename)",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/IntDropdownLists.txt",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B24",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Status Check URL Type (deprecated)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "URL for Dropdown Lists Table (do not delete formula)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A25",
+   "kind": "type+value",
+   "orig": {
+    "f": null,
+    "v": false,
+    "t": "b"
+   },
+   "saved": {
+    "f": null,
+    "v": "Use Seller Central",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B25",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Is Devo (Use beta international data tables; devo urls, etc.)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Status Check URL Type (deprecated)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B26",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Devo Upload URL",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Is Devo (Use beta international data tables; devo urls, etc.)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A27",
+   "kind": "removed",
+   "orig": {
+    "f": null,
+    "v": 41070.87510416667,
+    "t": "n"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B27",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Last Update From Web",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Devo Upload URL",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A28",
+   "kind": "type+value",
+   "orig": {
+    "f": null,
+    "v": false,
+    "t": "b"
+   },
+   "saved": {
+    "f": null,
+    "v": 41070.87510416667,
+    "t": "n"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B28",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Auto Update? (True/False)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Last Update From Web",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A29",
+   "kind": "type+value",
+   "orig": {
+    "f": null,
+    "v": "60",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": false,
+    "t": "b"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B29",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Days Between Auto Updates",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Auto Update? (True/False)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A30",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Validate",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "60",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B30",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Validate Toolbar Button Caption",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Days Between Auto Updates",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A31",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Upload File",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Validate",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B31",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Upload Toolbar Button Caption",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Validate Toolbar Button Caption",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A32",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Credentials",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Upload File",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B32",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Credentials Toolbar Button Caption",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Upload Toolbar Button Caption",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A33",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Import File",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Credentials",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B33",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Import Toolbar Button Caption",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Credentials Toolbar Button Caption",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A34",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Update Template",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Import File",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B34",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Update Toolbar Button Caption",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Import Toolbar Button Caption",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A35",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Flat.File.Wirelessdownloads.xls",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Update Template",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B35",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Internal Template Name (used for validation, etc.)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Update Toolbar Button Caption",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A36",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "2.543",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Flat.File.Wirelessdownloads.xls",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B36",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Template Macros Version",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Internal Template Name (used for validation, etc.)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A37",
+   "kind": "type+value",
+   "orig": {
+    "f": null,
+    "v": "US",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": 2.544,
+    "t": "n"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B37",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Marketplace (e.g. IT, US, CN, etc.)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Template Macros Version",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A38",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Wirelessdownloads",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "US",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B38",
+   "kind": "value",
+   "orig": {
+    "f": null,
+    "v": "Category (e.g. Shoes, BookLoader, etc.)",
+    "t": "s"
+   },
+   "saved": {
+    "f": null,
+    "v": "Marketplace (e.g. IT, US, CN, etc.)",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A26",
+   "kind": "type+value",
+   "orig": {
+    "f": null,
+    "v": null,
+    "t": "z"
+   },
+   "saved": {
+    "f": null,
+    "v": false,
+    "t": "b"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "C9",
+   "kind": "added",
+   "saved": {
+    "f": "A9&\"gamma/\"",
+    "v": "http://g-ecx.images-amazon.com/images/G/01/rainier/help/gg/gamma/",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "A39",
+   "kind": "added",
+   "saved": {
+    "f": null,
+    "v": "Wirelessdownloads",
+    "t": "s"
+   }
+  },
+  {
+   "sheet": "International Settings",
+   "addr": "B39",
+   "kind": "added",
+   "saved": {
+    "f": null,
+    "v": "Category (e.g. Shoes, BookLoader, etc.)",
+    "t": "s"
+   }
+  }
+ ],
+ "valueEpsilon": [],
+ "partDiffs": [
+  {
+   "part": "[Content_Types].xml",
+   "origSize": 4355,
+   "savedSize": 4480
+  },
+  {
+   "part": "xl/styles.xml",
+   "origSize": 48269,
+   "savedSize": 69981
+  },
+  {
+   "part": "xl/worksheets/sheet1.xml",
+   "origSize": 1166,
+   "savedSize": 1173
+  },
+  {
+   "part": "xl/worksheets/sheet10.xml",
+   "origSize": 80394,
+   "savedSize": 112919
+  },
+  {
+   "part": "xl/worksheets/sheet11.xml",
+   "origSize": 23763,
+   "savedSize": 60619
+  },
+  {
+   "part": "xl/worksheets/sheet12.xml",
+   "origSize": 213991,
+   "savedSize": 222140
+  },
+  {
+   "part": "xl/worksheets/sheet13.xml",
+   "origSize": 881,
+   "savedSize": 1012
+  },
+  {
+   "part": "xl/worksheets/sheet14.xml",
+   "origSize": 218527,
+   "savedSize": 397219
+  },
+  {
+   "part": "xl/worksheets/sheet15.xml",
+   "origSize": 213898,
+   "savedSize": 394438
+  },
+  {
+   "part": "xl/worksheets/sheet16.xml",
+   "origSize": 13409,
+   "savedSize": 18213
+  },
+  {
+   "part": "xl/worksheets/sheet2.xml",
+   "origSize": 24785,
+   "savedSize": 34104
+  },
+  {
+   "part": "xl/worksheets/sheet3.xml",
+   "origSize": 47016,
+   "savedSize": 49811
+  },
+  {
+   "part": "xl/worksheets/sheet4.xml",
+   "origSize": 995,
+   "savedSize": 1002
+  },
+  {
+   "part": "xl/worksheets/sheet5.xml",
+   "origSize": 4031,
+   "savedSize": 11593
+  },
+  {
+   "part": "xl/worksheets/sheet6.xml",
+   "origSize": 3062,
+   "savedSize": 6667
+  },
+  {
+   "part": "xl/worksheets/sheet7.xml",
+   "origSize": 51552,
+   "savedSize": 86377
+  },
+  {
+   "part": "xl/worksheets/sheet8.xml",
+   "origSize": 76446,
+   "savedSize": 2369
+  },
+  {
+   "part": "xl/worksheets/sheet9.xml",
+   "origSize": 8164,
+   "savedSize": 13208
+  }
+ ],
+ "partMissing": [],
+ "partAdded": [
+  "docProps/custom.xml"
+ ],
+ "nameDiffs": [],
+ "sheetsOnlyInOrig": [],
+ "sheetsOnlyInSaved": [],
+ "summary": {
+  "cellDiffs": 45,
+  "valueEpsilon": 0,
+  "partDiffs": 18,
+  "partMissing": 0,
+  "partAdded": 1,
+  "nameDiffs": 0
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "case": 12,
+ "pass": true,
+ "verdict": "PASS",
+ "basis": "Attempt 2 (single session): app created end-to-end through the builder UI and auto-opened running with real data. Attempt 1 was INVALID (leftover modal Download dialog from case 4 blocked the ribbon; preserved in attempt1/). Attempt 3 was a re-open check in a FRESH browser profile (see limitation note).",
+ "assertions": [
+  {
+   "name": "app-builder UI surface exists (Insert tab > Apps group: \"Build App\" button + \"My Apps\" menu; \"Build app\" dialog opens)",
+   "pass": true,
+   "observed": "Screenshots 01-insert-tab-apps-group.png (Apps group) and 02-builder-step0-datasource.png (dialog, wizard steps Data source/Views/Configure/Preview). Attempt-3 screenshot 11-attempt3-my-apps-menu.png also shows the group + menu."
+  },
+  {
+   "name": "builder pointed at the open sheet's Sales data (range rows 1-13, cols 1-3) and detected its columns",
+   "pass": true,
+   "observed": "Range set via the four range inputs (03-builder-step0-range-set.png); Preview column headers are Month | Region | Revenue (06-builder-step3-preview.png)."
+  },
+  {
+   "name": "builder Preview renders live sheet data (all 12 fixture rows, exact values)",
+   "pass": true,
+   "observed": "06-builder-step3-preview.png: Table view lists Jan North 12000, Jan South 9800, Feb North 13500, Feb South 11200, Mar North 15800, Mar South 12600, Apr North 14200, Apr South 10900, May North 16900, May South 11600, Jun North 16700, Jun South 14200 \u2014 all 12 match the fixture exactly."
+  },
+  {
+   "name": "app created through the UI (\"Create app\") and the builder closed",
+   "pass": true,
+   "observed": "07-after-create.png + handleCreateApp flow: creation persists the spec and auto-opens the runner (App.tsx: appStore.add(spec); setRunningAppId(spec.id))."
+  },
+  {
+   "name": "created app opens/runs and renders real sheet data rows",
+   "pass": true,
+   "observed": "99-error-attempt2.png (taken when the script then tried to re-open via My Apps): the AppRunnerDialog titled \"Wave C Sales App\" is open with Table/Detail/Add-Edit/Cards views and all 12 rows with exact fixture values: Jan|North|12000; Jan|South|9800; Feb|North|13500; Feb|South|11200; Mar|North|15800; Mar|South|12600; Apr|North|14200; Apr|South|10900; May|North|16900; May|South|11600; Jun|North|16700; Jun|South|14200. The scripted My Apps click timed out only because this runner modal was already open and intercepting clicks \u2014 i.e. the app had already been opened by the create action itself."
+  }
+ ],
+ "uiElementsUsed": [
+  "ribbon tab \"Insert\"",
+  "ribbon button \"Build App\" (Insert > Apps group)",
+  "builder range inputs \"First row\" / \"First col\" / \"Last row\" (=13) / \"Last col\" (=3)",
+  "builder footer button \"Next\" (Data source -> Views)",
+  "builder footer button \"Next\" (Views -> Configure)",
+  "builder \"App name\" text input (=\"Wave C Sales App\")",
+  "builder footer button \"Next\" (Configure -> Preview)",
+  "builder footer button \"Create app\"",
+  "(on re-open check) ribbon menu \"My Apps \u25be\""
+ ],
+ "runnerRowsFromScreenshot": [
+  "Jan|North|12000",
+  "Jan|South|9800",
+  "Feb|North|13500",
+  "Feb|South|11200",
+  "Mar|North|15800",
+  "Mar|South|12600",
+  "Apr|North|14200",
+  "Apr|South|10900",
+  "May|North|16900",
+  "May|South|11600",
+  "Jun|North|16700",
+  "Jun|South|14200"
+ ],
+ "limitationNote": "Persistence is browser-profile-local: UI-built apps live in a localStorage-backed metadata store (App.tsx appStore = createAppStore(appPersistence), appPersistence wraps localStorage). Attempt 3 (fresh browser profile, same user carol, same file) showed My Apps = \"No apps yet\" (11-attempt3-my-apps-menu.png, verify-attempt3.json) \u2014 apps are NOT stored server-side or bound to the file, so they do not follow the user across browsers/profiles. Within the creating profile they persist (same storage model that let case 3b's chat artifact survive a reload).",
+ "attempts": {
+  "attempt1": "INVALID \u2014 modal Download dialog (opened by case 4 Ctrl+S in the main page) covered the ribbon; Insert-tab click timed out. Evidence in attempt1/.",
+  "attempt2": "Creation + preview + auto-run verified via step screenshots 00-07 and 99-error-attempt2.png (runner open). Script then failed clicking \"My Apps\" through the already-open runner modal (search-record-attempt2.json).",
+  "attempt3": "Fresh-profile re-open check: app not listed (\"No apps yet\") \u2014 see limitationNote. Evidence: 10-attempt3-insert-tab.png, 11-attempt3-my-apps-menu.png, verify-attempt3.json."
+ },
+ "evidence": [
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/00-start-clean.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/01-insert-tab-apps-group.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/02-builder-step0-datasource.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/03-builder-step0-range-set.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/04-builder-step1-views.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/05-builder-step2-configure.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/06-builder-step3-preview.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/07-after-create.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/99-error-attempt2.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/11-attempt3-my-apps-menu.png",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/verify-attempt3.json",
+  "/home/hatch/workspace/icecream-sheets/hidden_files/agent-rerun/cases/case-12/attempt1/"
+ ]
+}

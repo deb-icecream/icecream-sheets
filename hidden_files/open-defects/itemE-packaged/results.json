@@ -1,0 +1,36 @@
+{
+  "bin": "/home/hatch/workspace/icecream-sheets/apps/desktop/dist/linux-unpacked/icecream-sheets-desktop",
+  "fixture": "/home/hatch/workspace/icecream-sheets/hidden_files/open-defects/itemE-packaged/work.xlsx",
+  "steps": {
+    "opened": {
+      "A1": "7",
+      "fileA1BeforeEdit": 7
+    },
+    "edited": {
+      "A1": "99",
+      "editVisibleMs": 3469,
+      "fileA1AfterEditBeforeClose": 7
+    },
+    "closeRequestedAtMsAfterEditVisible": 3655,
+    "firstExit": {
+      "exitCode": 0,
+      "exitedByItself": true,
+      "msToExit": 1108
+    },
+    "fileA1AfterClose": 99,
+    "closeFlushLogLines": [
+      "[checkpoint] settle-timer: flushed 0 op(s) to /home/hatch/workspace/icecream-sheets/hidden_files/open-defects/itemE-packaged/work.xlsx (storage 0/0) mode=verbatim",
+      "[checkpoint] app-quit: flushed 1 op(s) to /home/hatch/workspace/icecream-sheets/hidden_files/open-defects/itemE-packaged/work.xlsx (storage 1/1) mode=verbatim",
+      "[close-flush] quit flush wrote 1 op(s); storage caught up at revision 1"
+    ],
+    "relaunched": {
+      "A1": "99"
+    },
+    "secondExit": {
+      "exitCode": 0,
+      "exitedByItself": true
+    },
+    "fileA1Final": 99
+  },
+  "pass": true
+}

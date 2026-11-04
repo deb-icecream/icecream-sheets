@@ -1,0 +1,174 @@
+{
+ "backend": "Vertex gemini-2.5-flash-lite (live, fast probe)",
+ "fileId": "file-4d281188-7a3f-4f6f-9bc1-b118ac1fba61",
+ "sessionId": "sess_2add35ef-c55f-43d9-afc3-13747d6e0364",
+ "painted": true,
+ "viewCheckBeforeSend": {
+  "auditViewPresent": false,
+  "messagesListPresent": true,
+  "msgCount": 1,
+  "firstMsgVisible": true,
+  "firstMsgHead": "Hi — I can read ranges, sum or average them, write values and formulas, recalcul",
+  "auditChipOn": true,
+  "auditChipText": "Chat"
+ },
+ "retried": false,
+ "turns": [
+  {
+   "msgs": [
+    {
+     "role": "agent",
+     "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each step.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:B3",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "I cannot create a chart with the provided range A1:B3 on the Sales sheet because it does not contain numeric data. The data I read from A1:B3 was: Month, Region, Jan, North, Jan, South. Please provide a range that includes numeric data for the chart.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "newMsgs": [
+    {
+     "role": "user",
+     "text": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "user",
+     "text": "A1:B3",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    },
+    {
+     "role": "agent",
+     "text": "I cannot create a chart with the provided range A1:B3 on the Sales sheet because it does not contain numeric data. The data I read from A1:B3 was: Month, Region, Jan, North, Jan, South. Please provide a range that includes numeric data for the chart.",
+     "hasCanvas": false,
+     "hasChartDiv": false
+    }
+   ],
+   "seen": {
+    "clicked": [
+     {
+      "kind": "pending-options",
+      "question": "What is the range containing the revenue totals for each region on the Sales sheet?\nA1:B3\nA2:B3\nOther",
+      "options": [
+       "A1:B3",
+       "A2:B3",
+       "Other"
+      ],
+      "answer": "A1:B3",
+      "atMs": 5209
+     }
+    ],
+    "textAnswers": []
+   },
+   "timedOut": false,
+   "durationMs": 38124,
+   "prompt": "Create a column chart of revenue by region in the Sales sheet — a native chart in the sheet itself, not an image in the chat. Use the region totals: North 89100 and South 70300."
+  }
+ ],
+ "chartProbeFirst": {
+  "overlayCount": 0,
+  "overlays": [],
+  "visible": false,
+  "storedCharts": {
+   "rawLength": 0,
+   "parsed": null
+  }
+ },
+ "statusAfterTurns": {
+  "ok": true,
+  "sessionId": "sess_2add35ef-c55f-43d9-afc3-13747d6e0364",
+  "fileId": "file-4d281188-7a3f-4f6f-9bc1-b118ac1fba61",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 0,
+  "storageRevision": 0,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 1,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792677075175,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0"
+ },
+ "statusAfterSave": {
+  "ok": true,
+  "sessionId": "sess_2add35ef-c55f-43d9-afc3-13747d6e0364",
+  "fileId": "file-4d281188-7a3f-4f6f-9bc1-b118ac1fba61",
+  "fenced": false,
+  "ownershipEpoch": 1,
+  "participants": [
+   {
+    "principal": "user:carol",
+    "role": "editor"
+   }
+  ],
+  "status": "active",
+  "revision": 0,
+  "storageRevision": 0,
+  "pendingCheckpointOps": 0,
+  "extrasDirty": false,
+  "autosaveStats": {
+   "flushes": 1,
+   "noopSkips": 0,
+   "forcedFlushes": 0
+  },
+  "lastActivityAt": 1792677078176,
+  "idleTimeoutMs": 600000,
+  "instanceId": "engine-1",
+  "snapshotChecksum": "59a83fcbb4de48676fa887bc59c47e8f44c27448ab0897647c370f8c016cc8d0"
+ },
+ "savedOk": false,
+ "chartProbeReopen": {
+  "overlayCount": 0,
+  "overlays": [],
+  "visible": false,
+  "storedCharts": {
+   "rawLength": 0,
+   "parsed": null
+  }
+ },
+ "paintedSecond": true,
+ "parseBack": {
+  "attempted": true,
+  "downloadStatus": 200,
+  "downloadJson": {
+   "entryId": "autosave_sess_2add35ef-c55f-43d9-afc3-13747d6e0364",
+   "mode": "verbatim"
+  },
+  "signStatus": 200,
+  "via": "gateway-signed-url",
+  "bytes": 6893,
+  "allPartsCount": 11,
+  "parts": [],
+  "hasChart1Xml": false,
+  "charts": []
+ }
+}

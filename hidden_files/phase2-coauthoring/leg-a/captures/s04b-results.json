@@ -1,0 +1,14 @@
+{
+ "scenario": "s04b-rerun-single-user-long-chain",
+ "startedAt": "2026-10-21T22:32:44.068Z",
+ "parts": {
+  "build": {
+   "chainCells": 260,
+   "revisionAfterBuild": 260,
+   "sessionId": "sess_c712d640-d95a-4089-9b22-6648e4d83186",
+   "fileId": "file-75881a81-8413-454e-8629-ad15583c45ec"
+  }
+ },
+ "fatal": "TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.cell-editor') to be visible\n",
+ "verdict": "FAIL"
+}

@@ -1,0 +1,68 @@
+{
+ "checks": [
+  {
+   "id": "A1.range-drag",
+   "pass": true,
+   "detail": "coverage=[\"cell-1-1\",\"cell-1-2\",\"cell-1-3\",\"cell-2-1\",\"cell-2-2\",\"cell-2-3\",\"cell-3-1\",\"cell-3-2\",\"cell-3-3\"]"
+  },
+  {
+   "id": "A1.click-inside-range-collapses",
+   "pass": false,
+   "detail": "coverage after click inside range=[\"cell-1-1\",\"cell-1-2\",\"cell-1-3\",\"cell-2-1\",\"cell-2-2\",\"cell-2-3\",\"cell-3-1\",\"cell-3-2\",\"cell-3-3\"]"
+  },
+  {
+   "id": "A1.range-shiftclick",
+   "pass": false,
+   "detail": "coverage=[\"cell-1-1\",\"cell-1-2\",\"cell-1-3\",\"cell-1-4\",\"cell-2-1\",\"cell-2-2\",\"cell-2-3\",\"cell-2-4\",\"cell-3-1\",\"cell-3-2\",\"cell-3-3\",\"cell-3-4\",\"cell-4-1\",\"cell-4-2\",\"cell-4-3\",\"cell-4-4\"]"
+  },
+  {
+   "id": "A1.select-all",
+   "pass": true,
+   "detail": "coverage=748/748 rendered"
+  },
+  {
+   "id": "A3.copy-range",
+   "pass": true,
+   "detail": "tsv=\"3\\t2\\n4\\t2\""
+  },
+  {
+   "id": "A3.paste-range",
+   "pass": false,
+   "detail": "pasted=[\"\",\"\",\"\",\"\"]"
+  },
+  {
+   "id": "A3.copy-row",
+   "pass": false,
+   "detail": "cells=0 head=[] P=undefined AA=undefined"
+  },
+  {
+   "id": "A3.paste-row",
+   "pass": false,
+   "detail": "pasted=[\"\",\"\",\"\"]"
+  },
+  {
+   "id": "A3.copy-col",
+   "pass": false,
+   "detail": "lines=0 [0,1,5,12]=[null,null,null,null]"
+  },
+  {
+   "id": "A3.paste-col",
+   "pass": false,
+   "detail": "pasted=[\"\",\"\",\"\",\"\"]"
+  },
+  {
+   "id": "A3.copy-all",
+   "pass": false,
+   "detail": "lines=13 first=\"Item\\tQty\\tPrice\\tAmount\\tNote\\tMis\" lastB=\"=Z6+1\""
+  }
+ ],
+ "shots": [
+  "a1-shape-range-drag.png",
+  "a1-shape-range-shiftclick.png",
+  "a3-copy-range-paste.png",
+  "a3-copy-row-paste.png",
+  "a3-copy-col-paste.png",
+  "a3-copy-all.png"
+ ],
+ "verdict": "FAILURES PRESENT"
+}

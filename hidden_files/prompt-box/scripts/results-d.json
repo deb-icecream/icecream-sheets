@@ -1,0 +1,32 @@
+{
+  "shiftEnter": {
+    "composerHeight": 99,
+    "taClientHeight": 46,
+    "taValue": "What is the value in cell A1?\n"
+  },
+  "afterSend": {
+    "composerHeight": 99,
+    "taClientHeight": 46,
+    "taValue": ""
+  },
+  "sendDisabledWhileBusy": true,
+  "reply": [
+    {
+      "cls": "agent-msg agent-msg-agent",
+      "text": "Hi — I can read ranges, sum or average them, write values and formulas, recalculate, remember notes, and analyze data with charts (\"analyze A1:D20 and show me a diagram\", \"forecast next quarter\"). Everything I do goes through the same tools as any other client, and the audit log below shows each ste"
+    },
+    {
+      "cls": "agent-msg agent-msg-user",
+      "text": "What is the value in cell A1?"
+    },
+    {
+      "cls": "agent-msg agent-msg-agent",
+      "text": "A1:\n42"
+    }
+  ],
+  "final": {
+    "composerHeight": 99,
+    "taClientHeight": 46,
+    "taValue": ""
+  }
+}

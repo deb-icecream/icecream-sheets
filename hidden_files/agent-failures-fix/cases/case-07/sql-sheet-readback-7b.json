@@ -1,0 +1,1152 @@
+{
+ "readback": {
+  "values": [
+   [
+    {
+     "kind": "string",
+     "value": "order_id"
+    },
+    {
+     "kind": "string",
+     "value": "order_date"
+    },
+    {
+     "kind": "string",
+     "value": "region"
+    },
+    {
+     "kind": "string",
+     "value": "product"
+    },
+    {
+     "kind": "string",
+     "value": "units"
+    },
+    {
+     "kind": "string",
+     "value": "unit_price"
+    },
+    {
+     "kind": "string",
+     "value": "revenue"
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1001
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-01"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 2
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 19.98
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1002
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-02"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 9
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 179.91
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1003
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-03"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 16
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 472
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1004
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-04"
+    },
+    {
+     "kind": "string",
+     "value": "West"
+    },
+    {
+     "kind": "string",
+     "value": "Doohickey"
+    },
+    {
+     "kind": "number",
+     "value": 5
+    },
+    {
+     "kind": "number",
+     "value": 4.75
+    },
+    {
+     "kind": "number",
+     "value": 23.75
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1005
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-05"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 12
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 119.88
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1006
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-06"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 19
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 379.81
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1007
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-07"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 8
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 236
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1008
+    },
+    {
+     "kind": "string",
+     "value": "2026-01-08"
+    },
+    {
+     "kind": "string",
+     "value": "West"
+    },
+    {
+     "kind": "string",
+     "value": "Doohickey"
+    },
+    {
+     "kind": "number",
+     "value": 15
+    },
+    {
+     "kind": "number",
+     "value": 4.75
+    },
+    {
+     "kind": "number",
+     "value": 71.25
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1009
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-09"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 4
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 39.96
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1010
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-10"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 11
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 219.89
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1011
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-11"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 18
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 531
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1012
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-12"
+    },
+    {
+     "kind": "string",
+     "value": "West"
+    },
+    {
+     "kind": "string",
+     "value": "Doohickey"
+    },
+    {
+     "kind": "number",
+     "value": 7
+    },
+    {
+     "kind": "number",
+     "value": 4.75
+    },
+    {
+     "kind": "number",
+     "value": 33.25
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1013
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-13"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 14
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 139.86
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1014
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-14"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 3
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 59.97
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1015
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-15"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 10
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 295
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1016
+    },
+    {
+     "kind": "string",
+     "value": "2026-02-16"
+    },
+    {
+     "kind": "string",
+     "value": "West"
+    },
+    {
+     "kind": "string",
+     "value": "Doohickey"
+    },
+    {
+     "kind": "number",
+     "value": 17
+    },
+    {
+     "kind": "number",
+     "value": 4.75
+    },
+    {
+     "kind": "number",
+     "value": 80.75
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1017
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-17"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 6
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 59.94
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1018
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-18"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 13
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 259.87
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1019
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-19"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 2
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 59
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1020
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-20"
+    },
+    {
+     "kind": "string",
+     "value": "West"
+    },
+    {
+     "kind": "string",
+     "value": "Doohickey"
+    },
+    {
+     "kind": "number",
+     "value": 9
+    },
+    {
+     "kind": "number",
+     "value": 4.75
+    },
+    {
+     "kind": "number",
+     "value": 42.75
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1021
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-21"
+    },
+    {
+     "kind": "string",
+     "value": "North"
+    },
+    {
+     "kind": "string",
+     "value": "Widget"
+    },
+    {
+     "kind": "number",
+     "value": 16
+    },
+    {
+     "kind": "number",
+     "value": 9.99
+    },
+    {
+     "kind": "number",
+     "value": 159.84
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1022
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-22"
+    },
+    {
+     "kind": "string",
+     "value": "South"
+    },
+    {
+     "kind": "string",
+     "value": "Gadget"
+    },
+    {
+     "kind": "number",
+     "value": 5
+    },
+    {
+     "kind": "number",
+     "value": 19.99
+    },
+    {
+     "kind": "number",
+     "value": 99.95
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1023
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-23"
+    },
+    {
+     "kind": "string",
+     "value": "East"
+    },
+    {
+     "kind": "string",
+     "value": "Gizmo"
+    },
+    {
+     "kind": "number",
+     "value": 12
+    },
+    {
+     "kind": "number",
+     "value": 29.5
+    },
+    {
+     "kind": "number",
+     "value": 354
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "number",
+     "value": 1024
+    },
+    {
+     "kind": "string",
+     "value": "2026-03-24"
+    },
+    {
+     "kind": "string",
+     "value": "West"
+    },
+    {
+     "kind": "string",
+     "value": "Doohickey"
+    },
+    {
+     "kind": "number",
+     "value": 19
+    },
+    {
+     "kind": "number",
+     "value": 4.75
+    },
+    {
+     "kind": "number",
+     "value": 90.25
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ],
+   [
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    },
+    {
+     "kind": "null",
+     "value": null
+    }
+   ]
+  ],
+  "formulas": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ]
+ }
+}

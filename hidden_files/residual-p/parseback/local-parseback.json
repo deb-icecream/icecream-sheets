@@ -1,0 +1,97 @@
+{
+ "label": "local",
+ "files": {
+  "workbook-xlsx": {
+   "values": {
+    "Sheet1": {
+     "A1": 10,
+     "B1": 20,
+     "C1": 999,
+     "A2": 30,
+     "B2": 30,
+     "A3": 111
+    },
+    "Sheet2": {
+     "A1": 7,
+     "B1": 8,
+     "B2": 15
+    }
+   },
+   "formulas": {
+    "Sheet1": {
+     "B2": "=A1+B1"
+    },
+    "Sheet2": {
+     "B2": "=A1+B1"
+    }
+   },
+   "verdict": "PASS",
+   "bytes": 19628
+  },
+  "ods": {
+   "values": {
+    "Sheet1": {
+     "A1": 10,
+     "B1": 20,
+     "C1": 999,
+     "A2": 30,
+     "B2": 30,
+     "A3": 111
+    },
+    "Sheet2": {
+     "A1": 7,
+     "B1": 8,
+     "B2": 15
+    }
+   },
+   "formulas": {
+    "Sheet1": {
+     "B2": "=A1+B1"
+    },
+    "Sheet2": {
+     "B2": "=A1+B1"
+    }
+   },
+   "verdict": "PASS",
+   "bytes": 873
+  },
+  "csv": {
+   "text": "10,20,999\r\n30,=A1+B1,\r\n111,,\r\n",
+   "verdict": "FAIL"
+  },
+  "namedRange-xlsx": {
+   "bytes": 16013,
+   "sheetNames": [
+    "MyRange"
+   ],
+   "values": {
+    "MyRange": {
+     "A1": 10,
+     "B1": 20,
+     "A2": 30,
+     "B2": 30
+    }
+   },
+   "formulas": {
+    "MyRange": {
+     "B2": "=A1+B1"
+    }
+   },
+   "verdict": "PASS"
+  },
+  "namedRange-csv": {
+   "text": "10,20\r\n30,=A1+B1\r\n",
+   "verdict": "FAIL"
+  }
+ },
+ "verdicts": {
+  "workbookXlsx": "PASS",
+  "ods": "PASS",
+  "csv": "FAIL",
+  "tsv": "NOT RUN (no download)",
+  "html": "NOT RUN (no download)",
+  "namedRangeXlsx": "PASS",
+  "namedRangeCsv": "FAIL",
+  "xlsb": "NOT RUN (no download)"
+ }
+}

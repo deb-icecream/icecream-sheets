@@ -1,0 +1,303 @@
+{
+  "startedAt": "2026-10-22T14:48:07.182Z",
+  "reads": [
+    {
+      "atMs": 46578,
+      "status": 200,
+      "url": "GW/api/engine/open",
+      "post": "{\"fileId\":\"file-4d606396-75e2-462a-be5e-3da353325517\"}",
+      "size": 547
+    },
+    {
+      "atMs": 46720,
+      "status": 200,
+      "url": "GW/api/engine/access",
+      "post": "{\"sessionId\":\"sess_2a3b8d99-e7b7-46ae-bb08-ca876416257b\"}",
+      "size": 444
+    },
+    {
+      "atMs": 75902,
+      "status": 401,
+      "url": "GW/api/engine/session-extras",
+      "post": "{\"extraMetadata\":{\"icecream.pictures\":[],\"icecream.pagesetup.Sheet1\":{\"orientation\":\"portrait\",\"paperSize\":\"letter\",\"margins\":{\"top\":0.75,\"right\":0.7,\"bottom\":0",
+      "size": 54
+    },
+    {
+      "atMs": 75961,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "size": 14
+    },
+    {
+      "atMs": 108675,
+      "status": 404,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 44
+    },
+    {
+      "atMs": 108675,
+      "status": 404,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 44
+    },
+    {
+      "atMs": 108785,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "size": 14
+    },
+    {
+      "atMs": 108837,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 20545
+    },
+    {
+      "atMs": 108838,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 108838,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "size": 87
+    },
+    {
+      "atMs": 109380,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "size": 28468
+    },
+    {
+      "atMs": 113157,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "size": 63
+    },
+    {
+      "atMs": 114634,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 117517,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 118062,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "size": 93
+    },
+    {
+      "atMs": 118062,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "size": 14
+    },
+    {
+      "atMs": 120058,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Dropdown Lists\",\"startRow\":0,\"startCol\":0,\"endRow\":868,\"endCol\":69}}",
+      "size": 2178578
+    },
+    {
+      "atMs": 120180,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "size": 89
+    },
+    {
+      "atMs": 120180,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "size": 98
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "size": 85
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "size": 83
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "size": 77
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "size": 80
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "size": 87
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "size": 86
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "size": 81
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "size": 85
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "size": 87
+    },
+    {
+      "atMs": 120349,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "size": 89
+    },
+    {
+      "atMs": 171933,
+      "status": 200,
+      "url": "EN/read",
+      "post": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "size": 171311
+    }
+  ],
+  "samples": [
+    {
+      "atMs": 113548,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "Saving…",
+      "reads": 12
+    },
+    {
+      "atMs": 118636,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "Saving…",
+      "reads": 29
+    },
+    {
+      "atMs": 125414,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "Saving…",
+      "reads": 29
+    },
+    {
+      "atMs": 130449,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 135675,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 140732,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 145751,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 150810,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 155866,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 160897,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 165925,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    },
+    {
+      "atMs": 170958,
+      "active": "Dropdown Lists",
+      "nonEmpty": 418,
+      "status": "✓ Saved",
+      "reads": 29
+    }
+  ],
+  "steps": [],
+  "fileId": "file-4d606396-75e2-462a-be5e-3da353325517"
+}

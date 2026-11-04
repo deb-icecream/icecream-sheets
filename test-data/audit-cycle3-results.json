@@ -1,0 +1,1168 @@
+{
+ "totalFormulas": 6296,
+ "results": [
+  {
+   "file": "beyond-excel-bxl3way.xlsx",
+   "formulas": 766,
+   "skippedNoCache": 5,
+   "skippedVolatile": 16,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-Cubes-CubeFromRange-Input.xlsx",
+   "formulas": 14,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Cube",
+     "cell": "B3",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Measures].[Sum of Price]\")",
+     "cached": "\"Sum of Price\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C3",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Measures].[Sum of Amount]\")",
+     "cached": "\"Sum of Amount\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A4",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].&[Baclava]\")",
+     "cached": "\"Baclava\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B4",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A4,B$3)",
+     "cached": "14",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C4",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A4,C$3)",
+     "cached": "3",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A5",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].&[Cake]\")",
+     "cached": "\"Cake\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B5",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A5,B$3)",
+     "cached": "7",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C5",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A5,C$3)",
+     "cached": "27",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A6",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].&[Pie]\")",
+     "cached": "\"Pie\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B6",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A6,B$3)",
+     "cached": "12",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C6",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A6,C$3)",
+     "cached": "35",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "A7",
+     "formula": "=CUBEMEMBER(\"ThisWorkbookDataModel\",\"[Range].[Pastry].[All]\",\"Grand Total\")",
+     "cached": "\"Grand Total\"",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "B7",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A7,B$3)",
+     "cached": "33",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    },
+    {
+     "sheet": "Cube",
+     "cell": "C7",
+     "formula": "=CUBEVALUE(\"ThisWorkbookDataModel\",$A7,C$3)",
+     "cached": "65",
+     "ours": "#N/A",
+     "bucket": "genuine",
+     "reason": "CUBE function, no data model"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-ExternalLinks-WorkbookWithExternalLink.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B2",
+     "formula": "=[1]Sheet1!$A$1",
+     "cached": "\"hello world\"",
+     "ours": "#REF!",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-Formulas-DataTableFormula-Excel-Input.xlsx",
+   "formulas": 9,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-MergedCellsBorder-inputfile.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-Sources-PivotTable-AllSources-input.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-CellsWithDateTimeDataTypeOrFormatting.xlsx",
+   "formulas": 16,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-CellsWithTimeSpanDataTypeOrFormatting.xlsx",
+   "formulas": 11,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-DrawingSizeInPx.xlsx",
+   "formulas": 8,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-FileWithDefaultStyleNameNotInEnglish.xlsx",
+   "formulas": 8,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Лист1",
+     "cell": "F1",
+     "formula": "=title",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "F3",
+     "formula": "=_value",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "B4",
+     "formula": "=_name",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "C4",
+     "formula": "=_role",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "D4",
+     "formula": "=_age",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "E4",
+     "formula": "=_address_city",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "F4",
+     "formula": "=_value",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Лист1",
+     "cell": "G4",
+     "formula": "=SUM(_Hours)",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-PivotTableWithMissingReference.xlsx",
+   "formulas": 141,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-TableHeadersWithLineBreaks.xlsx",
+   "formulas": 3,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-TryToLoad-TemplateWithTableSourcePivotTables.xlsx",
+   "formulas": 1450,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "BondsOverview",
+     "cell": "L2",
+     "formula": "=_xll.DSSData(BondsOverview!$D$2,\"ytm\",valuation_date)/100",
+     "cached": "#VALUE!",
+     "ours": "#ERROR",
+     "bucket": "real-bug",
+     "reason": "wrong error type (cached #VALUE!, ours #ERROR)"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-data-table-multi-table.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-data-table-one-variable.xlsx",
+   "formulas": 3,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-shared-formula-3d-reference.xlsx",
+   "formulas": 18,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-shared-formula-basic.xlsx",
+   "formulas": 18,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-shared-formula-text-results.xlsx",
+   "formulas": 12,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-track-changes-simple-cell-changes.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-bug-fixes.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-ceiling-floor.xlsx",
+   "formulas": 276,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-column-style-autofilter.xlsx",
+   "formulas": 27,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-database.xlsx",
+   "formulas": 5,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet2",
+     "cell": "A11",
+     "formula": "=DCOUNT(database1, 2, A13:C14)",
+     "cached": "4",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "B11",
+     "formula": "=DCOUNT(database1,0,A16:C17)",
+     "cached": "2",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-external-refs.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "A1",
+     "formula": "=[1]Sheet1!A1",
+     "cached": "\"Name\"",
+     "ours": "#REF!",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "A2",
+     "formula": "=[1]Sheet1!A2",
+     "cached": "\"Andy\"",
+     "ours": "#REF!",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "A3",
+     "formula": "=[1]Sheet1!A3",
+     "cached": "\"Bruce\"",
+     "ours": "#REF!",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "A4",
+     "formula": "=[1]Sheet1!A4",
+     "cached": "\"Charlie\"",
+     "ours": "#REF!",
+     "bucket": "external",
+     "reason": "external workbook reference"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-formats.xlsx",
+   "formulas": 2,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-functions-excel-2010.xlsx",
+   "formulas": 517,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B2",
+     "formula": "=AND(Sheet2!C39:U47)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "D2",
+     "formula": "=ROUND(B2,12)=ROUND(C2,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "E2",
+     "formula": "=AND(D2:D80)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    },
+    {
+     "sheet": "Sheet1",
+     "cell": "B33",
+     "formula": "=GAMMALN.PRECISE(F4)",
+     "cached": "0",
+     "ours": "-4.440892098500626e-16",
+     "bucket": "precision",
+     "reason": "rel diff 1.00e+0"
+    },
+    {
+     "sheet": "Sheet2",
+     "cell": "M44",
+     "formula": "=ROUND(M22,12)=ROUND(M33,12)",
+     "cached": "true",
+     "ours": "false",
+     "bucket": "real-bug",
+     "reason": "wrong boolean value"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-matrix-multiplication.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-named-ranges-global.xlsx",
+   "formulas": 8,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet2",
+     "cell": "A6",
+     "formula": "=Sheet2!$B$1",
+     "cached": "#N/A",
+     "ours": "5",
+     "bucket": "real-bug",
+     "reason": "missed Excel error #N/A"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivot_table_first_header_row.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_bool_field_filter.xlsx",
+   "formulas": 3,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_duplicated_member_filter.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_error_item_filter.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-pivottable_tabular_mode.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-ref_string.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 1,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-tdf81939.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-universal-content-strict.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "closedxml-xlsx-universal-content.xlsx",
+   "formulas": 4,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "compressexcel-saas-3statement.xlsx",
+   "formulas": 2403,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "DASHBOARD",
+     "cell": "J8",
+     "formula": "='INCOME STATEMENT'!I31-'INCOME STATEMENT'!H31",
+     "cached": "0",
+     "ours": "-2.7755575615628914e-17",
+     "bucket": "precision",
+     "reason": "rel diff 1.00e+0"
+    },
+    {
+     "sheet": "DASHBOARD",
+     "cell": "B32",
+     "formula": "=\"• EBITDA margin \"&IF('INCOME STATEMENT'!I31>='INCOME STATEMENT'!E31,\"expands t",
+     "cached": "\"• EBITDA margin expands to 16.9% by FY20\"",
+     "ours": "\"• EBITDA margin narrows to 16.9% by FY20\"",
+     "bucket": "real-bug",
+     "reason": "wrong string value"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "dropbox-shortcut-master.xlsx",
+   "formulas": 290,
+   "skippedNoCache": 0,
+   "skippedVolatile": 18,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "excelize-Book1.xlsx",
+   "formulas": 6,
+   "skippedNoCache": 5,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "excelize-CalcChain.xlsx",
+   "formulas": 2,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "B1",
+     "formula": "=SUM(C1:D1)",
+     "cached": "1",
+     "ours": "0",
+     "bucket": "real-bug",
+     "reason": "wrong value (rel diff 1.00e+0)"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-bogus-defined-name.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-fibonacci.xlsx",
+   "formulas": 35,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-formulas.xlsx",
+   "formulas": 2,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-gold.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-test-issue-1364.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-test-issue-877.xlsx",
+   "formulas": 89,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "exceljs-data-test-issue-880.xlsx",
+   "formulas": 93,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "smartart-diagrams.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "trendline-demo.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxpopulate-ranges-out.xlsx",
+   "formulas": 11,
+   "skippedNoCache": 11,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula01.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula02.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula03.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-array_formula04.xlsx",
+   "formulas": 1,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-autofilter01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-autofilter04.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_area01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_bar01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_bar03.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_column01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_column04.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_crossing01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_data_labels01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_data_labels10.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_doughnut01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_layout01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_layout05.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_line01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_line03.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_pattern01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_pie01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_points01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_radar01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_scatter01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_scatter05.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_stock01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-chart_stock02.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-cond_format01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-cond_format06.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-cond_format11.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-data_validation01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-data_validation03.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-defined_name01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-formula_results01.xlsx",
+   "formulas": 12,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [
+    {
+     "sheet": "Sheet1",
+     "cell": "A7",
+     "formula": "=#NAME?",
+     "cached": "#N/A",
+     "ours": "#NAME?",
+     "bucket": "genuine",
+     "reason": "undefined defined name"
+    }
+   ],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-hyperlink01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-hyperlink12.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-hyperlink20.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-image01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-image07.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-panes01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-print_area01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-rich_string01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table07.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table12.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-table18.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-textbox01.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  },
+  {
+   "file": "xlsxwriter-textbox08.xlsx",
+   "formulas": 0,
+   "skippedNoCache": 0,
+   "skippedVolatile": 0,
+   "mismatches": [],
+   "loadError": null
+  }
+ ]
+}

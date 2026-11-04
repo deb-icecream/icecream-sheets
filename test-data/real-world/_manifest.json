@@ -1,0 +1,584 @@
+[
+ {
+  "file": "compressexcel-saas-3statement.xlsx",
+  "size": 150657,
+  "formulas": 2403,
+  "source": "https://compressexcel.com/blog/free-3-statement-financial-model-template/"
+ },
+ {
+  "file": "closedxml-TryToLoad-TemplateWithTableSourcePivotTables.xlsx",
+  "size": 235954,
+  "formulas": 1450,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "beyond-excel-bxl3way.xlsx",
+  "size": 1285214,
+  "formulas": 761,
+  "source": "https://sites.google.com/site/beyondexcel/home/tbm-modeling/tbm-course/sample-financial-model"
+ },
+ {
+  "file": "closedxml-xlsx-functions-excel-2010.xlsx",
+  "size": 21127,
+  "formulas": 517,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "dropbox-shortcut-master.xlsx",
+  "size": 116006,
+  "formulas": 290,
+  "source": "http://bethefirst.jeep.at/EPUB/data/8693O8500I/5425O0I/ (via Dropbox)"
+ },
+ {
+  "file": "closedxml-xlsx-ceiling-floor.xlsx",
+  "size": 14300,
+  "formulas": 276,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-TryToLoad-PivotTableWithMissingReference.xlsx",
+  "size": 46771,
+  "formulas": 141,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "exceljs-data-test-issue-880.xlsx",
+  "size": 267677,
+  "formulas": 93,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "exceljs-data-test-issue-877.xlsx",
+  "size": 148118,
+  "formulas": 89,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "exceljs-data-fibonacci.xlsx",
+  "size": 8736,
+  "formulas": 35,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "closedxml-xlsx-column-style-autofilter.xlsx",
+  "size": 396312,
+  "formulas": 27,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-Formulas-DataTableFormula-Excel-Input.xlsx",
+  "size": 17584,
+  "formulas": 18,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-shared-formula-3d-reference.xlsx",
+  "size": 9455,
+  "formulas": 18,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-shared-formula-basic.xlsx",
+  "size": 8984,
+  "formulas": 18,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-TryToLoad-CellsWithDateTimeDataTypeOrFormatting.xlsx",
+  "size": 10167,
+  "formulas": 16,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-Cubes-CubeFromRange-Input.xlsx",
+  "size": 86320,
+  "formulas": 14,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-named-ranges-global.xlsx",
+  "size": 5664,
+  "formulas": 14,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-shared-formula-text-results.xlsx",
+  "size": 8576,
+  "formulas": 12,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "xlsxwriter-formula_results01.xlsx",
+  "size": 7535,
+  "formulas": 12,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "closedxml-TryToLoad-CellsWithTimeSpanDataTypeOrFormatting.xlsx",
+  "size": 10898,
+  "formulas": 11,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "xlsxpopulate-ranges-out.xlsx",
+  "size": 12808,
+  "formulas": 11,
+  "source": "https://unpkg.com/xlsx-populate@1.21.0/examples/"
+ },
+ {
+  "file": "closedxml-TryToLoad-DrawingSizeInPx.xlsx",
+  "size": 981840,
+  "formulas": 8,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-TryToLoad-FileWithDefaultStyleNameNotInEnglish.xlsx",
+  "size": 9698,
+  "formulas": 8,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "excelize-Book1.xlsx",
+  "size": 20451,
+  "formulas": 6,
+  "source": "https://github.com/qax-os/excelize (master, test/)"
+ },
+ {
+  "file": "closedxml-data-table-one-variable.xlsx",
+  "size": 9018,
+  "formulas": 5,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-database.xlsx",
+  "size": 7823,
+  "formulas": 5,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-external-refs.xlsx",
+  "size": 9172,
+  "formulas": 4,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-pivottable_error_item_filter.xlsx",
+  "size": 12459,
+  "formulas": 4,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-tdf81939.xlsx",
+  "size": 9120,
+  "formulas": 4,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-universal-content-strict.xlsx",
+  "size": 14290,
+  "formulas": 4,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-universal-content.xlsx",
+  "size": 7296,
+  "formulas": 4,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-TryToLoad-TableHeadersWithLineBreaks.xlsx",
+  "size": 11143,
+  "formulas": 3,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-pivottable_bool_field_filter.xlsx",
+  "size": 16583,
+  "formulas": 3,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-data-table-multi-table.xlsx",
+  "size": 9578,
+  "formulas": 2,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-formats.xlsx",
+  "size": 9295,
+  "formulas": 2,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "excelize-CalcChain.xlsx",
+  "size": 5838,
+  "formulas": 2,
+  "source": "https://github.com/qax-os/excelize (master, test/)"
+ },
+ {
+  "file": "exceljs-data-formulas.xlsx",
+  "size": 9571,
+  "formulas": 2,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "closedxml-ExternalLinks-WorkbookWithExternalLink.xlsx",
+  "size": 9618,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-MergedCellsBorder-inputfile.xlsx",
+  "size": 10095,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-Sources-PivotTable-AllSources-input.xlsx",
+  "size": 43508,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-track-changes-simple-cell-changes.xlsx",
+  "size": 15414,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-bug-fixes.xlsx",
+  "size": 5795,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-matrix-multiplication.xlsx",
+  "size": 8849,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-pivot_table_first_header_row.xlsx",
+  "size": 15705,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-pivottable_duplicated_member_filter.xlsx",
+  "size": 16912,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-pivottable_tabular_mode.xlsx",
+  "size": 17373,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "closedxml-xlsx-ref_string.xlsx",
+  "size": 8026,
+  "formulas": 1,
+  "source": "https://github.com/ClosedXML/ClosedXML (tag 0.105.1, test resources)"
+ },
+ {
+  "file": "exceljs-data-bogus-defined-name.xlsx",
+  "size": 8639,
+  "formulas": 1,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "exceljs-data-gold.xlsx",
+  "size": 9150,
+  "formulas": 1,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "exceljs-data-test-issue-1364.xlsx",
+  "size": 8983,
+  "formulas": 1,
+  "source": "https://github.com/exceljs/exceljs (master, spec/integration/data)"
+ },
+ {
+  "file": "xlsxwriter-array_formula01.xlsx",
+  "size": 7382,
+  "formulas": 1,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-array_formula02.xlsx",
+  "size": 7427,
+  "formulas": 1,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-array_formula03.xlsx",
+  "size": 7368,
+  "formulas": 1,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-array_formula04.xlsx",
+  "size": 7360,
+  "formulas": 1,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-autofilter01.xlsx",
+  "size": 8701,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-autofilter04.xlsx",
+  "size": 8893,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_area01.xlsx",
+  "size": 9267,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_bar01.xlsx",
+  "size": 9278,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_bar03.xlsx",
+  "size": 10279,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_column01.xlsx",
+  "size": 9263,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_column04.xlsx",
+  "size": 9282,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_crossing01.xlsx",
+  "size": 9269,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_data_labels01.xlsx",
+  "size": 9312,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_data_labels10.xlsx",
+  "size": 9313,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_doughnut01.xlsx",
+  "size": 9005,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_layout01.xlsx",
+  "size": 9384,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_layout05.xlsx",
+  "size": 9506,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_line01.xlsx",
+  "size": 9280,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_line03.xlsx",
+  "size": 9287,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_pattern01.xlsx",
+  "size": 9242,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_pie01.xlsx",
+  "size": 8986,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_points01.xlsx",
+  "size": 8998,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_radar01.xlsx",
+  "size": 9291,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_scatter01.xlsx",
+  "size": 9278,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_scatter05.xlsx",
+  "size": 9278,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_stock01.xlsx",
+  "size": 9586,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-chart_stock02.xlsx",
+  "size": 9723,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-cond_format01.xlsx",
+  "size": 7184,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-cond_format06.xlsx",
+  "size": 7166,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-cond_format11.xlsx",
+  "size": 7521,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-data_validation01.xlsx",
+  "size": 7064,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-data_validation03.xlsx",
+  "size": 7216,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-defined_name01.xlsx",
+  "size": 9203,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-hyperlink01.xlsx",
+  "size": 7700,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-hyperlink12.xlsx",
+  "size": 7809,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-hyperlink20.xlsx",
+  "size": 7836,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-image01.xlsx",
+  "size": 8607,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-image07.xlsx",
+  "size": 10786,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-panes01.xlsx",
+  "size": 13870,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-print_area01.xlsx",
+  "size": 8121,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-rich_string01.xlsx",
+  "size": 7488,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-table01.xlsx",
+  "size": 8180,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-table07.xlsx",
+  "size": 8137,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-table12.xlsx",
+  "size": 8267,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-table18.xlsx",
+  "size": 8268,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-textbox01.xlsx",
+  "size": 8091,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ },
+ {
+  "file": "xlsxwriter-textbox08.xlsx",
+  "size": 8116,
+  "formulas": 0,
+  "source": "https://github.com/jmcnamara/XlsxWriter (RELEASE_3.2.9, comparison fixtures)"
+ }
+]

@@ -1,0 +1,176 @@
+{
+  "reads": [
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Sheet1\"}",
+      "status": 200
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "status": 200
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Sheet1\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "status": 404
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"icons\"}",
+      "status": 200
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "status": 404
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "status": 200
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "status": 200
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"icons\",\"startRow\":0,\"startCol\":0,\"endRow\":0,\"endCol\":0}}",
+      "status": 200
+    },
+    {
+      "phase": "open",
+      "body": "{\"kind\":\"cell\",\"ref\":{\"sheet\":\"International Settings\",\"row\":11,\"col\":0}}",
+      "status": 200
+    },
+    {
+      "phase": "api-proof",
+      "body": "{\"kind\":\"cell\",\"ref\":{\"sheet\":\"Valid Values\",\"row\":0,\"col\":0}}",
+      "status": 200
+    },
+    {
+      "phase": "api-proof",
+      "body": "{\"kind\":\"cell\",\"ref\":{\"sheet\":\"AttributePTDMAP\",\"row\":0,\"col\":0}}",
+      "status": 200
+    },
+    {
+      "phase": "api-proof",
+      "body": "{\"kind\":\"cell\",\"ref\":{\"sheet\":\"Browse Data\",\"row\":0,\"col\":0}}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Valid Values\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Valid Values\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":19}}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Valid Values\",\"startRow\":0,\"startCol\":0,\"endRow\":867,\"endCol\":60}}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"International URLs\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"International Settings\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"DropdownSizer\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Instructions\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Images\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"International Translations\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Data Validation\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"International Data\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Example\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Data Definitions\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Template\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Browse Data\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"Dropdown Lists\"}",
+      "status": 200
+    },
+    {
+      "phase": "validvalues",
+      "body": "{\"kind\":\"usedrange\",\"sheet\":\"AttributePTDMAP\"}",
+      "status": 200
+    },
+    {
+      "phase": "attributeptdmap",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"AttributePTDMAP\",\"startRow\":0,\"startCol\":0,\"endRow\":132,\"endCol\":19}}",
+      "status": 200
+    },
+    {
+      "phase": "example",
+      "body": "{\"kind\":\"range\",\"range\":{\"sheet\":\"Example\",\"startRow\":0,\"startCol\":0,\"endRow\":29,\"endCol\":146}}",
+      "status": 200
+    }
+  ],
+  "api": {
+    "Valid Values": {
+      "status": 200,
+      "value": "Product Type"
+    },
+    "AttributePTDMAP": {
+      "status": 200,
+      "value": ""
+    },
+    "Browse Data": {
+      "status": 200,
+      "value": "Browse Node"
+    }
+  },
+  "notes": [],
+  "fileId": "file-ac93f376-8478-48a5-ac08-1429bde9615d",
+  "phase": "example"
+}

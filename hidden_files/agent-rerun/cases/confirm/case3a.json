@@ -1,0 +1,62 @@
+{
+  "case": "case3a",
+  "gw": "http://localhost:8960",
+  "turns": [
+    {
+      "text": "Analyze the Sales data and show a chart of revenue by region.",
+      "ms": 2438,
+      "status": 200,
+      "message": "Here is a bar chart showing the sum of Revenue by Region. The total revenue is 159,400, with North contributing 89,100 and South contributing 70,300.",
+      "answers": [
+        {
+          "kind": "options",
+          "question": "Which column in the Sales sheet contains the revenue data?",
+          "options": [
+            "Revenue",
+            "Sales Amount",
+            "Total Price",
+            "Amount"
+          ],
+          "answer": "Revenue"
+        }
+      ],
+      "audit": [
+        {
+          "kind": "user_message",
+          "tool": null,
+          "ok": null,
+          "text": "Analyze the Sales data and show a chart of revenue by region.",
+          "summary": null
+        },
+        {
+          "kind": "tool_call",
+          "tool": "analyze_data",
+          "ok": true,
+          "text": null,
+          "summary": "analyze_data ok"
+        },
+        {
+          "kind": "agent_message",
+          "tool": null,
+          "ok": null,
+          "text": "Here is a bar chart showing the sum of Revenue by Region. The total revenue is 159,400, with North contributing 89,100 and South contributing 70,300.",
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "status200": true,
+    "analyzeAggregate89100": true,
+    "analyzeAggregate70300": true,
+    "nativeChartCreated": false,
+    "columnMeansSignature": false
+  },
+  "evidence": {
+    "configStatus": 200,
+    "fileId": "file-ce386c0f-5cd5-44e2-9b80-c4d3fa88f2f6",
+    "sessionId": "sess_5d2730ef-b1e9-4000-98c3-5621c2cdfb4a",
+    "analyzeSummary": "analyze_data ok",
+    "releaseStatus": 200
+  }
+}
