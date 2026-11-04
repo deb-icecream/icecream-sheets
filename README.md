@@ -46,16 +46,17 @@ with a product-native AI assistant that works through the same tools you do.
   dependencies in the engine core, no Rust, no custom multithreaded engine.
 
 Planned distribution: free Mac and Windows desktop apps; web version planned.
+Real production will run on a Kubernetes cluster VM instead of Cloud Run.
 
 ## What's in this repo
 
 | Folder | Contents |
 |---|---|
-| `specs/` | The technology spec: languages, engine decisions, dependencies, connector-vs-component taxonomy |
-| `design-docs/` | Design notes from the catalog (12 canonical docs plus preserved duplicate report sections), each with its v1 design and v2 section |
-| `catalog/` | The 29-track component catalog: `capabilities.json` (machine data) and `tracks.md` (readable overview with feasibility, file-format compatibility, stage, verdict per track) |
-| `inventory/` | The 718-entry feature/function inventory: `feature-inventory.json` (259 features + 459 functions with per-entry fit), `function-categories.json`, and the original inventory source |
-| `backlog/` | `v2-backlog.md`, compiled from the v2 sections of the design notes (no consolidated backlog document exists yet) |
+| [`specs/`](./specs/) | The technology spec: languages, engine decisions, dependencies, connector-vs-component taxonomy |
+| [`design-docs/`](./design-docs/) | Design notes from the catalog (12 canonical docs plus preserved duplicate report sections), each with its v1 design and v2 section |
+| [`catalog/`](./catalog/) | The 29-track component catalog: `capabilities.json` (machine data) and `tracks.md` (readable overview with feasibility, file-format compatibility, stage, verdict per track) |
+| [`inventory/`](./inventory/) | The 718-entry feature/function inventory: `feature-inventory.json` (259 features + 459 functions with per-entry fit), `function-categories.json`, and the original inventory source |
+| [`backlog/`](./backlog/) | `v2-backlog.md`, compiled from the v2 sections of the design notes (no consolidated backlog document exists yet) |
 
 ## Inventory fit
 
